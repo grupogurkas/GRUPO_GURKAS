@@ -352,8 +352,9 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                     cboEstadoProveedor.SelectedIndex = Convert.ToInt32(recorre["estado_proveedor"].ToString());
                     //Modulo Datos Certificacion
 
-                    cboCertificadoBasc.SelectedValue = recorre["basc"].ToString();
-                    cboOtroCertificado.SelectedValue = recorre["no_basc"].ToString();
+                    cboCertificadoBasc.SelectedIndex = Convert.ToInt32(recorre["basc"].ToString());
+                    cboOtroCertificado.SelectedIndex = Convert.ToInt32(recorre["no_basc"].ToString());
+                    //aqui
                     txtAutenticidad.Text = recorre["autenticidad"].ToString();
                     txtNumCertificacion.Text = recorre["numero_certificado"].ToString();
                     dtpFechaInicio.Text = (recorre["fecha_otorgamiento"].ToString());
