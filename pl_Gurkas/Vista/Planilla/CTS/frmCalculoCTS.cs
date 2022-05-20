@@ -85,7 +85,7 @@ namespace pl_Gurkas.Vista.Planilla.CTS
 
             try
             {
-                registrar.generar_planilla_cts();
+                registrar.generar_planilla_cts_consorcio();
                 consultaPlanilla();
                 MessageBox.Show("Planilla CTS generado exitosamente");
             }

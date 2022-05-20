@@ -452,7 +452,7 @@ namespace pl_Gurkas.Datos
         }
         public void generar_planilla_cts_consorcio()
         {
-            SqlCommand cmd = new SqlCommand("sp_subir_cts_parte_1 ", conexion.conexionBD());
+            SqlCommand cmd = new SqlCommand("sp_subir_cts_parte_consorcio ", conexion.conexionBD());
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.ExecuteNonQuery();
         }
