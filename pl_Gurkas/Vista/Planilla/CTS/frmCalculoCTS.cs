@@ -82,7 +82,15 @@ namespace pl_Gurkas.Vista.Planilla.CTS
         }
         private void btnPlantilla_Click(object sender, EventArgs e)
         {
-            generar_planilla_cts();
+            int ip_empresa = Datos.EmpresaID._empresaid;
+            if (ip_empresa == 1)
+            {
+                generar_planilla_cts();
+            }
+           if(ip_empresa == 2)
+            {
+
+            }
         }
 
         private void frmCalculoCTS_Load(object sender, EventArgs e)
