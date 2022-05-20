@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace pl_Gurkas.Datos
 {
-    /*prueba git pull*/
+    /*prueba git pull sorle*/
     class Actualizar
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
