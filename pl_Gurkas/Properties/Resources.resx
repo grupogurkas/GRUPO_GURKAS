@@ -298,4 +298,13 @@
   <data name="subir_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\subir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="codigobarra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\codigobarra.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imagen_codigo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imagen_codigo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imagen_codigo__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imagen_codigo (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

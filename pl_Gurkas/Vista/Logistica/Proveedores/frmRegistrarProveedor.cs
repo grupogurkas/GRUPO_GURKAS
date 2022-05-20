@@ -385,15 +385,15 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             };
         }
 
-       /* private void cboTipoProveedor_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cboTipoProveedor.SelectedValue.ToString() != null)
-            {
-                string idTipoProveedor = cboTipoProveedor.SelectedValue.ToString();
-                Llenadocbo.ObtenerTipoProveedorLogistica(cboTipoProveedor, idTipoProveedor);
+        /* private void cboTipoProveedor_SelectedIndexChanged(object sender, EventArgs e)
+         {
+             if (cboTipoProveedor.SelectedValue.ToString() != null)
+             {
+                 string idTipoProveedor = cboTipoProveedor.SelectedValue.ToString();
+                 Llenadocbo.ObtenerTipoProveedorLogistica(cboTipoProveedor, idTipoProveedor);
 
 
-            }
-        }*/
+             }
+         }*/
     }
 }

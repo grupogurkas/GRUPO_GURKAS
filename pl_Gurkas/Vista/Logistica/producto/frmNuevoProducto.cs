@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Imaging;
 
 namespace pl_Gurkas.Vista.Logistica.producto
 {
@@ -188,6 +189,67 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void cboEstadoProduc_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void label37_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox12_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGenerar_Click(object sender, EventArgs e)
+        {
+            BarcodeLib.Barcode Codigo = new BarcodeLib.Barcode();
+            Codigo.IncludeLabel = true;
+            PanelCodigo.BackgroundImage = Codigo.Encode(BarcodeLib.TYPE.CODE128,txtCodigoBarra.Text,Color.Black,Color.White,350,100);
+            btnGuardarCodigo.Enabled = true;
+
+            
+        }
+
+        private void btnCargarDatos_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog abrirImagen = new OpenFileDialog();
+            //Abrimos el explorador de archivos de windows
+            if(abrirImagen.ShowDialog() == DialogResult.OK)
+            {
+                ptcImagen.ImageLocation = abrirImagen.FileName;
+                ptcImagen.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+
+        }
+
+        private void tabPage1_Click_1(object sender, EventArgs e)
+        {
+            //GenerarCodigo();
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuardarCodigo_Click(object sender, EventArgs e)
+        {
+            Image imgFinal = (Image)PanelCodigo.BackgroundImage.Clone();
+            SaveFileDialog Dialogoguardar = new SaveFileDialog();
+            Dialogoguardar.AddExtension = true;
+            Dialogoguardar.Filter = "Image PNG (*.png) |* .png";
+            Dialogoguardar.ShowDialog();
+            if(!string.IsNullOrEmpty(Dialogoguardar.FileName))
+            {
+                imgFinal.Save(Dialogoguardar.FileName, ImageFormat.Png);
+            }
+            imgFinal.Dispose();
         }
     }
 }

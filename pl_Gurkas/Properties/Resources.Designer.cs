@@ -173,6 +173,16 @@ namespace pl_Gurkas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap codigobarra {
+            get {
+                object obj = ResourceManager.GetObject("codigobarra", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap comercial {
             get {
                 object obj = ResourceManager.GetObject("comercial", resourceCulture);
@@ -386,6 +396,26 @@ namespace pl_Gurkas.Properties {
         internal static System.Drawing.Bitmap icons8_csv_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_csv_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imagen_codigo {
+            get {
+                object obj = ResourceManager.GetObject("imagen_codigo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imagen_codigo__1_ {
+            get {
+                object obj = ResourceManager.GetObject("imagen_codigo__1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
