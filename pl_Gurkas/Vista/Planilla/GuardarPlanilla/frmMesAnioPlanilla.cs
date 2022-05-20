@@ -29,12 +29,14 @@ namespace pl_Gurkas.Vista.Planilla.GuardarPlanilla
         {
             int mes = Convert.ToInt32(txtmes.Text);
             int anio = Convert.ToInt32(txtanio.Text);
+            int id_empresa = Datos.EmpresaID._empresaid;
 
             SqlCommand cmd = new SqlCommand("sp_insertar_fecha_planilla ", conexion.conexionBD());
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@tipo", SqlDbType.Int).Value = _tipo;
             cmd.Parameters.AddWithValue("@mes", SqlDbType.Int).Value = mes;
             cmd.Parameters.AddWithValue("@anio", SqlDbType.Int).Value = anio;
+            cmd.Parameters.AddWithValue("@id_empresa", SqlDbType.Int).Value = id_empresa;
             cmd.ExecuteNonQuery();
 
             MessageBox.Show("Datos Registrado correctamente", "Datos Registrado Correctamente");
