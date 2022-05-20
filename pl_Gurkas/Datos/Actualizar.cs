@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace pl_Gurkas.Datos
 {
-
+    //hola ga
     class Actualizar
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
