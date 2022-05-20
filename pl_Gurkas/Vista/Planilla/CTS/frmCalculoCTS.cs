@@ -80,6 +80,20 @@ namespace pl_Gurkas.Vista.Planilla.CTS
                 MessageBox.Show("ERROR AL GENERAR LA PLANILLA CTS \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+        public void generar_planilla_cts_consorcio()
+        {
+
+            try
+            {
+                registrar.generar_planilla_cts();
+                consultaPlanilla();
+                MessageBox.Show("Planilla CTS generado exitosamente");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR AL GENERAR LA PLANILLA CTS \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
         private void btnPlantilla_Click(object sender, EventArgs e)
         {
             int ip_empresa = Datos.EmpresaID._empresaid;
@@ -89,7 +103,7 @@ namespace pl_Gurkas.Vista.Planilla.CTS
             }
            if(ip_empresa == 2)
             {
-
+                generar_planilla_cts_consorcio();
             }
         }
 

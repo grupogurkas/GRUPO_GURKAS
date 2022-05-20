@@ -450,6 +450,12 @@ namespace pl_Gurkas.Datos
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.ExecuteNonQuery();
         }
+        public void generar_planilla_cts_consorcio()
+        {
+            SqlCommand cmd = new SqlCommand("sp_subir_cts_parte_1 ", conexion.conexionBD());
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.ExecuteNonQuery();
+        }
         public void generar_planilla_grati()
         {
             SqlCommand cmd = new SqlCommand("sp_calculo_grati ", conexion.conexionBD());
