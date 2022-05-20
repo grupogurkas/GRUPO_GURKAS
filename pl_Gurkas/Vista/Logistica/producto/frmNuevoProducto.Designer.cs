@@ -211,7 +211,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label45 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label46 = new System.Windows.Forms.Label();
-            this.tbpUtilesLogistico = new System.Windows.Forms.TabPage();
+            this.tbpEquipamientoLogistico = new System.Windows.Forms.TabPage();
             this.button8 = new System.Windows.Forms.Button();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
             this.button9 = new System.Windows.Forms.Button();
@@ -379,6 +379,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.button41 = new System.Windows.Forms.Button();
             this.label137 = new System.Windows.Forms.Label();
             this.button42 = new System.Windows.Forms.Button();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
             this.panel1.SuspendLayout();
             this.btcPanel.SuspendLayout();
             this.tbpTecnologico.SuspendLayout();
@@ -401,7 +406,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tabPage4.SuspendLayout();
             this.tbpUtilesEscritorio.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.tbpUtilesLogistico.SuspendLayout();
+            this.tbpEquipamientoLogistico.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.tbpEpp.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -443,8 +448,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btcPanel.Controls.Add(this.tbpTecnologico);
             this.btcPanel.Controls.Add(this.tbpUniforme);
             this.btcPanel.Controls.Add(this.tbpUtilesEscritorio);
-            this.btcPanel.Controls.Add(this.tbpUtilesLogistico);
+            this.btcPanel.Controls.Add(this.tbpEquipamientoLogistico);
             this.btcPanel.Controls.Add(this.tbpEpp);
+            this.btcPanel.Controls.Add(this.tabPage5);
+            this.btcPanel.Controls.Add(this.tabPage6);
+            this.btcPanel.Controls.Add(this.tabPage7);
+            this.btcPanel.Controls.Add(this.tabPage8);
+            this.btcPanel.Controls.Add(this.tabPage9);
             this.btcPanel.Location = new System.Drawing.Point(3, 3);
             this.btcPanel.Name = "btcPanel";
             this.btcPanel.SelectedIndex = 0;
@@ -2402,22 +2412,22 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label46.TabIndex = 0;
             this.label46.Text = "Estado :";
             // 
-            // tbpUtilesLogistico
+            // tbpEquipamientoLogistico
             // 
-            this.tbpUtilesLogistico.Controls.Add(this.button8);
-            this.tbpUtilesLogistico.Controls.Add(this.comboBox8);
-            this.tbpUtilesLogistico.Controls.Add(this.button9);
-            this.tbpUtilesLogistico.Controls.Add(this.button10);
-            this.tbpUtilesLogistico.Controls.Add(this.label62);
-            this.tbpUtilesLogistico.Controls.Add(this.button11);
-            this.tbpUtilesLogistico.Controls.Add(this.groupBox4);
-            this.tbpUtilesLogistico.Location = new System.Drawing.Point(4, 22);
-            this.tbpUtilesLogistico.Name = "tbpUtilesLogistico";
-            this.tbpUtilesLogistico.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpUtilesLogistico.Size = new System.Drawing.Size(1148, 514);
-            this.tbpUtilesLogistico.TabIndex = 4;
-            this.tbpUtilesLogistico.Text = "Utiles Logistico";
-            this.tbpUtilesLogistico.UseVisualStyleBackColor = true;
+            this.tbpEquipamientoLogistico.Controls.Add(this.button8);
+            this.tbpEquipamientoLogistico.Controls.Add(this.comboBox8);
+            this.tbpEquipamientoLogistico.Controls.Add(this.button9);
+            this.tbpEquipamientoLogistico.Controls.Add(this.button10);
+            this.tbpEquipamientoLogistico.Controls.Add(this.label62);
+            this.tbpEquipamientoLogistico.Controls.Add(this.button11);
+            this.tbpEquipamientoLogistico.Controls.Add(this.groupBox4);
+            this.tbpEquipamientoLogistico.Location = new System.Drawing.Point(4, 22);
+            this.tbpEquipamientoLogistico.Name = "tbpEquipamientoLogistico";
+            this.tbpEquipamientoLogistico.Padding = new System.Windows.Forms.Padding(3);
+            this.tbpEquipamientoLogistico.Size = new System.Drawing.Size(1148, 514);
+            this.tbpEquipamientoLogistico.TabIndex = 4;
+            this.tbpEquipamientoLogistico.Text = "Equipamiento Logistico";
+            this.tbpEquipamientoLogistico.UseVisualStyleBackColor = true;
             // 
             // button8
             // 
@@ -4190,6 +4200,56 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.button42.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button42.UseVisualStyleBackColor = true;
             // 
+            // tabPage5
+            // 
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(1148, 514);
+            this.tabPage5.TabIndex = 6;
+            this.tabPage5.Text = "Mobiliario";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1148, 514);
+            this.tabPage6.TabIndex = 7;
+            this.tabPage6.Text = "Vehiculos";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(1148, 514);
+            this.tabPage7.TabIndex = 8;
+            this.tabPage7.Text = "Herramientas";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(1148, 514);
+            this.tabPage8.TabIndex = 9;
+            this.tabPage8.Text = "Utiles de Aseo";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Location = new System.Drawing.Point(4, 22);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(1148, 514);
+            this.tabPage9.TabIndex = 10;
+            this.tabPage9.Text = "Armamento";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            // 
             // frmNuevoProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4235,8 +4295,8 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tbpUtilesEscritorio.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.tbpUtilesLogistico.ResumeLayout(false);
-            this.tbpUtilesLogistico.PerformLayout();
+            this.tbpEquipamientoLogistico.ResumeLayout(false);
+            this.tbpEquipamientoLogistico.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.tbpEpp.ResumeLayout(false);
@@ -4296,7 +4356,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.TextBox txtCodEquipo;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TabPage tbpUtilesEscritorio;
-        private System.Windows.Forms.TabPage tbpUtilesLogistico;
+        private System.Windows.Forms.TabPage tbpEquipamientoLogistico;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtPrecioCompra;
         private System.Windows.Forms.Label label13;
@@ -4610,5 +4670,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.Button button41;
         private System.Windows.Forms.Label label137;
         private System.Windows.Forms.Button button42;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.TabPage tabPage9;
     }
 }
