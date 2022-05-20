@@ -235,8 +235,7 @@ namespace pl_Gurkas.Datos
         {
             try
             {
-                SqlCommand cmd = new SqlCommand("SELECT id_tipoProveedor,descpTipoProveedor FROM t_tipo_proveedor where id_tipoProveedor = @tipo_proveedor", conexiondbo.conexionBD());
-                cmd.Parameters.AddWithValue("id_tipoProveedor", id_tipoproveedor);
+                SqlCommand cmd = new SqlCommand("SELECT id_tipoProveedor,descpTipoProveedor FROM t_tipo_proveedor", conexiondbo.conexionBD());
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
@@ -245,10 +244,8 @@ namespace pl_Gurkas.Datos
                 dt.Rows.InsertAt(fila, 0);
                 cd.ValueMember = "id_tipoProveedor";
                 cd.DisplayMember = "descpTipoProveedor";
-
-
-
                 cd.DataSource = dt;
+                cd.SelectedIndex = 0;
             }
             catch (Exception err)
             {
@@ -257,3 +254,5 @@ namespace pl_Gurkas.Datos
         }
     }
 }
+
+

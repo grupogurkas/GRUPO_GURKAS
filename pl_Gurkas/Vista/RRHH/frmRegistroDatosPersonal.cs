@@ -574,11 +574,6 @@ namespace pl_Gurkas.Vista.RRHH
             dtpFinicioLaboral.Value = dtpFechaInicio.Value;
         }
 
-        private void cboempleadoActivo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void cboArmado_SelectedIndexChanged(object sender, EventArgs e)
         {
 

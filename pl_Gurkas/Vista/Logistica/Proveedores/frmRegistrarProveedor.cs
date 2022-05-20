@@ -216,6 +216,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 string Distrito = cboDis.SelectedValue.ToString();
                 int codDist = (int)Convert.ToInt64(Distrito);
                 string paginaweb = txtpaginaweb.Text;
+
                 int Tipoproveedor = cboTipoProveedor.SelectedIndex;
                 DateTime fregistro = dtpFechaRegistro.Value;
                 string observacion = txtObservacion.Text;
@@ -261,7 +262,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         private void frmRegistrarProveedor_Load(object sender, EventArgs e)
         {
             Llenadocbo.ObtenerDepartamentoLogistica(cboDepartamento);
-            
             Llenadocbo.ObtenerProveedoresLogistico(cboProveedor);
             Llenadocbo.ObtenerTipoProveedor(cboTipoProveedor);
             Llenadocbo.ObtenerTipoDocumentologistica(cboTipoDocIdentEmp);
@@ -339,17 +339,17 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                     cboProvincia.SelectedValue = recorre["provincia"].ToString();
                     cboDis.SelectedValue = recorre["distrito"].ToString();
                     txtpaginaweb.Text = recorre["pagina_web"].ToString();
-                    cboTipoProveedor.SelectedValue = recorre["tipo_proveedor"].ToString();
+                    cboTipoProveedor.SelectedIndex = Convert.ToInt32(recorre["tipo_proveedor"].ToString());
                     dtpFechaRegistro.Text = (recorre["fecha_registro"].ToString());
                     txtObservacion.Text = recorre["observacion"].ToString();
                     //Representante 
                     txtRepresentante.Text = recorre["representante"].ToString();
-                    cboTipoDocIdentEmp.SelectedValue = recorre["tipo_documento"].ToString();
+                    cboTipoDocIdentEmp.SelectedIndex = Convert.ToInt32(recorre["tipo_documento"].ToString());
                     txtNumDocIdentEmpl.Text = recorre["numb_documento"].ToString();
                     txtCargo.Text = recorre["cargo"].ToString();
                     txtEmpresa.Text = recorre["empresa"].ToString();
-                    cboTipoEmpresa.SelectedValue = recorre["tipo_empresa"].ToString();
-                    cboEstadoProveedor.SelectedValue = recorre["estado_proveedor"].ToString();
+                    cboTipoEmpresa.SelectedIndex = Convert.ToInt32(recorre["tipo_empresa"].ToString());
+                    cboEstadoProveedor.SelectedIndex = Convert.ToInt32(recorre["estado_proveedor"].ToString());
                     //Modulo Datos Certificacion
 
                     cboCertificadoBasc.SelectedValue = recorre["basc"].ToString();
@@ -384,51 +384,15 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             };
         }
 
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cboDis_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cboTipoDocIdentEmp_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-    
-        private void btnCargarDatos_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void cboProveedor_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnSeleccionar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cboTipoProveedor_SelectedIndexChanged(object sender, EventArgs e)
+       /* private void cboTipoProveedor_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cboTipoProveedor.SelectedValue.ToString() != null)
             {
                 string idTipoProveedor = cboTipoProveedor.SelectedValue.ToString();
-               // Llenadocbo.ObtenerTipoProveedor( idTipoProveedor);
+                Llenadocbo.ObtenerTipoProveedorLogistica(cboTipoProveedor, idTipoProveedor);
+
+
             }
-        }
+        }*/
     }
 }

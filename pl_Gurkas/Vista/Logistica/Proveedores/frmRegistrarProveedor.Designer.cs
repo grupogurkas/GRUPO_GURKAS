@@ -187,7 +187,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.groupBox1.TabIndex = 145;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Representante:";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // cboTipoEmpresa
             // 
@@ -243,7 +242,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.cboTipoDocIdentEmp.Name = "cboTipoDocIdentEmp";
             this.cboTipoDocIdentEmp.Size = new System.Drawing.Size(168, 21);
             this.cboTipoDocIdentEmp.TabIndex = 144;
-            this.cboTipoDocIdentEmp.SelectedIndexChanged += new System.EventHandler(this.cboTipoDocIdentEmp_SelectedIndexChanged);
             // 
             // label27
             // 
@@ -341,7 +339,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.cboTipoProveedor.Name = "cboTipoProveedor";
             this.cboTipoProveedor.Size = new System.Drawing.Size(235, 21);
             this.cboTipoProveedor.TabIndex = 140;
-            this.cboTipoProveedor.SelectedIndexChanged += new System.EventHandler(this.cboTipoProveedor_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -392,7 +389,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.groupBox2.TabIndex = 123;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos Certificacion";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // btnSeleccionar
             // 
@@ -406,7 +402,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.btnSeleccionar.Text = "Seleccionar";
             this.btnSeleccionar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSeleccionar.UseVisualStyleBackColor = false;
-            this.btnSeleccionar.Click += new System.EventHandler(this.btnSeleccionar_Click);
             // 
             // btnCargarDatos
             // 
@@ -420,7 +415,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.btnCargarDatos.Text = "Cargar";
             this.btnCargarDatos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCargarDatos.UseVisualStyleBackColor = false;
-            this.btnCargarDatos.Click += new System.EventHandler(this.btnCargarDatos_Click);
             // 
             // cboOtroCertificado
             // 
@@ -616,7 +610,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.cboDis.Name = "cboDis";
             this.cboDis.Size = new System.Drawing.Size(236, 21);
             this.cboDis.TabIndex = 81;
-            this.cboDis.SelectedIndexChanged += new System.EventHandler(this.cboDis_SelectedIndexChanged);
             // 
             // cboDepartamento
             // 
@@ -811,7 +804,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.cboProveedor.Name = "cboProveedor";
             this.cboProveedor.Size = new System.Drawing.Size(297, 21);
             this.cboProveedor.TabIndex = 63;
-            this.cboProveedor.SelectedIndexChanged += new System.EventHandler(this.cboProveedor_SelectedIndexChanged);
             // 
             // btnActualizar
             // 

@@ -1151,7 +1151,6 @@ namespace pl_Gurkas.Vista.RRHH
             this.cboempleadoActivo.Name = "cboempleadoActivo";
             this.cboempleadoActivo.Size = new System.Drawing.Size(350, 21);
             this.cboempleadoActivo.TabIndex = 59;
-            this.cboempleadoActivo.SelectedIndexChanged += new System.EventHandler(this.cboempleadoActivo_SelectedIndexChanged);
             // 
             // label42
             // 
