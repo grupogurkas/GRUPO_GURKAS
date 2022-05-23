@@ -392,6 +392,12 @@
     <Compile Include="Vista\Logistica\entrada\HistorialEntradaProducto.Designer.cs">
       <DependentUpon>HistorialEntradaProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Logistica\producto\frmGenerarCodigoBarra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Logistica\producto\frmGenerarCodigoBarra.Designer.cs">
+      <DependentUpon>frmGenerarCodigoBarra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Logistica\producto\frmListarProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1006,6 +1012,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\entrada\HistorialEntradaProducto.resx">
       <DependentUpon>HistorialEntradaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Logistica\producto\frmGenerarCodigoBarra.resx">
+      <DependentUpon>frmGenerarCodigoBarra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\producto\frmListarProductos.resx">
       <DependentUpon>frmListarProductos.cs</DependentUpon>
