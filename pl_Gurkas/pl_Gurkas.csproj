@@ -572,6 +572,12 @@
     <Compile Include="Vista\Planilla\CTS\frmGuardarCTS.Designer.cs">
       <DependentUpon>frmGuardarCTS.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Planilla\CTS\frmGuardarCTSexcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Planilla\CTS\frmGuardarCTSexcel.Designer.cs">
+      <DependentUpon>frmGuardarCTSexcel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Planilla\datosplame\xmlPlame.cs">
       <SubType>Form</SubType>
     </Compile>
