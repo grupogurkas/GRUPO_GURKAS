@@ -1106,6 +1106,9 @@
     <EmbeddedResource Include="Vista\Planilla\CTS\frmGuardarCTS.resx">
       <DependentUpon>frmGuardarCTS.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Planilla\CTS\frmGuardarCTSexcel.resx">
+      <DependentUpon>frmGuardarCTSexcel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\Planilla\datosplame\xmlPlame.resx">
       <DependentUpon>xmlPlame.cs</DependentUpon>
     </EmbeddedResource>

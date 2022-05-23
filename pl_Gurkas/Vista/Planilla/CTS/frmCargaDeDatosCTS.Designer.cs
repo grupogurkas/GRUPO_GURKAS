@@ -75,6 +75,7 @@ namespace pl_Gurkas.Vista.Planilla.CTS
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Name = "frmCargaDeDatosCTS";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCargaDeDatosCTS";
             this.Load += new System.EventHandler(this.frmCargaDeDatosCTS_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
