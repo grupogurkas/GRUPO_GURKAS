@@ -79,12 +79,32 @@ namespace pl_Gurkas.Vista.Planilla.CTS
                     {
                         comando.Parameters.Clear();
                         comando.CommandType = CommandType.StoredProcedure;
-                        comando.Parameters.AddWithValue("@fecha_ingreso", SqlDbType.VarChar).Value = row.Cells["FECHA_INGRESO_A_PLANILLA"].Value;
+                        comando.Parameters.AddWithValue("@fecha_ingreso", SqlDbType.VarChar).Value = row.Cells["FECHA_INGRESO_PLANILLA"].Value;
                         comando.Parameters.AddWithValue("@tiempo_computa", SqlDbType.Int).Value = row.Cells["TIEMPO_COMPUTABLE_POR_MESES"].Value;
                         comando.Parameters.AddWithValue("@por_dias", SqlDbType.Int).Value = row.Cells["POR_DIAS"].Value;
                         comando.Parameters.AddWithValue("@falta", SqlDbType.Int).Value = row.Cells["FALTAS_INJUSTI"].Value;
                         comando.Parameters.AddWithValue("@cod_empleado", SqlDbType.VarChar).Value = row.Cells["COD_TRABAJADR"].Value;
+                        comando.Parameters.AddWithValue("@grati_1_6", SqlDbType.VarChar).Value = row.Cells["DNI"].Value;
+                        comando.Parameters.AddWithValue("@grati_1_6", SqlDbType.VarChar).Value = row.Cells["NOMBRES"].Value;
+                        comando.Parameters.AddWithValue("@grati_1_6", SqlDbType.VarChar).Value = row.Cells["UNIDAD"].Value;
+                        comando.Parameters.AddWithValue("@grati_1_6", SqlDbType.VarChar).Value = row.Cells["CUENTA"].Value;
+                        comando.Parameters.AddWithValue("@grati_1_6", SqlDbType.Decimal).Value = row.Cells["SUELDO_BRUTO"].Value;
+                        comando.Parameters.AddWithValue("@grati_1_6", SqlDbType.Decimal).Value = row.Cells["PROM_REMUNERACION_BASICA"].Value;
+                        comando.Parameters.AddWithValue("@grati_1_6", SqlDbType.Decimal).Value = row.Cells["ASIG_FAM"].Value;
+                        comando.Parameters.AddWithValue("@grati_1_6", SqlDbType.Decimal).Value = row.Cells["PROM_H_E"].Value;
                         comando.Parameters.AddWithValue("@grati_1_6", SqlDbType.Decimal).Value = row.Cells["1_6_GRATI"].Value;
+                        comando.Parameters.AddWithValue("@grati_1_6", SqlDbType.Decimal).Value = row.Cells["TOTAL"].Value;
+                        comando.Parameters.AddWithValue("@grati_1_6", SqlDbType.Decimal).Value = row.Cells["CTS_ANUAL"].Value;
+                        comando.Parameters.AddWithValue("@grati_1_6", SqlDbType.Decimal).Value = row.Cells["CTS_MENSUAL"].Value;
+                        comando.Parameters.AddWithValue("@grati_1_6", SqlDbType.Decimal).Value = row.Cells["CTS_N_DE_MESES"].Value;
+                        comando.Parameters.AddWithValue("@grati_1_6", SqlDbType.Decimal).Value = row.Cells["CTS_N_DE_DIAS"].Value;
+                        comando.Parameters.AddWithValue("@grati_1_6", SqlDbType.Decimal).Value = row.Cells["CTS_X_N_FALTOS"].Value;
+                        comando.Parameters.AddWithValue("@grati_1_6", SqlDbType.Decimal).Value = row.Cells["TOTAL_CTS_MESES_CTS_DIAS"].Value;
+                        comando.Parameters.AddWithValue("@grati_1_6", SqlDbType.Decimal).Value = row.Cells["INTERESES"].Value;
+                        comando.Parameters.AddWithValue("@grati_1_6", SqlDbType.Decimal).Value = row.Cells["TOTAL_CTS"].Value;
+                        comando.Parameters.AddWithValue("@grati_1_6", SqlDbType.Decimal).Value = row.Cells["TOTAL_A_ABONAR"].Value;
+                        comando.Parameters.AddWithValue("@grati_1_6", SqlDbType.VarChar).Value = row.Cells["CUENTA_CTS"].Value;
+                        comando.Parameters.AddWithValue("@grati_1_6", SqlDbType.VarChar).Value = row.Cells["BANCO"].Value;
                         comando.ExecuteNonQuery();
                     }
                 }
