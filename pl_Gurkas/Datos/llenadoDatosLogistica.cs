@@ -253,7 +253,7 @@ namespace pl_Gurkas.Datos
             }
         }
 
-        public void ObtenerEstadoProducto(ComboBox cd)
+        public void ObtenerTipoUnidadProducto(ComboBox cd)
         {
             try
             {
@@ -264,6 +264,25 @@ namespace pl_Gurkas.Datos
                     cd.Items.Add(dr[0].ToString());
                 }
                 cd.Items.Insert(0, "--- Seleccione Una Unidad ---");
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede obtener la imformacion de tipo de proveedor \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void ObtenerEstadoProducto(ComboBox cd)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SELECT desp_estado_material FROM t_estado_material  ", conexiondbo.conexionBD());
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    cd.Items.Add(dr[0].ToString());
+                }
+                cd.Items.Insert(0, "-- Seleccione Un Estado --");
                 cd.SelectedIndex = 0;
             }
             catch (Exception ex)

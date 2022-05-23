@@ -31,6 +31,10 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         {
             this.dgvBuscarProveedor = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Rubro = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.txtcodproveedor = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,10 +42,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.cboProveedor = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.Rubro = new System.Windows.Forms.Label();
-            this.label = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBuscarProveedor)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -57,7 +57,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.dgvBuscarProveedor.Name = "dgvBuscarProveedor";
             this.dgvBuscarProveedor.ReadOnly = true;
             this.dgvBuscarProveedor.RowHeadersWidth = 51;
-            this.dgvBuscarProveedor.Size = new System.Drawing.Size(924, 322);
+            this.dgvBuscarProveedor.Size = new System.Drawing.Size(1083, 354);
             this.dgvBuscarProveedor.TabIndex = 10;
             // 
             // groupBox1
@@ -74,17 +74,52 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(764, 138);
+            this.groupBox1.Size = new System.Drawing.Size(917, 138);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Listado Proveedor";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(152, 104);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(226, 20);
+            this.textBox2.TabIndex = 102;
+            // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.Location = new System.Drawing.Point(6, 113);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(36, 15);
+            this.label.TabIndex = 101;
+            this.label.Text = "RUC:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(152, 78);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(226, 20);
+            this.textBox1.TabIndex = 100;
+            // 
+            // Rubro
+            // 
+            this.Rubro.AutoSize = true;
+            this.Rubro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rubro.Location = new System.Drawing.Point(6, 83);
+            this.Rubro.Name = "Rubro";
+            this.Rubro.Size = new System.Drawing.Size(94, 15);
+            this.Rubro.TabIndex = 99;
+            this.Rubro.Text = "Cod Proveedor :";
             // 
             // btnCerrar
             // 
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.Image = global::pl_Gurkas.Properties.Resources.cerrar_sesion_32;
             this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrar.Location = new System.Drawing.Point(622, 16);
+            this.btnCerrar.Location = new System.Drawing.Point(815, 19);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(96, 46);
             this.btnCerrar.TabIndex = 98;
@@ -95,7 +130,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // 
             // txtcodproveedor
             // 
-            this.txtcodproveedor.Location = new System.Drawing.Point(152, 52);
+            this.txtcodproveedor.Location = new System.Drawing.Point(152, 54);
             this.txtcodproveedor.Name = "txtcodproveedor";
             this.txtcodproveedor.Size = new System.Drawing.Size(226, 20);
             this.txtcodproveedor.TabIndex = 96;
@@ -104,7 +139,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 57);
+            this.label1.Location = new System.Drawing.Point(6, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 15);
             this.label1.TabIndex = 95;
@@ -115,7 +150,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(505, 16);
+            this.btnBuscar.Location = new System.Drawing.Point(698, 19);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(111, 46);
             this.btnBuscar.TabIndex = 66;
@@ -146,52 +181,18 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // pictureBox1
             // 
             this.pictureBox1.Image = global::pl_Gurkas.Properties.Resources.png;
-            this.pictureBox1.Location = new System.Drawing.Point(776, 20);
+            this.pictureBox1.Location = new System.Drawing.Point(935, 20);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(160, 130);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 63;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(152, 78);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(226, 20);
-            this.textBox1.TabIndex = 100;
-            // 
-            // Rubro
-            // 
-            this.Rubro.AutoSize = true;
-            this.Rubro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rubro.Location = new System.Drawing.Point(6, 83);
-            this.Rubro.Name = "Rubro";
-            this.Rubro.Size = new System.Drawing.Size(94, 15);
-            this.Rubro.TabIndex = 99;
-            this.Rubro.Text = "Cod Proveedor :";
-            // 
-            // label
-            // 
-            this.label.AutoSize = true;
-            this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label.Location = new System.Drawing.Point(6, 113);
-            this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(36, 15);
-            this.label.TabIndex = 101;
-            this.label.Text = "RUC:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(152, 104);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(226, 20);
-            this.textBox2.TabIndex = 102;
-            // 
             // frmBuscarProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(954, 490);
+            this.ClientSize = new System.Drawing.Size(1107, 522);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvBuscarProveedor);

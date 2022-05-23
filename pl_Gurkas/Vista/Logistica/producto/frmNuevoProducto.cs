@@ -23,6 +23,31 @@ namespace pl_Gurkas.Vista.Logistica.producto
             InitializeComponent();
         }
 
+        /*public void GenerarCodigo()
+        {
+            string resultado = "";
+            SqlCommand comando = new SqlCommand("select count(cod_proveedor) as 't' from t_proveedor ", conexion.conexionBD());
+
+            SqlDataReader recorre = comando.ExecuteReader();
+            while (recorre.Read())
+            {
+                resultado = recorre["t"].ToString();
+            }
+            int numero = Convert.ToInt32(resultado);
+            if (numero < 10)
+            {
+                txtcodproveedor.Text = "PROV000" + (numero + 1);
+            }
+            if (numero > 9 && numero < 100)
+            {
+                txtcodproveedor.Text = "PROV00" + (numero + 1);
+            }
+            if (numero > 99 && numero < 1000)
+            {
+                txtcodproveedor.Text = "PROV0" + (numero + 1);
+            }
+        }*/
+
         private void ValidarCamposVacios()
         {
             if(txtCodEquipo.Text.Length == 0)
@@ -85,7 +110,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
 
         private void frmNuevoProducto_Load(object sender, EventArgs e)
         {
+            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc);
+            txtCodSistema.Enabled = false;
+            //GenerarCodigo();
         }
 
         private void label11_Click(object sender, EventArgs e)
