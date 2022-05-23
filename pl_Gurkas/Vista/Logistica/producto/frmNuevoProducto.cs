@@ -14,7 +14,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
     
     public partial class frmNuevoProducto : Form
     {
-
+        Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
         Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.Actualizar actualizar = new Datos.Actualizar();
@@ -49,10 +49,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             {
                 MessageBox.Show("Debe Insertar un codigo", "Advertencia");
             }
-            if (cboCategoria.SelectedIndex == 0)
-            {
-                MessageBox.Show("Debe Insertar un codigo", "Advertencia");
-            }
+ 
             if (txtPrecioCompra.Text.Length == 0)
             {
                 MessageBox.Show("Debe Insertar un codigo", "Advertencia");
@@ -84,19 +81,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
             }
         }
 
+       
+
         private void frmNuevoProducto_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc);
         }
 
         private void label11_Click(object sender, EventArgs e)
@@ -119,9 +108,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
             string marca = txtMarca.Text;
             string descripcionProduct = txtDescripcion.Text;
             int stockIni = (int)Convert.ToInt64(txtStockInicial.Text);
-            int categoriaProduc = cboCategoria.SelectedIndex;
-            DateTime fechaCompra = dtpFechaCompra.Value;
-            DateTime fechaRegistro = dtpFechaRegistro.Value;
+            //int categoriaProduc = cboCategoria.SelectedIndex;
+            //DateTime fechaCompra = dtpFechaCompra.Value;
+            //DateTime fechaRegistro = dtpFechaRegistro.Value;
             decimal precioCompra = Convert.ToDecimal(txtPrecioCompra.Text);
             int estadoProduct = cboEstadoProduc.SelectedIndex;
             string descripcionProduc = txtDescripcion.Text;
@@ -178,9 +167,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
             string marca = txtMarca.Text;
             string descripcionProduct = txtDescripcion.Text;
             int stockIni = (int)Convert.ToInt64(txtStockInicial.Text);
-            int categoriaProduc = cboCategoria.SelectedIndex;
-            DateTime fechaCompra = dtpFechaCompra.Value;
-            DateTime fechaRegistro = dtpFechaRegistro.Value;
+            //int categoriaProduc = cboCategoria.SelectedIndex;
+            //DateTime fechaCompra = dtpFechaCompra.Value;
+            //DateTime fechaRegistro = dtpFechaRegistro.Value;
             decimal precioCompra = Convert.ToDecimal(txtPrecioCompra.Text);
             int estadoProduct = cboEstadoProduc.SelectedIndex;
             string descripcionProduc = txtDescripcion.Text;
@@ -250,6 +239,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 imgFinal.Save(Dialogoguardar.FileName, ImageFormat.Png);
             }
             imgFinal.Dispose();
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbpUniforme_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

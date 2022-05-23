@@ -402,6 +402,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.btnSeleccionar.Text = "Seleccionar";
             this.btnSeleccionar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSeleccionar.UseVisualStyleBackColor = false;
+            this.btnSeleccionar.Visible = false;
             // 
             // btnCargarDatos
             // 
