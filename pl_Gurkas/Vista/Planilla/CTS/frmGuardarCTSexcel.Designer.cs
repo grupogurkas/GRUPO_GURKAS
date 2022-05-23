@@ -52,6 +52,7 @@ namespace pl_Gurkas.Vista.Planilla.CTS
             this.button3.TabIndex = 33;
             this.button3.Text = "Subir Imformacion";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -63,6 +64,7 @@ namespace pl_Gurkas.Vista.Planilla.CTS
             this.button2.TabIndex = 32;
             this.button2.Text = "Seleccionar archivo";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // frmGuardarCTSexcel
             // 
@@ -75,6 +77,7 @@ namespace pl_Gurkas.Vista.Planilla.CTS
             this.Name = "frmGuardarCTSexcel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmGuardarCTSexcel";
+            this.Load += new System.EventHandler(this.frmGuardarCTSexcel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
