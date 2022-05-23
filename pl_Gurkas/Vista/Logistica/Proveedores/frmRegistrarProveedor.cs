@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace pl_Gurkas.Vista.Logistica.Proveedores
 {
@@ -384,6 +385,25 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 this.Close();
             };
         }
+
+        private void btnSeleccionar_Click(object sender, EventArgs e)
+        {
+
+            OpenFileDialog abrir = new OpenFileDialog();
+            if(abrir.ShowDialog() == DialogResult.OK)
+            {
+                //string direccion = abrir.FileName;
+                txtAbrir.Text = abrir.FileName;
+
+                //Process proceso = new Process();
+                //proceso.StartInfo.FileName = direccion;
+                //proceso.Start();
+
+            }
+
+
+        }
+      
 
         /* private void cboTipoProveedor_SelectedIndexChanged(object sender, EventArgs e)
          {

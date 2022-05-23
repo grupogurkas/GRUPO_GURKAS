@@ -102,9 +102,13 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
+            this.txtAbrir = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox3
@@ -146,7 +150,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.groupBox3.Controls.Add(this.label34);
             this.groupBox3.Location = new System.Drawing.Point(12, 83);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(922, 512);
+            this.groupBox3.Size = new System.Drawing.Size(1042, 512);
             this.groupBox3.TabIndex = 77;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Datos Proveedor";
@@ -156,7 +160,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.Image = global::pl_Gurkas.Properties.Resources.cerrar_sesion_32;
             this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrar.Location = new System.Drawing.Point(800, 441);
+            this.btnCerrar.Location = new System.Drawing.Point(800, 460);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(109, 46);
             this.btnCerrar.TabIndex = 99;
@@ -183,7 +187,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.groupBox1.Controls.Add(this.label33);
             this.groupBox1.Location = new System.Drawing.Point(416, 19);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(489, 219);
+            this.groupBox1.Size = new System.Drawing.Size(620, 219);
             this.groupBox1.TabIndex = 145;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Representante:";
@@ -369,6 +373,8 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label28);
+            this.groupBox2.Controls.Add(this.txtAbrir);
             this.groupBox2.Controls.Add(this.btnSeleccionar);
             this.groupBox2.Controls.Add(this.btnCargarDatos);
             this.groupBox2.Controls.Add(this.cboOtroCertificado);
@@ -385,7 +391,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.groupBox2.Controls.Add(this.label22);
             this.groupBox2.Location = new System.Drawing.Point(416, 258);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(493, 174);
+            this.groupBox2.Size = new System.Drawing.Size(620, 196);
             this.groupBox2.TabIndex = 123;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos Certificacion";
@@ -395,23 +401,23 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.btnSeleccionar.BackColor = System.Drawing.SystemColors.Control;
             this.btnSeleccionar.Image = ((System.Drawing.Image)(resources.GetObject("btnSeleccionar.Image")));
             this.btnSeleccionar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSeleccionar.Location = new System.Drawing.Point(383, 15);
+            this.btnSeleccionar.Location = new System.Drawing.Point(253, 15);
             this.btnSeleccionar.Name = "btnSeleccionar";
             this.btnSeleccionar.Size = new System.Drawing.Size(94, 35);
             this.btnSeleccionar.TabIndex = 152;
             this.btnSeleccionar.Text = "Seleccionar";
             this.btnSeleccionar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSeleccionar.UseVisualStyleBackColor = false;
-            this.btnSeleccionar.Visible = false;
+            this.btnSeleccionar.Click += new System.EventHandler(this.btnSeleccionar_Click);
             // 
             // btnCargarDatos
             // 
             this.btnCargarDatos.BackColor = System.Drawing.SystemColors.Control;
             this.btnCargarDatos.Image = ((System.Drawing.Image)(resources.GetObject("btnCargarDatos.Image")));
             this.btnCargarDatos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCargarDatos.Location = new System.Drawing.Point(404, 52);
+            this.btnCargarDatos.Location = new System.Drawing.Point(253, 52);
             this.btnCargarDatos.Name = "btnCargarDatos";
-            this.btnCargarDatos.Size = new System.Drawing.Size(73, 35);
+            this.btnCargarDatos.Size = new System.Drawing.Size(94, 35);
             this.btnCargarDatos.TabIndex = 146;
             this.btnCargarDatos.Text = "Cargar";
             this.btnCargarDatos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -423,7 +429,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.cboOtroCertificado.FormattingEnabled = true;
             this.cboOtroCertificado.Location = new System.Drawing.Point(144, 52);
             this.cboOtroCertificado.Name = "cboOtroCertificado";
-            this.cboOtroCertificado.Size = new System.Drawing.Size(143, 21);
+            this.cboOtroCertificado.Size = new System.Drawing.Size(103, 21);
             this.cboOtroCertificado.TabIndex = 151;
             // 
             // cboCertificadoBasc
@@ -432,7 +438,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.cboCertificadoBasc.FormattingEnabled = true;
             this.cboCertificadoBasc.Location = new System.Drawing.Point(144, 18);
             this.cboCertificadoBasc.Name = "cboCertificadoBasc";
-            this.cboCertificadoBasc.Size = new System.Drawing.Size(143, 21);
+            this.cboCertificadoBasc.Size = new System.Drawing.Size(103, 21);
             this.cboCertificadoBasc.TabIndex = 151;
             // 
             // label9
@@ -448,7 +454,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // dtpFechaCaducidad
             // 
             this.dtpFechaCaducidad.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaCaducidad.Location = new System.Drawing.Point(376, 138);
+            this.dtpFechaCaducidad.Location = new System.Drawing.Point(376, 156);
             this.dtpFechaCaducidad.Name = "dtpFechaCaducidad";
             this.dtpFechaCaducidad.Size = new System.Drawing.Size(101, 20);
             this.dtpFechaCaducidad.TabIndex = 120;
@@ -466,7 +472,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // dtpFechaInicio
             // 
             this.dtpFechaInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaInicio.Location = new System.Drawing.Point(143, 138);
+            this.dtpFechaInicio.Location = new System.Drawing.Point(143, 156);
             this.dtpFechaInicio.Name = "dtpFechaInicio";
             this.dtpFechaInicio.Size = new System.Drawing.Size(101, 20);
             this.dtpFechaInicio.TabIndex = 118;
@@ -475,7 +481,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(250, 138);
+            this.label23.Location = new System.Drawing.Point(250, 159);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(120, 15);
             this.label23.TabIndex = 119;
@@ -483,7 +489,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // 
             // txtNumCertificacion
             // 
-            this.txtNumCertificacion.Location = new System.Drawing.Point(144, 112);
+            this.txtNumCertificacion.Location = new System.Drawing.Point(144, 130);
             this.txtNumCertificacion.Name = "txtNumCertificacion";
             this.txtNumCertificacion.Size = new System.Drawing.Size(225, 20);
             this.txtNumCertificacion.TabIndex = 116;
@@ -491,7 +497,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(6, 89);
+            this.label12.Location = new System.Drawing.Point(6, 107);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(130, 13);
             this.label12.TabIndex = 113;
@@ -499,7 +505,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // 
             // txtAutenticidad
             // 
-            this.txtAutenticidad.Location = new System.Drawing.Point(144, 86);
+            this.txtAutenticidad.Location = new System.Drawing.Point(144, 104);
             this.txtAutenticidad.Name = "txtAutenticidad";
             this.txtAutenticidad.Size = new System.Drawing.Size(226, 20);
             this.txtAutenticidad.TabIndex = 115;
@@ -507,7 +513,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(6, 114);
+            this.label14.Location = new System.Drawing.Point(6, 132);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(108, 13);
             this.label14.TabIndex = 114;
@@ -517,7 +523,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(6, 138);
+            this.label22.Location = new System.Drawing.Point(6, 156);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(122, 15);
             this.label22.TabIndex = 117;
@@ -848,11 +854,42 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
+            // txtAbrir
+            // 
+            this.txtAbrir.AutoSize = true;
+            this.txtAbrir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAbrir.Location = new System.Drawing.Point(353, 25);
+            this.txtAbrir.Name = "txtAbrir";
+            this.txtAbrir.Size = new System.Drawing.Size(83, 15);
+            this.txtAbrir.TabIndex = 153;
+            this.txtAbrir.Text = "Documento....";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(353, 61);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(102, 15);
+            this.label28.TabIndex = 154;
+            this.label28.Text = "Certificado BASC:";
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::pl_Gurkas.Properties.Resources.png;
+            this.pictureBox16.Location = new System.Drawing.Point(939, 12);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(115, 79);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox16.TabIndex = 151;
+            this.pictureBox16.TabStop = false;
+            // 
             // frmRegistrarProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(944, 605);
+            this.ClientSize = new System.Drawing.Size(1066, 605);
+            this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.btnAgregar);
@@ -872,6 +909,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -951,5 +989,8 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         private System.Windows.Forms.ComboBox cboCertificadoBasc;
         private System.Windows.Forms.Button btnCargarDatos;
         private System.Windows.Forms.Button btnSeleccionar;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label txtAbrir;
+        private System.Windows.Forms.PictureBox pictureBox16;
     }
 }
