@@ -1,7 +1,7 @@
 ﻿
 namespace pl_Gurkas.Vista.Planilla.CTS
 {
-    partial class frmCargaDeDatosCTS
+    partial class frmGuardarCTSexcel
     {
         /// <summary>
         /// Required designer variable.
@@ -38,18 +38,18 @@ namespace pl_Gurkas.Vista.Planilla.CTS
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(8, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(984, 424);
-            this.dataGridView1.TabIndex = 30;
+            this.dataGridView1.TabIndex = 31;
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(695, 442);
+            this.button3.Location = new System.Drawing.Point(693, 442);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(299, 61);
-            this.button3.TabIndex = 29;
+            this.button3.TabIndex = 33;
             this.button3.Text = "Subir Imformacion";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -58,26 +58,26 @@ namespace pl_Gurkas.Vista.Planilla.CTS
             // 
             this.button2.Enabled = false;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(10, 442);
+            this.button2.Location = new System.Drawing.Point(8, 442);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(299, 61);
-            this.button2.TabIndex = 28;
+            this.button2.TabIndex = 32;
             this.button2.Text = "Seleccionar archivo";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // frmCargaDeDatosCTS
+            // frmGuardarCTSexcel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1004, 514);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Name = "frmCargaDeDatosCTS";
+            this.Controls.Add(this.dataGridView1);
+            this.Name = "frmGuardarCTSexcel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmCargaDeDatosCTS";
-            this.Load += new System.EventHandler(this.frmCargaDeDatosCTS_Load);
+            this.Text = "frmGuardarCTSexcel";
+            this.Load += new System.EventHandler(this.frmGuardarCTSexcel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
