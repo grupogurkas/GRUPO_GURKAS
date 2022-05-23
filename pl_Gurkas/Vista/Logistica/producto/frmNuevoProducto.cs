@@ -112,6 +112,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc);
+            Llenadocbo.ObtenerTallaPrendaProducto(cboTallaPrenda);
+            Llenadocbo.ObtenerTallaCalzadoProducto(cboTallaCalzado);
+            Llenadocbo.ObtenerTipoCalzadoProducto(cboTipoCalzado);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc1);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc2);
+            Llenadocbo.ObtenerTipoTelaProducto(cboTipoTela);
             txtCodSistema.Enabled = false;
             //GenerarCodigo();
         }
@@ -119,12 +125,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void label11_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
@@ -218,28 +219,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
 
         }
 
-        private void btnGenerar_Click(object sender, EventArgs e)
-        {
-            BarcodeLib.Barcode Codigo = new BarcodeLib.Barcode();
-            Codigo.IncludeLabel = true;
-            PanelCodigo.BackgroundImage = Codigo.Encode(BarcodeLib.TYPE.CODE128,txtCodigoBarra.Text,Color.Black,Color.White,350,100);
-            btnGuardarCodigo.Enabled = true;
-
-            
-        }
-
-        private void btnCargarDatos_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog abrirImagen = new OpenFileDialog();
-            //Abrimos el explorador de archivos de windows
-            if(abrirImagen.ShowDialog() == DialogResult.OK)
-            {
-                ptcImagen.ImageLocation = abrirImagen.FileName;
-                ptcImagen.SizeMode = PictureBoxSizeMode.StretchImage;
-            }
-
-        }
-
         private void tabPage1_Click_1(object sender, EventArgs e)
         {
             //GenerarCodigo();
@@ -248,20 +227,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void button18_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void btnGuardarCodigo_Click(object sender, EventArgs e)
-        {
-            Image imgFinal = (Image)PanelCodigo.BackgroundImage.Clone();
-            SaveFileDialog Dialogoguardar = new SaveFileDialog();
-            Dialogoguardar.AddExtension = true;
-            Dialogoguardar.Filter = "Image PNG (*.png) |* .png";
-            Dialogoguardar.ShowDialog();
-            if(!string.IsNullOrEmpty(Dialogoguardar.FileName))
-            {
-                imgFinal.Save(Dialogoguardar.FileName, ImageFormat.Png);
-            }
-            imgFinal.Dispose();
         }
 
         private void groupBox3_Enter(object sender, EventArgs e)
@@ -282,10 +247,27 @@ namespace pl_Gurkas.Vista.Logistica.producto
 
         private void textBox90_TextChanged(object sender, EventArgs e)
         {
+           
 
         }
 
         private void button56_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCargarDatos_Click_1(object sender, EventArgs e)
+        {
+            OpenFileDialog abrirImagen = new OpenFileDialog();
+            //Abrimos el explorador de archivos de windows
+            if (abrirImagen.ShowDialog() == DialogResult.OK)
+            {
+                ptcImagen.ImageLocation = abrirImagen.FileName;
+                ptcImagen.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+        }
+
+        private void cboTipoTela_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

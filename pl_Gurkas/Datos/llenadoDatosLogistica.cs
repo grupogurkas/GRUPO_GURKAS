@@ -290,7 +290,104 @@ namespace pl_Gurkas.Datos
                 MessageBox.Show("No se puede obtener la imformacion de tipo de proveedor \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        public void ObtenerTallaPrendaProducto(ComboBox cd)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SELECT DESP_TALLA_PRENDA FROM T_TALLA_PRENDA  ", conexiondbo.conexionBD());
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    cd.Items.Add(dr[0].ToString());
+                }
+                cd.Items.Insert(0, "-- Seleccione Una Talla --");
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede obtener la imformacion de tipo de proveedor \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void ObtenerTipoPrendaProducto(ComboBox cd)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SELECT desp_tipo_prenda FROM t_tipo_prenda  ", conexiondbo.conexionBD());
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    cd.Items.Add(dr[0].ToString());
+                }
+                cd.Items.Insert(0, "-- Seleccione Una Talla --");
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede obtener la imformacion de tipo de proveedor \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void ObtenerTallaCalzadoProducto(ComboBox cd)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SELECT desp_talla_calzado FROM t_talla_calzado  ", conexiondbo.conexionBD());
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    cd.Items.Add(dr[0].ToString());
+                }
+                cd.Items.Insert(0, "-- Seleccione Una Talla --");
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede obtener la imformacion de tipo de proveedor \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+        public void ObtenerTipoCalzadoProducto(ComboBox cd)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SELECT desp_tipo_calzado FROM t_tipo_zapato  ", conexiondbo.conexionBD());
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    cd.Items.Add(dr[0].ToString());
+                }
+                cd.Items.Insert(0, "-- Seleccione Un Tipo Calzado --");
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede obtener la imformacion de tipo de proveedor \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void ObtenerTipoTelaProducto(ComboBox cd)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SELECT desp_tipo_prenda FROM t_tipo_prenda  ", conexiondbo.conexionBD());
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    cd.Items.Add(dr[0].ToString());
+                }
+                cd.Items.Insert(0, "-- Seleccione Un Tipo Prenda --");
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede obtener la imformacion de tipo de proveedor \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
+
 }
 
 
