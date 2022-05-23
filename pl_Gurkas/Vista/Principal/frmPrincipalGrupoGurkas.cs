@@ -912,5 +912,11 @@ namespace pl_Gurkas.Vista.Principal
             controlvistaformulario.ControlVista(this, new Vista.Reclamo.frmReclamoEmpleado());
             modulo.auditoria("Operaciones", "Reclamo Agente", "", "");
         }
+
+        private void generarCodigoBarraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.producto.frmGenerarCodigoBarra());
+            modulo.auditoria("Logistica", "Almacen", "Producto en Almacen", "Generar Codigo Barra");
+        }
     }
 }

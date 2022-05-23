@@ -273,8 +273,19 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
 
         }
+    
 
-        private void button11_Click(object sender, EventArgs e)
+        private void button43_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox90_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button56_Click(object sender, EventArgs e)
         {
 
         }
