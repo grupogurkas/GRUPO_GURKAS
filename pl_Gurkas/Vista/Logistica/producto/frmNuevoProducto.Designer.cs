@@ -4406,6 +4406,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.button11.Text = "Agregar Producto";
             this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // tbpEpp
             // 

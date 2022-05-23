@@ -203,11 +203,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             string descripcionProduc = txtDescripcion.Text;
         }
 
-        private void cboEstadoProduc_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void label37_Click(object sender, EventArgs e)
         {
 
@@ -275,6 +270,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
         }
 
         private void tbpUniforme_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button11_Click(object sender, EventArgs e)
         {
 
         }
