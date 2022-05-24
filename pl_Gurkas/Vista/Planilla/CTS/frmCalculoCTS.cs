@@ -289,5 +289,20 @@ namespace pl_Gurkas.Vista.Planilla.CTS
         {
             Excel.ExportarDatosCTSExcel(dgvPlataformaPlanilla, progressBar1);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            const string titulo = "Eliminar";
+            const string mensaje = "Estas seguro que deseas Eliminar los Datos cargados de CTS";
+            var resutlado = MessageBox.Show(mensaje, titulo, MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (resutlado == DialogResult.Yes)
+            {
+                SqlCommand comando = conexion.conexionBD().CreateCommand();
+                comando.CommandType = CommandType.Text;
+                comando.CommandText = "sp_eliminar_cts_carga";
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Datos eliminados exitosamente", "Eliminado");
+            }
+        }
     }
 }

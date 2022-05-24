@@ -44,6 +44,7 @@ namespace pl_Gurkas.Vista.Planilla.CTS
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.btnverificar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlataformaPlanilla)).BeginInit();
@@ -98,7 +99,7 @@ namespace pl_Gurkas.Vista.Planilla.CTS
             this.btnExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcel.Image = global::pl_Gurkas.Properties.Resources.Excel_32;
             this.btnExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExcel.Location = new System.Drawing.Point(1229, 21);
+            this.btnExcel.Location = new System.Drawing.Point(1243, 22);
             this.btnExcel.Name = "btnExcel";
             this.btnExcel.Size = new System.Drawing.Size(41, 48);
             this.btnExcel.TabIndex = 71;
@@ -199,7 +200,7 @@ namespace pl_Gurkas.Vista.Planilla.CTS
             this.btnverificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnverificar.Image = global::pl_Gurkas.Properties.Resources.consultarPersonal_32;
             this.btnverificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnverificar.Location = new System.Drawing.Point(1073, 19);
+            this.btnverificar.Location = new System.Drawing.Point(1053, 19);
             this.btnverificar.Name = "btnverificar";
             this.btnverificar.Size = new System.Drawing.Size(119, 51);
             this.btnverificar.TabIndex = 75;
@@ -213,20 +214,34 @@ namespace pl_Gurkas.Vista.Planilla.CTS
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.Image = global::pl_Gurkas.Properties.Resources.save_32_png_32;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(938, 19);
+            this.btnGuardar.Location = new System.Drawing.Point(1183, 19);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(109, 52);
+            this.btnGuardar.Size = new System.Drawing.Size(44, 52);
             this.btnGuardar.TabIndex = 76;
-            this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Image = global::pl_Gurkas.Properties.Resources.personal_baja_32;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(928, 20);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(119, 51);
+            this.button3.TabIndex = 77;
+            this.button3.Text = "Eliminar";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // frmCalculoCTS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1361, 651);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnverificar);
             this.Controls.Add(this.progressBar1);
@@ -267,5 +282,6 @@ namespace pl_Gurkas.Vista.Planilla.CTS
         private System.Windows.Forms.Button btnverificar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
