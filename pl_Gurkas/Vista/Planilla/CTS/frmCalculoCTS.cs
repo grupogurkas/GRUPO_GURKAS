@@ -275,14 +275,14 @@ namespace pl_Gurkas.Vista.Planilla.CTS
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            verificar();
-            SqlCommand comando = conexion.conexionBD().CreateCommand();
-            comando.CommandType = CommandType.Text;
-            comando.CommandText = "sp_guardar_cts";
-            comando.ExecuteNonQuery();
-            MessageBox.Show("Datos registrado correptamente");
-            Vista.Planilla.CTS.frmGuardarCTS frmMesAnioCTS = new Vista.Planilla.CTS.frmGuardarCTS();
-            frmMesAnioCTS.ShowDialog();
+           // verificar();
+            //SqlCommand comando = conexion.conexionBD().CreateCommand();
+            //comando.CommandType = CommandType.Text;
+            //comando.CommandText = "sp_guardar_cts";
+            //comando.ExecuteNonQuery();
+            //MessageBox.Show("Datos registrado correptamente");
+            Vista.Planilla.CTS.frmGuardarCTSexcel frmMesAnioCTS = new Vista.Planilla.CTS.frmGuardarCTSexcel();
+            frmMesAnioCTS.Show();
         }
 
         private void btnExcel_Click(object sender, EventArgs e)

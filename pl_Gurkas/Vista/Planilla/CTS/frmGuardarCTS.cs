@@ -23,11 +23,12 @@ namespace pl_Gurkas.Vista.Planilla.CTS
         {
             int mes = Convert.ToInt32(txtmes.Text);
             int anio = Convert.ToInt32(txtanio.Text);
-
+            int empresa = Datos.EmpresaID._empresaid;
             SqlCommand cmd = new SqlCommand("sp_actualizar_fecha_cts ", conexion.conexionBD());
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@mes", SqlDbType.Int).Value = mes;
             cmd.Parameters.AddWithValue("@anio", SqlDbType.Int).Value = anio;
+            cmd.Parameters.AddWithValue("@id_empresa", SqlDbType.Int).Value = empresa;
             cmd.ExecuteNonQuery();
 
             MessageBox.Show("Datos Registrado correctamente", "Datos Registrado Correctamente");
