@@ -879,9 +879,9 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // pictureBox16
             // 
             this.pictureBox16.Image = global::pl_Gurkas.Properties.Resources.png;
-            this.pictureBox16.Location = new System.Drawing.Point(1183, 12);
+            this.pictureBox16.Location = new System.Drawing.Point(916, 77);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(89, 74);
+            this.pictureBox16.Size = new System.Drawing.Size(271, 208);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox16.TabIndex = 151;
             this.pictureBox16.TabStop = false;
