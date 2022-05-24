@@ -182,7 +182,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                                          codDist, direccion, Telefono, Celular, Correo, Correo2, fregistro,
                                          paginaweb, rubro, NombreContacto, Tipoproveedor, Representante, tipoDoc,
                                          numDoc, cargo, empresa, tipoEmpresa, Estado, basc, no_basc, autenticidad,
-                                         numero_certificado, fechaOtorgamiento, fechaCaducidad);
+                                         numero_certificado, fechaOtorgamiento, fechaCaducidad, pdfBasc);
                 MessageBox.Show("Datos actualizado correptamente", "Correpto");
 
                 LimpiarDatos.LimpiarGroupBox(groupBox1);
