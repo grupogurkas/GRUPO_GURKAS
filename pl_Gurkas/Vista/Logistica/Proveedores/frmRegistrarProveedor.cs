@@ -437,17 +437,5 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 MessageBox.Show("Seleccionar File");
             }
         }
-
-
-        /* private void cboTipoProveedor_SelectedIndexChanged(object sender, EventArgs e)
-         {
-             if (cboTipoProveedor.SelectedValue.ToString() != null)
-             {
-                 string idTipoProveedor = cboTipoProveedor.SelectedValue.ToString();
-                 Llenadocbo.ObtenerTipoProveedorLogistica(cboTipoProveedor, idTipoProveedor);
-
-
-             }
-         }*/
     }
 }
