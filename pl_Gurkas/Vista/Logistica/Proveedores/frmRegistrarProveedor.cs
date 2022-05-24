@@ -239,6 +239,9 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 DateTime fechaOtorgamiento = dtpFechaInicio.Value;
                 DateTime fechaCaducidad = dtpFechaCaducidad.Value;
 
+                string pdfFilePath = "c:/pdfdocuments/myfile.pdf";
+                byte[] pdfBasc = System.IO.File.ReadAllBytes(pdfFilePath);
+
                 registrar.registrarProveedor(codProveedor,  Nombre,  ruc,  observacion,  codDep,  codPro,
                                          codDist,  direccion,  Telefono,  Celular,  Correo,  Correo2,  fregistro,
                                          paginaweb,  rubro,  NombreContacto,  Tipoproveedor,  Representante,  tipoDoc,
