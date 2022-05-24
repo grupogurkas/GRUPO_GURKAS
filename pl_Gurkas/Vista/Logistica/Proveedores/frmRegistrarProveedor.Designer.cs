@@ -107,9 +107,9 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.axAcroPDF2 = new AxAcroPDFLib.AxAcroPDF();
             this.label28 = new System.Windows.Forms.Label();
             this.lblOtroCert = new System.Windows.Forms.Label();
+            this.axAcroPDF2 = new AxAcroPDFLib.AxAcroPDF();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -783,7 +783,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.axAcroPDF1.Location = new System.Drawing.Point(9, 48);
             this.axAcroPDF1.Name = "axAcroPDF1";
             this.axAcroPDF1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF1.OcxState")));
-            this.axAcroPDF1.Size = new System.Drawing.Size(206, 296);
+            this.axAcroPDF1.Size = new System.Drawing.Size(251, 381);
             this.axAcroPDF1.TabIndex = 154;
             // 
             // txtcodproveedor
@@ -882,9 +882,9 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // pictureBox16
             // 
             this.pictureBox16.Image = global::pl_Gurkas.Properties.Resources.png;
-            this.pictureBox16.Location = new System.Drawing.Point(916, 77);
+            this.pictureBox16.Location = new System.Drawing.Point(1011, 17);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(271, 208);
+            this.pictureBox16.Size = new System.Drawing.Size(213, 159);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox16.TabIndex = 151;
             this.pictureBox16.TabStop = false;
@@ -901,31 +901,22 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.label28);
             this.groupBox4.Controls.Add(this.axAcroPDF2);
+            this.groupBox4.Controls.Add(this.label28);
             this.groupBox4.Controls.Add(this.axAcroPDF1);
             this.groupBox4.Controls.Add(this.label6);
-            this.groupBox4.Location = new System.Drawing.Point(807, 287);
+            this.groupBox4.Location = new System.Drawing.Point(807, 194);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(448, 352);
+            this.groupBox4.Size = new System.Drawing.Size(542, 445);
             this.groupBox4.TabIndex = 157;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Certificados";
-            // 
-            // axAcroPDF2
-            // 
-            this.axAcroPDF2.Enabled = true;
-            this.axAcroPDF2.Location = new System.Drawing.Point(236, 48);
-            this.axAcroPDF2.Name = "axAcroPDF2";
-            this.axAcroPDF2.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF2.OcxState")));
-            this.axAcroPDF2.Size = new System.Drawing.Size(206, 296);
-            this.axAcroPDF2.TabIndex = 157;
             // 
             // label28
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(297, 24);
+            this.label28.Location = new System.Drawing.Point(366, 24);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(94, 15);
             this.label28.TabIndex = 158;
@@ -940,6 +931,15 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.lblOtroCert.Size = new System.Drawing.Size(52, 15);
             this.lblOtroCert.TabIndex = 156;
             this.lblOtroCert.Text = "OtroCert";
+            // 
+            // axAcroPDF2
+            // 
+            this.axAcroPDF2.Enabled = true;
+            this.axAcroPDF2.Location = new System.Drawing.Point(285, 48);
+            this.axAcroPDF2.Name = "axAcroPDF2";
+            this.axAcroPDF2.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF2.OcxState")));
+            this.axAcroPDF2.Size = new System.Drawing.Size(251, 381);
+            this.axAcroPDF2.TabIndex = 159;
             // 
             // frmRegistrarProveedor
             // 
@@ -1061,7 +1061,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label28;
-        private AxAcroPDFLib.AxAcroPDF axAcroPDF2;
         private System.Windows.Forms.Label lblOtroCert;
+        private AxAcroPDFLib.AxAcroPDF axAcroPDF2;
     }
 }
