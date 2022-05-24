@@ -182,12 +182,13 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 // string b1 = bytes.ToString();
                 string pdfFilePath_2 = lblRutaBasc.Text;
                 byte[] otro_certificado = System.IO.File.ReadAllBytes(pdfFilePath_2);
+                string file_certificado = Convert.ToBase64String(otro_certificado, 0, certificado_basc.Length);
 
                 actualizar.actualizarProveedor(cod_proveedor_cbo, Nombre, ruc, observacion, codDep, codPro,
                                          codDist, direccion, Telefono, Celular, Correo, Correo2, fregistro,
                                          paginaweb, rubro, NombreContacto, Tipoproveedor, Representante, tipoDoc,
                                          numDoc, cargo, empresa, tipoEmpresa, Estado, basc, no_basc, autenticidad,
-                                         numero_certificado, fechaOtorgamiento, fechaCaducidad, file, otro_certificado);
+                                         numero_certificado, fechaOtorgamiento, fechaCaducidad, file, file_certificado);
                 MessageBox.Show("Datos actualizado correptamente", "Correpto");
 
                 LimpiarDatos.LimpiarGroupBox(groupBox1);
