@@ -379,6 +379,13 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                     txtNumCertificacion.Text = recorre["numero_certificado"].ToString();
                     dtpFechaInicio.Text = (recorre["fecha_otorgamiento"].ToString());
                     dtpFechaCaducidad.Text = (recorre["fecha_caducidad"].ToString());
+                    string img1 = (recorre["certificado_basc"].ToString());
+                    byte[] bytes = Convert.FromBase64String(img1);
+
+                    /*
+                    OpenFileDialog open = new OpenFileDialog();
+                    axAcroPDF1.src = open.FileName;
+                    */
                 }
 
             }
