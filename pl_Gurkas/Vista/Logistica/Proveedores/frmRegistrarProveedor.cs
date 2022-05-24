@@ -389,17 +389,29 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         private void btnSeleccionar_Click(object sender, EventArgs e)
         {
 
-            OpenFileDialog abrir = new OpenFileDialog();
+
+            OpenFileDialog open = new OpenFileDialog();
+            open.InitialDirectory = "C:\\";
+            open.Filter = "Imagen Files (*.pdf)| *.pdf|ALL Files(*.*)|*.*";
+            open.FilterIndex = 1;
+
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                txtAbrir.Text = open.FileName;
+
+            }
+
+            /*OpenFileDialog abrir = new OpenFileDialog();
             if(abrir.ShowDialog() == DialogResult.OK)
             {
                 //string direccion = abrir.FileName;
-                txtAbrir.Text = abrir.FileName;
+                
 
                 //Process proceso = new Process();
                 //proceso.StartInfo.FileName = direccion;
                 //proceso.Start();xd
 
-            }
+            }*/
 
 
         }

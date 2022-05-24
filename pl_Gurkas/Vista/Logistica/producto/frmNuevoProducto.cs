@@ -75,7 +75,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 MessageBox.Show("Debe Insertar un codigo", "Advertencia");
             }
  
-            if (txtPrecioCompra.Text.Length == 0)
+            if (txtPrecioUnitario.Text.Length == 0)
             {
                 MessageBox.Show("Debe Insertar un codigo", "Advertencia");
             }
@@ -159,7 +159,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             //int categoriaProduc = cboCategoria.SelectedIndex;
             //DateTime fechaCompra = dtpFechaCompra.Value;
             //DateTime fechaRegistro = dtpFechaRegistro.Value;
-            decimal precioCompra = Convert.ToDecimal(txtPrecioCompra.Text);
+            decimal precioCompra = Convert.ToDecimal(txtPrecioUnitario.Text);
             int estadoProduct = cboEstadoProduc.SelectedIndex;
             string descripcionProduc = txtDescripcion.Text;
 
@@ -213,7 +213,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             //int categoriaProduc = cboCategoria.SelectedIndex;
             //DateTime fechaCompra = dtpFechaCompra.Value;
             //DateTime fechaRegistro = dtpFechaRegistro.Value;
-            decimal precioCompra = Convert.ToDecimal(txtPrecioCompra.Text);
+            decimal precioCompra = Convert.ToDecimal(txtPrecioUnitario.Text);
             int estadoProduct = cboEstadoProduc.SelectedIndex;
             string descripcionProduc = txtDescripcion.Text;
         }

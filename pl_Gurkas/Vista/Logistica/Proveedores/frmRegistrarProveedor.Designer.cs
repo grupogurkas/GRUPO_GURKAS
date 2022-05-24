@@ -54,7 +54,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.txtRubro = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label28 = new System.Windows.Forms.Label();
             this.txtAbrir = new System.Windows.Forms.Label();
             this.btnSeleccionar = new System.Windows.Forms.Button();
             this.btnCargarDatos = new System.Windows.Forms.Button();
@@ -373,7 +372,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label28);
             this.groupBox2.Controls.Add(this.txtAbrir);
             this.groupBox2.Controls.Add(this.btnSeleccionar);
             this.groupBox2.Controls.Add(this.btnCargarDatos);
@@ -396,25 +394,15 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos Certificacion";
             // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(353, 61);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(102, 15);
-            this.label28.TabIndex = 154;
-            this.label28.Text = "Certificado BASC:";
-            // 
             // txtAbrir
             // 
             this.txtAbrir.AutoSize = true;
             this.txtAbrir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAbrir.Location = new System.Drawing.Point(353, 25);
+            this.txtAbrir.Location = new System.Drawing.Point(398, 109);
             this.txtAbrir.Name = "txtAbrir";
-            this.txtAbrir.Size = new System.Drawing.Size(83, 15);
+            this.txtAbrir.Size = new System.Drawing.Size(57, 15);
             this.txtAbrir.TabIndex = 153;
-            this.txtAbrir.Text = "Documento....";
+            this.txtAbrir.Text = " dasdsad";
             // 
             // btnSeleccionar
             // 
@@ -989,7 +977,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         private System.Windows.Forms.ComboBox cboCertificadoBasc;
         private System.Windows.Forms.Button btnCargarDatos;
         private System.Windows.Forms.Button btnSeleccionar;
-        private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label txtAbrir;
         private System.Windows.Forms.PictureBox pictureBox16;
     }
