@@ -114,16 +114,12 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.lblRutaBasc);
-            this.groupBox3.Controls.Add(this.btnCerrar);
-            this.groupBox3.Controls.Add(this.groupBox1);
             this.groupBox3.Controls.Add(this.txtObservacion);
             this.groupBox3.Controls.Add(this.label13);
             this.groupBox3.Controls.Add(this.cboTipoProveedor);
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.txtRubro);
             this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.groupBox2);
             this.groupBox3.Controls.Add(this.txtCorreo2);
             this.groupBox3.Controls.Add(this.label24);
             this.groupBox3.Controls.Add(this.label8);
@@ -152,7 +148,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.groupBox3.Controls.Add(this.label34);
             this.groupBox3.Location = new System.Drawing.Point(12, 83);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1042, 512);
+            this.groupBox3.Size = new System.Drawing.Size(397, 512);
             this.groupBox3.TabIndex = 77;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Datos Proveedor";
@@ -162,7 +158,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.Image = global::pl_Gurkas.Properties.Resources.cerrar_sesion_32;
             this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrar.Location = new System.Drawing.Point(921, 460);
+            this.btnCerrar.Location = new System.Drawing.Point(850, 12);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(109, 46);
             this.btnCerrar.TabIndex = 99;
@@ -187,9 +183,9 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.groupBox1.Controls.Add(this.label26);
             this.groupBox1.Controls.Add(this.label30);
             this.groupBox1.Controls.Add(this.label33);
-            this.groupBox1.Location = new System.Drawing.Point(416, 19);
+            this.groupBox1.Location = new System.Drawing.Point(415, 83);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(620, 219);
+            this.groupBox1.Size = new System.Drawing.Size(386, 219);
             this.groupBox1.TabIndex = 145;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Representante:";
@@ -200,7 +196,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.cboTipoEmpresa.FormattingEnabled = true;
             this.cboTipoEmpresa.Location = new System.Drawing.Point(142, 163);
             this.cboTipoEmpresa.Name = "cboTipoEmpresa";
-            this.cboTipoEmpresa.Size = new System.Drawing.Size(143, 21);
+            this.cboTipoEmpresa.Size = new System.Drawing.Size(235, 21);
             this.cboTipoEmpresa.TabIndex = 150;
             // 
             // cboEstadoProveedor
@@ -209,7 +205,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.cboEstadoProveedor.FormattingEnabled = true;
             this.cboEstadoProveedor.Location = new System.Drawing.Point(142, 190);
             this.cboEstadoProveedor.Name = "cboEstadoProveedor";
-            this.cboEstadoProveedor.Size = new System.Drawing.Size(143, 21);
+            this.cboEstadoProveedor.Size = new System.Drawing.Size(235, 21);
             this.cboEstadoProveedor.TabIndex = 144;
             // 
             // txtEmpresa
@@ -223,7 +219,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // 
             this.txtCargo.Location = new System.Drawing.Point(142, 111);
             this.txtCargo.Name = "txtCargo";
-            this.txtCargo.Size = new System.Drawing.Size(168, 20);
+            this.txtCargo.Size = new System.Drawing.Size(235, 20);
             this.txtCargo.TabIndex = 147;
             // 
             // txtRepresentante
@@ -237,7 +233,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // 
             this.txtNumDocIdentEmpl.Location = new System.Drawing.Point(142, 85);
             this.txtNumDocIdentEmpl.Name = "txtNumDocIdentEmpl";
-            this.txtNumDocIdentEmpl.Size = new System.Drawing.Size(168, 20);
+            this.txtNumDocIdentEmpl.Size = new System.Drawing.Size(235, 20);
             this.txtNumDocIdentEmpl.TabIndex = 145;
             // 
             // cboTipoDocIdentEmp
@@ -246,7 +242,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.cboTipoDocIdentEmp.FormattingEnabled = true;
             this.cboTipoDocIdentEmp.Location = new System.Drawing.Point(142, 57);
             this.cboTipoDocIdentEmp.Name = "cboTipoDocIdentEmp";
-            this.cboTipoDocIdentEmp.Size = new System.Drawing.Size(168, 21);
+            this.cboTipoDocIdentEmp.Size = new System.Drawing.Size(235, 21);
             this.cboTipoDocIdentEmp.TabIndex = 144;
             // 
             // label27
@@ -375,6 +371,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.lblRutaBasc);
             this.groupBox2.Controls.Add(this.axAcroPDF1);
             this.groupBox2.Controls.Add(this.btnSeleccionar);
             this.groupBox2.Controls.Add(this.btnCargarDatos);
@@ -390,9 +387,9 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.groupBox2.Controls.Add(this.txtAutenticidad);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.label22);
-            this.groupBox2.Location = new System.Drawing.Point(416, 258);
+            this.groupBox2.Location = new System.Drawing.Point(415, 317);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(620, 196);
+            this.groupBox2.Size = new System.Drawing.Size(585, 278);
             this.groupBox2.TabIndex = 123;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos Certificacion";
@@ -803,7 +800,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(456, 12);
+            this.btnBuscar.Location = new System.Drawing.Point(395, 12);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(104, 46);
             this.btnBuscar.TabIndex = 63;
@@ -827,7 +824,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.Image = global::pl_Gurkas.Properties.Resources.empleado_update_32;
             this.btnActualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnActualizar.Location = new System.Drawing.Point(681, 12);
+            this.btnActualizar.Location = new System.Drawing.Point(620, 12);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(109, 46);
             this.btnActualizar.TabIndex = 79;
@@ -841,7 +838,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.Image = global::pl_Gurkas.Properties.Resources.nuevo_emplado_32;
             this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevo.Location = new System.Drawing.Point(796, 12);
+            this.btnNuevo.Location = new System.Drawing.Point(735, 12);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(109, 46);
             this.btnNuevo.TabIndex = 80;
@@ -855,7 +852,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.Image = global::pl_Gurkas.Properties.Resources.add_trabajador_32;
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.Location = new System.Drawing.Point(566, 12);
+            this.btnAgregar.Location = new System.Drawing.Point(505, 12);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(109, 46);
             this.btnAgregar.TabIndex = 78;
@@ -867,9 +864,9 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // pictureBox16
             // 
             this.pictureBox16.Image = global::pl_Gurkas.Properties.Resources.png;
-            this.pictureBox16.Location = new System.Drawing.Point(939, 12);
+            this.pictureBox16.Location = new System.Drawing.Point(965, 12);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(115, 79);
+            this.pictureBox16.Size = new System.Drawing.Size(89, 74);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox16.TabIndex = 151;
             this.pictureBox16.TabStop = false;
@@ -878,21 +875,24 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // 
             this.lblRutaBasc.AutoSize = true;
             this.lblRutaBasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRutaBasc.Location = new System.Drawing.Point(673, 475);
+            this.lblRutaBasc.Location = new System.Drawing.Point(28, 86);
             this.lblRutaBasc.Name = "lblRutaBasc";
-            this.lblRutaBasc.Size = new System.Drawing.Size(120, 15);
+            this.lblRutaBasc.Size = new System.Drawing.Size(67, 15);
             this.lblRutaBasc.TabIndex = 155;
-            this.lblRutaBasc.Text = "Fecha de Caducidad";
+            this.lblRutaBasc.Text = "Ruta BASC";
             // 
             // frmRegistrarProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1066, 605);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox16);
+            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.cboProveedor);
