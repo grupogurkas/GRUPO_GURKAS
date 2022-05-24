@@ -176,13 +176,14 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 DateTime fechaCaducidad = dtpFechaCaducidad.Value;
 
                 string pdfFilePath = lblRutaBasc.Text;
-                byte[] pdfBasc = System.IO.File.ReadAllBytes(pdfFilePath);
+                byte[] bytes = System.IO.File.ReadAllBytes(pdfFilePath);
+               // string b1 = bytes.ToString();
 
                 actualizar.actualizarProveedor(cod_proveedor_cbo, Nombre, ruc, observacion, codDep, codPro,
                                          codDist, direccion, Telefono, Celular, Correo, Correo2, fregistro,
                                          paginaweb, rubro, NombreContacto, Tipoproveedor, Representante, tipoDoc,
                                          numDoc, cargo, empresa, tipoEmpresa, Estado, basc, no_basc, autenticidad,
-                                         numero_certificado, fechaOtorgamiento, fechaCaducidad, pdfBasc);
+                                         numero_certificado, fechaOtorgamiento, fechaCaducidad, bytes);
                 MessageBox.Show("Datos actualizado correptamente", "Correpto");
 
                 LimpiarDatos.LimpiarGroupBox(groupBox1);
