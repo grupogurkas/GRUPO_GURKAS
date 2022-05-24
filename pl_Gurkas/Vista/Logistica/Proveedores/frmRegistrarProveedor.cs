@@ -248,7 +248,15 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 DateTime fechaOtorgamiento = dtpFechaInicio.Value;
                 DateTime fechaCaducidad = dtpFechaCaducidad.Value;
 
-             
+                string pdfFilePath = lblRutaBasc.Text;
+                byte[] certificado_basc = System.IO.File.ReadAllBytes(pdfFilePath);
+                string file = Convert.ToBase64String(certificado_basc, 0, certificado_basc.Length);
+
+                // string b1 = bytes.ToString();
+                string pdfFilePath_2 = lblRutaBasc.Text;
+                byte[] otro_certificado = System.IO.File.ReadAllBytes(pdfFilePath_2);
+                string file_certificado = Convert.ToBase64String(otro_certificado, 0, certificado_basc.Length);
+
 
                 registrar.registrarProveedor(codProveedor,  Nombre,  ruc,  observacion,  codDep,  codPro,
                                          codDist,  direccion,  Telefono,  Celular,  Correo,  Correo2,  fregistro,
@@ -309,8 +317,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         {
             ValidarCamposVacios();
             RegistrarProveedor();
-
-
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
