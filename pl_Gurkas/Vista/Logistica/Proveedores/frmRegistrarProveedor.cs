@@ -176,13 +176,19 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 DateTime fechaCaducidad = dtpFechaCaducidad.Value;
 
                 string pdfFilePath = lblRutaBasc.Text;
-                byte[] pdfBasc = System.IO.File.ReadAllBytes(pdfFilePath);
+                byte[] certificado_basc = System.IO.File.ReadAllBytes(pdfFilePath);
+                string file = Convert.ToBase64String(certificado_basc,0, certificado_basc.Length);
+
+                // string b1 = bytes.ToString();
+                string pdfFilePath_2 = lblRutaBasc.Text;
+                byte[] otro_certificado = System.IO.File.ReadAllBytes(pdfFilePath_2);
+                string file_certificado = Convert.ToBase64String(otro_certificado, 0, certificado_basc.Length);
 
                 actualizar.actualizarProveedor(cod_proveedor_cbo, Nombre, ruc, observacion, codDep, codPro,
                                          codDist, direccion, Telefono, Celular, Correo, Correo2, fregistro,
                                          paginaweb, rubro, NombreContacto, Tipoproveedor, Representante, tipoDoc,
                                          numDoc, cargo, empresa, tipoEmpresa, Estado, basc, no_basc, autenticidad,
-                                         numero_certificado, fechaOtorgamiento, fechaCaducidad, pdfBasc);
+                                         numero_certificado, fechaOtorgamiento, fechaCaducidad, file, file_certificado);
                 MessageBox.Show("Datos actualizado correptamente", "Correpto");
 
                 LimpiarDatos.LimpiarGroupBox(groupBox1);
@@ -242,7 +248,15 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 DateTime fechaOtorgamiento = dtpFechaInicio.Value;
                 DateTime fechaCaducidad = dtpFechaCaducidad.Value;
 
-             
+                string pdfFilePath = lblRutaBasc.Text;
+                byte[] certificado_basc = System.IO.File.ReadAllBytes(pdfFilePath);
+                string file = Convert.ToBase64String(certificado_basc, 0, certificado_basc.Length);
+
+                // string b1 = bytes.ToString();
+                string pdfFilePath_2 = lblRutaBasc.Text;
+                byte[] otro_certificado = System.IO.File.ReadAllBytes(pdfFilePath_2);
+                string file_certificado = Convert.ToBase64String(otro_certificado, 0, certificado_basc.Length);
+
 
                 registrar.registrarProveedor(codProveedor,  Nombre,  ruc,  observacion,  codDep,  codPro,
                                          codDist,  direccion,  Telefono,  Celular,  Correo,  Correo2,  fregistro,
@@ -277,6 +291,8 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             Llenadocbo.ObtenerEstadoCertifivadologistica(cboOtroCertificado);
             txtcodproveedor.Enabled = false;
             GenerarCodigo();
+            lblOtroCert.Visible = false;
+            lblRutaBasc.Visible = false;
         }
 
         private void cboDepartamento_SelectedIndexChanged(object sender, EventArgs e)
@@ -301,8 +317,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         {
             ValidarCamposVacios();
             RegistrarProveedor();
-
-
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -365,6 +379,13 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                     txtNumCertificacion.Text = recorre["numero_certificado"].ToString();
                     dtpFechaInicio.Text = (recorre["fecha_otorgamiento"].ToString());
                     dtpFechaCaducidad.Text = (recorre["fecha_caducidad"].ToString());
+                    string img1 = (recorre["certificado_basc"].ToString());
+                    byte[] bytes = Convert.FromBase64String(img1);
+
+                    /*
+                    OpenFileDialog open = new OpenFileDialog();
+                    axAcroPDF1.src = open.FileName;
+                    */
                 }
 
             }
@@ -407,30 +428,22 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             {
                 MessageBox.Show("Seleccionar File");
             }
-
-            /*OpenFileDialog abrir = new OpenFileDialog();
-            if(abrir.ShowDialog() == DialogResult.OK)
-            {
-                //string direccion = abrir.FileName;
-                //Process proceso = new Process();
-                //proceso.StartInfo.FileName = direccion;
-                //proceso.Start();xd
-
-            }*/
-
-
         }
-      
 
-        /* private void cboTipoProveedor_SelectedIndexChanged(object sender, EventArgs e)
-         {
-             if (cboTipoProveedor.SelectedValue.ToString() != null)
-             {
-                 string idTipoProveedor = cboTipoProveedor.SelectedValue.ToString();
-                 Llenadocbo.ObtenerTipoProveedorLogistica(cboTipoProveedor, idTipoProveedor);
+        private void btnCargarDatos_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
 
-
-             }
-         }*/
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                axAcroPDF2.src = open.FileName;
+                string direccion = open.FileName;
+                lblOtroCert.Text = direccion;
+            }
+            else
+            {
+                MessageBox.Show("Seleccionar File");
+            }
+        }
     }
 }
