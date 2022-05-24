@@ -109,6 +109,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.axAcroPDF2 = new AxAcroPDFLib.AxAcroPDF();
             this.label28 = new System.Windows.Forms.Label();
+            this.lblOtroCert = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -609,6 +610,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.lblOtroCert);
             this.groupBox2.Controls.Add(this.lblRutaBasc);
             this.groupBox2.Controls.Add(this.btnSeleccionar);
             this.groupBox2.Controls.Add(this.btnCargarDatos);
@@ -650,7 +652,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.btnSeleccionar.Name = "btnSeleccionar";
             this.btnSeleccionar.Size = new System.Drawing.Size(233, 35);
             this.btnSeleccionar.TabIndex = 152;
-            this.btnSeleccionar.Text = "Seleccionar";
+            this.btnSeleccionar.Text = "Seleccionar Certificado BASC";
             this.btnSeleccionar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSeleccionar.UseVisualStyleBackColor = false;
             this.btnSeleccionar.Click += new System.EventHandler(this.btnSeleccionar_Click);
@@ -664,9 +666,10 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.btnCargarDatos.Name = "btnCargarDatos";
             this.btnCargarDatos.Size = new System.Drawing.Size(233, 35);
             this.btnCargarDatos.TabIndex = 146;
-            this.btnCargarDatos.Text = "Cargar";
+            this.btnCargarDatos.Text = "Seleccionar Otro Certificado";
             this.btnCargarDatos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCargarDatos.UseVisualStyleBackColor = false;
+            this.btnCargarDatos.Click += new System.EventHandler(this.btnCargarDatos_Click);
             // 
             // cboOtroCertificado
             // 
@@ -928,6 +931,16 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.label28.TabIndex = 158;
             this.label28.Text = "Otro Certificado:";
             // 
+            // lblOtroCert
+            // 
+            this.lblOtroCert.AutoSize = true;
+            this.lblOtroCert.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOtroCert.Location = new System.Drawing.Point(17, 122);
+            this.lblOtroCert.Name = "lblOtroCert";
+            this.lblOtroCert.Size = new System.Drawing.Size(52, 15);
+            this.lblOtroCert.TabIndex = 156;
+            this.lblOtroCert.Text = "OtroCert";
+            // 
             // frmRegistrarProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1049,5 +1062,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label28;
         private AxAcroPDFLib.AxAcroPDF axAcroPDF2;
+        private System.Windows.Forms.Label lblOtroCert;
     }
 }

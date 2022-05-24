@@ -421,7 +421,23 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
 
 
         }
-      
+
+        private void btnCargarDatos_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                axAcroPDF2.src = open.FileName;
+                string direccion = open.FileName;
+                lblOtroCert.Text = direccion;
+            }
+            else
+            {
+                MessageBox.Show("Seleccionar File");
+            }
+        }
+
 
         /* private void cboTipoProveedor_SelectedIndexChanged(object sender, EventArgs e)
          {
