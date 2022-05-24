@@ -31,44 +31,12 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistrarProveedor));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btnCerrar = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cboTipoEmpresa = new System.Windows.Forms.ComboBox();
-            this.cboEstadoProveedor = new System.Windows.Forms.ComboBox();
-            this.txtEmpresa = new System.Windows.Forms.TextBox();
-            this.txtCargo = new System.Windows.Forms.TextBox();
-            this.txtRepresentante = new System.Windows.Forms.TextBox();
-            this.txtNumDocIdentEmpl = new System.Windows.Forms.TextBox();
-            this.cboTipoDocIdentEmp = new System.Windows.Forms.ComboBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
             this.txtObservacion = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.cboTipoProveedor = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtRubro = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.axAcroPDF1 = new AxAcroPDFLib.AxAcroPDF();
-            this.btnSeleccionar = new System.Windows.Forms.Button();
-            this.btnCargarDatos = new System.Windows.Forms.Button();
-            this.cboOtroCertificado = new System.Windows.Forms.ComboBox();
-            this.cboCertificadoBasc = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.dtpFechaCaducidad = new System.Windows.Forms.DateTimePicker();
-            this.label10 = new System.Windows.Forms.Label();
-            this.dtpFechaInicio = new System.Windows.Forms.DateTimePicker();
-            this.label23 = new System.Windows.Forms.Label();
-            this.txtNumCertificacion = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txtAutenticidad = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
             this.txtCorreo2 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -95,6 +63,39 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.txtruc = new System.Windows.Forms.TextBox();
             this.txtProveedor = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cboTipoEmpresa = new System.Windows.Forms.ComboBox();
+            this.cboEstadoProveedor = new System.Windows.Forms.ComboBox();
+            this.txtEmpresa = new System.Windows.Forms.TextBox();
+            this.txtCargo = new System.Windows.Forms.TextBox();
+            this.txtRepresentante = new System.Windows.Forms.TextBox();
+            this.txtNumDocIdentEmpl = new System.Windows.Forms.TextBox();
+            this.cboTipoDocIdentEmp = new System.Windows.Forms.ComboBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblRutaBasc = new System.Windows.Forms.Label();
+            this.btnSeleccionar = new System.Windows.Forms.Button();
+            this.btnCargarDatos = new System.Windows.Forms.Button();
+            this.cboOtroCertificado = new System.Windows.Forms.ComboBox();
+            this.cboCertificadoBasc = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.dtpFechaCaducidad = new System.Windows.Forms.DateTimePicker();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dtpFechaInicio = new System.Windows.Forms.DateTimePicker();
+            this.label23 = new System.Windows.Forms.Label();
+            this.txtNumCertificacion = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtAutenticidad = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.axAcroPDF1 = new AxAcroPDFLib.AxAcroPDF();
             this.txtcodproveedor = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -104,7 +105,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.lblRutaBasc = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -148,179 +149,17 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.groupBox3.Controls.Add(this.label34);
             this.groupBox3.Location = new System.Drawing.Point(12, 83);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(397, 512);
+            this.groupBox3.Size = new System.Drawing.Size(397, 556);
             this.groupBox3.TabIndex = 77;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Datos Proveedor";
             // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrar.Image = global::pl_Gurkas.Properties.Resources.cerrar_sesion_32;
-            this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrar.Location = new System.Drawing.Point(850, 12);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(109, 46);
-            this.btnCerrar.TabIndex = 99;
-            this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.cboTipoEmpresa);
-            this.groupBox1.Controls.Add(this.cboEstadoProveedor);
-            this.groupBox1.Controls.Add(this.txtEmpresa);
-            this.groupBox1.Controls.Add(this.txtCargo);
-            this.groupBox1.Controls.Add(this.txtRepresentante);
-            this.groupBox1.Controls.Add(this.txtNumDocIdentEmpl);
-            this.groupBox1.Controls.Add(this.cboTipoDocIdentEmp);
-            this.groupBox1.Controls.Add(this.label27);
-            this.groupBox1.Controls.Add(this.label35);
-            this.groupBox1.Controls.Add(this.label25);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label26);
-            this.groupBox1.Controls.Add(this.label30);
-            this.groupBox1.Controls.Add(this.label33);
-            this.groupBox1.Location = new System.Drawing.Point(415, 83);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(386, 219);
-            this.groupBox1.TabIndex = 145;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Datos Representante:";
-            // 
-            // cboTipoEmpresa
-            // 
-            this.cboTipoEmpresa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboTipoEmpresa.FormattingEnabled = true;
-            this.cboTipoEmpresa.Location = new System.Drawing.Point(142, 163);
-            this.cboTipoEmpresa.Name = "cboTipoEmpresa";
-            this.cboTipoEmpresa.Size = new System.Drawing.Size(235, 21);
-            this.cboTipoEmpresa.TabIndex = 150;
-            // 
-            // cboEstadoProveedor
-            // 
-            this.cboEstadoProveedor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboEstadoProveedor.FormattingEnabled = true;
-            this.cboEstadoProveedor.Location = new System.Drawing.Point(142, 190);
-            this.cboEstadoProveedor.Name = "cboEstadoProveedor";
-            this.cboEstadoProveedor.Size = new System.Drawing.Size(235, 21);
-            this.cboEstadoProveedor.TabIndex = 144;
-            // 
-            // txtEmpresa
-            // 
-            this.txtEmpresa.Location = new System.Drawing.Point(142, 137);
-            this.txtEmpresa.Name = "txtEmpresa";
-            this.txtEmpresa.Size = new System.Drawing.Size(235, 20);
-            this.txtEmpresa.TabIndex = 148;
-            // 
-            // txtCargo
-            // 
-            this.txtCargo.Location = new System.Drawing.Point(142, 111);
-            this.txtCargo.Name = "txtCargo";
-            this.txtCargo.Size = new System.Drawing.Size(235, 20);
-            this.txtCargo.TabIndex = 147;
-            // 
-            // txtRepresentante
-            // 
-            this.txtRepresentante.Location = new System.Drawing.Point(142, 27);
-            this.txtRepresentante.Name = "txtRepresentante";
-            this.txtRepresentante.Size = new System.Drawing.Size(235, 20);
-            this.txtRepresentante.TabIndex = 146;
-            // 
-            // txtNumDocIdentEmpl
-            // 
-            this.txtNumDocIdentEmpl.Location = new System.Drawing.Point(142, 85);
-            this.txtNumDocIdentEmpl.Name = "txtNumDocIdentEmpl";
-            this.txtNumDocIdentEmpl.Size = new System.Drawing.Size(235, 20);
-            this.txtNumDocIdentEmpl.TabIndex = 145;
-            // 
-            // cboTipoDocIdentEmp
-            // 
-            this.cboTipoDocIdentEmp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboTipoDocIdentEmp.FormattingEnabled = true;
-            this.cboTipoDocIdentEmp.Location = new System.Drawing.Point(142, 57);
-            this.cboTipoDocIdentEmp.Name = "cboTipoDocIdentEmp";
-            this.cboTipoDocIdentEmp.Size = new System.Drawing.Size(235, 21);
-            this.cboTipoDocIdentEmp.TabIndex = 144;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(11, 28);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(125, 15);
-            this.label27.TabIndex = 129;
-            this.label27.Text = "Representante Legal:";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(18, 194);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(51, 15);
-            this.label35.TabIndex = 136;
-            this.label35.Text = "Estado :";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(11, 54);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(101, 15);
-            this.label25.TabIndex = 124;
-            this.label25.Text = "Tipo Doc. Ident.  :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(14, 164);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 15);
-            this.label4.TabIndex = 143;
-            this.label4.Text = "Tipo Empresa:";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(11, 85);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(104, 15);
-            this.label26.TabIndex = 126;
-            this.label26.Text = "Num. Doc. Ident. :";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(14, 111);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(43, 15);
-            this.label30.TabIndex = 133;
-            this.label30.Text = "Cargo:";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(14, 138);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(60, 15);
-            this.label33.TabIndex = 135;
-            this.label33.Text = "Empresa:";
-            // 
             // txtObservacion
             // 
-            this.txtObservacion.Location = new System.Drawing.Point(148, 441);
+            this.txtObservacion.Location = new System.Drawing.Point(17, 460);
             this.txtObservacion.Multiline = true;
             this.txtObservacion.Name = "txtObservacion";
-            this.txtObservacion.Size = new System.Drawing.Size(235, 65);
+            this.txtObservacion.Size = new System.Drawing.Size(367, 90);
             this.txtObservacion.TabIndex = 95;
             // 
             // label13
@@ -368,173 +207,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.label5.Size = new System.Drawing.Size(50, 15);
             this.label5.TabIndex = 139;
             this.label5.Text = "Rubro : ";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.lblRutaBasc);
-            this.groupBox2.Controls.Add(this.axAcroPDF1);
-            this.groupBox2.Controls.Add(this.btnSeleccionar);
-            this.groupBox2.Controls.Add(this.btnCargarDatos);
-            this.groupBox2.Controls.Add(this.cboOtroCertificado);
-            this.groupBox2.Controls.Add(this.cboCertificadoBasc);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.dtpFechaCaducidad);
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.dtpFechaInicio);
-            this.groupBox2.Controls.Add(this.label23);
-            this.groupBox2.Controls.Add(this.txtNumCertificacion);
-            this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.txtAutenticidad);
-            this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.label22);
-            this.groupBox2.Location = new System.Drawing.Point(415, 317);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(585, 278);
-            this.groupBox2.TabIndex = 123;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Datos Certificacion";
-            // 
-            // axAcroPDF1
-            // 
-            this.axAcroPDF1.Enabled = true;
-            this.axAcroPDF1.Location = new System.Drawing.Point(376, 15);
-            this.axAcroPDF1.Name = "axAcroPDF1";
-            this.axAcroPDF1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF1.OcxState")));
-            this.axAcroPDF1.Size = new System.Drawing.Size(192, 192);
-            this.axAcroPDF1.TabIndex = 154;
-            // 
-            // btnSeleccionar
-            // 
-            this.btnSeleccionar.BackColor = System.Drawing.SystemColors.Control;
-            this.btnSeleccionar.Image = ((System.Drawing.Image)(resources.GetObject("btnSeleccionar.Image")));
-            this.btnSeleccionar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSeleccionar.Location = new System.Drawing.Point(253, 11);
-            this.btnSeleccionar.Name = "btnSeleccionar";
-            this.btnSeleccionar.Size = new System.Drawing.Size(94, 35);
-            this.btnSeleccionar.TabIndex = 152;
-            this.btnSeleccionar.Text = "Seleccionar";
-            this.btnSeleccionar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSeleccionar.UseVisualStyleBackColor = false;
-            this.btnSeleccionar.Click += new System.EventHandler(this.btnSeleccionar_Click);
-            // 
-            // btnCargarDatos
-            // 
-            this.btnCargarDatos.BackColor = System.Drawing.SystemColors.Control;
-            this.btnCargarDatos.Image = ((System.Drawing.Image)(resources.GetObject("btnCargarDatos.Image")));
-            this.btnCargarDatos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCargarDatos.Location = new System.Drawing.Point(253, 52);
-            this.btnCargarDatos.Name = "btnCargarDatos";
-            this.btnCargarDatos.Size = new System.Drawing.Size(94, 35);
-            this.btnCargarDatos.TabIndex = 146;
-            this.btnCargarDatos.Text = "Cargar";
-            this.btnCargarDatos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCargarDatos.UseVisualStyleBackColor = false;
-            // 
-            // cboOtroCertificado
-            // 
-            this.cboOtroCertificado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboOtroCertificado.FormattingEnabled = true;
-            this.cboOtroCertificado.Location = new System.Drawing.Point(144, 52);
-            this.cboOtroCertificado.Name = "cboOtroCertificado";
-            this.cboOtroCertificado.Size = new System.Drawing.Size(103, 21);
-            this.cboOtroCertificado.TabIndex = 151;
-            // 
-            // cboCertificadoBasc
-            // 
-            this.cboCertificadoBasc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboCertificadoBasc.FormattingEnabled = true;
-            this.cboCertificadoBasc.Location = new System.Drawing.Point(144, 18);
-            this.cboCertificadoBasc.Name = "cboCertificadoBasc";
-            this.cboCertificadoBasc.Size = new System.Drawing.Size(103, 21);
-            this.cboCertificadoBasc.TabIndex = 151;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(6, 24);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(102, 15);
-            this.label9.TabIndex = 111;
-            this.label9.Text = "Certificado BASC:";
-            // 
-            // dtpFechaCaducidad
-            // 
-            this.dtpFechaCaducidad.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaCaducidad.Location = new System.Drawing.Point(376, 156);
-            this.dtpFechaCaducidad.Name = "dtpFechaCaducidad";
-            this.dtpFechaCaducidad.Size = new System.Drawing.Size(101, 20);
-            this.dtpFechaCaducidad.TabIndex = 120;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(6, 56);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(94, 15);
-            this.label10.TabIndex = 112;
-            this.label10.Text = "Otro Certificado:";
-            // 
-            // dtpFechaInicio
-            // 
-            this.dtpFechaInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaInicio.Location = new System.Drawing.Point(143, 156);
-            this.dtpFechaInicio.Name = "dtpFechaInicio";
-            this.dtpFechaInicio.Size = new System.Drawing.Size(101, 20);
-            this.dtpFechaInicio.TabIndex = 118;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(250, 159);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(120, 15);
-            this.label23.TabIndex = 119;
-            this.label23.Text = "Fecha de Caducidad";
-            // 
-            // txtNumCertificacion
-            // 
-            this.txtNumCertificacion.Location = new System.Drawing.Point(144, 130);
-            this.txtNumCertificacion.Name = "txtNumCertificacion";
-            this.txtNumCertificacion.Size = new System.Drawing.Size(225, 20);
-            this.txtNumCertificacion.TabIndex = 116;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(6, 107);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(130, 13);
-            this.label12.TabIndex = 113;
-            this.label12.Text = "Autenticidad Certificacion:";
-            // 
-            // txtAutenticidad
-            // 
-            this.txtAutenticidad.Location = new System.Drawing.Point(144, 104);
-            this.txtAutenticidad.Name = "txtAutenticidad";
-            this.txtAutenticidad.Size = new System.Drawing.Size(226, 20);
-            this.txtAutenticidad.TabIndex = 115;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(6, 132);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(108, 13);
-            this.label14.TabIndex = 114;
-            this.label14.Text = "Numero Certificacion:";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(6, 156);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(122, 15);
-            this.label22.TabIndex = 117;
-            this.label22.Text = "Fecha Otorgamiento:";
             // 
             // txtCorreo2
             // 
@@ -768,6 +440,344 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.label34.TabIndex = 56;
             this.label34.Text = "RUC :";
             // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar.Image = global::pl_Gurkas.Properties.Resources.cerrar_sesion_32;
+            this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCerrar.Location = new System.Drawing.Point(850, 12);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(109, 46);
+            this.btnCerrar.TabIndex = 99;
+            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.cboTipoEmpresa);
+            this.groupBox1.Controls.Add(this.cboEstadoProveedor);
+            this.groupBox1.Controls.Add(this.txtEmpresa);
+            this.groupBox1.Controls.Add(this.txtCargo);
+            this.groupBox1.Controls.Add(this.txtRepresentante);
+            this.groupBox1.Controls.Add(this.txtNumDocIdentEmpl);
+            this.groupBox1.Controls.Add(this.cboTipoDocIdentEmp);
+            this.groupBox1.Controls.Add(this.label27);
+            this.groupBox1.Controls.Add(this.label35);
+            this.groupBox1.Controls.Add(this.label25);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label26);
+            this.groupBox1.Controls.Add(this.label30);
+            this.groupBox1.Controls.Add(this.label33);
+            this.groupBox1.Location = new System.Drawing.Point(415, 83);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(386, 219);
+            this.groupBox1.TabIndex = 145;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Datos Representante:";
+            // 
+            // cboTipoEmpresa
+            // 
+            this.cboTipoEmpresa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTipoEmpresa.FormattingEnabled = true;
+            this.cboTipoEmpresa.Location = new System.Drawing.Point(142, 163);
+            this.cboTipoEmpresa.Name = "cboTipoEmpresa";
+            this.cboTipoEmpresa.Size = new System.Drawing.Size(235, 21);
+            this.cboTipoEmpresa.TabIndex = 150;
+            // 
+            // cboEstadoProveedor
+            // 
+            this.cboEstadoProveedor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEstadoProveedor.FormattingEnabled = true;
+            this.cboEstadoProveedor.Location = new System.Drawing.Point(142, 190);
+            this.cboEstadoProveedor.Name = "cboEstadoProveedor";
+            this.cboEstadoProveedor.Size = new System.Drawing.Size(235, 21);
+            this.cboEstadoProveedor.TabIndex = 144;
+            // 
+            // txtEmpresa
+            // 
+            this.txtEmpresa.Location = new System.Drawing.Point(142, 137);
+            this.txtEmpresa.Name = "txtEmpresa";
+            this.txtEmpresa.Size = new System.Drawing.Size(235, 20);
+            this.txtEmpresa.TabIndex = 148;
+            // 
+            // txtCargo
+            // 
+            this.txtCargo.Location = new System.Drawing.Point(142, 111);
+            this.txtCargo.Name = "txtCargo";
+            this.txtCargo.Size = new System.Drawing.Size(235, 20);
+            this.txtCargo.TabIndex = 147;
+            // 
+            // txtRepresentante
+            // 
+            this.txtRepresentante.Location = new System.Drawing.Point(142, 27);
+            this.txtRepresentante.Name = "txtRepresentante";
+            this.txtRepresentante.Size = new System.Drawing.Size(235, 20);
+            this.txtRepresentante.TabIndex = 146;
+            // 
+            // txtNumDocIdentEmpl
+            // 
+            this.txtNumDocIdentEmpl.Location = new System.Drawing.Point(142, 85);
+            this.txtNumDocIdentEmpl.Name = "txtNumDocIdentEmpl";
+            this.txtNumDocIdentEmpl.Size = new System.Drawing.Size(235, 20);
+            this.txtNumDocIdentEmpl.TabIndex = 145;
+            // 
+            // cboTipoDocIdentEmp
+            // 
+            this.cboTipoDocIdentEmp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTipoDocIdentEmp.FormattingEnabled = true;
+            this.cboTipoDocIdentEmp.Location = new System.Drawing.Point(142, 57);
+            this.cboTipoDocIdentEmp.Name = "cboTipoDocIdentEmp";
+            this.cboTipoDocIdentEmp.Size = new System.Drawing.Size(235, 21);
+            this.cboTipoDocIdentEmp.TabIndex = 144;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(11, 28);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(125, 15);
+            this.label27.TabIndex = 129;
+            this.label27.Text = "Representante Legal:";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(18, 194);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(51, 15);
+            this.label35.TabIndex = 136;
+            this.label35.Text = "Estado :";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(11, 54);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(101, 15);
+            this.label25.TabIndex = 124;
+            this.label25.Text = "Tipo Doc. Ident.  :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(14, 164);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(87, 15);
+            this.label4.TabIndex = 143;
+            this.label4.Text = "Tipo Empresa:";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(11, 85);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(104, 15);
+            this.label26.TabIndex = 126;
+            this.label26.Text = "Num. Doc. Ident. :";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(14, 111);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(43, 15);
+            this.label30.TabIndex = 133;
+            this.label30.Text = "Cargo:";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(14, 138);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(60, 15);
+            this.label33.TabIndex = 135;
+            this.label33.Text = "Empresa:";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.lblRutaBasc);
+            this.groupBox2.Controls.Add(this.btnSeleccionar);
+            this.groupBox2.Controls.Add(this.btnCargarDatos);
+            this.groupBox2.Controls.Add(this.cboOtroCertificado);
+            this.groupBox2.Controls.Add(this.cboCertificadoBasc);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.dtpFechaCaducidad);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.dtpFechaInicio);
+            this.groupBox2.Controls.Add(this.label23);
+            this.groupBox2.Controls.Add(this.txtNumCertificacion);
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Controls.Add(this.txtAutenticidad);
+            this.groupBox2.Controls.Add(this.label14);
+            this.groupBox2.Controls.Add(this.label22);
+            this.groupBox2.Location = new System.Drawing.Point(415, 311);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(400, 328);
+            this.groupBox2.TabIndex = 123;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Datos Certificacion";
+            // 
+            // lblRutaBasc
+            // 
+            this.lblRutaBasc.AutoSize = true;
+            this.lblRutaBasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRutaBasc.Location = new System.Drawing.Point(14, 55);
+            this.lblRutaBasc.Name = "lblRutaBasc";
+            this.lblRutaBasc.Size = new System.Drawing.Size(67, 15);
+            this.lblRutaBasc.TabIndex = 155;
+            this.lblRutaBasc.Text = "Ruta BASC";
+            // 
+            // btnSeleccionar
+            // 
+            this.btnSeleccionar.BackColor = System.Drawing.SystemColors.Control;
+            this.btnSeleccionar.Image = ((System.Drawing.Image)(resources.GetObject("btnSeleccionar.Image")));
+            this.btnSeleccionar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSeleccionar.Location = new System.Drawing.Point(144, 46);
+            this.btnSeleccionar.Name = "btnSeleccionar";
+            this.btnSeleccionar.Size = new System.Drawing.Size(233, 35);
+            this.btnSeleccionar.TabIndex = 152;
+            this.btnSeleccionar.Text = "Seleccionar";
+            this.btnSeleccionar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSeleccionar.UseVisualStyleBackColor = false;
+            this.btnSeleccionar.Click += new System.EventHandler(this.btnSeleccionar_Click);
+            // 
+            // btnCargarDatos
+            // 
+            this.btnCargarDatos.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCargarDatos.Image = ((System.Drawing.Image)(resources.GetObject("btnCargarDatos.Image")));
+            this.btnCargarDatos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCargarDatos.Location = new System.Drawing.Point(144, 113);
+            this.btnCargarDatos.Name = "btnCargarDatos";
+            this.btnCargarDatos.Size = new System.Drawing.Size(233, 35);
+            this.btnCargarDatos.TabIndex = 146;
+            this.btnCargarDatos.Text = "Cargar";
+            this.btnCargarDatos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCargarDatos.UseVisualStyleBackColor = false;
+            // 
+            // cboOtroCertificado
+            // 
+            this.cboOtroCertificado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboOtroCertificado.FormattingEnabled = true;
+            this.cboOtroCertificado.Location = new System.Drawing.Point(144, 87);
+            this.cboOtroCertificado.Name = "cboOtroCertificado";
+            this.cboOtroCertificado.Size = new System.Drawing.Size(233, 21);
+            this.cboOtroCertificado.TabIndex = 151;
+            // 
+            // cboCertificadoBasc
+            // 
+            this.cboCertificadoBasc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCertificadoBasc.FormattingEnabled = true;
+            this.cboCertificadoBasc.Location = new System.Drawing.Point(144, 18);
+            this.cboCertificadoBasc.Name = "cboCertificadoBasc";
+            this.cboCertificadoBasc.Size = new System.Drawing.Size(233, 21);
+            this.cboCertificadoBasc.TabIndex = 151;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(6, 24);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(102, 15);
+            this.label9.TabIndex = 111;
+            this.label9.Text = "Certificado BASC:";
+            // 
+            // dtpFechaCaducidad
+            // 
+            this.dtpFechaCaducidad.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaCaducidad.Location = new System.Drawing.Point(140, 253);
+            this.dtpFechaCaducidad.Name = "dtpFechaCaducidad";
+            this.dtpFechaCaducidad.Size = new System.Drawing.Size(101, 20);
+            this.dtpFechaCaducidad.TabIndex = 120;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(11, 88);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(94, 15);
+            this.label10.TabIndex = 112;
+            this.label10.Text = "Otro Certificado:";
+            // 
+            // dtpFechaInicio
+            // 
+            this.dtpFechaInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaInicio.Location = new System.Drawing.Point(141, 225);
+            this.dtpFechaInicio.Name = "dtpFechaInicio";
+            this.dtpFechaInicio.Size = new System.Drawing.Size(101, 20);
+            this.dtpFechaInicio.TabIndex = 118;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(6, 256);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(120, 15);
+            this.label23.TabIndex = 119;
+            this.label23.Text = "Fecha de Caducidad";
+            // 
+            // txtNumCertificacion
+            // 
+            this.txtNumCertificacion.Location = new System.Drawing.Point(142, 194);
+            this.txtNumCertificacion.Name = "txtNumCertificacion";
+            this.txtNumCertificacion.Size = new System.Drawing.Size(235, 20);
+            this.txtNumCertificacion.TabIndex = 116;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(6, 160);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(130, 13);
+            this.label12.TabIndex = 113;
+            this.label12.Text = "Autenticidad Certificacion:";
+            // 
+            // txtAutenticidad
+            // 
+            this.txtAutenticidad.Location = new System.Drawing.Point(144, 157);
+            this.txtAutenticidad.Name = "txtAutenticidad";
+            this.txtAutenticidad.Size = new System.Drawing.Size(233, 20);
+            this.txtAutenticidad.TabIndex = 115;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(6, 197);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(108, 13);
+            this.label14.TabIndex = 114;
+            this.label14.Text = "Numero Certificacion:";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(6, 225);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(122, 15);
+            this.label22.TabIndex = 117;
+            this.label22.Text = "Fecha Otorgamiento:";
+            // 
+            // axAcroPDF1
+            // 
+            this.axAcroPDF1.Enabled = true;
+            this.axAcroPDF1.Location = new System.Drawing.Point(867, 168);
+            this.axAcroPDF1.Name = "axAcroPDF1";
+            this.axAcroPDF1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF1.OcxState")));
+            this.axAcroPDF1.Size = new System.Drawing.Size(242, 290);
+            this.axAcroPDF1.TabIndex = 154;
+            // 
             // txtcodproveedor
             // 
             this.txtcodproveedor.Location = new System.Drawing.Point(117, 57);
@@ -871,23 +881,25 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.pictureBox16.TabIndex = 151;
             this.pictureBox16.TabStop = false;
             // 
-            // lblRutaBasc
+            // label6
             // 
-            this.lblRutaBasc.AutoSize = true;
-            this.lblRutaBasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRutaBasc.Location = new System.Drawing.Point(28, 86);
-            this.lblRutaBasc.Name = "lblRutaBasc";
-            this.lblRutaBasc.Size = new System.Drawing.Size(67, 15);
-            this.lblRutaBasc.TabIndex = 155;
-            this.lblRutaBasc.Text = "Ruta BASC";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(928, 130);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(102, 15);
+            this.label6.TabIndex = 156;
+            this.label6.Text = "Certificado BASC:";
             // 
             // frmRegistrarProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1361, 651);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox16);
+            this.Controls.Add(this.axAcroPDF1);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnNuevo);
@@ -994,5 +1006,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         private System.Windows.Forms.PictureBox pictureBox16;
         private AxAcroPDFLib.AxAcroPDF axAcroPDF1;
         private System.Windows.Forms.Label lblRutaBasc;
+        private System.Windows.Forms.Label label6;
     }
 }
