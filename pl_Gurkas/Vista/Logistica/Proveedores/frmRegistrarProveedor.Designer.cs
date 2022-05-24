@@ -104,15 +104,18 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.axAcroPDF1 = new AxAcroPDFLib.AxAcroPDF();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.btnCerrar);
+            this.groupBox3.Controls.Add(this.txtAbrir);
             this.groupBox3.Controls.Add(this.groupBox1);
             this.groupBox3.Controls.Add(this.txtObservacion);
             this.groupBox3.Controls.Add(this.label13);
@@ -372,7 +375,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.txtAbrir);
+            this.groupBox2.Controls.Add(this.axAcroPDF1);
             this.groupBox2.Controls.Add(this.btnSeleccionar);
             this.groupBox2.Controls.Add(this.btnCargarDatos);
             this.groupBox2.Controls.Add(this.cboOtroCertificado);
@@ -398,7 +401,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // 
             this.txtAbrir.AutoSize = true;
             this.txtAbrir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAbrir.Location = new System.Drawing.Point(398, 109);
+            this.txtAbrir.Location = new System.Drawing.Point(781, 457);
             this.txtAbrir.Name = "txtAbrir";
             this.txtAbrir.Size = new System.Drawing.Size(57, 15);
             this.txtAbrir.TabIndex = 153;
@@ -872,6 +875,15 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.pictureBox16.TabIndex = 151;
             this.pictureBox16.TabStop = false;
             // 
+            // axAcroPDF1
+            // 
+            this.axAcroPDF1.Enabled = true;
+            this.axAcroPDF1.Location = new System.Drawing.Point(368, 15);
+            this.axAcroPDF1.Name = "axAcroPDF1";
+            this.axAcroPDF1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF1.OcxState")));
+            this.axAcroPDF1.Size = new System.Drawing.Size(135, 72);
+            this.axAcroPDF1.TabIndex = 154;
+            // 
             // frmRegistrarProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -898,6 +910,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -979,5 +992,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         private System.Windows.Forms.Button btnSeleccionar;
         private System.Windows.Forms.Label txtAbrir;
         private System.Windows.Forms.PictureBox pictureBox16;
+        private AxAcroPDFLib.AxAcroPDF axAcroPDF1;
     }
 }

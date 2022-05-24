@@ -391,14 +391,15 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
 
 
             OpenFileDialog open = new OpenFileDialog();
-            open.InitialDirectory = "C:\\";
-            open.Filter = "Imagen Files (*.pdf)| *.pdf|ALL Files(*.*)|*.*";
-            open.FilterIndex = 1;
 
             if (open.ShowDialog() == DialogResult.OK)
             {
-                txtAbrir.Text = open.FileName;
+                axAcroPDF1.src = open.FileName;
 
+            }
+            else
+            {
+                MessageBox.Show("Seleccionar File");
             }
 
             /*OpenFileDialog abrir = new OpenFileDialog();
