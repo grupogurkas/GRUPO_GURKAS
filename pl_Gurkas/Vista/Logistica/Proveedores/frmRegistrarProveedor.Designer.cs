@@ -885,7 +885,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1066, 605);
+            this.ClientSize = new System.Drawing.Size(1361, 651);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.btnCerrar);
@@ -899,6 +899,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtcodproveedor);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmRegistrarProveedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "..:: Registrar Provedor ::..";
