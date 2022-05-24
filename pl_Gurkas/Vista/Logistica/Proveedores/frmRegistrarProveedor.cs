@@ -389,7 +389,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         private void btnSeleccionar_Click(object sender, EventArgs e)
         {
 
-
             OpenFileDialog abrir = new OpenFileDialog();
             if(abrir.ShowDialog() == DialogResult.OK)
             {
