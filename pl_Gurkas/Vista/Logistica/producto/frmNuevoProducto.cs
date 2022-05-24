@@ -54,7 +54,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             {
                 MessageBox.Show("Debe Insertar un codigo", "Advertencia");
             }
-            if (txtNombreEquip.Text.Length == 0)
+            if (txtNombreTecno.Text.Length == 0)
             {
                 MessageBox.Show("Debe Insertar un nombre", "Advertencia");
             }
@@ -151,7 +151,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             ValidarCamposVacios();
             string codSistema = txtCodSistema.Text;
             string codEquipo = txtCodEquipo.Text;
-            string nomEquipo = txtNombreEquip.Text;
+            string nomEquipo = txtNombreTecno.Text;
             string modelo = txtModelo.Text;
             string marca = txtMarca.Text;
             string descripcionProduct = txtDescripcion.Text;
@@ -205,7 +205,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
 
             string codSistema = txtCodSistema.Text;
             string codEquipo = txtCodEquipo.Text;
-            string nomEquipo = txtNombreEquip.Text;
+            string nomEquipo = txtNombreTecno.Text;
             string modelo = txtModelo.Text;
             string marca = txtMarca.Text;
             string descripcionProduct = txtDescripcion.Text;

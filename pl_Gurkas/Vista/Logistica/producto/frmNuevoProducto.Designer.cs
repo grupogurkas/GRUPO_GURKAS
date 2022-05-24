@@ -76,7 +76,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtModelo = new System.Windows.Forms.TextBox();
-            this.txtNombreEquip = new System.Windows.Forms.TextBox();
+            this.txtNombreTecno = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCodSistema = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -232,262 +232,262 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label136 = new System.Windows.Forms.Label();
             this.tbpUtilesEscritorio = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox73 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtMarcaUtiles = new System.Windows.Forms.TextBox();
+            this.txtStockMinUtiles = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtCantidadUtiles = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtModeloUtiles = new System.Windows.Forms.TextBox();
             this.cboTipoUnidad1 = new System.Windows.Forms.ComboBox();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtPrecioUnitarioUtiles = new System.Windows.Forms.TextBox();
             this.label41 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtStockIniUtiles = new System.Windows.Forms.TextBox();
             this.label46 = new System.Windows.Forms.Label();
             this.label139 = new System.Windows.Forms.Label();
-            this.textBox71 = new System.Windows.Forms.TextBox();
+            this.txtDescripcionUti = new System.Windows.Forms.TextBox();
             this.cboEstadoProduc5 = new System.Windows.Forms.ComboBox();
             this.label140 = new System.Windows.Forms.Label();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtObservacionUti = new System.Windows.Forms.TextBox();
             this.btnCargarImagen5 = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.ptcImagenUtiles = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaRegisUtiles = new System.Windows.Forms.DateTimePicker();
             this.label17 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaAdUtiles = new System.Windows.Forms.DateTimePicker();
             this.label19 = new System.Windows.Forms.Label();
             this.txtCodigoEquipoUtiles = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtNombreUtiles = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
             this.txtCodigoSistemaUtiles = new System.Windows.Forms.TextBox();
             this.label45 = new System.Windows.Forms.Label();
             this.tbpEquipamientoLogistico = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.txtObservacionEquip = new System.Windows.Forms.TextBox();
             this.btnCargarImagen6 = new System.Windows.Forms.Button();
             this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.ptcImagenEquipamiento = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaRegisEquip = new System.Windows.Forms.DateTimePicker();
             this.label60 = new System.Windows.Forms.Label();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaAdEquip = new System.Windows.Forms.DateTimePicker();
             this.label61 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtMarcaEquip = new System.Windows.Forms.TextBox();
+            this.txtStockMinEquip = new System.Windows.Forms.TextBox();
             this.label48 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.txtCantidadEquip = new System.Windows.Forms.TextBox();
             this.label50 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.txtModeloEquip = new System.Windows.Forms.TextBox();
             this.cboTipoUnidad2 = new System.Windows.Forms.ComboBox();
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.txtPrecioUniEquip = new System.Windows.Forms.TextBox();
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.txtStockIniEquip = new System.Windows.Forms.TextBox();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.txtDescripcionEquip = new System.Windows.Forms.TextBox();
             this.cboEstadoProduc6 = new System.Windows.Forms.ComboBox();
             this.label57 = new System.Windows.Forms.Label();
-            this.textBox76 = new System.Windows.Forms.TextBox();
+            this.txtCodEquipoEquip = new System.Windows.Forms.TextBox();
             this.label145 = new System.Windows.Forms.Label();
-            this.textBox77 = new System.Windows.Forms.TextBox();
+            this.txtNombreEquip = new System.Windows.Forms.TextBox();
             this.label146 = new System.Windows.Forms.Label();
-            this.textBox78 = new System.Windows.Forms.TextBox();
+            this.txtCodSistemaEquipami = new System.Windows.Forms.TextBox();
             this.label147 = new System.Windows.Forms.Label();
             this.tbpEpp = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.txtObservacionProtec = new System.Windows.Forms.TextBox();
             this.btnCargarImagen7 = new System.Windows.Forms.Button();
             this.label74 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
             this.ptcImagenProteccion = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaRegisProtec = new System.Windows.Forms.DateTimePicker();
             this.label76 = new System.Windows.Forms.Label();
-            this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaAdProtec = new System.Windows.Forms.DateTimePicker();
             this.label77 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.txtMarcaProtec = new System.Windows.Forms.TextBox();
+            this.txtStockMinProtec = new System.Windows.Forms.TextBox();
             this.label64 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.txtCantidadProtec = new System.Windows.Forms.TextBox();
             this.label66 = new System.Windows.Forms.Label();
-            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.txtModeloProtec = new System.Windows.Forms.TextBox();
             this.cboTipoUnidad3 = new System.Windows.Forms.ComboBox();
             this.label67 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
-            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.txtPrecioUniProtec = new System.Windows.Forms.TextBox();
             this.label69 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
-            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.txtStockIniProtec = new System.Windows.Forms.TextBox();
             this.label71 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
-            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.txtDescripcionProtec = new System.Windows.Forms.TextBox();
             this.cboEstadoProduc7 = new System.Windows.Forms.ComboBox();
             this.label73 = new System.Windows.Forms.Label();
-            this.textBox79 = new System.Windows.Forms.TextBox();
+            this.txtCodEquipProtec = new System.Windows.Forms.TextBox();
             this.label149 = new System.Windows.Forms.Label();
-            this.textBox80 = new System.Windows.Forms.TextBox();
+            this.txtNombreProtec = new System.Windows.Forms.TextBox();
             this.label150 = new System.Windows.Forms.Label();
-            this.textBox81 = new System.Windows.Forms.TextBox();
+            this.txtCodSistemaProtec = new System.Windows.Forms.TextBox();
             this.label151 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
             this.groupBox18 = new System.Windows.Forms.GroupBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
+            this.txtObservacionMobi = new System.Windows.Forms.TextBox();
             this.btnCargarImagen8 = new System.Windows.Forms.Button();
             this.label84 = new System.Windows.Forms.Label();
             this.label90 = new System.Windows.Forms.Label();
             this.ptcImagenMobiliario = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker17 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaRegisMobi = new System.Windows.Forms.DateTimePicker();
             this.label99 = new System.Windows.Forms.Label();
-            this.dateTimePicker18 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaAdMobi = new System.Windows.Forms.DateTimePicker();
             this.label100 = new System.Windows.Forms.Label();
-            this.textBox82 = new System.Windows.Forms.TextBox();
-            this.textBox83 = new System.Windows.Forms.TextBox();
+            this.txtMarcaMobi = new System.Windows.Forms.TextBox();
+            this.txtStockMinMobi = new System.Windows.Forms.TextBox();
             this.label152 = new System.Windows.Forms.Label();
             this.label153 = new System.Windows.Forms.Label();
-            this.textBox84 = new System.Windows.Forms.TextBox();
+            this.txtCantidadMobi = new System.Windows.Forms.TextBox();
             this.label154 = new System.Windows.Forms.Label();
-            this.textBox85 = new System.Windows.Forms.TextBox();
+            this.txtModeloMobi = new System.Windows.Forms.TextBox();
             this.cboTipoUnidad4 = new System.Windows.Forms.ComboBox();
             this.label155 = new System.Windows.Forms.Label();
             this.label156 = new System.Windows.Forms.Label();
-            this.textBox86 = new System.Windows.Forms.TextBox();
+            this.txtPrecioUniMobi = new System.Windows.Forms.TextBox();
             this.label157 = new System.Windows.Forms.Label();
             this.label158 = new System.Windows.Forms.Label();
-            this.textBox87 = new System.Windows.Forms.TextBox();
+            this.txtStockIniMobi = new System.Windows.Forms.TextBox();
             this.label159 = new System.Windows.Forms.Label();
             this.label160 = new System.Windows.Forms.Label();
-            this.textBox88 = new System.Windows.Forms.TextBox();
+            this.txtDescripcionMobi = new System.Windows.Forms.TextBox();
             this.cboEstadoProduc8 = new System.Windows.Forms.ComboBox();
             this.label161 = new System.Windows.Forms.Label();
-            this.textBox91 = new System.Windows.Forms.TextBox();
+            this.txtCodEquipMobi = new System.Windows.Forms.TextBox();
             this.label167 = new System.Windows.Forms.Label();
-            this.textBox92 = new System.Windows.Forms.TextBox();
+            this.txtNombreMobi = new System.Windows.Forms.TextBox();
             this.label168 = new System.Windows.Forms.Label();
-            this.textBox93 = new System.Windows.Forms.TextBox();
+            this.txtCodSistemaMobi = new System.Windows.Forms.TextBox();
             this.label169 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.groupBox19 = new System.Windows.Forms.GroupBox();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.txtObservacionVehi = new System.Windows.Forms.TextBox();
             this.btnCargarImagen9 = new System.Windows.Forms.Button();
             this.label103 = new System.Windows.Forms.Label();
             this.label109 = new System.Windows.Forms.Label();
             this.ptcImagenVehiculos = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker19 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaRegisVehi = new System.Windows.Forms.DateTimePicker();
             this.label118 = new System.Windows.Forms.Label();
-            this.dateTimePicker20 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaAdVehi = new System.Windows.Forms.DateTimePicker();
             this.label119 = new System.Windows.Forms.Label();
-            this.textBox94 = new System.Windows.Forms.TextBox();
-            this.textBox95 = new System.Windows.Forms.TextBox();
+            this.txtMarcaVehi = new System.Windows.Forms.TextBox();
+            this.txtStockMinVehi = new System.Windows.Forms.TextBox();
             this.label172 = new System.Windows.Forms.Label();
             this.label173 = new System.Windows.Forms.Label();
-            this.textBox96 = new System.Windows.Forms.TextBox();
+            this.txtCantidadVehi = new System.Windows.Forms.TextBox();
             this.label174 = new System.Windows.Forms.Label();
-            this.textBox97 = new System.Windows.Forms.TextBox();
+            this.txtModeloVehi = new System.Windows.Forms.TextBox();
             this.cboTipoUnidad5 = new System.Windows.Forms.ComboBox();
             this.label175 = new System.Windows.Forms.Label();
             this.label176 = new System.Windows.Forms.Label();
-            this.textBox98 = new System.Windows.Forms.TextBox();
+            this.txtPrecioUniVehi = new System.Windows.Forms.TextBox();
             this.label177 = new System.Windows.Forms.Label();
             this.label178 = new System.Windows.Forms.Label();
-            this.textBox99 = new System.Windows.Forms.TextBox();
+            this.txtStockIniVehi = new System.Windows.Forms.TextBox();
             this.label179 = new System.Windows.Forms.Label();
             this.label180 = new System.Windows.Forms.Label();
-            this.textBox100 = new System.Windows.Forms.TextBox();
+            this.txtDescripcionVehi = new System.Windows.Forms.TextBox();
             this.cboEstadoProduc9 = new System.Windows.Forms.ComboBox();
             this.label181 = new System.Windows.Forms.Label();
-            this.textBox103 = new System.Windows.Forms.TextBox();
+            this.txtCodEquipVehi = new System.Windows.Forms.TextBox();
             this.label187 = new System.Windows.Forms.Label();
-            this.textBox104 = new System.Windows.Forms.TextBox();
+            this.txtNombreVehi = new System.Windows.Forms.TextBox();
             this.label188 = new System.Windows.Forms.Label();
-            this.textBox105 = new System.Windows.Forms.TextBox();
+            this.txtCodSistemaVehi = new System.Windows.Forms.TextBox();
             this.label189 = new System.Windows.Forms.Label();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.groupBox21 = new System.Windows.Forms.GroupBox();
             this.groupBox22 = new System.Windows.Forms.GroupBox();
-            this.textBox50 = new System.Windows.Forms.TextBox();
+            this.txtObservacionAseo = new System.Windows.Forms.TextBox();
             this.btnCargarImagen10 = new System.Windows.Forms.Button();
             this.label122 = new System.Windows.Forms.Label();
             this.label128 = new System.Windows.Forms.Label();
             this.ptcImagenUtilesAseo = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker21 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaRegisAseo = new System.Windows.Forms.DateTimePicker();
             this.label137 = new System.Windows.Forms.Label();
-            this.dateTimePicker22 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaAdAseo = new System.Windows.Forms.DateTimePicker();
             this.label138 = new System.Windows.Forms.Label();
-            this.textBox60 = new System.Windows.Forms.TextBox();
-            this.textBox61 = new System.Windows.Forms.TextBox();
+            this.txtMarcaAseo = new System.Windows.Forms.TextBox();
+            this.txtStockMinAseo = new System.Windows.Forms.TextBox();
             this.label141 = new System.Windows.Forms.Label();
             this.label144 = new System.Windows.Forms.Label();
-            this.textBox72 = new System.Windows.Forms.TextBox();
+            this.txtCantidadAseo = new System.Windows.Forms.TextBox();
             this.label148 = new System.Windows.Forms.Label();
-            this.textBox74 = new System.Windows.Forms.TextBox();
+            this.txtModeloAseo = new System.Windows.Forms.TextBox();
             this.cboTipoUnidad6 = new System.Windows.Forms.ComboBox();
             this.label162 = new System.Windows.Forms.Label();
             this.label163 = new System.Windows.Forms.Label();
-            this.textBox89 = new System.Windows.Forms.TextBox();
+            this.txtPrecioUniAseo = new System.Windows.Forms.TextBox();
             this.label164 = new System.Windows.Forms.Label();
             this.label165 = new System.Windows.Forms.Label();
-            this.textBox90 = new System.Windows.Forms.TextBox();
+            this.txtStockIniAseo = new System.Windows.Forms.TextBox();
             this.label166 = new System.Windows.Forms.Label();
             this.label170 = new System.Windows.Forms.Label();
-            this.textBox101 = new System.Windows.Forms.TextBox();
+            this.txtDescripcionAseo = new System.Windows.Forms.TextBox();
             this.cboEstadoProduc10 = new System.Windows.Forms.ComboBox();
             this.label171 = new System.Windows.Forms.Label();
-            this.textBox102 = new System.Windows.Forms.TextBox();
+            this.txtCodEquipAseo = new System.Windows.Forms.TextBox();
             this.label182 = new System.Windows.Forms.Label();
-            this.textBox108 = new System.Windows.Forms.TextBox();
+            this.txtNombreAseo = new System.Windows.Forms.TextBox();
             this.label183 = new System.Windows.Forms.Label();
-            this.textBox109 = new System.Windows.Forms.TextBox();
+            this.txtCodSistemaAseo = new System.Windows.Forms.TextBox();
             this.label184 = new System.Windows.Forms.Label();
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.groupBox23 = new System.Windows.Forms.GroupBox();
             this.groupBox24 = new System.Windows.Forms.GroupBox();
-            this.textBox110 = new System.Windows.Forms.TextBox();
+            this.txtObservacionArma = new System.Windows.Forms.TextBox();
             this.btnCargarImagen11 = new System.Windows.Forms.Button();
             this.label185 = new System.Windows.Forms.Label();
             this.label186 = new System.Windows.Forms.Label();
             this.ptcImagenArmamento = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker23 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaRegisArma = new System.Windows.Forms.DateTimePicker();
             this.label191 = new System.Windows.Forms.Label();
-            this.dateTimePicker24 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaAdArma = new System.Windows.Forms.DateTimePicker();
             this.label193 = new System.Windows.Forms.Label();
-            this.textBox111 = new System.Windows.Forms.TextBox();
-            this.textBox112 = new System.Windows.Forms.TextBox();
+            this.txtMarcaArma = new System.Windows.Forms.TextBox();
+            this.txtStockMinArma = new System.Windows.Forms.TextBox();
             this.label194 = new System.Windows.Forms.Label();
             this.label195 = new System.Windows.Forms.Label();
-            this.textBox113 = new System.Windows.Forms.TextBox();
+            this.txtCantidadArma = new System.Windows.Forms.TextBox();
             this.label196 = new System.Windows.Forms.Label();
-            this.textBox114 = new System.Windows.Forms.TextBox();
+            this.txtModeloArma = new System.Windows.Forms.TextBox();
             this.cboTipoUnidad7 = new System.Windows.Forms.ComboBox();
             this.label197 = new System.Windows.Forms.Label();
             this.label198 = new System.Windows.Forms.Label();
-            this.textBox115 = new System.Windows.Forms.TextBox();
+            this.txtPrecioUniArma = new System.Windows.Forms.TextBox();
             this.label199 = new System.Windows.Forms.Label();
             this.label200 = new System.Windows.Forms.Label();
-            this.textBox116 = new System.Windows.Forms.TextBox();
+            this.txtStockIniArma = new System.Windows.Forms.TextBox();
             this.label201 = new System.Windows.Forms.Label();
             this.label202 = new System.Windows.Forms.Label();
-            this.textBox117 = new System.Windows.Forms.TextBox();
+            this.txtDescripcionArma = new System.Windows.Forms.TextBox();
             this.cboEstadoProduc11 = new System.Windows.Forms.ComboBox();
             this.label203 = new System.Windows.Forms.Label();
-            this.textBox118 = new System.Windows.Forms.TextBox();
+            this.txtCodEquipArma = new System.Windows.Forms.TextBox();
             this.label204 = new System.Windows.Forms.Label();
-            this.textBox119 = new System.Windows.Forms.TextBox();
+            this.txtNombreArma = new System.Windows.Forms.TextBox();
             this.label205 = new System.Windows.Forms.Label();
-            this.textBox120 = new System.Windows.Forms.TextBox();
+            this.txtCodSistemaArma = new System.Windows.Forms.TextBox();
             this.label206 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
@@ -713,7 +713,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.txtModelo);
-            this.groupBox2.Controls.Add(this.txtNombreEquip);
+            this.groupBox2.Controls.Add(this.txtNombreTecno);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.txtCodSistema);
             this.groupBox2.Controls.Add(this.label1);
@@ -1040,12 +1040,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtModelo.Size = new System.Drawing.Size(213, 20);
             this.txtModelo.TabIndex = 58;
             // 
-            // txtNombreEquip
+            // txtNombreTecno
             // 
-            this.txtNombreEquip.Location = new System.Drawing.Point(130, 80);
-            this.txtNombreEquip.Name = "txtNombreEquip";
-            this.txtNombreEquip.Size = new System.Drawing.Size(213, 20);
-            this.txtNombreEquip.TabIndex = 57;
+            this.txtNombreTecno.Location = new System.Drawing.Point(130, 80);
+            this.txtNombreTecno.Name = "txtNombreTecno";
+            this.txtNombreTecno.Size = new System.Drawing.Size(213, 20);
+            this.txtNombreTecno.TabIndex = 57;
             // 
             // label2
             // 
@@ -2610,29 +2610,29 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.textBox73);
-            this.groupBox3.Controls.Add(this.textBox3);
+            this.groupBox3.Controls.Add(this.txtMarcaUtiles);
+            this.groupBox3.Controls.Add(this.txtStockMinUtiles);
             this.groupBox3.Controls.Add(this.label33);
             this.groupBox3.Controls.Add(this.label34);
-            this.groupBox3.Controls.Add(this.textBox5);
+            this.groupBox3.Controls.Add(this.txtCantidadUtiles);
             this.groupBox3.Controls.Add(this.label38);
-            this.groupBox3.Controls.Add(this.textBox6);
+            this.groupBox3.Controls.Add(this.txtModeloUtiles);
             this.groupBox3.Controls.Add(this.cboTipoUnidad1);
             this.groupBox3.Controls.Add(this.label39);
             this.groupBox3.Controls.Add(this.label40);
-            this.groupBox3.Controls.Add(this.textBox7);
+            this.groupBox3.Controls.Add(this.txtPrecioUnitarioUtiles);
             this.groupBox3.Controls.Add(this.label41);
             this.groupBox3.Controls.Add(this.label43);
-            this.groupBox3.Controls.Add(this.textBox8);
+            this.groupBox3.Controls.Add(this.txtStockIniUtiles);
             this.groupBox3.Controls.Add(this.label46);
             this.groupBox3.Controls.Add(this.label139);
-            this.groupBox3.Controls.Add(this.textBox71);
+            this.groupBox3.Controls.Add(this.txtDescripcionUti);
             this.groupBox3.Controls.Add(this.cboEstadoProduc5);
             this.groupBox3.Controls.Add(this.label140);
             this.groupBox3.Controls.Add(this.groupBox14);
             this.groupBox3.Controls.Add(this.txtCodigoEquipoUtiles);
             this.groupBox3.Controls.Add(this.label18);
-            this.groupBox3.Controls.Add(this.textBox9);
+            this.groupBox3.Controls.Add(this.txtNombreUtiles);
             this.groupBox3.Controls.Add(this.label44);
             this.groupBox3.Controls.Add(this.txtCodigoSistemaUtiles);
             this.groupBox3.Controls.Add(this.label45);
@@ -2644,19 +2644,19 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox3.Text = "Datos del Equipo";
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
-            // textBox73
+            // txtMarcaUtiles
             // 
-            this.textBox73.Location = new System.Drawing.Point(130, 106);
-            this.textBox73.Name = "textBox73";
-            this.textBox73.Size = new System.Drawing.Size(213, 20);
-            this.textBox73.TabIndex = 179;
+            this.txtMarcaUtiles.Location = new System.Drawing.Point(130, 106);
+            this.txtMarcaUtiles.Name = "txtMarcaUtiles";
+            this.txtMarcaUtiles.Size = new System.Drawing.Size(213, 20);
+            this.txtMarcaUtiles.TabIndex = 179;
             // 
-            // textBox3
+            // txtStockMinUtiles
             // 
-            this.textBox3.Location = new System.Drawing.Point(131, 289);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(158, 20);
-            this.textBox3.TabIndex = 178;
+            this.txtStockMinUtiles.Location = new System.Drawing.Point(131, 289);
+            this.txtStockMinUtiles.Name = "txtStockMinUtiles";
+            this.txtStockMinUtiles.Size = new System.Drawing.Size(158, 20);
+            this.txtStockMinUtiles.TabIndex = 178;
             // 
             // label33
             // 
@@ -2678,12 +2678,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label34.TabIndex = 176;
             this.label34.Text = "Tipo Unidad:";
             // 
-            // textBox5
+            // txtCantidadUtiles
             // 
-            this.textBox5.Location = new System.Drawing.Point(131, 184);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(158, 20);
-            this.textBox5.TabIndex = 175;
+            this.txtCantidadUtiles.Location = new System.Drawing.Point(131, 184);
+            this.txtCantidadUtiles.Name = "txtCantidadUtiles";
+            this.txtCantidadUtiles.Size = new System.Drawing.Size(158, 20);
+            this.txtCantidadUtiles.TabIndex = 175;
             // 
             // label38
             // 
@@ -2695,12 +2695,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label38.TabIndex = 174;
             this.label38.Text = "Cantidad:";
             // 
-            // textBox6
+            // txtModeloUtiles
             // 
-            this.textBox6.Location = new System.Drawing.Point(131, 132);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(213, 20);
-            this.textBox6.TabIndex = 173;
+            this.txtModeloUtiles.Location = new System.Drawing.Point(131, 132);
+            this.txtModeloUtiles.Name = "txtModeloUtiles";
+            this.txtModeloUtiles.Size = new System.Drawing.Size(213, 20);
+            this.txtModeloUtiles.TabIndex = 173;
             // 
             // cboTipoUnidad1
             // 
@@ -2737,12 +2737,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label40.TabIndex = 169;
             this.label40.Text = "Marca:";
             // 
-            // textBox7
+            // txtPrecioUnitarioUtiles
             // 
-            this.textBox7.Location = new System.Drawing.Point(131, 237);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(158, 20);
-            this.textBox7.TabIndex = 167;
+            this.txtPrecioUnitarioUtiles.Location = new System.Drawing.Point(131, 237);
+            this.txtPrecioUnitarioUtiles.Name = "txtPrecioUnitarioUtiles";
+            this.txtPrecioUnitarioUtiles.Size = new System.Drawing.Size(158, 20);
+            this.txtPrecioUnitarioUtiles.TabIndex = 167;
             // 
             // label41
             // 
@@ -2762,12 +2762,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label43.TabIndex = 166;
             this.label43.Text = "Precio Unitario:";
             // 
-            // textBox8
+            // txtStockIniUtiles
             // 
-            this.textBox8.Location = new System.Drawing.Point(131, 263);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(158, 20);
-            this.textBox8.TabIndex = 165;
+            this.txtStockIniUtiles.Location = new System.Drawing.Point(131, 263);
+            this.txtStockIniUtiles.Name = "txtStockIniUtiles";
+            this.txtStockIniUtiles.Size = new System.Drawing.Size(158, 20);
+            this.txtStockIniUtiles.TabIndex = 165;
             // 
             // label46
             // 
@@ -2789,13 +2789,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label139.TabIndex = 163;
             this.label139.Text = "Descripcion :";
             // 
-            // textBox71
+            // txtDescripcionUti
             // 
-            this.textBox71.Location = new System.Drawing.Point(131, 315);
-            this.textBox71.Multiline = true;
-            this.textBox71.Name = "textBox71";
-            this.textBox71.Size = new System.Drawing.Size(213, 56);
-            this.textBox71.TabIndex = 162;
+            this.txtDescripcionUti.Location = new System.Drawing.Point(131, 315);
+            this.txtDescripcionUti.Multiline = true;
+            this.txtDescripcionUti.Name = "txtDescripcionUti";
+            this.txtDescripcionUti.Size = new System.Drawing.Size(213, 56);
+            this.txtDescripcionUti.TabIndex = 162;
             // 
             // cboEstadoProduc5
             // 
@@ -2818,14 +2818,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // groupBox14
             // 
-            this.groupBox14.Controls.Add(this.textBox1);
+            this.groupBox14.Controls.Add(this.txtObservacionUti);
             this.groupBox14.Controls.Add(this.btnCargarImagen5);
             this.groupBox14.Controls.Add(this.label16);
             this.groupBox14.Controls.Add(this.label32);
             this.groupBox14.Controls.Add(this.ptcImagenUtiles);
-            this.groupBox14.Controls.Add(this.dateTimePicker1);
+            this.groupBox14.Controls.Add(this.dtpFechaRegisUtiles);
             this.groupBox14.Controls.Add(this.label17);
-            this.groupBox14.Controls.Add(this.dateTimePicker2);
+            this.groupBox14.Controls.Add(this.dtpFechaAdUtiles);
             this.groupBox14.Controls.Add(this.label19);
             this.groupBox14.Location = new System.Drawing.Point(405, 19);
             this.groupBox14.Name = "groupBox14";
@@ -2834,13 +2834,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox14.TabStop = false;
             this.groupBox14.Text = "Datos Adicionales";
             // 
-            // textBox1
+            // txtObservacionUti
             // 
-            this.textBox1.Location = new System.Drawing.Point(329, 104);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(266, 65);
-            this.textBox1.TabIndex = 168;
+            this.txtObservacionUti.Location = new System.Drawing.Point(329, 104);
+            this.txtObservacionUti.Multiline = true;
+            this.txtObservacionUti.Name = "txtObservacionUti";
+            this.txtObservacionUti.Size = new System.Drawing.Size(266, 65);
+            this.txtObservacionUti.TabIndex = 168;
             // 
             // btnCargarImagen5
             // 
@@ -2885,13 +2885,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.ptcImagenUtiles.TabIndex = 170;
             this.ptcImagenUtiles.TabStop = false;
             // 
-            // dateTimePicker1
+            // dtpFechaRegisUtiles
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(371, 31);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(109, 20);
-            this.dateTimePicker1.TabIndex = 153;
+            this.dtpFechaRegisUtiles.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaRegisUtiles.Location = new System.Drawing.Point(371, 31);
+            this.dtpFechaRegisUtiles.Name = "dtpFechaRegisUtiles";
+            this.dtpFechaRegisUtiles.Size = new System.Drawing.Size(109, 20);
+            this.dtpFechaRegisUtiles.TabIndex = 153;
             // 
             // label17
             // 
@@ -2903,13 +2903,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label17.TabIndex = 154;
             this.label17.Text = "Fecha De Registro :";
             // 
-            // dateTimePicker2
+            // dtpFechaAdUtiles
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(139, 32);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(104, 20);
-            this.dateTimePicker2.TabIndex = 151;
+            this.dtpFechaAdUtiles.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaAdUtiles.Location = new System.Drawing.Point(139, 32);
+            this.dtpFechaAdUtiles.Name = "dtpFechaAdUtiles";
+            this.dtpFechaAdUtiles.Size = new System.Drawing.Size(104, 20);
+            this.dtpFechaAdUtiles.TabIndex = 151;
             // 
             // label19
             // 
@@ -2938,12 +2938,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label18.TabIndex = 77;
             this.label18.Text = "Cod. Equipo";
             // 
-            // textBox9
+            // txtNombreUtiles
             // 
-            this.textBox9.Location = new System.Drawing.Point(131, 80);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(213, 20);
-            this.textBox9.TabIndex = 57;
+            this.txtNombreUtiles.Location = new System.Drawing.Point(131, 80);
+            this.txtNombreUtiles.Name = "txtNombreUtiles";
+            this.txtNombreUtiles.Size = new System.Drawing.Size(213, 20);
+            this.txtNombreUtiles.TabIndex = 57;
             // 
             // label44
             // 
@@ -2986,30 +2986,30 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.groupBox15);
-            this.groupBox4.Controls.Add(this.textBox11);
-            this.groupBox4.Controls.Add(this.textBox12);
+            this.groupBox4.Controls.Add(this.txtMarcaEquip);
+            this.groupBox4.Controls.Add(this.txtStockMinEquip);
             this.groupBox4.Controls.Add(this.label48);
             this.groupBox4.Controls.Add(this.label49);
-            this.groupBox4.Controls.Add(this.textBox15);
+            this.groupBox4.Controls.Add(this.txtCantidadEquip);
             this.groupBox4.Controls.Add(this.label50);
-            this.groupBox4.Controls.Add(this.textBox16);
+            this.groupBox4.Controls.Add(this.txtModeloEquip);
             this.groupBox4.Controls.Add(this.cboTipoUnidad2);
             this.groupBox4.Controls.Add(this.label51);
             this.groupBox4.Controls.Add(this.label52);
-            this.groupBox4.Controls.Add(this.textBox17);
+            this.groupBox4.Controls.Add(this.txtPrecioUniEquip);
             this.groupBox4.Controls.Add(this.label53);
             this.groupBox4.Controls.Add(this.label54);
-            this.groupBox4.Controls.Add(this.textBox18);
+            this.groupBox4.Controls.Add(this.txtStockIniEquip);
             this.groupBox4.Controls.Add(this.label55);
             this.groupBox4.Controls.Add(this.label56);
-            this.groupBox4.Controls.Add(this.textBox19);
+            this.groupBox4.Controls.Add(this.txtDescripcionEquip);
             this.groupBox4.Controls.Add(this.cboEstadoProduc6);
             this.groupBox4.Controls.Add(this.label57);
-            this.groupBox4.Controls.Add(this.textBox76);
+            this.groupBox4.Controls.Add(this.txtCodEquipoEquip);
             this.groupBox4.Controls.Add(this.label145);
-            this.groupBox4.Controls.Add(this.textBox77);
+            this.groupBox4.Controls.Add(this.txtNombreEquip);
             this.groupBox4.Controls.Add(this.label146);
-            this.groupBox4.Controls.Add(this.textBox78);
+            this.groupBox4.Controls.Add(this.txtCodSistemaEquipami);
             this.groupBox4.Controls.Add(this.label147);
             this.groupBox4.Location = new System.Drawing.Point(12, 28);
             this.groupBox4.Name = "groupBox4";
@@ -3020,14 +3020,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // groupBox15
             // 
-            this.groupBox15.Controls.Add(this.textBox20);
+            this.groupBox15.Controls.Add(this.txtObservacionEquip);
             this.groupBox15.Controls.Add(this.btnCargarImagen6);
             this.groupBox15.Controls.Add(this.label58);
             this.groupBox15.Controls.Add(this.label59);
             this.groupBox15.Controls.Add(this.ptcImagenEquipamiento);
-            this.groupBox15.Controls.Add(this.dateTimePicker3);
+            this.groupBox15.Controls.Add(this.dtpFechaRegisEquip);
             this.groupBox15.Controls.Add(this.label60);
-            this.groupBox15.Controls.Add(this.dateTimePicker4);
+            this.groupBox15.Controls.Add(this.dtpFechaAdEquip);
             this.groupBox15.Controls.Add(this.label61);
             this.groupBox15.Location = new System.Drawing.Point(386, 19);
             this.groupBox15.Name = "groupBox15";
@@ -3036,13 +3036,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox15.TabStop = false;
             this.groupBox15.Text = "Datos Adicionales";
             // 
-            // textBox20
+            // txtObservacionEquip
             // 
-            this.textBox20.Location = new System.Drawing.Point(329, 104);
-            this.textBox20.Multiline = true;
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(266, 65);
-            this.textBox20.TabIndex = 168;
+            this.txtObservacionEquip.Location = new System.Drawing.Point(329, 104);
+            this.txtObservacionEquip.Multiline = true;
+            this.txtObservacionEquip.Name = "txtObservacionEquip";
+            this.txtObservacionEquip.Size = new System.Drawing.Size(266, 65);
+            this.txtObservacionEquip.TabIndex = 168;
             // 
             // btnCargarImagen6
             // 
@@ -3087,13 +3087,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.ptcImagenEquipamiento.TabIndex = 170;
             this.ptcImagenEquipamiento.TabStop = false;
             // 
-            // dateTimePicker3
+            // dtpFechaRegisEquip
             // 
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker3.Location = new System.Drawing.Point(371, 31);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(109, 20);
-            this.dateTimePicker3.TabIndex = 153;
+            this.dtpFechaRegisEquip.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaRegisEquip.Location = new System.Drawing.Point(371, 31);
+            this.dtpFechaRegisEquip.Name = "dtpFechaRegisEquip";
+            this.dtpFechaRegisEquip.Size = new System.Drawing.Size(109, 20);
+            this.dtpFechaRegisEquip.TabIndex = 153;
             // 
             // label60
             // 
@@ -3105,13 +3105,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label60.TabIndex = 154;
             this.label60.Text = "Fecha De Registro :";
             // 
-            // dateTimePicker4
+            // dtpFechaAdEquip
             // 
-            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker4.Location = new System.Drawing.Point(139, 32);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(104, 20);
-            this.dateTimePicker4.TabIndex = 151;
+            this.dtpFechaAdEquip.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaAdEquip.Location = new System.Drawing.Point(139, 32);
+            this.dtpFechaAdEquip.Name = "dtpFechaAdEquip";
+            this.dtpFechaAdEquip.Size = new System.Drawing.Size(104, 20);
+            this.dtpFechaAdEquip.TabIndex = 151;
             // 
             // label61
             // 
@@ -3123,19 +3123,19 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label61.TabIndex = 152;
             this.label61.Text = "Fecha Adquisicion:";
             // 
-            // textBox11
+            // txtMarcaEquip
             // 
-            this.textBox11.Location = new System.Drawing.Point(130, 106);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(213, 20);
-            this.textBox11.TabIndex = 179;
+            this.txtMarcaEquip.Location = new System.Drawing.Point(130, 106);
+            this.txtMarcaEquip.Name = "txtMarcaEquip";
+            this.txtMarcaEquip.Size = new System.Drawing.Size(213, 20);
+            this.txtMarcaEquip.TabIndex = 179;
             // 
-            // textBox12
+            // txtStockMinEquip
             // 
-            this.textBox12.Location = new System.Drawing.Point(131, 289);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(158, 20);
-            this.textBox12.TabIndex = 178;
+            this.txtStockMinEquip.Location = new System.Drawing.Point(131, 289);
+            this.txtStockMinEquip.Name = "txtStockMinEquip";
+            this.txtStockMinEquip.Size = new System.Drawing.Size(158, 20);
+            this.txtStockMinEquip.TabIndex = 178;
             // 
             // label48
             // 
@@ -3157,12 +3157,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label49.TabIndex = 176;
             this.label49.Text = "Tipo Unidad:";
             // 
-            // textBox15
+            // txtCantidadEquip
             // 
-            this.textBox15.Location = new System.Drawing.Point(131, 184);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(158, 20);
-            this.textBox15.TabIndex = 175;
+            this.txtCantidadEquip.Location = new System.Drawing.Point(131, 184);
+            this.txtCantidadEquip.Name = "txtCantidadEquip";
+            this.txtCantidadEquip.Size = new System.Drawing.Size(158, 20);
+            this.txtCantidadEquip.TabIndex = 175;
             // 
             // label50
             // 
@@ -3174,12 +3174,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label50.TabIndex = 174;
             this.label50.Text = "Cantidad:";
             // 
-            // textBox16
+            // txtModeloEquip
             // 
-            this.textBox16.Location = new System.Drawing.Point(131, 132);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(213, 20);
-            this.textBox16.TabIndex = 173;
+            this.txtModeloEquip.Location = new System.Drawing.Point(131, 132);
+            this.txtModeloEquip.Name = "txtModeloEquip";
+            this.txtModeloEquip.Size = new System.Drawing.Size(213, 20);
+            this.txtModeloEquip.TabIndex = 173;
             // 
             // cboTipoUnidad2
             // 
@@ -3216,12 +3216,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label52.TabIndex = 169;
             this.label52.Text = "Marca:";
             // 
-            // textBox17
+            // txtPrecioUniEquip
             // 
-            this.textBox17.Location = new System.Drawing.Point(131, 237);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(158, 20);
-            this.textBox17.TabIndex = 167;
+            this.txtPrecioUniEquip.Location = new System.Drawing.Point(131, 237);
+            this.txtPrecioUniEquip.Name = "txtPrecioUniEquip";
+            this.txtPrecioUniEquip.Size = new System.Drawing.Size(158, 20);
+            this.txtPrecioUniEquip.TabIndex = 167;
             // 
             // label53
             // 
@@ -3241,12 +3241,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label54.TabIndex = 166;
             this.label54.Text = "Precio Unitario:";
             // 
-            // textBox18
+            // txtStockIniEquip
             // 
-            this.textBox18.Location = new System.Drawing.Point(131, 263);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(158, 20);
-            this.textBox18.TabIndex = 165;
+            this.txtStockIniEquip.Location = new System.Drawing.Point(131, 263);
+            this.txtStockIniEquip.Name = "txtStockIniEquip";
+            this.txtStockIniEquip.Size = new System.Drawing.Size(158, 20);
+            this.txtStockIniEquip.TabIndex = 165;
             // 
             // label55
             // 
@@ -3268,13 +3268,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label56.TabIndex = 163;
             this.label56.Text = "Descripcion :";
             // 
-            // textBox19
+            // txtDescripcionEquip
             // 
-            this.textBox19.Location = new System.Drawing.Point(131, 315);
-            this.textBox19.Multiline = true;
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(213, 56);
-            this.textBox19.TabIndex = 162;
+            this.txtDescripcionEquip.Location = new System.Drawing.Point(131, 315);
+            this.txtDescripcionEquip.Multiline = true;
+            this.txtDescripcionEquip.Name = "txtDescripcionEquip";
+            this.txtDescripcionEquip.Size = new System.Drawing.Size(213, 56);
+            this.txtDescripcionEquip.TabIndex = 162;
             // 
             // cboEstadoProduc6
             // 
@@ -3295,12 +3295,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label57.TabIndex = 160;
             this.label57.Text = "Estado :";
             // 
-            // textBox76
+            // txtCodEquipoEquip
             // 
-            this.textBox76.Location = new System.Drawing.Point(130, 54);
-            this.textBox76.Name = "textBox76";
-            this.textBox76.Size = new System.Drawing.Size(213, 20);
-            this.textBox76.TabIndex = 78;
+            this.txtCodEquipoEquip.Location = new System.Drawing.Point(130, 54);
+            this.txtCodEquipoEquip.Name = "txtCodEquipoEquip";
+            this.txtCodEquipoEquip.Size = new System.Drawing.Size(213, 20);
+            this.txtCodEquipoEquip.TabIndex = 78;
             // 
             // label145
             // 
@@ -3312,12 +3312,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label145.TabIndex = 77;
             this.label145.Text = "Cod. Equipo";
             // 
-            // textBox77
+            // txtNombreEquip
             // 
-            this.textBox77.Location = new System.Drawing.Point(131, 80);
-            this.textBox77.Name = "textBox77";
-            this.textBox77.Size = new System.Drawing.Size(213, 20);
-            this.textBox77.TabIndex = 57;
+            this.txtNombreEquip.Location = new System.Drawing.Point(131, 80);
+            this.txtNombreEquip.Name = "txtNombreEquip";
+            this.txtNombreEquip.Size = new System.Drawing.Size(213, 20);
+            this.txtNombreEquip.TabIndex = 57;
             // 
             // label146
             // 
@@ -3329,12 +3329,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label146.TabIndex = 56;
             this.label146.Text = "Nombre:";
             // 
-            // textBox78
+            // txtCodSistemaEquipami
             // 
-            this.textBox78.Location = new System.Drawing.Point(130, 28);
-            this.textBox78.Name = "textBox78";
-            this.textBox78.Size = new System.Drawing.Size(213, 20);
-            this.textBox78.TabIndex = 28;
+            this.txtCodSistemaEquipami.Location = new System.Drawing.Point(130, 28);
+            this.txtCodSistemaEquipami.Name = "txtCodSistemaEquipami";
+            this.txtCodSistemaEquipami.Size = new System.Drawing.Size(213, 20);
+            this.txtCodSistemaEquipami.TabIndex = 28;
             // 
             // label147
             // 
@@ -3360,30 +3360,30 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.groupBox16);
-            this.groupBox6.Controls.Add(this.textBox22);
-            this.groupBox6.Controls.Add(this.textBox23);
+            this.groupBox6.Controls.Add(this.txtMarcaProtec);
+            this.groupBox6.Controls.Add(this.txtStockMinProtec);
             this.groupBox6.Controls.Add(this.label64);
             this.groupBox6.Controls.Add(this.label65);
-            this.groupBox6.Controls.Add(this.textBox24);
+            this.groupBox6.Controls.Add(this.txtCantidadProtec);
             this.groupBox6.Controls.Add(this.label66);
-            this.groupBox6.Controls.Add(this.textBox25);
+            this.groupBox6.Controls.Add(this.txtModeloProtec);
             this.groupBox6.Controls.Add(this.cboTipoUnidad3);
             this.groupBox6.Controls.Add(this.label67);
             this.groupBox6.Controls.Add(this.label68);
-            this.groupBox6.Controls.Add(this.textBox26);
+            this.groupBox6.Controls.Add(this.txtPrecioUniProtec);
             this.groupBox6.Controls.Add(this.label69);
             this.groupBox6.Controls.Add(this.label70);
-            this.groupBox6.Controls.Add(this.textBox27);
+            this.groupBox6.Controls.Add(this.txtStockIniProtec);
             this.groupBox6.Controls.Add(this.label71);
             this.groupBox6.Controls.Add(this.label72);
-            this.groupBox6.Controls.Add(this.textBox28);
+            this.groupBox6.Controls.Add(this.txtDescripcionProtec);
             this.groupBox6.Controls.Add(this.cboEstadoProduc7);
             this.groupBox6.Controls.Add(this.label73);
-            this.groupBox6.Controls.Add(this.textBox79);
+            this.groupBox6.Controls.Add(this.txtCodEquipProtec);
             this.groupBox6.Controls.Add(this.label149);
-            this.groupBox6.Controls.Add(this.textBox80);
+            this.groupBox6.Controls.Add(this.txtNombreProtec);
             this.groupBox6.Controls.Add(this.label150);
-            this.groupBox6.Controls.Add(this.textBox81);
+            this.groupBox6.Controls.Add(this.txtCodSistemaProtec);
             this.groupBox6.Controls.Add(this.label151);
             this.groupBox6.Location = new System.Drawing.Point(6, 29);
             this.groupBox6.Name = "groupBox6";
@@ -3394,14 +3394,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // groupBox16
             // 
-            this.groupBox16.Controls.Add(this.textBox21);
+            this.groupBox16.Controls.Add(this.txtObservacionProtec);
             this.groupBox16.Controls.Add(this.btnCargarImagen7);
             this.groupBox16.Controls.Add(this.label74);
             this.groupBox16.Controls.Add(this.label75);
             this.groupBox16.Controls.Add(this.ptcImagenProteccion);
-            this.groupBox16.Controls.Add(this.dateTimePicker5);
+            this.groupBox16.Controls.Add(this.dtpFechaRegisProtec);
             this.groupBox16.Controls.Add(this.label76);
-            this.groupBox16.Controls.Add(this.dateTimePicker6);
+            this.groupBox16.Controls.Add(this.dtpFechaAdProtec);
             this.groupBox16.Controls.Add(this.label77);
             this.groupBox16.Location = new System.Drawing.Point(399, 19);
             this.groupBox16.Name = "groupBox16";
@@ -3410,13 +3410,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox16.TabStop = false;
             this.groupBox16.Text = "Datos Adicionales";
             // 
-            // textBox21
+            // txtObservacionProtec
             // 
-            this.textBox21.Location = new System.Drawing.Point(329, 104);
-            this.textBox21.Multiline = true;
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(266, 65);
-            this.textBox21.TabIndex = 168;
+            this.txtObservacionProtec.Location = new System.Drawing.Point(329, 104);
+            this.txtObservacionProtec.Multiline = true;
+            this.txtObservacionProtec.Name = "txtObservacionProtec";
+            this.txtObservacionProtec.Size = new System.Drawing.Size(266, 65);
+            this.txtObservacionProtec.TabIndex = 168;
             // 
             // btnCargarImagen7
             // 
@@ -3462,13 +3462,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.ptcImagenProteccion.TabIndex = 170;
             this.ptcImagenProteccion.TabStop = false;
             // 
-            // dateTimePicker5
+            // dtpFechaRegisProtec
             // 
-            this.dateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker5.Location = new System.Drawing.Point(371, 31);
-            this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(109, 20);
-            this.dateTimePicker5.TabIndex = 153;
+            this.dtpFechaRegisProtec.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaRegisProtec.Location = new System.Drawing.Point(371, 31);
+            this.dtpFechaRegisProtec.Name = "dtpFechaRegisProtec";
+            this.dtpFechaRegisProtec.Size = new System.Drawing.Size(109, 20);
+            this.dtpFechaRegisProtec.TabIndex = 153;
             // 
             // label76
             // 
@@ -3480,13 +3480,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label76.TabIndex = 154;
             this.label76.Text = "Fecha De Registro :";
             // 
-            // dateTimePicker6
+            // dtpFechaAdProtec
             // 
-            this.dateTimePicker6.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker6.Location = new System.Drawing.Point(139, 32);
-            this.dateTimePicker6.Name = "dateTimePicker6";
-            this.dateTimePicker6.Size = new System.Drawing.Size(104, 20);
-            this.dateTimePicker6.TabIndex = 151;
+            this.dtpFechaAdProtec.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaAdProtec.Location = new System.Drawing.Point(139, 32);
+            this.dtpFechaAdProtec.Name = "dtpFechaAdProtec";
+            this.dtpFechaAdProtec.Size = new System.Drawing.Size(104, 20);
+            this.dtpFechaAdProtec.TabIndex = 151;
             // 
             // label77
             // 
@@ -3498,19 +3498,19 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label77.TabIndex = 152;
             this.label77.Text = "Fecha Adquisicion:";
             // 
-            // textBox22
+            // txtMarcaProtec
             // 
-            this.textBox22.Location = new System.Drawing.Point(130, 106);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(213, 20);
-            this.textBox22.TabIndex = 179;
+            this.txtMarcaProtec.Location = new System.Drawing.Point(130, 106);
+            this.txtMarcaProtec.Name = "txtMarcaProtec";
+            this.txtMarcaProtec.Size = new System.Drawing.Size(213, 20);
+            this.txtMarcaProtec.TabIndex = 179;
             // 
-            // textBox23
+            // txtStockMinProtec
             // 
-            this.textBox23.Location = new System.Drawing.Point(131, 289);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(158, 20);
-            this.textBox23.TabIndex = 178;
+            this.txtStockMinProtec.Location = new System.Drawing.Point(131, 289);
+            this.txtStockMinProtec.Name = "txtStockMinProtec";
+            this.txtStockMinProtec.Size = new System.Drawing.Size(158, 20);
+            this.txtStockMinProtec.TabIndex = 178;
             // 
             // label64
             // 
@@ -3532,12 +3532,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label65.TabIndex = 176;
             this.label65.Text = "Tipo Unidad:";
             // 
-            // textBox24
+            // txtCantidadProtec
             // 
-            this.textBox24.Location = new System.Drawing.Point(131, 184);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(158, 20);
-            this.textBox24.TabIndex = 175;
+            this.txtCantidadProtec.Location = new System.Drawing.Point(131, 184);
+            this.txtCantidadProtec.Name = "txtCantidadProtec";
+            this.txtCantidadProtec.Size = new System.Drawing.Size(158, 20);
+            this.txtCantidadProtec.TabIndex = 175;
             // 
             // label66
             // 
@@ -3549,12 +3549,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label66.TabIndex = 174;
             this.label66.Text = "Cantidad:";
             // 
-            // textBox25
+            // txtModeloProtec
             // 
-            this.textBox25.Location = new System.Drawing.Point(131, 132);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(213, 20);
-            this.textBox25.TabIndex = 173;
+            this.txtModeloProtec.Location = new System.Drawing.Point(131, 132);
+            this.txtModeloProtec.Name = "txtModeloProtec";
+            this.txtModeloProtec.Size = new System.Drawing.Size(213, 20);
+            this.txtModeloProtec.TabIndex = 173;
             // 
             // cboTipoUnidad3
             // 
@@ -3591,12 +3591,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label68.TabIndex = 169;
             this.label68.Text = "Marca:";
             // 
-            // textBox26
+            // txtPrecioUniProtec
             // 
-            this.textBox26.Location = new System.Drawing.Point(131, 237);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(158, 20);
-            this.textBox26.TabIndex = 167;
+            this.txtPrecioUniProtec.Location = new System.Drawing.Point(131, 237);
+            this.txtPrecioUniProtec.Name = "txtPrecioUniProtec";
+            this.txtPrecioUniProtec.Size = new System.Drawing.Size(158, 20);
+            this.txtPrecioUniProtec.TabIndex = 167;
             // 
             // label69
             // 
@@ -3616,12 +3616,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label70.TabIndex = 166;
             this.label70.Text = "Precio Unitario:";
             // 
-            // textBox27
+            // txtStockIniProtec
             // 
-            this.textBox27.Location = new System.Drawing.Point(131, 263);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(158, 20);
-            this.textBox27.TabIndex = 165;
+            this.txtStockIniProtec.Location = new System.Drawing.Point(131, 263);
+            this.txtStockIniProtec.Name = "txtStockIniProtec";
+            this.txtStockIniProtec.Size = new System.Drawing.Size(158, 20);
+            this.txtStockIniProtec.TabIndex = 165;
             // 
             // label71
             // 
@@ -3643,13 +3643,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label72.TabIndex = 163;
             this.label72.Text = "Descripcion :";
             // 
-            // textBox28
+            // txtDescripcionProtec
             // 
-            this.textBox28.Location = new System.Drawing.Point(131, 315);
-            this.textBox28.Multiline = true;
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(213, 56);
-            this.textBox28.TabIndex = 162;
+            this.txtDescripcionProtec.Location = new System.Drawing.Point(131, 315);
+            this.txtDescripcionProtec.Multiline = true;
+            this.txtDescripcionProtec.Name = "txtDescripcionProtec";
+            this.txtDescripcionProtec.Size = new System.Drawing.Size(213, 56);
+            this.txtDescripcionProtec.TabIndex = 162;
             // 
             // cboEstadoProduc7
             // 
@@ -3670,12 +3670,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label73.TabIndex = 160;
             this.label73.Text = "Estado :";
             // 
-            // textBox79
+            // txtCodEquipProtec
             // 
-            this.textBox79.Location = new System.Drawing.Point(130, 54);
-            this.textBox79.Name = "textBox79";
-            this.textBox79.Size = new System.Drawing.Size(213, 20);
-            this.textBox79.TabIndex = 78;
+            this.txtCodEquipProtec.Location = new System.Drawing.Point(130, 54);
+            this.txtCodEquipProtec.Name = "txtCodEquipProtec";
+            this.txtCodEquipProtec.Size = new System.Drawing.Size(213, 20);
+            this.txtCodEquipProtec.TabIndex = 78;
             // 
             // label149
             // 
@@ -3687,12 +3687,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label149.TabIndex = 77;
             this.label149.Text = "Cod. Equipo";
             // 
-            // textBox80
+            // txtNombreProtec
             // 
-            this.textBox80.Location = new System.Drawing.Point(131, 80);
-            this.textBox80.Name = "textBox80";
-            this.textBox80.Size = new System.Drawing.Size(213, 20);
-            this.textBox80.TabIndex = 57;
+            this.txtNombreProtec.Location = new System.Drawing.Point(131, 80);
+            this.txtNombreProtec.Name = "txtNombreProtec";
+            this.txtNombreProtec.Size = new System.Drawing.Size(213, 20);
+            this.txtNombreProtec.TabIndex = 57;
             // 
             // label150
             // 
@@ -3704,12 +3704,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label150.TabIndex = 56;
             this.label150.Text = "Nombre:";
             // 
-            // textBox81
+            // txtCodSistemaProtec
             // 
-            this.textBox81.Location = new System.Drawing.Point(130, 28);
-            this.textBox81.Name = "textBox81";
-            this.textBox81.Size = new System.Drawing.Size(213, 20);
-            this.textBox81.TabIndex = 28;
+            this.txtCodSistemaProtec.Location = new System.Drawing.Point(130, 28);
+            this.txtCodSistemaProtec.Name = "txtCodSistemaProtec";
+            this.txtCodSistemaProtec.Size = new System.Drawing.Size(213, 20);
+            this.txtCodSistemaProtec.TabIndex = 28;
             // 
             // label151
             // 
@@ -3735,30 +3735,30 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // groupBox17
             // 
             this.groupBox17.Controls.Add(this.groupBox18);
-            this.groupBox17.Controls.Add(this.textBox82);
-            this.groupBox17.Controls.Add(this.textBox83);
+            this.groupBox17.Controls.Add(this.txtMarcaMobi);
+            this.groupBox17.Controls.Add(this.txtStockMinMobi);
             this.groupBox17.Controls.Add(this.label152);
             this.groupBox17.Controls.Add(this.label153);
-            this.groupBox17.Controls.Add(this.textBox84);
+            this.groupBox17.Controls.Add(this.txtCantidadMobi);
             this.groupBox17.Controls.Add(this.label154);
-            this.groupBox17.Controls.Add(this.textBox85);
+            this.groupBox17.Controls.Add(this.txtModeloMobi);
             this.groupBox17.Controls.Add(this.cboTipoUnidad4);
             this.groupBox17.Controls.Add(this.label155);
             this.groupBox17.Controls.Add(this.label156);
-            this.groupBox17.Controls.Add(this.textBox86);
+            this.groupBox17.Controls.Add(this.txtPrecioUniMobi);
             this.groupBox17.Controls.Add(this.label157);
             this.groupBox17.Controls.Add(this.label158);
-            this.groupBox17.Controls.Add(this.textBox87);
+            this.groupBox17.Controls.Add(this.txtStockIniMobi);
             this.groupBox17.Controls.Add(this.label159);
             this.groupBox17.Controls.Add(this.label160);
-            this.groupBox17.Controls.Add(this.textBox88);
+            this.groupBox17.Controls.Add(this.txtDescripcionMobi);
             this.groupBox17.Controls.Add(this.cboEstadoProduc8);
             this.groupBox17.Controls.Add(this.label161);
-            this.groupBox17.Controls.Add(this.textBox91);
+            this.groupBox17.Controls.Add(this.txtCodEquipMobi);
             this.groupBox17.Controls.Add(this.label167);
-            this.groupBox17.Controls.Add(this.textBox92);
+            this.groupBox17.Controls.Add(this.txtNombreMobi);
             this.groupBox17.Controls.Add(this.label168);
-            this.groupBox17.Controls.Add(this.textBox93);
+            this.groupBox17.Controls.Add(this.txtCodSistemaMobi);
             this.groupBox17.Controls.Add(this.label169);
             this.groupBox17.Location = new System.Drawing.Point(8, 34);
             this.groupBox17.Name = "groupBox17";
@@ -3769,14 +3769,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // groupBox18
             // 
-            this.groupBox18.Controls.Add(this.textBox29);
+            this.groupBox18.Controls.Add(this.txtObservacionMobi);
             this.groupBox18.Controls.Add(this.btnCargarImagen8);
             this.groupBox18.Controls.Add(this.label84);
             this.groupBox18.Controls.Add(this.label90);
             this.groupBox18.Controls.Add(this.ptcImagenMobiliario);
-            this.groupBox18.Controls.Add(this.dateTimePicker17);
+            this.groupBox18.Controls.Add(this.dtpFechaRegisMobi);
             this.groupBox18.Controls.Add(this.label99);
-            this.groupBox18.Controls.Add(this.dateTimePicker18);
+            this.groupBox18.Controls.Add(this.dtpFechaAdMobi);
             this.groupBox18.Controls.Add(this.label100);
             this.groupBox18.Location = new System.Drawing.Point(401, 19);
             this.groupBox18.Name = "groupBox18";
@@ -3785,13 +3785,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox18.TabStop = false;
             this.groupBox18.Text = "Datos Adicionales";
             // 
-            // textBox29
+            // txtObservacionMobi
             // 
-            this.textBox29.Location = new System.Drawing.Point(329, 104);
-            this.textBox29.Multiline = true;
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(266, 65);
-            this.textBox29.TabIndex = 168;
+            this.txtObservacionMobi.Location = new System.Drawing.Point(329, 104);
+            this.txtObservacionMobi.Multiline = true;
+            this.txtObservacionMobi.Name = "txtObservacionMobi";
+            this.txtObservacionMobi.Size = new System.Drawing.Size(266, 65);
+            this.txtObservacionMobi.TabIndex = 168;
             // 
             // btnCargarImagen8
             // 
@@ -3836,13 +3836,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.ptcImagenMobiliario.TabIndex = 170;
             this.ptcImagenMobiliario.TabStop = false;
             // 
-            // dateTimePicker17
+            // dtpFechaRegisMobi
             // 
-            this.dateTimePicker17.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker17.Location = new System.Drawing.Point(371, 31);
-            this.dateTimePicker17.Name = "dateTimePicker17";
-            this.dateTimePicker17.Size = new System.Drawing.Size(109, 20);
-            this.dateTimePicker17.TabIndex = 153;
+            this.dtpFechaRegisMobi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaRegisMobi.Location = new System.Drawing.Point(371, 31);
+            this.dtpFechaRegisMobi.Name = "dtpFechaRegisMobi";
+            this.dtpFechaRegisMobi.Size = new System.Drawing.Size(109, 20);
+            this.dtpFechaRegisMobi.TabIndex = 153;
             // 
             // label99
             // 
@@ -3854,13 +3854,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label99.TabIndex = 154;
             this.label99.Text = "Fecha De Registro :";
             // 
-            // dateTimePicker18
+            // dtpFechaAdMobi
             // 
-            this.dateTimePicker18.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker18.Location = new System.Drawing.Point(139, 32);
-            this.dateTimePicker18.Name = "dateTimePicker18";
-            this.dateTimePicker18.Size = new System.Drawing.Size(104, 20);
-            this.dateTimePicker18.TabIndex = 151;
+            this.dtpFechaAdMobi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaAdMobi.Location = new System.Drawing.Point(139, 32);
+            this.dtpFechaAdMobi.Name = "dtpFechaAdMobi";
+            this.dtpFechaAdMobi.Size = new System.Drawing.Size(104, 20);
+            this.dtpFechaAdMobi.TabIndex = 151;
             // 
             // label100
             // 
@@ -3872,19 +3872,19 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label100.TabIndex = 152;
             this.label100.Text = "Fecha Adquisicion:";
             // 
-            // textBox82
+            // txtMarcaMobi
             // 
-            this.textBox82.Location = new System.Drawing.Point(130, 106);
-            this.textBox82.Name = "textBox82";
-            this.textBox82.Size = new System.Drawing.Size(213, 20);
-            this.textBox82.TabIndex = 179;
+            this.txtMarcaMobi.Location = new System.Drawing.Point(130, 106);
+            this.txtMarcaMobi.Name = "txtMarcaMobi";
+            this.txtMarcaMobi.Size = new System.Drawing.Size(213, 20);
+            this.txtMarcaMobi.TabIndex = 179;
             // 
-            // textBox83
+            // txtStockMinMobi
             // 
-            this.textBox83.Location = new System.Drawing.Point(131, 289);
-            this.textBox83.Name = "textBox83";
-            this.textBox83.Size = new System.Drawing.Size(158, 20);
-            this.textBox83.TabIndex = 178;
+            this.txtStockMinMobi.Location = new System.Drawing.Point(131, 289);
+            this.txtStockMinMobi.Name = "txtStockMinMobi";
+            this.txtStockMinMobi.Size = new System.Drawing.Size(158, 20);
+            this.txtStockMinMobi.TabIndex = 178;
             // 
             // label152
             // 
@@ -3906,12 +3906,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label153.TabIndex = 176;
             this.label153.Text = "Tipo Unidad:";
             // 
-            // textBox84
+            // txtCantidadMobi
             // 
-            this.textBox84.Location = new System.Drawing.Point(131, 184);
-            this.textBox84.Name = "textBox84";
-            this.textBox84.Size = new System.Drawing.Size(158, 20);
-            this.textBox84.TabIndex = 175;
+            this.txtCantidadMobi.Location = new System.Drawing.Point(131, 184);
+            this.txtCantidadMobi.Name = "txtCantidadMobi";
+            this.txtCantidadMobi.Size = new System.Drawing.Size(158, 20);
+            this.txtCantidadMobi.TabIndex = 175;
             // 
             // label154
             // 
@@ -3923,12 +3923,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label154.TabIndex = 174;
             this.label154.Text = "Cantidad:";
             // 
-            // textBox85
+            // txtModeloMobi
             // 
-            this.textBox85.Location = new System.Drawing.Point(131, 132);
-            this.textBox85.Name = "textBox85";
-            this.textBox85.Size = new System.Drawing.Size(213, 20);
-            this.textBox85.TabIndex = 173;
+            this.txtModeloMobi.Location = new System.Drawing.Point(131, 132);
+            this.txtModeloMobi.Name = "txtModeloMobi";
+            this.txtModeloMobi.Size = new System.Drawing.Size(213, 20);
+            this.txtModeloMobi.TabIndex = 173;
             // 
             // cboTipoUnidad4
             // 
@@ -3965,12 +3965,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label156.TabIndex = 169;
             this.label156.Text = "Marca:";
             // 
-            // textBox86
+            // txtPrecioUniMobi
             // 
-            this.textBox86.Location = new System.Drawing.Point(131, 237);
-            this.textBox86.Name = "textBox86";
-            this.textBox86.Size = new System.Drawing.Size(158, 20);
-            this.textBox86.TabIndex = 167;
+            this.txtPrecioUniMobi.Location = new System.Drawing.Point(131, 237);
+            this.txtPrecioUniMobi.Name = "txtPrecioUniMobi";
+            this.txtPrecioUniMobi.Size = new System.Drawing.Size(158, 20);
+            this.txtPrecioUniMobi.TabIndex = 167;
             // 
             // label157
             // 
@@ -3990,12 +3990,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label158.TabIndex = 166;
             this.label158.Text = "Precio Unitario:";
             // 
-            // textBox87
+            // txtStockIniMobi
             // 
-            this.textBox87.Location = new System.Drawing.Point(131, 263);
-            this.textBox87.Name = "textBox87";
-            this.textBox87.Size = new System.Drawing.Size(158, 20);
-            this.textBox87.TabIndex = 165;
+            this.txtStockIniMobi.Location = new System.Drawing.Point(131, 263);
+            this.txtStockIniMobi.Name = "txtStockIniMobi";
+            this.txtStockIniMobi.Size = new System.Drawing.Size(158, 20);
+            this.txtStockIniMobi.TabIndex = 165;
             // 
             // label159
             // 
@@ -4017,13 +4017,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label160.TabIndex = 163;
             this.label160.Text = "Descripcion :";
             // 
-            // textBox88
+            // txtDescripcionMobi
             // 
-            this.textBox88.Location = new System.Drawing.Point(131, 315);
-            this.textBox88.Multiline = true;
-            this.textBox88.Name = "textBox88";
-            this.textBox88.Size = new System.Drawing.Size(213, 56);
-            this.textBox88.TabIndex = 162;
+            this.txtDescripcionMobi.Location = new System.Drawing.Point(131, 315);
+            this.txtDescripcionMobi.Multiline = true;
+            this.txtDescripcionMobi.Name = "txtDescripcionMobi";
+            this.txtDescripcionMobi.Size = new System.Drawing.Size(213, 56);
+            this.txtDescripcionMobi.TabIndex = 162;
             // 
             // cboEstadoProduc8
             // 
@@ -4044,12 +4044,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label161.TabIndex = 160;
             this.label161.Text = "Estado :";
             // 
-            // textBox91
+            // txtCodEquipMobi
             // 
-            this.textBox91.Location = new System.Drawing.Point(130, 54);
-            this.textBox91.Name = "textBox91";
-            this.textBox91.Size = new System.Drawing.Size(213, 20);
-            this.textBox91.TabIndex = 78;
+            this.txtCodEquipMobi.Location = new System.Drawing.Point(130, 54);
+            this.txtCodEquipMobi.Name = "txtCodEquipMobi";
+            this.txtCodEquipMobi.Size = new System.Drawing.Size(213, 20);
+            this.txtCodEquipMobi.TabIndex = 78;
             // 
             // label167
             // 
@@ -4061,12 +4061,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label167.TabIndex = 77;
             this.label167.Text = "Cod. Equipo";
             // 
-            // textBox92
+            // txtNombreMobi
             // 
-            this.textBox92.Location = new System.Drawing.Point(131, 80);
-            this.textBox92.Name = "textBox92";
-            this.textBox92.Size = new System.Drawing.Size(213, 20);
-            this.textBox92.TabIndex = 57;
+            this.txtNombreMobi.Location = new System.Drawing.Point(131, 80);
+            this.txtNombreMobi.Name = "txtNombreMobi";
+            this.txtNombreMobi.Size = new System.Drawing.Size(213, 20);
+            this.txtNombreMobi.TabIndex = 57;
             // 
             // label168
             // 
@@ -4078,12 +4078,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label168.TabIndex = 56;
             this.label168.Text = "Nombre:";
             // 
-            // textBox93
+            // txtCodSistemaMobi
             // 
-            this.textBox93.Location = new System.Drawing.Point(130, 28);
-            this.textBox93.Name = "textBox93";
-            this.textBox93.Size = new System.Drawing.Size(213, 20);
-            this.textBox93.TabIndex = 28;
+            this.txtCodSistemaMobi.Location = new System.Drawing.Point(130, 28);
+            this.txtCodSistemaMobi.Name = "txtCodSistemaMobi";
+            this.txtCodSistemaMobi.Size = new System.Drawing.Size(213, 20);
+            this.txtCodSistemaMobi.TabIndex = 28;
             // 
             // label169
             // 
@@ -4109,30 +4109,30 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // groupBox19
             // 
             this.groupBox19.Controls.Add(this.groupBox20);
-            this.groupBox19.Controls.Add(this.textBox94);
-            this.groupBox19.Controls.Add(this.textBox95);
+            this.groupBox19.Controls.Add(this.txtMarcaVehi);
+            this.groupBox19.Controls.Add(this.txtStockMinVehi);
             this.groupBox19.Controls.Add(this.label172);
             this.groupBox19.Controls.Add(this.label173);
-            this.groupBox19.Controls.Add(this.textBox96);
+            this.groupBox19.Controls.Add(this.txtCantidadVehi);
             this.groupBox19.Controls.Add(this.label174);
-            this.groupBox19.Controls.Add(this.textBox97);
+            this.groupBox19.Controls.Add(this.txtModeloVehi);
             this.groupBox19.Controls.Add(this.cboTipoUnidad5);
             this.groupBox19.Controls.Add(this.label175);
             this.groupBox19.Controls.Add(this.label176);
-            this.groupBox19.Controls.Add(this.textBox98);
+            this.groupBox19.Controls.Add(this.txtPrecioUniVehi);
             this.groupBox19.Controls.Add(this.label177);
             this.groupBox19.Controls.Add(this.label178);
-            this.groupBox19.Controls.Add(this.textBox99);
+            this.groupBox19.Controls.Add(this.txtStockIniVehi);
             this.groupBox19.Controls.Add(this.label179);
             this.groupBox19.Controls.Add(this.label180);
-            this.groupBox19.Controls.Add(this.textBox100);
+            this.groupBox19.Controls.Add(this.txtDescripcionVehi);
             this.groupBox19.Controls.Add(this.cboEstadoProduc9);
             this.groupBox19.Controls.Add(this.label181);
-            this.groupBox19.Controls.Add(this.textBox103);
+            this.groupBox19.Controls.Add(this.txtCodEquipVehi);
             this.groupBox19.Controls.Add(this.label187);
-            this.groupBox19.Controls.Add(this.textBox104);
+            this.groupBox19.Controls.Add(this.txtNombreVehi);
             this.groupBox19.Controls.Add(this.label188);
-            this.groupBox19.Controls.Add(this.textBox105);
+            this.groupBox19.Controls.Add(this.txtCodSistemaVehi);
             this.groupBox19.Controls.Add(this.label189);
             this.groupBox19.Location = new System.Drawing.Point(12, 23);
             this.groupBox19.Name = "groupBox19";
@@ -4143,14 +4143,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // groupBox20
             // 
-            this.groupBox20.Controls.Add(this.textBox30);
+            this.groupBox20.Controls.Add(this.txtObservacionVehi);
             this.groupBox20.Controls.Add(this.btnCargarImagen9);
             this.groupBox20.Controls.Add(this.label103);
             this.groupBox20.Controls.Add(this.label109);
             this.groupBox20.Controls.Add(this.ptcImagenVehiculos);
-            this.groupBox20.Controls.Add(this.dateTimePicker19);
+            this.groupBox20.Controls.Add(this.dtpFechaRegisVehi);
             this.groupBox20.Controls.Add(this.label118);
-            this.groupBox20.Controls.Add(this.dateTimePicker20);
+            this.groupBox20.Controls.Add(this.dtpFechaAdVehi);
             this.groupBox20.Controls.Add(this.label119);
             this.groupBox20.Location = new System.Drawing.Point(384, 19);
             this.groupBox20.Name = "groupBox20";
@@ -4159,13 +4159,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox20.TabStop = false;
             this.groupBox20.Text = "Datos Adicionales";
             // 
-            // textBox30
+            // txtObservacionVehi
             // 
-            this.textBox30.Location = new System.Drawing.Point(329, 104);
-            this.textBox30.Multiline = true;
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(266, 65);
-            this.textBox30.TabIndex = 168;
+            this.txtObservacionVehi.Location = new System.Drawing.Point(329, 104);
+            this.txtObservacionVehi.Multiline = true;
+            this.txtObservacionVehi.Name = "txtObservacionVehi";
+            this.txtObservacionVehi.Size = new System.Drawing.Size(266, 65);
+            this.txtObservacionVehi.TabIndex = 168;
             // 
             // btnCargarImagen9
             // 
@@ -4210,13 +4210,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.ptcImagenVehiculos.TabIndex = 170;
             this.ptcImagenVehiculos.TabStop = false;
             // 
-            // dateTimePicker19
+            // dtpFechaRegisVehi
             // 
-            this.dateTimePicker19.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker19.Location = new System.Drawing.Point(371, 31);
-            this.dateTimePicker19.Name = "dateTimePicker19";
-            this.dateTimePicker19.Size = new System.Drawing.Size(109, 20);
-            this.dateTimePicker19.TabIndex = 153;
+            this.dtpFechaRegisVehi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaRegisVehi.Location = new System.Drawing.Point(371, 31);
+            this.dtpFechaRegisVehi.Name = "dtpFechaRegisVehi";
+            this.dtpFechaRegisVehi.Size = new System.Drawing.Size(109, 20);
+            this.dtpFechaRegisVehi.TabIndex = 153;
             // 
             // label118
             // 
@@ -4228,13 +4228,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label118.TabIndex = 154;
             this.label118.Text = "Fecha De Registro :";
             // 
-            // dateTimePicker20
+            // dtpFechaAdVehi
             // 
-            this.dateTimePicker20.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker20.Location = new System.Drawing.Point(139, 32);
-            this.dateTimePicker20.Name = "dateTimePicker20";
-            this.dateTimePicker20.Size = new System.Drawing.Size(104, 20);
-            this.dateTimePicker20.TabIndex = 151;
+            this.dtpFechaAdVehi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaAdVehi.Location = new System.Drawing.Point(139, 32);
+            this.dtpFechaAdVehi.Name = "dtpFechaAdVehi";
+            this.dtpFechaAdVehi.Size = new System.Drawing.Size(104, 20);
+            this.dtpFechaAdVehi.TabIndex = 151;
             // 
             // label119
             // 
@@ -4246,19 +4246,19 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label119.TabIndex = 152;
             this.label119.Text = "Fecha Adquisicion:";
             // 
-            // textBox94
+            // txtMarcaVehi
             // 
-            this.textBox94.Location = new System.Drawing.Point(130, 106);
-            this.textBox94.Name = "textBox94";
-            this.textBox94.Size = new System.Drawing.Size(213, 20);
-            this.textBox94.TabIndex = 179;
+            this.txtMarcaVehi.Location = new System.Drawing.Point(130, 106);
+            this.txtMarcaVehi.Name = "txtMarcaVehi";
+            this.txtMarcaVehi.Size = new System.Drawing.Size(213, 20);
+            this.txtMarcaVehi.TabIndex = 179;
             // 
-            // textBox95
+            // txtStockMinVehi
             // 
-            this.textBox95.Location = new System.Drawing.Point(131, 289);
-            this.textBox95.Name = "textBox95";
-            this.textBox95.Size = new System.Drawing.Size(158, 20);
-            this.textBox95.TabIndex = 178;
+            this.txtStockMinVehi.Location = new System.Drawing.Point(131, 289);
+            this.txtStockMinVehi.Name = "txtStockMinVehi";
+            this.txtStockMinVehi.Size = new System.Drawing.Size(158, 20);
+            this.txtStockMinVehi.TabIndex = 178;
             // 
             // label172
             // 
@@ -4280,12 +4280,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label173.TabIndex = 176;
             this.label173.Text = "Tipo Unidad:";
             // 
-            // textBox96
+            // txtCantidadVehi
             // 
-            this.textBox96.Location = new System.Drawing.Point(131, 184);
-            this.textBox96.Name = "textBox96";
-            this.textBox96.Size = new System.Drawing.Size(158, 20);
-            this.textBox96.TabIndex = 175;
+            this.txtCantidadVehi.Location = new System.Drawing.Point(131, 184);
+            this.txtCantidadVehi.Name = "txtCantidadVehi";
+            this.txtCantidadVehi.Size = new System.Drawing.Size(158, 20);
+            this.txtCantidadVehi.TabIndex = 175;
             // 
             // label174
             // 
@@ -4297,12 +4297,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label174.TabIndex = 174;
             this.label174.Text = "Cantidad:";
             // 
-            // textBox97
+            // txtModeloVehi
             // 
-            this.textBox97.Location = new System.Drawing.Point(131, 132);
-            this.textBox97.Name = "textBox97";
-            this.textBox97.Size = new System.Drawing.Size(213, 20);
-            this.textBox97.TabIndex = 173;
+            this.txtModeloVehi.Location = new System.Drawing.Point(131, 132);
+            this.txtModeloVehi.Name = "txtModeloVehi";
+            this.txtModeloVehi.Size = new System.Drawing.Size(213, 20);
+            this.txtModeloVehi.TabIndex = 173;
             // 
             // cboTipoUnidad5
             // 
@@ -4339,12 +4339,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label176.TabIndex = 169;
             this.label176.Text = "Marca:";
             // 
-            // textBox98
+            // txtPrecioUniVehi
             // 
-            this.textBox98.Location = new System.Drawing.Point(131, 237);
-            this.textBox98.Name = "textBox98";
-            this.textBox98.Size = new System.Drawing.Size(158, 20);
-            this.textBox98.TabIndex = 167;
+            this.txtPrecioUniVehi.Location = new System.Drawing.Point(131, 237);
+            this.txtPrecioUniVehi.Name = "txtPrecioUniVehi";
+            this.txtPrecioUniVehi.Size = new System.Drawing.Size(158, 20);
+            this.txtPrecioUniVehi.TabIndex = 167;
             // 
             // label177
             // 
@@ -4364,12 +4364,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label178.TabIndex = 166;
             this.label178.Text = "Precio Unitario:";
             // 
-            // textBox99
+            // txtStockIniVehi
             // 
-            this.textBox99.Location = new System.Drawing.Point(131, 263);
-            this.textBox99.Name = "textBox99";
-            this.textBox99.Size = new System.Drawing.Size(158, 20);
-            this.textBox99.TabIndex = 165;
+            this.txtStockIniVehi.Location = new System.Drawing.Point(131, 263);
+            this.txtStockIniVehi.Name = "txtStockIniVehi";
+            this.txtStockIniVehi.Size = new System.Drawing.Size(158, 20);
+            this.txtStockIniVehi.TabIndex = 165;
             // 
             // label179
             // 
@@ -4391,13 +4391,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label180.TabIndex = 163;
             this.label180.Text = "Descripcion :";
             // 
-            // textBox100
+            // txtDescripcionVehi
             // 
-            this.textBox100.Location = new System.Drawing.Point(131, 315);
-            this.textBox100.Multiline = true;
-            this.textBox100.Name = "textBox100";
-            this.textBox100.Size = new System.Drawing.Size(213, 56);
-            this.textBox100.TabIndex = 162;
+            this.txtDescripcionVehi.Location = new System.Drawing.Point(131, 315);
+            this.txtDescripcionVehi.Multiline = true;
+            this.txtDescripcionVehi.Name = "txtDescripcionVehi";
+            this.txtDescripcionVehi.Size = new System.Drawing.Size(213, 56);
+            this.txtDescripcionVehi.TabIndex = 162;
             // 
             // cboEstadoProduc9
             // 
@@ -4418,12 +4418,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label181.TabIndex = 160;
             this.label181.Text = "Estado :";
             // 
-            // textBox103
+            // txtCodEquipVehi
             // 
-            this.textBox103.Location = new System.Drawing.Point(130, 54);
-            this.textBox103.Name = "textBox103";
-            this.textBox103.Size = new System.Drawing.Size(213, 20);
-            this.textBox103.TabIndex = 78;
+            this.txtCodEquipVehi.Location = new System.Drawing.Point(130, 54);
+            this.txtCodEquipVehi.Name = "txtCodEquipVehi";
+            this.txtCodEquipVehi.Size = new System.Drawing.Size(213, 20);
+            this.txtCodEquipVehi.TabIndex = 78;
             // 
             // label187
             // 
@@ -4435,12 +4435,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label187.TabIndex = 77;
             this.label187.Text = "Cod. Equipo";
             // 
-            // textBox104
+            // txtNombreVehi
             // 
-            this.textBox104.Location = new System.Drawing.Point(131, 80);
-            this.textBox104.Name = "textBox104";
-            this.textBox104.Size = new System.Drawing.Size(213, 20);
-            this.textBox104.TabIndex = 57;
+            this.txtNombreVehi.Location = new System.Drawing.Point(131, 80);
+            this.txtNombreVehi.Name = "txtNombreVehi";
+            this.txtNombreVehi.Size = new System.Drawing.Size(213, 20);
+            this.txtNombreVehi.TabIndex = 57;
             // 
             // label188
             // 
@@ -4452,12 +4452,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label188.TabIndex = 56;
             this.label188.Text = "Nombre:";
             // 
-            // textBox105
+            // txtCodSistemaVehi
             // 
-            this.textBox105.Location = new System.Drawing.Point(130, 28);
-            this.textBox105.Name = "textBox105";
-            this.textBox105.Size = new System.Drawing.Size(213, 20);
-            this.textBox105.TabIndex = 28;
+            this.txtCodSistemaVehi.Location = new System.Drawing.Point(130, 28);
+            this.txtCodSistemaVehi.Name = "txtCodSistemaVehi";
+            this.txtCodSistemaVehi.Size = new System.Drawing.Size(213, 20);
+            this.txtCodSistemaVehi.TabIndex = 28;
             // 
             // label189
             // 
@@ -4483,30 +4483,30 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // groupBox21
             // 
             this.groupBox21.Controls.Add(this.groupBox22);
-            this.groupBox21.Controls.Add(this.textBox60);
-            this.groupBox21.Controls.Add(this.textBox61);
+            this.groupBox21.Controls.Add(this.txtMarcaAseo);
+            this.groupBox21.Controls.Add(this.txtStockMinAseo);
             this.groupBox21.Controls.Add(this.label141);
             this.groupBox21.Controls.Add(this.label144);
-            this.groupBox21.Controls.Add(this.textBox72);
+            this.groupBox21.Controls.Add(this.txtCantidadAseo);
             this.groupBox21.Controls.Add(this.label148);
-            this.groupBox21.Controls.Add(this.textBox74);
+            this.groupBox21.Controls.Add(this.txtModeloAseo);
             this.groupBox21.Controls.Add(this.cboTipoUnidad6);
             this.groupBox21.Controls.Add(this.label162);
             this.groupBox21.Controls.Add(this.label163);
-            this.groupBox21.Controls.Add(this.textBox89);
+            this.groupBox21.Controls.Add(this.txtPrecioUniAseo);
             this.groupBox21.Controls.Add(this.label164);
             this.groupBox21.Controls.Add(this.label165);
-            this.groupBox21.Controls.Add(this.textBox90);
+            this.groupBox21.Controls.Add(this.txtStockIniAseo);
             this.groupBox21.Controls.Add(this.label166);
             this.groupBox21.Controls.Add(this.label170);
-            this.groupBox21.Controls.Add(this.textBox101);
+            this.groupBox21.Controls.Add(this.txtDescripcionAseo);
             this.groupBox21.Controls.Add(this.cboEstadoProduc10);
             this.groupBox21.Controls.Add(this.label171);
-            this.groupBox21.Controls.Add(this.textBox102);
+            this.groupBox21.Controls.Add(this.txtCodEquipAseo);
             this.groupBox21.Controls.Add(this.label182);
-            this.groupBox21.Controls.Add(this.textBox108);
+            this.groupBox21.Controls.Add(this.txtNombreAseo);
             this.groupBox21.Controls.Add(this.label183);
-            this.groupBox21.Controls.Add(this.textBox109);
+            this.groupBox21.Controls.Add(this.txtCodSistemaAseo);
             this.groupBox21.Controls.Add(this.label184);
             this.groupBox21.Location = new System.Drawing.Point(8, 20);
             this.groupBox21.Name = "groupBox21";
@@ -4517,14 +4517,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // groupBox22
             // 
-            this.groupBox22.Controls.Add(this.textBox50);
+            this.groupBox22.Controls.Add(this.txtObservacionAseo);
             this.groupBox22.Controls.Add(this.btnCargarImagen10);
             this.groupBox22.Controls.Add(this.label122);
             this.groupBox22.Controls.Add(this.label128);
             this.groupBox22.Controls.Add(this.ptcImagenUtilesAseo);
-            this.groupBox22.Controls.Add(this.dateTimePicker21);
+            this.groupBox22.Controls.Add(this.dtpFechaRegisAseo);
             this.groupBox22.Controls.Add(this.label137);
-            this.groupBox22.Controls.Add(this.dateTimePicker22);
+            this.groupBox22.Controls.Add(this.dtpFechaAdAseo);
             this.groupBox22.Controls.Add(this.label138);
             this.groupBox22.Location = new System.Drawing.Point(386, 19);
             this.groupBox22.Name = "groupBox22";
@@ -4533,13 +4533,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox22.TabStop = false;
             this.groupBox22.Text = "Datos Adicionales";
             // 
-            // textBox50
+            // txtObservacionAseo
             // 
-            this.textBox50.Location = new System.Drawing.Point(329, 104);
-            this.textBox50.Multiline = true;
-            this.textBox50.Name = "textBox50";
-            this.textBox50.Size = new System.Drawing.Size(266, 65);
-            this.textBox50.TabIndex = 168;
+            this.txtObservacionAseo.Location = new System.Drawing.Point(329, 104);
+            this.txtObservacionAseo.Multiline = true;
+            this.txtObservacionAseo.Name = "txtObservacionAseo";
+            this.txtObservacionAseo.Size = new System.Drawing.Size(266, 65);
+            this.txtObservacionAseo.TabIndex = 168;
             // 
             // btnCargarImagen10
             // 
@@ -4584,13 +4584,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.ptcImagenUtilesAseo.TabIndex = 170;
             this.ptcImagenUtilesAseo.TabStop = false;
             // 
-            // dateTimePicker21
+            // dtpFechaRegisAseo
             // 
-            this.dateTimePicker21.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker21.Location = new System.Drawing.Point(371, 31);
-            this.dateTimePicker21.Name = "dateTimePicker21";
-            this.dateTimePicker21.Size = new System.Drawing.Size(109, 20);
-            this.dateTimePicker21.TabIndex = 153;
+            this.dtpFechaRegisAseo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaRegisAseo.Location = new System.Drawing.Point(371, 31);
+            this.dtpFechaRegisAseo.Name = "dtpFechaRegisAseo";
+            this.dtpFechaRegisAseo.Size = new System.Drawing.Size(109, 20);
+            this.dtpFechaRegisAseo.TabIndex = 153;
             // 
             // label137
             // 
@@ -4602,13 +4602,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label137.TabIndex = 154;
             this.label137.Text = "Fecha De Registro :";
             // 
-            // dateTimePicker22
+            // dtpFechaAdAseo
             // 
-            this.dateTimePicker22.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker22.Location = new System.Drawing.Point(139, 32);
-            this.dateTimePicker22.Name = "dateTimePicker22";
-            this.dateTimePicker22.Size = new System.Drawing.Size(104, 20);
-            this.dateTimePicker22.TabIndex = 151;
+            this.dtpFechaAdAseo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaAdAseo.Location = new System.Drawing.Point(139, 32);
+            this.dtpFechaAdAseo.Name = "dtpFechaAdAseo";
+            this.dtpFechaAdAseo.Size = new System.Drawing.Size(104, 20);
+            this.dtpFechaAdAseo.TabIndex = 151;
             // 
             // label138
             // 
@@ -4620,19 +4620,19 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label138.TabIndex = 152;
             this.label138.Text = "Fecha Adquisicion:";
             // 
-            // textBox60
+            // txtMarcaAseo
             // 
-            this.textBox60.Location = new System.Drawing.Point(130, 106);
-            this.textBox60.Name = "textBox60";
-            this.textBox60.Size = new System.Drawing.Size(213, 20);
-            this.textBox60.TabIndex = 179;
+            this.txtMarcaAseo.Location = new System.Drawing.Point(130, 106);
+            this.txtMarcaAseo.Name = "txtMarcaAseo";
+            this.txtMarcaAseo.Size = new System.Drawing.Size(213, 20);
+            this.txtMarcaAseo.TabIndex = 179;
             // 
-            // textBox61
+            // txtStockMinAseo
             // 
-            this.textBox61.Location = new System.Drawing.Point(131, 289);
-            this.textBox61.Name = "textBox61";
-            this.textBox61.Size = new System.Drawing.Size(158, 20);
-            this.textBox61.TabIndex = 178;
+            this.txtStockMinAseo.Location = new System.Drawing.Point(131, 289);
+            this.txtStockMinAseo.Name = "txtStockMinAseo";
+            this.txtStockMinAseo.Size = new System.Drawing.Size(158, 20);
+            this.txtStockMinAseo.TabIndex = 178;
             // 
             // label141
             // 
@@ -4654,12 +4654,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label144.TabIndex = 176;
             this.label144.Text = "Tipo Unidad:";
             // 
-            // textBox72
+            // txtCantidadAseo
             // 
-            this.textBox72.Location = new System.Drawing.Point(131, 184);
-            this.textBox72.Name = "textBox72";
-            this.textBox72.Size = new System.Drawing.Size(158, 20);
-            this.textBox72.TabIndex = 175;
+            this.txtCantidadAseo.Location = new System.Drawing.Point(131, 184);
+            this.txtCantidadAseo.Name = "txtCantidadAseo";
+            this.txtCantidadAseo.Size = new System.Drawing.Size(158, 20);
+            this.txtCantidadAseo.TabIndex = 175;
             // 
             // label148
             // 
@@ -4671,12 +4671,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label148.TabIndex = 174;
             this.label148.Text = "Cantidad:";
             // 
-            // textBox74
+            // txtModeloAseo
             // 
-            this.textBox74.Location = new System.Drawing.Point(131, 132);
-            this.textBox74.Name = "textBox74";
-            this.textBox74.Size = new System.Drawing.Size(213, 20);
-            this.textBox74.TabIndex = 173;
+            this.txtModeloAseo.Location = new System.Drawing.Point(131, 132);
+            this.txtModeloAseo.Name = "txtModeloAseo";
+            this.txtModeloAseo.Size = new System.Drawing.Size(213, 20);
+            this.txtModeloAseo.TabIndex = 173;
             // 
             // cboTipoUnidad6
             // 
@@ -4713,12 +4713,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label163.TabIndex = 169;
             this.label163.Text = "Marca:";
             // 
-            // textBox89
+            // txtPrecioUniAseo
             // 
-            this.textBox89.Location = new System.Drawing.Point(131, 237);
-            this.textBox89.Name = "textBox89";
-            this.textBox89.Size = new System.Drawing.Size(158, 20);
-            this.textBox89.TabIndex = 167;
+            this.txtPrecioUniAseo.Location = new System.Drawing.Point(131, 237);
+            this.txtPrecioUniAseo.Name = "txtPrecioUniAseo";
+            this.txtPrecioUniAseo.Size = new System.Drawing.Size(158, 20);
+            this.txtPrecioUniAseo.TabIndex = 167;
             // 
             // label164
             // 
@@ -4738,12 +4738,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label165.TabIndex = 166;
             this.label165.Text = "Precio Unitario:";
             // 
-            // textBox90
+            // txtStockIniAseo
             // 
-            this.textBox90.Location = new System.Drawing.Point(131, 263);
-            this.textBox90.Name = "textBox90";
-            this.textBox90.Size = new System.Drawing.Size(158, 20);
-            this.textBox90.TabIndex = 165;
+            this.txtStockIniAseo.Location = new System.Drawing.Point(131, 263);
+            this.txtStockIniAseo.Name = "txtStockIniAseo";
+            this.txtStockIniAseo.Size = new System.Drawing.Size(158, 20);
+            this.txtStockIniAseo.TabIndex = 165;
             // 
             // label166
             // 
@@ -4765,13 +4765,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label170.TabIndex = 163;
             this.label170.Text = "Descripcion :";
             // 
-            // textBox101
+            // txtDescripcionAseo
             // 
-            this.textBox101.Location = new System.Drawing.Point(131, 315);
-            this.textBox101.Multiline = true;
-            this.textBox101.Name = "textBox101";
-            this.textBox101.Size = new System.Drawing.Size(213, 56);
-            this.textBox101.TabIndex = 162;
+            this.txtDescripcionAseo.Location = new System.Drawing.Point(131, 315);
+            this.txtDescripcionAseo.Multiline = true;
+            this.txtDescripcionAseo.Name = "txtDescripcionAseo";
+            this.txtDescripcionAseo.Size = new System.Drawing.Size(213, 56);
+            this.txtDescripcionAseo.TabIndex = 162;
             // 
             // cboEstadoProduc10
             // 
@@ -4792,12 +4792,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label171.TabIndex = 160;
             this.label171.Text = "Estado :";
             // 
-            // textBox102
+            // txtCodEquipAseo
             // 
-            this.textBox102.Location = new System.Drawing.Point(130, 54);
-            this.textBox102.Name = "textBox102";
-            this.textBox102.Size = new System.Drawing.Size(213, 20);
-            this.textBox102.TabIndex = 78;
+            this.txtCodEquipAseo.Location = new System.Drawing.Point(130, 54);
+            this.txtCodEquipAseo.Name = "txtCodEquipAseo";
+            this.txtCodEquipAseo.Size = new System.Drawing.Size(213, 20);
+            this.txtCodEquipAseo.TabIndex = 78;
             // 
             // label182
             // 
@@ -4809,12 +4809,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label182.TabIndex = 77;
             this.label182.Text = "Cod. Equipo";
             // 
-            // textBox108
+            // txtNombreAseo
             // 
-            this.textBox108.Location = new System.Drawing.Point(131, 80);
-            this.textBox108.Name = "textBox108";
-            this.textBox108.Size = new System.Drawing.Size(213, 20);
-            this.textBox108.TabIndex = 57;
+            this.txtNombreAseo.Location = new System.Drawing.Point(131, 80);
+            this.txtNombreAseo.Name = "txtNombreAseo";
+            this.txtNombreAseo.Size = new System.Drawing.Size(213, 20);
+            this.txtNombreAseo.TabIndex = 57;
             // 
             // label183
             // 
@@ -4826,12 +4826,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label183.TabIndex = 56;
             this.label183.Text = "Nombre:";
             // 
-            // textBox109
+            // txtCodSistemaAseo
             // 
-            this.textBox109.Location = new System.Drawing.Point(130, 28);
-            this.textBox109.Name = "textBox109";
-            this.textBox109.Size = new System.Drawing.Size(213, 20);
-            this.textBox109.TabIndex = 28;
+            this.txtCodSistemaAseo.Location = new System.Drawing.Point(130, 28);
+            this.txtCodSistemaAseo.Name = "txtCodSistemaAseo";
+            this.txtCodSistemaAseo.Size = new System.Drawing.Size(213, 20);
+            this.txtCodSistemaAseo.TabIndex = 28;
             // 
             // label184
             // 
@@ -4857,30 +4857,30 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // groupBox23
             // 
             this.groupBox23.Controls.Add(this.groupBox24);
-            this.groupBox23.Controls.Add(this.textBox111);
-            this.groupBox23.Controls.Add(this.textBox112);
+            this.groupBox23.Controls.Add(this.txtMarcaArma);
+            this.groupBox23.Controls.Add(this.txtStockMinArma);
             this.groupBox23.Controls.Add(this.label194);
             this.groupBox23.Controls.Add(this.label195);
-            this.groupBox23.Controls.Add(this.textBox113);
+            this.groupBox23.Controls.Add(this.txtCantidadArma);
             this.groupBox23.Controls.Add(this.label196);
-            this.groupBox23.Controls.Add(this.textBox114);
+            this.groupBox23.Controls.Add(this.txtModeloArma);
             this.groupBox23.Controls.Add(this.cboTipoUnidad7);
             this.groupBox23.Controls.Add(this.label197);
             this.groupBox23.Controls.Add(this.label198);
-            this.groupBox23.Controls.Add(this.textBox115);
+            this.groupBox23.Controls.Add(this.txtPrecioUniArma);
             this.groupBox23.Controls.Add(this.label199);
             this.groupBox23.Controls.Add(this.label200);
-            this.groupBox23.Controls.Add(this.textBox116);
+            this.groupBox23.Controls.Add(this.txtStockIniArma);
             this.groupBox23.Controls.Add(this.label201);
             this.groupBox23.Controls.Add(this.label202);
-            this.groupBox23.Controls.Add(this.textBox117);
+            this.groupBox23.Controls.Add(this.txtDescripcionArma);
             this.groupBox23.Controls.Add(this.cboEstadoProduc11);
             this.groupBox23.Controls.Add(this.label203);
-            this.groupBox23.Controls.Add(this.textBox118);
+            this.groupBox23.Controls.Add(this.txtCodEquipArma);
             this.groupBox23.Controls.Add(this.label204);
-            this.groupBox23.Controls.Add(this.textBox119);
+            this.groupBox23.Controls.Add(this.txtNombreArma);
             this.groupBox23.Controls.Add(this.label205);
-            this.groupBox23.Controls.Add(this.textBox120);
+            this.groupBox23.Controls.Add(this.txtCodSistemaArma);
             this.groupBox23.Controls.Add(this.label206);
             this.groupBox23.Location = new System.Drawing.Point(8, 19);
             this.groupBox23.Name = "groupBox23";
@@ -4891,14 +4891,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // groupBox24
             // 
-            this.groupBox24.Controls.Add(this.textBox110);
+            this.groupBox24.Controls.Add(this.txtObservacionArma);
             this.groupBox24.Controls.Add(this.btnCargarImagen11);
             this.groupBox24.Controls.Add(this.label185);
             this.groupBox24.Controls.Add(this.label186);
             this.groupBox24.Controls.Add(this.ptcImagenArmamento);
-            this.groupBox24.Controls.Add(this.dateTimePicker23);
+            this.groupBox24.Controls.Add(this.dtpFechaRegisArma);
             this.groupBox24.Controls.Add(this.label191);
-            this.groupBox24.Controls.Add(this.dateTimePicker24);
+            this.groupBox24.Controls.Add(this.dtpFechaAdArma);
             this.groupBox24.Controls.Add(this.label193);
             this.groupBox24.Location = new System.Drawing.Point(386, 19);
             this.groupBox24.Name = "groupBox24";
@@ -4907,13 +4907,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox24.TabStop = false;
             this.groupBox24.Text = "Datos Adicionales";
             // 
-            // textBox110
+            // txtObservacionArma
             // 
-            this.textBox110.Location = new System.Drawing.Point(329, 104);
-            this.textBox110.Multiline = true;
-            this.textBox110.Name = "textBox110";
-            this.textBox110.Size = new System.Drawing.Size(266, 65);
-            this.textBox110.TabIndex = 168;
+            this.txtObservacionArma.Location = new System.Drawing.Point(329, 104);
+            this.txtObservacionArma.Multiline = true;
+            this.txtObservacionArma.Name = "txtObservacionArma";
+            this.txtObservacionArma.Size = new System.Drawing.Size(266, 65);
+            this.txtObservacionArma.TabIndex = 168;
             // 
             // btnCargarImagen11
             // 
@@ -4958,13 +4958,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.ptcImagenArmamento.TabIndex = 170;
             this.ptcImagenArmamento.TabStop = false;
             // 
-            // dateTimePicker23
+            // dtpFechaRegisArma
             // 
-            this.dateTimePicker23.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker23.Location = new System.Drawing.Point(371, 31);
-            this.dateTimePicker23.Name = "dateTimePicker23";
-            this.dateTimePicker23.Size = new System.Drawing.Size(109, 20);
-            this.dateTimePicker23.TabIndex = 153;
+            this.dtpFechaRegisArma.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaRegisArma.Location = new System.Drawing.Point(371, 31);
+            this.dtpFechaRegisArma.Name = "dtpFechaRegisArma";
+            this.dtpFechaRegisArma.Size = new System.Drawing.Size(109, 20);
+            this.dtpFechaRegisArma.TabIndex = 153;
             // 
             // label191
             // 
@@ -4976,13 +4976,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label191.TabIndex = 154;
             this.label191.Text = "Fecha De Registro :";
             // 
-            // dateTimePicker24
+            // dtpFechaAdArma
             // 
-            this.dateTimePicker24.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker24.Location = new System.Drawing.Point(139, 32);
-            this.dateTimePicker24.Name = "dateTimePicker24";
-            this.dateTimePicker24.Size = new System.Drawing.Size(104, 20);
-            this.dateTimePicker24.TabIndex = 151;
+            this.dtpFechaAdArma.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaAdArma.Location = new System.Drawing.Point(139, 32);
+            this.dtpFechaAdArma.Name = "dtpFechaAdArma";
+            this.dtpFechaAdArma.Size = new System.Drawing.Size(104, 20);
+            this.dtpFechaAdArma.TabIndex = 151;
             // 
             // label193
             // 
@@ -4994,19 +4994,19 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label193.TabIndex = 152;
             this.label193.Text = "Fecha Adquisicion:";
             // 
-            // textBox111
+            // txtMarcaArma
             // 
-            this.textBox111.Location = new System.Drawing.Point(130, 106);
-            this.textBox111.Name = "textBox111";
-            this.textBox111.Size = new System.Drawing.Size(213, 20);
-            this.textBox111.TabIndex = 179;
+            this.txtMarcaArma.Location = new System.Drawing.Point(130, 106);
+            this.txtMarcaArma.Name = "txtMarcaArma";
+            this.txtMarcaArma.Size = new System.Drawing.Size(213, 20);
+            this.txtMarcaArma.TabIndex = 179;
             // 
-            // textBox112
+            // txtStockMinArma
             // 
-            this.textBox112.Location = new System.Drawing.Point(131, 289);
-            this.textBox112.Name = "textBox112";
-            this.textBox112.Size = new System.Drawing.Size(158, 20);
-            this.textBox112.TabIndex = 178;
+            this.txtStockMinArma.Location = new System.Drawing.Point(131, 289);
+            this.txtStockMinArma.Name = "txtStockMinArma";
+            this.txtStockMinArma.Size = new System.Drawing.Size(158, 20);
+            this.txtStockMinArma.TabIndex = 178;
             // 
             // label194
             // 
@@ -5028,12 +5028,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label195.TabIndex = 176;
             this.label195.Text = "Tipo Unidad:";
             // 
-            // textBox113
+            // txtCantidadArma
             // 
-            this.textBox113.Location = new System.Drawing.Point(131, 184);
-            this.textBox113.Name = "textBox113";
-            this.textBox113.Size = new System.Drawing.Size(158, 20);
-            this.textBox113.TabIndex = 175;
+            this.txtCantidadArma.Location = new System.Drawing.Point(131, 184);
+            this.txtCantidadArma.Name = "txtCantidadArma";
+            this.txtCantidadArma.Size = new System.Drawing.Size(158, 20);
+            this.txtCantidadArma.TabIndex = 175;
             // 
             // label196
             // 
@@ -5045,12 +5045,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label196.TabIndex = 174;
             this.label196.Text = "Cantidad:";
             // 
-            // textBox114
+            // txtModeloArma
             // 
-            this.textBox114.Location = new System.Drawing.Point(131, 132);
-            this.textBox114.Name = "textBox114";
-            this.textBox114.Size = new System.Drawing.Size(213, 20);
-            this.textBox114.TabIndex = 173;
+            this.txtModeloArma.Location = new System.Drawing.Point(131, 132);
+            this.txtModeloArma.Name = "txtModeloArma";
+            this.txtModeloArma.Size = new System.Drawing.Size(213, 20);
+            this.txtModeloArma.TabIndex = 173;
             // 
             // cboTipoUnidad7
             // 
@@ -5087,12 +5087,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label198.TabIndex = 169;
             this.label198.Text = "Marca:";
             // 
-            // textBox115
+            // txtPrecioUniArma
             // 
-            this.textBox115.Location = new System.Drawing.Point(131, 237);
-            this.textBox115.Name = "textBox115";
-            this.textBox115.Size = new System.Drawing.Size(158, 20);
-            this.textBox115.TabIndex = 167;
+            this.txtPrecioUniArma.Location = new System.Drawing.Point(131, 237);
+            this.txtPrecioUniArma.Name = "txtPrecioUniArma";
+            this.txtPrecioUniArma.Size = new System.Drawing.Size(158, 20);
+            this.txtPrecioUniArma.TabIndex = 167;
             // 
             // label199
             // 
@@ -5112,12 +5112,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label200.TabIndex = 166;
             this.label200.Text = "Precio Unitario:";
             // 
-            // textBox116
+            // txtStockIniArma
             // 
-            this.textBox116.Location = new System.Drawing.Point(131, 263);
-            this.textBox116.Name = "textBox116";
-            this.textBox116.Size = new System.Drawing.Size(158, 20);
-            this.textBox116.TabIndex = 165;
+            this.txtStockIniArma.Location = new System.Drawing.Point(131, 263);
+            this.txtStockIniArma.Name = "txtStockIniArma";
+            this.txtStockIniArma.Size = new System.Drawing.Size(158, 20);
+            this.txtStockIniArma.TabIndex = 165;
             // 
             // label201
             // 
@@ -5139,13 +5139,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label202.TabIndex = 163;
             this.label202.Text = "Descripcion :";
             // 
-            // textBox117
+            // txtDescripcionArma
             // 
-            this.textBox117.Location = new System.Drawing.Point(131, 315);
-            this.textBox117.Multiline = true;
-            this.textBox117.Name = "textBox117";
-            this.textBox117.Size = new System.Drawing.Size(213, 56);
-            this.textBox117.TabIndex = 162;
+            this.txtDescripcionArma.Location = new System.Drawing.Point(131, 315);
+            this.txtDescripcionArma.Multiline = true;
+            this.txtDescripcionArma.Name = "txtDescripcionArma";
+            this.txtDescripcionArma.Size = new System.Drawing.Size(213, 56);
+            this.txtDescripcionArma.TabIndex = 162;
             // 
             // cboEstadoProduc11
             // 
@@ -5166,12 +5166,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label203.TabIndex = 160;
             this.label203.Text = "Estado :";
             // 
-            // textBox118
+            // txtCodEquipArma
             // 
-            this.textBox118.Location = new System.Drawing.Point(130, 54);
-            this.textBox118.Name = "textBox118";
-            this.textBox118.Size = new System.Drawing.Size(213, 20);
-            this.textBox118.TabIndex = 78;
+            this.txtCodEquipArma.Location = new System.Drawing.Point(130, 54);
+            this.txtCodEquipArma.Name = "txtCodEquipArma";
+            this.txtCodEquipArma.Size = new System.Drawing.Size(213, 20);
+            this.txtCodEquipArma.TabIndex = 78;
             // 
             // label204
             // 
@@ -5183,12 +5183,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label204.TabIndex = 77;
             this.label204.Text = "Cod. Equipo";
             // 
-            // textBox119
+            // txtNombreArma
             // 
-            this.textBox119.Location = new System.Drawing.Point(131, 80);
-            this.textBox119.Name = "textBox119";
-            this.textBox119.Size = new System.Drawing.Size(213, 20);
-            this.textBox119.TabIndex = 57;
+            this.txtNombreArma.Location = new System.Drawing.Point(131, 80);
+            this.txtNombreArma.Name = "txtNombreArma";
+            this.txtNombreArma.Size = new System.Drawing.Size(213, 20);
+            this.txtNombreArma.TabIndex = 57;
             // 
             // label205
             // 
@@ -5200,12 +5200,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label205.TabIndex = 56;
             this.label205.Text = "Nombre:";
             // 
-            // textBox120
+            // txtCodSistemaArma
             // 
-            this.textBox120.Location = new System.Drawing.Point(130, 28);
-            this.textBox120.Name = "textBox120";
-            this.textBox120.Size = new System.Drawing.Size(213, 20);
-            this.textBox120.TabIndex = 28;
+            this.txtCodSistemaArma.Location = new System.Drawing.Point(130, 28);
+            this.txtCodSistemaArma.Name = "txtCodSistemaArma";
+            this.txtCodSistemaArma.Size = new System.Drawing.Size(213, 20);
+            this.txtCodSistemaArma.TabIndex = 28;
             // 
             // label206
             // 
@@ -5321,7 +5321,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtModelo;
-        private System.Windows.Forms.TextBox txtNombreEquip;
+        private System.Windows.Forms.TextBox txtNombreTecno;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtStockInicial;
         private System.Windows.Forms.Label label7;
@@ -5338,7 +5338,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox txtCodigoEquipoUtiles;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtNombreUtiles;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.TextBox txtCodigoSistemaUtiles;
         private System.Windows.Forms.Label label45;
@@ -5451,27 +5451,27 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.DateTimePicker dtpFechaAdquisicion;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.GroupBox groupBox14;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpFechaRegisUtiles;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpFechaAdUtiles;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox73;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtMarcaUtiles;
+        private System.Windows.Forms.TextBox txtStockMinUtiles;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtCantidadUtiles;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtModeloUtiles;
         private System.Windows.Forms.ComboBox cboTipoUnidad1;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtPrecioUnitarioUtiles;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtStockIniUtiles;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label139;
-        private System.Windows.Forms.TextBox textBox71;
+        private System.Windows.Forms.TextBox txtDescripcionUti;
         private System.Windows.Forms.ComboBox cboEstadoProduc5;
         private System.Windows.Forms.Label label140;
         private System.Windows.Forms.TextBox txtCantidadTecno;
@@ -5479,108 +5479,108 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.ComboBox cboTipoUnidad;
         private System.Windows.Forms.Label label143;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtMarcaEquip;
+        private System.Windows.Forms.TextBox txtStockMinEquip;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox txtCantidadEquip;
         private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox txtModeloEquip;
         private System.Windows.Forms.ComboBox cboTipoUnidad2;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox txtPrecioUniEquip;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox txtStockIniEquip;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox txtDescripcionEquip;
         private System.Windows.Forms.ComboBox cboEstadoProduc6;
         private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.TextBox textBox76;
+        private System.Windows.Forms.TextBox txtCodEquipoEquip;
         private System.Windows.Forms.Label label145;
-        private System.Windows.Forms.TextBox textBox77;
+        private System.Windows.Forms.TextBox txtNombreEquip;
         private System.Windows.Forms.Label label146;
-        private System.Windows.Forms.TextBox textBox78;
+        private System.Windows.Forms.TextBox txtCodSistemaEquipami;
         private System.Windows.Forms.Label label147;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox txtMarcaProtec;
+        private System.Windows.Forms.TextBox txtStockMinProtec;
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.TextBox txtCantidadProtec;
         private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.TextBox txtModeloProtec;
         private System.Windows.Forms.ComboBox cboTipoUnidad3;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.TextBox textBox26;
+        private System.Windows.Forms.TextBox txtPrecioUniProtec;
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.TextBox txtStockIniProtec;
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Label label72;
-        private System.Windows.Forms.TextBox textBox28;
+        private System.Windows.Forms.TextBox txtDescripcionProtec;
         private System.Windows.Forms.ComboBox cboEstadoProduc7;
         private System.Windows.Forms.Label label73;
-        private System.Windows.Forms.TextBox textBox79;
+        private System.Windows.Forms.TextBox txtCodEquipProtec;
         private System.Windows.Forms.Label label149;
-        private System.Windows.Forms.TextBox textBox80;
+        private System.Windows.Forms.TextBox txtNombreProtec;
         private System.Windows.Forms.Label label150;
-        private System.Windows.Forms.TextBox textBox81;
+        private System.Windows.Forms.TextBox txtCodSistemaProtec;
         private System.Windows.Forms.Label label151;
         private System.Windows.Forms.GroupBox groupBox17;
-        private System.Windows.Forms.TextBox textBox82;
-        private System.Windows.Forms.TextBox textBox83;
+        private System.Windows.Forms.TextBox txtMarcaMobi;
+        private System.Windows.Forms.TextBox txtStockMinMobi;
         private System.Windows.Forms.Label label152;
         private System.Windows.Forms.Label label153;
-        private System.Windows.Forms.TextBox textBox84;
+        private System.Windows.Forms.TextBox txtCantidadMobi;
         private System.Windows.Forms.Label label154;
-        private System.Windows.Forms.TextBox textBox85;
+        private System.Windows.Forms.TextBox txtModeloMobi;
         private System.Windows.Forms.ComboBox cboTipoUnidad4;
         private System.Windows.Forms.Label label155;
         private System.Windows.Forms.Label label156;
-        private System.Windows.Forms.TextBox textBox86;
+        private System.Windows.Forms.TextBox txtPrecioUniMobi;
         private System.Windows.Forms.Label label157;
         private System.Windows.Forms.Label label158;
-        private System.Windows.Forms.TextBox textBox87;
+        private System.Windows.Forms.TextBox txtStockIniMobi;
         private System.Windows.Forms.Label label159;
         private System.Windows.Forms.Label label160;
-        private System.Windows.Forms.TextBox textBox88;
+        private System.Windows.Forms.TextBox txtDescripcionMobi;
         private System.Windows.Forms.ComboBox cboEstadoProduc8;
         private System.Windows.Forms.Label label161;
-        private System.Windows.Forms.TextBox textBox91;
+        private System.Windows.Forms.TextBox txtCodEquipMobi;
         private System.Windows.Forms.Label label167;
-        private System.Windows.Forms.TextBox textBox92;
+        private System.Windows.Forms.TextBox txtNombreMobi;
         private System.Windows.Forms.Label label168;
-        private System.Windows.Forms.TextBox textBox93;
+        private System.Windows.Forms.TextBox txtCodSistemaMobi;
         private System.Windows.Forms.Label label169;
         private System.Windows.Forms.GroupBox groupBox19;
-        private System.Windows.Forms.TextBox textBox94;
-        private System.Windows.Forms.TextBox textBox95;
+        private System.Windows.Forms.TextBox txtMarcaVehi;
+        private System.Windows.Forms.TextBox txtStockMinVehi;
         private System.Windows.Forms.Label label172;
         private System.Windows.Forms.Label label173;
-        private System.Windows.Forms.TextBox textBox96;
+        private System.Windows.Forms.TextBox txtCantidadVehi;
         private System.Windows.Forms.Label label174;
-        private System.Windows.Forms.TextBox textBox97;
+        private System.Windows.Forms.TextBox txtModeloVehi;
         private System.Windows.Forms.ComboBox cboTipoUnidad5;
         private System.Windows.Forms.Label label175;
         private System.Windows.Forms.Label label176;
-        private System.Windows.Forms.TextBox textBox98;
+        private System.Windows.Forms.TextBox txtPrecioUniVehi;
         private System.Windows.Forms.Label label177;
         private System.Windows.Forms.Label label178;
-        private System.Windows.Forms.TextBox textBox99;
+        private System.Windows.Forms.TextBox txtStockIniVehi;
         private System.Windows.Forms.Label label179;
         private System.Windows.Forms.Label label180;
-        private System.Windows.Forms.TextBox textBox100;
+        private System.Windows.Forms.TextBox txtDescripcionVehi;
         private System.Windows.Forms.ComboBox cboEstadoProduc9;
         private System.Windows.Forms.Label label181;
-        private System.Windows.Forms.TextBox textBox103;
+        private System.Windows.Forms.TextBox txtCodEquipVehi;
         private System.Windows.Forms.Label label187;
-        private System.Windows.Forms.TextBox textBox104;
+        private System.Windows.Forms.TextBox txtNombreVehi;
         private System.Windows.Forms.Label label188;
-        private System.Windows.Forms.TextBox textBox105;
+        private System.Windows.Forms.TextBox txtCodSistemaVehi;
         private System.Windows.Forms.Label label189;
         private System.Windows.Forms.ComboBox cboEstadoProduc;
         private System.Windows.Forms.Label label25;
@@ -5653,122 +5653,122 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label label82;
         private System.Windows.Forms.PictureBox ptcImagenAccesorios;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtObservacionUti;
         private System.Windows.Forms.Button btnCargarImagen5;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.PictureBox ptcImagenUtiles;
         private System.Windows.Forms.GroupBox groupBox15;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox txtObservacionEquip;
         private System.Windows.Forms.Button btnCargarImagen6;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.PictureBox ptcImagenEquipamiento;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.DateTimePicker dtpFechaRegisEquip;
         private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
+        private System.Windows.Forms.DateTimePicker dtpFechaAdEquip;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.GroupBox groupBox16;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox txtObservacionProtec;
         private System.Windows.Forms.Button btnCargarImagen7;
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.PictureBox ptcImagenProteccion;
-        private System.Windows.Forms.DateTimePicker dateTimePicker5;
+        private System.Windows.Forms.DateTimePicker dtpFechaRegisProtec;
         private System.Windows.Forms.Label label76;
-        private System.Windows.Forms.DateTimePicker dateTimePicker6;
+        private System.Windows.Forms.DateTimePicker dtpFechaAdProtec;
         private System.Windows.Forms.Label label77;
         private System.Windows.Forms.GroupBox groupBox18;
-        private System.Windows.Forms.TextBox textBox29;
+        private System.Windows.Forms.TextBox txtObservacionMobi;
         private System.Windows.Forms.Button btnCargarImagen8;
         private System.Windows.Forms.Label label84;
         private System.Windows.Forms.Label label90;
         private System.Windows.Forms.PictureBox ptcImagenMobiliario;
-        private System.Windows.Forms.DateTimePicker dateTimePicker17;
+        private System.Windows.Forms.DateTimePicker dtpFechaRegisMobi;
         private System.Windows.Forms.Label label99;
-        private System.Windows.Forms.DateTimePicker dateTimePicker18;
+        private System.Windows.Forms.DateTimePicker dtpFechaAdMobi;
         private System.Windows.Forms.Label label100;
         private System.Windows.Forms.GroupBox groupBox20;
-        private System.Windows.Forms.TextBox textBox30;
+        private System.Windows.Forms.TextBox txtObservacionVehi;
         private System.Windows.Forms.Button btnCargarImagen9;
         private System.Windows.Forms.Label label103;
         private System.Windows.Forms.Label label109;
         private System.Windows.Forms.PictureBox ptcImagenVehiculos;
-        private System.Windows.Forms.DateTimePicker dateTimePicker19;
+        private System.Windows.Forms.DateTimePicker dtpFechaRegisVehi;
         private System.Windows.Forms.Label label118;
-        private System.Windows.Forms.DateTimePicker dateTimePicker20;
+        private System.Windows.Forms.DateTimePicker dtpFechaAdVehi;
         private System.Windows.Forms.Label label119;
         private System.Windows.Forms.GroupBox groupBox21;
         private System.Windows.Forms.GroupBox groupBox22;
-        private System.Windows.Forms.TextBox textBox50;
+        private System.Windows.Forms.TextBox txtObservacionAseo;
         private System.Windows.Forms.Button btnCargarImagen10;
         private System.Windows.Forms.Label label122;
         private System.Windows.Forms.Label label128;
         private System.Windows.Forms.PictureBox ptcImagenUtilesAseo;
-        private System.Windows.Forms.DateTimePicker dateTimePicker21;
+        private System.Windows.Forms.DateTimePicker dtpFechaRegisAseo;
         private System.Windows.Forms.Label label137;
-        private System.Windows.Forms.DateTimePicker dateTimePicker22;
+        private System.Windows.Forms.DateTimePicker dtpFechaAdAseo;
         private System.Windows.Forms.Label label138;
-        private System.Windows.Forms.TextBox textBox60;
-        private System.Windows.Forms.TextBox textBox61;
+        private System.Windows.Forms.TextBox txtMarcaAseo;
+        private System.Windows.Forms.TextBox txtStockMinAseo;
         private System.Windows.Forms.Label label141;
         private System.Windows.Forms.Label label144;
-        private System.Windows.Forms.TextBox textBox72;
+        private System.Windows.Forms.TextBox txtCantidadAseo;
         private System.Windows.Forms.Label label148;
-        private System.Windows.Forms.TextBox textBox74;
+        private System.Windows.Forms.TextBox txtModeloAseo;
         private System.Windows.Forms.ComboBox cboTipoUnidad6;
         private System.Windows.Forms.Label label162;
         private System.Windows.Forms.Label label163;
-        private System.Windows.Forms.TextBox textBox89;
+        private System.Windows.Forms.TextBox txtPrecioUniAseo;
         private System.Windows.Forms.Label label164;
         private System.Windows.Forms.Label label165;
-        private System.Windows.Forms.TextBox textBox90;
+        private System.Windows.Forms.TextBox txtStockIniAseo;
         private System.Windows.Forms.Label label166;
         private System.Windows.Forms.Label label170;
-        private System.Windows.Forms.TextBox textBox101;
+        private System.Windows.Forms.TextBox txtDescripcionAseo;
         private System.Windows.Forms.ComboBox cboEstadoProduc10;
         private System.Windows.Forms.Label label171;
-        private System.Windows.Forms.TextBox textBox102;
+        private System.Windows.Forms.TextBox txtCodEquipAseo;
         private System.Windows.Forms.Label label182;
-        private System.Windows.Forms.TextBox textBox108;
+        private System.Windows.Forms.TextBox txtNombreAseo;
         private System.Windows.Forms.Label label183;
-        private System.Windows.Forms.TextBox textBox109;
+        private System.Windows.Forms.TextBox txtCodSistemaAseo;
         private System.Windows.Forms.Label label184;
         private System.Windows.Forms.GroupBox groupBox23;
         private System.Windows.Forms.GroupBox groupBox24;
-        private System.Windows.Forms.TextBox textBox110;
+        private System.Windows.Forms.TextBox txtObservacionArma;
         private System.Windows.Forms.Button btnCargarImagen11;
         private System.Windows.Forms.Label label185;
         private System.Windows.Forms.Label label186;
         private System.Windows.Forms.PictureBox ptcImagenArmamento;
-        private System.Windows.Forms.DateTimePicker dateTimePicker23;
+        private System.Windows.Forms.DateTimePicker dtpFechaRegisArma;
         private System.Windows.Forms.Label label191;
-        private System.Windows.Forms.DateTimePicker dateTimePicker24;
+        private System.Windows.Forms.DateTimePicker dtpFechaAdArma;
         private System.Windows.Forms.Label label193;
-        private System.Windows.Forms.TextBox textBox111;
-        private System.Windows.Forms.TextBox textBox112;
+        private System.Windows.Forms.TextBox txtMarcaArma;
+        private System.Windows.Forms.TextBox txtStockMinArma;
         private System.Windows.Forms.Label label194;
         private System.Windows.Forms.Label label195;
-        private System.Windows.Forms.TextBox textBox113;
+        private System.Windows.Forms.TextBox txtCantidadArma;
         private System.Windows.Forms.Label label196;
-        private System.Windows.Forms.TextBox textBox114;
+        private System.Windows.Forms.TextBox txtModeloArma;
         private System.Windows.Forms.ComboBox cboTipoUnidad7;
         private System.Windows.Forms.Label label197;
         private System.Windows.Forms.Label label198;
-        private System.Windows.Forms.TextBox textBox115;
+        private System.Windows.Forms.TextBox txtPrecioUniArma;
         private System.Windows.Forms.Label label199;
         private System.Windows.Forms.Label label200;
-        private System.Windows.Forms.TextBox textBox116;
+        private System.Windows.Forms.TextBox txtStockIniArma;
         private System.Windows.Forms.Label label201;
         private System.Windows.Forms.Label label202;
-        private System.Windows.Forms.TextBox textBox117;
+        private System.Windows.Forms.TextBox txtDescripcionArma;
         private System.Windows.Forms.ComboBox cboEstadoProduc11;
         private System.Windows.Forms.Label label203;
-        private System.Windows.Forms.TextBox textBox118;
+        private System.Windows.Forms.TextBox txtCodEquipArma;
         private System.Windows.Forms.Label label204;
-        private System.Windows.Forms.TextBox textBox119;
+        private System.Windows.Forms.TextBox txtNombreArma;
         private System.Windows.Forms.Label label205;
-        private System.Windows.Forms.TextBox textBox120;
+        private System.Windows.Forms.TextBox txtCodSistemaArma;
         private System.Windows.Forms.Label label206;
     }
 }

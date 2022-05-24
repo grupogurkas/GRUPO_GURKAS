@@ -406,8 +406,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             if(abrir.ShowDialog() == DialogResult.OK)
             {
                 //string direccion = abrir.FileName;
-                
-
                 //Process proceso = new Process();
                 //proceso.StartInfo.FileName = direccion;
                 //proceso.Start();xd

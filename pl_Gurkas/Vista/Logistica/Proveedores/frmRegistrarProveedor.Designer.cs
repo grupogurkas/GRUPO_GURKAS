@@ -412,7 +412,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.btnSeleccionar.BackColor = System.Drawing.SystemColors.Control;
             this.btnSeleccionar.Image = ((System.Drawing.Image)(resources.GetObject("btnSeleccionar.Image")));
             this.btnSeleccionar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSeleccionar.Location = new System.Drawing.Point(253, 15);
+            this.btnSeleccionar.Location = new System.Drawing.Point(253, 11);
             this.btnSeleccionar.Name = "btnSeleccionar";
             this.btnSeleccionar.Size = new System.Drawing.Size(94, 35);
             this.btnSeleccionar.TabIndex = 152;
@@ -878,7 +878,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // axAcroPDF1
             // 
             this.axAcroPDF1.Enabled = true;
-            this.axAcroPDF1.Location = new System.Drawing.Point(368, 15);
+            this.axAcroPDF1.Location = new System.Drawing.Point(376, 15);
             this.axAcroPDF1.Name = "axAcroPDF1";
             this.axAcroPDF1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF1.OcxState")));
             this.axAcroPDF1.Size = new System.Drawing.Size(135, 72);
