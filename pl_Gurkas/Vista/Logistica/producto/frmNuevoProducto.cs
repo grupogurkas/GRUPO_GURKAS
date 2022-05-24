@@ -111,16 +111,35 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void frmNuevoProducto_Load(object sender, EventArgs e)
         {
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad);
+            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad1);
+            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad2);
+            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad3);
+            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad4);
+            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad5);
+            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad6);
+            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad7);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc);
             Llenadocbo.ObtenerTallaPrendaProducto(cboTallaPrenda);
             Llenadocbo.ObtenerTallaCalzadoProducto(cboTallaCalzado);
             Llenadocbo.ObtenerTipoCalzadoProducto(cboTipoCalzado);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc1);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc2);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc3);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc4);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc5);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc6);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc7);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc8);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc9);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc10);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc11);
             Llenadocbo.ObtenerTipoTelaProducto(cboTipoTela);
+            Llenadocbo.ObtenerTipoTelaProducto(cboTipoTela1);
+            Llenadocbo.ObtenerTallaPantalonProducto(cboTallaPantalon);
             txtCodSistema.Enabled = false;
             //GenerarCodigo();
         }
+        
 
         private void label11_Click(object sender, EventArgs e)
         {
@@ -158,11 +177,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             }
 
             MessageBox.Show("Datos registrado correctamente" + codSistema   +codEquipo ,nomEquipo+ "Correcto");
-        }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -273,6 +287,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
         }
 
         private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btcPanel_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

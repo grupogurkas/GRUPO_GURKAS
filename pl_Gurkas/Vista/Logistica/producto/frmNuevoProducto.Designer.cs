@@ -42,6 +42,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btcPanel = new System.Windows.Forms.TabControl();
             this.tbpTecnologico = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.cboEstadoProduc = new System.Windows.Forms.ComboBox();
             this.label25 = new System.Windows.Forms.Label();
             this.textBox106 = new System.Windows.Forms.TextBox();
@@ -52,6 +53,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label142 = new System.Windows.Forms.Label();
             this.textBox107 = new System.Windows.Forms.TextBox();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.txtObservacion = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.dateTimePicker15 = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.dateTimePicker16 = new System.Windows.Forms.DateTimePicker();
@@ -116,6 +122,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.textBox33 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dateTimePicker9 = new System.Windows.Forms.DateTimePicker();
             this.label30 = new System.Windows.Forms.Label();
             this.dateTimePicker10 = new System.Windows.Forms.DateTimePicker();
@@ -148,6 +159,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.textBox34 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.dateTimePicker11 = new System.Windows.Forms.DateTimePicker();
             this.label101 = new System.Windows.Forms.Label();
             this.dateTimePicker12 = new System.Windows.Forms.DateTimePicker();
@@ -158,9 +174,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox52 = new System.Windows.Forms.TextBox();
             this.label106 = new System.Windows.Forms.Label();
             this.textBox53 = new System.Windows.Forms.TextBox();
-            this.comboBox18 = new System.Windows.Forms.ComboBox();
+            this.cboTipoTela1 = new System.Windows.Forms.ComboBox();
             this.label107 = new System.Windows.Forms.Label();
-            this.comboBox19 = new System.Windows.Forms.ComboBox();
+            this.cboTallaPantalon = new System.Windows.Forms.ComboBox();
             this.label108 = new System.Windows.Forms.Label();
             this.textBox54 = new System.Windows.Forms.TextBox();
             this.label110 = new System.Windows.Forms.Label();
@@ -175,11 +191,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label115 = new System.Windows.Forms.Label();
             this.textBox59 = new System.Windows.Forms.TextBox();
             this.label116 = new System.Windows.Forms.Label();
-            this.comboBox20 = new System.Windows.Forms.ComboBox();
+            this.cboEstadoProduc3 = new System.Windows.Forms.ComboBox();
             this.label117 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.textBox49 = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label82 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.dateTimePicker13 = new System.Windows.Forms.DateTimePicker();
             this.label120 = new System.Windows.Forms.Label();
             this.dateTimePicker14 = new System.Windows.Forms.DateTimePicker();
@@ -207,7 +228,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label134 = new System.Windows.Forms.Label();
             this.textBox70 = new System.Windows.Forms.TextBox();
             this.label135 = new System.Windows.Forms.Label();
-            this.comboBox24 = new System.Windows.Forms.ComboBox();
+            this.cboEstadoProduc4 = new System.Windows.Forms.ComboBox();
             this.label136 = new System.Windows.Forms.Label();
             this.tbpUtilesEscritorio = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -218,7 +239,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboTipoUnidad1 = new System.Windows.Forms.ComboBox();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -228,9 +249,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label46 = new System.Windows.Forms.Label();
             this.label139 = new System.Windows.Forms.Label();
             this.textBox71 = new System.Windows.Forms.TextBox();
-            this.comboBox26 = new System.Windows.Forms.ComboBox();
+            this.cboEstadoProduc5 = new System.Windows.Forms.ComboBox();
             this.label140 = new System.Windows.Forms.Label();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label17 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
@@ -243,140 +269,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label45 = new System.Windows.Forms.Label();
             this.tbpEquipamientoLogistico = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.label50 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.label57 = new System.Windows.Forms.Label();
-            this.textBox76 = new System.Windows.Forms.TextBox();
-            this.label145 = new System.Windows.Forms.Label();
-            this.textBox77 = new System.Windows.Forms.TextBox();
-            this.label146 = new System.Windows.Forms.Label();
-            this.textBox78 = new System.Windows.Forms.TextBox();
-            this.label147 = new System.Windows.Forms.Label();
-            this.tbpEpp = new System.Windows.Forms.TabPage();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.label66 = new System.Windows.Forms.Label();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.label69 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.label71 = new System.Windows.Forms.Label();
-            this.label72 = new System.Windows.Forms.Label();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.label73 = new System.Windows.Forms.Label();
-            this.textBox79 = new System.Windows.Forms.TextBox();
-            this.label149 = new System.Windows.Forms.Label();
-            this.textBox80 = new System.Windows.Forms.TextBox();
-            this.label150 = new System.Windows.Forms.Label();
-            this.textBox81 = new System.Windows.Forms.TextBox();
-            this.label151 = new System.Windows.Forms.Label();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.groupBox17 = new System.Windows.Forms.GroupBox();
-            this.textBox82 = new System.Windows.Forms.TextBox();
-            this.textBox83 = new System.Windows.Forms.TextBox();
-            this.label152 = new System.Windows.Forms.Label();
-            this.label153 = new System.Windows.Forms.Label();
-            this.textBox84 = new System.Windows.Forms.TextBox();
-            this.label154 = new System.Windows.Forms.Label();
-            this.textBox85 = new System.Windows.Forms.TextBox();
-            this.comboBox27 = new System.Windows.Forms.ComboBox();
-            this.label155 = new System.Windows.Forms.Label();
-            this.label156 = new System.Windows.Forms.Label();
-            this.textBox86 = new System.Windows.Forms.TextBox();
-            this.label157 = new System.Windows.Forms.Label();
-            this.label158 = new System.Windows.Forms.Label();
-            this.textBox87 = new System.Windows.Forms.TextBox();
-            this.label159 = new System.Windows.Forms.Label();
-            this.label160 = new System.Windows.Forms.Label();
-            this.textBox88 = new System.Windows.Forms.TextBox();
-            this.comboBox28 = new System.Windows.Forms.ComboBox();
-            this.label161 = new System.Windows.Forms.Label();
-            this.textBox91 = new System.Windows.Forms.TextBox();
-            this.label167 = new System.Windows.Forms.Label();
-            this.textBox92 = new System.Windows.Forms.TextBox();
-            this.label168 = new System.Windows.Forms.Label();
-            this.textBox93 = new System.Windows.Forms.TextBox();
-            this.label169 = new System.Windows.Forms.Label();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.groupBox19 = new System.Windows.Forms.GroupBox();
-            this.textBox94 = new System.Windows.Forms.TextBox();
-            this.textBox95 = new System.Windows.Forms.TextBox();
-            this.label172 = new System.Windows.Forms.Label();
-            this.label173 = new System.Windows.Forms.Label();
-            this.textBox96 = new System.Windows.Forms.TextBox();
-            this.label174 = new System.Windows.Forms.Label();
-            this.textBox97 = new System.Windows.Forms.TextBox();
-            this.comboBox31 = new System.Windows.Forms.ComboBox();
-            this.label175 = new System.Windows.Forms.Label();
-            this.label176 = new System.Windows.Forms.Label();
-            this.textBox98 = new System.Windows.Forms.TextBox();
-            this.label177 = new System.Windows.Forms.Label();
-            this.label178 = new System.Windows.Forms.Label();
-            this.textBox99 = new System.Windows.Forms.TextBox();
-            this.label179 = new System.Windows.Forms.Label();
-            this.label180 = new System.Windows.Forms.Label();
-            this.textBox100 = new System.Windows.Forms.TextBox();
-            this.comboBox32 = new System.Windows.Forms.ComboBox();
-            this.label181 = new System.Windows.Forms.Label();
-            this.textBox103 = new System.Windows.Forms.TextBox();
-            this.label187 = new System.Windows.Forms.Label();
-            this.textBox104 = new System.Windows.Forms.TextBox();
-            this.label188 = new System.Windows.Forms.Label();
-            this.textBox105 = new System.Windows.Forms.TextBox();
-            this.label189 = new System.Windows.Forms.Label();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtObservacion = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.textBox49 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label82 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
@@ -387,6 +279,33 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label60 = new System.Windows.Forms.Label();
             this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
             this.label61 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.label50 = new System.Windows.Forms.Label();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.cboTipoUnidad2 = new System.Windows.Forms.ComboBox();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.cboEstadoProduc6 = new System.Windows.Forms.ComboBox();
+            this.label57 = new System.Windows.Forms.Label();
+            this.textBox76 = new System.Windows.Forms.TextBox();
+            this.label145 = new System.Windows.Forms.Label();
+            this.textBox77 = new System.Windows.Forms.TextBox();
+            this.label146 = new System.Windows.Forms.Label();
+            this.textBox78 = new System.Windows.Forms.TextBox();
+            this.label147 = new System.Windows.Forms.Label();
+            this.tbpEpp = new System.Windows.Forms.TabPage();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
             this.textBox21 = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
@@ -397,6 +316,33 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label76 = new System.Windows.Forms.Label();
             this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
             this.label77 = new System.Windows.Forms.Label();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.label66 = new System.Windows.Forms.Label();
+            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.cboTipoUnidad3 = new System.Windows.Forms.ComboBox();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label72 = new System.Windows.Forms.Label();
+            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.cboEstadoProduc7 = new System.Windows.Forms.ComboBox();
+            this.label73 = new System.Windows.Forms.Label();
+            this.textBox79 = new System.Windows.Forms.TextBox();
+            this.label149 = new System.Windows.Forms.Label();
+            this.textBox80 = new System.Windows.Forms.TextBox();
+            this.label150 = new System.Windows.Forms.Label();
+            this.textBox81 = new System.Windows.Forms.TextBox();
+            this.label151 = new System.Windows.Forms.Label();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.groupBox17 = new System.Windows.Forms.GroupBox();
             this.groupBox18 = new System.Windows.Forms.GroupBox();
             this.textBox29 = new System.Windows.Forms.TextBox();
             this.button8 = new System.Windows.Forms.Button();
@@ -407,6 +353,33 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label99 = new System.Windows.Forms.Label();
             this.dateTimePicker18 = new System.Windows.Forms.DateTimePicker();
             this.label100 = new System.Windows.Forms.Label();
+            this.textBox82 = new System.Windows.Forms.TextBox();
+            this.textBox83 = new System.Windows.Forms.TextBox();
+            this.label152 = new System.Windows.Forms.Label();
+            this.label153 = new System.Windows.Forms.Label();
+            this.textBox84 = new System.Windows.Forms.TextBox();
+            this.label154 = new System.Windows.Forms.Label();
+            this.textBox85 = new System.Windows.Forms.TextBox();
+            this.cboTipoUnidad4 = new System.Windows.Forms.ComboBox();
+            this.label155 = new System.Windows.Forms.Label();
+            this.label156 = new System.Windows.Forms.Label();
+            this.textBox86 = new System.Windows.Forms.TextBox();
+            this.label157 = new System.Windows.Forms.Label();
+            this.label158 = new System.Windows.Forms.Label();
+            this.textBox87 = new System.Windows.Forms.TextBox();
+            this.label159 = new System.Windows.Forms.Label();
+            this.label160 = new System.Windows.Forms.Label();
+            this.textBox88 = new System.Windows.Forms.TextBox();
+            this.cboEstadoProduc8 = new System.Windows.Forms.ComboBox();
+            this.label161 = new System.Windows.Forms.Label();
+            this.textBox91 = new System.Windows.Forms.TextBox();
+            this.label167 = new System.Windows.Forms.Label();
+            this.textBox92 = new System.Windows.Forms.TextBox();
+            this.label168 = new System.Windows.Forms.Label();
+            this.textBox93 = new System.Windows.Forms.TextBox();
+            this.label169 = new System.Windows.Forms.Label();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.groupBox19 = new System.Windows.Forms.GroupBox();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
             this.textBox30 = new System.Windows.Forms.TextBox();
             this.button9 = new System.Windows.Forms.Button();
@@ -417,6 +390,32 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label118 = new System.Windows.Forms.Label();
             this.dateTimePicker20 = new System.Windows.Forms.DateTimePicker();
             this.label119 = new System.Windows.Forms.Label();
+            this.textBox94 = new System.Windows.Forms.TextBox();
+            this.textBox95 = new System.Windows.Forms.TextBox();
+            this.label172 = new System.Windows.Forms.Label();
+            this.label173 = new System.Windows.Forms.Label();
+            this.textBox96 = new System.Windows.Forms.TextBox();
+            this.label174 = new System.Windows.Forms.Label();
+            this.textBox97 = new System.Windows.Forms.TextBox();
+            this.cboTipoUnidad5 = new System.Windows.Forms.ComboBox();
+            this.label175 = new System.Windows.Forms.Label();
+            this.label176 = new System.Windows.Forms.Label();
+            this.textBox98 = new System.Windows.Forms.TextBox();
+            this.label177 = new System.Windows.Forms.Label();
+            this.label178 = new System.Windows.Forms.Label();
+            this.textBox99 = new System.Windows.Forms.TextBox();
+            this.label179 = new System.Windows.Forms.Label();
+            this.label180 = new System.Windows.Forms.Label();
+            this.textBox100 = new System.Windows.Forms.TextBox();
+            this.cboEstadoProduc9 = new System.Windows.Forms.ComboBox();
+            this.label181 = new System.Windows.Forms.Label();
+            this.textBox103 = new System.Windows.Forms.TextBox();
+            this.label187 = new System.Windows.Forms.Label();
+            this.textBox104 = new System.Windows.Forms.TextBox();
+            this.label188 = new System.Windows.Forms.Label();
+            this.textBox105 = new System.Windows.Forms.TextBox();
+            this.label189 = new System.Windows.Forms.Label();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
             this.groupBox21 = new System.Windows.Forms.GroupBox();
             this.groupBox22 = new System.Windows.Forms.GroupBox();
             this.textBox50 = new System.Windows.Forms.TextBox();
@@ -435,7 +434,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox72 = new System.Windows.Forms.TextBox();
             this.label148 = new System.Windows.Forms.Label();
             this.textBox74 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cboTipoUnidad6 = new System.Windows.Forms.ComboBox();
             this.label162 = new System.Windows.Forms.Label();
             this.label163 = new System.Windows.Forms.Label();
             this.textBox89 = new System.Windows.Forms.TextBox();
@@ -445,7 +444,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label166 = new System.Windows.Forms.Label();
             this.label170 = new System.Windows.Forms.Label();
             this.textBox101 = new System.Windows.Forms.TextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cboEstadoProduc10 = new System.Windows.Forms.ComboBox();
             this.label171 = new System.Windows.Forms.Label();
             this.textBox102 = new System.Windows.Forms.TextBox();
             this.label182 = new System.Windows.Forms.Label();
@@ -453,6 +452,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label183 = new System.Windows.Forms.Label();
             this.textBox109 = new System.Windows.Forms.TextBox();
             this.label184 = new System.Windows.Forms.Label();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
             this.groupBox23 = new System.Windows.Forms.GroupBox();
             this.groupBox24 = new System.Windows.Forms.GroupBox();
             this.textBox110 = new System.Windows.Forms.TextBox();
@@ -471,7 +471,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox113 = new System.Windows.Forms.TextBox();
             this.label196 = new System.Windows.Forms.Label();
             this.textBox114 = new System.Windows.Forms.TextBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cboTipoUnidad7 = new System.Windows.Forms.ComboBox();
             this.label197 = new System.Windows.Forms.Label();
             this.label198 = new System.Windows.Forms.Label();
             this.textBox115 = new System.Windows.Forms.TextBox();
@@ -481,7 +481,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label201 = new System.Windows.Forms.Label();
             this.label202 = new System.Windows.Forms.Label();
             this.textBox117 = new System.Windows.Forms.TextBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.cboEstadoProduc11 = new System.Windows.Forms.ComboBox();
             this.label203 = new System.Windows.Forms.Label();
             this.textBox118 = new System.Windows.Forms.TextBox();
             this.label204 = new System.Windows.Forms.Label();
@@ -495,6 +495,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tbpTecnologico.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tbpUniforme.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -504,41 +505,40 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tabPage2.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tbpUtilesEscritorio.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.tbpEquipamientoLogistico.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.tbpEpp.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            this.groupBox17.SuspendLayout();
-            this.tabPage6.SuspendLayout();
-            this.groupBox19.SuspendLayout();
-            this.tabPage8.SuspendLayout();
-            this.tabPage9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.groupBox15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.tbpEpp.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.groupBox16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            this.groupBox17.SuspendLayout();
             this.groupBox18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.tabPage6.SuspendLayout();
+            this.groupBox19.SuspendLayout();
             this.groupBox20.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.tabPage8.SuspendLayout();
             this.groupBox21.SuspendLayout();
             this.groupBox22.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.tabPage9.SuspendLayout();
             this.groupBox23.SuspendLayout();
             this.groupBox24.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -560,6 +560,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1168, 595);
             this.panel1.TabIndex = 60;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // cboProducto
             // 
@@ -672,6 +673,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btcPanel.SelectedIndex = 0;
             this.btcPanel.Size = new System.Drawing.Size(1152, 504);
             this.btcPanel.TabIndex = 62;
+            this.btcPanel.SelectedIndexChanged += new System.EventHandler(this.btcPanel_SelectedIndexChanged);
             // 
             // tbpTecnologico
             // 
@@ -721,6 +723,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox2.TabIndex = 55;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos del Equipo";
+            // 
+            // vScrollBar1
+            // 
+            this.vScrollBar1.Location = new System.Drawing.Point(1118, 24);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(17, 381);
+            this.vScrollBar1.TabIndex = 185;
             // 
             // cboEstadoProduc
             // 
@@ -818,6 +827,57 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox13.TabIndex = 155;
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Datos Adicionales";
+            // 
+            // txtObservacion
+            // 
+            this.txtObservacion.Location = new System.Drawing.Point(329, 77);
+            this.txtObservacion.Multiline = true;
+            this.txtObservacion.Name = "txtObservacion";
+            this.txtObservacion.Size = new System.Drawing.Size(237, 85);
+            this.txtObservacion.TabIndex = 158;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.Control;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(75, 293);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(104, 35);
+            this.button2.TabIndex = 162;
+            this.button2.Text = "Subir Imagen";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(242, 79);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(81, 15);
+            this.label6.TabIndex = 159;
+            this.label6.Text = "Observacion :";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(72, 272);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(107, 13);
+            this.label9.TabIndex = 161;
+            this.label9.Text = "Imagen Del Producto";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Location = new System.Drawing.Point(26, 79);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(183, 184);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 160;
+            this.pictureBox2.TabStop = false;
             // 
             // dateTimePicker15
             // 
@@ -1477,6 +1537,57 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Datos Adicionales";
             // 
+            // textBox33
+            // 
+            this.textBox33.Location = new System.Drawing.Point(329, 85);
+            this.textBox33.Multiline = true;
+            this.textBox33.Name = "textBox33";
+            this.textBox33.Size = new System.Drawing.Size(218, 98);
+            this.textBox33.TabIndex = 158;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Control;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(75, 301);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(104, 35);
+            this.button1.TabIndex = 162;
+            this.button1.Text = "Subir Imagen";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(242, 87);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(81, 15);
+            this.label8.TabIndex = 159;
+            this.label8.Text = "Observacion :";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(72, 280);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(107, 13);
+            this.label28.TabIndex = 161;
+            this.label28.Text = "Imagen Del Producto";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(26, 87);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(183, 184);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 160;
+            this.pictureBox1.TabStop = false;
+            // 
             // dateTimePicker9
             // 
             this.dateTimePicker9.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -1752,9 +1863,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox9.Controls.Add(this.textBox52);
             this.groupBox9.Controls.Add(this.label106);
             this.groupBox9.Controls.Add(this.textBox53);
-            this.groupBox9.Controls.Add(this.comboBox18);
+            this.groupBox9.Controls.Add(this.cboTipoTela1);
             this.groupBox9.Controls.Add(this.label107);
-            this.groupBox9.Controls.Add(this.comboBox19);
+            this.groupBox9.Controls.Add(this.cboTallaPantalon);
             this.groupBox9.Controls.Add(this.label108);
             this.groupBox9.Controls.Add(this.textBox54);
             this.groupBox9.Controls.Add(this.label110);
@@ -1769,7 +1880,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox9.Controls.Add(this.label115);
             this.groupBox9.Controls.Add(this.textBox59);
             this.groupBox9.Controls.Add(this.label116);
-            this.groupBox9.Controls.Add(this.comboBox20);
+            this.groupBox9.Controls.Add(this.cboEstadoProduc3);
             this.groupBox9.Controls.Add(this.label117);
             this.groupBox9.Location = new System.Drawing.Point(6, 35);
             this.groupBox9.Name = "groupBox9";
@@ -1795,6 +1906,57 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox10.TabIndex = 151;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Datos Adicionales";
+            // 
+            // textBox34
+            // 
+            this.textBox34.Location = new System.Drawing.Point(329, 85);
+            this.textBox34.Multiline = true;
+            this.textBox34.Name = "textBox34";
+            this.textBox34.Size = new System.Drawing.Size(266, 65);
+            this.textBox34.TabIndex = 158;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.Control;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(75, 301);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(104, 35);
+            this.button3.TabIndex = 162;
+            this.button3.Text = "Subir Imagen";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.Location = new System.Drawing.Point(242, 87);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(81, 15);
+            this.label47.TabIndex = 159;
+            this.label47.Text = "Observacion :";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Location = new System.Drawing.Point(72, 280);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(107, 13);
+            this.label62.TabIndex = 161;
+            this.label62.Text = "Imagen Del Producto";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox3.Location = new System.Drawing.Point(26, 87);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(183, 184);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 160;
+            this.pictureBox3.TabStop = false;
             // 
             // dateTimePicker11
             // 
@@ -1883,20 +2045,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox53.Size = new System.Drawing.Size(158, 20);
             this.textBox53.TabIndex = 88;
             // 
-            // comboBox18
+            // cboTipoTela1
             // 
-            this.comboBox18.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox18.FormattingEnabled = true;
-            this.comboBox18.Items.AddRange(new object[] {
-            "",
-            "Nuevo",
-            "Usado",
-            "Dañado",
-            "Baja"});
-            this.comboBox18.Location = new System.Drawing.Point(130, 191);
-            this.comboBox18.Name = "comboBox18";
-            this.comboBox18.Size = new System.Drawing.Size(158, 21);
-            this.comboBox18.TabIndex = 87;
+            this.cboTipoTela1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTipoTela1.FormattingEnabled = true;
+            this.cboTipoTela1.Location = new System.Drawing.Point(130, 191);
+            this.cboTipoTela1.Name = "cboTipoTela1";
+            this.cboTipoTela1.Size = new System.Drawing.Size(158, 21);
+            this.cboTipoTela1.TabIndex = 87;
             // 
             // label107
             // 
@@ -1908,20 +2064,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label107.TabIndex = 86;
             this.label107.Text = "Color:";
             // 
-            // comboBox19
+            // cboTallaPantalon
             // 
-            this.comboBox19.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox19.FormattingEnabled = true;
-            this.comboBox19.Items.AddRange(new object[] {
-            "",
-            "Nuevo",
-            "Usado",
-            "Dañado",
-            "Baja"});
-            this.comboBox19.Location = new System.Drawing.Point(130, 106);
-            this.comboBox19.Name = "comboBox19";
-            this.comboBox19.Size = new System.Drawing.Size(158, 21);
-            this.comboBox19.TabIndex = 85;
+            this.cboTallaPantalon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTallaPantalon.FormattingEnabled = true;
+            this.cboTallaPantalon.Location = new System.Drawing.Point(130, 106);
+            this.cboTallaPantalon.Name = "cboTallaPantalon";
+            this.cboTallaPantalon.Size = new System.Drawing.Size(158, 21);
+            this.cboTallaPantalon.TabIndex = 85;
             // 
             // label108
             // 
@@ -2044,14 +2194,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label116.TabIndex = 27;
             this.label116.Text = "Cod. Sistema";
             // 
-            // comboBox20
+            // cboEstadoProduc3
             // 
-            this.comboBox20.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox20.FormattingEnabled = true;
-            this.comboBox20.Location = new System.Drawing.Point(130, 218);
-            this.comboBox20.Name = "comboBox20";
-            this.comboBox20.Size = new System.Drawing.Size(158, 21);
-            this.comboBox20.TabIndex = 26;
+            this.cboEstadoProduc3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEstadoProduc3.FormattingEnabled = true;
+            this.cboEstadoProduc3.Location = new System.Drawing.Point(130, 218);
+            this.cboEstadoProduc3.Name = "cboEstadoProduc3";
+            this.cboEstadoProduc3.Size = new System.Drawing.Size(158, 21);
+            this.cboEstadoProduc3.TabIndex = 26;
             // 
             // label117
             // 
@@ -2100,7 +2250,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox11.Controls.Add(this.label134);
             this.groupBox11.Controls.Add(this.textBox70);
             this.groupBox11.Controls.Add(this.label135);
-            this.groupBox11.Controls.Add(this.comboBox24);
+            this.groupBox11.Controls.Add(this.cboEstadoProduc4);
             this.groupBox11.Controls.Add(this.label136);
             this.groupBox11.Location = new System.Drawing.Point(11, 34);
             this.groupBox11.Name = "groupBox11";
@@ -2126,6 +2276,57 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox12.TabIndex = 151;
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Datos Adicionales";
+            // 
+            // textBox49
+            // 
+            this.textBox49.Location = new System.Drawing.Point(319, 76);
+            this.textBox49.Multiline = true;
+            this.textBox49.Name = "textBox49";
+            this.textBox49.Size = new System.Drawing.Size(266, 65);
+            this.textBox49.TabIndex = 163;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.SystemColors.Control;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(65, 292);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(104, 35);
+            this.button4.TabIndex = 167;
+            this.button4.Text = "Subir Imagen";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label63.Location = new System.Drawing.Point(232, 78);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(81, 15);
+            this.label63.TabIndex = 164;
+            this.label63.Text = "Observacion :";
+            // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.Location = new System.Drawing.Point(62, 271);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(107, 13);
+            this.label82.TabIndex = 166;
+            this.label82.Text = "Imagen Del Producto";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox4.Location = new System.Drawing.Point(16, 78);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(183, 184);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 165;
+            this.pictureBox4.TabStop = false;
             // 
             // dateTimePicker13
             // 
@@ -2375,14 +2576,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label135.TabIndex = 27;
             this.label135.Text = "Cod. Sistema";
             // 
-            // comboBox24
+            // cboEstadoProduc4
             // 
-            this.comboBox24.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox24.FormattingEnabled = true;
-            this.comboBox24.Location = new System.Drawing.Point(130, 218);
-            this.comboBox24.Name = "comboBox24";
-            this.comboBox24.Size = new System.Drawing.Size(158, 21);
-            this.comboBox24.TabIndex = 26;
+            this.cboEstadoProduc4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEstadoProduc4.FormattingEnabled = true;
+            this.cboEstadoProduc4.Location = new System.Drawing.Point(130, 218);
+            this.cboEstadoProduc4.Name = "cboEstadoProduc4";
+            this.cboEstadoProduc4.Size = new System.Drawing.Size(158, 21);
+            this.cboEstadoProduc4.TabIndex = 26;
             // 
             // label136
             // 
@@ -2414,7 +2615,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox3.Controls.Add(this.textBox5);
             this.groupBox3.Controls.Add(this.label38);
             this.groupBox3.Controls.Add(this.textBox6);
-            this.groupBox3.Controls.Add(this.comboBox1);
+            this.groupBox3.Controls.Add(this.cboTipoUnidad1);
             this.groupBox3.Controls.Add(this.label39);
             this.groupBox3.Controls.Add(this.label40);
             this.groupBox3.Controls.Add(this.textBox7);
@@ -2424,7 +2625,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox3.Controls.Add(this.label46);
             this.groupBox3.Controls.Add(this.label139);
             this.groupBox3.Controls.Add(this.textBox71);
-            this.groupBox3.Controls.Add(this.comboBox26);
+            this.groupBox3.Controls.Add(this.cboEstadoProduc5);
             this.groupBox3.Controls.Add(this.label140);
             this.groupBox3.Controls.Add(this.groupBox14);
             this.groupBox3.Controls.Add(this.textBox2);
@@ -2499,20 +2700,20 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox6.Size = new System.Drawing.Size(213, 20);
             this.textBox6.TabIndex = 173;
             // 
-            // comboBox1
+            // cboTipoUnidad1
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cboTipoUnidad1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTipoUnidad1.FormattingEnabled = true;
+            this.cboTipoUnidad1.Items.AddRange(new object[] {
             "",
             "Nuevo",
             "Usado",
             "Dañado",
             "Baja"});
-            this.comboBox1.Location = new System.Drawing.Point(131, 158);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(158, 21);
-            this.comboBox1.TabIndex = 172;
+            this.cboTipoUnidad1.Location = new System.Drawing.Point(131, 158);
+            this.cboTipoUnidad1.Name = "cboTipoUnidad1";
+            this.cboTipoUnidad1.Size = new System.Drawing.Size(158, 21);
+            this.cboTipoUnidad1.TabIndex = 172;
             // 
             // label39
             // 
@@ -2594,14 +2795,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox71.Size = new System.Drawing.Size(213, 56);
             this.textBox71.TabIndex = 162;
             // 
-            // comboBox26
+            // cboEstadoProduc5
             // 
-            this.comboBox26.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox26.FormattingEnabled = true;
-            this.comboBox26.Location = new System.Drawing.Point(132, 210);
-            this.comboBox26.Name = "comboBox26";
-            this.comboBox26.Size = new System.Drawing.Size(158, 21);
-            this.comboBox26.TabIndex = 161;
+            this.cboEstadoProduc5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEstadoProduc5.FormattingEnabled = true;
+            this.cboEstadoProduc5.Location = new System.Drawing.Point(132, 210);
+            this.cboEstadoProduc5.Name = "cboEstadoProduc5";
+            this.cboEstadoProduc5.Size = new System.Drawing.Size(158, 21);
+            this.cboEstadoProduc5.TabIndex = 161;
             // 
             // label140
             // 
@@ -2630,6 +2831,57 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox14.TabIndex = 159;
             this.groupBox14.TabStop = false;
             this.groupBox14.Text = "Datos Adicionales";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(329, 104);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(266, 65);
+            this.textBox1.TabIndex = 168;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.SystemColors.Control;
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(75, 320);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(104, 35);
+            this.button5.TabIndex = 172;
+            this.button5.Text = "Subir Imagen";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(242, 106);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(81, 15);
+            this.label16.TabIndex = 169;
+            this.label16.Text = "Observacion :";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(72, 299);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(107, 13);
+            this.label32.TabIndex = 171;
+            this.label32.Text = "Imagen Del Producto";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox5.Location = new System.Drawing.Point(26, 106);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(183, 184);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 170;
+            this.pictureBox5.TabStop = false;
             // 
             // dateTimePicker1
             // 
@@ -2739,7 +2991,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox4.Controls.Add(this.textBox15);
             this.groupBox4.Controls.Add(this.label50);
             this.groupBox4.Controls.Add(this.textBox16);
-            this.groupBox4.Controls.Add(this.comboBox6);
+            this.groupBox4.Controls.Add(this.cboTipoUnidad2);
             this.groupBox4.Controls.Add(this.label51);
             this.groupBox4.Controls.Add(this.label52);
             this.groupBox4.Controls.Add(this.textBox17);
@@ -2749,7 +3001,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox4.Controls.Add(this.label55);
             this.groupBox4.Controls.Add(this.label56);
             this.groupBox4.Controls.Add(this.textBox19);
-            this.groupBox4.Controls.Add(this.comboBox7);
+            this.groupBox4.Controls.Add(this.cboEstadoProduc6);
             this.groupBox4.Controls.Add(this.label57);
             this.groupBox4.Controls.Add(this.textBox76);
             this.groupBox4.Controls.Add(this.label145);
@@ -2763,1320 +3015,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox4.TabIndex = 95;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Datos del Equipo";
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(130, 106);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(213, 20);
-            this.textBox11.TabIndex = 179;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(131, 289);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(158, 20);
-            this.textBox12.TabIndex = 178;
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.Location = new System.Drawing.Point(7, 294);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(85, 15);
-            this.label48.TabIndex = 177;
-            this.label48.Text = "Stock Minimo:";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(7, 164);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(77, 15);
-            this.label49.TabIndex = 176;
-            this.label49.Text = "Tipo Unidad:";
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(131, 184);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(158, 20);
-            this.textBox15.TabIndex = 175;
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(8, 189);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(59, 15);
-            this.label50.TabIndex = 174;
-            this.label50.Text = "Cantidad:";
-            // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(131, 132);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(213, 20);
-            this.textBox16.TabIndex = 173;
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
-            "",
-            "Nuevo",
-            "Usado",
-            "Dañado",
-            "Baja"});
-            this.comboBox6.Location = new System.Drawing.Point(131, 158);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(158, 21);
-            this.comboBox6.TabIndex = 172;
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(6, 137);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(52, 15);
-            this.label51.TabIndex = 171;
-            this.label51.Text = "Modelo:";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(7, 111);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(45, 15);
-            this.label52.TabIndex = 169;
-            this.label52.Text = "Marca:";
-            // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(131, 237);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(158, 20);
-            this.textBox17.TabIndex = 167;
-            // 
-            // label53
-            // 
-            this.label53.Location = new System.Drawing.Point(111, 242);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(27, 13);
-            this.label53.TabIndex = 168;
-            this.label53.Text = "S/. ";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.Location = new System.Drawing.Point(7, 242);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(91, 15);
-            this.label54.TabIndex = 166;
-            this.label54.Text = "Precio Unitario:";
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(131, 263);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(158, 20);
-            this.textBox18.TabIndex = 165;
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(7, 268);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(78, 15);
-            this.label55.TabIndex = 164;
-            this.label55.Text = "Stock Inicial :";
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.Location = new System.Drawing.Point(7, 316);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(78, 15);
-            this.label56.TabIndex = 163;
-            this.label56.Text = "Descripcion :";
-            // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(131, 315);
-            this.textBox19.Multiline = true;
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(213, 56);
-            this.textBox19.TabIndex = 162;
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(132, 210);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(158, 21);
-            this.comboBox7.TabIndex = 161;
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.Location = new System.Drawing.Point(8, 216);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(51, 15);
-            this.label57.TabIndex = 160;
-            this.label57.Text = "Estado :";
-            // 
-            // textBox76
-            // 
-            this.textBox76.Location = new System.Drawing.Point(130, 54);
-            this.textBox76.Name = "textBox76";
-            this.textBox76.Size = new System.Drawing.Size(213, 20);
-            this.textBox76.TabIndex = 78;
-            // 
-            // label145
-            // 
-            this.label145.AutoSize = true;
-            this.label145.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label145.Location = new System.Drawing.Point(6, 55);
-            this.label145.Name = "label145";
-            this.label145.Size = new System.Drawing.Size(74, 15);
-            this.label145.TabIndex = 77;
-            this.label145.Text = "Cod. Equipo";
-            // 
-            // textBox77
-            // 
-            this.textBox77.Location = new System.Drawing.Point(131, 80);
-            this.textBox77.Name = "textBox77";
-            this.textBox77.Size = new System.Drawing.Size(213, 20);
-            this.textBox77.TabIndex = 57;
-            // 
-            // label146
-            // 
-            this.label146.AutoSize = true;
-            this.label146.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label146.Location = new System.Drawing.Point(6, 85);
-            this.label146.Name = "label146";
-            this.label146.Size = new System.Drawing.Size(55, 15);
-            this.label146.TabIndex = 56;
-            this.label146.Text = "Nombre:";
-            // 
-            // textBox78
-            // 
-            this.textBox78.Location = new System.Drawing.Point(130, 28);
-            this.textBox78.Name = "textBox78";
-            this.textBox78.Size = new System.Drawing.Size(213, 20);
-            this.textBox78.TabIndex = 28;
-            // 
-            // label147
-            // 
-            this.label147.AutoSize = true;
-            this.label147.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label147.Location = new System.Drawing.Point(6, 29);
-            this.label147.Name = "label147";
-            this.label147.Size = new System.Drawing.Size(80, 15);
-            this.label147.TabIndex = 27;
-            this.label147.Text = "Cod. Sistema";
-            // 
-            // tbpEpp
-            // 
-            this.tbpEpp.Controls.Add(this.groupBox6);
-            this.tbpEpp.Location = new System.Drawing.Point(4, 22);
-            this.tbpEpp.Name = "tbpEpp";
-            this.tbpEpp.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpEpp.Size = new System.Drawing.Size(1144, 478);
-            this.tbpEpp.TabIndex = 5;
-            this.tbpEpp.Text = "Equipos Proteccion Personal";
-            this.tbpEpp.UseVisualStyleBackColor = true;
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.groupBox16);
-            this.groupBox6.Controls.Add(this.textBox22);
-            this.groupBox6.Controls.Add(this.textBox23);
-            this.groupBox6.Controls.Add(this.label64);
-            this.groupBox6.Controls.Add(this.label65);
-            this.groupBox6.Controls.Add(this.textBox24);
-            this.groupBox6.Controls.Add(this.label66);
-            this.groupBox6.Controls.Add(this.textBox25);
-            this.groupBox6.Controls.Add(this.comboBox10);
-            this.groupBox6.Controls.Add(this.label67);
-            this.groupBox6.Controls.Add(this.label68);
-            this.groupBox6.Controls.Add(this.textBox26);
-            this.groupBox6.Controls.Add(this.label69);
-            this.groupBox6.Controls.Add(this.label70);
-            this.groupBox6.Controls.Add(this.textBox27);
-            this.groupBox6.Controls.Add(this.label71);
-            this.groupBox6.Controls.Add(this.label72);
-            this.groupBox6.Controls.Add(this.textBox28);
-            this.groupBox6.Controls.Add(this.comboBox11);
-            this.groupBox6.Controls.Add(this.label73);
-            this.groupBox6.Controls.Add(this.textBox79);
-            this.groupBox6.Controls.Add(this.label149);
-            this.groupBox6.Controls.Add(this.textBox80);
-            this.groupBox6.Controls.Add(this.label150);
-            this.groupBox6.Controls.Add(this.textBox81);
-            this.groupBox6.Controls.Add(this.label151);
-            this.groupBox6.Location = new System.Drawing.Point(6, 29);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(1136, 432);
-            this.groupBox6.TabIndex = 95;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Datos del Equipo";
-            // 
-            // textBox22
-            // 
-            this.textBox22.Location = new System.Drawing.Point(130, 106);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(213, 20);
-            this.textBox22.TabIndex = 179;
-            // 
-            // textBox23
-            // 
-            this.textBox23.Location = new System.Drawing.Point(131, 289);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(158, 20);
-            this.textBox23.TabIndex = 178;
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.Location = new System.Drawing.Point(7, 294);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(85, 15);
-            this.label64.TabIndex = 177;
-            this.label64.Text = "Stock Minimo:";
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.Location = new System.Drawing.Point(7, 164);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(77, 15);
-            this.label65.TabIndex = 176;
-            this.label65.Text = "Tipo Unidad:";
-            // 
-            // textBox24
-            // 
-            this.textBox24.Location = new System.Drawing.Point(131, 184);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(158, 20);
-            this.textBox24.TabIndex = 175;
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.Location = new System.Drawing.Point(8, 189);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(59, 15);
-            this.label66.TabIndex = 174;
-            this.label66.Text = "Cantidad:";
-            // 
-            // textBox25
-            // 
-            this.textBox25.Location = new System.Drawing.Point(131, 132);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(213, 20);
-            this.textBox25.TabIndex = 173;
-            // 
-            // comboBox10
-            // 
-            this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
-            "",
-            "Nuevo",
-            "Usado",
-            "Dañado",
-            "Baja"});
-            this.comboBox10.Location = new System.Drawing.Point(131, 158);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(158, 21);
-            this.comboBox10.TabIndex = 172;
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(6, 137);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(52, 15);
-            this.label67.TabIndex = 171;
-            this.label67.Text = "Modelo:";
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(7, 111);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(45, 15);
-            this.label68.TabIndex = 169;
-            this.label68.Text = "Marca:";
-            // 
-            // textBox26
-            // 
-            this.textBox26.Location = new System.Drawing.Point(131, 237);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(158, 20);
-            this.textBox26.TabIndex = 167;
-            // 
-            // label69
-            // 
-            this.label69.Location = new System.Drawing.Point(111, 242);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(27, 13);
-            this.label69.TabIndex = 168;
-            this.label69.Text = "S/. ";
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(7, 242);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(91, 15);
-            this.label70.TabIndex = 166;
-            this.label70.Text = "Precio Unitario:";
-            // 
-            // textBox27
-            // 
-            this.textBox27.Location = new System.Drawing.Point(131, 263);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(158, 20);
-            this.textBox27.TabIndex = 165;
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label71.Location = new System.Drawing.Point(7, 268);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(78, 15);
-            this.label71.TabIndex = 164;
-            this.label71.Text = "Stock Inicial :";
-            // 
-            // label72
-            // 
-            this.label72.AutoSize = true;
-            this.label72.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label72.Location = new System.Drawing.Point(7, 316);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(78, 15);
-            this.label72.TabIndex = 163;
-            this.label72.Text = "Descripcion :";
-            // 
-            // textBox28
-            // 
-            this.textBox28.Location = new System.Drawing.Point(131, 315);
-            this.textBox28.Multiline = true;
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(213, 56);
-            this.textBox28.TabIndex = 162;
-            // 
-            // comboBox11
-            // 
-            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Location = new System.Drawing.Point(132, 210);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(158, 21);
-            this.comboBox11.TabIndex = 161;
-            // 
-            // label73
-            // 
-            this.label73.AutoSize = true;
-            this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label73.Location = new System.Drawing.Point(8, 216);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(51, 15);
-            this.label73.TabIndex = 160;
-            this.label73.Text = "Estado :";
-            // 
-            // textBox79
-            // 
-            this.textBox79.Location = new System.Drawing.Point(130, 54);
-            this.textBox79.Name = "textBox79";
-            this.textBox79.Size = new System.Drawing.Size(213, 20);
-            this.textBox79.TabIndex = 78;
-            // 
-            // label149
-            // 
-            this.label149.AutoSize = true;
-            this.label149.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label149.Location = new System.Drawing.Point(6, 55);
-            this.label149.Name = "label149";
-            this.label149.Size = new System.Drawing.Size(74, 15);
-            this.label149.TabIndex = 77;
-            this.label149.Text = "Cod. Equipo";
-            // 
-            // textBox80
-            // 
-            this.textBox80.Location = new System.Drawing.Point(131, 80);
-            this.textBox80.Name = "textBox80";
-            this.textBox80.Size = new System.Drawing.Size(213, 20);
-            this.textBox80.TabIndex = 57;
-            // 
-            // label150
-            // 
-            this.label150.AutoSize = true;
-            this.label150.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label150.Location = new System.Drawing.Point(6, 85);
-            this.label150.Name = "label150";
-            this.label150.Size = new System.Drawing.Size(55, 15);
-            this.label150.TabIndex = 56;
-            this.label150.Text = "Nombre:";
-            // 
-            // textBox81
-            // 
-            this.textBox81.Location = new System.Drawing.Point(130, 28);
-            this.textBox81.Name = "textBox81";
-            this.textBox81.Size = new System.Drawing.Size(213, 20);
-            this.textBox81.TabIndex = 28;
-            // 
-            // label151
-            // 
-            this.label151.AutoSize = true;
-            this.label151.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label151.Location = new System.Drawing.Point(6, 29);
-            this.label151.Name = "label151";
-            this.label151.Size = new System.Drawing.Size(80, 15);
-            this.label151.TabIndex = 27;
-            this.label151.Text = "Cod. Sistema";
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.groupBox17);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1144, 478);
-            this.tabPage5.TabIndex = 6;
-            this.tabPage5.Text = "Mobiliario";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // groupBox17
-            // 
-            this.groupBox17.Controls.Add(this.groupBox18);
-            this.groupBox17.Controls.Add(this.textBox82);
-            this.groupBox17.Controls.Add(this.textBox83);
-            this.groupBox17.Controls.Add(this.label152);
-            this.groupBox17.Controls.Add(this.label153);
-            this.groupBox17.Controls.Add(this.textBox84);
-            this.groupBox17.Controls.Add(this.label154);
-            this.groupBox17.Controls.Add(this.textBox85);
-            this.groupBox17.Controls.Add(this.comboBox27);
-            this.groupBox17.Controls.Add(this.label155);
-            this.groupBox17.Controls.Add(this.label156);
-            this.groupBox17.Controls.Add(this.textBox86);
-            this.groupBox17.Controls.Add(this.label157);
-            this.groupBox17.Controls.Add(this.label158);
-            this.groupBox17.Controls.Add(this.textBox87);
-            this.groupBox17.Controls.Add(this.label159);
-            this.groupBox17.Controls.Add(this.label160);
-            this.groupBox17.Controls.Add(this.textBox88);
-            this.groupBox17.Controls.Add(this.comboBox28);
-            this.groupBox17.Controls.Add(this.label161);
-            this.groupBox17.Controls.Add(this.textBox91);
-            this.groupBox17.Controls.Add(this.label167);
-            this.groupBox17.Controls.Add(this.textBox92);
-            this.groupBox17.Controls.Add(this.label168);
-            this.groupBox17.Controls.Add(this.textBox93);
-            this.groupBox17.Controls.Add(this.label169);
-            this.groupBox17.Location = new System.Drawing.Point(8, 34);
-            this.groupBox17.Name = "groupBox17";
-            this.groupBox17.Size = new System.Drawing.Size(1136, 438);
-            this.groupBox17.TabIndex = 57;
-            this.groupBox17.TabStop = false;
-            this.groupBox17.Text = "Datos del Equipo";
-            // 
-            // textBox82
-            // 
-            this.textBox82.Location = new System.Drawing.Point(130, 106);
-            this.textBox82.Name = "textBox82";
-            this.textBox82.Size = new System.Drawing.Size(213, 20);
-            this.textBox82.TabIndex = 179;
-            // 
-            // textBox83
-            // 
-            this.textBox83.Location = new System.Drawing.Point(131, 289);
-            this.textBox83.Name = "textBox83";
-            this.textBox83.Size = new System.Drawing.Size(158, 20);
-            this.textBox83.TabIndex = 178;
-            // 
-            // label152
-            // 
-            this.label152.AutoSize = true;
-            this.label152.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label152.Location = new System.Drawing.Point(7, 294);
-            this.label152.Name = "label152";
-            this.label152.Size = new System.Drawing.Size(85, 15);
-            this.label152.TabIndex = 177;
-            this.label152.Text = "Stock Minimo:";
-            // 
-            // label153
-            // 
-            this.label153.AutoSize = true;
-            this.label153.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label153.Location = new System.Drawing.Point(7, 164);
-            this.label153.Name = "label153";
-            this.label153.Size = new System.Drawing.Size(77, 15);
-            this.label153.TabIndex = 176;
-            this.label153.Text = "Tipo Unidad:";
-            // 
-            // textBox84
-            // 
-            this.textBox84.Location = new System.Drawing.Point(131, 184);
-            this.textBox84.Name = "textBox84";
-            this.textBox84.Size = new System.Drawing.Size(158, 20);
-            this.textBox84.TabIndex = 175;
-            // 
-            // label154
-            // 
-            this.label154.AutoSize = true;
-            this.label154.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label154.Location = new System.Drawing.Point(8, 189);
-            this.label154.Name = "label154";
-            this.label154.Size = new System.Drawing.Size(59, 15);
-            this.label154.TabIndex = 174;
-            this.label154.Text = "Cantidad:";
-            // 
-            // textBox85
-            // 
-            this.textBox85.Location = new System.Drawing.Point(131, 132);
-            this.textBox85.Name = "textBox85";
-            this.textBox85.Size = new System.Drawing.Size(213, 20);
-            this.textBox85.TabIndex = 173;
-            // 
-            // comboBox27
-            // 
-            this.comboBox27.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox27.FormattingEnabled = true;
-            this.comboBox27.Items.AddRange(new object[] {
-            "",
-            "Nuevo",
-            "Usado",
-            "Dañado",
-            "Baja"});
-            this.comboBox27.Location = new System.Drawing.Point(131, 158);
-            this.comboBox27.Name = "comboBox27";
-            this.comboBox27.Size = new System.Drawing.Size(158, 21);
-            this.comboBox27.TabIndex = 172;
-            // 
-            // label155
-            // 
-            this.label155.AutoSize = true;
-            this.label155.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label155.Location = new System.Drawing.Point(6, 137);
-            this.label155.Name = "label155";
-            this.label155.Size = new System.Drawing.Size(52, 15);
-            this.label155.TabIndex = 171;
-            this.label155.Text = "Modelo:";
-            // 
-            // label156
-            // 
-            this.label156.AutoSize = true;
-            this.label156.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label156.Location = new System.Drawing.Point(7, 111);
-            this.label156.Name = "label156";
-            this.label156.Size = new System.Drawing.Size(45, 15);
-            this.label156.TabIndex = 169;
-            this.label156.Text = "Marca:";
-            // 
-            // textBox86
-            // 
-            this.textBox86.Location = new System.Drawing.Point(131, 237);
-            this.textBox86.Name = "textBox86";
-            this.textBox86.Size = new System.Drawing.Size(158, 20);
-            this.textBox86.TabIndex = 167;
-            // 
-            // label157
-            // 
-            this.label157.Location = new System.Drawing.Point(111, 242);
-            this.label157.Name = "label157";
-            this.label157.Size = new System.Drawing.Size(27, 13);
-            this.label157.TabIndex = 168;
-            this.label157.Text = "S/. ";
-            // 
-            // label158
-            // 
-            this.label158.AutoSize = true;
-            this.label158.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label158.Location = new System.Drawing.Point(7, 242);
-            this.label158.Name = "label158";
-            this.label158.Size = new System.Drawing.Size(91, 15);
-            this.label158.TabIndex = 166;
-            this.label158.Text = "Precio Unitario:";
-            // 
-            // textBox87
-            // 
-            this.textBox87.Location = new System.Drawing.Point(131, 263);
-            this.textBox87.Name = "textBox87";
-            this.textBox87.Size = new System.Drawing.Size(158, 20);
-            this.textBox87.TabIndex = 165;
-            // 
-            // label159
-            // 
-            this.label159.AutoSize = true;
-            this.label159.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label159.Location = new System.Drawing.Point(7, 268);
-            this.label159.Name = "label159";
-            this.label159.Size = new System.Drawing.Size(78, 15);
-            this.label159.TabIndex = 164;
-            this.label159.Text = "Stock Inicial :";
-            // 
-            // label160
-            // 
-            this.label160.AutoSize = true;
-            this.label160.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label160.Location = new System.Drawing.Point(7, 316);
-            this.label160.Name = "label160";
-            this.label160.Size = new System.Drawing.Size(78, 15);
-            this.label160.TabIndex = 163;
-            this.label160.Text = "Descripcion :";
-            // 
-            // textBox88
-            // 
-            this.textBox88.Location = new System.Drawing.Point(131, 315);
-            this.textBox88.Multiline = true;
-            this.textBox88.Name = "textBox88";
-            this.textBox88.Size = new System.Drawing.Size(213, 56);
-            this.textBox88.TabIndex = 162;
-            // 
-            // comboBox28
-            // 
-            this.comboBox28.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox28.FormattingEnabled = true;
-            this.comboBox28.Location = new System.Drawing.Point(132, 210);
-            this.comboBox28.Name = "comboBox28";
-            this.comboBox28.Size = new System.Drawing.Size(158, 21);
-            this.comboBox28.TabIndex = 161;
-            // 
-            // label161
-            // 
-            this.label161.AutoSize = true;
-            this.label161.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label161.Location = new System.Drawing.Point(8, 216);
-            this.label161.Name = "label161";
-            this.label161.Size = new System.Drawing.Size(51, 15);
-            this.label161.TabIndex = 160;
-            this.label161.Text = "Estado :";
-            // 
-            // textBox91
-            // 
-            this.textBox91.Location = new System.Drawing.Point(130, 54);
-            this.textBox91.Name = "textBox91";
-            this.textBox91.Size = new System.Drawing.Size(213, 20);
-            this.textBox91.TabIndex = 78;
-            // 
-            // label167
-            // 
-            this.label167.AutoSize = true;
-            this.label167.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label167.Location = new System.Drawing.Point(6, 55);
-            this.label167.Name = "label167";
-            this.label167.Size = new System.Drawing.Size(74, 15);
-            this.label167.TabIndex = 77;
-            this.label167.Text = "Cod. Equipo";
-            // 
-            // textBox92
-            // 
-            this.textBox92.Location = new System.Drawing.Point(131, 80);
-            this.textBox92.Name = "textBox92";
-            this.textBox92.Size = new System.Drawing.Size(213, 20);
-            this.textBox92.TabIndex = 57;
-            // 
-            // label168
-            // 
-            this.label168.AutoSize = true;
-            this.label168.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label168.Location = new System.Drawing.Point(6, 85);
-            this.label168.Name = "label168";
-            this.label168.Size = new System.Drawing.Size(55, 15);
-            this.label168.TabIndex = 56;
-            this.label168.Text = "Nombre:";
-            // 
-            // textBox93
-            // 
-            this.textBox93.Location = new System.Drawing.Point(130, 28);
-            this.textBox93.Name = "textBox93";
-            this.textBox93.Size = new System.Drawing.Size(213, 20);
-            this.textBox93.TabIndex = 28;
-            // 
-            // label169
-            // 
-            this.label169.AutoSize = true;
-            this.label169.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label169.Location = new System.Drawing.Point(6, 29);
-            this.label169.Name = "label169";
-            this.label169.Size = new System.Drawing.Size(80, 15);
-            this.label169.TabIndex = 27;
-            this.label169.Text = "Cod. Sistema";
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Controls.Add(this.groupBox19);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1144, 478);
-            this.tabPage6.TabIndex = 7;
-            this.tabPage6.Text = "Vehiculos";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // groupBox19
-            // 
-            this.groupBox19.Controls.Add(this.groupBox20);
-            this.groupBox19.Controls.Add(this.textBox94);
-            this.groupBox19.Controls.Add(this.textBox95);
-            this.groupBox19.Controls.Add(this.label172);
-            this.groupBox19.Controls.Add(this.label173);
-            this.groupBox19.Controls.Add(this.textBox96);
-            this.groupBox19.Controls.Add(this.label174);
-            this.groupBox19.Controls.Add(this.textBox97);
-            this.groupBox19.Controls.Add(this.comboBox31);
-            this.groupBox19.Controls.Add(this.label175);
-            this.groupBox19.Controls.Add(this.label176);
-            this.groupBox19.Controls.Add(this.textBox98);
-            this.groupBox19.Controls.Add(this.label177);
-            this.groupBox19.Controls.Add(this.label178);
-            this.groupBox19.Controls.Add(this.textBox99);
-            this.groupBox19.Controls.Add(this.label179);
-            this.groupBox19.Controls.Add(this.label180);
-            this.groupBox19.Controls.Add(this.textBox100);
-            this.groupBox19.Controls.Add(this.comboBox32);
-            this.groupBox19.Controls.Add(this.label181);
-            this.groupBox19.Controls.Add(this.textBox103);
-            this.groupBox19.Controls.Add(this.label187);
-            this.groupBox19.Controls.Add(this.textBox104);
-            this.groupBox19.Controls.Add(this.label188);
-            this.groupBox19.Controls.Add(this.textBox105);
-            this.groupBox19.Controls.Add(this.label189);
-            this.groupBox19.Location = new System.Drawing.Point(12, 23);
-            this.groupBox19.Name = "groupBox19";
-            this.groupBox19.Size = new System.Drawing.Size(1136, 433);
-            this.groupBox19.TabIndex = 98;
-            this.groupBox19.TabStop = false;
-            this.groupBox19.Text = "Datos del Equipo";
-            // 
-            // textBox94
-            // 
-            this.textBox94.Location = new System.Drawing.Point(130, 106);
-            this.textBox94.Name = "textBox94";
-            this.textBox94.Size = new System.Drawing.Size(213, 20);
-            this.textBox94.TabIndex = 179;
-            // 
-            // textBox95
-            // 
-            this.textBox95.Location = new System.Drawing.Point(131, 289);
-            this.textBox95.Name = "textBox95";
-            this.textBox95.Size = new System.Drawing.Size(158, 20);
-            this.textBox95.TabIndex = 178;
-            // 
-            // label172
-            // 
-            this.label172.AutoSize = true;
-            this.label172.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label172.Location = new System.Drawing.Point(7, 294);
-            this.label172.Name = "label172";
-            this.label172.Size = new System.Drawing.Size(85, 15);
-            this.label172.TabIndex = 177;
-            this.label172.Text = "Stock Minimo:";
-            // 
-            // label173
-            // 
-            this.label173.AutoSize = true;
-            this.label173.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label173.Location = new System.Drawing.Point(7, 164);
-            this.label173.Name = "label173";
-            this.label173.Size = new System.Drawing.Size(77, 15);
-            this.label173.TabIndex = 176;
-            this.label173.Text = "Tipo Unidad:";
-            // 
-            // textBox96
-            // 
-            this.textBox96.Location = new System.Drawing.Point(131, 184);
-            this.textBox96.Name = "textBox96";
-            this.textBox96.Size = new System.Drawing.Size(158, 20);
-            this.textBox96.TabIndex = 175;
-            // 
-            // label174
-            // 
-            this.label174.AutoSize = true;
-            this.label174.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label174.Location = new System.Drawing.Point(8, 189);
-            this.label174.Name = "label174";
-            this.label174.Size = new System.Drawing.Size(59, 15);
-            this.label174.TabIndex = 174;
-            this.label174.Text = "Cantidad:";
-            // 
-            // textBox97
-            // 
-            this.textBox97.Location = new System.Drawing.Point(131, 132);
-            this.textBox97.Name = "textBox97";
-            this.textBox97.Size = new System.Drawing.Size(213, 20);
-            this.textBox97.TabIndex = 173;
-            // 
-            // comboBox31
-            // 
-            this.comboBox31.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox31.FormattingEnabled = true;
-            this.comboBox31.Items.AddRange(new object[] {
-            "",
-            "Nuevo",
-            "Usado",
-            "Dañado",
-            "Baja"});
-            this.comboBox31.Location = new System.Drawing.Point(131, 158);
-            this.comboBox31.Name = "comboBox31";
-            this.comboBox31.Size = new System.Drawing.Size(158, 21);
-            this.comboBox31.TabIndex = 172;
-            // 
-            // label175
-            // 
-            this.label175.AutoSize = true;
-            this.label175.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label175.Location = new System.Drawing.Point(6, 137);
-            this.label175.Name = "label175";
-            this.label175.Size = new System.Drawing.Size(52, 15);
-            this.label175.TabIndex = 171;
-            this.label175.Text = "Modelo:";
-            // 
-            // label176
-            // 
-            this.label176.AutoSize = true;
-            this.label176.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label176.Location = new System.Drawing.Point(7, 111);
-            this.label176.Name = "label176";
-            this.label176.Size = new System.Drawing.Size(45, 15);
-            this.label176.TabIndex = 169;
-            this.label176.Text = "Marca:";
-            // 
-            // textBox98
-            // 
-            this.textBox98.Location = new System.Drawing.Point(131, 237);
-            this.textBox98.Name = "textBox98";
-            this.textBox98.Size = new System.Drawing.Size(158, 20);
-            this.textBox98.TabIndex = 167;
-            // 
-            // label177
-            // 
-            this.label177.Location = new System.Drawing.Point(111, 242);
-            this.label177.Name = "label177";
-            this.label177.Size = new System.Drawing.Size(27, 13);
-            this.label177.TabIndex = 168;
-            this.label177.Text = "S/. ";
-            // 
-            // label178
-            // 
-            this.label178.AutoSize = true;
-            this.label178.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label178.Location = new System.Drawing.Point(7, 242);
-            this.label178.Name = "label178";
-            this.label178.Size = new System.Drawing.Size(91, 15);
-            this.label178.TabIndex = 166;
-            this.label178.Text = "Precio Unitario:";
-            // 
-            // textBox99
-            // 
-            this.textBox99.Location = new System.Drawing.Point(131, 263);
-            this.textBox99.Name = "textBox99";
-            this.textBox99.Size = new System.Drawing.Size(158, 20);
-            this.textBox99.TabIndex = 165;
-            // 
-            // label179
-            // 
-            this.label179.AutoSize = true;
-            this.label179.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label179.Location = new System.Drawing.Point(7, 268);
-            this.label179.Name = "label179";
-            this.label179.Size = new System.Drawing.Size(78, 15);
-            this.label179.TabIndex = 164;
-            this.label179.Text = "Stock Inicial :";
-            // 
-            // label180
-            // 
-            this.label180.AutoSize = true;
-            this.label180.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label180.Location = new System.Drawing.Point(7, 316);
-            this.label180.Name = "label180";
-            this.label180.Size = new System.Drawing.Size(78, 15);
-            this.label180.TabIndex = 163;
-            this.label180.Text = "Descripcion :";
-            // 
-            // textBox100
-            // 
-            this.textBox100.Location = new System.Drawing.Point(131, 315);
-            this.textBox100.Multiline = true;
-            this.textBox100.Name = "textBox100";
-            this.textBox100.Size = new System.Drawing.Size(213, 56);
-            this.textBox100.TabIndex = 162;
-            // 
-            // comboBox32
-            // 
-            this.comboBox32.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox32.FormattingEnabled = true;
-            this.comboBox32.Location = new System.Drawing.Point(132, 210);
-            this.comboBox32.Name = "comboBox32";
-            this.comboBox32.Size = new System.Drawing.Size(158, 21);
-            this.comboBox32.TabIndex = 161;
-            // 
-            // label181
-            // 
-            this.label181.AutoSize = true;
-            this.label181.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label181.Location = new System.Drawing.Point(8, 216);
-            this.label181.Name = "label181";
-            this.label181.Size = new System.Drawing.Size(51, 15);
-            this.label181.TabIndex = 160;
-            this.label181.Text = "Estado :";
-            // 
-            // textBox103
-            // 
-            this.textBox103.Location = new System.Drawing.Point(130, 54);
-            this.textBox103.Name = "textBox103";
-            this.textBox103.Size = new System.Drawing.Size(213, 20);
-            this.textBox103.TabIndex = 78;
-            // 
-            // label187
-            // 
-            this.label187.AutoSize = true;
-            this.label187.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label187.Location = new System.Drawing.Point(6, 55);
-            this.label187.Name = "label187";
-            this.label187.Size = new System.Drawing.Size(74, 15);
-            this.label187.TabIndex = 77;
-            this.label187.Text = "Cod. Equipo";
-            // 
-            // textBox104
-            // 
-            this.textBox104.Location = new System.Drawing.Point(131, 80);
-            this.textBox104.Name = "textBox104";
-            this.textBox104.Size = new System.Drawing.Size(213, 20);
-            this.textBox104.TabIndex = 57;
-            // 
-            // label188
-            // 
-            this.label188.AutoSize = true;
-            this.label188.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label188.Location = new System.Drawing.Point(6, 85);
-            this.label188.Name = "label188";
-            this.label188.Size = new System.Drawing.Size(55, 15);
-            this.label188.TabIndex = 56;
-            this.label188.Text = "Nombre:";
-            // 
-            // textBox105
-            // 
-            this.textBox105.Location = new System.Drawing.Point(130, 28);
-            this.textBox105.Name = "textBox105";
-            this.textBox105.Size = new System.Drawing.Size(213, 20);
-            this.textBox105.TabIndex = 28;
-            // 
-            // label189
-            // 
-            this.label189.AutoSize = true;
-            this.label189.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label189.Location = new System.Drawing.Point(6, 29);
-            this.label189.Name = "label189";
-            this.label189.Size = new System.Drawing.Size(80, 15);
-            this.label189.TabIndex = 27;
-            this.label189.Text = "Cod. Sistema";
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.Controls.Add(this.groupBox21);
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(1144, 478);
-            this.tabPage8.TabIndex = 9;
-            this.tabPage8.Text = "Utiles de Aseo";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // tabPage9
-            // 
-            this.tabPage9.Controls.Add(this.groupBox23);
-            this.tabPage9.Location = new System.Drawing.Point(4, 22);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(1144, 478);
-            this.tabPage9.TabIndex = 10;
-            this.tabPage9.Text = "Armamento";
-            this.tabPage9.UseVisualStyleBackColor = true;
-            // 
-            // textBox33
-            // 
-            this.textBox33.Location = new System.Drawing.Point(329, 85);
-            this.textBox33.Multiline = true;
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(218, 98);
-            this.textBox33.TabIndex = 158;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(75, 301);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 35);
-            this.button1.TabIndex = 162;
-            this.button1.Text = "Subir Imagen";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(242, 87);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(81, 15);
-            this.label8.TabIndex = 159;
-            this.label8.Text = "Observacion :";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(72, 280);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(107, 13);
-            this.label28.TabIndex = 161;
-            this.label28.Text = "Imagen Del Producto";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(26, 87);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(183, 184);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 160;
-            this.pictureBox1.TabStop = false;
-            // 
-            // txtObservacion
-            // 
-            this.txtObservacion.Location = new System.Drawing.Point(329, 77);
-            this.txtObservacion.Multiline = true;
-            this.txtObservacion.Name = "txtObservacion";
-            this.txtObservacion.Size = new System.Drawing.Size(237, 85);
-            this.txtObservacion.TabIndex = 158;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.Control;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(75, 293);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 35);
-            this.button2.TabIndex = 162;
-            this.button2.Text = "Subir Imagen";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(242, 79);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(81, 15);
-            this.label6.TabIndex = 159;
-            this.label6.Text = "Observacion :";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(72, 272);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(107, 13);
-            this.label9.TabIndex = 161;
-            this.label9.Text = "Imagen Del Producto";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(26, 79);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(183, 184);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 160;
-            this.pictureBox2.TabStop = false;
-            // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Location = new System.Drawing.Point(1118, 24);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 381);
-            this.vScrollBar1.TabIndex = 185;
-            // 
-            // textBox34
-            // 
-            this.textBox34.Location = new System.Drawing.Point(329, 85);
-            this.textBox34.Multiline = true;
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(266, 65);
-            this.textBox34.TabIndex = 158;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.Control;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(75, 301);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(104, 35);
-            this.button3.TabIndex = 162;
-            this.button3.Text = "Subir Imagen";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(242, 87);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(81, 15);
-            this.label47.TabIndex = 159;
-            this.label47.Text = "Observacion :";
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(72, 280);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(107, 13);
-            this.label62.TabIndex = 161;
-            this.label62.Text = "Imagen Del Producto";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Location = new System.Drawing.Point(26, 87);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(183, 184);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 160;
-            this.pictureBox3.TabStop = false;
-            // 
-            // textBox49
-            // 
-            this.textBox49.Location = new System.Drawing.Point(319, 76);
-            this.textBox49.Multiline = true;
-            this.textBox49.Name = "textBox49";
-            this.textBox49.Size = new System.Drawing.Size(266, 65);
-            this.textBox49.TabIndex = 163;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.SystemColors.Control;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(65, 292);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(104, 35);
-            this.button4.TabIndex = 167;
-            this.button4.Text = "Subir Imagen";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.Location = new System.Drawing.Point(232, 78);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(81, 15);
-            this.label63.TabIndex = 164;
-            this.label63.Text = "Observacion :";
-            // 
-            // label82
-            // 
-            this.label82.AutoSize = true;
-            this.label82.Location = new System.Drawing.Point(62, 271);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(107, 13);
-            this.label82.TabIndex = 166;
-            this.label82.Text = "Imagen Del Producto";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Location = new System.Drawing.Point(16, 78);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(183, 184);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 165;
-            this.pictureBox4.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(329, 104);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(266, 65);
-            this.textBox1.TabIndex = 168;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.SystemColors.Control;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(75, 320);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(104, 35);
-            this.button5.TabIndex = 172;
-            this.button5.Text = "Subir Imagen";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(242, 106);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(81, 15);
-            this.label16.TabIndex = 169;
-            this.label16.Text = "Observacion :";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(72, 299);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(107, 13);
-            this.label32.TabIndex = 171;
-            this.label32.Text = "Imagen Del Producto";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox5.Location = new System.Drawing.Point(26, 106);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(183, 184);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 170;
-            this.pictureBox5.TabStop = false;
             // 
             // groupBox15
             // 
@@ -4182,6 +3120,275 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label61.Size = new System.Drawing.Size(110, 15);
             this.label61.TabIndex = 152;
             this.label61.Text = "Fecha Adquisicion:";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(130, 106);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(213, 20);
+            this.textBox11.TabIndex = 179;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(131, 289);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(158, 20);
+            this.textBox12.TabIndex = 178;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.Location = new System.Drawing.Point(7, 294);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(85, 15);
+            this.label48.TabIndex = 177;
+            this.label48.Text = "Stock Minimo:";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.Location = new System.Drawing.Point(7, 164);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(77, 15);
+            this.label49.TabIndex = 176;
+            this.label49.Text = "Tipo Unidad:";
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(131, 184);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(158, 20);
+            this.textBox15.TabIndex = 175;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.Location = new System.Drawing.Point(8, 189);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(59, 15);
+            this.label50.TabIndex = 174;
+            this.label50.Text = "Cantidad:";
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(131, 132);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(213, 20);
+            this.textBox16.TabIndex = 173;
+            // 
+            // cboTipoUnidad2
+            // 
+            this.cboTipoUnidad2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTipoUnidad2.FormattingEnabled = true;
+            this.cboTipoUnidad2.Items.AddRange(new object[] {
+            "",
+            "Nuevo",
+            "Usado",
+            "Dañado",
+            "Baja"});
+            this.cboTipoUnidad2.Location = new System.Drawing.Point(131, 158);
+            this.cboTipoUnidad2.Name = "cboTipoUnidad2";
+            this.cboTipoUnidad2.Size = new System.Drawing.Size(158, 21);
+            this.cboTipoUnidad2.TabIndex = 172;
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.Location = new System.Drawing.Point(6, 137);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(52, 15);
+            this.label51.TabIndex = 171;
+            this.label51.Text = "Modelo:";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Location = new System.Drawing.Point(7, 111);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(45, 15);
+            this.label52.TabIndex = 169;
+            this.label52.Text = "Marca:";
+            // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(131, 237);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(158, 20);
+            this.textBox17.TabIndex = 167;
+            // 
+            // label53
+            // 
+            this.label53.Location = new System.Drawing.Point(111, 242);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(27, 13);
+            this.label53.TabIndex = 168;
+            this.label53.Text = "S/. ";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(7, 242);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(91, 15);
+            this.label54.TabIndex = 166;
+            this.label54.Text = "Precio Unitario:";
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(131, 263);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(158, 20);
+            this.textBox18.TabIndex = 165;
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Location = new System.Drawing.Point(7, 268);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(78, 15);
+            this.label55.TabIndex = 164;
+            this.label55.Text = "Stock Inicial :";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.Location = new System.Drawing.Point(7, 316);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(78, 15);
+            this.label56.TabIndex = 163;
+            this.label56.Text = "Descripcion :";
+            // 
+            // textBox19
+            // 
+            this.textBox19.Location = new System.Drawing.Point(131, 315);
+            this.textBox19.Multiline = true;
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(213, 56);
+            this.textBox19.TabIndex = 162;
+            // 
+            // cboEstadoProduc6
+            // 
+            this.cboEstadoProduc6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEstadoProduc6.FormattingEnabled = true;
+            this.cboEstadoProduc6.Location = new System.Drawing.Point(132, 210);
+            this.cboEstadoProduc6.Name = "cboEstadoProduc6";
+            this.cboEstadoProduc6.Size = new System.Drawing.Size(158, 21);
+            this.cboEstadoProduc6.TabIndex = 161;
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.Location = new System.Drawing.Point(8, 216);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(51, 15);
+            this.label57.TabIndex = 160;
+            this.label57.Text = "Estado :";
+            // 
+            // textBox76
+            // 
+            this.textBox76.Location = new System.Drawing.Point(130, 54);
+            this.textBox76.Name = "textBox76";
+            this.textBox76.Size = new System.Drawing.Size(213, 20);
+            this.textBox76.TabIndex = 78;
+            // 
+            // label145
+            // 
+            this.label145.AutoSize = true;
+            this.label145.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label145.Location = new System.Drawing.Point(6, 55);
+            this.label145.Name = "label145";
+            this.label145.Size = new System.Drawing.Size(74, 15);
+            this.label145.TabIndex = 77;
+            this.label145.Text = "Cod. Equipo";
+            // 
+            // textBox77
+            // 
+            this.textBox77.Location = new System.Drawing.Point(131, 80);
+            this.textBox77.Name = "textBox77";
+            this.textBox77.Size = new System.Drawing.Size(213, 20);
+            this.textBox77.TabIndex = 57;
+            // 
+            // label146
+            // 
+            this.label146.AutoSize = true;
+            this.label146.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label146.Location = new System.Drawing.Point(6, 85);
+            this.label146.Name = "label146";
+            this.label146.Size = new System.Drawing.Size(55, 15);
+            this.label146.TabIndex = 56;
+            this.label146.Text = "Nombre:";
+            // 
+            // textBox78
+            // 
+            this.textBox78.Location = new System.Drawing.Point(130, 28);
+            this.textBox78.Name = "textBox78";
+            this.textBox78.Size = new System.Drawing.Size(213, 20);
+            this.textBox78.TabIndex = 28;
+            // 
+            // label147
+            // 
+            this.label147.AutoSize = true;
+            this.label147.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label147.Location = new System.Drawing.Point(6, 29);
+            this.label147.Name = "label147";
+            this.label147.Size = new System.Drawing.Size(80, 15);
+            this.label147.TabIndex = 27;
+            this.label147.Text = "Cod. Sistema";
+            // 
+            // tbpEpp
+            // 
+            this.tbpEpp.Controls.Add(this.groupBox6);
+            this.tbpEpp.Location = new System.Drawing.Point(4, 22);
+            this.tbpEpp.Name = "tbpEpp";
+            this.tbpEpp.Padding = new System.Windows.Forms.Padding(3);
+            this.tbpEpp.Size = new System.Drawing.Size(1144, 478);
+            this.tbpEpp.TabIndex = 5;
+            this.tbpEpp.Text = "Equipos Proteccion Personal";
+            this.tbpEpp.UseVisualStyleBackColor = true;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.groupBox16);
+            this.groupBox6.Controls.Add(this.textBox22);
+            this.groupBox6.Controls.Add(this.textBox23);
+            this.groupBox6.Controls.Add(this.label64);
+            this.groupBox6.Controls.Add(this.label65);
+            this.groupBox6.Controls.Add(this.textBox24);
+            this.groupBox6.Controls.Add(this.label66);
+            this.groupBox6.Controls.Add(this.textBox25);
+            this.groupBox6.Controls.Add(this.cboTipoUnidad3);
+            this.groupBox6.Controls.Add(this.label67);
+            this.groupBox6.Controls.Add(this.label68);
+            this.groupBox6.Controls.Add(this.textBox26);
+            this.groupBox6.Controls.Add(this.label69);
+            this.groupBox6.Controls.Add(this.label70);
+            this.groupBox6.Controls.Add(this.textBox27);
+            this.groupBox6.Controls.Add(this.label71);
+            this.groupBox6.Controls.Add(this.label72);
+            this.groupBox6.Controls.Add(this.textBox28);
+            this.groupBox6.Controls.Add(this.cboEstadoProduc7);
+            this.groupBox6.Controls.Add(this.label73);
+            this.groupBox6.Controls.Add(this.textBox79);
+            this.groupBox6.Controls.Add(this.label149);
+            this.groupBox6.Controls.Add(this.textBox80);
+            this.groupBox6.Controls.Add(this.label150);
+            this.groupBox6.Controls.Add(this.textBox81);
+            this.groupBox6.Controls.Add(this.label151);
+            this.groupBox6.Location = new System.Drawing.Point(6, 29);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(1136, 432);
+            this.groupBox6.TabIndex = 95;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Datos del Equipo";
             // 
             // groupBox16
             // 
@@ -4289,6 +3496,275 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label77.TabIndex = 152;
             this.label77.Text = "Fecha Adquisicion:";
             // 
+            // textBox22
+            // 
+            this.textBox22.Location = new System.Drawing.Point(130, 106);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(213, 20);
+            this.textBox22.TabIndex = 179;
+            // 
+            // textBox23
+            // 
+            this.textBox23.Location = new System.Drawing.Point(131, 289);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(158, 20);
+            this.textBox23.TabIndex = 178;
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.Location = new System.Drawing.Point(7, 294);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(85, 15);
+            this.label64.TabIndex = 177;
+            this.label64.Text = "Stock Minimo:";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label65.Location = new System.Drawing.Point(7, 164);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(77, 15);
+            this.label65.TabIndex = 176;
+            this.label65.Text = "Tipo Unidad:";
+            // 
+            // textBox24
+            // 
+            this.textBox24.Location = new System.Drawing.Point(131, 184);
+            this.textBox24.Name = "textBox24";
+            this.textBox24.Size = new System.Drawing.Size(158, 20);
+            this.textBox24.TabIndex = 175;
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label66.Location = new System.Drawing.Point(8, 189);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(59, 15);
+            this.label66.TabIndex = 174;
+            this.label66.Text = "Cantidad:";
+            // 
+            // textBox25
+            // 
+            this.textBox25.Location = new System.Drawing.Point(131, 132);
+            this.textBox25.Name = "textBox25";
+            this.textBox25.Size = new System.Drawing.Size(213, 20);
+            this.textBox25.TabIndex = 173;
+            // 
+            // cboTipoUnidad3
+            // 
+            this.cboTipoUnidad3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTipoUnidad3.FormattingEnabled = true;
+            this.cboTipoUnidad3.Items.AddRange(new object[] {
+            "",
+            "Nuevo",
+            "Usado",
+            "Dañado",
+            "Baja"});
+            this.cboTipoUnidad3.Location = new System.Drawing.Point(131, 158);
+            this.cboTipoUnidad3.Name = "cboTipoUnidad3";
+            this.cboTipoUnidad3.Size = new System.Drawing.Size(158, 21);
+            this.cboTipoUnidad3.TabIndex = 172;
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.Location = new System.Drawing.Point(6, 137);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(52, 15);
+            this.label67.TabIndex = 171;
+            this.label67.Text = "Modelo:";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label68.Location = new System.Drawing.Point(7, 111);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(45, 15);
+            this.label68.TabIndex = 169;
+            this.label68.Text = "Marca:";
+            // 
+            // textBox26
+            // 
+            this.textBox26.Location = new System.Drawing.Point(131, 237);
+            this.textBox26.Name = "textBox26";
+            this.textBox26.Size = new System.Drawing.Size(158, 20);
+            this.textBox26.TabIndex = 167;
+            // 
+            // label69
+            // 
+            this.label69.Location = new System.Drawing.Point(111, 242);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(27, 13);
+            this.label69.TabIndex = 168;
+            this.label69.Text = "S/. ";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label70.Location = new System.Drawing.Point(7, 242);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(91, 15);
+            this.label70.TabIndex = 166;
+            this.label70.Text = "Precio Unitario:";
+            // 
+            // textBox27
+            // 
+            this.textBox27.Location = new System.Drawing.Point(131, 263);
+            this.textBox27.Name = "textBox27";
+            this.textBox27.Size = new System.Drawing.Size(158, 20);
+            this.textBox27.TabIndex = 165;
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label71.Location = new System.Drawing.Point(7, 268);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(78, 15);
+            this.label71.TabIndex = 164;
+            this.label71.Text = "Stock Inicial :";
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label72.Location = new System.Drawing.Point(7, 316);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(78, 15);
+            this.label72.TabIndex = 163;
+            this.label72.Text = "Descripcion :";
+            // 
+            // textBox28
+            // 
+            this.textBox28.Location = new System.Drawing.Point(131, 315);
+            this.textBox28.Multiline = true;
+            this.textBox28.Name = "textBox28";
+            this.textBox28.Size = new System.Drawing.Size(213, 56);
+            this.textBox28.TabIndex = 162;
+            // 
+            // cboEstadoProduc7
+            // 
+            this.cboEstadoProduc7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEstadoProduc7.FormattingEnabled = true;
+            this.cboEstadoProduc7.Location = new System.Drawing.Point(132, 210);
+            this.cboEstadoProduc7.Name = "cboEstadoProduc7";
+            this.cboEstadoProduc7.Size = new System.Drawing.Size(158, 21);
+            this.cboEstadoProduc7.TabIndex = 161;
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label73.Location = new System.Drawing.Point(8, 216);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(51, 15);
+            this.label73.TabIndex = 160;
+            this.label73.Text = "Estado :";
+            // 
+            // textBox79
+            // 
+            this.textBox79.Location = new System.Drawing.Point(130, 54);
+            this.textBox79.Name = "textBox79";
+            this.textBox79.Size = new System.Drawing.Size(213, 20);
+            this.textBox79.TabIndex = 78;
+            // 
+            // label149
+            // 
+            this.label149.AutoSize = true;
+            this.label149.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label149.Location = new System.Drawing.Point(6, 55);
+            this.label149.Name = "label149";
+            this.label149.Size = new System.Drawing.Size(74, 15);
+            this.label149.TabIndex = 77;
+            this.label149.Text = "Cod. Equipo";
+            // 
+            // textBox80
+            // 
+            this.textBox80.Location = new System.Drawing.Point(131, 80);
+            this.textBox80.Name = "textBox80";
+            this.textBox80.Size = new System.Drawing.Size(213, 20);
+            this.textBox80.TabIndex = 57;
+            // 
+            // label150
+            // 
+            this.label150.AutoSize = true;
+            this.label150.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label150.Location = new System.Drawing.Point(6, 85);
+            this.label150.Name = "label150";
+            this.label150.Size = new System.Drawing.Size(55, 15);
+            this.label150.TabIndex = 56;
+            this.label150.Text = "Nombre:";
+            // 
+            // textBox81
+            // 
+            this.textBox81.Location = new System.Drawing.Point(130, 28);
+            this.textBox81.Name = "textBox81";
+            this.textBox81.Size = new System.Drawing.Size(213, 20);
+            this.textBox81.TabIndex = 28;
+            // 
+            // label151
+            // 
+            this.label151.AutoSize = true;
+            this.label151.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label151.Location = new System.Drawing.Point(6, 29);
+            this.label151.Name = "label151";
+            this.label151.Size = new System.Drawing.Size(80, 15);
+            this.label151.TabIndex = 27;
+            this.label151.Text = "Cod. Sistema";
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.groupBox17);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(1144, 478);
+            this.tabPage5.TabIndex = 6;
+            this.tabPage5.Text = "Mobiliario";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // groupBox17
+            // 
+            this.groupBox17.Controls.Add(this.groupBox18);
+            this.groupBox17.Controls.Add(this.textBox82);
+            this.groupBox17.Controls.Add(this.textBox83);
+            this.groupBox17.Controls.Add(this.label152);
+            this.groupBox17.Controls.Add(this.label153);
+            this.groupBox17.Controls.Add(this.textBox84);
+            this.groupBox17.Controls.Add(this.label154);
+            this.groupBox17.Controls.Add(this.textBox85);
+            this.groupBox17.Controls.Add(this.cboTipoUnidad4);
+            this.groupBox17.Controls.Add(this.label155);
+            this.groupBox17.Controls.Add(this.label156);
+            this.groupBox17.Controls.Add(this.textBox86);
+            this.groupBox17.Controls.Add(this.label157);
+            this.groupBox17.Controls.Add(this.label158);
+            this.groupBox17.Controls.Add(this.textBox87);
+            this.groupBox17.Controls.Add(this.label159);
+            this.groupBox17.Controls.Add(this.label160);
+            this.groupBox17.Controls.Add(this.textBox88);
+            this.groupBox17.Controls.Add(this.cboEstadoProduc8);
+            this.groupBox17.Controls.Add(this.label161);
+            this.groupBox17.Controls.Add(this.textBox91);
+            this.groupBox17.Controls.Add(this.label167);
+            this.groupBox17.Controls.Add(this.textBox92);
+            this.groupBox17.Controls.Add(this.label168);
+            this.groupBox17.Controls.Add(this.textBox93);
+            this.groupBox17.Controls.Add(this.label169);
+            this.groupBox17.Location = new System.Drawing.Point(8, 34);
+            this.groupBox17.Name = "groupBox17";
+            this.groupBox17.Size = new System.Drawing.Size(1136, 438);
+            this.groupBox17.TabIndex = 57;
+            this.groupBox17.TabStop = false;
+            this.groupBox17.Text = "Datos del Equipo";
+            // 
             // groupBox18
             // 
             this.groupBox18.Controls.Add(this.textBox29);
@@ -4393,6 +3869,275 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label100.Size = new System.Drawing.Size(110, 15);
             this.label100.TabIndex = 152;
             this.label100.Text = "Fecha Adquisicion:";
+            // 
+            // textBox82
+            // 
+            this.textBox82.Location = new System.Drawing.Point(130, 106);
+            this.textBox82.Name = "textBox82";
+            this.textBox82.Size = new System.Drawing.Size(213, 20);
+            this.textBox82.TabIndex = 179;
+            // 
+            // textBox83
+            // 
+            this.textBox83.Location = new System.Drawing.Point(131, 289);
+            this.textBox83.Name = "textBox83";
+            this.textBox83.Size = new System.Drawing.Size(158, 20);
+            this.textBox83.TabIndex = 178;
+            // 
+            // label152
+            // 
+            this.label152.AutoSize = true;
+            this.label152.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label152.Location = new System.Drawing.Point(7, 294);
+            this.label152.Name = "label152";
+            this.label152.Size = new System.Drawing.Size(85, 15);
+            this.label152.TabIndex = 177;
+            this.label152.Text = "Stock Minimo:";
+            // 
+            // label153
+            // 
+            this.label153.AutoSize = true;
+            this.label153.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label153.Location = new System.Drawing.Point(7, 164);
+            this.label153.Name = "label153";
+            this.label153.Size = new System.Drawing.Size(77, 15);
+            this.label153.TabIndex = 176;
+            this.label153.Text = "Tipo Unidad:";
+            // 
+            // textBox84
+            // 
+            this.textBox84.Location = new System.Drawing.Point(131, 184);
+            this.textBox84.Name = "textBox84";
+            this.textBox84.Size = new System.Drawing.Size(158, 20);
+            this.textBox84.TabIndex = 175;
+            // 
+            // label154
+            // 
+            this.label154.AutoSize = true;
+            this.label154.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label154.Location = new System.Drawing.Point(8, 189);
+            this.label154.Name = "label154";
+            this.label154.Size = new System.Drawing.Size(59, 15);
+            this.label154.TabIndex = 174;
+            this.label154.Text = "Cantidad:";
+            // 
+            // textBox85
+            // 
+            this.textBox85.Location = new System.Drawing.Point(131, 132);
+            this.textBox85.Name = "textBox85";
+            this.textBox85.Size = new System.Drawing.Size(213, 20);
+            this.textBox85.TabIndex = 173;
+            // 
+            // cboTipoUnidad4
+            // 
+            this.cboTipoUnidad4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTipoUnidad4.FormattingEnabled = true;
+            this.cboTipoUnidad4.Items.AddRange(new object[] {
+            "",
+            "Nuevo",
+            "Usado",
+            "Dañado",
+            "Baja"});
+            this.cboTipoUnidad4.Location = new System.Drawing.Point(131, 158);
+            this.cboTipoUnidad4.Name = "cboTipoUnidad4";
+            this.cboTipoUnidad4.Size = new System.Drawing.Size(158, 21);
+            this.cboTipoUnidad4.TabIndex = 172;
+            // 
+            // label155
+            // 
+            this.label155.AutoSize = true;
+            this.label155.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label155.Location = new System.Drawing.Point(6, 137);
+            this.label155.Name = "label155";
+            this.label155.Size = new System.Drawing.Size(52, 15);
+            this.label155.TabIndex = 171;
+            this.label155.Text = "Modelo:";
+            // 
+            // label156
+            // 
+            this.label156.AutoSize = true;
+            this.label156.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label156.Location = new System.Drawing.Point(7, 111);
+            this.label156.Name = "label156";
+            this.label156.Size = new System.Drawing.Size(45, 15);
+            this.label156.TabIndex = 169;
+            this.label156.Text = "Marca:";
+            // 
+            // textBox86
+            // 
+            this.textBox86.Location = new System.Drawing.Point(131, 237);
+            this.textBox86.Name = "textBox86";
+            this.textBox86.Size = new System.Drawing.Size(158, 20);
+            this.textBox86.TabIndex = 167;
+            // 
+            // label157
+            // 
+            this.label157.Location = new System.Drawing.Point(111, 242);
+            this.label157.Name = "label157";
+            this.label157.Size = new System.Drawing.Size(27, 13);
+            this.label157.TabIndex = 168;
+            this.label157.Text = "S/. ";
+            // 
+            // label158
+            // 
+            this.label158.AutoSize = true;
+            this.label158.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label158.Location = new System.Drawing.Point(7, 242);
+            this.label158.Name = "label158";
+            this.label158.Size = new System.Drawing.Size(91, 15);
+            this.label158.TabIndex = 166;
+            this.label158.Text = "Precio Unitario:";
+            // 
+            // textBox87
+            // 
+            this.textBox87.Location = new System.Drawing.Point(131, 263);
+            this.textBox87.Name = "textBox87";
+            this.textBox87.Size = new System.Drawing.Size(158, 20);
+            this.textBox87.TabIndex = 165;
+            // 
+            // label159
+            // 
+            this.label159.AutoSize = true;
+            this.label159.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label159.Location = new System.Drawing.Point(7, 268);
+            this.label159.Name = "label159";
+            this.label159.Size = new System.Drawing.Size(78, 15);
+            this.label159.TabIndex = 164;
+            this.label159.Text = "Stock Inicial :";
+            // 
+            // label160
+            // 
+            this.label160.AutoSize = true;
+            this.label160.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label160.Location = new System.Drawing.Point(7, 316);
+            this.label160.Name = "label160";
+            this.label160.Size = new System.Drawing.Size(78, 15);
+            this.label160.TabIndex = 163;
+            this.label160.Text = "Descripcion :";
+            // 
+            // textBox88
+            // 
+            this.textBox88.Location = new System.Drawing.Point(131, 315);
+            this.textBox88.Multiline = true;
+            this.textBox88.Name = "textBox88";
+            this.textBox88.Size = new System.Drawing.Size(213, 56);
+            this.textBox88.TabIndex = 162;
+            // 
+            // cboEstadoProduc8
+            // 
+            this.cboEstadoProduc8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEstadoProduc8.FormattingEnabled = true;
+            this.cboEstadoProduc8.Location = new System.Drawing.Point(132, 210);
+            this.cboEstadoProduc8.Name = "cboEstadoProduc8";
+            this.cboEstadoProduc8.Size = new System.Drawing.Size(158, 21);
+            this.cboEstadoProduc8.TabIndex = 161;
+            // 
+            // label161
+            // 
+            this.label161.AutoSize = true;
+            this.label161.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label161.Location = new System.Drawing.Point(8, 216);
+            this.label161.Name = "label161";
+            this.label161.Size = new System.Drawing.Size(51, 15);
+            this.label161.TabIndex = 160;
+            this.label161.Text = "Estado :";
+            // 
+            // textBox91
+            // 
+            this.textBox91.Location = new System.Drawing.Point(130, 54);
+            this.textBox91.Name = "textBox91";
+            this.textBox91.Size = new System.Drawing.Size(213, 20);
+            this.textBox91.TabIndex = 78;
+            // 
+            // label167
+            // 
+            this.label167.AutoSize = true;
+            this.label167.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label167.Location = new System.Drawing.Point(6, 55);
+            this.label167.Name = "label167";
+            this.label167.Size = new System.Drawing.Size(74, 15);
+            this.label167.TabIndex = 77;
+            this.label167.Text = "Cod. Equipo";
+            // 
+            // textBox92
+            // 
+            this.textBox92.Location = new System.Drawing.Point(131, 80);
+            this.textBox92.Name = "textBox92";
+            this.textBox92.Size = new System.Drawing.Size(213, 20);
+            this.textBox92.TabIndex = 57;
+            // 
+            // label168
+            // 
+            this.label168.AutoSize = true;
+            this.label168.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label168.Location = new System.Drawing.Point(6, 85);
+            this.label168.Name = "label168";
+            this.label168.Size = new System.Drawing.Size(55, 15);
+            this.label168.TabIndex = 56;
+            this.label168.Text = "Nombre:";
+            // 
+            // textBox93
+            // 
+            this.textBox93.Location = new System.Drawing.Point(130, 28);
+            this.textBox93.Name = "textBox93";
+            this.textBox93.Size = new System.Drawing.Size(213, 20);
+            this.textBox93.TabIndex = 28;
+            // 
+            // label169
+            // 
+            this.label169.AutoSize = true;
+            this.label169.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label169.Location = new System.Drawing.Point(6, 29);
+            this.label169.Name = "label169";
+            this.label169.Size = new System.Drawing.Size(80, 15);
+            this.label169.TabIndex = 27;
+            this.label169.Text = "Cod. Sistema";
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.groupBox19);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1144, 478);
+            this.tabPage6.TabIndex = 7;
+            this.tabPage6.Text = "Vehiculos";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // groupBox19
+            // 
+            this.groupBox19.Controls.Add(this.groupBox20);
+            this.groupBox19.Controls.Add(this.textBox94);
+            this.groupBox19.Controls.Add(this.textBox95);
+            this.groupBox19.Controls.Add(this.label172);
+            this.groupBox19.Controls.Add(this.label173);
+            this.groupBox19.Controls.Add(this.textBox96);
+            this.groupBox19.Controls.Add(this.label174);
+            this.groupBox19.Controls.Add(this.textBox97);
+            this.groupBox19.Controls.Add(this.cboTipoUnidad5);
+            this.groupBox19.Controls.Add(this.label175);
+            this.groupBox19.Controls.Add(this.label176);
+            this.groupBox19.Controls.Add(this.textBox98);
+            this.groupBox19.Controls.Add(this.label177);
+            this.groupBox19.Controls.Add(this.label178);
+            this.groupBox19.Controls.Add(this.textBox99);
+            this.groupBox19.Controls.Add(this.label179);
+            this.groupBox19.Controls.Add(this.label180);
+            this.groupBox19.Controls.Add(this.textBox100);
+            this.groupBox19.Controls.Add(this.cboEstadoProduc9);
+            this.groupBox19.Controls.Add(this.label181);
+            this.groupBox19.Controls.Add(this.textBox103);
+            this.groupBox19.Controls.Add(this.label187);
+            this.groupBox19.Controls.Add(this.textBox104);
+            this.groupBox19.Controls.Add(this.label188);
+            this.groupBox19.Controls.Add(this.textBox105);
+            this.groupBox19.Controls.Add(this.label189);
+            this.groupBox19.Location = new System.Drawing.Point(12, 23);
+            this.groupBox19.Name = "groupBox19";
+            this.groupBox19.Size = new System.Drawing.Size(1136, 433);
+            this.groupBox19.TabIndex = 98;
+            this.groupBox19.TabStop = false;
+            this.groupBox19.Text = "Datos del Equipo";
             // 
             // groupBox20
             // 
@@ -4499,6 +4244,240 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label119.TabIndex = 152;
             this.label119.Text = "Fecha Adquisicion:";
             // 
+            // textBox94
+            // 
+            this.textBox94.Location = new System.Drawing.Point(130, 106);
+            this.textBox94.Name = "textBox94";
+            this.textBox94.Size = new System.Drawing.Size(213, 20);
+            this.textBox94.TabIndex = 179;
+            // 
+            // textBox95
+            // 
+            this.textBox95.Location = new System.Drawing.Point(131, 289);
+            this.textBox95.Name = "textBox95";
+            this.textBox95.Size = new System.Drawing.Size(158, 20);
+            this.textBox95.TabIndex = 178;
+            // 
+            // label172
+            // 
+            this.label172.AutoSize = true;
+            this.label172.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label172.Location = new System.Drawing.Point(7, 294);
+            this.label172.Name = "label172";
+            this.label172.Size = new System.Drawing.Size(85, 15);
+            this.label172.TabIndex = 177;
+            this.label172.Text = "Stock Minimo:";
+            // 
+            // label173
+            // 
+            this.label173.AutoSize = true;
+            this.label173.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label173.Location = new System.Drawing.Point(7, 164);
+            this.label173.Name = "label173";
+            this.label173.Size = new System.Drawing.Size(77, 15);
+            this.label173.TabIndex = 176;
+            this.label173.Text = "Tipo Unidad:";
+            // 
+            // textBox96
+            // 
+            this.textBox96.Location = new System.Drawing.Point(131, 184);
+            this.textBox96.Name = "textBox96";
+            this.textBox96.Size = new System.Drawing.Size(158, 20);
+            this.textBox96.TabIndex = 175;
+            // 
+            // label174
+            // 
+            this.label174.AutoSize = true;
+            this.label174.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label174.Location = new System.Drawing.Point(8, 189);
+            this.label174.Name = "label174";
+            this.label174.Size = new System.Drawing.Size(59, 15);
+            this.label174.TabIndex = 174;
+            this.label174.Text = "Cantidad:";
+            // 
+            // textBox97
+            // 
+            this.textBox97.Location = new System.Drawing.Point(131, 132);
+            this.textBox97.Name = "textBox97";
+            this.textBox97.Size = new System.Drawing.Size(213, 20);
+            this.textBox97.TabIndex = 173;
+            // 
+            // cboTipoUnidad5
+            // 
+            this.cboTipoUnidad5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTipoUnidad5.FormattingEnabled = true;
+            this.cboTipoUnidad5.Items.AddRange(new object[] {
+            "",
+            "Nuevo",
+            "Usado",
+            "Dañado",
+            "Baja"});
+            this.cboTipoUnidad5.Location = new System.Drawing.Point(131, 158);
+            this.cboTipoUnidad5.Name = "cboTipoUnidad5";
+            this.cboTipoUnidad5.Size = new System.Drawing.Size(158, 21);
+            this.cboTipoUnidad5.TabIndex = 172;
+            // 
+            // label175
+            // 
+            this.label175.AutoSize = true;
+            this.label175.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label175.Location = new System.Drawing.Point(6, 137);
+            this.label175.Name = "label175";
+            this.label175.Size = new System.Drawing.Size(52, 15);
+            this.label175.TabIndex = 171;
+            this.label175.Text = "Modelo:";
+            // 
+            // label176
+            // 
+            this.label176.AutoSize = true;
+            this.label176.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label176.Location = new System.Drawing.Point(7, 111);
+            this.label176.Name = "label176";
+            this.label176.Size = new System.Drawing.Size(45, 15);
+            this.label176.TabIndex = 169;
+            this.label176.Text = "Marca:";
+            // 
+            // textBox98
+            // 
+            this.textBox98.Location = new System.Drawing.Point(131, 237);
+            this.textBox98.Name = "textBox98";
+            this.textBox98.Size = new System.Drawing.Size(158, 20);
+            this.textBox98.TabIndex = 167;
+            // 
+            // label177
+            // 
+            this.label177.Location = new System.Drawing.Point(111, 242);
+            this.label177.Name = "label177";
+            this.label177.Size = new System.Drawing.Size(27, 13);
+            this.label177.TabIndex = 168;
+            this.label177.Text = "S/. ";
+            // 
+            // label178
+            // 
+            this.label178.AutoSize = true;
+            this.label178.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label178.Location = new System.Drawing.Point(7, 242);
+            this.label178.Name = "label178";
+            this.label178.Size = new System.Drawing.Size(91, 15);
+            this.label178.TabIndex = 166;
+            this.label178.Text = "Precio Unitario:";
+            // 
+            // textBox99
+            // 
+            this.textBox99.Location = new System.Drawing.Point(131, 263);
+            this.textBox99.Name = "textBox99";
+            this.textBox99.Size = new System.Drawing.Size(158, 20);
+            this.textBox99.TabIndex = 165;
+            // 
+            // label179
+            // 
+            this.label179.AutoSize = true;
+            this.label179.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label179.Location = new System.Drawing.Point(7, 268);
+            this.label179.Name = "label179";
+            this.label179.Size = new System.Drawing.Size(78, 15);
+            this.label179.TabIndex = 164;
+            this.label179.Text = "Stock Inicial :";
+            // 
+            // label180
+            // 
+            this.label180.AutoSize = true;
+            this.label180.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label180.Location = new System.Drawing.Point(7, 316);
+            this.label180.Name = "label180";
+            this.label180.Size = new System.Drawing.Size(78, 15);
+            this.label180.TabIndex = 163;
+            this.label180.Text = "Descripcion :";
+            // 
+            // textBox100
+            // 
+            this.textBox100.Location = new System.Drawing.Point(131, 315);
+            this.textBox100.Multiline = true;
+            this.textBox100.Name = "textBox100";
+            this.textBox100.Size = new System.Drawing.Size(213, 56);
+            this.textBox100.TabIndex = 162;
+            // 
+            // cboEstadoProduc9
+            // 
+            this.cboEstadoProduc9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEstadoProduc9.FormattingEnabled = true;
+            this.cboEstadoProduc9.Location = new System.Drawing.Point(132, 210);
+            this.cboEstadoProduc9.Name = "cboEstadoProduc9";
+            this.cboEstadoProduc9.Size = new System.Drawing.Size(158, 21);
+            this.cboEstadoProduc9.TabIndex = 161;
+            // 
+            // label181
+            // 
+            this.label181.AutoSize = true;
+            this.label181.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label181.Location = new System.Drawing.Point(8, 216);
+            this.label181.Name = "label181";
+            this.label181.Size = new System.Drawing.Size(51, 15);
+            this.label181.TabIndex = 160;
+            this.label181.Text = "Estado :";
+            // 
+            // textBox103
+            // 
+            this.textBox103.Location = new System.Drawing.Point(130, 54);
+            this.textBox103.Name = "textBox103";
+            this.textBox103.Size = new System.Drawing.Size(213, 20);
+            this.textBox103.TabIndex = 78;
+            // 
+            // label187
+            // 
+            this.label187.AutoSize = true;
+            this.label187.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label187.Location = new System.Drawing.Point(6, 55);
+            this.label187.Name = "label187";
+            this.label187.Size = new System.Drawing.Size(74, 15);
+            this.label187.TabIndex = 77;
+            this.label187.Text = "Cod. Equipo";
+            // 
+            // textBox104
+            // 
+            this.textBox104.Location = new System.Drawing.Point(131, 80);
+            this.textBox104.Name = "textBox104";
+            this.textBox104.Size = new System.Drawing.Size(213, 20);
+            this.textBox104.TabIndex = 57;
+            // 
+            // label188
+            // 
+            this.label188.AutoSize = true;
+            this.label188.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label188.Location = new System.Drawing.Point(6, 85);
+            this.label188.Name = "label188";
+            this.label188.Size = new System.Drawing.Size(55, 15);
+            this.label188.TabIndex = 56;
+            this.label188.Text = "Nombre:";
+            // 
+            // textBox105
+            // 
+            this.textBox105.Location = new System.Drawing.Point(130, 28);
+            this.textBox105.Name = "textBox105";
+            this.textBox105.Size = new System.Drawing.Size(213, 20);
+            this.textBox105.TabIndex = 28;
+            // 
+            // label189
+            // 
+            this.label189.AutoSize = true;
+            this.label189.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label189.Location = new System.Drawing.Point(6, 29);
+            this.label189.Name = "label189";
+            this.label189.Size = new System.Drawing.Size(80, 15);
+            this.label189.TabIndex = 27;
+            this.label189.Text = "Cod. Sistema";
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Controls.Add(this.groupBox21);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(1144, 478);
+            this.tabPage8.TabIndex = 9;
+            this.tabPage8.Text = "Utiles de Aseo";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
             // groupBox21
             // 
             this.groupBox21.Controls.Add(this.groupBox22);
@@ -4509,7 +4488,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox21.Controls.Add(this.textBox72);
             this.groupBox21.Controls.Add(this.label148);
             this.groupBox21.Controls.Add(this.textBox74);
-            this.groupBox21.Controls.Add(this.comboBox2);
+            this.groupBox21.Controls.Add(this.cboTipoUnidad6);
             this.groupBox21.Controls.Add(this.label162);
             this.groupBox21.Controls.Add(this.label163);
             this.groupBox21.Controls.Add(this.textBox89);
@@ -4519,7 +4498,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox21.Controls.Add(this.label166);
             this.groupBox21.Controls.Add(this.label170);
             this.groupBox21.Controls.Add(this.textBox101);
-            this.groupBox21.Controls.Add(this.comboBox3);
+            this.groupBox21.Controls.Add(this.cboEstadoProduc10);
             this.groupBox21.Controls.Add(this.label171);
             this.groupBox21.Controls.Add(this.textBox102);
             this.groupBox21.Controls.Add(this.label182);
@@ -4697,20 +4676,20 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox74.Size = new System.Drawing.Size(213, 20);
             this.textBox74.TabIndex = 173;
             // 
-            // comboBox2
+            // cboTipoUnidad6
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cboTipoUnidad6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTipoUnidad6.FormattingEnabled = true;
+            this.cboTipoUnidad6.Items.AddRange(new object[] {
             "",
             "Nuevo",
             "Usado",
             "Dañado",
             "Baja"});
-            this.comboBox2.Location = new System.Drawing.Point(131, 158);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(158, 21);
-            this.comboBox2.TabIndex = 172;
+            this.cboTipoUnidad6.Location = new System.Drawing.Point(131, 158);
+            this.cboTipoUnidad6.Name = "cboTipoUnidad6";
+            this.cboTipoUnidad6.Size = new System.Drawing.Size(158, 21);
+            this.cboTipoUnidad6.TabIndex = 172;
             // 
             // label162
             // 
@@ -4792,14 +4771,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox101.Size = new System.Drawing.Size(213, 56);
             this.textBox101.TabIndex = 162;
             // 
-            // comboBox3
+            // cboEstadoProduc10
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(132, 210);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(158, 21);
-            this.comboBox3.TabIndex = 161;
+            this.cboEstadoProduc10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEstadoProduc10.FormattingEnabled = true;
+            this.cboEstadoProduc10.Location = new System.Drawing.Point(132, 210);
+            this.cboEstadoProduc10.Name = "cboEstadoProduc10";
+            this.cboEstadoProduc10.Size = new System.Drawing.Size(158, 21);
+            this.cboEstadoProduc10.TabIndex = 161;
             // 
             // label171
             // 
@@ -4862,6 +4841,17 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label184.TabIndex = 27;
             this.label184.Text = "Cod. Sistema";
             // 
+            // tabPage9
+            // 
+            this.tabPage9.Controls.Add(this.groupBox23);
+            this.tabPage9.Location = new System.Drawing.Point(4, 22);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(1144, 478);
+            this.tabPage9.TabIndex = 10;
+            this.tabPage9.Text = "Armamento";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            // 
             // groupBox23
             // 
             this.groupBox23.Controls.Add(this.groupBox24);
@@ -4872,7 +4862,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox23.Controls.Add(this.textBox113);
             this.groupBox23.Controls.Add(this.label196);
             this.groupBox23.Controls.Add(this.textBox114);
-            this.groupBox23.Controls.Add(this.comboBox4);
+            this.groupBox23.Controls.Add(this.cboTipoUnidad7);
             this.groupBox23.Controls.Add(this.label197);
             this.groupBox23.Controls.Add(this.label198);
             this.groupBox23.Controls.Add(this.textBox115);
@@ -4882,7 +4872,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox23.Controls.Add(this.label201);
             this.groupBox23.Controls.Add(this.label202);
             this.groupBox23.Controls.Add(this.textBox117);
-            this.groupBox23.Controls.Add(this.comboBox5);
+            this.groupBox23.Controls.Add(this.cboEstadoProduc11);
             this.groupBox23.Controls.Add(this.label203);
             this.groupBox23.Controls.Add(this.textBox118);
             this.groupBox23.Controls.Add(this.label204);
@@ -5060,20 +5050,20 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox114.Size = new System.Drawing.Size(213, 20);
             this.textBox114.TabIndex = 173;
             // 
-            // comboBox4
+            // cboTipoUnidad7
             // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.cboTipoUnidad7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTipoUnidad7.FormattingEnabled = true;
+            this.cboTipoUnidad7.Items.AddRange(new object[] {
             "",
             "Nuevo",
             "Usado",
             "Dañado",
             "Baja"});
-            this.comboBox4.Location = new System.Drawing.Point(131, 158);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(158, 21);
-            this.comboBox4.TabIndex = 172;
+            this.cboTipoUnidad7.Location = new System.Drawing.Point(131, 158);
+            this.cboTipoUnidad7.Name = "cboTipoUnidad7";
+            this.cboTipoUnidad7.Size = new System.Drawing.Size(158, 21);
+            this.cboTipoUnidad7.TabIndex = 172;
             // 
             // label197
             // 
@@ -5155,14 +5145,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox117.Size = new System.Drawing.Size(213, 56);
             this.textBox117.TabIndex = 162;
             // 
-            // comboBox5
+            // cboEstadoProduc11
             // 
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(132, 210);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(158, 21);
-            this.comboBox5.TabIndex = 161;
+            this.cboEstadoProduc11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEstadoProduc11.FormattingEnabled = true;
+            this.cboEstadoProduc11.Location = new System.Drawing.Point(132, 210);
+            this.cboEstadoProduc11.Name = "cboEstadoProduc11";
+            this.cboEstadoProduc11.Size = new System.Drawing.Size(158, 21);
+            this.cboEstadoProduc11.TabIndex = 161;
             // 
             // label203
             // 
@@ -5245,6 +5235,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox2.PerformLayout();
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tbpUniforme.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -5258,57 +5249,56 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox7.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.tbpUtilesEscritorio.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox14.ResumeLayout(false);
             this.groupBox14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.tbpEquipamientoLogistico.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            this.tbpEpp.ResumeLayout(false);
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.tabPage5.ResumeLayout(false);
-            this.groupBox17.ResumeLayout(false);
-            this.groupBox17.PerformLayout();
-            this.tabPage6.ResumeLayout(false);
-            this.groupBox19.ResumeLayout(false);
-            this.groupBox19.PerformLayout();
-            this.tabPage8.ResumeLayout(false);
-            this.tabPage9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.tbpEpp.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.groupBox16.ResumeLayout(false);
             this.groupBox16.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.groupBox17.ResumeLayout(false);
+            this.groupBox17.PerformLayout();
             this.groupBox18.ResumeLayout(false);
             this.groupBox18.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.tabPage6.ResumeLayout(false);
+            this.groupBox19.ResumeLayout(false);
+            this.groupBox19.PerformLayout();
             this.groupBox20.ResumeLayout(false);
             this.groupBox20.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.tabPage8.ResumeLayout(false);
             this.groupBox21.ResumeLayout(false);
             this.groupBox21.PerformLayout();
             this.groupBox22.ResumeLayout(false);
             this.groupBox22.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            this.tabPage9.ResumeLayout(false);
             this.groupBox23.ResumeLayout(false);
             this.groupBox23.PerformLayout();
             this.groupBox24.ResumeLayout(false);
@@ -5399,9 +5389,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.TextBox textBox52;
         private System.Windows.Forms.Label label106;
         private System.Windows.Forms.TextBox textBox53;
-        private System.Windows.Forms.ComboBox comboBox18;
+        private System.Windows.Forms.ComboBox cboTipoTela1;
         private System.Windows.Forms.Label label107;
-        private System.Windows.Forms.ComboBox comboBox19;
+        private System.Windows.Forms.ComboBox cboTallaPantalon;
         private System.Windows.Forms.Label label108;
         private System.Windows.Forms.TextBox textBox54;
         private System.Windows.Forms.Label label110;
@@ -5416,7 +5406,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.Label label115;
         private System.Windows.Forms.TextBox textBox59;
         private System.Windows.Forms.Label label116;
-        private System.Windows.Forms.ComboBox comboBox20;
+        private System.Windows.Forms.ComboBox cboEstadoProduc3;
         private System.Windows.Forms.Label label117;
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.GroupBox groupBox12;
@@ -5447,7 +5437,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.Label label134;
         private System.Windows.Forms.TextBox textBox70;
         private System.Windows.Forms.Label label135;
-        private System.Windows.Forms.ComboBox comboBox24;
+        private System.Windows.Forms.ComboBox cboEstadoProduc4;
         private System.Windows.Forms.Label label136;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage6;
@@ -5470,7 +5460,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboTipoUnidad1;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.TextBox textBox7;
@@ -5480,7 +5470,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label139;
         private System.Windows.Forms.TextBox textBox71;
-        private System.Windows.Forms.ComboBox comboBox26;
+        private System.Windows.Forms.ComboBox cboEstadoProduc5;
         private System.Windows.Forms.Label label140;
         private System.Windows.Forms.TextBox textBox75;
         private System.Windows.Forms.Label label142;
@@ -5494,7 +5484,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox cboTipoUnidad2;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.TextBox textBox17;
@@ -5504,7 +5494,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.ComboBox cboEstadoProduc6;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.TextBox textBox76;
         private System.Windows.Forms.Label label145;
@@ -5520,7 +5510,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.TextBox textBox24;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.ComboBox comboBox10;
+        private System.Windows.Forms.ComboBox cboTipoUnidad3;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Label label68;
         private System.Windows.Forms.TextBox textBox26;
@@ -5530,7 +5520,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.ComboBox comboBox11;
+        private System.Windows.Forms.ComboBox cboEstadoProduc7;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.TextBox textBox79;
         private System.Windows.Forms.Label label149;
@@ -5546,7 +5536,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.TextBox textBox84;
         private System.Windows.Forms.Label label154;
         private System.Windows.Forms.TextBox textBox85;
-        private System.Windows.Forms.ComboBox comboBox27;
+        private System.Windows.Forms.ComboBox cboTipoUnidad4;
         private System.Windows.Forms.Label label155;
         private System.Windows.Forms.Label label156;
         private System.Windows.Forms.TextBox textBox86;
@@ -5556,7 +5546,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.Label label159;
         private System.Windows.Forms.Label label160;
         private System.Windows.Forms.TextBox textBox88;
-        private System.Windows.Forms.ComboBox comboBox28;
+        private System.Windows.Forms.ComboBox cboEstadoProduc8;
         private System.Windows.Forms.Label label161;
         private System.Windows.Forms.TextBox textBox91;
         private System.Windows.Forms.Label label167;
@@ -5572,7 +5562,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.TextBox textBox96;
         private System.Windows.Forms.Label label174;
         private System.Windows.Forms.TextBox textBox97;
-        private System.Windows.Forms.ComboBox comboBox31;
+        private System.Windows.Forms.ComboBox cboTipoUnidad5;
         private System.Windows.Forms.Label label175;
         private System.Windows.Forms.Label label176;
         private System.Windows.Forms.TextBox textBox98;
@@ -5582,7 +5572,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.Label label179;
         private System.Windows.Forms.Label label180;
         private System.Windows.Forms.TextBox textBox100;
-        private System.Windows.Forms.ComboBox comboBox32;
+        private System.Windows.Forms.ComboBox cboEstadoProduc9;
         private System.Windows.Forms.Label label181;
         private System.Windows.Forms.TextBox textBox103;
         private System.Windows.Forms.Label label187;
@@ -5724,7 +5714,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.TextBox textBox72;
         private System.Windows.Forms.Label label148;
         private System.Windows.Forms.TextBox textBox74;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cboTipoUnidad6;
         private System.Windows.Forms.Label label162;
         private System.Windows.Forms.Label label163;
         private System.Windows.Forms.TextBox textBox89;
@@ -5734,7 +5724,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.Label label166;
         private System.Windows.Forms.Label label170;
         private System.Windows.Forms.TextBox textBox101;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cboEstadoProduc10;
         private System.Windows.Forms.Label label171;
         private System.Windows.Forms.TextBox textBox102;
         private System.Windows.Forms.Label label182;
@@ -5760,7 +5750,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.TextBox textBox113;
         private System.Windows.Forms.Label label196;
         private System.Windows.Forms.TextBox textBox114;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox cboTipoUnidad7;
         private System.Windows.Forms.Label label197;
         private System.Windows.Forms.Label label198;
         private System.Windows.Forms.TextBox textBox115;
@@ -5770,7 +5760,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.Label label201;
         private System.Windows.Forms.Label label202;
         private System.Windows.Forms.TextBox textBox117;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox cboEstadoProduc11;
         private System.Windows.Forms.Label label203;
         private System.Windows.Forms.TextBox textBox118;
         private System.Windows.Forms.Label label204;
