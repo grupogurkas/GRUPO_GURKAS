@@ -300,5 +300,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
 
         }
+
+        private void btnSubirImage(object sender, EventArgs e)
+        {
+
+        }
     }
 }

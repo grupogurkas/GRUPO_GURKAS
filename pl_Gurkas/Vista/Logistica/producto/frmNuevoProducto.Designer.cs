@@ -848,6 +848,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.button2.Text = "Subir Imagen";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.btnSubirImage);
             // 
             // label6
             // 
