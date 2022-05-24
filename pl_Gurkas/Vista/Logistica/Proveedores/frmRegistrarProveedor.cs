@@ -175,6 +175,9 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 DateTime fechaOtorgamiento = dtpFechaInicio.Value;
                 DateTime fechaCaducidad = dtpFechaCaducidad.Value;
 
+                string pdfFilePath = lblRutaBasc.Text;
+                byte[] pdfBasc = System.IO.File.ReadAllBytes(pdfFilePath);
+
                 actualizar.actualizarProveedor(cod_proveedor_cbo, Nombre, ruc, observacion, codDep, codPro,
                                          codDist, direccion, Telefono, Celular, Correo, Correo2, fregistro,
                                          paginaweb, rubro, NombreContacto, Tipoproveedor, Representante, tipoDoc,
@@ -239,8 +242,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 DateTime fechaOtorgamiento = dtpFechaInicio.Value;
                 DateTime fechaCaducidad = dtpFechaCaducidad.Value;
 
-                string pdfFilePath = "c:/pdfdocuments/myfile.pdf";
-                byte[] pdfBasc = System.IO.File.ReadAllBytes(pdfFilePath);
+             
 
                 registrar.registrarProveedor(codProveedor,  Nombre,  ruc,  observacion,  codDep,  codPro,
                                          codDist,  direccion,  Telefono,  Celular,  Correo,  Correo2,  fregistro,
@@ -398,7 +400,8 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             if (open.ShowDialog() == DialogResult.OK)
             {
                 axAcroPDF1.src = open.FileName;
-
+                string direccion = open.FileName;
+                lblRutaBasc.Text = direccion;
             }
             else
             {

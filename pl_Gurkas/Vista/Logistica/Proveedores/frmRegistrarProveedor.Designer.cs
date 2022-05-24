@@ -104,6 +104,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.lblRutaBasc = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -113,6 +114,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.lblRutaBasc);
             this.groupBox3.Controls.Add(this.btnCerrar);
             this.groupBox3.Controls.Add(this.groupBox1);
             this.groupBox3.Controls.Add(this.txtObservacion);
@@ -872,6 +874,16 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.pictureBox16.TabIndex = 151;
             this.pictureBox16.TabStop = false;
             // 
+            // lblRutaBasc
+            // 
+            this.lblRutaBasc.AutoSize = true;
+            this.lblRutaBasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRutaBasc.Location = new System.Drawing.Point(673, 475);
+            this.lblRutaBasc.Name = "lblRutaBasc";
+            this.lblRutaBasc.Size = new System.Drawing.Size(120, 15);
+            this.lblRutaBasc.TabIndex = 155;
+            this.lblRutaBasc.Text = "Fecha de Caducidad";
+            // 
             // frmRegistrarProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -980,5 +992,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         private System.Windows.Forms.Button btnSeleccionar;
         private System.Windows.Forms.PictureBox pictureBox16;
         private AxAcroPDFLib.AxAcroPDF axAcroPDF1;
+        private System.Windows.Forms.Label lblRutaBasc;
     }
 }
