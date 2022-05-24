@@ -278,6 +278,8 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             Llenadocbo.ObtenerEstadoCertifivadologistica(cboOtroCertificado);
             txtcodproveedor.Enabled = false;
             GenerarCodigo();
+            lblOtroCert.Visible = false;
+            lblRutaBasc.Visible = false;
         }
 
         private void cboDepartamento_SelectedIndexChanged(object sender, EventArgs e)
