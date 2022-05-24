@@ -489,6 +489,8 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label205 = new System.Windows.Forms.Label();
             this.txtCodSistemaArma = new System.Windows.Forms.TextBox();
             this.label206 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.btnSave = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.btcPanel.SuspendLayout();
@@ -812,6 +814,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // groupBox13
             // 
+            this.groupBox13.Controls.Add(this.btnSave);
             this.groupBox13.Controls.Add(this.txtObservacion);
             this.groupBox13.Controls.Add(this.btnCargarImagen);
             this.groupBox13.Controls.Add(this.label6);
@@ -5217,6 +5220,24 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label206.TabIndex = 27;
             this.label206.Text = "Cod. Sistema";
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.SystemColors.Control;
+            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(198, 293);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(104, 35);
+            this.btnSave.TabIndex = 163;
+            this.btnSave.Text = "Subir Imagen";
+            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // frmNuevoProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -5770,5 +5791,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.Label label205;
         private System.Windows.Forms.TextBox txtCodSistemaArma;
         private System.Windows.Forms.Label label206;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button btnSave;
     }
 }

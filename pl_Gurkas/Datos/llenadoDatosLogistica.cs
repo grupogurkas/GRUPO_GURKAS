@@ -406,6 +406,9 @@ namespace pl_Gurkas.Datos
                 MessageBox.Show("No se puede obtener la imformacion de tipo de proveedor \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
+
     }
 
 }

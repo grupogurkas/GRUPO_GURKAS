@@ -31,6 +31,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistrarProveedor));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lblRutaBasc = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cboTipoEmpresa = new System.Windows.Forms.ComboBox();
@@ -104,7 +105,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.lblRutaBasc = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -156,6 +156,16 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.groupBox3.TabIndex = 77;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Datos Proveedor";
+            // 
+            // lblRutaBasc
+            // 
+            this.lblRutaBasc.AutoSize = true;
+            this.lblRutaBasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRutaBasc.Location = new System.Drawing.Point(673, 475);
+            this.lblRutaBasc.Name = "lblRutaBasc";
+            this.lblRutaBasc.Size = new System.Drawing.Size(120, 15);
+            this.lblRutaBasc.TabIndex = 155;
+            this.lblRutaBasc.Text = "Fecha de Caducidad";
             // 
             // btnCerrar
             // 
@@ -873,16 +883,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox16.TabIndex = 151;
             this.pictureBox16.TabStop = false;
-            // 
-            // lblRutaBasc
-            // 
-            this.lblRutaBasc.AutoSize = true;
-            this.lblRutaBasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRutaBasc.Location = new System.Drawing.Point(673, 475);
-            this.lblRutaBasc.Name = "lblRutaBasc";
-            this.lblRutaBasc.Size = new System.Drawing.Size(120, 15);
-            this.lblRutaBasc.TabIndex = 155;
-            this.lblRutaBasc.Text = "Fecha de Caducidad";
             // 
             // frmRegistrarProveedor
             // 
