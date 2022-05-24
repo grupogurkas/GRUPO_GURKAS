@@ -54,10 +54,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox107 = new System.Windows.Forms.TextBox();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.txtObservacion = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnCargarImagen = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.ptcImageTecnologia = new System.Windows.Forms.PictureBox();
             this.dateTimePicker15 = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.dateTimePicker16 = new System.Windows.Forms.DateTimePicker();
@@ -86,10 +86,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
-            this.btnCargarDatos = new System.Windows.Forms.Button();
+            this.btnCargarImagen1 = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.ptcImagen = new System.Windows.Forms.PictureBox();
+            this.ptcImagenCamisas = new System.Windows.Forms.PictureBox();
             this.dateTimePicker7 = new System.Windows.Forms.DateTimePicker();
             this.label23 = new System.Windows.Forms.Label();
             this.dateTimePicker8 = new System.Windows.Forms.DateTimePicker();
@@ -123,10 +123,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.textBox33 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCargarImagen2 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ptcImagenCalzado = new System.Windows.Forms.PictureBox();
             this.dateTimePicker9 = new System.Windows.Forms.DateTimePicker();
             this.label30 = new System.Windows.Forms.Label();
             this.dateTimePicker10 = new System.Windows.Forms.DateTimePicker();
@@ -160,10 +160,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.textBox34 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnCargarImagen3 = new System.Windows.Forms.Button();
             this.label47 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.ptcImagenPantalon = new System.Windows.Forms.PictureBox();
             this.dateTimePicker11 = new System.Windows.Forms.DateTimePicker();
             this.label101 = new System.Windows.Forms.Label();
             this.dateTimePicker12 = new System.Windows.Forms.DateTimePicker();
@@ -197,10 +197,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.textBox49 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnCargarImagen4 = new System.Windows.Forms.Button();
             this.label63 = new System.Windows.Forms.Label();
             this.label82 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.ptcImagenAccesorios = new System.Windows.Forms.PictureBox();
             this.dateTimePicker13 = new System.Windows.Forms.DateTimePicker();
             this.label120 = new System.Windows.Forms.Label();
             this.dateTimePicker14 = new System.Windows.Forms.DateTimePicker();
@@ -253,10 +253,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label140 = new System.Windows.Forms.Label();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnCargarImagen5 = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.ptcImagenUtiles = new System.Windows.Forms.PictureBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label17 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
@@ -271,10 +271,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnCargarImagen6 = new System.Windows.Forms.Button();
             this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.ptcImagenEquipamiento = new System.Windows.Forms.PictureBox();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.label60 = new System.Windows.Forms.Label();
             this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
@@ -308,10 +308,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
             this.textBox21 = new System.Windows.Forms.TextBox();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnCargarImagen7 = new System.Windows.Forms.Button();
             this.label74 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.ptcImagenProteccion = new System.Windows.Forms.PictureBox();
             this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
             this.label76 = new System.Windows.Forms.Label();
             this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
@@ -345,10 +345,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox17 = new System.Windows.Forms.GroupBox();
             this.groupBox18 = new System.Windows.Forms.GroupBox();
             this.textBox29 = new System.Windows.Forms.TextBox();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnCargarImagen8 = new System.Windows.Forms.Button();
             this.label84 = new System.Windows.Forms.Label();
             this.label90 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.ptcImagenMobiliario = new System.Windows.Forms.PictureBox();
             this.dateTimePicker17 = new System.Windows.Forms.DateTimePicker();
             this.label99 = new System.Windows.Forms.Label();
             this.dateTimePicker18 = new System.Windows.Forms.DateTimePicker();
@@ -382,10 +382,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox19 = new System.Windows.Forms.GroupBox();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
             this.textBox30 = new System.Windows.Forms.TextBox();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btnCargarImagen9 = new System.Windows.Forms.Button();
             this.label103 = new System.Windows.Forms.Label();
             this.label109 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.ptcImagenVehiculos = new System.Windows.Forms.PictureBox();
             this.dateTimePicker19 = new System.Windows.Forms.DateTimePicker();
             this.label118 = new System.Windows.Forms.Label();
             this.dateTimePicker20 = new System.Windows.Forms.DateTimePicker();
@@ -419,10 +419,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox21 = new System.Windows.Forms.GroupBox();
             this.groupBox22 = new System.Windows.Forms.GroupBox();
             this.textBox50 = new System.Windows.Forms.TextBox();
-            this.button10 = new System.Windows.Forms.Button();
+            this.btnCargarImagen10 = new System.Windows.Forms.Button();
             this.label122 = new System.Windows.Forms.Label();
             this.label128 = new System.Windows.Forms.Label();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.ptcImagenUtilesAseo = new System.Windows.Forms.PictureBox();
             this.dateTimePicker21 = new System.Windows.Forms.DateTimePicker();
             this.label137 = new System.Windows.Forms.Label();
             this.dateTimePicker22 = new System.Windows.Forms.DateTimePicker();
@@ -456,10 +456,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox23 = new System.Windows.Forms.GroupBox();
             this.groupBox24 = new System.Windows.Forms.GroupBox();
             this.textBox110 = new System.Windows.Forms.TextBox();
-            this.button11 = new System.Windows.Forms.Button();
+            this.btnCargarImagen11 = new System.Windows.Forms.Button();
             this.label185 = new System.Windows.Forms.Label();
             this.label186 = new System.Windows.Forms.Label();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.ptcImagenArmamento = new System.Windows.Forms.PictureBox();
             this.dateTimePicker23 = new System.Windows.Forms.DateTimePicker();
             this.label191 = new System.Windows.Forms.Label();
             this.dateTimePicker24 = new System.Windows.Forms.DateTimePicker();
@@ -495,53 +495,53 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tbpTecnologico.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcImageTecnologia)).BeginInit();
             this.tbpUniforme.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptcImagen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcImagenCamisas)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcImagenCalzado)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcImagenPantalon)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcImagenAccesorios)).BeginInit();
             this.tbpUtilesEscritorio.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcImagenUtiles)).BeginInit();
             this.tbpEquipamientoLogistico.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcImagenEquipamiento)).BeginInit();
             this.tbpEpp.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcImagenProteccion)).BeginInit();
             this.tabPage5.SuspendLayout();
             this.groupBox17.SuspendLayout();
             this.groupBox18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcImagenMobiliario)).BeginInit();
             this.tabPage6.SuspendLayout();
             this.groupBox19.SuspendLayout();
             this.groupBox20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcImagenVehiculos)).BeginInit();
             this.tabPage8.SuspendLayout();
             this.groupBox21.SuspendLayout();
             this.groupBox22.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcImagenUtilesAseo)).BeginInit();
             this.tabPage9.SuspendLayout();
             this.groupBox23.SuspendLayout();
             this.groupBox24.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcImagenArmamento)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -813,10 +813,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // groupBox13
             // 
             this.groupBox13.Controls.Add(this.txtObservacion);
-            this.groupBox13.Controls.Add(this.button2);
+            this.groupBox13.Controls.Add(this.btnCargarImagen);
             this.groupBox13.Controls.Add(this.label6);
             this.groupBox13.Controls.Add(this.label9);
-            this.groupBox13.Controls.Add(this.pictureBox2);
+            this.groupBox13.Controls.Add(this.ptcImageTecnologia);
             this.groupBox13.Controls.Add(this.dateTimePicker15);
             this.groupBox13.Controls.Add(this.label10);
             this.groupBox13.Controls.Add(this.dateTimePicker16);
@@ -836,19 +836,19 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtObservacion.Size = new System.Drawing.Size(237, 85);
             this.txtObservacion.TabIndex = 158;
             // 
-            // button2
+            // btnCargarImagen
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Control;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(75, 293);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 35);
-            this.button2.TabIndex = 162;
-            this.button2.Text = "Subir Imagen";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.btnSubirImage);
+            this.btnCargarImagen.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCargarImagen.Image = ((System.Drawing.Image)(resources.GetObject("btnCargarImagen.Image")));
+            this.btnCargarImagen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCargarImagen.Location = new System.Drawing.Point(75, 293);
+            this.btnCargarImagen.Name = "btnCargarImagen";
+            this.btnCargarImagen.Size = new System.Drawing.Size(104, 35);
+            this.btnCargarImagen.TabIndex = 162;
+            this.btnCargarImagen.Text = "Subir Imagen";
+            this.btnCargarImagen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCargarImagen.UseVisualStyleBackColor = false;
+            this.btnCargarImagen.Click += new System.EventHandler(this.btnSubirImage);
             // 
             // label6
             // 
@@ -869,16 +869,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label9.TabIndex = 161;
             this.label9.Text = "Imagen Del Producto";
             // 
-            // pictureBox2
+            // ptcImageTecnologia
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(26, 79);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(183, 184);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 160;
-            this.pictureBox2.TabStop = false;
+            this.ptcImageTecnologia.BackColor = System.Drawing.Color.Transparent;
+            this.ptcImageTecnologia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptcImageTecnologia.Location = new System.Drawing.Point(26, 79);
+            this.ptcImageTecnologia.Name = "ptcImageTecnologia";
+            this.ptcImageTecnologia.Size = new System.Drawing.Size(183, 184);
+            this.ptcImageTecnologia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptcImageTecnologia.TabIndex = 160;
+            this.ptcImageTecnologia.TabStop = false;
             // 
             // dateTimePicker15
             // 
@@ -1149,10 +1149,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.textBox14);
-            this.groupBox5.Controls.Add(this.btnCargarDatos);
+            this.groupBox5.Controls.Add(this.btnCargarImagen1);
             this.groupBox5.Controls.Add(this.label24);
             this.groupBox5.Controls.Add(this.label15);
-            this.groupBox5.Controls.Add(this.ptcImagen);
+            this.groupBox5.Controls.Add(this.ptcImagenCamisas);
             this.groupBox5.Controls.Add(this.dateTimePicker7);
             this.groupBox5.Controls.Add(this.label23);
             this.groupBox5.Controls.Add(this.dateTimePicker8);
@@ -1172,19 +1172,19 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox14.Size = new System.Drawing.Size(172, 134);
             this.textBox14.TabIndex = 152;
             // 
-            // btnCargarDatos
+            // btnCargarImagen1
             // 
-            this.btnCargarDatos.BackColor = System.Drawing.SystemColors.Control;
-            this.btnCargarDatos.Image = ((System.Drawing.Image)(resources.GetObject("btnCargarDatos.Image")));
-            this.btnCargarDatos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCargarDatos.Location = new System.Drawing.Point(75, 302);
-            this.btnCargarDatos.Name = "btnCargarDatos";
-            this.btnCargarDatos.Size = new System.Drawing.Size(104, 35);
-            this.btnCargarDatos.TabIndex = 157;
-            this.btnCargarDatos.Text = "Subir Imagen";
-            this.btnCargarDatos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCargarDatos.UseVisualStyleBackColor = false;
-            this.btnCargarDatos.Click += new System.EventHandler(this.btnCargarDatos_Click_1);
+            this.btnCargarImagen1.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCargarImagen1.Image = ((System.Drawing.Image)(resources.GetObject("btnCargarImagen1.Image")));
+            this.btnCargarImagen1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCargarImagen1.Location = new System.Drawing.Point(75, 302);
+            this.btnCargarImagen1.Name = "btnCargarImagen1";
+            this.btnCargarImagen1.Size = new System.Drawing.Size(104, 35);
+            this.btnCargarImagen1.TabIndex = 157;
+            this.btnCargarImagen1.Text = "Subir Imagen";
+            this.btnCargarImagen1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCargarImagen1.UseVisualStyleBackColor = false;
+            this.btnCargarImagen1.Click += new System.EventHandler(this.btnCargarDatos_Click_1);
             // 
             // label24
             // 
@@ -1205,16 +1205,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label15.TabIndex = 156;
             this.label15.Text = "Imagen Del Producto";
             // 
-            // ptcImagen
+            // ptcImagenCamisas
             // 
-            this.ptcImagen.BackColor = System.Drawing.Color.Transparent;
-            this.ptcImagen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ptcImagen.Location = new System.Drawing.Point(26, 88);
-            this.ptcImagen.Name = "ptcImagen";
-            this.ptcImagen.Size = new System.Drawing.Size(183, 184);
-            this.ptcImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptcImagen.TabIndex = 155;
-            this.ptcImagen.TabStop = false;
+            this.ptcImagenCamisas.BackColor = System.Drawing.Color.Transparent;
+            this.ptcImagenCamisas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptcImagenCamisas.Location = new System.Drawing.Point(26, 88);
+            this.ptcImagenCamisas.Name = "ptcImagenCamisas";
+            this.ptcImagenCamisas.Size = new System.Drawing.Size(183, 184);
+            this.ptcImagenCamisas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptcImagenCamisas.TabIndex = 155;
+            this.ptcImagenCamisas.TabStop = false;
             // 
             // dateTimePicker7
             // 
@@ -1523,10 +1523,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.textBox33);
-            this.groupBox8.Controls.Add(this.button1);
+            this.groupBox8.Controls.Add(this.btnCargarImagen2);
             this.groupBox8.Controls.Add(this.label8);
             this.groupBox8.Controls.Add(this.label28);
-            this.groupBox8.Controls.Add(this.pictureBox1);
+            this.groupBox8.Controls.Add(this.ptcImagenCalzado);
             this.groupBox8.Controls.Add(this.dateTimePicker9);
             this.groupBox8.Controls.Add(this.label30);
             this.groupBox8.Controls.Add(this.dateTimePicker10);
@@ -1546,18 +1546,19 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox33.Size = new System.Drawing.Size(218, 98);
             this.textBox33.TabIndex = 158;
             // 
-            // button1
+            // btnCargarImagen2
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(75, 301);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 35);
-            this.button1.TabIndex = 162;
-            this.button1.Text = "Subir Imagen";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCargarImagen2.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCargarImagen2.Image = ((System.Drawing.Image)(resources.GetObject("btnCargarImagen2.Image")));
+            this.btnCargarImagen2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCargarImagen2.Location = new System.Drawing.Point(75, 301);
+            this.btnCargarImagen2.Name = "btnCargarImagen2";
+            this.btnCargarImagen2.Size = new System.Drawing.Size(104, 35);
+            this.btnCargarImagen2.TabIndex = 162;
+            this.btnCargarImagen2.Text = "Subir Imagen";
+            this.btnCargarImagen2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCargarImagen2.UseVisualStyleBackColor = false;
+            this.btnCargarImagen2.Click += new System.EventHandler(this.btnSubirImagen_Click);
             // 
             // label8
             // 
@@ -1578,16 +1579,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label28.TabIndex = 161;
             this.label28.Text = "Imagen Del Producto";
             // 
-            // pictureBox1
+            // ptcImagenCalzado
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(26, 87);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(183, 184);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 160;
-            this.pictureBox1.TabStop = false;
+            this.ptcImagenCalzado.BackColor = System.Drawing.Color.Transparent;
+            this.ptcImagenCalzado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptcImagenCalzado.Location = new System.Drawing.Point(26, 87);
+            this.ptcImagenCalzado.Name = "ptcImagenCalzado";
+            this.ptcImagenCalzado.Size = new System.Drawing.Size(183, 184);
+            this.ptcImagenCalzado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptcImagenCalzado.TabIndex = 160;
+            this.ptcImagenCalzado.TabStop = false;
             // 
             // dateTimePicker9
             // 
@@ -1893,10 +1894,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // groupBox10
             // 
             this.groupBox10.Controls.Add(this.textBox34);
-            this.groupBox10.Controls.Add(this.button3);
+            this.groupBox10.Controls.Add(this.btnCargarImagen3);
             this.groupBox10.Controls.Add(this.label47);
             this.groupBox10.Controls.Add(this.label62);
-            this.groupBox10.Controls.Add(this.pictureBox3);
+            this.groupBox10.Controls.Add(this.ptcImagenPantalon);
             this.groupBox10.Controls.Add(this.dateTimePicker11);
             this.groupBox10.Controls.Add(this.label101);
             this.groupBox10.Controls.Add(this.dateTimePicker12);
@@ -1916,18 +1917,18 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox34.Size = new System.Drawing.Size(266, 65);
             this.textBox34.TabIndex = 158;
             // 
-            // button3
+            // btnCargarImagen3
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.Control;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(75, 301);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(104, 35);
-            this.button3.TabIndex = 162;
-            this.button3.Text = "Subir Imagen";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnCargarImagen3.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCargarImagen3.Image = ((System.Drawing.Image)(resources.GetObject("btnCargarImagen3.Image")));
+            this.btnCargarImagen3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCargarImagen3.Location = new System.Drawing.Point(75, 301);
+            this.btnCargarImagen3.Name = "btnCargarImagen3";
+            this.btnCargarImagen3.Size = new System.Drawing.Size(104, 35);
+            this.btnCargarImagen3.TabIndex = 162;
+            this.btnCargarImagen3.Text = "Subir Imagen";
+            this.btnCargarImagen3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCargarImagen3.UseVisualStyleBackColor = false;
             // 
             // label47
             // 
@@ -1948,16 +1949,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label62.TabIndex = 161;
             this.label62.Text = "Imagen Del Producto";
             // 
-            // pictureBox3
+            // ptcImagenPantalon
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Location = new System.Drawing.Point(26, 87);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(183, 184);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 160;
-            this.pictureBox3.TabStop = false;
+            this.ptcImagenPantalon.BackColor = System.Drawing.Color.Transparent;
+            this.ptcImagenPantalon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptcImagenPantalon.Location = new System.Drawing.Point(26, 87);
+            this.ptcImagenPantalon.Name = "ptcImagenPantalon";
+            this.ptcImagenPantalon.Size = new System.Drawing.Size(183, 184);
+            this.ptcImagenPantalon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptcImagenPantalon.TabIndex = 160;
+            this.ptcImagenPantalon.TabStop = false;
             // 
             // dateTimePicker11
             // 
@@ -2263,10 +2264,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // groupBox12
             // 
             this.groupBox12.Controls.Add(this.textBox49);
-            this.groupBox12.Controls.Add(this.button4);
+            this.groupBox12.Controls.Add(this.btnCargarImagen4);
             this.groupBox12.Controls.Add(this.label63);
             this.groupBox12.Controls.Add(this.label82);
-            this.groupBox12.Controls.Add(this.pictureBox4);
+            this.groupBox12.Controls.Add(this.ptcImagenAccesorios);
             this.groupBox12.Controls.Add(this.dateTimePicker13);
             this.groupBox12.Controls.Add(this.label120);
             this.groupBox12.Controls.Add(this.dateTimePicker14);
@@ -2286,18 +2287,18 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox49.Size = new System.Drawing.Size(266, 65);
             this.textBox49.TabIndex = 163;
             // 
-            // button4
+            // btnCargarImagen4
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.Control;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(65, 292);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(104, 35);
-            this.button4.TabIndex = 167;
-            this.button4.Text = "Subir Imagen";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnCargarImagen4.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCargarImagen4.Image = ((System.Drawing.Image)(resources.GetObject("btnCargarImagen4.Image")));
+            this.btnCargarImagen4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCargarImagen4.Location = new System.Drawing.Point(65, 292);
+            this.btnCargarImagen4.Name = "btnCargarImagen4";
+            this.btnCargarImagen4.Size = new System.Drawing.Size(104, 35);
+            this.btnCargarImagen4.TabIndex = 167;
+            this.btnCargarImagen4.Text = "Subir Imagen";
+            this.btnCargarImagen4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCargarImagen4.UseVisualStyleBackColor = false;
             // 
             // label63
             // 
@@ -2318,16 +2319,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label82.TabIndex = 166;
             this.label82.Text = "Imagen Del Producto";
             // 
-            // pictureBox4
+            // ptcImagenAccesorios
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Location = new System.Drawing.Point(16, 78);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(183, 184);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 165;
-            this.pictureBox4.TabStop = false;
+            this.ptcImagenAccesorios.BackColor = System.Drawing.Color.Transparent;
+            this.ptcImagenAccesorios.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptcImagenAccesorios.Location = new System.Drawing.Point(16, 78);
+            this.ptcImagenAccesorios.Name = "ptcImagenAccesorios";
+            this.ptcImagenAccesorios.Size = new System.Drawing.Size(183, 184);
+            this.ptcImagenAccesorios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptcImagenAccesorios.TabIndex = 165;
+            this.ptcImagenAccesorios.TabStop = false;
             // 
             // dateTimePicker13
             // 
@@ -2818,10 +2819,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // groupBox14
             // 
             this.groupBox14.Controls.Add(this.textBox1);
-            this.groupBox14.Controls.Add(this.button5);
+            this.groupBox14.Controls.Add(this.btnCargarImagen5);
             this.groupBox14.Controls.Add(this.label16);
             this.groupBox14.Controls.Add(this.label32);
-            this.groupBox14.Controls.Add(this.pictureBox5);
+            this.groupBox14.Controls.Add(this.ptcImagenUtiles);
             this.groupBox14.Controls.Add(this.dateTimePicker1);
             this.groupBox14.Controls.Add(this.label17);
             this.groupBox14.Controls.Add(this.dateTimePicker2);
@@ -2841,18 +2842,18 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox1.Size = new System.Drawing.Size(266, 65);
             this.textBox1.TabIndex = 168;
             // 
-            // button5
+            // btnCargarImagen5
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.Control;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(75, 320);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(104, 35);
-            this.button5.TabIndex = 172;
-            this.button5.Text = "Subir Imagen";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnCargarImagen5.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCargarImagen5.Image = ((System.Drawing.Image)(resources.GetObject("btnCargarImagen5.Image")));
+            this.btnCargarImagen5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCargarImagen5.Location = new System.Drawing.Point(75, 320);
+            this.btnCargarImagen5.Name = "btnCargarImagen5";
+            this.btnCargarImagen5.Size = new System.Drawing.Size(104, 35);
+            this.btnCargarImagen5.TabIndex = 172;
+            this.btnCargarImagen5.Text = "Subir Imagen";
+            this.btnCargarImagen5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCargarImagen5.UseVisualStyleBackColor = false;
             // 
             // label16
             // 
@@ -2873,16 +2874,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label32.TabIndex = 171;
             this.label32.Text = "Imagen Del Producto";
             // 
-            // pictureBox5
+            // ptcImagenUtiles
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox5.Location = new System.Drawing.Point(26, 106);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(183, 184);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 170;
-            this.pictureBox5.TabStop = false;
+            this.ptcImagenUtiles.BackColor = System.Drawing.Color.Transparent;
+            this.ptcImagenUtiles.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptcImagenUtiles.Location = new System.Drawing.Point(26, 106);
+            this.ptcImagenUtiles.Name = "ptcImagenUtiles";
+            this.ptcImagenUtiles.Size = new System.Drawing.Size(183, 184);
+            this.ptcImagenUtiles.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptcImagenUtiles.TabIndex = 170;
+            this.ptcImagenUtiles.TabStop = false;
             // 
             // dateTimePicker1
             // 
@@ -3020,10 +3021,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // groupBox15
             // 
             this.groupBox15.Controls.Add(this.textBox20);
-            this.groupBox15.Controls.Add(this.button6);
+            this.groupBox15.Controls.Add(this.btnCargarImagen6);
             this.groupBox15.Controls.Add(this.label58);
             this.groupBox15.Controls.Add(this.label59);
-            this.groupBox15.Controls.Add(this.pictureBox6);
+            this.groupBox15.Controls.Add(this.ptcImagenEquipamiento);
             this.groupBox15.Controls.Add(this.dateTimePicker3);
             this.groupBox15.Controls.Add(this.label60);
             this.groupBox15.Controls.Add(this.dateTimePicker4);
@@ -3043,18 +3044,18 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox20.Size = new System.Drawing.Size(266, 65);
             this.textBox20.TabIndex = 168;
             // 
-            // button6
+            // btnCargarImagen6
             // 
-            this.button6.BackColor = System.Drawing.SystemColors.Control;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(75, 320);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(104, 35);
-            this.button6.TabIndex = 172;
-            this.button6.Text = "Subir Imagen";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnCargarImagen6.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCargarImagen6.Image = ((System.Drawing.Image)(resources.GetObject("btnCargarImagen6.Image")));
+            this.btnCargarImagen6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCargarImagen6.Location = new System.Drawing.Point(75, 320);
+            this.btnCargarImagen6.Name = "btnCargarImagen6";
+            this.btnCargarImagen6.Size = new System.Drawing.Size(104, 35);
+            this.btnCargarImagen6.TabIndex = 172;
+            this.btnCargarImagen6.Text = "Subir Imagen";
+            this.btnCargarImagen6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCargarImagen6.UseVisualStyleBackColor = false;
             // 
             // label58
             // 
@@ -3075,16 +3076,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label59.TabIndex = 171;
             this.label59.Text = "Imagen Del Producto";
             // 
-            // pictureBox6
+            // ptcImagenEquipamiento
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox6.Location = new System.Drawing.Point(26, 106);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(183, 184);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 170;
-            this.pictureBox6.TabStop = false;
+            this.ptcImagenEquipamiento.BackColor = System.Drawing.Color.Transparent;
+            this.ptcImagenEquipamiento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptcImagenEquipamiento.Location = new System.Drawing.Point(26, 106);
+            this.ptcImagenEquipamiento.Name = "ptcImagenEquipamiento";
+            this.ptcImagenEquipamiento.Size = new System.Drawing.Size(183, 184);
+            this.ptcImagenEquipamiento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptcImagenEquipamiento.TabIndex = 170;
+            this.ptcImagenEquipamiento.TabStop = false;
             // 
             // dateTimePicker3
             // 
@@ -3394,10 +3395,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // groupBox16
             // 
             this.groupBox16.Controls.Add(this.textBox21);
-            this.groupBox16.Controls.Add(this.button7);
+            this.groupBox16.Controls.Add(this.btnCargarImagen7);
             this.groupBox16.Controls.Add(this.label74);
             this.groupBox16.Controls.Add(this.label75);
-            this.groupBox16.Controls.Add(this.pictureBox7);
+            this.groupBox16.Controls.Add(this.ptcImagenProteccion);
             this.groupBox16.Controls.Add(this.dateTimePicker5);
             this.groupBox16.Controls.Add(this.label76);
             this.groupBox16.Controls.Add(this.dateTimePicker6);
@@ -3417,19 +3418,19 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox21.Size = new System.Drawing.Size(266, 65);
             this.textBox21.TabIndex = 168;
             // 
-            // button7
+            // btnCargarImagen7
             // 
-            this.button7.BackColor = System.Drawing.SystemColors.Control;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(75, 320);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(104, 35);
-            this.button7.TabIndex = 172;
-            this.button7.Text = "Subir Imagen";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.btnCargarImagen7.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCargarImagen7.Image = ((System.Drawing.Image)(resources.GetObject("btnCargarImagen7.Image")));
+            this.btnCargarImagen7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCargarImagen7.Location = new System.Drawing.Point(75, 320);
+            this.btnCargarImagen7.Name = "btnCargarImagen7";
+            this.btnCargarImagen7.Size = new System.Drawing.Size(104, 35);
+            this.btnCargarImagen7.TabIndex = 172;
+            this.btnCargarImagen7.Text = "Subir Imagen";
+            this.btnCargarImagen7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCargarImagen7.UseVisualStyleBackColor = false;
+            this.btnCargarImagen7.Click += new System.EventHandler(this.button7_Click);
             // 
             // label74
             // 
@@ -3450,16 +3451,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label75.TabIndex = 171;
             this.label75.Text = "Imagen Del Producto";
             // 
-            // pictureBox7
+            // ptcImagenProteccion
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox7.Location = new System.Drawing.Point(26, 106);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(183, 184);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 170;
-            this.pictureBox7.TabStop = false;
+            this.ptcImagenProteccion.BackColor = System.Drawing.Color.Transparent;
+            this.ptcImagenProteccion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptcImagenProteccion.Location = new System.Drawing.Point(26, 106);
+            this.ptcImagenProteccion.Name = "ptcImagenProteccion";
+            this.ptcImagenProteccion.Size = new System.Drawing.Size(183, 184);
+            this.ptcImagenProteccion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptcImagenProteccion.TabIndex = 170;
+            this.ptcImagenProteccion.TabStop = false;
             // 
             // dateTimePicker5
             // 
@@ -3769,10 +3770,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // groupBox18
             // 
             this.groupBox18.Controls.Add(this.textBox29);
-            this.groupBox18.Controls.Add(this.button8);
+            this.groupBox18.Controls.Add(this.btnCargarImagen8);
             this.groupBox18.Controls.Add(this.label84);
             this.groupBox18.Controls.Add(this.label90);
-            this.groupBox18.Controls.Add(this.pictureBox8);
+            this.groupBox18.Controls.Add(this.ptcImagenMobiliario);
             this.groupBox18.Controls.Add(this.dateTimePicker17);
             this.groupBox18.Controls.Add(this.label99);
             this.groupBox18.Controls.Add(this.dateTimePicker18);
@@ -3792,18 +3793,18 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox29.Size = new System.Drawing.Size(266, 65);
             this.textBox29.TabIndex = 168;
             // 
-            // button8
+            // btnCargarImagen8
             // 
-            this.button8.BackColor = System.Drawing.SystemColors.Control;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(75, 320);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(104, 35);
-            this.button8.TabIndex = 172;
-            this.button8.Text = "Subir Imagen";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button8.UseVisualStyleBackColor = false;
+            this.btnCargarImagen8.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCargarImagen8.Image = ((System.Drawing.Image)(resources.GetObject("btnCargarImagen8.Image")));
+            this.btnCargarImagen8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCargarImagen8.Location = new System.Drawing.Point(75, 320);
+            this.btnCargarImagen8.Name = "btnCargarImagen8";
+            this.btnCargarImagen8.Size = new System.Drawing.Size(104, 35);
+            this.btnCargarImagen8.TabIndex = 172;
+            this.btnCargarImagen8.Text = "Subir Imagen";
+            this.btnCargarImagen8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCargarImagen8.UseVisualStyleBackColor = false;
             // 
             // label84
             // 
@@ -3824,16 +3825,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label90.TabIndex = 171;
             this.label90.Text = "Imagen Del Producto";
             // 
-            // pictureBox8
+            // ptcImagenMobiliario
             // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox8.Location = new System.Drawing.Point(26, 106);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(183, 184);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 170;
-            this.pictureBox8.TabStop = false;
+            this.ptcImagenMobiliario.BackColor = System.Drawing.Color.Transparent;
+            this.ptcImagenMobiliario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptcImagenMobiliario.Location = new System.Drawing.Point(26, 106);
+            this.ptcImagenMobiliario.Name = "ptcImagenMobiliario";
+            this.ptcImagenMobiliario.Size = new System.Drawing.Size(183, 184);
+            this.ptcImagenMobiliario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptcImagenMobiliario.TabIndex = 170;
+            this.ptcImagenMobiliario.TabStop = false;
             // 
             // dateTimePicker17
             // 
@@ -4143,10 +4144,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // groupBox20
             // 
             this.groupBox20.Controls.Add(this.textBox30);
-            this.groupBox20.Controls.Add(this.button9);
+            this.groupBox20.Controls.Add(this.btnCargarImagen9);
             this.groupBox20.Controls.Add(this.label103);
             this.groupBox20.Controls.Add(this.label109);
-            this.groupBox20.Controls.Add(this.pictureBox9);
+            this.groupBox20.Controls.Add(this.ptcImagenVehiculos);
             this.groupBox20.Controls.Add(this.dateTimePicker19);
             this.groupBox20.Controls.Add(this.label118);
             this.groupBox20.Controls.Add(this.dateTimePicker20);
@@ -4166,18 +4167,18 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox30.Size = new System.Drawing.Size(266, 65);
             this.textBox30.TabIndex = 168;
             // 
-            // button9
+            // btnCargarImagen9
             // 
-            this.button9.BackColor = System.Drawing.SystemColors.Control;
-            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(75, 320);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(104, 35);
-            this.button9.TabIndex = 172;
-            this.button9.Text = "Subir Imagen";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button9.UseVisualStyleBackColor = false;
+            this.btnCargarImagen9.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCargarImagen9.Image = ((System.Drawing.Image)(resources.GetObject("btnCargarImagen9.Image")));
+            this.btnCargarImagen9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCargarImagen9.Location = new System.Drawing.Point(75, 320);
+            this.btnCargarImagen9.Name = "btnCargarImagen9";
+            this.btnCargarImagen9.Size = new System.Drawing.Size(104, 35);
+            this.btnCargarImagen9.TabIndex = 172;
+            this.btnCargarImagen9.Text = "Subir Imagen";
+            this.btnCargarImagen9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCargarImagen9.UseVisualStyleBackColor = false;
             // 
             // label103
             // 
@@ -4198,16 +4199,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label109.TabIndex = 171;
             this.label109.Text = "Imagen Del Producto";
             // 
-            // pictureBox9
+            // ptcImagenVehiculos
             // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox9.Location = new System.Drawing.Point(26, 106);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(183, 184);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 170;
-            this.pictureBox9.TabStop = false;
+            this.ptcImagenVehiculos.BackColor = System.Drawing.Color.Transparent;
+            this.ptcImagenVehiculos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptcImagenVehiculos.Location = new System.Drawing.Point(26, 106);
+            this.ptcImagenVehiculos.Name = "ptcImagenVehiculos";
+            this.ptcImagenVehiculos.Size = new System.Drawing.Size(183, 184);
+            this.ptcImagenVehiculos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptcImagenVehiculos.TabIndex = 170;
+            this.ptcImagenVehiculos.TabStop = false;
             // 
             // dateTimePicker19
             // 
@@ -4517,10 +4518,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // groupBox22
             // 
             this.groupBox22.Controls.Add(this.textBox50);
-            this.groupBox22.Controls.Add(this.button10);
+            this.groupBox22.Controls.Add(this.btnCargarImagen10);
             this.groupBox22.Controls.Add(this.label122);
             this.groupBox22.Controls.Add(this.label128);
-            this.groupBox22.Controls.Add(this.pictureBox10);
+            this.groupBox22.Controls.Add(this.ptcImagenUtilesAseo);
             this.groupBox22.Controls.Add(this.dateTimePicker21);
             this.groupBox22.Controls.Add(this.label137);
             this.groupBox22.Controls.Add(this.dateTimePicker22);
@@ -4540,18 +4541,18 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox50.Size = new System.Drawing.Size(266, 65);
             this.textBox50.TabIndex = 168;
             // 
-            // button10
+            // btnCargarImagen10
             // 
-            this.button10.BackColor = System.Drawing.SystemColors.Control;
-            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(75, 320);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(104, 35);
-            this.button10.TabIndex = 172;
-            this.button10.Text = "Subir Imagen";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button10.UseVisualStyleBackColor = false;
+            this.btnCargarImagen10.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCargarImagen10.Image = ((System.Drawing.Image)(resources.GetObject("btnCargarImagen10.Image")));
+            this.btnCargarImagen10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCargarImagen10.Location = new System.Drawing.Point(75, 320);
+            this.btnCargarImagen10.Name = "btnCargarImagen10";
+            this.btnCargarImagen10.Size = new System.Drawing.Size(104, 35);
+            this.btnCargarImagen10.TabIndex = 172;
+            this.btnCargarImagen10.Text = "Subir Imagen";
+            this.btnCargarImagen10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCargarImagen10.UseVisualStyleBackColor = false;
             // 
             // label122
             // 
@@ -4572,16 +4573,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label128.TabIndex = 171;
             this.label128.Text = "Imagen Del Producto";
             // 
-            // pictureBox10
+            // ptcImagenUtilesAseo
             // 
-            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox10.Location = new System.Drawing.Point(26, 106);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(183, 184);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 170;
-            this.pictureBox10.TabStop = false;
+            this.ptcImagenUtilesAseo.BackColor = System.Drawing.Color.Transparent;
+            this.ptcImagenUtilesAseo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptcImagenUtilesAseo.Location = new System.Drawing.Point(26, 106);
+            this.ptcImagenUtilesAseo.Name = "ptcImagenUtilesAseo";
+            this.ptcImagenUtilesAseo.Size = new System.Drawing.Size(183, 184);
+            this.ptcImagenUtilesAseo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptcImagenUtilesAseo.TabIndex = 170;
+            this.ptcImagenUtilesAseo.TabStop = false;
             // 
             // dateTimePicker21
             // 
@@ -4891,10 +4892,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // groupBox24
             // 
             this.groupBox24.Controls.Add(this.textBox110);
-            this.groupBox24.Controls.Add(this.button11);
+            this.groupBox24.Controls.Add(this.btnCargarImagen11);
             this.groupBox24.Controls.Add(this.label185);
             this.groupBox24.Controls.Add(this.label186);
-            this.groupBox24.Controls.Add(this.pictureBox11);
+            this.groupBox24.Controls.Add(this.ptcImagenArmamento);
             this.groupBox24.Controls.Add(this.dateTimePicker23);
             this.groupBox24.Controls.Add(this.label191);
             this.groupBox24.Controls.Add(this.dateTimePicker24);
@@ -4914,18 +4915,18 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox110.Size = new System.Drawing.Size(266, 65);
             this.textBox110.TabIndex = 168;
             // 
-            // button11
+            // btnCargarImagen11
             // 
-            this.button11.BackColor = System.Drawing.SystemColors.Control;
-            this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
-            this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.Location = new System.Drawing.Point(75, 320);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(104, 35);
-            this.button11.TabIndex = 172;
-            this.button11.Text = "Subir Imagen";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button11.UseVisualStyleBackColor = false;
+            this.btnCargarImagen11.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCargarImagen11.Image = ((System.Drawing.Image)(resources.GetObject("btnCargarImagen11.Image")));
+            this.btnCargarImagen11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCargarImagen11.Location = new System.Drawing.Point(75, 320);
+            this.btnCargarImagen11.Name = "btnCargarImagen11";
+            this.btnCargarImagen11.Size = new System.Drawing.Size(104, 35);
+            this.btnCargarImagen11.TabIndex = 172;
+            this.btnCargarImagen11.Text = "Subir Imagen";
+            this.btnCargarImagen11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCargarImagen11.UseVisualStyleBackColor = false;
             // 
             // label185
             // 
@@ -4946,16 +4947,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label186.TabIndex = 171;
             this.label186.Text = "Imagen Del Producto";
             // 
-            // pictureBox11
+            // ptcImagenArmamento
             // 
-            this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox11.Location = new System.Drawing.Point(26, 106);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(183, 184);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 170;
-            this.pictureBox11.TabStop = false;
+            this.ptcImagenArmamento.BackColor = System.Drawing.Color.Transparent;
+            this.ptcImagenArmamento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptcImagenArmamento.Location = new System.Drawing.Point(26, 106);
+            this.ptcImagenArmamento.Name = "ptcImagenArmamento";
+            this.ptcImagenArmamento.Size = new System.Drawing.Size(183, 184);
+            this.ptcImagenArmamento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptcImagenArmamento.TabIndex = 170;
+            this.ptcImagenArmamento.TabStop = false;
             // 
             // dateTimePicker23
             // 
@@ -5236,7 +5237,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox2.PerformLayout();
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcImageTecnologia)).EndInit();
             this.tbpUniforme.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -5244,67 +5245,67 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox1.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptcImagen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcImagenCamisas)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcImagenCalzado)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcImagenPantalon)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcImagenAccesorios)).EndInit();
             this.tbpUtilesEscritorio.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox14.ResumeLayout(false);
             this.groupBox14.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcImagenUtiles)).EndInit();
             this.tbpEquipamientoLogistico.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcImagenEquipamiento)).EndInit();
             this.tbpEpp.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.groupBox16.ResumeLayout(false);
             this.groupBox16.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcImagenProteccion)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.groupBox17.ResumeLayout(false);
             this.groupBox17.PerformLayout();
             this.groupBox18.ResumeLayout(false);
             this.groupBox18.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcImagenMobiliario)).EndInit();
             this.tabPage6.ResumeLayout(false);
             this.groupBox19.ResumeLayout(false);
             this.groupBox19.PerformLayout();
             this.groupBox20.ResumeLayout(false);
             this.groupBox20.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcImagenVehiculos)).EndInit();
             this.tabPage8.ResumeLayout(false);
             this.groupBox21.ResumeLayout(false);
             this.groupBox21.PerformLayout();
             this.groupBox22.ResumeLayout(false);
             this.groupBox22.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcImagenUtilesAseo)).EndInit();
             this.tabPage9.ResumeLayout(false);
             this.groupBox23.ResumeLayout(false);
             this.groupBox23.PerformLayout();
             this.groupBox24.ResumeLayout(false);
             this.groupBox24.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcImagenArmamento)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -5627,72 +5628,72 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.ComboBox cboEstadoProduc2;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.Button btnCargarDatos;
+        private System.Windows.Forms.Button btnCargarImagen1;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.PictureBox ptcImagen;
+        private System.Windows.Forms.PictureBox ptcImagenCamisas;
         private System.Windows.Forms.TextBox txtObservacion;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCargarImagen;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox ptcImageTecnologia;
         private System.Windows.Forms.TextBox textBox33;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCargarImagen2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox ptcImagenCalzado;
         private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.TextBox textBox34;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnCargarImagen3;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox ptcImagenPantalon;
         private System.Windows.Forms.TextBox textBox49;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnCargarImagen4;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label label82;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox ptcImagenAccesorios;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnCargarImagen5;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox ptcImagenUtiles;
         private System.Windows.Forms.GroupBox groupBox15;
         private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnCargarImagen6;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox ptcImagenEquipamiento;
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.DateTimePicker dateTimePicker4;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.GroupBox groupBox16;
         private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnCargarImagen7;
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.Label label75;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox ptcImagenProteccion;
         private System.Windows.Forms.DateTimePicker dateTimePicker5;
         private System.Windows.Forms.Label label76;
         private System.Windows.Forms.DateTimePicker dateTimePicker6;
         private System.Windows.Forms.Label label77;
         private System.Windows.Forms.GroupBox groupBox18;
         private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnCargarImagen8;
         private System.Windows.Forms.Label label84;
         private System.Windows.Forms.Label label90;
-        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox ptcImagenMobiliario;
         private System.Windows.Forms.DateTimePicker dateTimePicker17;
         private System.Windows.Forms.Label label99;
         private System.Windows.Forms.DateTimePicker dateTimePicker18;
         private System.Windows.Forms.Label label100;
         private System.Windows.Forms.GroupBox groupBox20;
         private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btnCargarImagen9;
         private System.Windows.Forms.Label label103;
         private System.Windows.Forms.Label label109;
-        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox ptcImagenVehiculos;
         private System.Windows.Forms.DateTimePicker dateTimePicker19;
         private System.Windows.Forms.Label label118;
         private System.Windows.Forms.DateTimePicker dateTimePicker20;
@@ -5700,10 +5701,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.GroupBox groupBox21;
         private System.Windows.Forms.GroupBox groupBox22;
         private System.Windows.Forms.TextBox textBox50;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button btnCargarImagen10;
         private System.Windows.Forms.Label label122;
         private System.Windows.Forms.Label label128;
-        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox ptcImagenUtilesAseo;
         private System.Windows.Forms.DateTimePicker dateTimePicker21;
         private System.Windows.Forms.Label label137;
         private System.Windows.Forms.DateTimePicker dateTimePicker22;
@@ -5736,10 +5737,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.GroupBox groupBox23;
         private System.Windows.Forms.GroupBox groupBox24;
         private System.Windows.Forms.TextBox textBox110;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button btnCargarImagen11;
         private System.Windows.Forms.Label label185;
         private System.Windows.Forms.Label label186;
-        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox ptcImagenArmamento;
         private System.Windows.Forms.DateTimePicker dateTimePicker23;
         private System.Windows.Forms.Label label191;
         private System.Windows.Forms.DateTimePicker dateTimePicker24;

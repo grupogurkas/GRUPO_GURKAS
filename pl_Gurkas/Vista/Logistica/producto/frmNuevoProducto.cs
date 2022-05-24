@@ -276,8 +276,8 @@ namespace pl_Gurkas.Vista.Logistica.producto
             //Abrimos el explorador de archivos de windows
             if (abrirImagen.ShowDialog() == DialogResult.OK)
             {
-                ptcImagen.ImageLocation = abrirImagen.FileName;
-                ptcImagen.SizeMode = PictureBoxSizeMode.StretchImage;
+                ptcImagenCamisas.ImageLocation = abrirImagen.FileName;
+                ptcImagenCamisas.SizeMode = PictureBoxSizeMode.StretchImage;
             }
         }
 
@@ -303,7 +303,24 @@ namespace pl_Gurkas.Vista.Logistica.producto
 
         private void btnSubirImage(object sender, EventArgs e)
         {
+            OpenFileDialog abrirImagen = new OpenFileDialog();
+            //Abrimos el explorador de archivos de windows
+            if (abrirImagen.ShowDialog() == DialogResult.OK)
+            {
+                ptcImageTecnologia.ImageLocation = abrirImagen.FileName;
+                ptcImageTecnologia.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+        }
 
+        private void btnSubirImagen_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog abrirImagen = new OpenFileDialog();
+            //Abrimos el explorador de archivos de windows
+            if (abrirImagen.ShowDialog() == DialogResult.OK)
+            {
+                ptcImagenCalzado.ImageLocation = abrirImagen.FileName;
+                ptcImagenCalzado.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
         }
     }
 }
