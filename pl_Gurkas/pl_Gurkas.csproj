@@ -246,6 +246,7 @@
     <Compile Include="Datos\CodEmplado.cs" />
     <Compile Include="Datos\Conexiondbo.cs" />
     <Compile Include="Datos\ConexionMysql.cs" />
+    <Compile Include="Datos\DataReportes\Logistica\DataLogistica.cs" />
     <Compile Include="Datos\DatosUsuario.cs" />
     <Compile Include="Datos\eliminar.cs" />
     <Compile Include="Datos\EmpresaID.cs" />

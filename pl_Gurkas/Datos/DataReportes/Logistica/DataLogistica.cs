@@ -6,20 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace pl_Gurkas.Datos
+namespace pl_Gurkas.Datos.DataReportes.Logistica
 {
-    public class Proveedor
+    class DataLogistica
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-
-        public DataTable MostrarProveedor()
-        {
-            SqlDataAdapter da = new SqlDataAdapter("sp_mostrar_proveedores", conexion.conexionBD());
-            da.SelectCommand.CommandType = CommandType.StoredProcedure;
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            return dt;
-        }
         public DataTable BuscarProveeedor(string cod_proveedor)
         {
             SqlDataAdapter da = new SqlDataAdapter("sp_mostrar_proveedores", conexion.conexionBD());
