@@ -69,7 +69,6 @@ namespace pl_Gurkas.Vista.Administrador
         {
             try
             {
-
                 string cod_empleado = cboPersonal.SelectedValue.ToString();
                 DateTime fecha = dtpFechaInicio.Value;
                 DateTime fechadin = dtpFechaFin.Value;
