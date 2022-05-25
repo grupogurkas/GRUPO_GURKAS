@@ -131,7 +131,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 MessageBox.Show("Debe Ingresar un telefono 2", "Advertencia");
             }
         }
-        private void ActualizarPersonal()
+        private void ActualizarPersonal(string file, string file_certificado)
         {
             try
             {
@@ -175,13 +175,13 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 DateTime fechaOtorgamiento = dtpFechaInicio.Value;
                 DateTime fechaCaducidad = dtpFechaCaducidad.Value;
 
-                string pdfFilePath = lblRutaBasc.Text;
+            /*    string pdfFilePath = lblRutaBasc.Text;
                 byte[] certificado_basc = System.IO.File.ReadAllBytes(pdfFilePath);
                 string file = Convert.ToBase64String(certificado_basc, 0, certificado_basc.Length);
 
                 string pdfFilePath_2 = lblOtroCert.Text;
                 byte[] otro_certificado = System.IO.File.ReadAllBytes(pdfFilePath_2);
-                string file_certificado = Convert.ToBase64String(otro_certificado, 0, otro_certificado.Length);
+                string file_certificado = Convert.ToBase64String(otro_certificado, 0, otro_certificado.Length);*/
 
                 actualizar.actualizarProveedor(cod_proveedor_cbo, Nombre, ruc, observacion, codDep, codPro,
                                          codDist, direccion, Telefono, Celular, Correo, Correo2, fregistro,
@@ -330,7 +330,28 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             ValidarCamposVacios();
-            ActualizarPersonal();
+            // 1 si 2 no
+            if (cboCertificadoBasc.SelectedIndex == 1)
+            {
+              
+                string pdfFilePath = lblRutaBasc.Text;
+                byte[] certificado_basc = System.IO.File.ReadAllBytes(pdfFilePath);
+                string file = Convert.ToBase64String(certificado_basc, 0, certificado_basc.Length);
+
+                string pdfFilePath_2 = lblOtroCert.Text;
+                byte[] otro_certificado = System.IO.File.ReadAllBytes(pdfFilePath_2);
+                string file_certificado = Convert.ToBase64String(otro_certificado, 0, otro_certificado.Length);
+
+                ActualizarPersonal(file, file_certificado);
+            }
+            else if(cboCertificadoBasc.SelectedIndex == 1)
+            {
+                string file_s = Datos.ProveedorDatosVacios.certipdf;
+                string file_certificado_s = Datos.ProveedorDatosVacios.certipdf;
+                ActualizarPersonal(file_s, file_certificado_s);
+            }
+
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
