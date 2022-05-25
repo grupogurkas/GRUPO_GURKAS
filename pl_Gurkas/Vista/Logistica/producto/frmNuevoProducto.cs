@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Imaging;
+using System.Data.SqlClient;
 
 namespace pl_Gurkas.Vista.Logistica.producto
 {
@@ -252,23 +253,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
 
         }
-    
-
-        private void button43_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox90_TextChanged(object sender, EventArgs e)
-        {
-           
-
-        }
-
-        private void button56_Click(object sender, EventArgs e)
-        {
-
-        }
+   
 
         private void btnCargarDatos_Click_1(object sender, EventArgs e)
         {
@@ -303,12 +288,19 @@ namespace pl_Gurkas.Vista.Logistica.producto
 
         private void btnSubirImage(object sender, EventArgs e)
         {
-            OpenFileDialog abrirImagen = new OpenFileDialog();
+            /*OpenFileDialog abrirImagen = new OpenFileDialog();
             //Abrimos el explorador de archivos de windows
             if (abrirImagen.ShowDialog() == DialogResult.OK)
             {
                 ptcImageTecnologia.ImageLocation = abrirImagen.FileName;
                 ptcImageTecnologia.SizeMode = PictureBoxSizeMode.StretchImage;
+            }*/
+
+            openFileDialog1.Filter = "Seleccionar Imagen(*.Jpg; *.png; *.Gif)|*.Jpg; *.png; *.Gif";
+            if(openFileDialog1.ShowDialog()== DialogResult.OK)
+            {
+                ptcImageTecnologia.Image = Image.FromFile(openFileDialog1.FileName);
+
             }
         }
 
@@ -321,6 +313,22 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 ptcImagenCalzado.ImageLocation = abrirImagen.FileName;
                 ptcImagenCalzado.SizeMode = PictureBoxSizeMode.StretchImage;
             }
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            SqlConnection cn = new SqlConnection("Data Source=DCGURKAS;Initial Catalog=GRUPO_GURKAS;User ID=sa;Password=Gurkas2019");
+            SqlCommand cmd = new SqlCommand("Insert into t_producto(path_name) Values(@path_name)",cn);
+            cmd.Parameters.AddWithValue("path_name", SqlDbType.Image);
+            System.IO.MemoryStream ms = new System.IO.MemoryStream();
+
+            ptcImagenCalzado.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+            cmd.Parameters["@path_name"].Value = ms.GetBuffer();
+            cn.Open();
+            cmd.ExecuteNonQuery();
+            cn.Close();
+            MessageBox.Show("Imagen Insertado Correctamente");
+
         }
     }
 }
