@@ -381,11 +381,19 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                     dtpFechaCaducidad.Text = (recorre["fecha_caducidad"].ToString());
                     string img1 = (recorre["certificado_basc"].ToString());
                     byte[] bytes = Convert.FromBase64String(img1);
+                    System.IO.File.WriteAllBytes("D:\\hello.pdf", bytes);
+
 
                     /*
                     OpenFileDialog open = new OpenFileDialog();
                     axAcroPDF1.src = open.FileName;
                     */
+
+                    /*
+                      string pdfFilePath_2 = lblRutaBasc.Text;
+                byte[] otro_certificado = System.IO.File.ReadAllBytes(pdfFilePath_2);
+                string file_certificado = Convert.ToBase64String(otro_certificado, 0, certificado_basc.Length);
+                     */
                 }
 
             }
