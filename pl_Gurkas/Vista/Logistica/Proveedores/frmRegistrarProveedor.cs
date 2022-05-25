@@ -45,15 +45,15 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 resultado = recorre["t"].ToString();
             }
             int numero = Convert.ToInt32(resultado);
-            if (numero< 10 )
+            if (numero < 10)
             {
                 txtcodproveedor.Text = "PROV000" + (numero + 1);
             }
-            if (numero >9 && numero <100)
+            if (numero > 9 && numero < 100)
             {
                 txtcodproveedor.Text = "PROV00" + (numero + 1);
             }
-            if (numero>99 && numero <1000)
+            if (numero > 99 && numero < 1000)
             {
                 txtcodproveedor.Text = "PROV0" + (numero + 1);
             }
@@ -61,7 +61,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
 
         private void ValidarCamposVacios()
         {
-          
+
             if (cboDepartamento.SelectedIndex == 0)
             {
                 MessageBox.Show("Debe Seleccionar un Departamento", "Advertencia");
@@ -131,7 +131,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 MessageBox.Show("Debe Ingresar un telefono 2", "Advertencia");
             }
         }
-        private void ActualizarPersonal(string file, string file_certificado)
+        private void ActualizarPersonal()
         {
             try
             {
@@ -175,13 +175,13 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 DateTime fechaOtorgamiento = dtpFechaInicio.Value;
                 DateTime fechaCaducidad = dtpFechaCaducidad.Value;
 
-            /*    string pdfFilePath = lblRutaBasc.Text;
-                byte[] certificado_basc = System.IO.File.ReadAllBytes(pdfFilePath);
-                string file = Convert.ToBase64String(certificado_basc, 0, certificado_basc.Length);
+                  string pdfFilePath = lblRutaBasc.Text;
+                    byte[] certificado_basc = System.IO.File.ReadAllBytes(pdfFilePath);
+                    string file = Convert.ToBase64String(certificado_basc, 0, certificado_basc.Length);
 
-                string pdfFilePath_2 = lblOtroCert.Text;
-                byte[] otro_certificado = System.IO.File.ReadAllBytes(pdfFilePath_2);
-                string file_certificado = Convert.ToBase64String(otro_certificado, 0, otro_certificado.Length);*/
+                    string pdfFilePath_2 = lblOtroCert.Text;
+                    byte[] otro_certificado = System.IO.File.ReadAllBytes(pdfFilePath_2);
+                    string file_certificado = Convert.ToBase64String(otro_certificado, 0, otro_certificado.Length);
 
                 actualizar.actualizarProveedor(cod_proveedor_cbo, Nombre, ruc, observacion, codDep, codPro,
                                          codDist, direccion, Telefono, Celular, Correo, Correo2, fregistro,
@@ -200,7 +200,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             }
             catch (Exception ex)
             {
-                MessageBox.Show("No se puede Actualizar los datos \n"+ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("No se puede Actualizar los datos \n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 showDialogs("Advertencia", Color.FromArgb(255, 187, 51));
             }
         }
@@ -257,11 +257,11 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 string file_certificado = Convert.ToBase64String(otro_certificado, 0, certificado_basc.Length);
 
 
-                registrar.registrarProveedor(codProveedor,  Nombre,  ruc,  observacion,  codDep,  codPro,
-                                         codDist,  direccion,  Telefono,  Celular,  Correo,  Correo2,  fregistro,
-                                         paginaweb,  rubro,  NombreContacto,  Tipoproveedor,  Representante,  tipoDoc,
-                                         numDoc,  cargo,  empresa,  tipoEmpresa,  Estado,  basc,  no_basc,  autenticidad,
-                                         numero_certificado,  fechaOtorgamiento,  fechaCaducidad);
+                registrar.registrarProveedor(codProveedor, Nombre, ruc, observacion, codDep, codPro,
+                                         codDist, direccion, Telefono, Celular, Correo, Correo2, fregistro,
+                                         paginaweb, rubro, NombreContacto, Tipoproveedor, Representante, tipoDoc,
+                                         numDoc, cargo, empresa, tipoEmpresa, Estado, basc, no_basc, autenticidad,
+                                         numero_certificado, fechaOtorgamiento, fechaCaducidad);
                 MessageBox.Show("Datos registrado correctamente", "Correcto");
 
                 LimpiarDatos.LimpiarGroupBox(groupBox1);
@@ -330,30 +330,9 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             ValidarCamposVacios();
-            // 1 si 2 no
-            if (cboCertificadoBasc.SelectedIndex == 1)
-            {
-              
-                string pdfFilePath = lblRutaBasc.Text;
-                byte[] certificado_basc = System.IO.File.ReadAllBytes(pdfFilePath);
-                string file = Convert.ToBase64String(certificado_basc, 0, certificado_basc.Length);
-
-                string pdfFilePath_2 = lblOtroCert.Text;
-                byte[] otro_certificado = System.IO.File.ReadAllBytes(pdfFilePath_2);
-                string file_certificado = Convert.ToBase64String(otro_certificado, 0, otro_certificado.Length);
-
-                ActualizarPersonal(file, file_certificado);
-            }
-            else if(cboCertificadoBasc.SelectedIndex == 1)
-            {
-                string file_s = Datos.ProveedorDatosVacios.certipdf;
-                string file_certificado_s = Datos.ProveedorDatosVacios.certipdf;
-                ActualizarPersonal(file_s, file_certificado_s);
-            }
-
-           
+          
+            ActualizarPersonal();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             try
