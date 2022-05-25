@@ -512,7 +512,46 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
 
         private void btnCertificadoBasc_Click(object sender, EventArgs e)
         {
+            string cod_probredor = txtcodproveedor.Text;
+            string nombre = txtProveedor.Text;
+            var resultado = folderBrowserDialog1.ShowDialog();
+            if (resultado == DialogResult.OK)
+            {
+                //  folderBrowserDialog1.SelectedPath
+                SqlCommand comando = new SqlCommand("select certificado_basc from t_proveedor where cod_proveedor = '" + cod_probredor + "'", conexion.conexionBD());
+                SqlDataReader recorre = comando.ExecuteReader();
+                while (recorre.Read())
+                {
+                    string user = Environment.UserName;
+                    string img1 = (recorre["certificado_basc"].ToString());
+                    byte[] bytes = Convert.FromBase64String(img1);
+                    string filePath = folderBrowserDialog1.SelectedPath + "\\CertificadoBasc_"+ nombre + ".pdf";
+                    System.IO.File.WriteAllBytes(filePath, bytes);
+                }
+                MessageBox.Show("Descarga exitosa", "Completo");
+            }
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string cod_probredor = txtcodproveedor.Text;
+            string nombre = txtProveedor.Text;
+            var resultado = folderBrowserDialog1.ShowDialog();
+            if (resultado == DialogResult.OK)
+            {
+                //  folderBrowserDialog1.SelectedPath
+                SqlCommand comando = new SqlCommand("select certificado_otro from t_proveedor where cod_proveedor = '" + cod_probredor + "'", conexion.conexionBD());
+                SqlDataReader recorre = comando.ExecuteReader();
+                while (recorre.Read())
+                {
+                    string user = Environment.UserName;
+                    string img1 = (recorre["certificado_otro"].ToString());
+                    byte[] bytes = Convert.FromBase64String(img1);
+                    string filePath = folderBrowserDialog1.SelectedPath + "\\OtroCertificado_" + nombre + ".pdf";
+                    System.IO.File.WriteAllBytes(filePath, bytes);
+                }
+                MessageBox.Show("Descarga exitosa", "Completo");
+            }
         }
     }
 }

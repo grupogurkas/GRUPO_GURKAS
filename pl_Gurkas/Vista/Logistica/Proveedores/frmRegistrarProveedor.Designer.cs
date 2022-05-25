@@ -108,10 +108,11 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btnCertificadoBasc = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.axAcroPDF2 = new AxAcroPDFLib.AxAcroPDF();
             this.label28 = new System.Windows.Forms.Label();
-            this.btnCertificadoBasc = new System.Windows.Forms.Button();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -896,7 +897,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // pictureBox16
             // 
             this.pictureBox16.Image = global::pl_Gurkas.Properties.Resources.png;
-            this.pictureBox16.Location = new System.Drawing.Point(1011, 17);
+            this.pictureBox16.Location = new System.Drawing.Point(1055, 1);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(80, 76);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -928,36 +929,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Certificados";
             // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::pl_Gurkas.Properties.Resources.descarga_32;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(285, 493);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(251, 46);
-            this.button2.TabIndex = 160;
-            this.button2.Text = "Descargar Otro Certificado";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // axAcroPDF2
-            // 
-            this.axAcroPDF2.Enabled = true;
-            this.axAcroPDF2.Location = new System.Drawing.Point(285, 48);
-            this.axAcroPDF2.Name = "axAcroPDF2";
-            this.axAcroPDF2.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF2.OcxState")));
-            this.axAcroPDF2.Size = new System.Drawing.Size(251, 425);
-            this.axAcroPDF2.TabIndex = 159;
-            // 
-            // label28
-            // 
-            this.label28.Location = new System.Drawing.Point(327, 20);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(100, 23);
-            this.label28.TabIndex = 162;
-            this.label28.Text = "Otro Certificado";
-            // 
             // btnCertificadoBasc
             // 
             this.btnCertificadoBasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -971,6 +942,37 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.btnCertificadoBasc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCertificadoBasc.UseVisualStyleBackColor = true;
             this.btnCertificadoBasc.Click += new System.EventHandler(this.btnCertificadoBasc_Click);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = global::pl_Gurkas.Properties.Resources.descarga_32;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(285, 493);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(251, 46);
+            this.button2.TabIndex = 160;
+            this.button2.Text = "Descargar Otro Certificado";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // axAcroPDF2
+            // 
+            this.axAcroPDF2.Enabled = true;
+            this.axAcroPDF2.Location = new System.Drawing.Point(285, 48);
+            this.axAcroPDF2.Name = "axAcroPDF2";
+            this.axAcroPDF2.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF2.OcxState")));
+            this.axAcroPDF2.Size = new System.Drawing.Size(251, 425);
+            this.axAcroPDF2.TabIndex = 159;
+            // 
+            // label28
+            // 
+            this.label28.Location = new System.Drawing.Point(362, 16);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(100, 23);
+            this.label28.TabIndex = 162;
+            this.label28.Text = "Otro Certificado";
             // 
             // frmRegistrarProveedor
             // 
@@ -1096,5 +1098,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         private AxAcroPDFLib.AxAcroPDF axAcroPDF2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnCertificadoBasc;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
     }
 }
