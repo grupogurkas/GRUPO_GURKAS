@@ -33,5 +33,15 @@ namespace pl_Gurkas.Vista.Logistica.entrada
                 this.Close();
             }
         }
+
+        private void label42_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

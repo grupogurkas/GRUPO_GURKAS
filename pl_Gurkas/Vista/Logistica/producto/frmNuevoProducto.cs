@@ -94,22 +94,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             }
         }
 
-        private void btnCerrar_Click(object sender, EventArgs e)
-        {
-            const string titulo = "Cerrar Registro de Personal";
-            const string mensaje = "Estas seguro que deseas cerra el Registro de Personal";
-            var resutlado = MessageBox.Show(mensaje, titulo, MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-            if (resutlado == DialogResult.Yes)
-            {
-                //  DateTime fecha = DateTime.Now;
-                //  obtenerip_nombre();
-                // string username = Code.nivelUser._nombre;
-                // string detalle = "Cerrar Registro de Personal";
-                // string cod_buscado = "Cerro el registro de Personal";
-                // registrar.RegistrarRRHH(fecha, nombrepc, username, ipuser, cod_buscado, detalle);
-                this.Close();
-            }
-        }
         Datos.Producto po = new Datos.Producto();
         private void frmNuevoProducto_Load(object sender, EventArgs e)
         {
@@ -141,8 +125,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerTallaPantalonProducto(cboTallaPantalon);
             txtCodSistema.Enabled = false;
             GenerarCodigo();
-
-             
         }
         
 
@@ -167,11 +149,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             decimal precioCompra = Convert.ToDecimal(txtPrecioUnitario.Text);
             int estadoProduct = cboEstadoProduc.SelectedIndex;
             string descripcionProduc = txtDescripcion.Text;
-
-
-           ;
-
-
             //
             const string titulo = "Actualizar datos en el Sistema";
             const string mensaje = "Por favor verificar  la Imformacion antes de guardar en el sistema \n SI  =  GUARDAR IMFORMACION \n NO  =  VERIFICAR DATOS ANTES DE GUARDAR";
@@ -184,18 +161,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             MessageBox.Show("Datos registrado correctamente" + codSistema   +codEquipo ,nomEquipo+ "Correcto");
         }
 
-        private void btnNuevo_Click(object sender, EventArgs e)
-        {
-            LimpiarDatos.LimpiarGroupBox(groupBox2);
-            txtCodSistema.Focus();
-        }
-
-        private void btnBuscar_Click(object sender, EventArgs e)
-        {
-            string codProducto = cboProducto.SelectedValue.ToString();
-
-
-        }
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
@@ -275,11 +240,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
 
         }
 
-        private void btcPanel_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSubirImage(object sender, EventArgs e)
         {
             OpenFileDialog dialogo = new OpenFileDialog();
@@ -319,15 +279,35 @@ namespace pl_Gurkas.Vista.Logistica.producto
              cmd.Parameters.AddWithValue("@Imagen", SqlDbType.VarChar).Value = imagen_base64;
              cmd.ExecuteNonQuery();
              MessageBox.Show("Datos registrado correctamente", "Correcto");
-             
-            
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void btnCerrar_Click_1(object sender, EventArgs e)
         {
-
+            const string titulo = "Cerrar Registro de Producto";
+            const string mensaje = "Estas seguro que deseas cerra el Registro de Producto";
+            var resutlado = MessageBox.Show(mensaje, titulo, MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (resutlado == DialogResult.Yes)
+            {
+                //  DateTime fecha = DateTime.Now;
+                //  obtenerip_nombre();
+                // string username = Code.nivelUser._nombre;
+                // string detalle = "Cerrar Registro de Personal";
+                // string cod_buscado = "Cerro el registro de Personal";
+                // registrar.RegistrarRRHH(fecha, nombrepc, username, ipuser, cod_buscado, detalle);
+                this.Close();
+            }
         }
 
+        private void btnNuevo_Click_1(object sender, EventArgs e)
+        {
+            LimpiarDatos.LimpiarGroupBox(groupBox2);
+            txtCodEquipo.Focus();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            string codProducto = cboProducto.SelectedValue.ToString();
+        }
     }
 }
