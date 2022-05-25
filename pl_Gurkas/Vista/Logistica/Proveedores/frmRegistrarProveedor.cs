@@ -20,6 +20,8 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
         Datos.registrar registrar = new Datos.registrar();
         Datos.Actualizar actualizar = new Datos.Actualizar();
+ 
+     
 
         public frmRegistrarProveedor()
         {
@@ -506,27 +508,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 //axAcroPDF1.src = lblRutaBasc.Text;
                  axAcroPDF2.src = lblOtroCert.Text;
             }
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            printPreviewDialog1.Show();
-
-        }
-
-        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
-        {
-            string user = Environment.UserName;
-            string filePath = "C:\\Users\\" + user + "\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\GRUPO GURKAS\\provedor1.pdf";
-            try
-            {
-
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("" + ex, "ss");
-            }
-           
         }
     }
 }
