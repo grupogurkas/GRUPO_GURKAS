@@ -379,22 +379,23 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                     txtNumCertificacion.Text = recorre["numero_certificado"].ToString();
                     dtpFechaInicio.Text = (recorre["fecha_otorgamiento"].ToString());
                     dtpFechaCaducidad.Text = (recorre["fecha_caducidad"].ToString());
+
+                    string user = Environment.UserName;
+
                     string img1 = (recorre["certificado_basc"].ToString());
                     byte[] bytes = Convert.FromBase64String(img1);
-                    
-                    System.IO.File.WriteAllBytes("D:\\hello.pdf", bytes);
+                    string filePath = "C:\\Users\\"+user+"\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\GRUPO GURKAS\\provedor1.pdf";
+                    System.IO.File.WriteAllBytes(filePath, bytes);
+                    axAcroPDF1.src = filePath;
 
 
-                    /*
-                    OpenFileDialog open = new OpenFileDialog();
-                    axAcroPDF1.src = open.FileName;
-                    */
+                    string img2 = (recorre["certificado_otro"].ToString());
+                    byte[] bytes2 = Convert.FromBase64String(img2);
+                    string filePath2 = "C:\\Users\\" + user + "\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\GRUPO GURKAS\\provedor2.pdf";
+                    System.IO.File.WriteAllBytes(filePath2, bytes2);
+                    axAcroPDF2.src = filePath2;
 
-                    /*
-                      string pdfFilePath_2 = lblRutaBasc.Text;
-                byte[] otro_certificado = System.IO.File.ReadAllBytes(pdfFilePath_2);
-                string file_certificado = Convert.ToBase64String(otro_certificado, 0, certificado_basc.Length);
-                     */
+
                 }
 
             }
