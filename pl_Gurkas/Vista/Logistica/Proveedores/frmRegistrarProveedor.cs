@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using PdfSharp.Pdf;
 
 namespace pl_Gurkas.Vista.Logistica.Proveedores
 {
@@ -19,6 +20,8 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
         Datos.registrar registrar = new Datos.registrar();
         Datos.Actualizar actualizar = new Datos.Actualizar();
+ 
+     
 
         public frmRegistrarProveedor()
         {
@@ -34,6 +37,18 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
 
         }
 
+        private void limpiardatos()
+        {
+            LimpiarDatos.LimpiarGroupBox(groupBox1);
+            LimpiarDatos.LimpiarGroupBox(groupBox2);
+            LimpiarDatos.LimpiarGroupBox(groupBox3);
+            string user = Environment.UserName;
+            string filePath = "C:\\Users\\" + user + "\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\GRUPO GURKAS\\predeterminado.pdf";
+            lblRutaBasc.Text = filePath;
+            lblOtroCert.Text = filePath;
+            axAcroPDF1.src = lblRutaBasc.Text;
+            axAcroPDF2.src = lblOtroCert.Text;
+        }
         public void GenerarCodigo()
         {
             string resultado = "";
@@ -45,15 +60,15 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 resultado = recorre["t"].ToString();
             }
             int numero = Convert.ToInt32(resultado);
-            if (numero< 10 )
+            if (numero < 10)
             {
                 txtcodproveedor.Text = "PROV000" + (numero + 1);
             }
-            if (numero >9 && numero <100)
+            if (numero > 9 && numero < 100)
             {
                 txtcodproveedor.Text = "PROV00" + (numero + 1);
             }
-            if (numero>99 && numero <1000)
+            if (numero > 99 && numero < 1000)
             {
                 txtcodproveedor.Text = "PROV0" + (numero + 1);
             }
@@ -61,7 +76,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
 
         private void ValidarCamposVacios()
         {
-          
+
             if (cboDepartamento.SelectedIndex == 0)
             {
                 MessageBox.Show("Debe Seleccionar un Departamento", "Advertencia");
@@ -175,14 +190,13 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 DateTime fechaOtorgamiento = dtpFechaInicio.Value;
                 DateTime fechaCaducidad = dtpFechaCaducidad.Value;
 
-                string pdfFilePath = lblRutaBasc.Text;
-                byte[] certificado_basc = System.IO.File.ReadAllBytes(pdfFilePath);
-                string file = Convert.ToBase64String(certificado_basc,0, certificado_basc.Length);
+                  string pdfFilePath = lblRutaBasc.Text;
+                    byte[] certificado_basc = System.IO.File.ReadAllBytes(pdfFilePath);
+                    string file = Convert.ToBase64String(certificado_basc, 0, certificado_basc.Length);
 
-                // string b1 = bytes.ToString();
-                string pdfFilePath_2 = lblRutaBasc.Text;
-                byte[] otro_certificado = System.IO.File.ReadAllBytes(pdfFilePath_2);
-                string file_certificado = Convert.ToBase64String(otro_certificado, 0, certificado_basc.Length);
+                    string pdfFilePath_2 = lblOtroCert.Text;
+                    byte[] otro_certificado = System.IO.File.ReadAllBytes(pdfFilePath_2);
+                    string file_certificado = Convert.ToBase64String(otro_certificado, 0, otro_certificado.Length);
 
                 actualizar.actualizarProveedor(cod_proveedor_cbo, Nombre, ruc, observacion, codDep, codPro,
                                          codDist, direccion, Telefono, Celular, Correo, Correo2, fregistro,
@@ -191,9 +205,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                                          numero_certificado, fechaOtorgamiento, fechaCaducidad, file, file_certificado);
                 MessageBox.Show("Datos actualizado correptamente", "Correpto");
 
-                LimpiarDatos.LimpiarGroupBox(groupBox1);
-                LimpiarDatos.LimpiarGroupBox(groupBox3);
-                LimpiarDatos.LimpiarGroupBox(groupBox2);
+                limpiardatos();
                 // LimpiarDatos.LimpiarCampo(this);
 
                 showDialogs("Datos Actualizados", Color.FromArgb(0, 200, 81));
@@ -201,7 +213,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             }
             catch (Exception ex)
             {
-                MessageBox.Show("No se puede Actualizar los datos \n"+ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("No se puede Actualizar los datos \n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 showDialogs("Advertencia", Color.FromArgb(255, 187, 51));
             }
         }
@@ -252,23 +264,18 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 byte[] certificado_basc = System.IO.File.ReadAllBytes(pdfFilePath);
                 string file = Convert.ToBase64String(certificado_basc, 0, certificado_basc.Length);
 
-                // string b1 = bytes.ToString();
-                string pdfFilePath_2 = lblRutaBasc.Text;
+                string pdfFilePath_2 = lblOtroCert.Text;
                 byte[] otro_certificado = System.IO.File.ReadAllBytes(pdfFilePath_2);
-                string file_certificado = Convert.ToBase64String(otro_certificado, 0, certificado_basc.Length);
+                string file_certificado = Convert.ToBase64String(otro_certificado, 0, otro_certificado.Length);
 
-
-                registrar.registrarProveedor(codProveedor,  Nombre,  ruc,  observacion,  codDep,  codPro,
-                                         codDist,  direccion,  Telefono,  Celular,  Correo,  Correo2,  fregistro,
-                                         paginaweb,  rubro,  NombreContacto,  Tipoproveedor,  Representante,  tipoDoc,
-                                         numDoc,  cargo,  empresa,  tipoEmpresa,  Estado,  basc,  no_basc,  autenticidad,
-                                         numero_certificado,  fechaOtorgamiento,  fechaCaducidad);
+                registrar.registrarProveedor(codProveedor, Nombre, ruc, observacion, codDep, codPro,
+                                         codDist, direccion, Telefono, Celular, Correo, Correo2, fregistro,
+                                         paginaweb, rubro, NombreContacto, Tipoproveedor, Representante, tipoDoc,
+                                         numDoc, cargo, empresa, tipoEmpresa, Estado, basc, no_basc, autenticidad,
+                                         numero_certificado, fechaOtorgamiento, fechaCaducidad, file, file_certificado);
                 MessageBox.Show("Datos registrado correctamente", "Correcto");
 
-                LimpiarDatos.LimpiarGroupBox(groupBox1);
-                LimpiarDatos.LimpiarGroupBox(groupBox3);
-                LimpiarDatos.LimpiarGroupBox(groupBox2);
-                // LimpiarDatos.LimpiarCampo(this);
+                limpiardatos();
 
                 showDialogs("Datos Registrados", Color.FromArgb(0, 200, 81));
                 GenerarCodigo();
@@ -277,6 +284,25 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             {
                 MessageBox.Show("" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 showDialogs("Advertencia", Color.FromArgb(255, 187, 51));
+            }
+        }
+        private void predeterminado()
+        {
+            SqlCommand comando = new SqlCommand("select * from t_predeterminado", conexion.conexionBD());
+            SqlDataReader recorre = comando.ExecuteReader();
+            while (recorre.Read())
+            {
+                string user = Environment.UserName;
+                string img1 = (recorre["dato"].ToString());
+                byte[] bytes = Convert.FromBase64String(img1);
+                string filePath = "C:\\Users\\" + user + "\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\GRUPO GURKAS\\predeterminado.pdf";
+                System.IO.File.WriteAllBytes(filePath, bytes);
+               
+
+                //lblRutaBasc.Text = filePath;
+                //lblOtroCert.Text = filePath;
+               // axAcroPDF1.src = lblRutaBasc.Text;
+               // axAcroPDF2.src = lblOtroCert.Text;
             }
         }
         private void frmRegistrarProveedor_Load(object sender, EventArgs e)
@@ -293,6 +319,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             GenerarCodigo();
             lblOtroCert.Visible = false;
             lblRutaBasc.Visible = false;
+            predeterminado();
         }
 
         private void cboDepartamento_SelectedIndexChanged(object sender, EventArgs e)
@@ -321,8 +348,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            LimpiarDatos.LimpiarGroupBox(groupBox1);
-            LimpiarDatos.LimpiarGroupBox(groupBox3);
+            limpiardatos();
             //LimpiarDatos.LimpiarCampo(this);
             txtProveedor.Focus();
             GenerarCodigo();
@@ -331,9 +357,9 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             ValidarCamposVacios();
+          
             ActualizarPersonal();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -379,13 +405,25 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                     txtNumCertificacion.Text = recorre["numero_certificado"].ToString();
                     dtpFechaInicio.Text = (recorre["fecha_otorgamiento"].ToString());
                     dtpFechaCaducidad.Text = (recorre["fecha_caducidad"].ToString());
+
+                    string user = Environment.UserName;
+
                     string img1 = (recorre["certificado_basc"].ToString());
                     byte[] bytes = Convert.FromBase64String(img1);
+                    string filePath = "C:\\Users\\"+user+"\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\GRUPO GURKAS\\provedor1.pdf";
+                    System.IO.File.WriteAllBytes(filePath, bytes);
+                    axAcroPDF1.src = filePath;
 
-                    /*
-                    OpenFileDialog open = new OpenFileDialog();
-                    axAcroPDF1.src = open.FileName;
-                    */
+                    lblRutaBasc.Text = filePath;
+
+                    string img2 = (recorre["certificado_otro"].ToString());
+                    byte[] bytes2 = Convert.FromBase64String(img2);
+                    string filePath2 = "C:\\Users\\" + user + "\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\GRUPO GURKAS\\provedor2.pdf";
+                    System.IO.File.WriteAllBytes(filePath2, bytes2);
+                    axAcroPDF2.src = filePath2;
+
+                    lblOtroCert.Text = filePath2;
+
                 }
 
             }
@@ -443,6 +481,32 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             else
             {
                 MessageBox.Show("Seleccionar File");
+            }
+        }
+
+        private void cboCertificadoBasc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string user = Environment.UserName;
+            string filePath = "C:\\Users\\" + user + "\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\GRUPO GURKAS\\predeterminado.pdf";
+            if (cboCertificadoBasc.SelectedIndex == 2)
+            {
+               lblRutaBasc.Text = filePath;
+                //lblOtroCert.Text = filePath;
+                axAcroPDF1.src = lblRutaBasc.Text;
+                // axAcroPDF2.src = lblOtroCert.Text;
+            }
+        }
+
+        private void cboOtroCertificado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string user = Environment.UserName;
+            string filePath = "C:\\Users\\" + user + "\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\GRUPO GURKAS\\predeterminado.pdf";
+            if (cboOtroCertificado.SelectedIndex == 2)
+            {
+                //lblRutaBasc.Text = filePath;
+                lblOtroCert.Text = filePath;
+                //axAcroPDF1.src = lblRutaBasc.Text;
+                 axAcroPDF2.src = lblOtroCert.Text;
             }
         }
 

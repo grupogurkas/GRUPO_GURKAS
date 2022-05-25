@@ -1562,6 +1562,8 @@
   <ItemGroup>
     <Content Include="png %281%29.ico" />
     <Content Include="png iconb.ico" />
+    <None Include="Resources\print_32.png" />
+    <None Include="Resources\descarga_32.png" />
     <None Include="Resources\imagen_codigo %281%29.jpg" />
     <None Include="Resources\imagen_codigo.jpg" />
     <None Include="Resources\codigobarra.jpg" />

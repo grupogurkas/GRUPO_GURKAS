@@ -191,7 +191,7 @@ namespace pl_Gurkas.Datos
                                         int codDist, string direccion, string Telefono, string Celular, string Correo, string Correo2, DateTime fregistro,
                                         string paginaweb, string rubro, string NombreContacto, int Tipoproveedor, string Representante, int tipoDoc,
                                         string numDoc, string cargo, string empresa, int tipoEmpresa, int Estado, int basc, int no_basc, string autenticidad,
-                                        string numero_certificado, DateTime fechaOtorgamiento, DateTime fechaCaducidad)
+                                        string numero_certificado, DateTime fechaOtorgamiento, DateTime fechaCaducidad, string pdfbasc, string pdfotro)
         {
             SqlCommand cmd = new SqlCommand("sp_insertar_proveedor ", conexion.conexionBD());
             cmd.CommandType = CommandType.StoredProcedure;
@@ -225,6 +225,8 @@ namespace pl_Gurkas.Datos
             cmd.Parameters.AddWithValue("@numero_certificado", SqlDbType.VarChar).Value = numero_certificado;
             cmd.Parameters.AddWithValue("@fecha_otorgamiento", SqlDbType.VarChar).Value = fechaOtorgamiento;
             cmd.Parameters.AddWithValue("@fecha_caducidad", SqlDbType.VarChar).Value = fechaCaducidad;
+            cmd.Parameters.AddWithValue("@certificado_basc", SqlDbType.VarChar).Value = pdfbasc;
+            cmd.Parameters.AddWithValue("@certificado_otro", SqlDbType.VarChar).Value = pdfotro;
             cmd.ExecuteNonQuery();
         }
 
