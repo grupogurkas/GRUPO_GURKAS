@@ -320,6 +320,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
 
 
 
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
