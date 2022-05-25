@@ -261,7 +261,6 @@
     <Compile Include="Datos\LlenadoDeDatosOperaciones.cs" />
     <Compile Include="Datos\Login.cs" />
     <Compile Include="Datos\Proveedor.cs" />
-    <Compile Include="Datos\ProveedorDatosVacios.cs" />
     <Compile Include="Datos\registrar.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

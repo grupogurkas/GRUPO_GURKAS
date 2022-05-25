@@ -278,6 +278,15 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 showDialogs("Advertencia", Color.FromArgb(255, 187, 51));
             }
         }
+        private void predeterminado()
+        {
+            SqlCommand comando = new SqlCommand("select * from t_predeterminado", conexion.conexionBD());
+            SqlDataReader recorre = comando.ExecuteReader();
+            while (recorre.Read())
+            {
+
+            }
+        }
         private void frmRegistrarProveedor_Load(object sender, EventArgs e)
         {
             Llenadocbo.ObtenerDepartamentoLogistica(cboDepartamento);
