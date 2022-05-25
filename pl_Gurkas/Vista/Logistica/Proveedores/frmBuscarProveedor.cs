@@ -14,7 +14,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
     {
         Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
         Datos.DataReportes.Logistica.DataLogistica datosLogistica = new Datos.DataReportes.Logistica.DataLogistica();
-        Datos.Proveedor Proveedor = new Datos.Proveedor();
+        ExportacionExcel.Logistica.ExportarDataExcelLogistica Excel = new ExportacionExcel.Logistica.ExportarDataExcelLogistica();
         public frmBuscarProveedor()
         {
             InitializeComponent();
@@ -25,7 +25,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             Llenadocbo.ObtenerTipoEmpresalogistica(cboEmpresa);
             dgvBuscarProveedor.RowHeadersVisible = false;
             dgvBuscarProveedor.AllowUserToAddRows = false;
-            //  dgvBuscarProveedor.DataSource = Proveedor.MostrarProveedor();
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -55,6 +54,11 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         {
             int IdEmpresa = cboEmpresa.SelectedIndex;
             dgvBuscarProveedor.DataSource = datosLogistica.BuscarProveeedorPorEmpresa(IdEmpresa);
+        }
+
+        private void btnExcel_Click(object sender, EventArgs e)
+        {
+            Excel.ExportarDatosExcelProveedores(dgvBuscarProveedor, progressBar1);
         }
     }
 }
