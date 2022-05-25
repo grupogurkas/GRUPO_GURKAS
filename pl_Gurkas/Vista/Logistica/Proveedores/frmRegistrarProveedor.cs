@@ -177,9 +177,8 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
 
                 string pdfFilePath = lblRutaBasc.Text;
                 byte[] certificado_basc = System.IO.File.ReadAllBytes(pdfFilePath);
-                string file = Convert.ToBase64String(certificado_basc,0, certificado_basc.Length);
+                string file = Convert.ToBase64String(certificado_basc, 0, certificado_basc.Length);
 
-                // string b1 = bytes.ToString();
                 string pdfFilePath_2 = lblOtroCert.Text;
                 byte[] otro_certificado = System.IO.File.ReadAllBytes(pdfFilePath_2);
                 string file_certificado = Convert.ToBase64String(otro_certificado, 0, otro_certificado.Length);
