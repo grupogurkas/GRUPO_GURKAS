@@ -37,7 +37,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             {
                 this.Close();
             }
-    }
+        }
 
         private void btnBuscarProveedorPorRuc_Click(object sender, EventArgs e)
         {
