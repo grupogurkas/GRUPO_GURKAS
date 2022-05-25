@@ -12,11 +12,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
 {
     public partial class frmBuscarProveedor : Form
     {
-
         Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
-
-
-
         public frmBuscarProveedor()
         {
             InitializeComponent();
@@ -27,6 +23,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         private void Form1_Load(object sender, EventArgs e)
         {
             Llenadocbo.ObtenerProveedoresLogistico(cboProveedor);
+            Llenadocbo.ObtenerTipoEmpresalogistica(cboEmpresa);
             dgvBuscarProveedor.DataSource = Proveedor.MostrarProveedor();
         }
 
@@ -47,8 +44,9 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             }
     }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void btnBuscar_Click(object sender, EventArgs e)
         {
+            string cod_proveerdor = cboProveedor.SelectedValue.ToString();
 
         }
     }
