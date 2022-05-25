@@ -284,7 +284,17 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             SqlDataReader recorre = comando.ExecuteReader();
             while (recorre.Read())
             {
+                string user = Environment.UserName;
+                string img1 = (recorre["dato"].ToString());
+                byte[] bytes = Convert.FromBase64String(img1);
+                string filePath = "C:\\Users\\" + user + "\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\GRUPO GURKAS\\predeterminado.pdf";
+                System.IO.File.WriteAllBytes(filePath, bytes);
+               
 
+                //lblRutaBasc.Text = filePath;
+                //lblOtroCert.Text = filePath;
+               // axAcroPDF1.src = lblRutaBasc.Text;
+               // axAcroPDF2.src = lblOtroCert.Text;
             }
         }
         private void frmRegistrarProveedor_Load(object sender, EventArgs e)
@@ -301,6 +311,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             GenerarCodigo();
             lblOtroCert.Visible = false;
             lblRutaBasc.Visible = false;
+            predeterminado();
         }
 
         private void cboDepartamento_SelectedIndexChanged(object sender, EventArgs e)
@@ -463,6 +474,19 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             else
             {
                 MessageBox.Show("Seleccionar File");
+            }
+        }
+
+        private void cboCertificadoBasc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string user = Environment.UserName;
+            string filePath = "C:\\Users\\" + user + "\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\GRUPO GURKAS\\predeterminado.pdf";
+            if (cboCertificadoBasc.SelectedIndex == 2)
+            {
+               lblRutaBasc.Text = filePath;
+                //lblOtroCert.Text = filePath;
+                axAcroPDF1.src = lblRutaBasc.Text;
+                // axAcroPDF2.src = lblOtroCert.Text;
             }
         }
     }

@@ -702,6 +702,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.cboCertificadoBasc.Name = "cboCertificadoBasc";
             this.cboCertificadoBasc.Size = new System.Drawing.Size(233, 21);
             this.cboCertificadoBasc.TabIndex = 151;
+            this.cboCertificadoBasc.SelectedIndexChanged += new System.EventHandler(this.cboCertificadoBasc_SelectedIndexChanged);
             // 
             // label9
             // 
