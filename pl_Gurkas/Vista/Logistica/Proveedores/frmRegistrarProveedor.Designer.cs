@@ -108,12 +108,12 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.axAcroPDF2 = new AxAcroPDFLib.AxAcroPDF();
             this.label28 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -896,9 +896,9 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // pictureBox16
             // 
             this.pictureBox16.Image = global::pl_Gurkas.Properties.Resources.png;
-            this.pictureBox16.Location = new System.Drawing.Point(1259, 12);
+            this.pictureBox16.Location = new System.Drawing.Point(1132, 7);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(72, 61);
+            this.pictureBox16.Size = new System.Drawing.Size(80, 76);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox16.TabIndex = 151;
             this.pictureBox16.TabStop = false;
@@ -930,6 +930,58 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Certificados";
             // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Image = global::pl_Gurkas.Properties.Resources.print_32;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(285, 490);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(251, 46);
+            this.button4.TabIndex = 162;
+            this.button4.Text = "Imprimir Otro Certificado";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Image = global::pl_Gurkas.Properties.Resources.print_32;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(9, 490);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(251, 46);
+            this.button3.TabIndex = 161;
+            this.button3.Text = "Imprimir Certificado BASC";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = global::pl_Gurkas.Properties.Resources.descarga_32;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(285, 435);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(251, 46);
+            this.button2.TabIndex = 160;
+            this.button2.Text = "Descargar Otro Certificado";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = global::pl_Gurkas.Properties.Resources.descarga_32;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(9, 438);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(251, 46);
+            this.button1.TabIndex = 158;
+            this.button1.Text = "Descargar Certificado BASC";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // axAcroPDF2
             // 
             this.axAcroPDF2.Enabled = true;
@@ -948,58 +1000,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.label28.Size = new System.Drawing.Size(94, 15);
             this.label28.TabIndex = 158;
             this.label28.Text = "Otro Certificado:";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(9, 438);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(251, 46);
-            this.button1.TabIndex = 158;
-            this.button1.Text = "Descargar Certificado BASC";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(285, 435);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(251, 46);
-            this.button2.TabIndex = 160;
-            this.button2.Text = "Descargar Otro Certificado";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(9, 490);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(251, 46);
-            this.button3.TabIndex = 161;
-            this.button3.Text = "Imprimir Certificado BASC";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(285, 490);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(251, 46);
-            this.button4.TabIndex = 162;
-            this.button4.Text = "Imprimir Otro Certificado";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // frmRegistrarProveedor
             // 
