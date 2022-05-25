@@ -23,7 +23,9 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         {
             Llenadocbo.ObtenerProveedoresLogistico(cboProveedor);
             Llenadocbo.ObtenerTipoEmpresalogistica(cboEmpresa);
-          //  dgvBuscarProveedor.DataSource = Proveedor.MostrarProveedor();
+            dgvBuscarProveedor.RowHeadersVisible = false;
+            dgvBuscarProveedor.AllowUserToAddRows = false;
+            //  dgvBuscarProveedor.DataSource = Proveedor.MostrarProveedor();
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -33,25 +35,20 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             var resutlado = MessageBox.Show(mensaje, titulo, MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (resutlado == DialogResult.Yes)
             {
-                //  DateTime fecha = DateTime.Now;
-                //  obtenerip_nombre();
-                // string username = Code.nivelUser._nombre;
-                // string detalle = "Cerrar Registro de Personal";
-                // string cod_buscado = "Cerro el registro de Personal";
-                // registrar.RegistrarRRHH(fecha, nombrepc, username, ipuser, cod_buscado, detalle);
                 this.Close();
             }
     }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
+        private void btnBuscarProveedorPorRuc_Click(object sender, EventArgs e)
         {
-            string cod_proveerdor = cboProveedor.SelectedValue.ToString();
-            dgvBuscarProveedor.DataSource = Proveedor.BuscarProveeedor(cod_proveerdor);
+            string ruc_proveedor = txtRucProveedor.Text;
+            dgvBuscarProveedor.DataSource = datosLogistica.BuscarProveeedorPorRuc(ruc_proveedor);
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void btnBuscarCodigoProveedor_Click(object sender, EventArgs e)
         {
-
+            string cod_proveerdor = cboProveedor.SelectedValue.ToString();
+            dgvBuscarProveedor.DataSource = datosLogistica.BuscarProveeedor(cod_proveerdor);
         }
     }
 }
