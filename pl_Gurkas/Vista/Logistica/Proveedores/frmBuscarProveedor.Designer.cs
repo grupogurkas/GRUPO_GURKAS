@@ -41,7 +41,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnBuscarProveedorPorRuc = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnBuscarProveedorPorEmpresa = new System.Windows.Forms.Button();
             this.cboEmpresa = new System.Windows.Forms.ComboBox();
             this.label27 = new System.Windows.Forms.Label();
             this.btnExcel = new System.Windows.Forms.Button();
@@ -186,7 +186,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // 
             this.groupBox4.Controls.Add(this.cboEmpresa);
             this.groupBox4.Controls.Add(this.label27);
-            this.groupBox4.Controls.Add(this.button2);
+            this.groupBox4.Controls.Add(this.btnBuscarProveedorPorEmpresa);
             this.groupBox4.Location = new System.Drawing.Point(804, 19);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(395, 75);
@@ -194,18 +194,19 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Busqueda por Empresa";
             // 
-            // button2
+            // btnBuscarProveedorPorEmpresa
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(278, 15);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 46);
-            this.button2.TabIndex = 66;
-            this.button2.Text = "Buscar";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnBuscarProveedorPorEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarProveedorPorEmpresa.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
+            this.btnBuscarProveedorPorEmpresa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscarProveedorPorEmpresa.Location = new System.Drawing.Point(278, 15);
+            this.btnBuscarProveedorPorEmpresa.Name = "btnBuscarProveedorPorEmpresa";
+            this.btnBuscarProveedorPorEmpresa.Size = new System.Drawing.Size(111, 46);
+            this.btnBuscarProveedorPorEmpresa.TabIndex = 66;
+            this.btnBuscarProveedorPorEmpresa.Text = "Buscar";
+            this.btnBuscarProveedorPorEmpresa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscarProveedorPorEmpresa.UseVisualStyleBackColor = true;
+            this.btnBuscarProveedorPorEmpresa.Click += new System.EventHandler(this.btnBuscarProveedorPorEmpresa_Click);
             // 
             // cboEmpresa
             // 
@@ -281,7 +282,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         private System.Windows.Forms.TextBox txtRucProveedor;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnBuscarProveedorPorEmpresa;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button btnBuscarProveedorPorRuc;
         private System.Windows.Forms.GroupBox groupBox2;

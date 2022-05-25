@@ -1573,6 +1573,7 @@
     <None Include="Resources\SALIDA_32.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="ExportacionExcel\Logistica\" />
     <Folder Include="Vista\Logistica\Inventariado\" />
   </ItemGroup>
   <ItemGroup>

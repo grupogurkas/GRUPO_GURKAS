@@ -50,5 +50,11 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             string cod_proveerdor = cboProveedor.SelectedValue.ToString();
             dgvBuscarProveedor.DataSource = datosLogistica.BuscarProveeedor(cod_proveerdor);
         }
+
+        private void btnBuscarProveedorPorEmpresa_Click(object sender, EventArgs e)
+        {
+            int IdEmpresa = cboEmpresa.SelectedIndex;
+            dgvBuscarProveedor.DataSource = datosLogistica.BuscarProveeedorPorEmpresa(IdEmpresa);
+        }
     }
 }
