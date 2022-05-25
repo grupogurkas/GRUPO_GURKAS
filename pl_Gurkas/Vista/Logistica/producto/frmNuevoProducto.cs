@@ -28,10 +28,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
         }
 
 
-        /*public void GenerarCodigo()
+        public void GenerarCodigo()
         {
             string resultado = "";
-            SqlCommand comando = new SqlCommand("select count(cod_proveedor) as 't' from t_proveedor ", conexion.conexionBD());
+            SqlCommand comando = new SqlCommand("select count(idproduct) as 't' from t_producto ", conexion.conexionBD());
 
             SqlDataReader recorre = comando.ExecuteReader();
             while (recorre.Read())
@@ -41,17 +41,17 @@ namespace pl_Gurkas.Vista.Logistica.producto
             int numero = Convert.ToInt32(resultado);
             if (numero < 10)
             {
-                txtcodproveedor.Text = "PROV000" + (numero + 1);
+                txtCodSistema.Text = "SUM000" + (numero + 1);
             }
             if (numero > 9 && numero < 100)
             {
-                txtcodproveedor.Text = "PROV00" + (numero + 1);
+                txtCodSistema.Text = "SUM00" + (numero + 1);
             }
             if (numero > 99 && numero < 1000)
             {
-                txtcodproveedor.Text = "PROV0" + (numero + 1);
+                txtCodSistema.Text = "SUM0" + (numero + 1);
             }
-        }*/
+        }
 
         private void ValidarCamposVacios()
         {
@@ -140,7 +140,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerTipoTelaProducto(cboTipoTela1);
             Llenadocbo.ObtenerTallaPantalonProducto(cboTallaPantalon);
             txtCodSistema.Enabled = false;
-            //GenerarCodigo();
+            GenerarCodigo();
 
              
         }
@@ -286,8 +286,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             DialogResult resultado = dialogo.ShowDialog();
             if(resultado == DialogResult.OK)
             {
-                ptcImageTecnologia.Image = Image.FromFile(dialogo.FileName);
-                lblrutaimagenteconologia.Text = dialogo.FileName;
+                try
+                {
+                    ptcImageTecnologia.Image = Image.FromFile(dialogo.FileName);
+                    lblrutaimagenteconologia.Text = dialogo.FileName;
+                }
+                catch
+                {
+                    MessageBox.Show("Error" + Image.FromFile(dialogo.FileName));
+                }
+                
             }    
         }
 
@@ -304,7 +312,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
 
             // var pic = Convert.FromBase64String(ptcImageTecnologia.);
             //ptcImageTecnologia.Image.Save(ms, ImageFormat.Jpeg);
-
             // MemoryStream ms = new MemoryStream(pic);
 
              SqlCommand cmd = new SqlCommand("sp_insertarProducto ", conexion.conexionBD());
@@ -312,6 +319,8 @@ namespace pl_Gurkas.Vista.Logistica.producto
              cmd.Parameters.AddWithValue("@Imagen", SqlDbType.VarChar).Value = imagen_base64;
              cmd.ExecuteNonQuery();
              MessageBox.Show("Datos registrado correctamente", "Correcto");
+             
+            
 
         }
 
