@@ -287,10 +287,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
             if(resultado == DialogResult.OK)
             {
                 ptcImageTecnologia.Image = Image.FromFile(dialogo.FileName);
-            }
-            
-                
-                }
+                lblrutaimagenteconologia.Text = dialogo.FileName;
+            }    
+        }
 
         private void btnSubirImagen_Click(object sender, EventArgs e)
         {
@@ -299,27 +298,20 @@ namespace pl_Gurkas.Vista.Logistica.producto
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            SqlConnection cn = new SqlConnection("Data Source=DCGURKAS;Initial Catalog=GRUPO_GURKAS;User ID=sa;Password=Gurkas2019");
-            SqlCommand cmd = new SqlCommand();
-            MemoryStream ms = new MemoryStream();
-            cmd.Connection = cn;
-            
-            ptcImageTecnologia.Image.Save(ms, ImageFormat.Bmp);
-            cmd.CommandText = "sp_insertarProducto";
+            string ubicacion = lblrutaimagenteconologia.Text;
+            byte[] imagen_byte = System.IO.File.ReadAllBytes(ubicacion);
+            string imagen_base64 = Convert.ToBase64String(imagen_byte, 0, imagen_byte.Length);
 
+            // var pic = Convert.FromBase64String(ptcImageTecnologia.);
+            //ptcImageTecnologia.Image.Save(ms, ImageFormat.Jpeg);
 
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@Imagen", ms.GetBuffer());
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Datos registrado correctamente", "Correcto");
+            // MemoryStream ms = new MemoryStream(pic);
 
-
-            //registrar.RegistroProducto(Convert.ToInt32(txtCodEquipo),  ptcImageTecnologia);
-
-
-
-
-
+             SqlCommand cmd = new SqlCommand("sp_insertarProducto ", conexion.conexionBD());
+             cmd.CommandType = CommandType.StoredProcedure;
+             cmd.Parameters.AddWithValue("@Imagen", SqlDbType.VarChar).Value = imagen_base64;
+             cmd.ExecuteNonQuery();
+             MessageBox.Show("Datos registrado correctamente", "Correcto");
 
         }
 

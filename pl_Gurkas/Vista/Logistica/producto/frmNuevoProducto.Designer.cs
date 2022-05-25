@@ -57,7 +57,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtObservacion = new System.Windows.Forms.TextBox();
             this.btnCargarImagen = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblrutaimagenteconologia = new System.Windows.Forms.Label();
             this.ptcImageTecnologia = new System.Windows.Forms.PictureBox();
             this.dtpFechaRegistro = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
@@ -817,7 +817,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox13.Controls.Add(this.txtObservacion);
             this.groupBox13.Controls.Add(this.btnCargarImagen);
             this.groupBox13.Controls.Add(this.label6);
-            this.groupBox13.Controls.Add(this.label9);
+            this.groupBox13.Controls.Add(this.lblrutaimagenteconologia);
             this.groupBox13.Controls.Add(this.ptcImageTecnologia);
             this.groupBox13.Controls.Add(this.dtpFechaRegistro);
             this.groupBox13.Controls.Add(this.label10);
@@ -876,14 +876,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label6.TabIndex = 159;
             this.label6.Text = "Observacion :";
             // 
-            // label9
+            // lblrutaimagenteconologia
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(72, 272);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(107, 13);
-            this.label9.TabIndex = 161;
-            this.label9.Text = "Imagen Del Producto";
+            this.lblrutaimagenteconologia.AutoSize = true;
+            this.lblrutaimagenteconologia.Location = new System.Drawing.Point(308, 244);
+            this.lblrutaimagenteconologia.Name = "lblrutaimagenteconologia";
+            this.lblrutaimagenteconologia.Size = new System.Drawing.Size(107, 13);
+            this.lblrutaimagenteconologia.TabIndex = 161;
+            this.lblrutaimagenteconologia.Text = "Imagen Del Producto";
             // 
             // ptcImageTecnologia
             // 
@@ -5651,7 +5651,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.TextBox txtObservacion;
         private System.Windows.Forms.Button btnCargarImagen;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblrutaimagenteconologia;
         private System.Windows.Forms.PictureBox ptcImageTecnologia;
         private System.Windows.Forms.TextBox textBox33;
         private System.Windows.Forms.Button btnCargarImagen2;
