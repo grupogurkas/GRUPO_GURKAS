@@ -277,7 +277,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.label3.Size = new System.Drawing.Size(85, 15);
             this.label3.TabIndex = 99;
             this.label3.Text = "Pagina WEB : ";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // dtpFechaRegistro
             // 

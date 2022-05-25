@@ -20,9 +20,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
         Datos.registrar registrar = new Datos.registrar();
         Datos.Actualizar actualizar = new Datos.Actualizar();
- 
-     
-
         public frmRegistrarProveedor()
         {
             InitializeComponent();
@@ -32,11 +29,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             Vista.MensajeEmergente.DialogForm dialog = new Vista.MensajeEmergente.DialogForm(message, bdColor);
             dialog.Show();
         }
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void limpiardatos()
         {
             LimpiarDatos.LimpiarGroupBox(groupBox1);
@@ -73,7 +65,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 txtcodproveedor.Text = "PROV0" + (numero + 1);
             }
         }
-
         private void ValidarCamposVacios()
         {
 
@@ -297,8 +288,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 byte[] bytes = Convert.FromBase64String(img1);
                 string filePath = "C:\\Users\\" + user + "\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\GRUPO GURKAS\\predeterminado.pdf";
                 System.IO.File.WriteAllBytes(filePath, bytes);
-               
-
                 //lblRutaBasc.Text = filePath;
                 //lblOtroCert.Text = filePath;
                // axAcroPDF1.src = lblRutaBasc.Text;
@@ -321,7 +310,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             lblRutaBasc.Visible = false;
             predeterminado();
         }
-
         private void cboDepartamento_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cboDepartamento.SelectedValue.ToString() != null)
@@ -330,7 +318,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 Llenadocbo.ObtenerProvinciaLogistica(cboProvincia, Cod_Departamento);
             }
         }
-
         private void cboProvincia_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cboProvincia.SelectedValue.ToString() != null)
@@ -339,13 +326,11 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 Llenadocbo.ObtenerDistritosLogistica(cboDis, Cod_Provincia);
             }
         }
-
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             ValidarCamposVacios();
             RegistrarProveedor();
         }
-
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             limpiardatos();
@@ -353,11 +338,9 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             txtProveedor.Focus();
             GenerarCodigo();
         }
-
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             ValidarCamposVacios();
-          
             ActualizarPersonal();
         }
         private void button1_Click(object sender, EventArgs e)
@@ -425,14 +408,12 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                     lblOtroCert.Text = filePath2;
 
                 }
-
             }
             catch (Exception err)
             {
                 MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
             }
         }
-
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             const string titulo = "Cerrar Registro de Personal";
@@ -452,8 +433,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
 
         private void btnSeleccionar_Click(object sender, EventArgs e)
         {
-
-
             OpenFileDialog open = new OpenFileDialog();
 
             if (open.ShowDialog() == DialogResult.OK)
@@ -467,7 +446,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 MessageBox.Show("Seleccionar File");
             }
         }
-
         private void btnCargarDatos_Click(object sender, EventArgs e)
         {
             OpenFileDialog open = new OpenFileDialog();
@@ -483,7 +461,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 MessageBox.Show("Seleccionar File");
             }
         }
-
         private void cboCertificadoBasc_SelectedIndexChanged(object sender, EventArgs e)
         {
             string user = Environment.UserName;
