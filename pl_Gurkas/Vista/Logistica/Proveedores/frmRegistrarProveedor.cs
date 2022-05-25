@@ -510,7 +510,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             }
         }
 
-        private void axAcroPDF1_Enter(object sender, EventArgs e)
+        private void btnCertificadoBasc_Click(object sender, EventArgs e)
         {
 
         }
