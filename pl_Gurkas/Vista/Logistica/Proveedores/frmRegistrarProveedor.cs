@@ -180,9 +180,9 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 string file = Convert.ToBase64String(certificado_basc,0, certificado_basc.Length);
 
                 // string b1 = bytes.ToString();
-                string pdfFilePath_2 = lblRutaBasc.Text;
+                string pdfFilePath_2 = lblOtroCert.Text;
                 byte[] otro_certificado = System.IO.File.ReadAllBytes(pdfFilePath_2);
-                string file_certificado = Convert.ToBase64String(otro_certificado, 0, certificado_basc.Length);
+                string file_certificado = Convert.ToBase64String(otro_certificado, 0, otro_certificado.Length);
 
                 actualizar.actualizarProveedor(cod_proveedor_cbo, Nombre, ruc, observacion, codDep, codPro,
                                          codDist, direccion, Telefono, Celular, Correo, Correo2, fregistro,
@@ -388,6 +388,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                     System.IO.File.WriteAllBytes(filePath, bytes);
                     axAcroPDF1.src = filePath;
 
+                    lblRutaBasc.Text = filePath;
 
                     string img2 = (recorre["certificado_otro"].ToString());
                     byte[] bytes2 = Convert.FromBase64String(img2);
@@ -395,6 +396,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                     System.IO.File.WriteAllBytes(filePath2, bytes2);
                     axAcroPDF2.src = filePath2;
 
+                    lblOtroCert.Text = filePath2;
 
                 }
 
