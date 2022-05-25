@@ -233,6 +233,16 @@ namespace pl_Gurkas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap descarga_32 {
+            get {
+                object obj = ResourceManager.GetObject("descarga_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap edit_USer_32 {
             get {
                 object obj = ResourceManager.GetObject("edit_USer_32", resourceCulture);
@@ -537,6 +547,16 @@ namespace pl_Gurkas.Properties {
             get {
                 object obj = ResourceManager.GetObject("png_iconb", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap print_32 {
+            get {
+                object obj = ResourceManager.GetObject("print_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
