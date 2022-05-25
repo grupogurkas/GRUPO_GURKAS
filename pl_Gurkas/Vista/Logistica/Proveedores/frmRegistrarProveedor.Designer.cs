@@ -933,7 +933,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = global::pl_Gurkas.Properties.Resources.descarga_32;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(285, 484);
+            this.button2.Location = new System.Drawing.Point(285, 486);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(251, 46);
             this.button2.TabIndex = 160;
@@ -946,7 +946,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::pl_Gurkas.Properties.Resources.descarga_32;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(9, 484);
+            this.button1.Location = new System.Drawing.Point(9, 486);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(251, 46);
             this.button1.TabIndex = 158;
