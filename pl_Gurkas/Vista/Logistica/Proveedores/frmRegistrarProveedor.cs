@@ -381,6 +381,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                     dtpFechaCaducidad.Text = (recorre["fecha_caducidad"].ToString());
                     string img1 = (recorre["certificado_basc"].ToString());
                     byte[] bytes = Convert.FromBase64String(img1);
+                    
                     System.IO.File.WriteAllBytes("D:\\hello.pdf", bytes);
 
 
