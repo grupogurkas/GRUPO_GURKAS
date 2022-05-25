@@ -260,6 +260,7 @@
     <Compile Include="Datos\LlenadoDeDatosComercial.cs" />
     <Compile Include="Datos\LlenadoDeDatosOperaciones.cs" />
     <Compile Include="Datos\Login.cs" />
+    <Compile Include="Datos\Producto.cs" />
     <Compile Include="Datos\Proveedor.cs" />
     <Compile Include="Datos\registrar.cs" />
     <Compile Include="Form1.cs">

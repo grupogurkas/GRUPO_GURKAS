@@ -445,5 +445,10 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 MessageBox.Show("Seleccionar File");
             }
         }
+
+        private void axAcroPDF1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

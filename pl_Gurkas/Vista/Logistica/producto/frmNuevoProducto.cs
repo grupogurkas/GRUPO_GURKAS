@@ -9,12 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Imaging;
 using System.Data.SqlClient;
+using System.IO;
+using pl_Gurkas.Datos;
 
 namespace pl_Gurkas.Vista.Logistica.producto
 {
     
     public partial class frmNuevoProducto : Form
     {
+         
         Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
         Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
@@ -23,6 +26,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             InitializeComponent();
         }
+
 
         /*public void GenerarCodigo()
         {
@@ -106,9 +110,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 this.Close();
             }
         }
-
-       
-
+        Datos.Producto po = new Datos.Producto();
         private void frmNuevoProducto_Load(object sender, EventArgs e)
         {
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad);
@@ -139,6 +141,8 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerTallaPantalonProducto(cboTallaPantalon);
             txtCodSistema.Enabled = false;
             //GenerarCodigo();
+
+             
         }
         
 
@@ -239,11 +243,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             //GenerarCodigo();
         }
 
-        private void button18_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void groupBox3_Enter(object sender, EventArgs e)
         {
 
@@ -276,11 +275,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btcPanel_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -288,47 +282,50 @@ namespace pl_Gurkas.Vista.Logistica.producto
 
         private void btnSubirImage(object sender, EventArgs e)
         {
-            /*OpenFileDialog abrirImagen = new OpenFileDialog();
-            //Abrimos el explorador de archivos de windows
-            if (abrirImagen.ShowDialog() == DialogResult.OK)
+            OpenFileDialog dialogo = new OpenFileDialog();
+            DialogResult resultado = dialogo.ShowDialog();
+            if(resultado == DialogResult.OK)
             {
-                ptcImageTecnologia.ImageLocation = abrirImagen.FileName;
-                ptcImageTecnologia.SizeMode = PictureBoxSizeMode.StretchImage;
-            }*/
-
-            openFileDialog1.Filter = "Seleccionar Imagen(*.Jpg; *.png; *.Gif)|*.Jpg; *.png; *.Gif";
-            if(openFileDialog1.ShowDialog()== DialogResult.OK)
-            {
-                ptcImageTecnologia.Image = Image.FromFile(openFileDialog1.FileName);
-
+                ptcImageTecnologia.Image = Image.FromFile(dialogo.FileName);
             }
-        }
+            
+                
+                }
 
         private void btnSubirImagen_Click(object sender, EventArgs e)
         {
-            OpenFileDialog abrirImagen = new OpenFileDialog();
-            //Abrimos el explorador de archivos de windows
-            if (abrirImagen.ShowDialog() == DialogResult.OK)
-            {
-                ptcImagenCalzado.ImageLocation = abrirImagen.FileName;
-                ptcImagenCalzado.SizeMode = PictureBoxSizeMode.StretchImage;
-            }
+            
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
             SqlConnection cn = new SqlConnection("Data Source=DCGURKAS;Initial Catalog=GRUPO_GURKAS;User ID=sa;Password=Gurkas2019");
-            SqlCommand cmd = new SqlCommand("Insert into t_producto(path_name) Values(@path_name)",cn);
-            cmd.Parameters.AddWithValue("path_name", SqlDbType.Image);
-            System.IO.MemoryStream ms = new System.IO.MemoryStream();
+            SqlCommand cmd = new SqlCommand();
+            MemoryStream ms = new MemoryStream();
+            cmd.Connection = cn;
+            
+            ptcImageTecnologia.Image.Save(ms, ImageFormat.Bmp);
+            cmd.CommandText = "sp_insertarProducto";
 
-            ptcImagenCalzado.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
-            cmd.Parameters["@path_name"].Value = ms.GetBuffer();
-            cn.Open();
+
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Imagen", ms.GetBuffer());
             cmd.ExecuteNonQuery();
-            cn.Close();
-            MessageBox.Show("Imagen Insertado Correctamente");
+            MessageBox.Show("Datos registrado correctamente", "Correcto");
+
+
+            //registrar.RegistroProducto(Convert.ToInt32(txtCodEquipo),  ptcImageTecnologia);
+
+
+
+
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
     }
 }

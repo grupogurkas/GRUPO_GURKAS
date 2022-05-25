@@ -8,6 +8,21 @@ namespace pl_Gurkas.Datos
     {
         Datos.Conexiondbo  conexion = new Datos.Conexiondbo();
 
+
+
+
+
+        public void RegistroProducto(int idproduct , byte[] Imagen)
+        {
+            SqlCommand cmd = new SqlCommand("sp_insertarProducto ", conexion.conexionBD());
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("@idproduct", SqlDbType.Int).Value = idproduct;
+            cmd.Parameters.AddWithValue("@Imagen", SqlDbType.Image).Value = Imagen;
+            cmd.ExecuteNonQuery();
+  
+        }
+
         public void RegistrarPersonal(string codEmpleado, string Nombre, string ApPaterno, string ApMaterno, string NombreCompleto,
           int edad, int tipoDoc, string NumDOc, int sexo, DateTime Femision, DateTime Fcaducacion, DateTime Fnacimineto, int brevete,
           string nbrevete, int Nacionalidad, int codDep, int codPro, int codDist, string Domicilio, int Telefono, int Celular,
