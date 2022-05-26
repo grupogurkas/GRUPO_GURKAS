@@ -269,5 +269,24 @@ namespace pl_Gurkas.Datos.DataReportes.RRHH
             dt.Columns[5].ColumnName = "Fecha Inicio";
             return dt;
         }
+        public DataTable ConsultarAsistenciaPorTurno(int turno, int id_empresa)
+        {
+            SqlCommand comando = conexion.conexionBD().CreateCommand();
+            comando.CommandType = CommandType.Text;
+            comando.CommandText = "SP_REPORTERRHH_PorTurno  @turno,@id_empresa";
+            comando.Parameters.AddWithValue("turno", turno);
+            comando.Parameters.AddWithValue("id_empresa", id_empresa);
+            comando.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter dta = new SqlDataAdapter(comando);
+            dta.Fill(dt);
+            dt.Columns[0].ColumnName = "Cod Asistencia";
+            dt.Columns[1].ColumnName = "Empleado";
+            dt.Columns[2].ColumnName = "Num Documento";
+            dt.Columns[3].ColumnName = "Fecha Nacimiento";
+            dt.Columns[4].ColumnName = "Empresa";
+            dt.Columns[5].ColumnName = "Turno";
+            return dt;
+        }
     }
 }
