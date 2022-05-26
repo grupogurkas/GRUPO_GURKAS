@@ -112,5 +112,42 @@ namespace pl_Gurkas.Datos.DataReportes.RRHH
             dt.Columns[10].ColumnName = "Puesto";
             return dt;
         }
+        public DataTable ConsultaEstaturas(decimal estaturaInicio, decimal estaturaFin)
+        {
+            SqlCommand comando = conexion.conexionBD().CreateCommand();
+            comando.CommandType = CommandType.Text;
+            comando.CommandText = "SP_ESTATURAPersonal  @estaturainicial, @estaturafinal";
+            comando.Parameters.AddWithValue("estaturainicial", estaturaInicio);
+            comando.Parameters.AddWithValue("estaturafinal", estaturaFin);
+            comando.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter dta = new SqlDataAdapter(comando);
+            dta.Fill(dt);
+            dt.Columns[0].ColumnName = "Cod Empleado";
+            dt.Columns[1].ColumnName = "Empleado";
+            dt.Columns[2].ColumnName = "Num Identidad";
+            dt.Columns[3].ColumnName = "Fecha Nacimineto";
+            dt.Columns[4].ColumnName = "Empresa";
+            dt.Columns[5].ColumnName = "Fecha Emision";
+            dt.Columns[6].ColumnName = "Fecha Vencimiento";
+            dt.Columns[7].ColumnName = "Sexo";
+            dt.Columns[8].ColumnName = "Nacionalidad ";
+            dt.Columns[9].ColumnName = "Departamento ";
+            dt.Columns[10].ColumnName = "Provincia ";
+            dt.Columns[11].ColumnName = "Distrito ";
+            dt.Columns[12].ColumnName = "Direccion ";
+            dt.Columns[13].ColumnName = "Telefono";
+            dt.Columns[14].ColumnName = "Celular";
+            dt.Columns[15].ColumnName = "Talla Prenda";
+            dt.Columns[16].ColumnName = "Talla Pantalon";
+            dt.Columns[17].ColumnName = "Calzado";
+            dt.Columns[18].ColumnName = "Estatura";
+            dt.Columns[19].ColumnName = "Correo";
+            dt.Columns[20].ColumnName = "Grado Instruccion";
+            dt.Columns[21].ColumnName = "Brevete";
+            dt.Columns[22].ColumnName = "Numero Brevete";
+            dt.Columns[23].ColumnName = "Puesto";
+            return dt;
+        }
     }
 }
