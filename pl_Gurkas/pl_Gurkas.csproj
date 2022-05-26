@@ -1575,6 +1575,7 @@
     <None Include="Resources\SALIDA_32.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="ExportacionExcel\RRHH\" />
     <Folder Include="Vista\Logistica\Inventariado\" />
   </ItemGroup>
   <ItemGroup>
