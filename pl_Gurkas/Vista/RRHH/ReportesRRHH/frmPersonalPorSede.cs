@@ -13,45 +13,13 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
 {
     public partial class frmPersonalPorSede : Form
     {
-        Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.LLenadoDatosRRHH Llenadocbo = new Datos.LLenadoDatosRRHH();
-        Datos.ExportarExcel Excel = new Datos.ExportarExcel();
+        ExportacionExcel.RRHH.ExportarDataExcelRRHH Excel = new ExportacionExcel.RRHH.ExportarDataExcelRRHH();
+        Datos.DataReportes.RRHH.DataRRHH reporterrhh = new Datos.DataReportes.RRHH.DataRRHH();
         public frmPersonalPorSede()
         {
             InitializeComponent();
         }
-        private void ConsultarPersonalSede(string sede)
-        {
-
-            try
-            {
-                SqlCommand comando = conexion.conexionBD().CreateCommand();
-                comando.CommandType = CommandType.Text;
-                comando.CommandText = "SP_PERSONALSEDE  @cod_sede";
-
-                comando.Parameters.AddWithValue("cod_sede", sede);
-                comando.ExecuteNonQuery();
-                DataTable dt = new DataTable();
-                SqlDataAdapter dta = new SqlDataAdapter(comando);
-                dta.Fill(dt);
-                dt.Columns[0].ColumnName = "Cod Empleado";
-                dt.Columns[1].ColumnName = "Empleado";
-                dt.Columns[2].ColumnName = "Num Identidad";
-                dt.Columns[3].ColumnName = "Fecha Nacimineto";
-                dt.Columns[4].ColumnName = "Empresa";
-                dt.Columns[5].ColumnName = "Fecha Inicio";
-                dt.AcceptChanges();
-                dgvPersonalPorSede.DataSource = dt;
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show("No se encontro nungun resultado \n\n " + ex, "ERROR");
-
-            }
-
-        }
-
         private void llenado_combo()
         {
             Llenadocbo.ObtenerUnidadRRHH(cboUnidad);
@@ -75,12 +43,12 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
         private void btnConsultar_Click(object sender, EventArgs e)
         {
             string Sede = cboSede.SelectedValue.ToString();
-            ConsultarPersonalSede(Sede);
+            dgvPersonalPorSede.DataSource = reporterrhh.ConsultarPersonalSede(Sede);
         }
 
         private void btnExcel_Click(object sender, EventArgs e)
         {
-            Excel.ExportarDatosBarra(dgvPersonalPorSede, progressBar1);
+            Excel.ExportarDatosExcelConsultarPersonalSede(dgvPersonalPorSede, progressBar1);
         }
     }
 }

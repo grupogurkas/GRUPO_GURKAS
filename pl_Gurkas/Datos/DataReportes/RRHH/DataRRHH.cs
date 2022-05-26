@@ -229,5 +229,27 @@ namespace pl_Gurkas.Datos.DataReportes.RRHH
             dt.Columns[9].ColumnName = "Estado Personal";
             return dt;
         }
+        public DataTable ConsultarPersonalSede(string sede)
+        {
+            SqlCommand comando = conexion.conexionBD().CreateCommand();
+            comando.CommandType = CommandType.Text;
+            comando.CommandText = "SP_PERSONALSEDE  @cod_sede";
+            comando.Parameters.AddWithValue("cod_sede", sede);
+            comando.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter dta = new SqlDataAdapter(comando);
+            dta.Fill(dt);
+            dt.Columns[0].ColumnName = "Cod Empleado";
+            dt.Columns[1].ColumnName = "Empleado";
+            dt.Columns[2].ColumnName = "Num Identidad";
+            dt.Columns[3].ColumnName = "Fecha Nacimineto";
+            dt.Columns[4].ColumnName = "Empresa";
+            dt.Columns[5].ColumnName = "Fecha Inicio Laboral";
+            dt.Columns[6].ColumnName = "Puesto ";
+            dt.Columns[7].ColumnName = "Sede";
+            dt.Columns[8].ColumnName = "Turno";
+            dt.Columns[9].ColumnName = "Estado Personal";
+            return dt;
+        }
     }
 }
