@@ -422,7 +422,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
 
         private void txtCodEquipMobi_TextChanged(object sender, EventArgs e)
         {
-
+            //goli
         }
 
         private void label111_Click(object sender, EventArgs e)
