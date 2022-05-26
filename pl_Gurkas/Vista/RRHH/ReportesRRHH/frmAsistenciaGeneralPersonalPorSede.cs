@@ -13,11 +13,9 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
 {
     public partial class frmAsistenciaGeneralPersonalPorSede : Form
     {
-        Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.ExportarExcel Excel = new Datos.ExportarExcel();
         Datos.LLenadoDatosRRHH Llenadocbo = new Datos.LLenadoDatosRRHH();
         Datos.DataReportes.RRHH.DataRRHH reporterrhh = new Datos.DataReportes.RRHH.DataRRHH();
-
         public frmAsistenciaGeneralPersonalPorSede()
         {
             InitializeComponent();
@@ -28,7 +26,6 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             dgvAsistenciaPersonalGeneralSede.RowHeadersVisible = false;
             dgvAsistenciaPersonalGeneralSede.AllowUserToAddRows = false;
         }
-
         private void cboUnidad_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cboUnidad.SelectedValue.ToString() != null)
@@ -37,7 +34,6 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
                 Llenadocbo.ObtenerSedeRRHH(cboSede, cod_unidad);
             }
         }
-
         private void btnExcel_Click(object sender, EventArgs e)
         {
             Excel.ExportarDatosBarra(dgvAsistenciaPersonalGeneralSede, progressBar1);
