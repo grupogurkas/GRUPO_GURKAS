@@ -1167,7 +1167,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.dgvRegistroPersonal.AllowUserToDeleteRows = false;
             this.dgvRegistroPersonal.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvRegistroPersonal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRegistroPersonal.Location = new System.Drawing.Point(12, 459);
+            this.dgvRegistroPersonal.Location = new System.Drawing.Point(27, 459);
             this.dgvRegistroPersonal.Name = "dgvRegistroPersonal";
             this.dgvRegistroPersonal.ReadOnly = true;
             this.dgvRegistroPersonal.RowHeadersVisible = false;

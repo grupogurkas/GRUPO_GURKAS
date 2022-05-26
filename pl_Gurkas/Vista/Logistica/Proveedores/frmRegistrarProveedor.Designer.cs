@@ -896,9 +896,9 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // pictureBox16
             // 
             this.pictureBox16.Image = global::pl_Gurkas.Properties.Resources.png;
-            this.pictureBox16.Location = new System.Drawing.Point(1055, 1);
+            this.pictureBox16.Location = new System.Drawing.Point(1253, 2);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(80, 76);
+            this.pictureBox16.Size = new System.Drawing.Size(96, 84);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox16.TabIndex = 151;
             this.pictureBox16.TabStop = false;
@@ -967,7 +967,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // 
             // label28
             // 
-            this.label28.Location = new System.Drawing.Point(362, 16);
+            this.label28.Location = new System.Drawing.Point(364, 22);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(100, 23);
             this.label28.TabIndex = 162;

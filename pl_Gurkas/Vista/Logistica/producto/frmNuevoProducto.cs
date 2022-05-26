@@ -309,5 +309,130 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             string codProducto = cboProducto.SelectedValue.ToString();
         }
+
+        private void label151_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDescripcionMobi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label160_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label159_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label158_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label151_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label147_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label135_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label132_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboEstadoProduc8_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMarcaMobi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label153_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label154_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtModeloMobi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboTipoUnidad4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCodEquipMobi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label111_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombreMobi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -12,6 +12,7 @@ namespace pl_Gurkas.Datos
     class llenadoDatosLogistica
     {
         Datos.Conexiondbo conexiondbo = new Datos.Conexiondbo();
+        int id_empresa = Datos.EmpresaID._empresaid;
         public void ObtenerEmpresaLogistica(ComboBox cd)
         {
             try
@@ -229,7 +230,7 @@ namespace pl_Gurkas.Datos
             }
         }
 
-       
+
 
         public void ObtenerTipoProveedorLogistica(ComboBox cd, string id_tipoproveedor)
         {
@@ -407,10 +408,66 @@ namespace pl_Gurkas.Datos
             }
         }
 
+        public void ObtenerTipoPuesto(ComboBox cd)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SELECT DESCP_PUESTO FROM T_PUESTO  ", conexiondbo.conexionBD());
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    cd.Items.Add(dr[0].ToString());
+                }
+                cd.Items.Insert(0, "-- Seleccione Tipo De Puesto --");
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede obtener la imformacion de tipo de proveedor \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
+        public void ObtenerPersonalRRHH(ComboBox cd)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("select Cod_empleado,NOMBRE_COMPLETO from T_MAE_PERSONAL WHERE ID_EMPRESA = " + id_empresa + " order by APELLIDO_PATERNO asc", conexiondbo.conexionBD());
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                DataRow fila = dt.NewRow();
+                fila["NOMBRE_COMPLETO"] = "---Seleccione un Empleado---";
+                dt.Rows.InsertAt(fila, 0);
+                cd.ValueMember = "Cod_empleado";
+                cd.DisplayMember = "NOMBRE_COMPLETO";
+                cd.DataSource = dt;
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se puede obtener el listado del Empleados \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
 
+        public void ObtenerArea(ComboBox cd)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SELECT desp_area FROM t_area_laboral  ", conexiondbo.conexionBD());
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    cd.Items.Add(dr[0].ToString());
+                }
+                cd.Items.Insert(0, "-- Seleccione Un Tipo Prenda --");
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede obtener la imformacion de tipo de proveedor \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
-
 }
 
 

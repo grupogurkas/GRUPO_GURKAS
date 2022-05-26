@@ -35,7 +35,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void frmListarProductos_Load(object sender, EventArgs e)
         {
 
         }
