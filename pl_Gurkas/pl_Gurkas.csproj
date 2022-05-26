@@ -266,6 +266,7 @@
     <Compile Include="Datos\Proveedor.cs" />
     <Compile Include="Datos\registrar.cs" />
     <Compile Include="ExportacionExcel\Logistica\ExportarDataExcelLogistica.cs" />
+    <Compile Include="ExportacionExcel\RRHH\ExportarDataExcelRRHH.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1575,7 +1576,6 @@
     <None Include="Resources\SALIDA_32.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ExportacionExcel\RRHH\" />
     <Folder Include="Vista\Logistica\Inventariado\" />
   </ItemGroup>
   <ItemGroup>
