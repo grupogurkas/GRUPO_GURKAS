@@ -205,5 +205,29 @@ namespace pl_Gurkas.Datos.DataReportes.RRHH
             dt.Columns[4].ColumnName = "Empresa";
             return dt;
         }
+        public DataTable ConsultarFechaIngreso(DateTime fechaInicio, DateTime FechaFin, int empresa)
+        {
+            SqlCommand comando = conexion.conexionBD().CreateCommand();
+            comando.CommandType = CommandType.Text;
+            comando.CommandText = "SP_RRHHFechaIngreso  @fechaInicio, @FechaFin,@id_empresa";
+            comando.Parameters.AddWithValue("fechaInicio", fechaInicio);
+            comando.Parameters.AddWithValue("FechaFin", FechaFin);
+            comando.Parameters.AddWithValue("id_empresa", empresa);
+            comando.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter dta = new SqlDataAdapter(comando);
+            dta.Fill(dt);
+            dt.Columns[0].ColumnName = "Cod Empleado";
+            dt.Columns[1].ColumnName = "Empleado";
+            dt.Columns[2].ColumnName = "Num Identidad";
+            dt.Columns[3].ColumnName = "Fecha Nacimineto";
+            dt.Columns[4].ColumnName = "Empresa";
+            dt.Columns[5].ColumnName = "Fecha Inicio Laboral";
+            dt.Columns[6].ColumnName = "Puesto ";
+            dt.Columns[7].ColumnName = "Sede";
+            dt.Columns[8].ColumnName = "Turno";
+            dt.Columns[9].ColumnName = "Estado Personal";
+            return dt;
+        }
     }
 }
