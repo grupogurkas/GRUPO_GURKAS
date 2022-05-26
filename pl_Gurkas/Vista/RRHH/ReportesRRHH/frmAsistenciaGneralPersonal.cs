@@ -13,61 +13,24 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
 {
     public partial class frmAsistenciaGneralPersonal : Form
     {
-        Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.ExportarExcel Excel = new Datos.ExportarExcel();
-        Datos.LLenadoDatosRRHH Llenadocbo = new Datos.LLenadoDatosRRHH();
+        ExportacionExcel.RRHH.ExportarDataExcelRRHH Excel = new ExportacionExcel.RRHH.ExportarDataExcelRRHH();
+        Datos.DataReportes.RRHH.DataRRHH reporterrhh = new Datos.DataReportes.RRHH.DataRRHH();
         public frmAsistenciaGneralPersonal()
         {
             InitializeComponent();
-        }
-        private void ConsultarAsistencia(DateTime fechaInicio, DateTime FechaFin)
-        {
-
-            try
-            {
-                SqlCommand comando = conexion.conexionBD().CreateCommand();
-                comando.CommandType = CommandType.Text;
-                comando.CommandText = "SP_RRHH_AsistenciaGeneralPersonal  @fechaInicio, @FechaFin";
-                comando.Parameters.AddWithValue("fechaInicio", fechaInicio);
-                comando.Parameters.AddWithValue("FechaFin", FechaFin);
-                comando.ExecuteNonQuery();
-                DataTable dt = new DataTable();
-                SqlDataAdapter dta = new SqlDataAdapter(comando);
-                dta.Fill(dt);
-                dt.Columns[0].ColumnName = "Cod Empleado";
-                dt.Columns[1].ColumnName = "Empleado";
-                dt.Columns[2].ColumnName = "Num Identidad";
-                dt.Columns[3].ColumnName = "Fecha Nacimineto";
-                dt.Columns[4].ColumnName = "Empresa";
-                dt.Columns[5].ColumnName = "Fecha Inicio";
-                dt.Columns[6].ColumnName = "Sede ";
-                dt.Columns[7].ColumnName = "Tipo Asistencia";
-                dt.Columns[8].ColumnName = "Fecha Asistencia";
-                dt.Columns[9].ColumnName = "Turno";
-                dt.Columns[10].ColumnName = "Puesto";
-                dt.AcceptChanges();
-                dgvAsistenciaGeneralPersonal.DataSource = dt;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("No se encontro nungun resultado \n\n " + ex, "ERROR");
-            }
-
         }
         private void frmAsistenciaGneralPersonal_Load(object sender, EventArgs e)
         {
             dgvAsistenciaGeneralPersonal.RowHeadersVisible = false;
             dgvAsistenciaGeneralPersonal.AllowUserToAddRows = false;
         }
-
         private void btnExcel_Click(object sender, EventArgs e)
         {
-            Excel.ExportarDatosBarra(dgvAsistenciaGeneralPersonal, progressBar1);
+            Excel.ExportarDatosExcelGeneraldeAsistencia(dgvAsistenciaGeneralPersonal, progressBar1);
         }
-
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-            ConsultarAsistencia(dtpFechaInicio.Value, dtpFechaFin.Value);
+            dgvAsistenciaGeneralPersonal.DataSource =  reporterrhh.ConsultarGeneraldeAsistencia(dtpFechaInicio.Value, dtpFechaFin.Value);
         }
     }
 }

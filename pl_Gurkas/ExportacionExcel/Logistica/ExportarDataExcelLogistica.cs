@@ -58,12 +58,6 @@ namespace pl_Gurkas.ExportacionExcel.Logistica
                         {
                             iCol++;
                             hoja_trabajo.Cells[iFil + 1, iCol] = fila.Cells[columna.Name].Value;
-                            /*formatRange = hoja_trabajo.get_Range("o" + (iFil + 1), "x" + (iFil + 1));
-                            formatRange.NumberFormat = "#,###,###";
-                            formatRange = hoja_trabajo.get_Range("z" + (iFil + 1), "aj" + (iFil + 1));
-                            formatRange.NumberFormat = "#,###,###";
-                            
-                             */
                             formatRange = hoja_trabajo.get_Range("C" + (iFil + 1), "C" + (iFil + 1));
                             formatRange.NumberFormat = "@";
                             formatRange = hoja_trabajo.get_Range("F" + (iFil + 1), "F" + (iFil + 1));
