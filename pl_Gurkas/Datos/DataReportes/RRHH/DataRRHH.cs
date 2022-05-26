@@ -251,5 +251,23 @@ namespace pl_Gurkas.Datos.DataReportes.RRHH
             dt.Columns[9].ColumnName = "Estado Personal";
             return dt;
         }
+        public DataTable ConsultarPersonalUnidad(string unidad)
+        {
+            SqlCommand comando = conexion.conexionBD().CreateCommand();
+            comando.CommandType = CommandType.Text;
+            comando.CommandText = "SP_PERSONALunidad  @cod_unidad";
+            comando.Parameters.AddWithValue("cod_unidad", unidad);
+            comando.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter dta = new SqlDataAdapter(comando);
+            dta.Fill(dt);
+            dt.Columns[0].ColumnName = "Cod Empleado";
+            dt.Columns[1].ColumnName = "Empleado";
+            dt.Columns[2].ColumnName = "Num Identidad";
+            dt.Columns[3].ColumnName = "Fecha Nacimineto";
+            dt.Columns[4].ColumnName = "Empresa";
+            dt.Columns[5].ColumnName = "Fecha Inicio";
+            return dt;
+        }
     }
 }
