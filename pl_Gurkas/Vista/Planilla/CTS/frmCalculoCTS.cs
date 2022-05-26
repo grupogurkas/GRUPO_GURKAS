@@ -211,7 +211,7 @@ namespace pl_Gurkas.Vista.Planilla.CTS
 
         private void btnverificar_Click(object sender, EventArgs e)
         {
-            verificar();
+            verificar();/**/
         }
 
         private void button1_Click(object sender, EventArgs e)
