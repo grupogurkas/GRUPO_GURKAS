@@ -16,46 +16,11 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.ExportarExcel Excel = new Datos.ExportarExcel();
         Datos.LLenadoDatosRRHH Llenadocbo = new Datos.LLenadoDatosRRHH();
+        Datos.DataReportes.RRHH.DataRRHH reporterrhh = new Datos.DataReportes.RRHH.DataRRHH();
 
         public frmAsistenciaGeneralPersonalPorSede()
         {
             InitializeComponent();
-        }
-        private void ConsultarAsistenciaSede(DateTime fechaInicio, DateTime FechaFin, string Sede)
-        {
-            try
-            {
-                SqlCommand comando = conexion.conexionBD().CreateCommand();
-                comando.CommandType = CommandType.Text;
-                comando.CommandText = "SP_RRHH_AsistenciaGeneralPersonalSede @Sede, @fechaInicio, @FechaFin";
-                comando.Parameters.AddWithValue("Sede", Sede);
-                comando.Parameters.AddWithValue("fechaInicio", fechaInicio);
-                comando.Parameters.AddWithValue("FechaFin", FechaFin);
-                comando.ExecuteNonQuery();
-                DataTable dt = new DataTable();
-                SqlDataAdapter dta = new SqlDataAdapter(comando);
-                dta.Fill(dt);
-                dt.Columns[0].ColumnName = "Cod Empleado";
-                dt.Columns[1].ColumnName = "Empleado";
-                dt.Columns[2].ColumnName = "Num Identidad";
-                dt.Columns[3].ColumnName = "Fecha Nacimineto";
-                dt.Columns[4].ColumnName = "Empresa";
-                dt.Columns[5].ColumnName = "Fecha Inicio";
-                dt.Columns[6].ColumnName = "Sede ";
-                dt.Columns[7].ColumnName = "Tipo Asistencia";
-                dt.Columns[8].ColumnName = "Fecha Asistencia";
-                dt.Columns[9].ColumnName = "Turno";
-                dt.Columns[10].ColumnName = "Puesto";
-                dt.AcceptChanges();
-                dgvAsistenciaPersonalGeneralSede.DataSource = dt;
-            }
-            catch (Exception)
-            {
-                /*
-                 MessageBox.Show("", "");
-                */
-                throw;
-            }
         }
         private void frmAsistenciaGeneralPersonalPorSede_Load(object sender, EventArgs e)
         {
@@ -81,7 +46,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
         private void btnConsultar_Click(object sender, EventArgs e)
         {
             string sede = cboSede.SelectedValue.ToString();
-            ConsultarAsistenciaSede(dtpFechaInicio.Value, dtpFechaFin.Value, sede);
+            dgvAsistenciaPersonalGeneralSede.DataSource = reporterrhh.ConsultaDeAsistenciaPorSede(dtpFechaInicio.Value, dtpFechaFin.Value, sede);
         }
     }
 }
