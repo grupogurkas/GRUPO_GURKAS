@@ -38,7 +38,6 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
         {
             Excel.ExportarDatosExcelAsistenciGeneralSede(dgvAsistenciaPersonalGeneralSede, progressBar1);
         }
-
         private void btnConsultar_Click(object sender, EventArgs e)
         {
             string sede = cboSede.SelectedValue.ToString();
