@@ -13,7 +13,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
 {
     public partial class frmAsistenciaGneralPersonal : Form
     {
-        Datos.ExportarExcel Excel = new Datos.ExportarExcel();
+        ExportacionExcel.RRHH.ExportarDataExcelRRHH Excel = new ExportacionExcel.RRHH.ExportarDataExcelRRHH();
         Datos.DataReportes.RRHH.DataRRHH reporterrhh = new Datos.DataReportes.RRHH.DataRRHH();
         public frmAsistenciaGneralPersonal()
         {
@@ -26,7 +26,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
         }
         private void btnExcel_Click(object sender, EventArgs e)
         {
-            Excel.ExportarDatosBarra(dgvAsistenciaGeneralPersonal, progressBar1);
+            Excel.ExportarDatosExcelGeneraldeAsistencia(dgvAsistenciaGeneralPersonal, progressBar1);
         }
         private void btnConsultar_Click(object sender, EventArgs e)
         {
