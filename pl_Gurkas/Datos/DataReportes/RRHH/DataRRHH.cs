@@ -188,5 +188,22 @@ namespace pl_Gurkas.Datos.DataReportes.RRHH
             dt.Columns[25].ColumnName = "Puesto";
             return dt;
         }
+        public DataTable ConsultarAsistenciaPorEmpresa(int CodEmpresa)
+        {
+            SqlCommand comando = conexion.conexionBD().CreateCommand();
+            comando.CommandType = CommandType.Text;
+            comando.CommandText = "SP_RRHHEmpresaPersonal  @Cod_empresa";
+            comando.Parameters.AddWithValue("Cod_empresa", CodEmpresa);
+            comando.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter dta = new SqlDataAdapter(comando);
+            dta.Fill(dt);
+            dt.Columns[0].ColumnName = "Cod Empleado";
+            dt.Columns[1].ColumnName = "Empleado";
+            dt.Columns[2].ColumnName = "Num Identidad";
+            dt.Columns[3].ColumnName = "Fecha Nacimineto";
+            dt.Columns[4].ColumnName = "Empresa";
+            return dt;
+        }
     }
 }

@@ -42,7 +42,6 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
                 int EdadFin = (int)Convert.ToInt64(txtEdadFin.Text);
                 dgvEdadPersonal.DataSource = reporterrhh.ConsultarEdadEmpleado(edadInicio, EdadFin);
             }
-
         }
         private void btnExcel_Click(object sender, EventArgs e)
         {
