@@ -85,6 +85,8 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.btnCargarImagen1 = new System.Windows.Forms.Button();
@@ -118,6 +120,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label37 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label27 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.textBox33 = new System.Windows.Forms.TextBox();
             this.btnCargarImagen2 = new System.Windows.Forms.Button();
@@ -128,6 +131,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label30 = new System.Windows.Forms.Label();
             this.dateTimePicker10 = new System.Windows.Forms.DateTimePicker();
             this.label31 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
             this.textBox39 = new System.Windows.Forms.TextBox();
             this.label85 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
@@ -151,6 +155,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label98 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.label45 = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.textBox34 = new System.Windows.Forms.TextBox();
             this.btnCargarImagen3 = new System.Windows.Forms.Button();
@@ -161,6 +166,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label101 = new System.Windows.Forms.Label();
             this.dateTimePicker12 = new System.Windows.Forms.DateTimePicker();
             this.label102 = new System.Windows.Forms.Label();
+            this.label92 = new System.Windows.Forms.Label();
             this.textBox51 = new System.Windows.Forms.TextBox();
             this.label104 = new System.Windows.Forms.Label();
             this.label105 = new System.Windows.Forms.Label();
@@ -184,6 +190,8 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label117 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.label94 = new System.Windows.Forms.Label();
+            this.label97 = new System.Windows.Forms.Label();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.textBox49 = new System.Windows.Forms.TextBox();
             this.btnCargarImagen4 = new System.Windows.Forms.Button();
@@ -217,6 +225,8 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label136 = new System.Windows.Forms.Label();
             this.tbpUtilesEscritorio = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
             this.txtMarcaUtiles = new System.Windows.Forms.TextBox();
             this.txtStockMinUtiles = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
@@ -250,6 +260,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label44 = new System.Windows.Forms.Label();
             this.tbpEquipamientoLogistico = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label54 = new System.Windows.Forms.Label();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.txtObservacionEquip = new System.Windows.Forms.TextBox();
             this.btnCargarImagen6 = new System.Windows.Forms.Button();
@@ -260,6 +271,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label60 = new System.Windows.Forms.Label();
             this.dtpFechaAdEquip = new System.Windows.Forms.DateTimePicker();
             this.label61 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
             this.txtMarcaEquip = new System.Windows.Forms.TextBox();
             this.txtStockMinEquip = new System.Windows.Forms.TextBox();
             this.label48 = new System.Windows.Forms.Label();
@@ -283,6 +295,8 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label146 = new System.Windows.Forms.Label();
             this.tbpEpp = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
             this.txtObservacionProtec = new System.Windows.Forms.TextBox();
             this.btnCargarImagen7 = new System.Windows.Forms.Button();
@@ -316,6 +330,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label150 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.label116 = new System.Windows.Forms.Label();
             this.groupBox18 = new System.Windows.Forms.GroupBox();
             this.txtObservacionMobi = new System.Windows.Forms.TextBox();
             this.btnCargarImagen8 = new System.Windows.Forms.Button();
@@ -326,7 +341,68 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label99 = new System.Windows.Forms.Label();
             this.dtpFechaAdMobi = new System.Windows.Forms.DateTimePicker();
             this.label100 = new System.Windows.Forms.Label();
+            this.label130 = new System.Windows.Forms.Label();
+            this.label187 = new System.Windows.Forms.Label();
+            this.txtMarcaVehi = new System.Windows.Forms.TextBox();
+            this.label188 = new System.Windows.Forms.Label();
+            this.txtStockMinVehi = new System.Windows.Forms.TextBox();
+            this.txtNombreVehi = new System.Windows.Forms.TextBox();
+            this.label172 = new System.Windows.Forms.Label();
+            this.txtCodEquipVehi = new System.Windows.Forms.TextBox();
+            this.label173 = new System.Windows.Forms.Label();
+            this.label181 = new System.Windows.Forms.Label();
+            this.txtCantidadVehi = new System.Windows.Forms.TextBox();
+            this.cboEstadoProduc9 = new System.Windows.Forms.ComboBox();
+            this.label174 = new System.Windows.Forms.Label();
+            this.txtDescripcionVehi = new System.Windows.Forms.TextBox();
+            this.txtModeloVehi = new System.Windows.Forms.TextBox();
+            this.label180 = new System.Windows.Forms.Label();
+            this.cboTipoUnidad5 = new System.Windows.Forms.ComboBox();
+            this.txtStockIniVehi = new System.Windows.Forms.TextBox();
+            this.label175 = new System.Windows.Forms.Label();
+            this.label177 = new System.Windows.Forms.Label();
+            this.label176 = new System.Windows.Forms.Label();
+            this.txtPrecioUniVehi = new System.Windows.Forms.TextBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.groupBox19 = new System.Windows.Forms.GroupBox();
+            this.label111 = new System.Windows.Forms.Label();
+            this.txtDescripcionMobi = new System.Windows.Forms.TextBox();
+            this.label160 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label159 = new System.Windows.Forms.Label();
+            this.label158 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label151 = new System.Windows.Forms.Label();
+            this.label147 = new System.Windows.Forms.Label();
+            this.label135 = new System.Windows.Forms.Label();
+            this.label132 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboEstadoProduc8 = new System.Windows.Forms.ComboBox();
+            this.txtMarcaMobi = new System.Windows.Forms.TextBox();
+            this.label153 = new System.Windows.Forms.Label();
+            this.label154 = new System.Windows.Forms.Label();
+            this.txtModeloMobi = new System.Windows.Forms.TextBox();
+            this.cboTipoUnidad4 = new System.Windows.Forms.ComboBox();
+            this.label155 = new System.Windows.Forms.Label();
+            this.label156 = new System.Windows.Forms.Label();
+            this.txtCodEquipMobi = new System.Windows.Forms.TextBox();
+            this.label167 = new System.Windows.Forms.Label();
+            this.txtNombreMobi = new System.Windows.Forms.TextBox();
+            this.label168 = new System.Windows.Forms.Label();
+            this.groupBox20 = new System.Windows.Forms.GroupBox();
+            this.txtObservacionVehi = new System.Windows.Forms.TextBox();
+            this.btnCargarImagen9 = new System.Windows.Forms.Button();
+            this.label103 = new System.Windows.Forms.Label();
+            this.label109 = new System.Windows.Forms.Label();
+            this.ptcImagenVehiculos = new System.Windows.Forms.PictureBox();
+            this.dtpFechaRegisVehi = new System.Windows.Forms.DateTimePicker();
+            this.label118 = new System.Windows.Forms.Label();
+            this.dtpFechaAdVehi = new System.Windows.Forms.DateTimePicker();
+            this.label119 = new System.Windows.Forms.Label();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.groupBox21 = new System.Windows.Forms.GroupBox();
             this.groupBox22 = new System.Windows.Forms.GroupBox();
@@ -397,82 +473,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label204 = new System.Windows.Forms.Label();
             this.txtNombreArma = new System.Windows.Forms.TextBox();
             this.label205 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label92 = new System.Windows.Forms.Label();
-            this.label94 = new System.Windows.Forms.Label();
-            this.label97 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label71 = new System.Windows.Forms.Label();
-            this.groupBox20 = new System.Windows.Forms.GroupBox();
-            this.label119 = new System.Windows.Forms.Label();
-            this.dtpFechaAdVehi = new System.Windows.Forms.DateTimePicker();
-            this.label118 = new System.Windows.Forms.Label();
-            this.dtpFechaRegisVehi = new System.Windows.Forms.DateTimePicker();
-            this.ptcImagenVehiculos = new System.Windows.Forms.PictureBox();
-            this.label109 = new System.Windows.Forms.Label();
-            this.label103 = new System.Windows.Forms.Label();
-            this.btnCargarImagen9 = new System.Windows.Forms.Button();
-            this.txtObservacionVehi = new System.Windows.Forms.TextBox();
-            this.groupBox19 = new System.Windows.Forms.GroupBox();
-            this.label116 = new System.Windows.Forms.Label();
-            this.label130 = new System.Windows.Forms.Label();
-            this.txtMarcaVehi = new System.Windows.Forms.TextBox();
-            this.txtStockMinVehi = new System.Windows.Forms.TextBox();
-            this.label172 = new System.Windows.Forms.Label();
-            this.label173 = new System.Windows.Forms.Label();
-            this.txtCantidadVehi = new System.Windows.Forms.TextBox();
-            this.label174 = new System.Windows.Forms.Label();
-            this.txtModeloVehi = new System.Windows.Forms.TextBox();
-            this.cboTipoUnidad5 = new System.Windows.Forms.ComboBox();
-            this.label175 = new System.Windows.Forms.Label();
-            this.label176 = new System.Windows.Forms.Label();
-            this.txtPrecioUniVehi = new System.Windows.Forms.TextBox();
-            this.label177 = new System.Windows.Forms.Label();
-            this.txtStockIniVehi = new System.Windows.Forms.TextBox();
-            this.label180 = new System.Windows.Forms.Label();
-            this.txtDescripcionVehi = new System.Windows.Forms.TextBox();
-            this.cboEstadoProduc9 = new System.Windows.Forms.ComboBox();
-            this.label181 = new System.Windows.Forms.Label();
-            this.txtCodEquipVehi = new System.Windows.Forms.TextBox();
-            this.label187 = new System.Windows.Forms.Label();
-            this.txtNombreVehi = new System.Windows.Forms.TextBox();
-            this.label188 = new System.Windows.Forms.Label();
-            this.label111 = new System.Windows.Forms.Label();
-            this.txtDescripcionMobi = new System.Windows.Forms.TextBox();
-            this.label160 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label159 = new System.Windows.Forms.Label();
-            this.label158 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label151 = new System.Windows.Forms.Label();
-            this.label147 = new System.Windows.Forms.Label();
-            this.label135 = new System.Windows.Forms.Label();
-            this.label132 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.cboEstadoProduc8 = new System.Windows.Forms.ComboBox();
-            this.txtMarcaMobi = new System.Windows.Forms.TextBox();
-            this.label153 = new System.Windows.Forms.Label();
-            this.label154 = new System.Windows.Forms.Label();
-            this.txtModeloMobi = new System.Windows.Forms.TextBox();
-            this.cboTipoUnidad4 = new System.Windows.Forms.ComboBox();
-            this.label155 = new System.Windows.Forms.Label();
-            this.label156 = new System.Windows.Forms.Label();
-            this.txtCodEquipMobi = new System.Windows.Forms.TextBox();
-            this.label167 = new System.Windows.Forms.Label();
-            this.txtNombreMobi = new System.Windows.Forms.TextBox();
-            this.label168 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.btcPanel.SuspendLayout();
@@ -515,6 +515,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptcImagenMobiliario)).BeginInit();
             this.tabPage6.SuspendLayout();
+            this.groupBox19.SuspendLayout();
+            this.groupBox20.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcImagenVehiculos)).BeginInit();
             this.tabPage8.SuspendLayout();
             this.groupBox21.SuspendLayout();
             this.groupBox22.SuspendLayout();
@@ -523,9 +526,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox23.SuspendLayout();
             this.groupBox24.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptcImagenArmamento)).BeginInit();
-            this.groupBox20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptcImagenVehiculos)).BeginInit();
-            this.groupBox19.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -685,7 +685,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tbpTecnologico.Location = new System.Drawing.Point(4, 22);
             this.tbpTecnologico.Name = "tbpTecnologico";
             this.tbpTecnologico.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpTecnologico.Size = new System.Drawing.Size(1132, 466);
+            this.tbpTecnologico.Size = new System.Drawing.Size(1132, 484);
             this.tbpTecnologico.TabIndex = 0;
             this.tbpTecnologico.Text = "Tecnologico";
             this.tbpTecnologico.UseVisualStyleBackColor = true;
@@ -1080,7 +1080,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tbpUniforme.Location = new System.Drawing.Point(4, 22);
             this.tbpUniforme.Name = "tbpUniforme";
             this.tbpUniforme.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpUniforme.Size = new System.Drawing.Size(1132, 466);
+            this.tbpUniforme.Size = new System.Drawing.Size(1132, 484);
             this.tbpUniforme.TabIndex = 1;
             this.tbpUniforme.Text = "Uniforme";
             this.tbpUniforme.UseVisualStyleBackColor = true;
@@ -1143,6 +1143,26 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del Equipo";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(6, 276);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(79, 15);
+            this.label9.TabIndex = 181;
+            this.label9.Text = "Stock Actual :";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(4, 250);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(87, 15);
+            this.label21.TabIndex = 180;
+            this.label21.Text = "Costo Unitario:";
             // 
             // groupBox5
             // 
@@ -1479,6 +1499,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Datos del Equipo";
             // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(8, 276);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(79, 15);
+            this.label27.TabIndex = 183;
+            this.label27.Text = "Stock Actual :";
+            // 
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.textBox33);
@@ -1584,6 +1614,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label31.Size = new System.Drawing.Size(110, 15);
             this.label31.TabIndex = 152;
             this.label31.Text = "Fecha Adquisicion:";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(6, 250);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(87, 15);
+            this.label36.TabIndex = 182;
+            this.label36.Text = "Costo Unitario:";
             // 
             // textBox39
             // 
@@ -1811,6 +1851,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Datos del Equipo";
             // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(8, 276);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(79, 15);
+            this.label45.TabIndex = 183;
+            this.label45.Text = "Stock Actual :";
+            // 
             // groupBox10
             // 
             this.groupBox10.Controls.Add(this.textBox34);
@@ -1915,6 +1965,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label102.Size = new System.Drawing.Size(110, 15);
             this.label102.TabIndex = 152;
             this.label102.Text = "Fecha Adquisicion:";
+            // 
+            // label92
+            // 
+            this.label92.AutoSize = true;
+            this.label92.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label92.Location = new System.Drawing.Point(6, 250);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(87, 15);
+            this.label92.TabIndex = 182;
+            this.label92.Text = "Costo Unitario:";
             // 
             // textBox51
             // 
@@ -2141,6 +2201,26 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox11.TabIndex = 109;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Datos del Equipo";
+            // 
+            // label94
+            // 
+            this.label94.AutoSize = true;
+            this.label94.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label94.Location = new System.Drawing.Point(6, 276);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(79, 15);
+            this.label94.TabIndex = 185;
+            this.label94.Text = "Stock Actual :";
+            // 
+            // label97
+            // 
+            this.label97.AutoSize = true;
+            this.label97.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label97.Location = new System.Drawing.Point(4, 250);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(87, 15);
+            this.label97.TabIndex = 184;
+            this.label97.Text = "Costo Unitario:";
             // 
             // groupBox12
             // 
@@ -2447,7 +2527,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tbpUtilesEscritorio.Location = new System.Drawing.Point(4, 22);
             this.tbpUtilesEscritorio.Name = "tbpUtilesEscritorio";
             this.tbpUtilesEscritorio.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpUtilesEscritorio.Size = new System.Drawing.Size(1132, 466);
+            this.tbpUtilesEscritorio.Size = new System.Drawing.Size(1132, 484);
             this.tbpUtilesEscritorio.TabIndex = 3;
             this.tbpUtilesEscritorio.Text = "Utiles Escritorio";
             this.tbpUtilesEscritorio.UseVisualStyleBackColor = true;
@@ -2485,6 +2565,26 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Datos del Equipo";
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(10, 268);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(79, 15);
+            this.label43.TabIndex = 185;
+            this.label43.Text = "Stock Actual :";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.Location = new System.Drawing.Point(8, 242);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(87, 15);
+            this.label46.TabIndex = 184;
+            this.label46.Text = "Costo Unitario:";
             // 
             // txtMarcaUtiles
             // 
@@ -2783,7 +2883,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tbpEquipamientoLogistico.Location = new System.Drawing.Point(4, 22);
             this.tbpEquipamientoLogistico.Name = "tbpEquipamientoLogistico";
             this.tbpEquipamientoLogistico.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpEquipamientoLogistico.Size = new System.Drawing.Size(1132, 466);
+            this.tbpEquipamientoLogistico.Size = new System.Drawing.Size(1132, 484);
             this.tbpEquipamientoLogistico.TabIndex = 4;
             this.tbpEquipamientoLogistico.Text = "Equipamiento Logistico";
             this.tbpEquipamientoLogistico.UseVisualStyleBackColor = true;
@@ -2820,6 +2920,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox4.TabIndex = 95;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Datos del Equipo";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(10, 268);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(79, 15);
+            this.label54.TabIndex = 185;
+            this.label54.Text = "Stock Actual :";
             // 
             // groupBox15
             // 
@@ -2925,6 +3035,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label61.Size = new System.Drawing.Size(110, 15);
             this.label61.TabIndex = 152;
             this.label61.Text = "Fecha Adquisicion:";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Location = new System.Drawing.Point(8, 242);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(87, 15);
+            this.label55.TabIndex = 184;
+            this.label55.Text = "Costo Unitario:";
             // 
             // txtMarcaEquip
             // 
@@ -3118,7 +3238,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tbpEpp.Location = new System.Drawing.Point(4, 22);
             this.tbpEpp.Name = "tbpEpp";
             this.tbpEpp.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpEpp.Size = new System.Drawing.Size(1132, 466);
+            this.tbpEpp.Size = new System.Drawing.Size(1132, 484);
             this.tbpEpp.TabIndex = 5;
             this.tbpEpp.Text = "Equipos Proteccion Personal";
             this.tbpEpp.UseVisualStyleBackColor = true;
@@ -3155,6 +3275,26 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox6.TabIndex = 95;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Datos del Equipo";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label70.Location = new System.Drawing.Point(10, 268);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(79, 15);
+            this.label70.TabIndex = 185;
+            this.label70.Text = "Stock Actual :";
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label71.Location = new System.Drawing.Point(8, 242);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(87, 15);
+            this.label71.TabIndex = 184;
+            this.label71.Text = "Costo Unitario:";
             // 
             // groupBox16
             // 
@@ -3492,6 +3632,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox17.TabStop = false;
             this.groupBox17.Text = "Datos del Equipo";
             // 
+            // label116
+            // 
+            this.label116.AutoSize = true;
+            this.label116.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label116.Location = new System.Drawing.Point(29, 263);
+            this.label116.Name = "label116";
+            this.label116.Size = new System.Drawing.Size(79, 15);
+            this.label116.TabIndex = 208;
+            this.label116.Text = "Stock Actual :";
+            // 
             // groupBox18
             // 
             this.groupBox18.Controls.Add(this.txtObservacionMobi);
@@ -3535,7 +3685,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.label84.AutoSize = true;
             this.label84.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label84.Location = new System.Drawing.Point(225, 106);
+            this.label84.Location = new System.Drawing.Point(225, 109);
             this.label84.Name = "label84";
             this.label84.Size = new System.Drawing.Size(81, 15);
             this.label84.TabIndex = 169;
@@ -3597,6 +3747,202 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label100.TabIndex = 152;
             this.label100.Text = "Fecha Adquisicion:";
             // 
+            // label130
+            // 
+            this.label130.AutoSize = true;
+            this.label130.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label130.Location = new System.Drawing.Point(27, 237);
+            this.label130.Name = "label130";
+            this.label130.Size = new System.Drawing.Size(87, 15);
+            this.label130.TabIndex = 207;
+            this.label130.Text = "Costo Unitario:";
+            // 
+            // label187
+            // 
+            this.label187.AutoSize = true;
+            this.label187.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label187.Location = new System.Drawing.Point(25, 50);
+            this.label187.Name = "label187";
+            this.label187.Size = new System.Drawing.Size(74, 15);
+            this.label187.TabIndex = 188;
+            this.label187.Text = "Cod. Equipo";
+            // 
+            // txtMarcaVehi
+            // 
+            this.txtMarcaVehi.Location = new System.Drawing.Point(149, 101);
+            this.txtMarcaVehi.Name = "txtMarcaVehi";
+            this.txtMarcaVehi.Size = new System.Drawing.Size(213, 20);
+            this.txtMarcaVehi.TabIndex = 206;
+            // 
+            // label188
+            // 
+            this.label188.AutoSize = true;
+            this.label188.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label188.Location = new System.Drawing.Point(25, 80);
+            this.label188.Name = "label188";
+            this.label188.Size = new System.Drawing.Size(55, 15);
+            this.label188.TabIndex = 186;
+            this.label188.Text = "Nombre:";
+            // 
+            // txtStockMinVehi
+            // 
+            this.txtStockMinVehi.Location = new System.Drawing.Point(150, 284);
+            this.txtStockMinVehi.Name = "txtStockMinVehi";
+            this.txtStockMinVehi.Size = new System.Drawing.Size(158, 20);
+            this.txtStockMinVehi.TabIndex = 205;
+            // 
+            // txtNombreVehi
+            // 
+            this.txtNombreVehi.Location = new System.Drawing.Point(150, 75);
+            this.txtNombreVehi.Name = "txtNombreVehi";
+            this.txtNombreVehi.Size = new System.Drawing.Size(213, 20);
+            this.txtNombreVehi.TabIndex = 187;
+            // 
+            // label172
+            // 
+            this.label172.AutoSize = true;
+            this.label172.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label172.Location = new System.Drawing.Point(26, 289);
+            this.label172.Name = "label172";
+            this.label172.Size = new System.Drawing.Size(85, 15);
+            this.label172.TabIndex = 204;
+            this.label172.Text = "Stock Minimo:";
+            // 
+            // txtCodEquipVehi
+            // 
+            this.txtCodEquipVehi.Location = new System.Drawing.Point(149, 49);
+            this.txtCodEquipVehi.Name = "txtCodEquipVehi";
+            this.txtCodEquipVehi.Size = new System.Drawing.Size(213, 20);
+            this.txtCodEquipVehi.TabIndex = 189;
+            // 
+            // label173
+            // 
+            this.label173.AutoSize = true;
+            this.label173.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label173.Location = new System.Drawing.Point(26, 159);
+            this.label173.Name = "label173";
+            this.label173.Size = new System.Drawing.Size(77, 15);
+            this.label173.TabIndex = 203;
+            this.label173.Text = "Tipo Unidad:";
+            // 
+            // label181
+            // 
+            this.label181.AutoSize = true;
+            this.label181.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label181.Location = new System.Drawing.Point(27, 211);
+            this.label181.Name = "label181";
+            this.label181.Size = new System.Drawing.Size(51, 15);
+            this.label181.TabIndex = 190;
+            this.label181.Text = "Estado :";
+            // 
+            // txtCantidadVehi
+            // 
+            this.txtCantidadVehi.Location = new System.Drawing.Point(150, 179);
+            this.txtCantidadVehi.Name = "txtCantidadVehi";
+            this.txtCantidadVehi.Size = new System.Drawing.Size(158, 20);
+            this.txtCantidadVehi.TabIndex = 202;
+            // 
+            // cboEstadoProduc9
+            // 
+            this.cboEstadoProduc9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEstadoProduc9.FormattingEnabled = true;
+            this.cboEstadoProduc9.Location = new System.Drawing.Point(151, 205);
+            this.cboEstadoProduc9.Name = "cboEstadoProduc9";
+            this.cboEstadoProduc9.Size = new System.Drawing.Size(158, 21);
+            this.cboEstadoProduc9.TabIndex = 191;
+            // 
+            // label174
+            // 
+            this.label174.AutoSize = true;
+            this.label174.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label174.Location = new System.Drawing.Point(27, 184);
+            this.label174.Name = "label174";
+            this.label174.Size = new System.Drawing.Size(63, 15);
+            this.label174.TabIndex = 201;
+            this.label174.Text = "Categoria:";
+            // 
+            // txtDescripcionVehi
+            // 
+            this.txtDescripcionVehi.Location = new System.Drawing.Point(150, 310);
+            this.txtDescripcionVehi.Multiline = true;
+            this.txtDescripcionVehi.Name = "txtDescripcionVehi";
+            this.txtDescripcionVehi.Size = new System.Drawing.Size(213, 56);
+            this.txtDescripcionVehi.TabIndex = 192;
+            // 
+            // txtModeloVehi
+            // 
+            this.txtModeloVehi.Location = new System.Drawing.Point(150, 127);
+            this.txtModeloVehi.Name = "txtModeloVehi";
+            this.txtModeloVehi.Size = new System.Drawing.Size(213, 20);
+            this.txtModeloVehi.TabIndex = 200;
+            // 
+            // label180
+            // 
+            this.label180.AutoSize = true;
+            this.label180.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label180.Location = new System.Drawing.Point(26, 311);
+            this.label180.Name = "label180";
+            this.label180.Size = new System.Drawing.Size(78, 15);
+            this.label180.TabIndex = 193;
+            this.label180.Text = "Descripcion :";
+            // 
+            // cboTipoUnidad5
+            // 
+            this.cboTipoUnidad5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTipoUnidad5.FormattingEnabled = true;
+            this.cboTipoUnidad5.Items.AddRange(new object[] {
+            "",
+            "Nuevo",
+            "Usado",
+            "Dañado",
+            "Baja"});
+            this.cboTipoUnidad5.Location = new System.Drawing.Point(150, 153);
+            this.cboTipoUnidad5.Name = "cboTipoUnidad5";
+            this.cboTipoUnidad5.Size = new System.Drawing.Size(158, 21);
+            this.cboTipoUnidad5.TabIndex = 199;
+            // 
+            // txtStockIniVehi
+            // 
+            this.txtStockIniVehi.Location = new System.Drawing.Point(150, 258);
+            this.txtStockIniVehi.Name = "txtStockIniVehi";
+            this.txtStockIniVehi.Size = new System.Drawing.Size(158, 20);
+            this.txtStockIniVehi.TabIndex = 194;
+            // 
+            // label175
+            // 
+            this.label175.AutoSize = true;
+            this.label175.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label175.Location = new System.Drawing.Point(25, 132);
+            this.label175.Name = "label175";
+            this.label175.Size = new System.Drawing.Size(52, 15);
+            this.label175.TabIndex = 198;
+            this.label175.Text = "Modelo:";
+            // 
+            // label177
+            // 
+            this.label177.Location = new System.Drawing.Point(130, 237);
+            this.label177.Name = "label177";
+            this.label177.Size = new System.Drawing.Size(27, 13);
+            this.label177.TabIndex = 196;
+            this.label177.Text = "S/. ";
+            // 
+            // label176
+            // 
+            this.label176.AutoSize = true;
+            this.label176.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label176.Location = new System.Drawing.Point(26, 106);
+            this.label176.Name = "label176";
+            this.label176.Size = new System.Drawing.Size(45, 15);
+            this.label176.TabIndex = 197;
+            this.label176.Text = "Marca:";
+            // 
+            // txtPrecioUniVehi
+            // 
+            this.txtPrecioUniVehi.Location = new System.Drawing.Point(150, 232);
+            this.txtPrecioUniVehi.Name = "txtPrecioUniVehi";
+            this.txtPrecioUniVehi.Size = new System.Drawing.Size(158, 20);
+            this.txtPrecioUniVehi.TabIndex = 195;
+            // 
             // tabPage6
             // 
             this.tabPage6.Controls.Add(this.groupBox19);
@@ -3608,13 +3954,446 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tabPage6.Text = "Vehiculos";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
+            // groupBox19
+            // 
+            this.groupBox19.Controls.Add(this.label111);
+            this.groupBox19.Controls.Add(this.txtDescripcionMobi);
+            this.groupBox19.Controls.Add(this.label160);
+            this.groupBox19.Controls.Add(this.textBox5);
+            this.groupBox19.Controls.Add(this.textBox3);
+            this.groupBox19.Controls.Add(this.textBox2);
+            this.groupBox19.Controls.Add(this.comboBox2);
+            this.groupBox19.Controls.Add(this.textBox1);
+            this.groupBox19.Controls.Add(this.label159);
+            this.groupBox19.Controls.Add(this.label158);
+            this.groupBox19.Controls.Add(this.dateTimePicker1);
+            this.groupBox19.Controls.Add(this.label151);
+            this.groupBox19.Controls.Add(this.label147);
+            this.groupBox19.Controls.Add(this.label135);
+            this.groupBox19.Controls.Add(this.label132);
+            this.groupBox19.Controls.Add(this.comboBox1);
+            this.groupBox19.Controls.Add(this.cboEstadoProduc8);
+            this.groupBox19.Controls.Add(this.txtMarcaMobi);
+            this.groupBox19.Controls.Add(this.label153);
+            this.groupBox19.Controls.Add(this.label154);
+            this.groupBox19.Controls.Add(this.txtModeloMobi);
+            this.groupBox19.Controls.Add(this.cboTipoUnidad4);
+            this.groupBox19.Controls.Add(this.label155);
+            this.groupBox19.Controls.Add(this.label156);
+            this.groupBox19.Controls.Add(this.txtCodEquipMobi);
+            this.groupBox19.Controls.Add(this.label167);
+            this.groupBox19.Controls.Add(this.txtNombreMobi);
+            this.groupBox19.Controls.Add(this.label168);
+            this.groupBox19.Controls.Add(this.groupBox20);
+            this.groupBox19.Location = new System.Drawing.Point(12, 23);
+            this.groupBox19.Name = "groupBox19";
+            this.groupBox19.Size = new System.Drawing.Size(1136, 455);
+            this.groupBox19.TabIndex = 98;
+            this.groupBox19.TabStop = false;
+            this.groupBox19.Text = "Datos del Equipo";
+            // 
+            // label111
+            // 
+            this.label111.AutoSize = true;
+            this.label111.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label111.Location = new System.Drawing.Point(22, 353);
+            this.label111.Name = "label111";
+            this.label111.Size = new System.Drawing.Size(48, 15);
+            this.label111.TabIndex = 255;
+            this.label111.Text = "Estado:";
+            this.label111.Click += new System.EventHandler(this.label111_Click);
+            // 
+            // txtDescripcionMobi
+            // 
+            this.txtDescripcionMobi.Location = new System.Drawing.Point(145, 374);
+            this.txtDescripcionMobi.Multiline = true;
+            this.txtDescripcionMobi.Name = "txtDescripcionMobi";
+            this.txtDescripcionMobi.Size = new System.Drawing.Size(213, 56);
+            this.txtDescripcionMobi.TabIndex = 253;
+            this.txtDescripcionMobi.TextChanged += new System.EventHandler(this.txtDescripcionMobi_TextChanged);
+            // 
+            // label160
+            // 
+            this.label160.AutoSize = true;
+            this.label160.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label160.Location = new System.Drawing.Point(22, 375);
+            this.label160.Name = "label160";
+            this.label160.Size = new System.Drawing.Size(78, 15);
+            this.label160.TabIndex = 254;
+            this.label160.Text = "Descripcion :";
+            this.label160.Click += new System.EventHandler(this.label160_Click);
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(145, 322);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(213, 20);
+            this.textBox5.TabIndex = 252;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(145, 294);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(213, 20);
+            this.textBox3.TabIndex = 251;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(145, 242);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(213, 20);
+            this.textBox2.TabIndex = 250;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "",
+            "Nuevo",
+            "Usado",
+            "Dañado",
+            "Baja"});
+            this.comboBox2.Location = new System.Drawing.Point(147, 215);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(158, 21);
+            this.comboBox2.TabIndex = 249;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(145, 189);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(213, 20);
+            this.textBox1.TabIndex = 248;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label159
+            // 
+            this.label159.AutoSize = true;
+            this.label159.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label159.Location = new System.Drawing.Point(22, 318);
+            this.label159.Name = "label159";
+            this.label159.Size = new System.Drawing.Size(84, 30);
+            this.label159.TabIndex = 247;
+            this.label159.Text = "Nº Tarjeta\r\nde Propiedad:\r\n";
+            this.label159.Click += new System.EventHandler(this.label159_Click);
+            // 
+            // label158
+            // 
+            this.label158.AutoSize = true;
+            this.label158.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label158.Location = new System.Drawing.Point(22, 299);
+            this.label158.Name = "label158";
+            this.label158.Size = new System.Drawing.Size(57, 15);
+            this.label158.TabIndex = 246;
+            this.label158.Text = "Nº Placa:";
+            this.label158.Click += new System.EventHandler(this.label158_Click);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(145, 268);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(104, 20);
+            this.dateTimePicker1.TabIndex = 240;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // label151
+            // 
+            this.label151.AutoSize = true;
+            this.label151.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label151.Location = new System.Drawing.Point(22, 272);
+            this.label151.Name = "label151";
+            this.label151.Size = new System.Drawing.Size(98, 15);
+            this.label151.TabIndex = 242;
+            this.label151.Text = "Año Fabricacion:";
+            this.label151.Click += new System.EventHandler(this.label151_Click_1);
+            // 
+            // label147
+            // 
+            this.label147.AutoSize = true;
+            this.label147.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label147.Location = new System.Drawing.Point(22, 247);
+            this.label147.Name = "label147";
+            this.label147.Size = new System.Drawing.Size(58, 15);
+            this.label147.TabIndex = 245;
+            this.label147.Text = "Nº Serial:";
+            this.label147.Click += new System.EventHandler(this.label147_Click);
+            // 
+            // label135
+            // 
+            this.label135.AutoSize = true;
+            this.label135.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label135.Location = new System.Drawing.Point(21, 223);
+            this.label135.Name = "label135";
+            this.label135.Size = new System.Drawing.Size(79, 15);
+            this.label135.TabIndex = 244;
+            this.label135.Text = "Combustible:";
+            this.label135.Click += new System.EventHandler(this.label135_Click);
+            // 
+            // label132
+            // 
+            this.label132.AutoSize = true;
+            this.label132.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label132.Location = new System.Drawing.Point(21, 194);
+            this.label132.Name = "label132";
+            this.label132.Size = new System.Drawing.Size(39, 15);
+            this.label132.TabIndex = 243;
+            this.label132.Text = "Color:";
+            this.label132.Click += new System.EventHandler(this.label132_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "",
+            "Nuevo",
+            "Usado",
+            "Dañado",
+            "Baja"});
+            this.comboBox1.Location = new System.Drawing.Point(147, 161);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(158, 21);
+            this.comboBox1.TabIndex = 241;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // cboEstadoProduc8
+            // 
+            this.cboEstadoProduc8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEstadoProduc8.FormattingEnabled = true;
+            this.cboEstadoProduc8.Location = new System.Drawing.Point(145, 347);
+            this.cboEstadoProduc8.Name = "cboEstadoProduc8";
+            this.cboEstadoProduc8.Size = new System.Drawing.Size(158, 21);
+            this.cboEstadoProduc8.TabIndex = 232;
+            this.cboEstadoProduc8.SelectedIndexChanged += new System.EventHandler(this.cboEstadoProduc8_SelectedIndexChanged);
+            // 
+            // txtMarcaMobi
+            // 
+            this.txtMarcaMobi.Location = new System.Drawing.Point(145, 82);
+            this.txtMarcaMobi.Name = "txtMarcaMobi";
+            this.txtMarcaMobi.Size = new System.Drawing.Size(213, 20);
+            this.txtMarcaMobi.TabIndex = 239;
+            this.txtMarcaMobi.TextChanged += new System.EventHandler(this.txtMarcaMobi_TextChanged);
+            // 
+            // label153
+            // 
+            this.label153.AutoSize = true;
+            this.label153.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label153.Location = new System.Drawing.Point(21, 140);
+            this.label153.Name = "label153";
+            this.label153.Size = new System.Drawing.Size(77, 15);
+            this.label153.TabIndex = 238;
+            this.label153.Text = "Tipo Unidad:";
+            this.label153.Click += new System.EventHandler(this.label153_Click);
+            // 
+            // label154
+            // 
+            this.label154.AutoSize = true;
+            this.label154.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label154.Location = new System.Drawing.Point(21, 167);
+            this.label154.Name = "label154";
+            this.label154.Size = new System.Drawing.Size(63, 15);
+            this.label154.TabIndex = 237;
+            this.label154.Text = "Categoria:";
+            this.label154.Click += new System.EventHandler(this.label154_Click);
+            // 
+            // txtModeloMobi
+            // 
+            this.txtModeloMobi.Location = new System.Drawing.Point(146, 108);
+            this.txtModeloMobi.Name = "txtModeloMobi";
+            this.txtModeloMobi.Size = new System.Drawing.Size(213, 20);
+            this.txtModeloMobi.TabIndex = 236;
+            this.txtModeloMobi.TextChanged += new System.EventHandler(this.txtModeloMobi_TextChanged);
+            // 
+            // cboTipoUnidad4
+            // 
+            this.cboTipoUnidad4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTipoUnidad4.FormattingEnabled = true;
+            this.cboTipoUnidad4.Items.AddRange(new object[] {
+            "",
+            "Nuevo",
+            "Usado",
+            "Dañado",
+            "Baja"});
+            this.cboTipoUnidad4.Location = new System.Drawing.Point(146, 134);
+            this.cboTipoUnidad4.Name = "cboTipoUnidad4";
+            this.cboTipoUnidad4.Size = new System.Drawing.Size(158, 21);
+            this.cboTipoUnidad4.TabIndex = 235;
+            this.cboTipoUnidad4.SelectedIndexChanged += new System.EventHandler(this.cboTipoUnidad4_SelectedIndexChanged);
+            // 
+            // label155
+            // 
+            this.label155.AutoSize = true;
+            this.label155.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label155.Location = new System.Drawing.Point(21, 113);
+            this.label155.Name = "label155";
+            this.label155.Size = new System.Drawing.Size(52, 15);
+            this.label155.TabIndex = 234;
+            this.label155.Text = "Modelo:";
+            // 
+            // label156
+            // 
+            this.label156.AutoSize = true;
+            this.label156.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label156.Location = new System.Drawing.Point(22, 87);
+            this.label156.Name = "label156";
+            this.label156.Size = new System.Drawing.Size(45, 15);
+            this.label156.TabIndex = 233;
+            this.label156.Text = "Marca:";
+            // 
+            // txtCodEquipMobi
+            // 
+            this.txtCodEquipMobi.Location = new System.Drawing.Point(145, 30);
+            this.txtCodEquipMobi.Name = "txtCodEquipMobi";
+            this.txtCodEquipMobi.Size = new System.Drawing.Size(213, 20);
+            this.txtCodEquipMobi.TabIndex = 231;
+            this.txtCodEquipMobi.TextChanged += new System.EventHandler(this.txtCodEquipMobi_TextChanged);
+            // 
+            // label167
+            // 
+            this.label167.AutoSize = true;
+            this.label167.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label167.Location = new System.Drawing.Point(21, 31);
+            this.label167.Name = "label167";
+            this.label167.Size = new System.Drawing.Size(74, 15);
+            this.label167.TabIndex = 230;
+            this.label167.Text = "Cod. Equipo";
+            // 
+            // txtNombreMobi
+            // 
+            this.txtNombreMobi.Location = new System.Drawing.Point(146, 56);
+            this.txtNombreMobi.Name = "txtNombreMobi";
+            this.txtNombreMobi.Size = new System.Drawing.Size(213, 20);
+            this.txtNombreMobi.TabIndex = 229;
+            this.txtNombreMobi.TextChanged += new System.EventHandler(this.txtNombreMobi_TextChanged);
+            // 
+            // label168
+            // 
+            this.label168.AutoSize = true;
+            this.label168.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label168.Location = new System.Drawing.Point(21, 61);
+            this.label168.Name = "label168";
+            this.label168.Size = new System.Drawing.Size(55, 15);
+            this.label168.TabIndex = 228;
+            this.label168.Text = "Nombre:";
+            // 
+            // groupBox20
+            // 
+            this.groupBox20.Controls.Add(this.txtObservacionVehi);
+            this.groupBox20.Controls.Add(this.btnCargarImagen9);
+            this.groupBox20.Controls.Add(this.label103);
+            this.groupBox20.Controls.Add(this.label109);
+            this.groupBox20.Controls.Add(this.ptcImagenVehiculos);
+            this.groupBox20.Controls.Add(this.dtpFechaRegisVehi);
+            this.groupBox20.Controls.Add(this.label118);
+            this.groupBox20.Controls.Add(this.dtpFechaAdVehi);
+            this.groupBox20.Controls.Add(this.label119);
+            this.groupBox20.Location = new System.Drawing.Point(384, 19);
+            this.groupBox20.Name = "groupBox20";
+            this.groupBox20.Size = new System.Drawing.Size(612, 393);
+            this.groupBox20.TabIndex = 180;
+            this.groupBox20.TabStop = false;
+            this.groupBox20.Text = "Datos Adicionales";
+            // 
+            // txtObservacionVehi
+            // 
+            this.txtObservacionVehi.Location = new System.Drawing.Point(329, 104);
+            this.txtObservacionVehi.Multiline = true;
+            this.txtObservacionVehi.Name = "txtObservacionVehi";
+            this.txtObservacionVehi.Size = new System.Drawing.Size(266, 65);
+            this.txtObservacionVehi.TabIndex = 168;
+            // 
+            // btnCargarImagen9
+            // 
+            this.btnCargarImagen9.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCargarImagen9.Image = ((System.Drawing.Image)(resources.GetObject("btnCargarImagen9.Image")));
+            this.btnCargarImagen9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCargarImagen9.Location = new System.Drawing.Point(26, 317);
+            this.btnCargarImagen9.Name = "btnCargarImagen9";
+            this.btnCargarImagen9.Size = new System.Drawing.Size(104, 35);
+            this.btnCargarImagen9.TabIndex = 172;
+            this.btnCargarImagen9.Text = "Subir Imagen";
+            this.btnCargarImagen9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCargarImagen9.UseVisualStyleBackColor = false;
+            // 
+            // label103
+            // 
+            this.label103.AutoSize = true;
+            this.label103.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label103.Location = new System.Drawing.Point(242, 106);
+            this.label103.Name = "label103";
+            this.label103.Size = new System.Drawing.Size(81, 15);
+            this.label103.TabIndex = 169;
+            this.label103.Text = "Observacion :";
+            // 
+            // label109
+            // 
+            this.label109.AutoSize = true;
+            this.label109.Location = new System.Drawing.Point(72, 299);
+            this.label109.Name = "label109";
+            this.label109.Size = new System.Drawing.Size(107, 13);
+            this.label109.TabIndex = 171;
+            this.label109.Text = "Imagen Del Producto";
+            // 
+            // ptcImagenVehiculos
+            // 
+            this.ptcImagenVehiculos.BackColor = System.Drawing.Color.Transparent;
+            this.ptcImagenVehiculos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptcImagenVehiculos.Location = new System.Drawing.Point(26, 106);
+            this.ptcImagenVehiculos.Name = "ptcImagenVehiculos";
+            this.ptcImagenVehiculos.Size = new System.Drawing.Size(183, 184);
+            this.ptcImagenVehiculos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptcImagenVehiculos.TabIndex = 170;
+            this.ptcImagenVehiculos.TabStop = false;
+            // 
+            // dtpFechaRegisVehi
+            // 
+            this.dtpFechaRegisVehi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaRegisVehi.Location = new System.Drawing.Point(371, 31);
+            this.dtpFechaRegisVehi.Name = "dtpFechaRegisVehi";
+            this.dtpFechaRegisVehi.Size = new System.Drawing.Size(109, 20);
+            this.dtpFechaRegisVehi.TabIndex = 153;
+            // 
+            // label118
+            // 
+            this.label118.AutoSize = true;
+            this.label118.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label118.Location = new System.Drawing.Point(250, 32);
+            this.label118.Name = "label118";
+            this.label118.Size = new System.Drawing.Size(115, 15);
+            this.label118.TabIndex = 154;
+            this.label118.Text = "Fecha De Registro :";
+            // 
+            // dtpFechaAdVehi
+            // 
+            this.dtpFechaAdVehi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaAdVehi.Location = new System.Drawing.Point(139, 32);
+            this.dtpFechaAdVehi.Name = "dtpFechaAdVehi";
+            this.dtpFechaAdVehi.Size = new System.Drawing.Size(104, 20);
+            this.dtpFechaAdVehi.TabIndex = 151;
+            // 
+            // label119
+            // 
+            this.label119.AutoSize = true;
+            this.label119.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label119.Location = new System.Drawing.Point(23, 35);
+            this.label119.Name = "label119";
+            this.label119.Size = new System.Drawing.Size(110, 15);
+            this.label119.TabIndex = 152;
+            this.label119.Text = "Fecha Adquisicion:";
+            // 
             // tabPage8
             // 
             this.tabPage8.Controls.Add(this.groupBox21);
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(1132, 466);
+            this.tabPage8.Size = new System.Drawing.Size(1132, 484);
             this.tabPage8.TabIndex = 9;
             this.tabPage8.Text = "Utiles de Aseo";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -3969,7 +4748,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tabPage9.Location = new System.Drawing.Point(4, 22);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(1132, 466);
+            this.tabPage9.Size = new System.Drawing.Size(1132, 484);
             this.tabPage9.TabIndex = 10;
             this.tabPage9.Text = "Armamento";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -4318,785 +5097,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label205.TabIndex = 56;
             this.label205.Text = "Nombre:";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(6, 276);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(79, 15);
-            this.label9.TabIndex = 181;
-            this.label9.Text = "Stock Actual :";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(4, 250);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(87, 15);
-            this.label21.TabIndex = 180;
-            this.label21.Text = "Costo Unitario:";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(8, 276);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(79, 15);
-            this.label27.TabIndex = 183;
-            this.label27.Text = "Stock Actual :";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(6, 250);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(87, 15);
-            this.label36.TabIndex = 182;
-            this.label36.Text = "Costo Unitario:";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(8, 276);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(79, 15);
-            this.label45.TabIndex = 183;
-            this.label45.Text = "Stock Actual :";
-            // 
-            // label92
-            // 
-            this.label92.AutoSize = true;
-            this.label92.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label92.Location = new System.Drawing.Point(6, 250);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(87, 15);
-            this.label92.TabIndex = 182;
-            this.label92.Text = "Costo Unitario:";
-            // 
-            // label94
-            // 
-            this.label94.AutoSize = true;
-            this.label94.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label94.Location = new System.Drawing.Point(6, 276);
-            this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(79, 15);
-            this.label94.TabIndex = 185;
-            this.label94.Text = "Stock Actual :";
-            // 
-            // label97
-            // 
-            this.label97.AutoSize = true;
-            this.label97.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label97.Location = new System.Drawing.Point(4, 250);
-            this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(87, 15);
-            this.label97.TabIndex = 184;
-            this.label97.Text = "Costo Unitario:";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(10, 268);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(79, 15);
-            this.label43.TabIndex = 185;
-            this.label43.Text = "Stock Actual :";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(8, 242);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(87, 15);
-            this.label46.TabIndex = 184;
-            this.label46.Text = "Costo Unitario:";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.Location = new System.Drawing.Point(10, 268);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(79, 15);
-            this.label54.TabIndex = 185;
-            this.label54.Text = "Stock Actual :";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(8, 242);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(87, 15);
-            this.label55.TabIndex = 184;
-            this.label55.Text = "Costo Unitario:";
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(10, 268);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(79, 15);
-            this.label70.TabIndex = 185;
-            this.label70.Text = "Stock Actual :";
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label71.Location = new System.Drawing.Point(8, 242);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(87, 15);
-            this.label71.TabIndex = 184;
-            this.label71.Text = "Costo Unitario:";
-            // 
-            // groupBox20
-            // 
-            this.groupBox20.Controls.Add(this.txtObservacionVehi);
-            this.groupBox20.Controls.Add(this.btnCargarImagen9);
-            this.groupBox20.Controls.Add(this.label103);
-            this.groupBox20.Controls.Add(this.label109);
-            this.groupBox20.Controls.Add(this.ptcImagenVehiculos);
-            this.groupBox20.Controls.Add(this.dtpFechaRegisVehi);
-            this.groupBox20.Controls.Add(this.label118);
-            this.groupBox20.Controls.Add(this.dtpFechaAdVehi);
-            this.groupBox20.Controls.Add(this.label119);
-            this.groupBox20.Location = new System.Drawing.Point(384, 19);
-            this.groupBox20.Name = "groupBox20";
-            this.groupBox20.Size = new System.Drawing.Size(612, 393);
-            this.groupBox20.TabIndex = 180;
-            this.groupBox20.TabStop = false;
-            this.groupBox20.Text = "Datos Adicionales";
-            // 
-            // label119
-            // 
-            this.label119.AutoSize = true;
-            this.label119.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label119.Location = new System.Drawing.Point(23, 35);
-            this.label119.Name = "label119";
-            this.label119.Size = new System.Drawing.Size(110, 15);
-            this.label119.TabIndex = 152;
-            this.label119.Text = "Fecha Adquisicion:";
-            // 
-            // dtpFechaAdVehi
-            // 
-            this.dtpFechaAdVehi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaAdVehi.Location = new System.Drawing.Point(139, 32);
-            this.dtpFechaAdVehi.Name = "dtpFechaAdVehi";
-            this.dtpFechaAdVehi.Size = new System.Drawing.Size(104, 20);
-            this.dtpFechaAdVehi.TabIndex = 151;
-            // 
-            // label118
-            // 
-            this.label118.AutoSize = true;
-            this.label118.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label118.Location = new System.Drawing.Point(250, 32);
-            this.label118.Name = "label118";
-            this.label118.Size = new System.Drawing.Size(115, 15);
-            this.label118.TabIndex = 154;
-            this.label118.Text = "Fecha De Registro :";
-            // 
-            // dtpFechaRegisVehi
-            // 
-            this.dtpFechaRegisVehi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaRegisVehi.Location = new System.Drawing.Point(371, 31);
-            this.dtpFechaRegisVehi.Name = "dtpFechaRegisVehi";
-            this.dtpFechaRegisVehi.Size = new System.Drawing.Size(109, 20);
-            this.dtpFechaRegisVehi.TabIndex = 153;
-            // 
-            // ptcImagenVehiculos
-            // 
-            this.ptcImagenVehiculos.BackColor = System.Drawing.Color.Transparent;
-            this.ptcImagenVehiculos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ptcImagenVehiculos.Location = new System.Drawing.Point(26, 106);
-            this.ptcImagenVehiculos.Name = "ptcImagenVehiculos";
-            this.ptcImagenVehiculos.Size = new System.Drawing.Size(183, 184);
-            this.ptcImagenVehiculos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptcImagenVehiculos.TabIndex = 170;
-            this.ptcImagenVehiculos.TabStop = false;
-            // 
-            // label109
-            // 
-            this.label109.AutoSize = true;
-            this.label109.Location = new System.Drawing.Point(72, 299);
-            this.label109.Name = "label109";
-            this.label109.Size = new System.Drawing.Size(107, 13);
-            this.label109.TabIndex = 171;
-            this.label109.Text = "Imagen Del Producto";
-            // 
-            // label103
-            // 
-            this.label103.AutoSize = true;
-            this.label103.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label103.Location = new System.Drawing.Point(242, 106);
-            this.label103.Name = "label103";
-            this.label103.Size = new System.Drawing.Size(81, 15);
-            this.label103.TabIndex = 169;
-            this.label103.Text = "Observacion :";
-            // 
-            // btnCargarImagen9
-            // 
-            this.btnCargarImagen9.BackColor = System.Drawing.SystemColors.Control;
-            this.btnCargarImagen9.Image = ((System.Drawing.Image)(resources.GetObject("btnCargarImagen9.Image")));
-            this.btnCargarImagen9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCargarImagen9.Location = new System.Drawing.Point(26, 317);
-            this.btnCargarImagen9.Name = "btnCargarImagen9";
-            this.btnCargarImagen9.Size = new System.Drawing.Size(104, 35);
-            this.btnCargarImagen9.TabIndex = 172;
-            this.btnCargarImagen9.Text = "Subir Imagen";
-            this.btnCargarImagen9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCargarImagen9.UseVisualStyleBackColor = false;
-            // 
-            // txtObservacionVehi
-            // 
-            this.txtObservacionVehi.Location = new System.Drawing.Point(329, 104);
-            this.txtObservacionVehi.Multiline = true;
-            this.txtObservacionVehi.Name = "txtObservacionVehi";
-            this.txtObservacionVehi.Size = new System.Drawing.Size(266, 65);
-            this.txtObservacionVehi.TabIndex = 168;
-            // 
-            // groupBox19
-            // 
-            this.groupBox19.Controls.Add(this.label111);
-            this.groupBox19.Controls.Add(this.txtDescripcionMobi);
-            this.groupBox19.Controls.Add(this.label160);
-            this.groupBox19.Controls.Add(this.textBox5);
-            this.groupBox19.Controls.Add(this.textBox3);
-            this.groupBox19.Controls.Add(this.textBox2);
-            this.groupBox19.Controls.Add(this.comboBox2);
-            this.groupBox19.Controls.Add(this.textBox1);
-            this.groupBox19.Controls.Add(this.label159);
-            this.groupBox19.Controls.Add(this.label158);
-            this.groupBox19.Controls.Add(this.dateTimePicker1);
-            this.groupBox19.Controls.Add(this.label151);
-            this.groupBox19.Controls.Add(this.label147);
-            this.groupBox19.Controls.Add(this.label135);
-            this.groupBox19.Controls.Add(this.label132);
-            this.groupBox19.Controls.Add(this.comboBox1);
-            this.groupBox19.Controls.Add(this.cboEstadoProduc8);
-            this.groupBox19.Controls.Add(this.txtMarcaMobi);
-            this.groupBox19.Controls.Add(this.label153);
-            this.groupBox19.Controls.Add(this.label154);
-            this.groupBox19.Controls.Add(this.txtModeloMobi);
-            this.groupBox19.Controls.Add(this.cboTipoUnidad4);
-            this.groupBox19.Controls.Add(this.label155);
-            this.groupBox19.Controls.Add(this.label156);
-            this.groupBox19.Controls.Add(this.txtCodEquipMobi);
-            this.groupBox19.Controls.Add(this.label167);
-            this.groupBox19.Controls.Add(this.txtNombreMobi);
-            this.groupBox19.Controls.Add(this.label168);
-            this.groupBox19.Controls.Add(this.groupBox20);
-            this.groupBox19.Location = new System.Drawing.Point(12, 23);
-            this.groupBox19.Name = "groupBox19";
-            this.groupBox19.Size = new System.Drawing.Size(1136, 455);
-            this.groupBox19.TabIndex = 98;
-            this.groupBox19.TabStop = false;
-            this.groupBox19.Text = "Datos del Equipo";
-            // 
-            // label116
-            // 
-            this.label116.AutoSize = true;
-            this.label116.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label116.Location = new System.Drawing.Point(29, 263);
-            this.label116.Name = "label116";
-            this.label116.Size = new System.Drawing.Size(79, 15);
-            this.label116.TabIndex = 208;
-            this.label116.Text = "Stock Actual :";
-            // 
-            // label130
-            // 
-            this.label130.AutoSize = true;
-            this.label130.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label130.Location = new System.Drawing.Point(27, 237);
-            this.label130.Name = "label130";
-            this.label130.Size = new System.Drawing.Size(87, 15);
-            this.label130.TabIndex = 207;
-            this.label130.Text = "Costo Unitario:";
-            // 
-            // txtMarcaVehi
-            // 
-            this.txtMarcaVehi.Location = new System.Drawing.Point(149, 101);
-            this.txtMarcaVehi.Name = "txtMarcaVehi";
-            this.txtMarcaVehi.Size = new System.Drawing.Size(213, 20);
-            this.txtMarcaVehi.TabIndex = 206;
-            // 
-            // txtStockMinVehi
-            // 
-            this.txtStockMinVehi.Location = new System.Drawing.Point(150, 284);
-            this.txtStockMinVehi.Name = "txtStockMinVehi";
-            this.txtStockMinVehi.Size = new System.Drawing.Size(158, 20);
-            this.txtStockMinVehi.TabIndex = 205;
-            // 
-            // label172
-            // 
-            this.label172.AutoSize = true;
-            this.label172.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label172.Location = new System.Drawing.Point(26, 289);
-            this.label172.Name = "label172";
-            this.label172.Size = new System.Drawing.Size(85, 15);
-            this.label172.TabIndex = 204;
-            this.label172.Text = "Stock Minimo:";
-            // 
-            // label173
-            // 
-            this.label173.AutoSize = true;
-            this.label173.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label173.Location = new System.Drawing.Point(26, 159);
-            this.label173.Name = "label173";
-            this.label173.Size = new System.Drawing.Size(77, 15);
-            this.label173.TabIndex = 203;
-            this.label173.Text = "Tipo Unidad:";
-            // 
-            // txtCantidadVehi
-            // 
-            this.txtCantidadVehi.Location = new System.Drawing.Point(150, 179);
-            this.txtCantidadVehi.Name = "txtCantidadVehi";
-            this.txtCantidadVehi.Size = new System.Drawing.Size(158, 20);
-            this.txtCantidadVehi.TabIndex = 202;
-            // 
-            // label174
-            // 
-            this.label174.AutoSize = true;
-            this.label174.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label174.Location = new System.Drawing.Point(27, 184);
-            this.label174.Name = "label174";
-            this.label174.Size = new System.Drawing.Size(63, 15);
-            this.label174.TabIndex = 201;
-            this.label174.Text = "Categoria:";
-            // 
-            // txtModeloVehi
-            // 
-            this.txtModeloVehi.Location = new System.Drawing.Point(150, 127);
-            this.txtModeloVehi.Name = "txtModeloVehi";
-            this.txtModeloVehi.Size = new System.Drawing.Size(213, 20);
-            this.txtModeloVehi.TabIndex = 200;
-            // 
-            // cboTipoUnidad5
-            // 
-            this.cboTipoUnidad5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboTipoUnidad5.FormattingEnabled = true;
-            this.cboTipoUnidad5.Items.AddRange(new object[] {
-            "",
-            "Nuevo",
-            "Usado",
-            "Dañado",
-            "Baja"});
-            this.cboTipoUnidad5.Location = new System.Drawing.Point(150, 153);
-            this.cboTipoUnidad5.Name = "cboTipoUnidad5";
-            this.cboTipoUnidad5.Size = new System.Drawing.Size(158, 21);
-            this.cboTipoUnidad5.TabIndex = 199;
-            // 
-            // label175
-            // 
-            this.label175.AutoSize = true;
-            this.label175.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label175.Location = new System.Drawing.Point(25, 132);
-            this.label175.Name = "label175";
-            this.label175.Size = new System.Drawing.Size(52, 15);
-            this.label175.TabIndex = 198;
-            this.label175.Text = "Modelo:";
-            // 
-            // label176
-            // 
-            this.label176.AutoSize = true;
-            this.label176.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label176.Location = new System.Drawing.Point(26, 106);
-            this.label176.Name = "label176";
-            this.label176.Size = new System.Drawing.Size(45, 15);
-            this.label176.TabIndex = 197;
-            this.label176.Text = "Marca:";
-            // 
-            // txtPrecioUniVehi
-            // 
-            this.txtPrecioUniVehi.Location = new System.Drawing.Point(150, 232);
-            this.txtPrecioUniVehi.Name = "txtPrecioUniVehi";
-            this.txtPrecioUniVehi.Size = new System.Drawing.Size(158, 20);
-            this.txtPrecioUniVehi.TabIndex = 195;
-            // 
-            // label177
-            // 
-            this.label177.Location = new System.Drawing.Point(130, 237);
-            this.label177.Name = "label177";
-            this.label177.Size = new System.Drawing.Size(27, 13);
-            this.label177.TabIndex = 196;
-            this.label177.Text = "S/. ";
-            // 
-            // txtStockIniVehi
-            // 
-            this.txtStockIniVehi.Location = new System.Drawing.Point(150, 258);
-            this.txtStockIniVehi.Name = "txtStockIniVehi";
-            this.txtStockIniVehi.Size = new System.Drawing.Size(158, 20);
-            this.txtStockIniVehi.TabIndex = 194;
-            // 
-            // label180
-            // 
-            this.label180.AutoSize = true;
-            this.label180.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label180.Location = new System.Drawing.Point(26, 311);
-            this.label180.Name = "label180";
-            this.label180.Size = new System.Drawing.Size(78, 15);
-            this.label180.TabIndex = 193;
-            this.label180.Text = "Descripcion :";
-            // 
-            // txtDescripcionVehi
-            // 
-            this.txtDescripcionVehi.Location = new System.Drawing.Point(150, 310);
-            this.txtDescripcionVehi.Multiline = true;
-            this.txtDescripcionVehi.Name = "txtDescripcionVehi";
-            this.txtDescripcionVehi.Size = new System.Drawing.Size(213, 56);
-            this.txtDescripcionVehi.TabIndex = 192;
-            // 
-            // cboEstadoProduc9
-            // 
-            this.cboEstadoProduc9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboEstadoProduc9.FormattingEnabled = true;
-            this.cboEstadoProduc9.Location = new System.Drawing.Point(151, 205);
-            this.cboEstadoProduc9.Name = "cboEstadoProduc9";
-            this.cboEstadoProduc9.Size = new System.Drawing.Size(158, 21);
-            this.cboEstadoProduc9.TabIndex = 191;
-            // 
-            // label181
-            // 
-            this.label181.AutoSize = true;
-            this.label181.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label181.Location = new System.Drawing.Point(27, 211);
-            this.label181.Name = "label181";
-            this.label181.Size = new System.Drawing.Size(51, 15);
-            this.label181.TabIndex = 190;
-            this.label181.Text = "Estado :";
-            // 
-            // txtCodEquipVehi
-            // 
-            this.txtCodEquipVehi.Location = new System.Drawing.Point(149, 49);
-            this.txtCodEquipVehi.Name = "txtCodEquipVehi";
-            this.txtCodEquipVehi.Size = new System.Drawing.Size(213, 20);
-            this.txtCodEquipVehi.TabIndex = 189;
-            // 
-            // label187
-            // 
-            this.label187.AutoSize = true;
-            this.label187.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label187.Location = new System.Drawing.Point(25, 50);
-            this.label187.Name = "label187";
-            this.label187.Size = new System.Drawing.Size(74, 15);
-            this.label187.TabIndex = 188;
-            this.label187.Text = "Cod. Equipo";
-            // 
-            // txtNombreVehi
-            // 
-            this.txtNombreVehi.Location = new System.Drawing.Point(150, 75);
-            this.txtNombreVehi.Name = "txtNombreVehi";
-            this.txtNombreVehi.Size = new System.Drawing.Size(213, 20);
-            this.txtNombreVehi.TabIndex = 187;
-            // 
-            // label188
-            // 
-            this.label188.AutoSize = true;
-            this.label188.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label188.Location = new System.Drawing.Point(25, 80);
-            this.label188.Name = "label188";
-            this.label188.Size = new System.Drawing.Size(55, 15);
-            this.label188.TabIndex = 186;
-            this.label188.Text = "Nombre:";
-            // 
-            // label111
-            // 
-            this.label111.AutoSize = true;
-            this.label111.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label111.Location = new System.Drawing.Point(22, 353);
-            this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(48, 15);
-            this.label111.TabIndex = 255;
-            this.label111.Text = "Estado:";
-            this.label111.Click += new System.EventHandler(this.label111_Click);
-            // 
-            // txtDescripcionMobi
-            // 
-            this.txtDescripcionMobi.Location = new System.Drawing.Point(145, 374);
-            this.txtDescripcionMobi.Multiline = true;
-            this.txtDescripcionMobi.Name = "txtDescripcionMobi";
-            this.txtDescripcionMobi.Size = new System.Drawing.Size(213, 56);
-            this.txtDescripcionMobi.TabIndex = 253;
-            this.txtDescripcionMobi.TextChanged += new System.EventHandler(this.txtDescripcionMobi_TextChanged);
-            // 
-            // label160
-            // 
-            this.label160.AutoSize = true;
-            this.label160.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label160.Location = new System.Drawing.Point(22, 375);
-            this.label160.Name = "label160";
-            this.label160.Size = new System.Drawing.Size(78, 15);
-            this.label160.TabIndex = 254;
-            this.label160.Text = "Descripcion :";
-            this.label160.Click += new System.EventHandler(this.label160_Click);
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(145, 322);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(213, 20);
-            this.textBox5.TabIndex = 252;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(145, 294);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(213, 20);
-            this.textBox3.TabIndex = 251;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(145, 242);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(213, 20);
-            this.textBox2.TabIndex = 250;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "",
-            "Nuevo",
-            "Usado",
-            "Dañado",
-            "Baja"});
-            this.comboBox2.Location = new System.Drawing.Point(147, 215);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(158, 21);
-            this.comboBox2.TabIndex = 249;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(145, 189);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(213, 20);
-            this.textBox1.TabIndex = 248;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // label159
-            // 
-            this.label159.AutoSize = true;
-            this.label159.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label159.Location = new System.Drawing.Point(22, 318);
-            this.label159.Name = "label159";
-            this.label159.Size = new System.Drawing.Size(84, 30);
-            this.label159.TabIndex = 247;
-            this.label159.Text = "Nº Tarjeta\r\nde Propiedad:\r\n";
-            this.label159.Click += new System.EventHandler(this.label159_Click);
-            // 
-            // label158
-            // 
-            this.label158.AutoSize = true;
-            this.label158.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label158.Location = new System.Drawing.Point(22, 299);
-            this.label158.Name = "label158";
-            this.label158.Size = new System.Drawing.Size(57, 15);
-            this.label158.TabIndex = 246;
-            this.label158.Text = "Nº Placa:";
-            this.label158.Click += new System.EventHandler(this.label158_Click);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(145, 268);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(104, 20);
-            this.dateTimePicker1.TabIndex = 240;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
-            // 
-            // label151
-            // 
-            this.label151.AutoSize = true;
-            this.label151.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label151.Location = new System.Drawing.Point(22, 272);
-            this.label151.Name = "label151";
-            this.label151.Size = new System.Drawing.Size(98, 15);
-            this.label151.TabIndex = 242;
-            this.label151.Text = "Año Fabricacion:";
-            this.label151.Click += new System.EventHandler(this.label151_Click_1);
-            // 
-            // label147
-            // 
-            this.label147.AutoSize = true;
-            this.label147.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label147.Location = new System.Drawing.Point(22, 247);
-            this.label147.Name = "label147";
-            this.label147.Size = new System.Drawing.Size(58, 15);
-            this.label147.TabIndex = 245;
-            this.label147.Text = "Nº Serial:";
-            this.label147.Click += new System.EventHandler(this.label147_Click);
-            // 
-            // label135
-            // 
-            this.label135.AutoSize = true;
-            this.label135.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label135.Location = new System.Drawing.Point(21, 223);
-            this.label135.Name = "label135";
-            this.label135.Size = new System.Drawing.Size(79, 15);
-            this.label135.TabIndex = 244;
-            this.label135.Text = "Combustible:";
-            this.label135.Click += new System.EventHandler(this.label135_Click);
-            // 
-            // label132
-            // 
-            this.label132.AutoSize = true;
-            this.label132.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label132.Location = new System.Drawing.Point(21, 194);
-            this.label132.Name = "label132";
-            this.label132.Size = new System.Drawing.Size(39, 15);
-            this.label132.TabIndex = 243;
-            this.label132.Text = "Color:";
-            this.label132.Click += new System.EventHandler(this.label132_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "",
-            "Nuevo",
-            "Usado",
-            "Dañado",
-            "Baja"});
-            this.comboBox1.Location = new System.Drawing.Point(147, 161);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(158, 21);
-            this.comboBox1.TabIndex = 241;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // cboEstadoProduc8
-            // 
-            this.cboEstadoProduc8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboEstadoProduc8.FormattingEnabled = true;
-            this.cboEstadoProduc8.Location = new System.Drawing.Point(145, 347);
-            this.cboEstadoProduc8.Name = "cboEstadoProduc8";
-            this.cboEstadoProduc8.Size = new System.Drawing.Size(158, 21);
-            this.cboEstadoProduc8.TabIndex = 232;
-            this.cboEstadoProduc8.SelectedIndexChanged += new System.EventHandler(this.cboEstadoProduc8_SelectedIndexChanged);
-            // 
-            // txtMarcaMobi
-            // 
-            this.txtMarcaMobi.Location = new System.Drawing.Point(145, 82);
-            this.txtMarcaMobi.Name = "txtMarcaMobi";
-            this.txtMarcaMobi.Size = new System.Drawing.Size(213, 20);
-            this.txtMarcaMobi.TabIndex = 239;
-            this.txtMarcaMobi.TextChanged += new System.EventHandler(this.txtMarcaMobi_TextChanged);
-            // 
-            // label153
-            // 
-            this.label153.AutoSize = true;
-            this.label153.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label153.Location = new System.Drawing.Point(21, 140);
-            this.label153.Name = "label153";
-            this.label153.Size = new System.Drawing.Size(77, 15);
-            this.label153.TabIndex = 238;
-            this.label153.Text = "Tipo Unidad:";
-            this.label153.Click += new System.EventHandler(this.label153_Click);
-            // 
-            // label154
-            // 
-            this.label154.AutoSize = true;
-            this.label154.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label154.Location = new System.Drawing.Point(21, 167);
-            this.label154.Name = "label154";
-            this.label154.Size = new System.Drawing.Size(63, 15);
-            this.label154.TabIndex = 237;
-            this.label154.Text = "Categoria:";
-            this.label154.Click += new System.EventHandler(this.label154_Click);
-            // 
-            // txtModeloMobi
-            // 
-            this.txtModeloMobi.Location = new System.Drawing.Point(146, 108);
-            this.txtModeloMobi.Name = "txtModeloMobi";
-            this.txtModeloMobi.Size = new System.Drawing.Size(213, 20);
-            this.txtModeloMobi.TabIndex = 236;
-            this.txtModeloMobi.TextChanged += new System.EventHandler(this.txtModeloMobi_TextChanged);
-            // 
-            // cboTipoUnidad4
-            // 
-            this.cboTipoUnidad4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboTipoUnidad4.FormattingEnabled = true;
-            this.cboTipoUnidad4.Items.AddRange(new object[] {
-            "",
-            "Nuevo",
-            "Usado",
-            "Dañado",
-            "Baja"});
-            this.cboTipoUnidad4.Location = new System.Drawing.Point(146, 134);
-            this.cboTipoUnidad4.Name = "cboTipoUnidad4";
-            this.cboTipoUnidad4.Size = new System.Drawing.Size(158, 21);
-            this.cboTipoUnidad4.TabIndex = 235;
-            this.cboTipoUnidad4.SelectedIndexChanged += new System.EventHandler(this.cboTipoUnidad4_SelectedIndexChanged);
-            // 
-            // label155
-            // 
-            this.label155.AutoSize = true;
-            this.label155.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label155.Location = new System.Drawing.Point(21, 113);
-            this.label155.Name = "label155";
-            this.label155.Size = new System.Drawing.Size(52, 15);
-            this.label155.TabIndex = 234;
-            this.label155.Text = "Modelo:";
-            // 
-            // label156
-            // 
-            this.label156.AutoSize = true;
-            this.label156.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label156.Location = new System.Drawing.Point(22, 87);
-            this.label156.Name = "label156";
-            this.label156.Size = new System.Drawing.Size(45, 15);
-            this.label156.TabIndex = 233;
-            this.label156.Text = "Marca:";
-            // 
-            // txtCodEquipMobi
-            // 
-            this.txtCodEquipMobi.Location = new System.Drawing.Point(145, 30);
-            this.txtCodEquipMobi.Name = "txtCodEquipMobi";
-            this.txtCodEquipMobi.Size = new System.Drawing.Size(213, 20);
-            this.txtCodEquipMobi.TabIndex = 231;
-            this.txtCodEquipMobi.TextChanged += new System.EventHandler(this.txtCodEquipMobi_TextChanged);
-            // 
-            // label167
-            // 
-            this.label167.AutoSize = true;
-            this.label167.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label167.Location = new System.Drawing.Point(21, 31);
-            this.label167.Name = "label167";
-            this.label167.Size = new System.Drawing.Size(74, 15);
-            this.label167.TabIndex = 230;
-            this.label167.Text = "Cod. Equipo";
-            // 
-            // txtNombreMobi
-            // 
-            this.txtNombreMobi.Location = new System.Drawing.Point(146, 56);
-            this.txtNombreMobi.Name = "txtNombreMobi";
-            this.txtNombreMobi.Size = new System.Drawing.Size(213, 20);
-            this.txtNombreMobi.TabIndex = 229;
-            this.txtNombreMobi.TextChanged += new System.EventHandler(this.txtNombreMobi_TextChanged);
-            // 
-            // label168
-            // 
-            this.label168.AutoSize = true;
-            this.label168.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label168.Location = new System.Drawing.Point(21, 61);
-            this.label168.Name = "label168";
-            this.label168.Size = new System.Drawing.Size(55, 15);
-            this.label168.TabIndex = 228;
-            this.label168.Text = "Nombre:";
-            // 
             // frmNuevoProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -5169,6 +5169,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox18.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptcImagenMobiliario)).EndInit();
             this.tabPage6.ResumeLayout(false);
+            this.groupBox19.ResumeLayout(false);
+            this.groupBox19.PerformLayout();
+            this.groupBox20.ResumeLayout(false);
+            this.groupBox20.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcImagenVehiculos)).EndInit();
             this.tabPage8.ResumeLayout(false);
             this.groupBox21.ResumeLayout(false);
             this.groupBox21.PerformLayout();
@@ -5181,11 +5186,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox24.ResumeLayout(false);
             this.groupBox24.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptcImagenArmamento)).EndInit();
-            this.groupBox20.ResumeLayout(false);
-            this.groupBox20.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptcImagenVehiculos)).EndInit();
-            this.groupBox19.ResumeLayout(false);
-            this.groupBox19.PerformLayout();
             this.ResumeLayout(false);
 
         }

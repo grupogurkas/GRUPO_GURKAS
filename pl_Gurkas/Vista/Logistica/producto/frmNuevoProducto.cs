@@ -432,7 +432,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
 
         private void txtNombreMobi_TextChanged(object sender, EventArgs e)
         {
-
+           
         }
     }
 }
