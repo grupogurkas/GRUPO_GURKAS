@@ -139,12 +139,7 @@ namespace pl_Gurkas.ExportacionExcel.RRHH
                             hoja_trabajo.Cells[iFil + 1, iCol] = fila.Cells[columna.Name].Value;
                             formatRange = hoja_trabajo.get_Range("C" + (iFil + 1), "C" + (iFil + 1));
                             formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("F" + (iFil + 1), "F" + (iFil + 1));
-                            formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("G" + (iFil + 1), "G" + (iFil + 1));
-                            formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("T" + (iFil + 1), "T" + (iFil + 1));
-                            formatRange.NumberFormat = "@";
+
                         }
                         pBar.Value += 1;
                     }
@@ -218,12 +213,7 @@ namespace pl_Gurkas.ExportacionExcel.RRHH
                             hoja_trabajo.Cells[iFil + 1, iCol] = fila.Cells[columna.Name].Value;
                             formatRange = hoja_trabajo.get_Range("C" + (iFil + 1), "C" + (iFil + 1));
                             formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("F" + (iFil + 1), "F" + (iFil + 1));
-                            formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("G" + (iFil + 1), "G" + (iFil + 1));
-                            formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("T" + (iFil + 1), "T" + (iFil + 1));
-                            formatRange.NumberFormat = "@";
+
                         }
                         pBar.Value += 1;
                     }
@@ -296,12 +286,7 @@ namespace pl_Gurkas.ExportacionExcel.RRHH
                             hoja_trabajo.Cells[iFil + 1, iCol] = fila.Cells[columna.Name].Value;
                             formatRange = hoja_trabajo.get_Range("C" + (iFil + 1), "C" + (iFil + 1));
                             formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("F" + (iFil + 1), "F" + (iFil + 1));
-                            formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("G" + (iFil + 1), "G" + (iFil + 1));
-                            formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("T" + (iFil + 1), "T" + (iFil + 1));
-                            formatRange.NumberFormat = "@";
+                            
                         }
                         pBar.Value += 1;
                     }
@@ -374,11 +359,9 @@ namespace pl_Gurkas.ExportacionExcel.RRHH
                             hoja_trabajo.Cells[iFil + 1, iCol] = fila.Cells[columna.Name].Value;
                             formatRange = hoja_trabajo.get_Range("C" + (iFil + 1), "C" + (iFil + 1));
                             formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("F" + (iFil + 1), "F" + (iFil + 1));
+                            formatRange = hoja_trabajo.get_Range("N" + (iFil + 1), "N" + (iFil + 1));
                             formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("G" + (iFil + 1), "G" + (iFil + 1));
-                            formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("T" + (iFil + 1), "T" + (iFil + 1));
+                            formatRange = hoja_trabajo.get_Range("O" + (iFil + 1), "O" + (iFil + 1));
                             formatRange.NumberFormat = "@";
                         }
                         pBar.Value += 1;
@@ -450,13 +433,11 @@ namespace pl_Gurkas.ExportacionExcel.RRHH
                         {
                             iCol++;
                             hoja_trabajo.Cells[iFil + 1, iCol] = fila.Cells[columna.Name].Value;
-                            formatRange = hoja_trabajo.get_Range("C" + (iFil + 1), "C" + (iFil + 1));
+                            formatRange = hoja_trabajo.get_Range("D" + (iFil + 1), "D" + (iFil + 1));
                             formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("F" + (iFil + 1), "F" + (iFil + 1));
+                            formatRange = hoja_trabajo.get_Range("P" + (iFil + 1), "P" + (iFil + 1));
                             formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("G" + (iFil + 1), "G" + (iFil + 1));
-                            formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("T" + (iFil + 1), "T" + (iFil + 1));
+                            formatRange = hoja_trabajo.get_Range("Q" + (iFil + 1), "Q" + (iFil + 1));
                             formatRange.NumberFormat = "@";
                         }
                         pBar.Value += 1;
@@ -608,11 +589,7 @@ namespace pl_Gurkas.ExportacionExcel.RRHH
                             hoja_trabajo.Cells[iFil + 1, iCol] = fila.Cells[columna.Name].Value;
                             formatRange = hoja_trabajo.get_Range("C" + (iFil + 1), "C" + (iFil + 1));
                             formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("F" + (iFil + 1), "F" + (iFil + 1));
-                            formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("G" + (iFil + 1), "G" + (iFil + 1));
-                            formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("T" + (iFil + 1), "T" + (iFil + 1));
+                            formatRange = hoja_trabajo.get_Range("K" + (iFil + 1), "K" + (iFil + 1));
                             formatRange.NumberFormat = "@";
                         }
                         pBar.Value += 1;
@@ -686,12 +663,7 @@ namespace pl_Gurkas.ExportacionExcel.RRHH
                             hoja_trabajo.Cells[iFil + 1, iCol] = fila.Cells[columna.Name].Value;
                             formatRange = hoja_trabajo.get_Range("C" + (iFil + 1), "C" + (iFil + 1));
                             formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("F" + (iFil + 1), "F" + (iFil + 1));
-                            formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("G" + (iFil + 1), "G" + (iFil + 1));
-                            formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("T" + (iFil + 1), "T" + (iFil + 1));
-                            formatRange.NumberFormat = "@";
+                            
                         }
                         pBar.Value += 1;
                     }
@@ -765,12 +737,8 @@ namespace pl_Gurkas.ExportacionExcel.RRHH
                             hoja_trabajo.Cells[iFil + 1, iCol] = fila.Cells[columna.Name].Value;
                             formatRange = hoja_trabajo.get_Range("C" + (iFil + 1), "C" + (iFil + 1));
                             formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("F" + (iFil + 1), "F" + (iFil + 1));
-                            formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("G" + (iFil + 1), "G" + (iFil + 1));
-                            formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("T" + (iFil + 1), "T" + (iFil + 1));
-                            formatRange.NumberFormat = "@";
+                           /*formatRange = hoja_trabajo.get_Range("F" + (iFil + 1), "F" + (iFil + 1));
+                            formatRange.NumberFormat = "@";*/
                         }
                         pBar.Value += 1;
                     }
@@ -843,12 +811,7 @@ namespace pl_Gurkas.ExportacionExcel.RRHH
                             hoja_trabajo.Cells[iFil + 1, iCol] = fila.Cells[columna.Name].Value;
                             formatRange = hoja_trabajo.get_Range("C" + (iFil + 1), "C" + (iFil + 1));
                             formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("F" + (iFil + 1), "F" + (iFil + 1));
-                            formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("G" + (iFil + 1), "G" + (iFil + 1));
-                            formatRange.NumberFormat = "@";
-                            formatRange = hoja_trabajo.get_Range("T" + (iFil + 1), "T" + (iFil + 1));
-                            formatRange.NumberFormat = "@";
+ 
                         }
                         pBar.Value += 1;
                     }

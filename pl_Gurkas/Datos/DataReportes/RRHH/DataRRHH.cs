@@ -245,7 +245,7 @@ namespace pl_Gurkas.Datos.DataReportes.RRHH
             dt.Columns[3].ColumnName = "Fecha Nacimineto";
             dt.Columns[4].ColumnName = "Empresa";
             dt.Columns[5].ColumnName = "Fecha Inicio Laboral";
-            dt.Columns[6].ColumnName = "Puesto ";
+            dt.Columns[6].ColumnName = "Puesto";
             dt.Columns[7].ColumnName = "Sede";
             dt.Columns[8].ColumnName = "Turno";
             dt.Columns[9].ColumnName = "Estado Personal";
