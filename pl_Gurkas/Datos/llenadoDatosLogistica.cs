@@ -399,7 +399,7 @@ namespace pl_Gurkas.Datos
                 DataRow fila = dt.NewRow();
                 fila["NOMBRE_EQUIPO"] = "---Seleccione un Producto---";
                 dt.Rows.InsertAt(fila, 0);
-                cd.ValueMember = "Cod_empCOD_PRODUCTO_TECNOLOGICOleado";
+                cd.ValueMember = "COD_PRODUCTO_TECNOLOGICO";
                 cd.DisplayMember = "NOMBRE_EQUIPO";
                 cd.DataSource = dt;
                 cd.SelectedIndex = 0;

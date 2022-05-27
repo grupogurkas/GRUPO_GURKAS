@@ -620,6 +620,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnActualizarProductoTecnologico.Text = "Actualizar Producto Tecnologico";
             this.btnActualizarProductoTecnologico.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnActualizarProductoTecnologico.UseVisualStyleBackColor = true;
+            this.btnActualizarProductoTecnologico.Click += new System.EventHandler(this.btnActualizarProductoTecnologico_Click);
             // 
             // btnNuevo
             // 
@@ -834,7 +835,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox13.Controls.Add(this.label12);
             this.groupBox13.Location = new System.Drawing.Point(385, 75);
             this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(259, 381);
+            this.groupBox13.Size = new System.Drawing.Size(390, 230);
             this.groupBox13.TabIndex = 155;
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Datos Adicionales";
@@ -857,7 +858,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtObservacionEquipoTecnologia.Location = new System.Drawing.Point(21, 115);
             this.txtObservacionEquipoTecnologia.Multiline = true;
             this.txtObservacionEquipoTecnologia.Name = "txtObservacionEquipoTecnologia";
-            this.txtObservacionEquipoTecnologia.Size = new System.Drawing.Size(227, 246);
+            this.txtObservacionEquipoTecnologia.Size = new System.Drawing.Size(363, 106);
             this.txtObservacionEquipoTecnologia.TabIndex = 158;
             // 
             // btnCargarImagen

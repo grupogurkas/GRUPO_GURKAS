@@ -246,6 +246,7 @@
     <Compile Include="Datos\CodEmplado.cs" />
     <Compile Include="Datos\Conexiondbo.cs" />
     <Compile Include="Datos\ConexionMysql.cs" />
+    <Compile Include="Datos\CRUD\Logistica\Actualizar\LogisticaActualizar.cs" />
     <Compile Include="Datos\CRUD\Logistica\Insertar\LogisticaInsertar.cs" />
     <Compile Include="Datos\DataReportes\Logistica\DataLogistica.cs" />
     <Compile Include="Datos\DataReportes\RRHH\DataRRHH.cs" />
