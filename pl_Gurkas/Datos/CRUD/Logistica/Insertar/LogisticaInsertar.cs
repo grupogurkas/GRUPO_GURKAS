@@ -17,25 +17,25 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Insertar
             , string marca, string num_serie, string desp_equipo, int estado, decimal precio_unitario, int tipo_unidad,
             int stock_inicial, int stock_actual, int stock_minimo, DateTime f_adquision, DateTime f_registro, string observacion)
         {
-            SqlCommand cmd = new SqlCommand("sp_insertar_sueldo_unidad_puesto ", conexion.conexionBD());
+            SqlCommand cmd = new SqlCommand("sp_registrar_producto_tecnologico ", conexion.conexionBD());
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@cod_unidad", SqlDbType.VarChar).Value = cod_sistema;
-            cmd.Parameters.AddWithValue("@mv", SqlDbType.VarChar).Value = cod_producto;
-            cmd.Parameters.AddWithValue("@sueldo", SqlDbType.VarChar).Value = nombre_producto;
-            cmd.Parameters.AddWithValue("@idpuesto", SqlDbType.VarChar).Value = modelo;
-            cmd.Parameters.AddWithValue("@idpuesto", SqlDbType.VarChar).Value = marca;
-            cmd.Parameters.AddWithValue("@idpuesto", SqlDbType.VarChar).Value = num_serie;
-            cmd.Parameters.AddWithValue("@idpuesto", SqlDbType.VarChar).Value = desp_equipo;
-            cmd.Parameters.AddWithValue("@idpuesto", SqlDbType.Int).Value = estado;
-            cmd.Parameters.AddWithValue("@idpuesto", SqlDbType.Decimal).Value = precio_unitario;
-            cmd.Parameters.AddWithValue("@idpuesto", SqlDbType.Int).Value = tipo_unidad;
-            cmd.Parameters.AddWithValue("@idpuesto", SqlDbType.Int).Value = stock_inicial;
-            cmd.Parameters.AddWithValue("@idpuesto", SqlDbType.Int).Value = stock_actual;
-            cmd.Parameters.AddWithValue("@idpuesto", SqlDbType.Int).Value = stock_minimo;
-            cmd.Parameters.AddWithValue("@idpuesto", SqlDbType.VarChar).Value = f_adquision;
-            cmd.Parameters.AddWithValue("@idpuesto", SqlDbType.VarChar).Value = f_registro;
-            cmd.Parameters.AddWithValue("@idpuesto", SqlDbType.VarChar).Value = observacion;
-            cmd.Parameters.AddWithValue("@idpuesto", SqlDbType.VarChar).Value = nombre_usuario;
+            cmd.Parameters.AddWithValue("@COD_PRODUCTO_SISTEMA", SqlDbType.VarChar).Value = cod_sistema;
+            cmd.Parameters.AddWithValue("@COD_PRODUCTO_TECNOLOGICO", SqlDbType.VarChar).Value = cod_producto;
+            cmd.Parameters.AddWithValue("@NOMBRE_EQUIPO", SqlDbType.VarChar).Value = nombre_producto;
+            cmd.Parameters.AddWithValue("@MODELO", SqlDbType.VarChar).Value = modelo;
+            cmd.Parameters.AddWithValue("@MARCA", SqlDbType.VarChar).Value = marca;
+            cmd.Parameters.AddWithValue("@NUMERO_SERIE", SqlDbType.VarChar).Value = num_serie;
+            cmd.Parameters.AddWithValue("@DESCRP_EQUIPO", SqlDbType.VarChar).Value = desp_equipo;
+            cmd.Parameters.AddWithValue("@ID_ESTADO_MATERIAL", SqlDbType.Int).Value = estado;
+            cmd.Parameters.AddWithValue("@COSTO_UNITARIO_T", SqlDbType.Decimal).Value = precio_unitario;
+            cmd.Parameters.AddWithValue("@IDUNIDAD_PRODUCTO", SqlDbType.Int).Value = tipo_unidad;
+            cmd.Parameters.AddWithValue("@STOCK_INICIAL", SqlDbType.Int).Value = stock_inicial;
+            cmd.Parameters.AddWithValue("@STOCK_ACTUAL", SqlDbType.Int).Value = stock_actual;
+            cmd.Parameters.AddWithValue("@STOCK_MINIMO", SqlDbType.Int).Value = stock_minimo;
+            cmd.Parameters.AddWithValue("@FECHA_ADQUISICION", SqlDbType.VarChar).Value = f_adquision;
+            cmd.Parameters.AddWithValue("@FECHA_REGISTRO", SqlDbType.VarChar).Value = f_registro;
+            cmd.Parameters.AddWithValue("@OBSERVACION", SqlDbType.VarChar).Value = observacion;
+            cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
             cmd.ExecuteNonQuery();
         }
     }
