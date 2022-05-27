@@ -30,7 +30,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
 
         public void GenerarCodigo()
         {
-            string resultado = "";
+          /*  string resultado = "";
             SqlCommand comando = new SqlCommand("select count(idproduct) as 't' from t_producto ", conexion.conexionBD());
 
             SqlDataReader recorre = comando.ExecuteReader();
@@ -50,7 +50,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             if (numero > 99 && numero < 1000)
             {
                 txtCodSistema.Text = "SUM0" + (numero + 1);
-            }
+            }*/
         }
 
         private void ValidarCamposVacios()
