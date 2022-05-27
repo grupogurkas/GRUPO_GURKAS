@@ -309,11 +309,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
         }
         private void llenadoDeDatos()
         {
-            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad1);
-            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad2);
-            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad3);
+            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadUtiles);
+            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadEquipo);
+            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoEquipoPro);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad4);
-            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad5);
+            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadMobi);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad6);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad7);
             Llenadocbo.ObtenerTallaCalzadoProducto(cboTallaCalzado);
@@ -321,11 +321,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerEstadoProducto(cboEstadoCalzado);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoPantalon);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoAccesorio);
-            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc5);
-            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc6);
-            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc7);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoUtilez);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoEquipo);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoEquipoPro);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc8);
-            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc9);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoMobi);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc10);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc11);
             Llenadocbo.ObtenerTipoTelaProducto(cboTipoTelaPantalon);
