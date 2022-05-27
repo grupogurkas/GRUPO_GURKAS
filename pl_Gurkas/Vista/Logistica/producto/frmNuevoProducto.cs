@@ -30,7 +30,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
 
         public void GenerarCodigo()
         {
-            string resultado = "";
+         /*   string resultado = "";
             SqlCommand comando = new SqlCommand("select count(idproduct) as 't' from t_producto ", conexion.conexionBD());
 
             SqlDataReader recorre = comando.ExecuteReader();
@@ -50,7 +50,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             if (numero > 99 && numero < 1000)
             {
                 txtCodSistema.Text = "SUM0" + (numero + 1);
-            }
+            }*/
         }
 
         private void ValidarCamposVacios()
@@ -120,7 +120,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc9);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc10);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc11);
-            Llenadocbo.ObtenerTipoTelaProducto(cboTipoTela);
+          //  Llenadocbo.ObtenerTipoTelaProducto(cboTipoTela);
             Llenadocbo.ObtenerTipoTelaProducto(cboTipoTela1);
             Llenadocbo.ObtenerTallaPantalonProducto(cboTallaPantalon);
             txtCodSistema.Enabled = false;
@@ -433,6 +433,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void txtNombreMobi_TextChanged(object sender, EventArgs e)
         {
            
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

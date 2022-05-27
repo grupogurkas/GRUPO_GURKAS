@@ -544,6 +544,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1168, 608);
             this.panel1.TabIndex = 60;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // txtCodSistema
             // 
