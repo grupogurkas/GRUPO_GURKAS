@@ -24,13 +24,107 @@ namespace pl_Gurkas.Vista.Logistica.producto
         Datos.Actualizar actualizar = new Datos.Actualizar();
         Datos.Producto po = new Datos.Producto();
         Datos.CRUD.Logistica.Insertar.LogisticaInsertar logisticaInsertar = new Datos.CRUD.Logistica.Insertar.LogisticaInsertar();
+        Datos.CRUD.Logistica.Actualizar.LogisticaActualizar logisticaActuañizar = new Datos.CRUD.Logistica.Actualizar.LogisticaActualizar();
 
         public frmNuevoProducto()
         {
             InitializeComponent();
         }
+        public void registrarProductoTecnologico()
+        {
+            try
+            {
+                string cod_sistema = txtCodSistema.Text;
+                string cod_producto = txtCodEquipoTecnologia.Text;
+                string nombre_producto = txtNombreEquipoTecnologia.Text;
+                string modelo = txtModeloEquipoTecnologia.Text;
+                string marca = txtMarcaEquipoTecnologia.Text;
+                string num_serie = txtNumSerialEquipoTecnologia.Text;
+                string desp_equipo = txtDescripcionEquipoTecnologia.Text;
+                int estado = cboEstadoProducEquipoTecnologia.SelectedIndex;
+                decimal precio_unitario = Convert.ToDecimal(txtPrecioUnitarioEquipoTecnologia.Text);
+                int tipo_unidad = cboTipoUnidadEquipoTecnologia.SelectedIndex;
+                int stock_inicial = Convert.ToInt32(txtStockInicialEquipoTecnologia.Text);
+                int stock_actual = Convert.ToInt32(txtStockActualEquipoTecnologia.Text);
+                int stock_minimo = Convert.ToInt32(txtStockMinEquipoTecnologia.Text);
+                DateTime f_adquision = dtpFechaAdquisicionEquipoTecnologia.Value;
+                DateTime f_registro = dtpFechaRegistroEquipoTecnologia.Value;
+                string observacion = txtObservacionEquipoTecnologia.Text;
 
+                logisticaInsertar.RegistrarEquipoTecnologico(cod_sistema, cod_producto, nombre_producto, modelo,
+                    marca, num_serie, desp_equipo, estado, precio_unitario, tipo_unidad, stock_inicial,
+                    stock_actual, stock_minimo, f_adquision, f_registro, observacion);
+                MessageBox.Show("Datos registrado correptamente", "Correpto");
+                LimpiarDatosTecnologico();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede Regristrar el producto", "Error");
+            }
+        }
+        public void actualizarProductoTecnologico()
+        {
+            try
+            {
+                string cod_sistema = txtCodSistema.Text;
+                string cod_producto = txtCodEquipoTecnologia.Text;
+                string nombre_producto = txtNombreEquipoTecnologia.Text;
+                string modelo = txtModeloEquipoTecnologia.Text;
+                string marca = txtMarcaEquipoTecnologia.Text;
+                string num_serie = txtNumSerialEquipoTecnologia.Text;
+                string desp_equipo = txtDescripcionEquipoTecnologia.Text;
+                int estado = cboEstadoProducEquipoTecnologia.SelectedIndex;
+                decimal precio_unitario = Convert.ToDecimal(txtPrecioUnitarioEquipoTecnologia.Text);
+                int tipo_unidad = cboTipoUnidadEquipoTecnologia.SelectedIndex;
+                int stock_inicial = Convert.ToInt32(txtStockInicialEquipoTecnologia.Text);
+                int stock_actual = Convert.ToInt32(txtStockActualEquipoTecnologia.Text);
+                int stock_minimo = Convert.ToInt32(txtStockMinEquipoTecnologia.Text);
+                DateTime f_adquision = dtpFechaAdquisicionEquipoTecnologia.Value;
+                DateTime f_registro = dtpFechaRegistroEquipoTecnologia.Value;
+                string observacion = txtObservacionEquipoTecnologia.Text;
 
+                logisticaActuañizar.ActualizarEquipoTecnologico(cod_sistema, cod_producto, nombre_producto, modelo,
+                    marca, num_serie, desp_equipo, estado, precio_unitario, tipo_unidad, stock_inicial,
+                    stock_actual, stock_minimo, f_adquision, f_registro, observacion);
+                MessageBox.Show("Datos Actualizado correptamente", "Correpto");
+                LimpiarDatosTecnologico();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede Actualizar el producto", "Error");
+            }
+        }
+        public void BuscarProductoTecnologico(string cod_producto_tecnologia)
+        {
+            try
+            {
+                SqlCommand comando = new SqlCommand("SELECT * FROM v_producto_tecnologico WHERE COD_PRODUCTO_TECNOLOGICO = '" + cod_producto_tecnologia + "'", conexion.conexionBD());
+                SqlDataReader recorre = comando.ExecuteReader();
+                while (recorre.Read())
+                {
+                    txtCodSistema.Text = recorre["COD_PRODUCTO_SISTEMA"].ToString();
+                    txtCodEquipoTecnologia.Text = recorre["COD_PRODUCTO_TECNOLOGICO"].ToString();
+                    txtNombreEquipoTecnologia.Text = recorre["NOMBRE_EQUIPO"].ToString();
+                    txtModeloEquipoTecnologia.Text = recorre["MODELO"].ToString();
+                    txtMarcaEquipoTecnologia.Text = recorre["MARCA"].ToString();
+                    txtNumSerialEquipoTecnologia.Text = recorre["NUMERO_SERIE"].ToString();
+                    txtDescripcionEquipoTecnologia.Text = recorre["DESCRP_EQUIPO"].ToString();
+                    cboEstadoProducEquipoTecnologia.SelectedIndex = Convert.ToInt32(recorre["ID_ESTADO_MATERIAL"].ToString());
+                    txtPrecioUnitarioEquipoTecnologia.Text = (recorre["COSTO_UNITARIO_T"].ToString());
+                    cboTipoUnidadEquipoTecnologia.SelectedIndex = Convert.ToInt32(recorre["IDUNIDAD_PRODUCTO"].ToString());
+                    txtStockInicialEquipoTecnologia.Text = (recorre["STOCK_INICIAL"].ToString());
+                    txtStockActualEquipoTecnologia.Text = (recorre["STOCK_ACTUAL"].ToString());
+                    txtStockMinEquipoTecnologia.Text = (recorre["STOCK_MINIMO"].ToString());
+                    dtpFechaAdquisicionEquipoTecnologia.Text = (recorre["FECHA_ADQUISICION"].ToString());
+                    dtpFechaRegistroEquipoTecnologia.Text = (recorre["FECHA_REGISTRO"].ToString());
+                    txtObservacionEquipoTecnologia.Text = (recorre["OBSERVACION"].ToString());
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
+            }
+        }
         public void GenerarCodigoPrincipal()
         {
             string resultado = "";
@@ -54,6 +148,15 @@ namespace pl_Gurkas.Vista.Logistica.producto
             {
                 txtCodSistema.Text = "SUM0" + (numero + 1);
             }
+        }
+        public void LimpiarDatosTecnologico()
+        {
+            LimpiarDatos.LimpiarGroupBox(groupBox2);
+            txtNombreEquipoTecnologia.Focus();
+            LimpiarDatos.LimpiarGroupBox(groupBox13);
+            GenerarCodigoTecnologico();
+            GenerarCodigoPrincipal();
+            Llenadocbo.ObtenerProductoTecnologico(cboNombreProductoTecnologico);
         }
         public void GenerarCodigoTecnologico()
         {
@@ -81,7 +184,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
         }
         private void llenadoDeDatos()
         {
-            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadEquipoTecnologia);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad1);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad2);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad3);
@@ -89,7 +191,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad5);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad6);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad7);
-            Llenadocbo.ObtenerEstadoProducto(cboEstadoProducEquipoTecnologia);
             Llenadocbo.ObtenerTallaPrendaProducto(cboTallaPrenda);
             Llenadocbo.ObtenerTallaCalzadoProducto(cboTallaCalzado);
             Llenadocbo.ObtenerTipoCalzadoProducto(cboTipoCalzado);
@@ -106,6 +207,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc11);
             Llenadocbo.ObtenerTipoTelaProducto(cboTipoTela1);
             Llenadocbo.ObtenerTallaPantalonProducto(cboTallaPantalon);
+        }
+        private void llenadoProductoTecnologico()
+        {
+            Llenadocbo.ObtenerProductoTecnologico(cboNombreProductoTecnologico);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoProducEquipoTecnologia);
+            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadEquipoTecnologia);
         }
         private void ValidarCamposVacios()
         {
@@ -155,6 +262,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             txtCodSistema.Enabled = false;
             llenadoDeDatos();
             GenerarCodigoPrincipal();
+            llenadoProductoTecnologico();
             GenerarCodigoTecnologico();
         }
         private void tabPage1_Click_1(object sender, EventArgs e)
@@ -227,12 +335,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             var resutlado = MessageBox.Show(mensaje, titulo, MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (resutlado == DialogResult.Yes)
             {
-                //  DateTime fecha = DateTime.Now;
-                //  obtenerip_nombre();
-                // string username = Code.nivelUser._nombre;
-                // string detalle = "Cerrar Registro de Personal";
-                // string cod_buscado = "Cerro el registro de Personal";
-                // registrar.RegistrarRRHH(fecha, nombrepc, username, ipuser, cod_buscado, detalle);
                 this.Close();
             }
         }
@@ -255,34 +357,23 @@ namespace pl_Gurkas.Vista.Logistica.producto
 
         private void btnAgregarProductoTecnologico_Click(object sender, EventArgs e)
         {
-            try
-            {
-                string cod_sistema = txtCodSistema.Text;
-                string cod_producto = txtCodEquipoTecnologia.Text;
-                string nombre_producto = txtNombreEquipoTecnologia.Text;
-                string modelo = txtModeloEquipoTecnologia.Text;
-                string marca = txtMarcaEquipoTecnologia.Text;
-                string num_serie = txtNumSerialEquipoTecnologia.Text;
-                string desp_equipo = txtDescripcionEquipoTecnologia.Text;
-                int estado = cboEstadoProducEquipoTecnologia.SelectedIndex;
-                decimal precio_unitario = Convert.ToDecimal(txtPrecioUnitarioEquipoTecnologia.Text);
-                int tipo_unidad = cboTipoUnidadEquipoTecnologia.SelectedIndex;
-                int stock_inicial = Convert.ToInt32(txtStockInicialEquipoTecnologia.Text);
-                int stock_actual = Convert.ToInt32(txtStockActualEquipoTecnologia.Text);
-                int stock_minimo = Convert.ToInt32(txtStockMinEquipoTecnologia.Text);
-                DateTime f_adquision = dtpFechaAdquisicionEquipoTecnologia.Value;
-                DateTime f_registro = dtpFechaRegistroEquipoTecnologia.Value;
-                string observacion = txtObservacionEquipoTecnologia.Text;
+            registrarProductoTecnologico();
+        }
 
-                logisticaInsertar.RegistrarEquipoTecnologico( cod_sistema,  cod_producto,  nombre_producto,  modelo, 
-                    marca,  num_serie,  desp_equipo,  estado,  precio_unitario,  tipo_unidad,stock_inicial,  
-                    stock_actual,  stock_minimo,  f_adquision,  f_registro,  observacion);
-                MessageBox.Show("Datos registrado correptamente", "Correpto");
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("No se puede Regristrar el producto", "Error");
-            }
+        private void btnNuevoProductoTecnologico_Click(object sender, EventArgs e)
+        {
+            LimpiarDatosTecnologico();
+        }
+
+        private void btnBuscarProductoTecnologia_Click(object sender, EventArgs e)
+        {
+            string cod_producto_tecnologia = cboNombreProductoTecnologico.SelectedValue.ToString();
+            BuscarProductoTecnologico( cod_producto_tecnologia);
+        }
+
+        private void btnActualizarProductoTecnologico_Click(object sender, EventArgs e)
+        {
+            actualizarProductoTecnologico();
         }
     }
 }
