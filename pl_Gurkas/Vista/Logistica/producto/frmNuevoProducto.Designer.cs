@@ -471,6 +471,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label204 = new System.Windows.Forms.Label();
             this.txtNombreArma = new System.Windows.Forms.TextBox();
             this.label205 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label81 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.btcPanel.SuspendLayout();
@@ -609,7 +612,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnActualizarProductoTecnologico.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizarProductoTecnologico.Image = global::pl_Gurkas.Properties.Resources.empleado_update_32;
             this.btnActualizarProductoTecnologico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnActualizarProductoTecnologico.Location = new System.Drawing.Point(645, 84);
+            this.btnActualizarProductoTecnologico.Location = new System.Drawing.Point(781, 8);
             this.btnActualizarProductoTecnologico.Name = "btnActualizarProductoTecnologico";
             this.btnActualizarProductoTecnologico.Size = new System.Drawing.Size(176, 46);
             this.btnActualizarProductoTecnologico.TabIndex = 83;
@@ -636,7 +639,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnAgregarProductoTecnologico.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarProductoTecnologico.Image = global::pl_Gurkas.Properties.Resources.add_trabajador_32;
             this.btnAgregarProductoTecnologico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarProductoTecnologico.Location = new System.Drawing.Point(645, 32);
+            this.btnAgregarProductoTecnologico.Location = new System.Drawing.Point(599, 8);
             this.btnAgregarProductoTecnologico.Name = "btnAgregarProductoTecnologico";
             this.btnAgregarProductoTecnologico.Size = new System.Drawing.Size(176, 46);
             this.btnAgregarProductoTecnologico.TabIndex = 83;
@@ -673,11 +676,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btcPanel.Location = new System.Drawing.Point(19, 96);
             this.btcPanel.Name = "btcPanel";
             this.btcPanel.SelectedIndex = 0;
-            this.btcPanel.Size = new System.Drawing.Size(1311, 448);
+            this.btcPanel.Size = new System.Drawing.Size(1311, 505);
             this.btcPanel.TabIndex = 62;
             // 
             // tbpTecnologico
             // 
+            this.tbpTecnologico.Controls.Add(this.button1);
+            this.tbpTecnologico.Controls.Add(this.comboBox3);
+            this.tbpTecnologico.Controls.Add(this.label81);
             this.tbpTecnologico.Controls.Add(this.btnSave);
             this.tbpTecnologico.Controls.Add(this.groupBox2);
             this.tbpTecnologico.Controls.Add(this.btnCargarImagen);
@@ -689,7 +695,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tbpTecnologico.Location = new System.Drawing.Point(4, 22);
             this.tbpTecnologico.Name = "tbpTecnologico";
             this.tbpTecnologico.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpTecnologico.Size = new System.Drawing.Size(1303, 422);
+            this.tbpTecnologico.Size = new System.Drawing.Size(1303, 479);
             this.tbpTecnologico.TabIndex = 0;
             this.tbpTecnologico.Text = "Tecnologico";
             this.tbpTecnologico.UseVisualStyleBackColor = true;
@@ -722,7 +728,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox2.Controls.Add(this.txtModeloEquipoTecnologia);
             this.groupBox2.Controls.Add(this.txtNombreEquipoTecnologia);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(11, 24);
+            this.groupBox2.Location = new System.Drawing.Point(16, 75);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(363, 384);
             this.groupBox2.TabIndex = 55;
@@ -823,7 +829,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox13.Controls.Add(this.label10);
             this.groupBox13.Controls.Add(this.dtpFechaAdquisicionEquipoTecnologia);
             this.groupBox13.Controls.Add(this.label12);
-            this.groupBox13.Location = new System.Drawing.Point(380, 27);
+            this.groupBox13.Location = new System.Drawing.Point(385, 75);
             this.groupBox13.Name = "groupBox13";
             this.groupBox13.Size = new System.Drawing.Size(259, 381);
             this.groupBox13.TabIndex = 155;
@@ -5043,6 +5049,39 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label205.TabIndex = 56;
             this.label205.Text = "Nombre:";
             // 
+            // comboBox3
+            // 
+            this.comboBox3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(133, 17);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(335, 21);
+            this.comboBox3.TabIndex = 91;
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label81.Location = new System.Drawing.Point(24, 18);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(103, 15);
+            this.label81.TabIndex = 90;
+            this.label81.Text = "Buscar Producto :";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(474, 6);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(119, 51);
+            this.button1.TabIndex = 90;
+            this.button1.Text = "Buscar";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // frmNuevoProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -5579,5 +5618,8 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.Label label167;
         private System.Windows.Forms.TextBox txtNombreMobi;
         private System.Windows.Forms.Label label168;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label81;
     }
 }
