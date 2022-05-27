@@ -643,6 +643,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnAgregarProductoTecnologico.Text = "Agregar Producto Tecnologico";
             this.btnAgregarProductoTecnologico.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregarProductoTecnologico.UseVisualStyleBackColor = true;
+            this.btnAgregarProductoTecnologico.Click += new System.EventHandler(this.btnAgregarProductoTecnologico_Click);
             // 
             // btnBuscar
             // 
