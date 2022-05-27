@@ -29,6 +29,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteCentroControl
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultaDeCantidadDeAsistenciaDeCadaSede));
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.btnExcel = new System.Windows.Forms.Button();
             this.dgvConsultarAsistenciaSede = new System.Windows.Forms.DataGridView();
@@ -187,6 +188,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteCentroControl
             this.Controls.Add(this.btnExcel);
             this.Controls.Add(this.dgvConsultarAsistenciaSede);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmConsultaDeCantidadDeAsistenciaDeCadaSede";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmConsultaDeCantidadDeAsistenciaDeCadaSede";

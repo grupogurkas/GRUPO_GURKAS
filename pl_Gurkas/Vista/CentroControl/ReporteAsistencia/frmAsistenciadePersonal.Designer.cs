@@ -29,6 +29,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAsistenciadePersonal));
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.dgvAsistenciaPersonal = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -90,6 +91,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
             // cboTurno
             // 
             this.cboTurno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboTurno.Image = global::pl_Gurkas.Properties.Resources.Excel_32;
             this.cboTurno.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cboTurno.Location = new System.Drawing.Point(800, 19);
             this.cboTurno.Name = "cboTurno";
@@ -165,6 +167,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.dgvAsistenciaPersonal);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAsistenciadePersonal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAsistenciadePersonal";

@@ -29,6 +29,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPersonalSinMarcacion));
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.cboTurno = new System.Windows.Forms.Button();
             this.dgvPersonalSinMarcacion = new System.Windows.Forms.DataGridView();
@@ -52,6 +53,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
             // cboTurno
             // 
             this.cboTurno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboTurno.Image = global::pl_Gurkas.Properties.Resources.Excel_32;
             this.cboTurno.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cboTurno.Location = new System.Drawing.Point(509, 30);
             this.cboTurno.Name = "cboTurno";
@@ -138,11 +140,14 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 471);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.cboTurno);
             this.Controls.Add(this.dgvPersonalSinMarcacion);
             this.Controls.Add(this.groupBox1);
+            this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPersonalSinMarcacion";
             this.Text = "frmPersonalSinMarcacion";
             this.Load += new System.EventHandler(this.frmPersonalSinMarcacion_Load);

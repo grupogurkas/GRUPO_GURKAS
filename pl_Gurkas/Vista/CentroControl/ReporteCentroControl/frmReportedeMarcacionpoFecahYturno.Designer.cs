@@ -29,10 +29,12 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteCentroControl
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReportedeMarcacionpoFecahYturno));
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.btnExcel = new System.Windows.Forms.Button();
             this.dgvMarcacionFechaTurno = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnConsultar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,7 +43,6 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteCentroControl
             this.dtpFechaInicio = new System.Windows.Forms.DateTimePicker();
             this.cboTipoMarcacion = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnConsultar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMarcacionFechaTurno)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -94,6 +95,20 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteCentroControl
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Consulta de Marcacion por Fecha y Turno";
+            // 
+            // btnConsultar
+            // 
+            this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultar.Image = global::pl_Gurkas.Properties.Resources.buscar_afp_32;
+            this.btnConsultar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsultar.Location = new System.Drawing.Point(448, 24);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(109, 46);
+            this.btnConsultar.TabIndex = 15;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // label4
             // 
@@ -165,20 +180,6 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteCentroControl
             this.label1.TabIndex = 0;
             this.label1.Text = "Tipo de Marcacion";
             // 
-            // btnConsultar
-            // 
-            this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultar.Image = global::pl_Gurkas.Properties.Resources.buscar_afp_32;
-            this.btnConsultar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConsultar.Location = new System.Drawing.Point(448, 24);
-            this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(109, 46);
-            this.btnConsultar.TabIndex = 15;
-            this.btnConsultar.Text = "Consultar";
-            this.btnConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnConsultar.UseVisualStyleBackColor = true;
-            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
-            // 
             // frmReportedeMarcacionpoFecahYturno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -187,6 +188,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteCentroControl
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.dgvMarcacionFechaTurno);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmReportedeMarcacionpoFecahYturno";
             this.Text = "frmReportedeMarcacionpoFecahYturno";
             this.Load += new System.EventHandler(this.frmReportedeMarcacionpoFecahYturno_Load);

@@ -29,6 +29,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPersonalsistenciaporDia));
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.btnExcel = new System.Windows.Forms.Button();
             this.dgvRegistrarPorSede = new System.Windows.Forms.DataGridView();
@@ -52,6 +53,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
             // btnExcel
             // 
             this.btnExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcel.Image = global::pl_Gurkas.Properties.Resources.Excel_32;
             this.btnExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExcel.Location = new System.Drawing.Point(604, 12);
             this.btnExcel.Name = "btnExcel";
@@ -145,6 +147,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.dgvRegistrarPorSede);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPersonalsistenciaporDia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ".:: Personal Asistencia por Dia ::..";

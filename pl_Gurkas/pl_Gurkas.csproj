@@ -1455,9 +1455,6 @@
     <None Include="Resources\consultarPersonal_32.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\contabilidad_32.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\date_32.png" />
   </ItemGroup>
   <ItemGroup>
@@ -1577,6 +1574,35 @@
   <ItemGroup>
     <Content Include="png %281%29.ico" />
     <Content Include="png iconb.ico" />
+    <None Include="Resources\version_32.png" />
+    <None Include="Resources\conexion_32.png" />
+    <None Include="Resources\cerrarsesion_32.png" />
+    <None Include="Resources\Unidad_32.png" />
+    <None Include="Resources\sede_32.png" />
+    <None Include="Resources\reclamo_32.png" />
+    <None Include="Resources\reportepersonal_32.png" />
+    <None Include="Resources\migrar_32.png" />
+    <None Include="Resources\bloqueo_32.png" />
+    <None Include="Resources\asistenciapersonal1_32.png" />
+    <None Include="Resources\postulante_32.png" />
+    <None Include="Resources\mover_personal_32.png" />
+    <None Include="Resources\estado_32.png" />
+    <None Include="Resources\cargamasiva_32.png" />
+    <None Include="Resources\armamento_32.png" />
+    <None Include="Resources\activo_32.png" />
+    <None Include="Resources\sucamec_32.png" />
+    <None Include="Resources\reporte_32.png" />
+    <None Include="Resources\personalrrhh_32.png" />
+    <None Include="Resources\RecursosHumanos_32.png" />
+    <None Include="Resources\planillas_32.png" />
+    <None Include="Resources\operaciones_32.png" />
+    <None Include="Resources\logistica_32.png" />
+    <None Include="Resources\licitaciones_32.png" />
+    <None Include="Resources\Folders_32.png" />
+    <None Include="Resources\contabilidad_32.png" />
+    <None Include="Resources\comercial_32.png" />
+    <None Include="Resources\Centro_Control_32.png" />
+    <None Include="Resources\administrador_32.png" />
     <None Include="Resources\print_32.png" />
     <None Include="Resources\descarga_32.png" />
     <None Include="Resources\imagen_codigo %281%29.jpg" />

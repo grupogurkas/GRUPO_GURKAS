@@ -29,6 +29,7 @@ namespace pl_Gurkas.Vista.CentroControl
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRenganchePersonal));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cboempleadoActivo = new System.Windows.Forms.ComboBox();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -87,6 +88,7 @@ namespace pl_Gurkas.Vista.CentroControl
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(548, 98);
             this.Controls.Add(this.groupBox2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRenganchePersonal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Renganche de Personal";

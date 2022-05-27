@@ -29,6 +29,7 @@ namespace pl_Gurkas.Vista.Administrador
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmContrasena));
             this.btnGuardadAsistencia = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtPass = new System.Windows.Forms.TextBox();
@@ -110,6 +111,7 @@ namespace pl_Gurkas.Vista.Administrador
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnGuardadAsistencia);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmContrasena";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "..::  Administrador ::..";

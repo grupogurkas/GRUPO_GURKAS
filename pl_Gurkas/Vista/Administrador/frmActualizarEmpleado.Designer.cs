@@ -29,6 +29,7 @@ namespace pl_Gurkas.Vista.Administrador
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmActualizarEmpleado));
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txtobservaciones = new System.Windows.Forms.TextBox();
@@ -41,6 +42,7 @@ namespace pl_Gurkas.Vista.Administrador
             this.cboArea = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cboempleadoActivo = new System.Windows.Forms.ComboBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnBuscar = new System.Windows.Forms.Button();
@@ -51,7 +53,6 @@ namespace pl_Gurkas.Vista.Administrador
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombreEmp = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.cboempleadoActivo = new System.Windows.Forms.ComboBox();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -200,6 +201,16 @@ namespace pl_Gurkas.Vista.Administrador
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de Usuario";
             // 
+            // cboempleadoActivo
+            // 
+            this.cboempleadoActivo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboempleadoActivo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboempleadoActivo.FormattingEnabled = true;
+            this.cboempleadoActivo.Location = new System.Drawing.Point(102, 33);
+            this.cboempleadoActivo.Name = "cboempleadoActivo";
+            this.cboempleadoActivo.Size = new System.Drawing.Size(235, 21);
+            this.cboempleadoActivo.TabIndex = 61;
+            // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
@@ -298,16 +309,6 @@ namespace pl_Gurkas.Vista.Administrador
             this.label2.TabIndex = 2;
             this.label2.Text = "Cod Empleado";
             // 
-            // cboempleadoActivo
-            // 
-            this.cboempleadoActivo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cboempleadoActivo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cboempleadoActivo.FormattingEnabled = true;
-            this.cboempleadoActivo.Location = new System.Drawing.Point(102, 33);
-            this.cboempleadoActivo.Name = "cboempleadoActivo";
-            this.cboempleadoActivo.Size = new System.Drawing.Size(235, 21);
-            this.cboempleadoActivo.TabIndex = 61;
-            // 
             // frmActualizarEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -319,6 +320,7 @@ namespace pl_Gurkas.Vista.Administrador
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmActualizarEmpleado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Editar datos Usuario";

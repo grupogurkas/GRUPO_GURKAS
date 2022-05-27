@@ -835,11 +835,6 @@ namespace pl_Gurkas.Vista.Principal
 
         }
 
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
         private void archivosToolStripMenuItem_Click(object sender, EventArgs e)
         {
 

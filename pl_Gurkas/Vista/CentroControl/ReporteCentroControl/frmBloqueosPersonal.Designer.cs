@@ -29,6 +29,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteCentroControl
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBloqueosPersonal));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.btnExcel = new System.Windows.Forms.Button();
@@ -143,6 +144,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteCentroControl
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.dgvMarcacionFechaTurno);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmBloqueosPersonal";
             this.Text = "frmBloqueosPersonal";
             this.Load += new System.EventHandler(this.frmBloqueosPersonal_Load);

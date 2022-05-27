@@ -267,7 +267,6 @@ namespace pl_Gurkas.Vista.Principal
             this.menuStrip1.Size = new System.Drawing.Size(1369, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // archivosToolStripMenuItem
             // 
@@ -276,8 +275,9 @@ namespace pl_Gurkas.Vista.Principal
             this.vercionToolStripMenuItem,
             this.cerrarSesionToolStripMenuItem,
             this.salirToolStripMenuItem});
+            this.archivosToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.Folders_32;
             this.archivosToolStripMenuItem.Name = "archivosToolStripMenuItem";
-            this.archivosToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.archivosToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
             this.archivosToolStripMenuItem.Text = "Archivos";
             this.archivosToolStripMenuItem.Click += new System.EventHandler(this.archivosToolStripMenuItem_Click);
             // 
@@ -286,6 +286,7 @@ namespace pl_Gurkas.Vista.Principal
             this.comprobarConexionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.conexionAhInternetToolStripMenuItem,
             this.conexionAlServidorToolStripMenuItem});
+            this.comprobarConexionToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.conexion_32;
             this.comprobarConexionToolStripMenuItem.Name = "comprobarConexionToolStripMenuItem";
             this.comprobarConexionToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.comprobarConexionToolStripMenuItem.Text = "Comprobar Conexion";
@@ -293,26 +294,28 @@ namespace pl_Gurkas.Vista.Principal
             // conexionAhInternetToolStripMenuItem
             // 
             this.conexionAhInternetToolStripMenuItem.Name = "conexionAhInternetToolStripMenuItem";
-            this.conexionAhInternetToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
-            this.conexionAhInternetToolStripMenuItem.Text = "Conexion ah Internet";
+            this.conexionAhInternetToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.conexionAhInternetToolStripMenuItem.Text = "Conexion a Internet";
             this.conexionAhInternetToolStripMenuItem.Click += new System.EventHandler(this.conexionAhInternetToolStripMenuItem_Click);
             // 
             // conexionAlServidorToolStripMenuItem
             // 
             this.conexionAlServidorToolStripMenuItem.Name = "conexionAlServidorToolStripMenuItem";
-            this.conexionAlServidorToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.conexionAlServidorToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.conexionAlServidorToolStripMenuItem.Text = "Conexion al Servidor";
             this.conexionAlServidorToolStripMenuItem.Click += new System.EventHandler(this.conexionAlServidorToolStripMenuItem_Click);
             // 
             // vercionToolStripMenuItem
             // 
+            this.vercionToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.version_32;
             this.vercionToolStripMenuItem.Name = "vercionToolStripMenuItem";
             this.vercionToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.vercionToolStripMenuItem.Text = "Vercion";
+            this.vercionToolStripMenuItem.Text = "Version";
             this.vercionToolStripMenuItem.Click += new System.EventHandler(this.vercionToolStripMenuItem_Click);
             // 
             // cerrarSesionToolStripMenuItem
             // 
+            this.cerrarSesionToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.cerrarsesion_32;
             this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
             this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.cerrarSesionToolStripMenuItem.Text = "Cerrar Sesion";
@@ -320,6 +323,7 @@ namespace pl_Gurkas.Vista.Principal
             // 
             // salirToolStripMenuItem
             // 
+            this.salirToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.cerrar_sesion_32;
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.salirToolStripMenuItem.Text = "Salir";
@@ -336,8 +340,9 @@ namespace pl_Gurkas.Vista.Principal
             this.postulanteToolStripMenuItem,
             this.registroPersonalC4ToolStripMenuItem,
             this.personalActivoToolStripMenuItem});
+            this.recursosHumanosToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.RecursosHumanos_32;
             this.recursosHumanosToolStripMenuItem.Name = "recursosHumanosToolStripMenuItem";
-            this.recursosHumanosToolStripMenuItem.Size = new System.Drawing.Size(121, 20);
+            this.recursosHumanosToolStripMenuItem.Size = new System.Drawing.Size(137, 20);
             this.recursosHumanosToolStripMenuItem.Text = "Recursos Humanos";
             // 
             // personalToolStripMenuItem
@@ -346,6 +351,7 @@ namespace pl_Gurkas.Vista.Principal
             this.registroDePersonalToolStripMenuItem,
             this.registroDeDatosFamiliaresToolStripMenuItem,
             this.registroDeDatosLaboralesToolStripMenuItem1});
+            this.personalToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.personalrrhh_32;
             this.personalToolStripMenuItem.Name = "personalToolStripMenuItem";
             this.personalToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.personalToolStripMenuItem.Text = "Personal";
@@ -378,6 +384,7 @@ namespace pl_Gurkas.Vista.Principal
             this.personalToolStripMenuItem2,
             this.reporteDeAsistenciaDePersonalToolStripMenuItem,
             this.bajaDePersonalToolStripMenuItem});
+            this.reportesToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.reportes_32;
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.reportesToolStripMenuItem.Text = "Reportes";
@@ -501,6 +508,7 @@ namespace pl_Gurkas.Vista.Principal
             // 
             // moverPersonalEntreEmpresaToolStripMenuItem
             // 
+            this.moverPersonalEntreEmpresaToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.mover_personal_32;
             this.moverPersonalEntreEmpresaToolStripMenuItem.Name = "moverPersonalEntreEmpresaToolStripMenuItem";
             this.moverPersonalEntreEmpresaToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.moverPersonalEntreEmpresaToolStripMenuItem.Text = "Mover Personal entre Empresa";
@@ -508,6 +516,7 @@ namespace pl_Gurkas.Vista.Principal
             // 
             // estadoDelPersonalToolStripMenuItem
             // 
+            this.estadoDelPersonalToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.estado_32;
             this.estadoDelPersonalToolStripMenuItem.Name = "estadoDelPersonalToolStripMenuItem";
             this.estadoDelPersonalToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.estadoDelPersonalToolStripMenuItem.Text = "Estado del Personal";
@@ -517,6 +526,7 @@ namespace pl_Gurkas.Vista.Principal
             // 
             this.cargaMasivaDeDatosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cargaMasivaDeDatosLaboralesToolStripMenuItem});
+            this.cargaMasivaDeDatosToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.descarga_32;
             this.cargaMasivaDeDatosToolStripMenuItem.Name = "cargaMasivaDeDatosToolStripMenuItem";
             this.cargaMasivaDeDatosToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.cargaMasivaDeDatosToolStripMenuItem.Text = "Carga Masiva de Datos";
@@ -530,6 +540,7 @@ namespace pl_Gurkas.Vista.Principal
             // 
             // postulanteToolStripMenuItem
             // 
+            this.postulanteToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.postulante_32;
             this.postulanteToolStripMenuItem.Name = "postulanteToolStripMenuItem";
             this.postulanteToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.postulanteToolStripMenuItem.Text = "Postulante";
@@ -537,6 +548,7 @@ namespace pl_Gurkas.Vista.Principal
             // 
             // registroPersonalC4ToolStripMenuItem
             // 
+            this.registroPersonalC4ToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.armamento_32;
             this.registroPersonalC4ToolStripMenuItem.Name = "registroPersonalC4ToolStripMenuItem";
             this.registroPersonalC4ToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.registroPersonalC4ToolStripMenuItem.Text = "Registro Personal C4";
@@ -544,6 +556,7 @@ namespace pl_Gurkas.Vista.Principal
             // 
             // personalActivoToolStripMenuItem
             // 
+            this.personalActivoToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.activo_32;
             this.personalActivoToolStripMenuItem.Name = "personalActivoToolStripMenuItem";
             this.personalActivoToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.personalActivoToolStripMenuItem.Text = "Personal Activo";
@@ -557,12 +570,14 @@ namespace pl_Gurkas.Vista.Principal
             this.reporteAsistenciaToolStripMenuItem,
             this.cargaDeDatosToolStripMenuItem,
             this.migrarAsistenciaAAndroidToolStripMenuItem});
+            this.centroDeControlToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.Centro_Control_32;
             this.centroDeControlToolStripMenuItem.Name = "centroDeControlToolStripMenuItem";
-            this.centroDeControlToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
+            this.centroDeControlToolStripMenuItem.Size = new System.Drawing.Size(130, 20);
             this.centroDeControlToolStripMenuItem.Text = "Centro de Control";
             // 
             // asistenciaDePersonalToolStripMenuItem
             // 
+            this.asistenciaDePersonalToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.asistecnia_32;
             this.asistenciaDePersonalToolStripMenuItem.Name = "asistenciaDePersonalToolStripMenuItem";
             this.asistenciaDePersonalToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.asistenciaDePersonalToolStripMenuItem.Text = "Asistencia de Personal";
@@ -575,6 +590,7 @@ namespace pl_Gurkas.Vista.Principal
             this.marcacionPorFechaYTurnoToolStripMenuItem,
             this.consultaDeAsistenciaPorPersonalToolStripMenuItem,
             this.asistenciaGeneralDelPersonalDetalladoToolStripMenuItem});
+            this.reportesToolStripMenuItem1.Image = global::pl_Gurkas.Properties.Resources.reporte_32;
             this.reportesToolStripMenuItem1.Name = "reportesToolStripMenuItem1";
             this.reportesToolStripMenuItem1.Size = new System.Drawing.Size(220, 22);
             this.reportesToolStripMenuItem1.Text = "Reportes - C. CONTROL";
@@ -614,6 +630,7 @@ namespace pl_Gurkas.Vista.Principal
             this.personalSinMarcacionToolStripMenuItem,
             this.asistenciaDePersonalToolStripMenuItem1,
             this.asistenciaDePersonalDetalladoToolStripMenuItem});
+            this.reporteAsistenciaToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.reportepersonal_32;
             this.reporteAsistenciaToolStripMenuItem.Name = "reporteAsistenciaToolStripMenuItem";
             this.reporteAsistenciaToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.reporteAsistenciaToolStripMenuItem.Text = "Reporte Asistencia";
@@ -651,6 +668,7 @@ namespace pl_Gurkas.Vista.Principal
             this.cargaDeDatosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.reporteDeBloqueosDePersonalToolStripMenuItem,
             this.bloqueosDePersonalToolStripMenuItem});
+            this.cargaDeDatosToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.bloqueo_32;
             this.cargaDeDatosToolStripMenuItem.Name = "cargaDeDatosToolStripMenuItem";
             this.cargaDeDatosToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.cargaDeDatosToolStripMenuItem.Text = "Bloqueos de Personal";
@@ -671,6 +689,7 @@ namespace pl_Gurkas.Vista.Principal
             // 
             // migrarAsistenciaAAndroidToolStripMenuItem
             // 
+            this.migrarAsistenciaAAndroidToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.migrar_32;
             this.migrarAsistenciaAAndroidToolStripMenuItem.Name = "migrarAsistenciaAAndroidToolStripMenuItem";
             this.migrarAsistenciaAAndroidToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.migrarAsistenciaAAndroidToolStripMenuItem.Text = "Migrar Asistencia a Android";
@@ -683,14 +702,16 @@ namespace pl_Gurkas.Vista.Principal
             this.sedeToolStripMenuItem1,
             this.reporteToolStripMenuItem1,
             this.reclamoAgenteToolStripMenuItem});
+            this.operacionesToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.operaciones_32;
             this.operacionesToolStripMenuItem.Name = "operacionesToolStripMenuItem";
-            this.operacionesToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
+            this.operacionesToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
             this.operacionesToolStripMenuItem.Text = "Operaciones";
             // 
             // unidadToolStripMenuItem1
             // 
             this.unidadToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.activarUnidadToolStripMenuItem});
+            this.unidadToolStripMenuItem1.Image = global::pl_Gurkas.Properties.Resources.Unidad_32;
             this.unidadToolStripMenuItem1.Name = "unidadToolStripMenuItem1";
             this.unidadToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
             this.unidadToolStripMenuItem1.Text = "Unidad";
@@ -706,6 +727,7 @@ namespace pl_Gurkas.Vista.Principal
             // 
             this.sedeToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.activarSedeToolStripMenuItem});
+            this.sedeToolStripMenuItem1.Image = global::pl_Gurkas.Properties.Resources.sede_32;
             this.sedeToolStripMenuItem1.Name = "sedeToolStripMenuItem1";
             this.sedeToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
             this.sedeToolStripMenuItem1.Text = "Sede";
@@ -724,6 +746,7 @@ namespace pl_Gurkas.Vista.Principal
             this.personalSinMarcacionToolStripMenuItem1,
             this.estadoDePersonalToolStripMenuItem,
             this.constultaDeAsistenciaPersonalCompletoToolStripMenuItem});
+            this.reporteToolStripMenuItem1.Image = global::pl_Gurkas.Properties.Resources.reportes_32;
             this.reporteToolStripMenuItem1.Name = "reporteToolStripMenuItem1";
             this.reporteToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
             this.reporteToolStripMenuItem1.Text = "Reporte";
@@ -758,6 +781,7 @@ namespace pl_Gurkas.Vista.Principal
             // 
             // reclamoAgenteToolStripMenuItem
             // 
+            this.reclamoAgenteToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.reclamo_32;
             this.reclamoAgenteToolStripMenuItem.Name = "reclamoAgenteToolStripMenuItem";
             this.reclamoAgenteToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.reclamoAgenteToolStripMenuItem.Text = "Reclamo Agente";
@@ -769,14 +793,16 @@ namespace pl_Gurkas.Vista.Principal
             this.unidadToolStripMenuItem,
             this.sedeToolStripMenuItem,
             this.reporteToolStripMenuItem});
+            this.comercialToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.comercial_32;
             this.comercialToolStripMenuItem.Name = "comercialToolStripMenuItem";
-            this.comercialToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
+            this.comercialToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
             this.comercialToolStripMenuItem.Text = "Comercial";
             // 
             // unidadToolStripMenuItem
             // 
             this.unidadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.crearUnidadToolStripMenuItem});
+            this.unidadToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.Unidad_32;
             this.unidadToolStripMenuItem.Name = "unidadToolStripMenuItem";
             this.unidadToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.unidadToolStripMenuItem.Text = "Unidad";
@@ -792,6 +818,7 @@ namespace pl_Gurkas.Vista.Principal
             // 
             this.sedeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.creacionDeSedeToolStripMenuItem});
+            this.sedeToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.sede_32;
             this.sedeToolStripMenuItem.Name = "sedeToolStripMenuItem";
             this.sedeToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.sedeToolStripMenuItem.Text = "Sede";
@@ -810,6 +837,7 @@ namespace pl_Gurkas.Vista.Principal
             this.asistenciaDePersonalDetalladoToolStripMenuItem1,
             this.consultaDeAsistenciaPorPersonalToolStripMenuItem2,
             this.detalleDeEmpleadosToolStripMenuItem});
+            this.reporteToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.reportes_32;
             this.reporteToolStripMenuItem.Name = "reporteToolStripMenuItem";
             this.reporteToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.reporteToolStripMenuItem.Text = "Reporte";
@@ -844,8 +872,9 @@ namespace pl_Gurkas.Vista.Principal
             // 
             // licitacionToolStripMenuItem
             // 
+            this.licitacionToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.licitaciones_32;
             this.licitacionToolStripMenuItem.Name = "licitacionToolStripMenuItem";
-            this.licitacionToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.licitacionToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
             this.licitacionToolStripMenuItem.Text = "Licitacion";
             // 
             // logisticaToolStripMenuItem
@@ -853,8 +882,9 @@ namespace pl_Gurkas.Vista.Principal
             this.logisticaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.personalToolStripMenuItem3,
             this.almacenToolStripMenuItem});
+            this.logisticaToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.logistica_32;
             this.logisticaToolStripMenuItem.Name = "logisticaToolStripMenuItem";
-            this.logisticaToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.logisticaToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
             this.logisticaToolStripMenuItem.Text = "Logistica";
             this.logisticaToolStripMenuItem.Click += new System.EventHandler(this.logisticaToolStripMenuItem_Click);
             // 
@@ -863,7 +893,7 @@ namespace pl_Gurkas.Vista.Principal
             this.personalToolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.codigoYEstadoPersonalToolStripMenuItem});
             this.personalToolStripMenuItem3.Name = "personalToolStripMenuItem3";
-            this.personalToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.personalToolStripMenuItem3.Size = new System.Drawing.Size(121, 22);
             this.personalToolStripMenuItem3.Text = "Reporte";
             // 
             // codigoYEstadoPersonalToolStripMenuItem
@@ -882,7 +912,7 @@ namespace pl_Gurkas.Vista.Principal
             this.proveedoresToolStripMenuItem,
             this.inventariadoToolStripMenuItem});
             this.almacenToolStripMenuItem.Name = "almacenToolStripMenuItem";
-            this.almacenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.almacenToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.almacenToolStripMenuItem.Text = "Almacen";
             // 
             // entradaDeProductoToolStripMenuItem
@@ -1021,8 +1051,9 @@ namespace pl_Gurkas.Vista.Principal
             this.historialPlanillaToolStripMenuItem,
             this.bloqueoPersonalToolStripMenuItem,
             this.sueldoUnidadPuestoToolStripMenuItem});
+            this.planillaToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.planillas_32;
             this.planillaToolStripMenuItem.Name = "planillaToolStripMenuItem";
-            this.planillaToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.planillaToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
             this.planillaToolStripMenuItem.Text = "Planilla";
             // 
             // personalToolStripMenuItem1
@@ -1324,8 +1355,9 @@ namespace pl_Gurkas.Vista.Principal
             // 
             this.contabilidadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.planillaPorUnidadToolStripMenuItem});
+            this.contabilidadToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.contabilidad_32;
             this.contabilidadToolStripMenuItem.Name = "contabilidadToolStripMenuItem";
-            this.contabilidadToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
+            this.contabilidadToolStripMenuItem.Size = new System.Drawing.Size(103, 20);
             this.contabilidadToolStripMenuItem.Text = "Contabilidad";
             // 
             // planillaPorUnidadToolStripMenuItem
@@ -1341,8 +1373,9 @@ namespace pl_Gurkas.Vista.Principal
             this.datosPersonalToolStripMenuItem,
             this.toolStripMenuItem1,
             this.reporteDeAsistenciaPorPersonalToolStripMenuItem});
+            this.sucamecToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.sucamec_32;
             this.sucamecToolStripMenuItem.Name = "sucamecToolStripMenuItem";
-            this.sucamecToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.sucamecToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
             this.sucamecToolStripMenuItem.Text = "Sucamec";
             // 
             // datosPersonalToolStripMenuItem
@@ -1491,12 +1524,14 @@ namespace pl_Gurkas.Vista.Principal
             // 
             this.administradorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.activarModoAdministradorToolStripMenuItem});
+            this.administradorToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.admin__1_;
             this.administradorToolStripMenuItem.Name = "administradorToolStripMenuItem";
-            this.administradorToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
+            this.administradorToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
             this.administradorToolStripMenuItem.Text = "Administrador";
             // 
             // activarModoAdministradorToolStripMenuItem
             // 
+            this.activarModoAdministradorToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.administrador_32;
             this.activarModoAdministradorToolStripMenuItem.Name = "activarModoAdministradorToolStripMenuItem";
             this.activarModoAdministradorToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
             this.activarModoAdministradorToolStripMenuItem.Text = "Activar Modo Administrador";
