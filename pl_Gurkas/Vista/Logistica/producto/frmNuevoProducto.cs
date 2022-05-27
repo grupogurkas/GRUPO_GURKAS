@@ -312,7 +312,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadUtiles);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadEquipo);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoEquipoPro);
-            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad4);
+           // Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad4);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadMobi);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad6);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad7);
@@ -324,7 +324,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerEstadoProducto(cboEstadoUtilez);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoEquipo);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoEquipoPro);
-            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc8);
+          //  Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc8);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoMobi);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc10);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc11);
