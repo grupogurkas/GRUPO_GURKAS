@@ -387,7 +387,27 @@ namespace pl_Gurkas.Datos
                 MessageBox.Show("No se puede obtener la imformacion de tipo de proveedor \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+        public void ObtenerProductoCamisas(ComboBox cd)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("select COD_PRODUCTO_UNI_CAMISAS,NOMBRE_CAMISAS from T_MAE_UNI_CAMISAS ", conexiondbo.conexionBD());
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                DataRow fila = dt.NewRow();
+                fila["NOMBRE_CAMISAS"] = "---Seleccione un Modelo Camisa---";
+                dt.Rows.InsertAt(fila, 0);
+                cd.ValueMember = "COD_PRODUCTO_UNI_CAMISAS";
+                cd.DisplayMember = "NOMBRE_CAMISAS";
+                cd.DataSource = dt;
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se puede obtener el listado del Empleados \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
         public void ObtenerProductoTecnologico(ComboBox cd)
         {
             try
