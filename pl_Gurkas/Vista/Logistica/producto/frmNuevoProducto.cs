@@ -29,7 +29,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         }
 
 
-        public void GenerarCodigo()
+        public void GenerarCodigoPrincipal()
         {
             string resultado = "";
             SqlCommand comando = new SqlCommand("select count(id_producto) as 't' from T_MAE_PRODUCTO ", conexion.conexionBD());
@@ -53,52 +53,33 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 txtCodSistema.Text = "SUM0" + (numero + 1);
             }
         }
-
-        private void ValidarCamposVacios()
+        public void GenerarCodigoTecnologico()
         {
-            if(txtCodEquipo.Text.Length == 0)
+            string resultado = "";
+            SqlCommand comando = new SqlCommand("select count(ID_PRODUCTO_TECNOLOGICO) as 't' from T_MAE_PRODUCTO_TECNOLOGICO ", conexion.conexionBD());
+
+            SqlDataReader recorre = comando.ExecuteReader();
+            while (recorre.Read())
             {
-                MessageBox.Show("Debe Insertar un codigo", "Advertencia");
+                resultado = recorre["t"].ToString();
             }
-            if (txtNombreTecno.Text.Length == 0)
+            int numero = Convert.ToInt32(resultado);
+            if (numero < 10)
             {
-                MessageBox.Show("Debe Insertar un nombre", "Advertencia");
+                txtCodEquipoTecnologia.Text = "TEC000" + (numero + 1);
             }
-            if (txtModelo.Text.Length == 0)
+            if (numero > 9 && numero < 100)
             {
-                MessageBox.Show("Debe Insertar un codigo", "Advertencia");
+                txtCodEquipoTecnologia.Text = "TEC00" + (numero + 1);
             }
-            if (txtMarca.Text.Length == 0)
+            if (numero > 99 && numero < 1000)
             {
-                MessageBox.Show("Debe Insertar un codigo", "Advertencia");
-            }
-            if (txtDescripcion.Text.Length == 0)
-            {
-                MessageBox.Show("Debe Insertar un codigo", "Advertencia");
-            }
-            if (txtStockInicial.Text.Length == 0)
-            {
-                MessageBox.Show("Debe Insertar un codigo", "Advertencia");
-            }
- 
-            if (txtPrecioUnitario.Text.Length == 0)
-            {
-                MessageBox.Show("Debe Insertar un codigo", "Advertencia");
-            }
-            if (cboEstadoProduc.SelectedIndex == 0)
-            {
-                MessageBox.Show("Debe Insertar un codigo", "Advertencia");
-            }
-            if (txtObservacion.Text.Length == 0)
-            {
-                MessageBox.Show("Debe Insertar un codigo", "Advertencia");
+                txtCodEquipoTecnologia.Text = "TEC0" + (numero + 1);
             }
         }
-
-        
-        private void frmNuevoProducto_Load(object sender, EventArgs e)
+        private void llenadoDeDatos()
         {
-            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad);
+            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadEquipoTecnologia);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad1);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad2);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad3);
@@ -106,7 +87,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad5);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad6);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad7);
-            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoProducEquipoTecnologia);
             Llenadocbo.ObtenerTallaPrendaProducto(cboTallaPrenda);
             Llenadocbo.ObtenerTallaCalzadoProducto(cboTallaCalzado);
             Llenadocbo.ObtenerTipoCalzadoProducto(cboTipoCalzado);
@@ -123,8 +104,56 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc11);
             Llenadocbo.ObtenerTipoTelaProducto(cboTipoTela1);
             Llenadocbo.ObtenerTallaPantalonProducto(cboTallaPantalon);
+        }
+        private void ValidarCamposVacios()
+        {
+            if(txtCodEquipoTecnologia.Text.Length == 0)
+            {
+                MessageBox.Show("Debe Insertar un codigo", "Advertencia");
+            }
+            if (txtNombreEquipoTecnologia.Text.Length == 0)
+            {
+                MessageBox.Show("Debe Insertar un nombre", "Advertencia");
+            }
+            if (txtModeloEquipoTecnologia.Text.Length == 0)
+            {
+                MessageBox.Show("Debe Insertar un codigo", "Advertencia");
+            }
+            if (txtMarcaEquipoTecnologia.Text.Length == 0)
+            {
+                MessageBox.Show("Debe Insertar un codigo", "Advertencia");
+            }
+            if (txtDescripcionEquipoTecnologia.Text.Length == 0)
+            {
+                MessageBox.Show("Debe Insertar un codigo", "Advertencia");
+            }
+            if (txtNumSerialEquipoTecnologia.Text.Length == 0)
+            {
+                MessageBox.Show("Debe Insertar un codigo", "Advertencia");
+            }
+ 
+            if (txtPrecioUnitarioEquipoTecnologia.Text.Length == 0)
+            {
+                MessageBox.Show("Debe Insertar un codigo", "Advertencia");
+            }
+            if (cboEstadoProducEquipoTecnologia.SelectedIndex == 0)
+            {
+                MessageBox.Show("Debe Insertar un codigo", "Advertencia");
+            }
+            if (txtObservacionEquipoTecnologia.Text.Length == 0)
+            {
+                MessageBox.Show("Debe Insertar un codigo", "Advertencia");
+            }
+        }
+
+        
+        private void frmNuevoProducto_Load(object sender, EventArgs e)
+        {
+            txtCodEquipoTecnologia.Enabled = false;
             txtCodSistema.Enabled = false;
-            GenerarCodigo();
+            llenadoDeDatos();
+            GenerarCodigoPrincipal();
+            GenerarCodigoTecnologico();
         }
         private void tabPage1_Click_1(object sender, EventArgs e)
         {
@@ -209,12 +238,17 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void btnNuevo_Click_1(object sender, EventArgs e)
         {
             LimpiarDatos.LimpiarGroupBox(groupBox2);
-            txtCodEquipo.Focus();
+            txtCodEquipoTecnologia.Focus();
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             string codProducto = cboProducto.SelectedValue.ToString();
+        }
+
+        private void dtpFechaRegistro_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
