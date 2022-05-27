@@ -201,35 +201,35 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label94 = new System.Windows.Forms.Label();
             this.label97 = new System.Windows.Forms.Label();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.textBox49 = new System.Windows.Forms.TextBox();
+            this.txtObservacionAccesorio = new System.Windows.Forms.TextBox();
             this.btnCargarImagen4 = new System.Windows.Forms.Button();
             this.label63 = new System.Windows.Forms.Label();
             this.label82 = new System.Windows.Forms.Label();
             this.ptcImagenAccesorios = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker13 = new System.Windows.Forms.DateTimePicker();
+            this.dtpRegistroAccesorio = new System.Windows.Forms.DateTimePicker();
             this.label120 = new System.Windows.Forms.Label();
-            this.dateTimePicker14 = new System.Windows.Forms.DateTimePicker();
+            this.dtpAdquAccesorio = new System.Windows.Forms.DateTimePicker();
             this.label121 = new System.Windows.Forms.Label();
-            this.textBox62 = new System.Windows.Forms.TextBox();
+            this.txtStockMinimoAccesorio = new System.Windows.Forms.TextBox();
             this.label123 = new System.Windows.Forms.Label();
             this.label124 = new System.Windows.Forms.Label();
-            this.textBox63 = new System.Windows.Forms.TextBox();
+            this.txtStockInicalAcessorio = new System.Windows.Forms.TextBox();
             this.label125 = new System.Windows.Forms.Label();
-            this.textBox64 = new System.Windows.Forms.TextBox();
-            this.comboBox22 = new System.Windows.Forms.ComboBox();
+            this.txtColorAccesorio = new System.Windows.Forms.TextBox();
+            this.cboTipoTelaAccesorio = new System.Windows.Forms.ComboBox();
             this.label126 = new System.Windows.Forms.Label();
-            this.comboBox23 = new System.Windows.Forms.ComboBox();
+            this.cboTallaAccesorio = new System.Windows.Forms.ComboBox();
             this.label127 = new System.Windows.Forms.Label();
-            this.textBox65 = new System.Windows.Forms.TextBox();
+            this.txtCostoUnitarioAccesorio = new System.Windows.Forms.TextBox();
             this.label129 = new System.Windows.Forms.Label();
-            this.textBox66 = new System.Windows.Forms.TextBox();
+            this.txtCodAccesorio = new System.Windows.Forms.TextBox();
             this.label131 = new System.Windows.Forms.Label();
-            this.textBox67 = new System.Windows.Forms.TextBox();
+            this.txtStockActutalAccesorio = new System.Windows.Forms.TextBox();
             this.label133 = new System.Windows.Forms.Label();
-            this.textBox68 = new System.Windows.Forms.TextBox();
-            this.textBox69 = new System.Windows.Forms.TextBox();
+            this.txtDespAccesorio = new System.Windows.Forms.TextBox();
+            this.txtNombreAccesorio = new System.Windows.Forms.TextBox();
             this.label134 = new System.Windows.Forms.Label();
-            this.cboEstadoProduc4 = new System.Windows.Forms.ComboBox();
+            this.cboEstadoAccesorio = new System.Windows.Forms.ComboBox();
             this.label136 = new System.Windows.Forms.Label();
             this.tbpUtilesEscritorio = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -495,7 +495,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnActualizarPantalon = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.cboAccesorios = new System.Windows.Forms.ComboBox();
             this.label161 = new System.Windows.Forms.Label();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
@@ -763,9 +763,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.cboNombreProductoTecnologico.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cboNombreProductoTecnologico.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboNombreProductoTecnologico.FormattingEnabled = true;
-            this.cboNombreProductoTecnologico.Location = new System.Drawing.Point(133, 17);
+            this.cboNombreProductoTecnologico.Location = new System.Drawing.Point(145, 17);
             this.cboNombreProductoTecnologico.Name = "cboNombreProductoTecnologico";
-            this.cboNombreProductoTecnologico.Size = new System.Drawing.Size(335, 21);
+            this.cboNombreProductoTecnologico.Size = new System.Drawing.Size(323, 21);
             this.cboNombreProductoTecnologico.TabIndex = 91;
             // 
             // label81
@@ -774,9 +774,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label81.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label81.Location = new System.Drawing.Point(24, 18);
             this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(103, 15);
+            this.label81.Size = new System.Drawing.Size(115, 15);
             this.label81.TabIndex = 90;
-            this.label81.Text = "Buscar Producto :";
+            this.label81.Text = "Buscar Tecnologia :";
             // 
             // btnSave
             // 
@@ -2340,7 +2340,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tabPage4.Controls.Add(this.button9);
             this.tabPage4.Controls.Add(this.btnCargarImagen4);
             this.tabPage4.Controls.Add(this.button10);
-            this.tabPage4.Controls.Add(this.comboBox5);
+            this.tabPage4.Controls.Add(this.cboAccesorios);
             this.tabPage4.Controls.Add(this.label82);
             this.tabPage4.Controls.Add(this.label161);
             this.tabPage4.Controls.Add(this.ptcImagenAccesorios);
@@ -2360,26 +2360,26 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.groupBox11.Controls.Add(this.label94);
             this.groupBox11.Controls.Add(this.label97);
-            this.groupBox11.Controls.Add(this.textBox62);
+            this.groupBox11.Controls.Add(this.txtStockMinimoAccesorio);
             this.groupBox11.Controls.Add(this.label123);
             this.groupBox11.Controls.Add(this.label124);
-            this.groupBox11.Controls.Add(this.textBox63);
+            this.groupBox11.Controls.Add(this.txtStockInicalAcessorio);
             this.groupBox11.Controls.Add(this.label125);
-            this.groupBox11.Controls.Add(this.textBox64);
-            this.groupBox11.Controls.Add(this.comboBox22);
+            this.groupBox11.Controls.Add(this.txtColorAccesorio);
+            this.groupBox11.Controls.Add(this.cboTipoTelaAccesorio);
             this.groupBox11.Controls.Add(this.label126);
-            this.groupBox11.Controls.Add(this.comboBox23);
+            this.groupBox11.Controls.Add(this.cboTallaAccesorio);
             this.groupBox11.Controls.Add(this.label127);
-            this.groupBox11.Controls.Add(this.textBox65);
+            this.groupBox11.Controls.Add(this.txtCostoUnitarioAccesorio);
             this.groupBox11.Controls.Add(this.label129);
-            this.groupBox11.Controls.Add(this.textBox66);
+            this.groupBox11.Controls.Add(this.txtCodAccesorio);
             this.groupBox11.Controls.Add(this.label131);
-            this.groupBox11.Controls.Add(this.textBox67);
+            this.groupBox11.Controls.Add(this.txtStockActutalAccesorio);
             this.groupBox11.Controls.Add(this.label133);
-            this.groupBox11.Controls.Add(this.textBox68);
-            this.groupBox11.Controls.Add(this.textBox69);
+            this.groupBox11.Controls.Add(this.txtDespAccesorio);
+            this.groupBox11.Controls.Add(this.txtNombreAccesorio);
             this.groupBox11.Controls.Add(this.label134);
-            this.groupBox11.Controls.Add(this.cboEstadoProduc4);
+            this.groupBox11.Controls.Add(this.cboEstadoAccesorio);
             this.groupBox11.Controls.Add(this.label136);
             this.groupBox11.Location = new System.Drawing.Point(6, 63);
             this.groupBox11.Name = "groupBox11";
@@ -2410,11 +2410,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // groupBox12
             // 
-            this.groupBox12.Controls.Add(this.textBox49);
+            this.groupBox12.Controls.Add(this.txtObservacionAccesorio);
             this.groupBox12.Controls.Add(this.label63);
-            this.groupBox12.Controls.Add(this.dateTimePicker13);
+            this.groupBox12.Controls.Add(this.dtpRegistroAccesorio);
             this.groupBox12.Controls.Add(this.label120);
-            this.groupBox12.Controls.Add(this.dateTimePicker14);
+            this.groupBox12.Controls.Add(this.dtpAdquAccesorio);
             this.groupBox12.Controls.Add(this.label121);
             this.groupBox12.Location = new System.Drawing.Point(365, 63);
             this.groupBox12.Name = "groupBox12";
@@ -2423,13 +2423,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Datos Adicionales";
             // 
-            // textBox49
+            // txtObservacionAccesorio
             // 
-            this.textBox49.Location = new System.Drawing.Point(21, 139);
-            this.textBox49.Multiline = true;
-            this.textBox49.Name = "textBox49";
-            this.textBox49.Size = new System.Drawing.Size(266, 65);
-            this.textBox49.TabIndex = 163;
+            this.txtObservacionAccesorio.Location = new System.Drawing.Point(21, 139);
+            this.txtObservacionAccesorio.Multiline = true;
+            this.txtObservacionAccesorio.Name = "txtObservacionAccesorio";
+            this.txtObservacionAccesorio.Size = new System.Drawing.Size(266, 65);
+            this.txtObservacionAccesorio.TabIndex = 163;
             // 
             // btnCargarImagen4
             // 
@@ -2474,13 +2474,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.ptcImagenAccesorios.TabIndex = 165;
             this.ptcImagenAccesorios.TabStop = false;
             // 
-            // dateTimePicker13
+            // dtpRegistroAccesorio
             // 
-            this.dateTimePicker13.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker13.Location = new System.Drawing.Point(139, 72);
-            this.dateTimePicker13.Name = "dateTimePicker13";
-            this.dateTimePicker13.Size = new System.Drawing.Size(109, 20);
-            this.dateTimePicker13.TabIndex = 153;
+            this.dtpRegistroAccesorio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpRegistroAccesorio.Location = new System.Drawing.Point(139, 72);
+            this.dtpRegistroAccesorio.Name = "dtpRegistroAccesorio";
+            this.dtpRegistroAccesorio.Size = new System.Drawing.Size(109, 20);
+            this.dtpRegistroAccesorio.TabIndex = 153;
             // 
             // label120
             // 
@@ -2492,13 +2492,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label120.TabIndex = 154;
             this.label120.Text = "Fecha De Registro :";
             // 
-            // dateTimePicker14
+            // dtpAdquAccesorio
             // 
-            this.dateTimePicker14.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker14.Location = new System.Drawing.Point(139, 32);
-            this.dateTimePicker14.Name = "dateTimePicker14";
-            this.dateTimePicker14.Size = new System.Drawing.Size(104, 20);
-            this.dateTimePicker14.TabIndex = 151;
+            this.dtpAdquAccesorio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpAdquAccesorio.Location = new System.Drawing.Point(139, 32);
+            this.dtpAdquAccesorio.Name = "dtpAdquAccesorio";
+            this.dtpAdquAccesorio.Size = new System.Drawing.Size(104, 20);
+            this.dtpAdquAccesorio.TabIndex = 151;
             // 
             // label121
             // 
@@ -2510,12 +2510,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label121.TabIndex = 152;
             this.label121.Text = "Fecha Adquisicion:";
             // 
-            // textBox62
+            // txtStockMinimoAccesorio
             // 
-            this.textBox62.Location = new System.Drawing.Point(130, 262);
-            this.textBox62.Name = "textBox62";
-            this.textBox62.Size = new System.Drawing.Size(158, 20);
-            this.textBox62.TabIndex = 95;
+            this.txtStockMinimoAccesorio.Location = new System.Drawing.Point(130, 262);
+            this.txtStockMinimoAccesorio.Name = "txtStockMinimoAccesorio";
+            this.txtStockMinimoAccesorio.Size = new System.Drawing.Size(158, 20);
+            this.txtStockMinimoAccesorio.TabIndex = 95;
             // 
             // label123
             // 
@@ -2537,12 +2537,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label124.TabIndex = 91;
             this.label124.Text = "Tipo Tela:";
             // 
-            // textBox63
+            // txtStockInicalAcessorio
             // 
-            this.textBox63.Location = new System.Drawing.Point(130, 130);
-            this.textBox63.Name = "textBox63";
-            this.textBox63.Size = new System.Drawing.Size(158, 20);
-            this.textBox63.TabIndex = 90;
+            this.txtStockInicalAcessorio.Location = new System.Drawing.Point(130, 130);
+            this.txtStockInicalAcessorio.Name = "txtStockInicalAcessorio";
+            this.txtStockInicalAcessorio.Size = new System.Drawing.Size(158, 20);
+            this.txtStockInicalAcessorio.TabIndex = 90;
             // 
             // label125
             // 
@@ -2550,31 +2550,31 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label125.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label125.Location = new System.Drawing.Point(6, 131);
             this.label125.Name = "label125";
-            this.label125.Size = new System.Drawing.Size(59, 15);
+            this.label125.Size = new System.Drawing.Size(78, 15);
             this.label125.TabIndex = 89;
-            this.label125.Text = "Cantidad:";
+            this.label125.Text = "Stock Inicial :";
             // 
-            // textBox64
+            // txtColorAccesorio
             // 
-            this.textBox64.Location = new System.Drawing.Point(130, 104);
-            this.textBox64.Name = "textBox64";
-            this.textBox64.Size = new System.Drawing.Size(158, 20);
-            this.textBox64.TabIndex = 88;
+            this.txtColorAccesorio.Location = new System.Drawing.Point(130, 104);
+            this.txtColorAccesorio.Name = "txtColorAccesorio";
+            this.txtColorAccesorio.Size = new System.Drawing.Size(158, 20);
+            this.txtColorAccesorio.TabIndex = 88;
             // 
-            // comboBox22
+            // cboTipoTelaAccesorio
             // 
-            this.comboBox22.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox22.FormattingEnabled = true;
-            this.comboBox22.Items.AddRange(new object[] {
+            this.cboTipoTelaAccesorio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTipoTelaAccesorio.FormattingEnabled = true;
+            this.cboTipoTelaAccesorio.Items.AddRange(new object[] {
             "",
             "Nuevo",
             "Usado",
             "Dañado",
             "Baja"});
-            this.comboBox22.Location = new System.Drawing.Point(130, 156);
-            this.comboBox22.Name = "comboBox22";
-            this.comboBox22.Size = new System.Drawing.Size(158, 21);
-            this.comboBox22.TabIndex = 87;
+            this.cboTipoTelaAccesorio.Location = new System.Drawing.Point(130, 156);
+            this.cboTipoTelaAccesorio.Name = "cboTipoTelaAccesorio";
+            this.cboTipoTelaAccesorio.Size = new System.Drawing.Size(158, 21);
+            this.cboTipoTelaAccesorio.TabIndex = 87;
             // 
             // label126
             // 
@@ -2586,20 +2586,20 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label126.TabIndex = 86;
             this.label126.Text = "Color:";
             // 
-            // comboBox23
+            // cboTallaAccesorio
             // 
-            this.comboBox23.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox23.FormattingEnabled = true;
-            this.comboBox23.Items.AddRange(new object[] {
+            this.cboTallaAccesorio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTallaAccesorio.FormattingEnabled = true;
+            this.cboTallaAccesorio.Items.AddRange(new object[] {
             "",
             "Nuevo",
             "Usado",
             "Dañado",
             "Baja"});
-            this.comboBox23.Location = new System.Drawing.Point(130, 71);
-            this.comboBox23.Name = "comboBox23";
-            this.comboBox23.Size = new System.Drawing.Size(158, 21);
-            this.comboBox23.TabIndex = 85;
+            this.cboTallaAccesorio.Location = new System.Drawing.Point(130, 71);
+            this.cboTallaAccesorio.Name = "cboTallaAccesorio";
+            this.cboTallaAccesorio.Size = new System.Drawing.Size(158, 21);
+            this.cboTallaAccesorio.TabIndex = 85;
             // 
             // label127
             // 
@@ -2611,12 +2611,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label127.TabIndex = 84;
             this.label127.Text = "Talla:";
             // 
-            // textBox65
+            // txtCostoUnitarioAccesorio
             // 
-            this.textBox65.Location = new System.Drawing.Point(130, 210);
-            this.textBox65.Name = "textBox65";
-            this.textBox65.Size = new System.Drawing.Size(158, 20);
-            this.textBox65.TabIndex = 80;
+            this.txtCostoUnitarioAccesorio.Location = new System.Drawing.Point(130, 210);
+            this.txtCostoUnitarioAccesorio.Name = "txtCostoUnitarioAccesorio";
+            this.txtCostoUnitarioAccesorio.Size = new System.Drawing.Size(158, 20);
+            this.txtCostoUnitarioAccesorio.TabIndex = 80;
             // 
             // label129
             // 
@@ -2626,12 +2626,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label129.TabIndex = 81;
             this.label129.Text = "S/. ";
             // 
-            // textBox66
+            // txtCodAccesorio
             // 
-            this.textBox66.Location = new System.Drawing.Point(130, 19);
-            this.textBox66.Name = "textBox66";
-            this.textBox66.Size = new System.Drawing.Size(213, 20);
-            this.textBox66.TabIndex = 78;
+            this.txtCodAccesorio.Location = new System.Drawing.Point(130, 19);
+            this.txtCodAccesorio.Name = "txtCodAccesorio";
+            this.txtCodAccesorio.Size = new System.Drawing.Size(213, 20);
+            this.txtCodAccesorio.TabIndex = 78;
             // 
             // label131
             // 
@@ -2639,16 +2639,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label131.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label131.Location = new System.Drawing.Point(6, 20);
             this.label131.Name = "label131";
-            this.label131.Size = new System.Drawing.Size(74, 15);
+            this.label131.Size = new System.Drawing.Size(88, 15);
             this.label131.TabIndex = 77;
-            this.label131.Text = "Cod. Equipo";
+            this.label131.Text = "Cod. Accesorio";
             // 
-            // textBox67
+            // txtStockActutalAccesorio
             // 
-            this.textBox67.Location = new System.Drawing.Point(130, 236);
-            this.textBox67.Name = "textBox67";
-            this.textBox67.Size = new System.Drawing.Size(158, 20);
-            this.textBox67.TabIndex = 67;
+            this.txtStockActutalAccesorio.Location = new System.Drawing.Point(130, 236);
+            this.txtStockActutalAccesorio.Name = "txtStockActutalAccesorio";
+            this.txtStockActutalAccesorio.Size = new System.Drawing.Size(158, 20);
+            this.txtStockActutalAccesorio.TabIndex = 67;
             // 
             // label133
             // 
@@ -2660,20 +2660,20 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label133.TabIndex = 63;
             this.label133.Text = "Descripcion :";
             // 
-            // textBox68
+            // txtDespAccesorio
             // 
-            this.textBox68.Location = new System.Drawing.Point(7, 310);
-            this.textBox68.Multiline = true;
-            this.textBox68.Name = "textBox68";
-            this.textBox68.Size = new System.Drawing.Size(336, 56);
-            this.textBox68.TabIndex = 62;
+            this.txtDespAccesorio.Location = new System.Drawing.Point(7, 310);
+            this.txtDespAccesorio.Multiline = true;
+            this.txtDespAccesorio.Name = "txtDespAccesorio";
+            this.txtDespAccesorio.Size = new System.Drawing.Size(336, 56);
+            this.txtDespAccesorio.TabIndex = 62;
             // 
-            // textBox69
+            // txtNombreAccesorio
             // 
-            this.textBox69.Location = new System.Drawing.Point(130, 45);
-            this.textBox69.Name = "textBox69";
-            this.textBox69.Size = new System.Drawing.Size(213, 20);
-            this.textBox69.TabIndex = 57;
+            this.txtNombreAccesorio.Location = new System.Drawing.Point(130, 45);
+            this.txtNombreAccesorio.Name = "txtNombreAccesorio";
+            this.txtNombreAccesorio.Size = new System.Drawing.Size(213, 20);
+            this.txtNombreAccesorio.TabIndex = 57;
             // 
             // label134
             // 
@@ -2685,14 +2685,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label134.TabIndex = 56;
             this.label134.Text = "Nombre :";
             // 
-            // cboEstadoProduc4
+            // cboEstadoAccesorio
             // 
-            this.cboEstadoProduc4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboEstadoProduc4.FormattingEnabled = true;
-            this.cboEstadoProduc4.Location = new System.Drawing.Point(130, 183);
-            this.cboEstadoProduc4.Name = "cboEstadoProduc4";
-            this.cboEstadoProduc4.Size = new System.Drawing.Size(158, 21);
-            this.cboEstadoProduc4.TabIndex = 26;
+            this.cboEstadoAccesorio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEstadoAccesorio.FormattingEnabled = true;
+            this.cboEstadoAccesorio.Location = new System.Drawing.Point(130, 183);
+            this.cboEstadoAccesorio.Name = "cboEstadoAccesorio";
+            this.cboEstadoAccesorio.Size = new System.Drawing.Size(158, 21);
+            this.cboEstadoAccesorio.TabIndex = 26;
             // 
             // label136
             // 
@@ -5454,15 +5454,15 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button10.UseVisualStyleBackColor = true;
             // 
-            // comboBox5
+            // cboAccesorios
             // 
-            this.comboBox5.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(125, 17);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(335, 21);
-            this.comboBox5.TabIndex = 180;
+            this.cboAccesorios.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboAccesorios.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboAccesorios.FormattingEnabled = true;
+            this.cboAccesorios.Location = new System.Drawing.Point(125, 17);
+            this.cboAccesorios.Name = "cboAccesorios";
+            this.cboAccesorios.Size = new System.Drawing.Size(335, 21);
+            this.cboAccesorios.TabIndex = 180;
             // 
             // label161
             // 
@@ -6053,30 +6053,30 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.Label label117;
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.GroupBox groupBox12;
-        private System.Windows.Forms.DateTimePicker dateTimePicker13;
+        private System.Windows.Forms.DateTimePicker dtpRegistroAccesorio;
         private System.Windows.Forms.Label label120;
-        private System.Windows.Forms.DateTimePicker dateTimePicker14;
+        private System.Windows.Forms.DateTimePicker dtpAdquAccesorio;
         private System.Windows.Forms.Label label121;
-        private System.Windows.Forms.TextBox textBox62;
+        private System.Windows.Forms.TextBox txtStockMinimoAccesorio;
         private System.Windows.Forms.Label label123;
         private System.Windows.Forms.Label label124;
-        private System.Windows.Forms.TextBox textBox63;
+        private System.Windows.Forms.TextBox txtStockInicalAcessorio;
         private System.Windows.Forms.Label label125;
-        private System.Windows.Forms.TextBox textBox64;
-        private System.Windows.Forms.ComboBox comboBox22;
+        private System.Windows.Forms.TextBox txtColorAccesorio;
+        private System.Windows.Forms.ComboBox cboTipoTelaAccesorio;
         private System.Windows.Forms.Label label126;
-        private System.Windows.Forms.ComboBox comboBox23;
+        private System.Windows.Forms.ComboBox cboTallaAccesorio;
         private System.Windows.Forms.Label label127;
-        private System.Windows.Forms.TextBox textBox65;
+        private System.Windows.Forms.TextBox txtCostoUnitarioAccesorio;
         private System.Windows.Forms.Label label129;
-        private System.Windows.Forms.TextBox textBox66;
+        private System.Windows.Forms.TextBox txtCodAccesorio;
         private System.Windows.Forms.Label label131;
-        private System.Windows.Forms.TextBox textBox67;
+        private System.Windows.Forms.TextBox txtStockActutalAccesorio;
         private System.Windows.Forms.Label label133;
-        private System.Windows.Forms.TextBox textBox68;
-        private System.Windows.Forms.TextBox textBox69;
+        private System.Windows.Forms.TextBox txtDespAccesorio;
+        private System.Windows.Forms.TextBox txtNombreAccesorio;
         private System.Windows.Forms.Label label134;
-        private System.Windows.Forms.ComboBox cboEstadoProduc4;
+        private System.Windows.Forms.ComboBox cboEstadoAccesorio;
         private System.Windows.Forms.Label label136;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage6;
@@ -6218,7 +6218,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.PictureBox ptcImagenPantalon;
-        private System.Windows.Forms.TextBox textBox49;
+        private System.Windows.Forms.TextBox txtObservacionAccesorio;
         private System.Windows.Forms.Button btnCargarImagen4;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label label82;
@@ -6429,7 +6429,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.Button btnActualizarPantalon;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox cboAccesorios;
         private System.Windows.Forms.Label label161;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;

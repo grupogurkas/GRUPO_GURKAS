@@ -320,7 +320,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerTipoCalzadoProducto(cboTipoCalzado);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoCalzado);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoPantalon);
-            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc4);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoAccesorio);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc5);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc6);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc7);
