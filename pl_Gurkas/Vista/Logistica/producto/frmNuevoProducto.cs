@@ -23,6 +23,8 @@ namespace pl_Gurkas.Vista.Logistica.producto
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.Actualizar actualizar = new Datos.Actualizar();
         Datos.Producto po = new Datos.Producto();
+        Datos.CRUD.Logistica.Insertar.LogisticaInsertar logisticaInsertar = new Datos.CRUD.Logistica.Insertar.LogisticaInsertar();
+
         public frmNuevoProducto()
         {
             InitializeComponent();
@@ -272,10 +274,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 DateTime f_registro = dtpFechaRegistroEquipoTecnologia.Value;
                 string observacion = txtObservacionEquipoTecnologia.Text;
 
+                logisticaInsertar.RegistrarEquipoTecnologico( cod_sistema,  cod_producto,  nombre_producto,  modelo, 
+                    marca,  num_serie,  desp_equipo,  estado,  precio_unitario,  tipo_unidad,stock_inicial,  
+                    stock_actual,  stock_minimo,  f_adquision,  f_registro,  observacion);
+                MessageBox.Show("Datos registrado correptamente", "Correpto");
             }
             catch(Exception ex)
             {
-
+                MessageBox.Show("No se puede Regristrar el producto", "Error");
             }
         }
     }
