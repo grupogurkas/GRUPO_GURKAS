@@ -33,12 +33,12 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.btnExcel = new System.Windows.Forms.Button();
             this.dgvEdadPersonal = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnConsultar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtEdadFin = new System.Windows.Forms.TextBox();
             this.txtEdadInicio = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.btnConsultar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEdadPersonal)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -81,6 +81,20 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Consultar por Edad de Personal";
             // 
+            // btnConsultar
+            // 
+            this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultar.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
+            this.btnConsultar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsultar.Location = new System.Drawing.Point(233, 17);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(109, 46);
+            this.btnConsultar.TabIndex = 12;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -97,6 +111,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.txtEdadFin.Name = "txtEdadFin";
             this.txtEdadFin.Size = new System.Drawing.Size(41, 20);
             this.txtEdadFin.TabIndex = 4;
+            this.txtEdadFin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEdadFin_KeyPress);
             // 
             // txtEdadInicio
             // 
@@ -104,6 +119,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.txtEdadInicio.Name = "txtEdadInicio";
             this.txtEdadInicio.Size = new System.Drawing.Size(41, 20);
             this.txtEdadInicio.TabIndex = 3;
+            this.txtEdadInicio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEdadInicio_KeyPress);
             // 
             // label2
             // 
@@ -121,20 +137,6 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(1245, 23);
             this.progressBar1.TabIndex = 11;
-            // 
-            // btnConsultar
-            // 
-            this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultar.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
-            this.btnConsultar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConsultar.Location = new System.Drawing.Point(233, 17);
-            this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(109, 46);
-            this.btnConsultar.TabIndex = 12;
-            this.btnConsultar.Text = "Consultar";
-            this.btnConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnConsultar.UseVisualStyleBackColor = true;
-            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // frmPersonalPorEdad
             // 

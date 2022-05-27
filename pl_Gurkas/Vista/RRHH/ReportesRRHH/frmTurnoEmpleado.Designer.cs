@@ -29,6 +29,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTurnoEmpleado));
             this.btnExcel = new System.Windows.Forms.Button();
             this.dgvPersonalTurno = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -124,6 +125,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.Controls.Add(this.btnExcel);
             this.Controls.Add(this.dgvPersonalTurno);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmTurnoEmpleado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "..:: Personal por Turno ::..";

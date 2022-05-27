@@ -47,7 +47,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(36, 85);
+            this.label6.Location = new System.Drawing.Point(36, 86);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(130, 15);
             this.label6.TabIndex = 160;
@@ -69,16 +69,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(572, 333);
+            this.panel1.Size = new System.Drawing.Size(538, 296);
             this.panel1.TabIndex = 164;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pictureBox16
             // 
             this.pictureBox16.Image = global::pl_Gurkas.Properties.Resources.png;
-            this.pictureBox16.Location = new System.Drawing.Point(436, 5);
+            this.pictureBox16.Location = new System.Drawing.Point(426, 12);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(112, 80);
+            this.pictureBox16.Size = new System.Drawing.Size(100, 77);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox16.TabIndex = 171;
             this.pictureBox16.TabStop = false;
@@ -101,9 +101,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.cboProducto.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cboProducto.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboProducto.FormattingEnabled = true;
-            this.cboProducto.Location = new System.Drawing.Point(188, 54);
+            this.cboProducto.Location = new System.Drawing.Point(145, 55);
             this.cboProducto.Name = "cboProducto";
-            this.cboProducto.Size = new System.Drawing.Size(213, 21);
+            this.cboProducto.Size = new System.Drawing.Size(256, 21);
             this.cboProducto.TabIndex = 169;
             // 
             // label42
@@ -154,9 +154,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // txtCodigoBarra
             // 
-            this.txtCodigoBarra.Location = new System.Drawing.Point(188, 85);
+            this.txtCodigoBarra.Location = new System.Drawing.Point(172, 85);
             this.txtCodigoBarra.Name = "txtCodigoBarra";
-            this.txtCodigoBarra.Size = new System.Drawing.Size(213, 20);
+            this.txtCodigoBarra.Size = new System.Drawing.Size(229, 20);
             this.txtCodigoBarra.TabIndex = 165;
             // 
             // frmGenerarCodigoBarra
@@ -164,7 +164,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(572, 333);
+            this.ClientSize = new System.Drawing.Size(538, 296);
             this.Controls.Add(this.panel1);
             this.Name = "frmGenerarCodigoBarra";
             this.Text = "Form1";
