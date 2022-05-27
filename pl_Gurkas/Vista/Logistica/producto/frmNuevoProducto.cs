@@ -24,7 +24,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         Datos.Actualizar actualizar = new Datos.Actualizar();
         Datos.Producto po = new Datos.Producto();
         Datos.CRUD.Logistica.Insertar.LogisticaInsertar logisticaInsertar = new Datos.CRUD.Logistica.Insertar.LogisticaInsertar();
-        Datos.CRUD.Logistica.Actualizar.LogisticaActualizar logisticaActuañizar = new Datos.CRUD.Logistica.Actualizar.LogisticaActualizar();
+        Datos.CRUD.Logistica.Actualizar.LogisticaActualizar logisticaActualizar = new Datos.CRUD.Logistica.Actualizar.LogisticaActualizar();
 
         public frmNuevoProducto()
         {
@@ -49,7 +49,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 DateTime f_registro_c = dtpRegistroCamisas.Value;
                 string observacion_c = txtObservacionCamisas.Text;
 
-                logisticaInsertar.RegistrarPrendaCamisas(cod_sistema, cod_camisa, nombre_camisa, talla_c, color_c,
+                logisticaActualizar.ActualizarPrendaCamisas(cod_sistema, cod_camisa, nombre_camisa, talla_c, color_c,
                    stock_inicial_c, estado_c, precio_unitario_c, stock_actual_c, stock_minimo_c, desp_c, f_adquision_c,
                    f_registro_c, observacion_c);
                 MessageBox.Show("Datos Actualizado correptamente", "Correpto");
@@ -143,7 +143,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 DateTime f_registro = dtpFechaRegistroEquipoTecnologia.Value;
                 string observacion = txtObservacionEquipoTecnologia.Text;
 
-                logisticaActuañizar.ActualizarEquipoTecnologico(cod_sistema, cod_producto, nombre_producto, modelo,
+                logisticaActualizar.ActualizarEquipoTecnologico(cod_sistema, cod_producto, nombre_producto, modelo,
                     marca, num_serie, desp_equipo, estado, precio_unitario, tipo_unidad, stock_inicial,
                     stock_actual, stock_minimo, f_adquision, f_registro, observacion);
                 MessageBox.Show("Datos Actualizado correptamente", "Correpto");
@@ -311,7 +311,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             Llenadocbo.ObtenerTallaPrendaProducto(cboTallaPrendaCamisas);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduCamisas);
-            Llenadocbo.ObtenerProductoCamisas(cboEstadoProduCamisas);
+            Llenadocbo.ObtenerProductoCamisas(cboProductoCamisas);
         }
         private void ValidarCamposVacios()
         {
@@ -358,6 +358,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void frmNuevoProducto_Load(object sender, EventArgs e)
         {
             txtCodEquipoTecnologia.Enabled = false;
+            txtcodcamisas.Enabled = false;
             txtCodSistema.Enabled = false;
             llenadoDeDatos();
             GenerarCodigoPrincipal();

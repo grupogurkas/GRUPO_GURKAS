@@ -391,7 +391,7 @@ namespace pl_Gurkas.Datos
         {
             try
             {
-                SqlCommand cmd = new SqlCommand("select COD_PRODUCTO_TECNOLOGICO,NOMBRE_EQUIPO from T_MAE_UNI_CAMISAS ", conexiondbo.conexionBD());
+                SqlCommand cmd = new SqlCommand("select COD_PRODUCTO_UNI_CAMISAS,NOMBRE_CAMISAS from T_MAE_UNI_CAMISAS ", conexiondbo.conexionBD());
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
