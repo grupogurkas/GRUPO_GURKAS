@@ -965,7 +965,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label11.Size = new System.Drawing.Size(87, 15);
             this.label11.TabIndex = 79;
             this.label11.Text = "Costo Unitario:";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // txtCodEquipo
             // 
@@ -1138,7 +1137,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox1.TabIndex = 91;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del Equipo";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label9
             // 
@@ -1345,7 +1343,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // label20
             // 
-            this.label20.Location = new System.Drawing.Point(110, 224);
+            this.label20.Location = new System.Drawing.Point(97, 225);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(27, 13);
             this.label20.TabIndex = 81;
@@ -1418,7 +1416,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.cboEstadoProduc2.Name = "cboEstadoProduc2";
             this.cboEstadoProduc2.Size = new System.Drawing.Size(158, 21);
             this.cboEstadoProduc2.TabIndex = 26;
-            this.cboEstadoProduc2.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
             // 
             // label37
             // 
@@ -1429,7 +1426,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label37.Size = new System.Drawing.Size(51, 15);
             this.label37.TabIndex = 0;
             this.label37.Text = "Estado :";
-            this.label37.Click += new System.EventHandler(this.label37_Click);
             // 
             // tabPage2
             // 
@@ -2540,7 +2536,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox3.TabIndex = 56;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Datos del Equipo";
-            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // label43
             // 
