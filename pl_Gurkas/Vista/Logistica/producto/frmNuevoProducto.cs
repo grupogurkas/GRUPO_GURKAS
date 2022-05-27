@@ -318,8 +318,8 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad7);
             Llenadocbo.ObtenerTallaCalzadoProducto(cboTallaCalzado);
             Llenadocbo.ObtenerTipoCalzadoProducto(cboTipoCalzado);
-            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc1);
-            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc3);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoCalzado);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoPantalon);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc4);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc5);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc6);
@@ -328,7 +328,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc9);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc10);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc11);
-            Llenadocbo.ObtenerTipoTelaProducto(cboTipoTela1);
+            Llenadocbo.ObtenerTipoTelaProducto(cboTipoTelaPantalon);
             Llenadocbo.ObtenerTallaPantalonProducto(cboTallaPantalon);
         }
         private void llenadoProductoTecnologico()

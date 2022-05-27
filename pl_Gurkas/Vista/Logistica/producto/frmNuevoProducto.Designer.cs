@@ -130,71 +130,71 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label27 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
+            this.txtObservacionCalzado = new System.Windows.Forms.TextBox();
             this.btnCargarImagen2 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.ptcImagenCalzado = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker9 = new System.Windows.Forms.DateTimePicker();
+            this.dtpRegistroCalzado = new System.Windows.Forms.DateTimePicker();
             this.label30 = new System.Windows.Forms.Label();
-            this.dateTimePicker10 = new System.Windows.Forms.DateTimePicker();
+            this.dtpAdquiCalzado = new System.Windows.Forms.DateTimePicker();
             this.label31 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.textBox39 = new System.Windows.Forms.TextBox();
+            this.txtStockMinimoCalzado = new System.Windows.Forms.TextBox();
             this.label85 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
-            this.textBox41 = new System.Windows.Forms.TextBox();
+            this.txtStockInicialCalzado = new System.Windows.Forms.TextBox();
             this.label87 = new System.Windows.Forms.Label();
-            this.textBox42 = new System.Windows.Forms.TextBox();
+            this.txtColorCalzado = new System.Windows.Forms.TextBox();
             this.cboTipoCalzado = new System.Windows.Forms.ComboBox();
             this.label88 = new System.Windows.Forms.Label();
             this.cboTallaCalzado = new System.Windows.Forms.ComboBox();
             this.label89 = new System.Windows.Forms.Label();
-            this.textBox43 = new System.Windows.Forms.TextBox();
+            this.txtCostoUniCalzado = new System.Windows.Forms.TextBox();
             this.label91 = new System.Windows.Forms.Label();
-            this.textBox44 = new System.Windows.Forms.TextBox();
+            this.txtCodCalzado = new System.Windows.Forms.TextBox();
             this.label93 = new System.Windows.Forms.Label();
-            this.textBox45 = new System.Windows.Forms.TextBox();
+            this.txtStockActualCalzado = new System.Windows.Forms.TextBox();
             this.label95 = new System.Windows.Forms.Label();
-            this.textBox46 = new System.Windows.Forms.TextBox();
-            this.textBox47 = new System.Windows.Forms.TextBox();
+            this.txtDespCalzado = new System.Windows.Forms.TextBox();
+            this.txtNombreCalzado = new System.Windows.Forms.TextBox();
             this.label96 = new System.Windows.Forms.Label();
-            this.cboEstadoProduc1 = new System.Windows.Forms.ComboBox();
+            this.cboEstadoCalzado = new System.Windows.Forms.ComboBox();
             this.label98 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.label45 = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
+            this.txtObservacionPantalon = new System.Windows.Forms.TextBox();
             this.btnCargarImagen3 = new System.Windows.Forms.Button();
             this.label47 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
             this.ptcImagenPantalon = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker11 = new System.Windows.Forms.DateTimePicker();
+            this.dtpRegistroPantalon = new System.Windows.Forms.DateTimePicker();
             this.label101 = new System.Windows.Forms.Label();
-            this.dateTimePicker12 = new System.Windows.Forms.DateTimePicker();
+            this.dtpAdPantalon = new System.Windows.Forms.DateTimePicker();
             this.label102 = new System.Windows.Forms.Label();
             this.label92 = new System.Windows.Forms.Label();
-            this.textBox51 = new System.Windows.Forms.TextBox();
+            this.txtStockMinPantalon = new System.Windows.Forms.TextBox();
             this.label104 = new System.Windows.Forms.Label();
             this.label105 = new System.Windows.Forms.Label();
-            this.textBox52 = new System.Windows.Forms.TextBox();
+            this.txtStockIniPantalon = new System.Windows.Forms.TextBox();
             this.label106 = new System.Windows.Forms.Label();
-            this.textBox53 = new System.Windows.Forms.TextBox();
-            this.cboTipoTela1 = new System.Windows.Forms.ComboBox();
+            this.txtColorPantalon = new System.Windows.Forms.TextBox();
+            this.cboTipoTelaPantalon = new System.Windows.Forms.ComboBox();
             this.label107 = new System.Windows.Forms.Label();
             this.cboTallaPantalon = new System.Windows.Forms.ComboBox();
             this.label108 = new System.Windows.Forms.Label();
-            this.textBox54 = new System.Windows.Forms.TextBox();
+            this.txtCostoUniPantalon = new System.Windows.Forms.TextBox();
             this.label110 = new System.Windows.Forms.Label();
-            this.textBox55 = new System.Windows.Forms.TextBox();
+            this.txtCodPantalon = new System.Windows.Forms.TextBox();
             this.label112 = new System.Windows.Forms.Label();
-            this.textBox56 = new System.Windows.Forms.TextBox();
+            this.txtStockActuPantalon = new System.Windows.Forms.TextBox();
             this.label114 = new System.Windows.Forms.Label();
-            this.textBox57 = new System.Windows.Forms.TextBox();
-            this.textBox58 = new System.Windows.Forms.TextBox();
+            this.txtDespPantalon = new System.Windows.Forms.TextBox();
+            this.txtNombrePantalon = new System.Windows.Forms.TextBox();
             this.label115 = new System.Windows.Forms.Label();
-            this.cboEstadoProduc3 = new System.Windows.Forms.ComboBox();
+            this.cboEstadoPantalon = new System.Windows.Forms.ComboBox();
             this.label117 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
@@ -481,18 +481,18 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label204 = new System.Windows.Forms.Label();
             this.txtNombreArma = new System.Windows.Forms.TextBox();
             this.label205 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.btnNuevoCalzado = new System.Windows.Forms.Button();
+            this.btnBuscarCalzado = new System.Windows.Forms.Button();
+            this.cboCalzado = new System.Windows.Forms.ComboBox();
             this.label152 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.btnAgregarCalzado = new System.Windows.Forms.Button();
+            this.btnActualizarCalzado = new System.Windows.Forms.Button();
+            this.btnNuevoPantalon = new System.Windows.Forms.Button();
+            this.btnBuscarPantalon = new System.Windows.Forms.Button();
+            this.cboPantalon = new System.Windows.Forms.ComboBox();
             this.label157 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnAgregarPantalon = new System.Windows.Forms.Button();
+            this.btnActualizarPantalon = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
@@ -1295,9 +1295,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label113.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label113.Location = new System.Drawing.Point(18, 15);
             this.label113.Name = "label113";
-            this.label113.Size = new System.Drawing.Size(103, 15);
+            this.label113.Size = new System.Drawing.Size(96, 15);
             this.label113.TabIndex = 156;
-            this.label113.Text = "Buscar Producto :";
+            this.label113.Text = "Buscar Camisa :";
             // 
             // ptcImagenCamisas
             // 
@@ -1622,12 +1622,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.button1);
-            this.tabPage2.Controls.Add(this.button2);
-            this.tabPage2.Controls.Add(this.comboBox3);
+            this.tabPage2.Controls.Add(this.btnNuevoCalzado);
+            this.tabPage2.Controls.Add(this.btnBuscarCalzado);
+            this.tabPage2.Controls.Add(this.cboCalzado);
             this.tabPage2.Controls.Add(this.label152);
-            this.tabPage2.Controls.Add(this.button3);
-            this.tabPage2.Controls.Add(this.button4);
+            this.tabPage2.Controls.Add(this.btnAgregarCalzado);
+            this.tabPage2.Controls.Add(this.btnActualizarCalzado);
             this.tabPage2.Controls.Add(this.groupBox7);
             this.tabPage2.Controls.Add(this.btnCargarImagen2);
             this.tabPage2.Controls.Add(this.groupBox8);
@@ -1645,33 +1645,33 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.groupBox7.Controls.Add(this.label27);
             this.groupBox7.Controls.Add(this.label36);
-            this.groupBox7.Controls.Add(this.textBox39);
+            this.groupBox7.Controls.Add(this.txtStockMinimoCalzado);
             this.groupBox7.Controls.Add(this.label85);
             this.groupBox7.Controls.Add(this.label86);
-            this.groupBox7.Controls.Add(this.textBox41);
+            this.groupBox7.Controls.Add(this.txtStockInicialCalzado);
             this.groupBox7.Controls.Add(this.label87);
-            this.groupBox7.Controls.Add(this.textBox42);
+            this.groupBox7.Controls.Add(this.txtColorCalzado);
             this.groupBox7.Controls.Add(this.cboTipoCalzado);
             this.groupBox7.Controls.Add(this.label88);
             this.groupBox7.Controls.Add(this.cboTallaCalzado);
             this.groupBox7.Controls.Add(this.label89);
-            this.groupBox7.Controls.Add(this.textBox43);
+            this.groupBox7.Controls.Add(this.txtCostoUniCalzado);
             this.groupBox7.Controls.Add(this.label91);
-            this.groupBox7.Controls.Add(this.textBox44);
+            this.groupBox7.Controls.Add(this.txtCodCalzado);
             this.groupBox7.Controls.Add(this.label93);
-            this.groupBox7.Controls.Add(this.textBox45);
+            this.groupBox7.Controls.Add(this.txtStockActualCalzado);
             this.groupBox7.Controls.Add(this.label95);
-            this.groupBox7.Controls.Add(this.textBox46);
-            this.groupBox7.Controls.Add(this.textBox47);
+            this.groupBox7.Controls.Add(this.txtDespCalzado);
+            this.groupBox7.Controls.Add(this.txtNombreCalzado);
             this.groupBox7.Controls.Add(this.label96);
-            this.groupBox7.Controls.Add(this.cboEstadoProduc1);
+            this.groupBox7.Controls.Add(this.cboEstadoCalzado);
             this.groupBox7.Controls.Add(this.label98);
             this.groupBox7.Location = new System.Drawing.Point(11, 60);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(363, 361);
             this.groupBox7.TabIndex = 100;
             this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Datos del Equipo";
+            this.groupBox7.Text = "Datos del Calzado";
             // 
             // label27
             // 
@@ -1685,11 +1685,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.textBox33);
+            this.groupBox8.Controls.Add(this.txtObservacionCalzado);
             this.groupBox8.Controls.Add(this.label8);
-            this.groupBox8.Controls.Add(this.dateTimePicker9);
+            this.groupBox8.Controls.Add(this.dtpRegistroCalzado);
             this.groupBox8.Controls.Add(this.label30);
-            this.groupBox8.Controls.Add(this.dateTimePicker10);
+            this.groupBox8.Controls.Add(this.dtpAdquiCalzado);
             this.groupBox8.Controls.Add(this.label31);
             this.groupBox8.Location = new System.Drawing.Point(380, 60);
             this.groupBox8.Name = "groupBox8";
@@ -1698,13 +1698,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Datos Adicionales";
             // 
-            // textBox33
+            // txtObservacionCalzado
             // 
-            this.textBox33.Location = new System.Drawing.Point(21, 130);
-            this.textBox33.Multiline = true;
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(305, 98);
-            this.textBox33.TabIndex = 158;
+            this.txtObservacionCalzado.Location = new System.Drawing.Point(21, 130);
+            this.txtObservacionCalzado.Multiline = true;
+            this.txtObservacionCalzado.Name = "txtObservacionCalzado";
+            this.txtObservacionCalzado.Size = new System.Drawing.Size(305, 98);
+            this.txtObservacionCalzado.TabIndex = 158;
             // 
             // btnCargarImagen2
             // 
@@ -1750,13 +1750,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.ptcImagenCalzado.TabIndex = 160;
             this.ptcImagenCalzado.TabStop = false;
             // 
-            // dateTimePicker9
+            // dtpRegistroCalzado
             // 
-            this.dateTimePicker9.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker9.Location = new System.Drawing.Point(139, 68);
-            this.dateTimePicker9.Name = "dateTimePicker9";
-            this.dateTimePicker9.Size = new System.Drawing.Size(109, 20);
-            this.dateTimePicker9.TabIndex = 153;
+            this.dtpRegistroCalzado.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpRegistroCalzado.Location = new System.Drawing.Point(139, 68);
+            this.dtpRegistroCalzado.Name = "dtpRegistroCalzado";
+            this.dtpRegistroCalzado.Size = new System.Drawing.Size(109, 20);
+            this.dtpRegistroCalzado.TabIndex = 153;
             // 
             // label30
             // 
@@ -1768,13 +1768,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label30.TabIndex = 154;
             this.label30.Text = "Fecha De Registro :";
             // 
-            // dateTimePicker10
+            // dtpAdquiCalzado
             // 
-            this.dateTimePicker10.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker10.Location = new System.Drawing.Point(139, 32);
-            this.dateTimePicker10.Name = "dateTimePicker10";
-            this.dateTimePicker10.Size = new System.Drawing.Size(104, 20);
-            this.dateTimePicker10.TabIndex = 151;
+            this.dtpAdquiCalzado.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpAdquiCalzado.Location = new System.Drawing.Point(139, 32);
+            this.dtpAdquiCalzado.Name = "dtpAdquiCalzado";
+            this.dtpAdquiCalzado.Size = new System.Drawing.Size(104, 20);
+            this.dtpAdquiCalzado.TabIndex = 151;
             // 
             // label31
             // 
@@ -1796,12 +1796,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label36.TabIndex = 182;
             this.label36.Text = "Costo Unitario:";
             // 
-            // textBox39
+            // txtStockMinimoCalzado
             // 
-            this.textBox39.Location = new System.Drawing.Point(130, 270);
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(158, 20);
-            this.textBox39.TabIndex = 95;
+            this.txtStockMinimoCalzado.Location = new System.Drawing.Point(130, 270);
+            this.txtStockMinimoCalzado.Name = "txtStockMinimoCalzado";
+            this.txtStockMinimoCalzado.Size = new System.Drawing.Size(158, 20);
+            this.txtStockMinimoCalzado.TabIndex = 95;
             // 
             // label85
             // 
@@ -1823,12 +1823,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label86.TabIndex = 91;
             this.label86.Text = "Tipo Calzado:";
             // 
-            // textBox41
+            // txtStockInicialCalzado
             // 
-            this.textBox41.Location = new System.Drawing.Point(130, 138);
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(158, 20);
-            this.textBox41.TabIndex = 90;
+            this.txtStockInicialCalzado.Location = new System.Drawing.Point(130, 138);
+            this.txtStockInicialCalzado.Name = "txtStockInicialCalzado";
+            this.txtStockInicialCalzado.Size = new System.Drawing.Size(158, 20);
+            this.txtStockInicialCalzado.TabIndex = 90;
             // 
             // label87
             // 
@@ -1840,12 +1840,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label87.TabIndex = 89;
             this.label87.Text = "Stock Inicial :";
             // 
-            // textBox42
+            // txtColorCalzado
             // 
-            this.textBox42.Location = new System.Drawing.Point(130, 112);
-            this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(158, 20);
-            this.textBox42.TabIndex = 88;
+            this.txtColorCalzado.Location = new System.Drawing.Point(130, 112);
+            this.txtColorCalzado.Name = "txtColorCalzado";
+            this.txtColorCalzado.Size = new System.Drawing.Size(158, 20);
+            this.txtColorCalzado.TabIndex = 88;
             // 
             // cboTipoCalzado
             // 
@@ -1885,12 +1885,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label89.TabIndex = 84;
             this.label89.Text = "Talla:";
             // 
-            // textBox43
+            // txtCostoUniCalzado
             // 
-            this.textBox43.Location = new System.Drawing.Point(130, 218);
-            this.textBox43.Name = "textBox43";
-            this.textBox43.Size = new System.Drawing.Size(158, 20);
-            this.textBox43.TabIndex = 80;
+            this.txtCostoUniCalzado.Location = new System.Drawing.Point(130, 218);
+            this.txtCostoUniCalzado.Name = "txtCostoUniCalzado";
+            this.txtCostoUniCalzado.Size = new System.Drawing.Size(158, 20);
+            this.txtCostoUniCalzado.TabIndex = 80;
             // 
             // label91
             // 
@@ -1900,12 +1900,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label91.TabIndex = 81;
             this.label91.Text = "S/. ";
             // 
-            // textBox44
+            // txtCodCalzado
             // 
-            this.textBox44.Location = new System.Drawing.Point(130, 27);
-            this.textBox44.Name = "textBox44";
-            this.textBox44.Size = new System.Drawing.Size(213, 20);
-            this.textBox44.TabIndex = 78;
+            this.txtCodCalzado.Location = new System.Drawing.Point(130, 27);
+            this.txtCodCalzado.Name = "txtCodCalzado";
+            this.txtCodCalzado.Size = new System.Drawing.Size(213, 20);
+            this.txtCodCalzado.TabIndex = 78;
             // 
             // label93
             // 
@@ -1913,16 +1913,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label93.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label93.Location = new System.Drawing.Point(6, 28);
             this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(74, 15);
+            this.label93.Size = new System.Drawing.Size(80, 15);
             this.label93.TabIndex = 77;
-            this.label93.Text = "Cod. Equipo";
+            this.label93.Text = "Cod. Calzado";
             // 
-            // textBox45
+            // txtStockActualCalzado
             // 
-            this.textBox45.Location = new System.Drawing.Point(130, 244);
-            this.textBox45.Name = "textBox45";
-            this.textBox45.Size = new System.Drawing.Size(158, 20);
-            this.textBox45.TabIndex = 67;
+            this.txtStockActualCalzado.Location = new System.Drawing.Point(130, 244);
+            this.txtStockActualCalzado.Name = "txtStockActualCalzado";
+            this.txtStockActualCalzado.Size = new System.Drawing.Size(158, 20);
+            this.txtStockActualCalzado.TabIndex = 67;
             // 
             // label95
             // 
@@ -1934,20 +1934,20 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label95.TabIndex = 63;
             this.label95.Text = "Descripcion :";
             // 
-            // textBox46
+            // txtDespCalzado
             // 
-            this.textBox46.Location = new System.Drawing.Point(130, 296);
-            this.textBox46.Multiline = true;
-            this.textBox46.Name = "textBox46";
-            this.textBox46.Size = new System.Drawing.Size(213, 56);
-            this.textBox46.TabIndex = 62;
+            this.txtDespCalzado.Location = new System.Drawing.Point(130, 296);
+            this.txtDespCalzado.Multiline = true;
+            this.txtDespCalzado.Name = "txtDespCalzado";
+            this.txtDespCalzado.Size = new System.Drawing.Size(213, 56);
+            this.txtDespCalzado.TabIndex = 62;
             // 
-            // textBox47
+            // txtNombreCalzado
             // 
-            this.textBox47.Location = new System.Drawing.Point(130, 53);
-            this.textBox47.Name = "textBox47";
-            this.textBox47.Size = new System.Drawing.Size(213, 20);
-            this.textBox47.TabIndex = 57;
+            this.txtNombreCalzado.Location = new System.Drawing.Point(130, 53);
+            this.txtNombreCalzado.Name = "txtNombreCalzado";
+            this.txtNombreCalzado.Size = new System.Drawing.Size(213, 20);
+            this.txtNombreCalzado.TabIndex = 57;
             // 
             // label96
             // 
@@ -1959,14 +1959,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label96.TabIndex = 56;
             this.label96.Text = "Nombre :";
             // 
-            // cboEstadoProduc1
+            // cboEstadoCalzado
             // 
-            this.cboEstadoProduc1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboEstadoProduc1.FormattingEnabled = true;
-            this.cboEstadoProduc1.Location = new System.Drawing.Point(130, 191);
-            this.cboEstadoProduc1.Name = "cboEstadoProduc1";
-            this.cboEstadoProduc1.Size = new System.Drawing.Size(158, 21);
-            this.cboEstadoProduc1.TabIndex = 26;
+            this.cboEstadoCalzado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEstadoCalzado.FormattingEnabled = true;
+            this.cboEstadoCalzado.Location = new System.Drawing.Point(130, 191);
+            this.cboEstadoCalzado.Name = "cboEstadoCalzado";
+            this.cboEstadoCalzado.Size = new System.Drawing.Size(158, 21);
+            this.cboEstadoCalzado.TabIndex = 26;
             // 
             // label98
             // 
@@ -1980,12 +1980,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.button5);
-            this.tabPage3.Controls.Add(this.button6);
-            this.tabPage3.Controls.Add(this.comboBox4);
+            this.tabPage3.Controls.Add(this.btnNuevoPantalon);
+            this.tabPage3.Controls.Add(this.btnBuscarPantalon);
+            this.tabPage3.Controls.Add(this.cboPantalon);
             this.tabPage3.Controls.Add(this.label157);
-            this.tabPage3.Controls.Add(this.button7);
-            this.tabPage3.Controls.Add(this.button8);
+            this.tabPage3.Controls.Add(this.btnAgregarPantalon);
+            this.tabPage3.Controls.Add(this.btnActualizarPantalon);
             this.tabPage3.Controls.Add(this.groupBox9);
             this.tabPage3.Controls.Add(this.btnCargarImagen3);
             this.tabPage3.Controls.Add(this.groupBox10);
@@ -2003,26 +2003,26 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.groupBox9.Controls.Add(this.label45);
             this.groupBox9.Controls.Add(this.label92);
-            this.groupBox9.Controls.Add(this.textBox51);
+            this.groupBox9.Controls.Add(this.txtStockMinPantalon);
             this.groupBox9.Controls.Add(this.label104);
             this.groupBox9.Controls.Add(this.label105);
-            this.groupBox9.Controls.Add(this.textBox52);
+            this.groupBox9.Controls.Add(this.txtStockIniPantalon);
             this.groupBox9.Controls.Add(this.label106);
-            this.groupBox9.Controls.Add(this.textBox53);
-            this.groupBox9.Controls.Add(this.cboTipoTela1);
+            this.groupBox9.Controls.Add(this.txtColorPantalon);
+            this.groupBox9.Controls.Add(this.cboTipoTelaPantalon);
             this.groupBox9.Controls.Add(this.label107);
             this.groupBox9.Controls.Add(this.cboTallaPantalon);
             this.groupBox9.Controls.Add(this.label108);
-            this.groupBox9.Controls.Add(this.textBox54);
+            this.groupBox9.Controls.Add(this.txtCostoUniPantalon);
             this.groupBox9.Controls.Add(this.label110);
-            this.groupBox9.Controls.Add(this.textBox55);
+            this.groupBox9.Controls.Add(this.txtCodPantalon);
             this.groupBox9.Controls.Add(this.label112);
-            this.groupBox9.Controls.Add(this.textBox56);
+            this.groupBox9.Controls.Add(this.txtStockActuPantalon);
             this.groupBox9.Controls.Add(this.label114);
-            this.groupBox9.Controls.Add(this.textBox57);
-            this.groupBox9.Controls.Add(this.textBox58);
+            this.groupBox9.Controls.Add(this.txtDespPantalon);
+            this.groupBox9.Controls.Add(this.txtNombrePantalon);
             this.groupBox9.Controls.Add(this.label115);
-            this.groupBox9.Controls.Add(this.cboEstadoProduc3);
+            this.groupBox9.Controls.Add(this.cboEstadoPantalon);
             this.groupBox9.Controls.Add(this.label117);
             this.groupBox9.Location = new System.Drawing.Point(6, 63);
             this.groupBox9.Name = "groupBox9";
@@ -2043,11 +2043,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // groupBox10
             // 
-            this.groupBox10.Controls.Add(this.textBox34);
+            this.groupBox10.Controls.Add(this.txtObservacionPantalon);
             this.groupBox10.Controls.Add(this.label47);
-            this.groupBox10.Controls.Add(this.dateTimePicker11);
+            this.groupBox10.Controls.Add(this.dtpRegistroPantalon);
             this.groupBox10.Controls.Add(this.label101);
-            this.groupBox10.Controls.Add(this.dateTimePicker12);
+            this.groupBox10.Controls.Add(this.dtpAdPantalon);
             this.groupBox10.Controls.Add(this.label102);
             this.groupBox10.Location = new System.Drawing.Point(366, 63);
             this.groupBox10.Name = "groupBox10";
@@ -2056,13 +2056,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Datos Adicionales";
             // 
-            // textBox34
+            // txtObservacionPantalon
             // 
-            this.textBox34.Location = new System.Drawing.Point(26, 143);
-            this.textBox34.Multiline = true;
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(289, 68);
-            this.textBox34.TabIndex = 158;
+            this.txtObservacionPantalon.Location = new System.Drawing.Point(21, 143);
+            this.txtObservacionPantalon.Multiline = true;
+            this.txtObservacionPantalon.Name = "txtObservacionPantalon";
+            this.txtObservacionPantalon.Size = new System.Drawing.Size(294, 68);
+            this.txtObservacionPantalon.TabIndex = 158;
             // 
             // btnCargarImagen3
             // 
@@ -2107,13 +2107,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.ptcImagenPantalon.TabIndex = 160;
             this.ptcImagenPantalon.TabStop = false;
             // 
-            // dateTimePicker11
+            // dtpRegistroPantalon
             // 
-            this.dateTimePicker11.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker11.Location = new System.Drawing.Point(139, 75);
-            this.dateTimePicker11.Name = "dateTimePicker11";
-            this.dateTimePicker11.Size = new System.Drawing.Size(109, 20);
-            this.dateTimePicker11.TabIndex = 153;
+            this.dtpRegistroPantalon.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpRegistroPantalon.Location = new System.Drawing.Point(139, 75);
+            this.dtpRegistroPantalon.Name = "dtpRegistroPantalon";
+            this.dtpRegistroPantalon.Size = new System.Drawing.Size(109, 20);
+            this.dtpRegistroPantalon.TabIndex = 153;
             // 
             // label101
             // 
@@ -2125,13 +2125,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label101.TabIndex = 154;
             this.label101.Text = "Fecha De Registro :";
             // 
-            // dateTimePicker12
+            // dtpAdPantalon
             // 
-            this.dateTimePicker12.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker12.Location = new System.Drawing.Point(139, 32);
-            this.dateTimePicker12.Name = "dateTimePicker12";
-            this.dateTimePicker12.Size = new System.Drawing.Size(104, 20);
-            this.dateTimePicker12.TabIndex = 151;
+            this.dtpAdPantalon.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpAdPantalon.Location = new System.Drawing.Point(139, 32);
+            this.dtpAdPantalon.Name = "dtpAdPantalon";
+            this.dtpAdPantalon.Size = new System.Drawing.Size(104, 20);
+            this.dtpAdPantalon.TabIndex = 151;
             // 
             // label102
             // 
@@ -2153,12 +2153,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label92.TabIndex = 182;
             this.label92.Text = "Costo Unitario:";
             // 
-            // textBox51
+            // txtStockMinPantalon
             // 
-            this.textBox51.Location = new System.Drawing.Point(130, 266);
-            this.textBox51.Name = "textBox51";
-            this.textBox51.Size = new System.Drawing.Size(158, 20);
-            this.textBox51.TabIndex = 95;
+            this.txtStockMinPantalon.Location = new System.Drawing.Point(130, 266);
+            this.txtStockMinPantalon.Name = "txtStockMinPantalon";
+            this.txtStockMinPantalon.Size = new System.Drawing.Size(158, 20);
+            this.txtStockMinPantalon.TabIndex = 95;
             // 
             // label104
             // 
@@ -2180,12 +2180,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label105.TabIndex = 91;
             this.label105.Text = "Tipo Tela:";
             // 
-            // textBox52
+            // txtStockIniPantalon
             // 
-            this.textBox52.Location = new System.Drawing.Point(130, 134);
-            this.textBox52.Name = "textBox52";
-            this.textBox52.Size = new System.Drawing.Size(158, 20);
-            this.textBox52.TabIndex = 90;
+            this.txtStockIniPantalon.Location = new System.Drawing.Point(130, 134);
+            this.txtStockIniPantalon.Name = "txtStockIniPantalon";
+            this.txtStockIniPantalon.Size = new System.Drawing.Size(158, 20);
+            this.txtStockIniPantalon.TabIndex = 90;
             // 
             // label106
             // 
@@ -2197,21 +2197,21 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label106.TabIndex = 89;
             this.label106.Text = "Stock Inicial :";
             // 
-            // textBox53
+            // txtColorPantalon
             // 
-            this.textBox53.Location = new System.Drawing.Point(130, 108);
-            this.textBox53.Name = "textBox53";
-            this.textBox53.Size = new System.Drawing.Size(158, 20);
-            this.textBox53.TabIndex = 88;
+            this.txtColorPantalon.Location = new System.Drawing.Point(130, 108);
+            this.txtColorPantalon.Name = "txtColorPantalon";
+            this.txtColorPantalon.Size = new System.Drawing.Size(158, 20);
+            this.txtColorPantalon.TabIndex = 88;
             // 
-            // cboTipoTela1
+            // cboTipoTelaPantalon
             // 
-            this.cboTipoTela1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboTipoTela1.FormattingEnabled = true;
-            this.cboTipoTela1.Location = new System.Drawing.Point(130, 160);
-            this.cboTipoTela1.Name = "cboTipoTela1";
-            this.cboTipoTela1.Size = new System.Drawing.Size(158, 21);
-            this.cboTipoTela1.TabIndex = 87;
+            this.cboTipoTelaPantalon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTipoTelaPantalon.FormattingEnabled = true;
+            this.cboTipoTelaPantalon.Location = new System.Drawing.Point(130, 160);
+            this.cboTipoTelaPantalon.Name = "cboTipoTelaPantalon";
+            this.cboTipoTelaPantalon.Size = new System.Drawing.Size(158, 21);
+            this.cboTipoTelaPantalon.TabIndex = 87;
             // 
             // label107
             // 
@@ -2242,12 +2242,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label108.TabIndex = 84;
             this.label108.Text = "Talla:";
             // 
-            // textBox54
+            // txtCostoUniPantalon
             // 
-            this.textBox54.Location = new System.Drawing.Point(130, 214);
-            this.textBox54.Name = "textBox54";
-            this.textBox54.Size = new System.Drawing.Size(158, 20);
-            this.textBox54.TabIndex = 80;
+            this.txtCostoUniPantalon.Location = new System.Drawing.Point(130, 214);
+            this.txtCostoUniPantalon.Name = "txtCostoUniPantalon";
+            this.txtCostoUniPantalon.Size = new System.Drawing.Size(158, 20);
+            this.txtCostoUniPantalon.TabIndex = 80;
             // 
             // label110
             // 
@@ -2257,12 +2257,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label110.TabIndex = 81;
             this.label110.Text = "S/. ";
             // 
-            // textBox55
+            // txtCodPantalon
             // 
-            this.textBox55.Location = new System.Drawing.Point(130, 23);
-            this.textBox55.Name = "textBox55";
-            this.textBox55.Size = new System.Drawing.Size(213, 20);
-            this.textBox55.TabIndex = 78;
+            this.txtCodPantalon.Location = new System.Drawing.Point(130, 23);
+            this.txtCodPantalon.Name = "txtCodPantalon";
+            this.txtCodPantalon.Size = new System.Drawing.Size(213, 20);
+            this.txtCodPantalon.TabIndex = 78;
             // 
             // label112
             // 
@@ -2270,16 +2270,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label112.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label112.Location = new System.Drawing.Point(6, 24);
             this.label112.Name = "label112";
-            this.label112.Size = new System.Drawing.Size(74, 15);
+            this.label112.Size = new System.Drawing.Size(84, 15);
             this.label112.TabIndex = 77;
-            this.label112.Text = "Cod. Equipo";
+            this.label112.Text = "Cod. Pantalon";
             // 
-            // textBox56
+            // txtStockActuPantalon
             // 
-            this.textBox56.Location = new System.Drawing.Point(130, 240);
-            this.textBox56.Name = "textBox56";
-            this.textBox56.Size = new System.Drawing.Size(158, 20);
-            this.textBox56.TabIndex = 67;
+            this.txtStockActuPantalon.Location = new System.Drawing.Point(130, 240);
+            this.txtStockActuPantalon.Name = "txtStockActuPantalon";
+            this.txtStockActuPantalon.Size = new System.Drawing.Size(158, 20);
+            this.txtStockActuPantalon.TabIndex = 67;
             // 
             // label114
             // 
@@ -2291,20 +2291,20 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label114.TabIndex = 63;
             this.label114.Text = "Descripcion :";
             // 
-            // textBox57
+            // txtDespPantalon
             // 
-            this.textBox57.Location = new System.Drawing.Point(6, 310);
-            this.textBox57.Multiline = true;
-            this.textBox57.Name = "textBox57";
-            this.textBox57.Size = new System.Drawing.Size(337, 56);
-            this.textBox57.TabIndex = 62;
+            this.txtDespPantalon.Location = new System.Drawing.Point(6, 310);
+            this.txtDespPantalon.Multiline = true;
+            this.txtDespPantalon.Name = "txtDespPantalon";
+            this.txtDespPantalon.Size = new System.Drawing.Size(337, 56);
+            this.txtDespPantalon.TabIndex = 62;
             // 
-            // textBox58
+            // txtNombrePantalon
             // 
-            this.textBox58.Location = new System.Drawing.Point(130, 49);
-            this.textBox58.Name = "textBox58";
-            this.textBox58.Size = new System.Drawing.Size(213, 20);
-            this.textBox58.TabIndex = 57;
+            this.txtNombrePantalon.Location = new System.Drawing.Point(130, 49);
+            this.txtNombrePantalon.Name = "txtNombrePantalon";
+            this.txtNombrePantalon.Size = new System.Drawing.Size(213, 20);
+            this.txtNombrePantalon.TabIndex = 57;
             // 
             // label115
             // 
@@ -2316,14 +2316,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label115.TabIndex = 56;
             this.label115.Text = "Nombre :";
             // 
-            // cboEstadoProduc3
+            // cboEstadoPantalon
             // 
-            this.cboEstadoProduc3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboEstadoProduc3.FormattingEnabled = true;
-            this.cboEstadoProduc3.Location = new System.Drawing.Point(130, 187);
-            this.cboEstadoProduc3.Name = "cboEstadoProduc3";
-            this.cboEstadoProduc3.Size = new System.Drawing.Size(158, 21);
-            this.cboEstadoProduc3.TabIndex = 26;
+            this.cboEstadoPantalon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEstadoPantalon.FormattingEnabled = true;
+            this.cboEstadoPantalon.Location = new System.Drawing.Point(130, 187);
+            this.cboEstadoPantalon.Name = "cboEstadoPantalon";
+            this.cboEstadoPantalon.Size = new System.Drawing.Size(158, 21);
+            this.cboEstadoPantalon.TabIndex = 26;
             // 
             // label117
             // 
@@ -5284,41 +5284,41 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label205.TabIndex = 56;
             this.label205.Text = "Nombre:";
             // 
-            // button1
+            // btnNuevoCalzado
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::pl_Gurkas.Properties.Resources.nuevo_emplado_32;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(955, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 51);
-            this.button1.TabIndex = 165;
-            this.button1.Text = "Nuevo";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnNuevoCalzado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevoCalzado.Image = global::pl_Gurkas.Properties.Resources.nuevo_emplado_32;
+            this.btnNuevoCalzado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevoCalzado.Location = new System.Drawing.Point(955, 3);
+            this.btnNuevoCalzado.Name = "btnNuevoCalzado";
+            this.btnNuevoCalzado.Size = new System.Drawing.Size(119, 51);
+            this.btnNuevoCalzado.TabIndex = 165;
+            this.btnNuevoCalzado.Text = "Nuevo";
+            this.btnNuevoCalzado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNuevoCalzado.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnBuscarCalzado
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(466, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(119, 51);
-            this.button2.TabIndex = 166;
-            this.button2.Text = "Buscar";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnBuscarCalzado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarCalzado.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
+            this.btnBuscarCalzado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscarCalzado.Location = new System.Drawing.Point(466, 3);
+            this.btnBuscarCalzado.Name = "btnBuscarCalzado";
+            this.btnBuscarCalzado.Size = new System.Drawing.Size(119, 51);
+            this.btnBuscarCalzado.TabIndex = 166;
+            this.btnBuscarCalzado.Text = "Buscar";
+            this.btnBuscarCalzado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscarCalzado.UseVisualStyleBackColor = true;
             // 
-            // comboBox3
+            // cboCalzado
             // 
-            this.comboBox3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(125, 14);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(335, 21);
-            this.comboBox3.TabIndex = 168;
+            this.cboCalzado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboCalzado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboCalzado.FormattingEnabled = true;
+            this.cboCalzado.Location = new System.Drawing.Point(125, 14);
+            this.cboCalzado.Name = "cboCalzado";
+            this.cboCalzado.Size = new System.Drawing.Size(335, 21);
+            this.cboCalzado.TabIndex = 168;
             // 
             // label152
             // 
@@ -5326,71 +5326,71 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label152.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label152.Location = new System.Drawing.Point(16, 15);
             this.label152.Name = "label152";
-            this.label152.Size = new System.Drawing.Size(103, 15);
+            this.label152.Size = new System.Drawing.Size(99, 15);
             this.label152.TabIndex = 167;
-            this.label152.Text = "Buscar Producto :";
+            this.label152.Text = "Buscar Calzado :";
             // 
-            // button3
+            // btnAgregarCalzado
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Image = global::pl_Gurkas.Properties.Resources.add_trabajador_32;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(591, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(176, 51);
-            this.button3.TabIndex = 163;
-            this.button3.Text = "Agregar Producto\r\n Camisa";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnAgregarCalzado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarCalzado.Image = global::pl_Gurkas.Properties.Resources.add_trabajador_32;
+            this.btnAgregarCalzado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarCalzado.Location = new System.Drawing.Point(591, 3);
+            this.btnAgregarCalzado.Name = "btnAgregarCalzado";
+            this.btnAgregarCalzado.Size = new System.Drawing.Size(176, 51);
+            this.btnAgregarCalzado.TabIndex = 163;
+            this.btnAgregarCalzado.Text = "Agregar Producto\r\nCalzado";
+            this.btnAgregarCalzado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregarCalzado.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnActualizarCalzado
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Image = global::pl_Gurkas.Properties.Resources.empleado_update_32;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(773, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(176, 51);
-            this.button4.TabIndex = 164;
-            this.button4.Text = "Actualizar Producto \r\nCamisa";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnActualizarCalzado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarCalzado.Image = global::pl_Gurkas.Properties.Resources.empleado_update_32;
+            this.btnActualizarCalzado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnActualizarCalzado.Location = new System.Drawing.Point(773, 3);
+            this.btnActualizarCalzado.Name = "btnActualizarCalzado";
+            this.btnActualizarCalzado.Size = new System.Drawing.Size(176, 51);
+            this.btnActualizarCalzado.TabIndex = 164;
+            this.btnActualizarCalzado.Text = "Actualizar Producto \r\nCalzado";
+            this.btnActualizarCalzado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnActualizarCalzado.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnNuevoPantalon
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Image = global::pl_Gurkas.Properties.Resources.nuevo_emplado_32;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(953, 6);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(119, 51);
-            this.button5.TabIndex = 171;
-            this.button5.Text = "Nuevo";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnNuevoPantalon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevoPantalon.Image = global::pl_Gurkas.Properties.Resources.nuevo_emplado_32;
+            this.btnNuevoPantalon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevoPantalon.Location = new System.Drawing.Point(953, 6);
+            this.btnNuevoPantalon.Name = "btnNuevoPantalon";
+            this.btnNuevoPantalon.Size = new System.Drawing.Size(119, 51);
+            this.btnNuevoPantalon.TabIndex = 171;
+            this.btnNuevoPantalon.Text = "Nuevo";
+            this.btnNuevoPantalon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNuevoPantalon.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnBuscarPantalon
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(464, 6);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(119, 51);
-            this.button6.TabIndex = 172;
-            this.button6.Text = "Buscar";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnBuscarPantalon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarPantalon.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
+            this.btnBuscarPantalon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscarPantalon.Location = new System.Drawing.Point(464, 6);
+            this.btnBuscarPantalon.Name = "btnBuscarPantalon";
+            this.btnBuscarPantalon.Size = new System.Drawing.Size(119, 51);
+            this.btnBuscarPantalon.TabIndex = 172;
+            this.btnBuscarPantalon.Text = "Buscar";
+            this.btnBuscarPantalon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscarPantalon.UseVisualStyleBackColor = true;
             // 
-            // comboBox4
+            // cboPantalon
             // 
-            this.comboBox4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(123, 17);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(335, 21);
-            this.comboBox4.TabIndex = 174;
+            this.cboPantalon.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboPantalon.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboPantalon.FormattingEnabled = true;
+            this.cboPantalon.Location = new System.Drawing.Point(123, 17);
+            this.cboPantalon.Name = "cboPantalon";
+            this.cboPantalon.Size = new System.Drawing.Size(335, 21);
+            this.cboPantalon.TabIndex = 174;
             // 
             // label157
             // 
@@ -5400,33 +5400,33 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label157.Name = "label157";
             this.label157.Size = new System.Drawing.Size(103, 15);
             this.label157.TabIndex = 173;
-            this.label157.Text = "Buscar Producto :";
+            this.label157.Text = "Buscar Pantalon :";
             // 
-            // button7
+            // btnAgregarPantalon
             // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Image = global::pl_Gurkas.Properties.Resources.add_trabajador_32;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(589, 6);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(176, 51);
-            this.button7.TabIndex = 169;
-            this.button7.Text = "Agregar Producto\r\n Camisa";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnAgregarPantalon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarPantalon.Image = global::pl_Gurkas.Properties.Resources.add_trabajador_32;
+            this.btnAgregarPantalon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarPantalon.Location = new System.Drawing.Point(589, 6);
+            this.btnAgregarPantalon.Name = "btnAgregarPantalon";
+            this.btnAgregarPantalon.Size = new System.Drawing.Size(176, 51);
+            this.btnAgregarPantalon.TabIndex = 169;
+            this.btnAgregarPantalon.Text = "Agregar Producto\r\nPantalon";
+            this.btnAgregarPantalon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregarPantalon.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btnActualizarPantalon
             // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Image = global::pl_Gurkas.Properties.Resources.empleado_update_32;
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(771, 6);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(176, 51);
-            this.button8.TabIndex = 170;
-            this.button8.Text = "Actualizar Producto \r\nCamisa";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnActualizarPantalon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarPantalon.Image = global::pl_Gurkas.Properties.Resources.empleado_update_32;
+            this.btnActualizarPantalon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnActualizarPantalon.Location = new System.Drawing.Point(771, 6);
+            this.btnActualizarPantalon.Name = "btnActualizarPantalon";
+            this.btnActualizarPantalon.Size = new System.Drawing.Size(176, 51);
+            this.btnActualizarPantalon.TabIndex = 170;
+            this.btnActualizarPantalon.Text = "Actualizar Producto \r\nPantalon";
+            this.btnActualizarPantalon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnActualizarPantalon.UseVisualStyleBackColor = true;
             // 
             // button9
             // 
@@ -5470,9 +5470,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label161.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label161.Location = new System.Drawing.Point(16, 18);
             this.label161.Name = "label161";
-            this.label161.Size = new System.Drawing.Size(103, 15);
+            this.label161.Size = new System.Drawing.Size(107, 15);
             this.label161.TabIndex = 179;
-            this.label161.Text = "Buscar Producto :";
+            this.label161.Text = "Buscar Accesorio :";
             // 
             // button11
             // 
@@ -5999,57 +5999,57 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker9;
+        private System.Windows.Forms.DateTimePicker dtpRegistroCalzado;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.DateTimePicker dateTimePicker10;
+        private System.Windows.Forms.DateTimePicker dtpAdquiCalzado;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox textBox39;
+        private System.Windows.Forms.TextBox txtStockMinimoCalzado;
         private System.Windows.Forms.Label label85;
         private System.Windows.Forms.Label label86;
-        private System.Windows.Forms.TextBox textBox41;
+        private System.Windows.Forms.TextBox txtStockInicialCalzado;
         private System.Windows.Forms.Label label87;
-        private System.Windows.Forms.TextBox textBox42;
+        private System.Windows.Forms.TextBox txtColorCalzado;
         private System.Windows.Forms.ComboBox cboTipoCalzado;
         private System.Windows.Forms.Label label88;
         private System.Windows.Forms.ComboBox cboTallaCalzado;
         private System.Windows.Forms.Label label89;
-        private System.Windows.Forms.TextBox textBox43;
+        private System.Windows.Forms.TextBox txtCostoUniCalzado;
         private System.Windows.Forms.Label label91;
-        private System.Windows.Forms.TextBox textBox44;
+        private System.Windows.Forms.TextBox txtCodCalzado;
         private System.Windows.Forms.Label label93;
-        private System.Windows.Forms.TextBox textBox45;
+        private System.Windows.Forms.TextBox txtStockActualCalzado;
         private System.Windows.Forms.Label label95;
-        private System.Windows.Forms.TextBox textBox46;
-        private System.Windows.Forms.TextBox textBox47;
+        private System.Windows.Forms.TextBox txtDespCalzado;
+        private System.Windows.Forms.TextBox txtNombreCalzado;
         private System.Windows.Forms.Label label96;
-        private System.Windows.Forms.ComboBox cboEstadoProduc1;
+        private System.Windows.Forms.ComboBox cboEstadoCalzado;
         private System.Windows.Forms.Label label98;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.DateTimePicker dateTimePicker11;
+        private System.Windows.Forms.DateTimePicker dtpRegistroPantalon;
         private System.Windows.Forms.Label label101;
-        private System.Windows.Forms.DateTimePicker dateTimePicker12;
+        private System.Windows.Forms.DateTimePicker dtpAdPantalon;
         private System.Windows.Forms.Label label102;
-        private System.Windows.Forms.TextBox textBox51;
+        private System.Windows.Forms.TextBox txtStockMinPantalon;
         private System.Windows.Forms.Label label104;
         private System.Windows.Forms.Label label105;
-        private System.Windows.Forms.TextBox textBox52;
+        private System.Windows.Forms.TextBox txtStockIniPantalon;
         private System.Windows.Forms.Label label106;
-        private System.Windows.Forms.TextBox textBox53;
-        private System.Windows.Forms.ComboBox cboTipoTela1;
+        private System.Windows.Forms.TextBox txtColorPantalon;
+        private System.Windows.Forms.ComboBox cboTipoTelaPantalon;
         private System.Windows.Forms.Label label107;
         private System.Windows.Forms.ComboBox cboTallaPantalon;
         private System.Windows.Forms.Label label108;
-        private System.Windows.Forms.TextBox textBox54;
+        private System.Windows.Forms.TextBox txtCostoUniPantalon;
         private System.Windows.Forms.Label label110;
-        private System.Windows.Forms.TextBox textBox55;
+        private System.Windows.Forms.TextBox txtCodPantalon;
         private System.Windows.Forms.Label label112;
-        private System.Windows.Forms.TextBox textBox56;
+        private System.Windows.Forms.TextBox txtStockActuPantalon;
         private System.Windows.Forms.Label label114;
-        private System.Windows.Forms.TextBox textBox57;
-        private System.Windows.Forms.TextBox textBox58;
+        private System.Windows.Forms.TextBox txtDespPantalon;
+        private System.Windows.Forms.TextBox txtNombrePantalon;
         private System.Windows.Forms.Label label115;
-        private System.Windows.Forms.ComboBox cboEstadoProduc3;
+        private System.Windows.Forms.ComboBox cboEstadoPantalon;
         private System.Windows.Forms.Label label117;
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.GroupBox groupBox12;
@@ -6207,13 +6207,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblrutaimagenteconologia;
         private System.Windows.Forms.PictureBox ptcImageTecnologia;
-        private System.Windows.Forms.TextBox textBox33;
+        private System.Windows.Forms.TextBox txtObservacionCalzado;
         private System.Windows.Forms.Button btnCargarImagen2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.PictureBox ptcImagenCalzado;
         private System.Windows.Forms.VScrollBar vScrollBar1;
-        private System.Windows.Forms.TextBox textBox34;
+        private System.Windows.Forms.TextBox txtObservacionPantalon;
         private System.Windows.Forms.Button btnCargarImagen3;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label62;
@@ -6415,18 +6415,18 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.Label label113;
         private System.Windows.Forms.Button btnAgregarProductoCamisas;
         private System.Windows.Forms.Button btnActualizarProductoCamisas;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Button btnNuevoCalzado;
+        private System.Windows.Forms.Button btnBuscarCalzado;
+        private System.Windows.Forms.ComboBox cboCalzado;
         private System.Windows.Forms.Label label152;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Button btnAgregarCalzado;
+        private System.Windows.Forms.Button btnActualizarCalzado;
+        private System.Windows.Forms.Button btnNuevoPantalon;
+        private System.Windows.Forms.Button btnBuscarPantalon;
+        private System.Windows.Forms.ComboBox cboPantalon;
         private System.Windows.Forms.Label label157;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnAgregarPantalon;
+        private System.Windows.Forms.Button btnActualizarPantalon;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.ComboBox comboBox5;
