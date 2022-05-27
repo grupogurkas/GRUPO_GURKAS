@@ -30,6 +30,38 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             InitializeComponent();
         }
+        public void registrarProductoTecnologico()
+        {
+            try
+            {
+                string cod_sistema = txtCodSistema.Text;
+                string cod_producto = txtCodEquipoTecnologia.Text;
+                string nombre_producto = txtNombreEquipoTecnologia.Text;
+                string modelo = txtModeloEquipoTecnologia.Text;
+                string marca = txtMarcaEquipoTecnologia.Text;
+                string num_serie = txtNumSerialEquipoTecnologia.Text;
+                string desp_equipo = txtDescripcionEquipoTecnologia.Text;
+                int estado = cboEstadoProducEquipoTecnologia.SelectedIndex;
+                decimal precio_unitario = Convert.ToDecimal(txtPrecioUnitarioEquipoTecnologia.Text);
+                int tipo_unidad = cboTipoUnidadEquipoTecnologia.SelectedIndex;
+                int stock_inicial = Convert.ToInt32(txtStockInicialEquipoTecnologia.Text);
+                int stock_actual = Convert.ToInt32(txtStockActualEquipoTecnologia.Text);
+                int stock_minimo = Convert.ToInt32(txtStockMinEquipoTecnologia.Text);
+                DateTime f_adquision = dtpFechaAdquisicionEquipoTecnologia.Value;
+                DateTime f_registro = dtpFechaRegistroEquipoTecnologia.Value;
+                string observacion = txtObservacionEquipoTecnologia.Text;
+
+                logisticaInsertar.RegistrarEquipoTecnologico(cod_sistema, cod_producto, nombre_producto, modelo,
+                    marca, num_serie, desp_equipo, estado, precio_unitario, tipo_unidad, stock_inicial,
+                    stock_actual, stock_minimo, f_adquision, f_registro, observacion);
+                MessageBox.Show("Datos registrado correptamente", "Correpto");
+                LimpiarDatosTecnologico();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede Regristrar el producto", "Error");
+            }
+        }
         public void actualizarProductoTecnologico()
         {
             try
@@ -325,35 +357,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
 
         private void btnAgregarProductoTecnologico_Click(object sender, EventArgs e)
         {
-            try
-            {
-                string cod_sistema = txtCodSistema.Text;
-                string cod_producto = txtCodEquipoTecnologia.Text;
-                string nombre_producto = txtNombreEquipoTecnologia.Text;
-                string modelo = txtModeloEquipoTecnologia.Text;
-                string marca = txtMarcaEquipoTecnologia.Text;
-                string num_serie = txtNumSerialEquipoTecnologia.Text;
-                string desp_equipo = txtDescripcionEquipoTecnologia.Text;
-                int estado = cboEstadoProducEquipoTecnologia.SelectedIndex;
-                decimal precio_unitario = Convert.ToDecimal(txtPrecioUnitarioEquipoTecnologia.Text);
-                int tipo_unidad = cboTipoUnidadEquipoTecnologia.SelectedIndex;
-                int stock_inicial = Convert.ToInt32(txtStockInicialEquipoTecnologia.Text);
-                int stock_actual = Convert.ToInt32(txtStockActualEquipoTecnologia.Text);
-                int stock_minimo = Convert.ToInt32(txtStockMinEquipoTecnologia.Text);
-                DateTime f_adquision = dtpFechaAdquisicionEquipoTecnologia.Value;
-                DateTime f_registro = dtpFechaRegistroEquipoTecnologia.Value;
-                string observacion = txtObservacionEquipoTecnologia.Text;
-
-                logisticaInsertar.RegistrarEquipoTecnologico( cod_sistema,  cod_producto,  nombre_producto,  modelo, 
-                    marca,  num_serie,  desp_equipo,  estado,  precio_unitario,  tipo_unidad,stock_inicial,  
-                    stock_actual,  stock_minimo,  f_adquision,  f_registro,  observacion);
-                MessageBox.Show("Datos registrado correptamente", "Correpto");
-                LimpiarDatosTecnologico();
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("No se puede Regristrar el producto", "Error");
-            }
+            registrarProductoTecnologico();
         }
 
         private void btnNuevoProductoTecnologico_Click(object sender, EventArgs e)
