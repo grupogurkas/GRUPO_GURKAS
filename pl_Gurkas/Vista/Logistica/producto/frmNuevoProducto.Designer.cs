@@ -5124,6 +5124,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnNuevoProductoCamisas.Text = "Nuevo";
             this.btnNuevoProductoCamisas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevoProductoCamisas.UseVisualStyleBackColor = true;
+            this.btnNuevoProductoCamisas.Click += new System.EventHandler(this.btnNuevoProductoCamisas_Click);
             // 
             // btnBuscarProductoCamisas
             // 
@@ -5184,6 +5185,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnActualizarProductoCamisas.Text = "Actualizar Producto \r\nCamisa";
             this.btnActualizarProductoCamisas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnActualizarProductoCamisas.UseVisualStyleBackColor = true;
+            this.btnActualizarProductoCamisas.Click += new System.EventHandler(this.btnActualizarProductoCamisas_Click);
             // 
             // frmNuevoProducto
             // 

@@ -30,6 +30,36 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             InitializeComponent();
         }
+        public void actualizarDatosCamisas()
+        {
+            try
+            {
+                string cod_sistema = txtCodSistema.Text;
+                string cod_camisa = txtcodcamisas.Text;
+                string nombre_camisa = txtNombreCamisas.Text;
+                int talla_c = cboTallaPrendaCamisas.SelectedIndex;
+                string color_c = txtColorCamisas.Text;
+                int stock_inicial_c = Convert.ToInt32(txtStockInicialCamisas.Text);
+                int estado_c = cboEstadoProduCamisas.SelectedIndex;
+                decimal precio_unitario_c = Convert.ToDecimal(txtCostoUniCamisas.Text);
+                int stock_actual_c = Convert.ToInt32(txtStockActualCamisas.Text);
+                int stock_minimo_c = Convert.ToInt32(txtStockMinimoCamisas.Text);
+                string desp_c = txtDescripcionCamisas.Text;
+                DateTime f_adquision_c = dtpAdquisicionCamisas.Value;
+                DateTime f_registro_c = dtpRegistroCamisas.Value;
+                string observacion_c = txtObservacionCamisas.Text;
+
+                logisticaInsertar.RegistrarPrendaCamisas(cod_sistema, cod_camisa, nombre_camisa, talla_c, color_c,
+                   stock_inicial_c, estado_c, precio_unitario_c, stock_actual_c, stock_minimo_c, desp_c, f_adquision_c,
+                   f_registro_c, observacion_c);
+                MessageBox.Show("Datos Actualizado correptamente", "Correpto");
+                LimpiarDatosCamisas();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede Actualizado el producto", "Error");
+            }
+        }
         public void AgregarProductoCamisas()
         {
             try
@@ -53,7 +83,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
                    stock_inicial_c, estado_c, precio_unitario_c, stock_actual_c, stock_minimo_c, desp_c, f_adquision_c,
                    f_registro_c, observacion_c);
                 MessageBox.Show("Datos registrado correptamente", "Correpto");
-                LimpiarDatosTecnologico();
+                LimpiarDatosCamisas();
             }
             catch(Exception ex)
             {
@@ -179,12 +209,23 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 txtCodSistema.Text = "SUM0" + (numero + 1);
             }
         }
+        public void LimpiarDatosCamisas()
+        {
+            LimpiarDatos.LimpiarGroupBox(groupBox2);
+            txtNombreCamisas.Focus();
+            LimpiarDatos.LimpiarGroupBox(groupBox13);
+            GenerarCodigoTecnologico();
+            GenerarCodigoCamisas();
+            GenerarCodigoPrincipal();
+            Llenadocbo.ObtenerProductoCamisas(cboEstadoProduCamisas);
+        }
         public void LimpiarDatosTecnologico()
         {
             LimpiarDatos.LimpiarGroupBox(groupBox2);
             txtNombreEquipoTecnologia.Focus();
             LimpiarDatos.LimpiarGroupBox(groupBox13);
             GenerarCodigoTecnologico();
+            GenerarCodigoCamisas();
             GenerarCodigoPrincipal();
             Llenadocbo.ObtenerProductoTecnologico(cboNombreProductoTecnologico);
         }
@@ -212,6 +253,30 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 txtCodEquipoTecnologia.Text = "TEC0" + (numero + 1);
             }
         }
+        public void GenerarCodigoCamisas()
+        {
+            string resultado = "";
+            SqlCommand comando = new SqlCommand("select count(ID_PRODUCTO_UNI_CAMISAS) as 't' from T_MAE_UNI_CAMISAS ", conexion.conexionBD());
+
+            SqlDataReader recorre = comando.ExecuteReader();
+            while (recorre.Read())
+            {
+                resultado = recorre["t"].ToString();
+            }
+            int numero = Convert.ToInt32(resultado);
+            if (numero < 10)
+            {
+                txtcodcamisas.Text = "CAM000" + (numero + 1);
+            }
+            if (numero > 9 && numero < 100)
+            {
+                txtcodcamisas.Text = "CAM00" + (numero + 1);
+            }
+            if (numero > 99 && numero < 1000)
+            {
+                txtcodcamisas.Text = "CAM0" + (numero + 1);
+            }
+        }
         private void llenadoDeDatos()
         {
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad1);
@@ -221,11 +286,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad5);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad6);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad7);
-            Llenadocbo.ObtenerTallaPrendaProducto(cboTallaPrendaCamisas);
             Llenadocbo.ObtenerTallaCalzadoProducto(cboTallaCalzado);
             Llenadocbo.ObtenerTipoCalzadoProducto(cboTipoCalzado);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc1);
-            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduCamisas);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc3);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc4);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc5);
@@ -243,6 +306,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerProductoTecnologico(cboNombreProductoTecnologico);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProducEquipoTecnologia);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadEquipoTecnologia);
+        }
+        private void llenadoDatosCamisas()
+        {
+            Llenadocbo.ObtenerTallaPrendaProducto(cboTallaPrendaCamisas);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduCamisas);
+            Llenadocbo.ObtenerProductoCamisas(cboEstadoProduCamisas);
         }
         private void ValidarCamposVacios()
         {
@@ -293,19 +362,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             llenadoDeDatos();
             GenerarCodigoPrincipal();
             llenadoProductoTecnologico();
+            llenadoDatosCamisas();
             GenerarCodigoTecnologico();
+            GenerarCodigoCamisas();
         }
-        private void tabPage1_Click_1(object sender, EventArgs e)
-        {
-            //GenerarCodigo();
-        }
-
         private void tbpUniforme_Click(object sender, EventArgs e)
         {
 
         }
-   
-
         private void btnCargarDatos_Click_1(object sender, EventArgs e)
         {
             OpenFileDialog abrirImagen = new OpenFileDialog();
@@ -409,6 +473,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void btnAgregarProductoCamisas_Click(object sender, EventArgs e)
         {
            AgregarProductoCamisas();
+        }
+
+        private void btnNuevoProductoCamisas_Click(object sender, EventArgs e)
+        {
+            LimpiarDatosCamisas();
+        }
+
+        private void btnActualizarProductoCamisas_Click(object sender, EventArgs e)
+        {
+            actualizarDatosCamisas();
         }
     }
 }
