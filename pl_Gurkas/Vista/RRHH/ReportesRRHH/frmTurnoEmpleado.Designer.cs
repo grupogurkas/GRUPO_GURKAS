@@ -43,6 +43,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             // 
             // btnExcel
             // 
+            this.btnExcel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcel.Image = global::pl_Gurkas.Properties.Resources.Excel_32;
             this.btnExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -87,12 +88,13 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             // 
             // btnConsultar
             // 
+            this.btnConsultar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultar.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
             this.btnConsultar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConsultar.Location = new System.Drawing.Point(240, 20);
             this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(109, 46);
+            this.btnConsultar.Size = new System.Drawing.Size(109, 51);
             this.btnConsultar.TabIndex = 6;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
