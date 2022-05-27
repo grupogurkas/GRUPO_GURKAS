@@ -909,6 +909,12 @@
     <Compile Include="Vista\RRHH\Postulante\frmPostulante.Designer.cs">
       <DependentUpon>frmPostulante.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\RRHH\ReportesRRHH\frmBajaPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\RRHH\ReportesRRHH\frmBajaPersonal.Designer.cs">
+      <DependentUpon>frmBajaPersonal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\RRHH\ReportesRRHH\frmAsistenciaGeneralPersonalPorSede.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1324,6 +1330,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\RRHH\ReportesRRHH\frmAsistenciaPersonalPorUnidad.resx">
       <DependentUpon>frmAsistenciaPersonalPorUnidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\RRHH\ReportesRRHH\frmBajaPersonal.resx">
+      <DependentUpon>frmBajaPersonal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\RRHH\ReportesRRHH\frmEstaturaPersonal.resx">
       <DependentUpon>frmEstaturaPersonal.cs</DependentUpon>
