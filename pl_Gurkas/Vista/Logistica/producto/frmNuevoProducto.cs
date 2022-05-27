@@ -30,6 +30,36 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             InitializeComponent();
         }
+        public void AgregarProductoCamisas()
+        {
+            try
+            {
+                string cod_sistema = txtCodSistema.Text;
+                string cod_camisa = txtcodcamisas.Text;
+                string nombre_camisa = txtNombreCamisas.Text;
+                int talla_c = cboTallaPrendaCamisas.SelectedIndex;
+                string color_c = txtColorCamisas.Text;
+                int stock_inicial_c = Convert.ToInt32(txtStockInicialCamisas.Text);
+                int estado_c = cboEstadoProduCamisas.SelectedIndex;
+                decimal precio_unitario_c = Convert.ToDecimal(txtCostoUniCamisas.Text);
+                int stock_actual_c = Convert.ToInt32(txtStockActualCamisas.Text);
+                int stock_minimo_c = Convert.ToInt32(txtStockMinimoCamisas.Text);
+                string desp_c = txtDescripcionCamisas.Text;
+                DateTime f_adquision_c = dtpAdquisicionCamisas.Value;
+                DateTime f_registro_c = dtpRegistroCamisas.Value;
+                string observacion_c = txtObservacionCamisas.Text;
+
+                logisticaInsertar.RegistrarPrendaCamisas(cod_sistema, cod_camisa, nombre_camisa, talla_c, color_c,
+                   stock_inicial_c, estado_c, precio_unitario_c, stock_actual_c, stock_minimo_c, desp_c, f_adquision_c,
+                   f_registro_c, observacion_c);
+                MessageBox.Show("Datos registrado correptamente", "Correpto");
+                LimpiarDatosTecnologico();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("No se puede Regristrar el producto", "Error");
+            }
+        }
         public void registrarProductoTecnologico()
         {
             try
@@ -374,6 +404,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void btnActualizarProductoTecnologico_Click(object sender, EventArgs e)
         {
             actualizarProductoTecnologico();
+        }
+
+        private void btnAgregarProductoCamisas_Click(object sender, EventArgs e)
+        {
+           AgregarProductoCamisas();
         }
     }
 }

@@ -475,12 +475,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label81 = new System.Windows.Forms.Label();
             this.btnBuscarProductoTecnologia = new System.Windows.Forms.Button();
             this.btnNuevoProductoTecnologico = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnNuevoProductoCamisas = new System.Windows.Forms.Button();
+            this.btnBuscarProductoCamisas = new System.Windows.Forms.Button();
             this.cboProductoCamisas = new System.Windows.Forms.ComboBox();
             this.label113 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnAgregarProductoCamisas = new System.Windows.Forms.Button();
+            this.btnActualizarProductoCamisas = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.btcPanel.SuspendLayout();
@@ -1113,15 +1113,15 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.btnNuevoProductoCamisas);
             this.tabPage1.Controls.Add(this.btnCargarImagen1);
-            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.btnBuscarProductoCamisas);
             this.tabPage1.Controls.Add(this.cboProductoCamisas);
             this.tabPage1.Controls.Add(this.label15);
             this.tabPage1.Controls.Add(this.label113);
             this.tabPage1.Controls.Add(this.ptcImagenCamisas);
-            this.tabPage1.Controls.Add(this.button3);
-            this.tabPage1.Controls.Add(this.button4);
+            this.tabPage1.Controls.Add(this.btnAgregarProductoCamisas);
+            this.tabPage1.Controls.Add(this.btnActualizarProductoCamisas);
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Controls.Add(this.groupBox5);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -5112,31 +5112,31 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnNuevoProductoTecnologico.UseVisualStyleBackColor = true;
             this.btnNuevoProductoTecnologico.Click += new System.EventHandler(this.btnNuevoProductoTecnologico_Click);
             // 
-            // button1
+            // btnNuevoProductoCamisas
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::pl_Gurkas.Properties.Resources.nuevo_emplado_32;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(957, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 51);
-            this.button1.TabIndex = 154;
-            this.button1.Text = "Nuevo";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnNuevoProductoCamisas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevoProductoCamisas.Image = global::pl_Gurkas.Properties.Resources.nuevo_emplado_32;
+            this.btnNuevoProductoCamisas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevoProductoCamisas.Location = new System.Drawing.Point(957, 3);
+            this.btnNuevoProductoCamisas.Name = "btnNuevoProductoCamisas";
+            this.btnNuevoProductoCamisas.Size = new System.Drawing.Size(119, 51);
+            this.btnNuevoProductoCamisas.TabIndex = 154;
+            this.btnNuevoProductoCamisas.Text = "Nuevo";
+            this.btnNuevoProductoCamisas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNuevoProductoCamisas.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnBuscarProductoCamisas
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(468, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(119, 51);
-            this.button2.TabIndex = 155;
-            this.button2.Text = "Buscar";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnBuscarProductoCamisas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarProductoCamisas.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
+            this.btnBuscarProductoCamisas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscarProductoCamisas.Location = new System.Drawing.Point(468, 3);
+            this.btnBuscarProductoCamisas.Name = "btnBuscarProductoCamisas";
+            this.btnBuscarProductoCamisas.Size = new System.Drawing.Size(119, 51);
+            this.btnBuscarProductoCamisas.TabIndex = 155;
+            this.btnBuscarProductoCamisas.Text = "Buscar";
+            this.btnBuscarProductoCamisas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscarProductoCamisas.UseVisualStyleBackColor = true;
             // 
             // cboProductoCamisas
             // 
@@ -5158,31 +5158,32 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label113.TabIndex = 156;
             this.label113.Text = "Buscar Producto :";
             // 
-            // button3
+            // btnAgregarProductoCamisas
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Image = global::pl_Gurkas.Properties.Resources.add_trabajador_32;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(593, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(176, 51);
-            this.button3.TabIndex = 152;
-            this.button3.Text = "Agregar Producto Tecnologico";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnAgregarProductoCamisas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarProductoCamisas.Image = global::pl_Gurkas.Properties.Resources.add_trabajador_32;
+            this.btnAgregarProductoCamisas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarProductoCamisas.Location = new System.Drawing.Point(593, 3);
+            this.btnAgregarProductoCamisas.Name = "btnAgregarProductoCamisas";
+            this.btnAgregarProductoCamisas.Size = new System.Drawing.Size(176, 51);
+            this.btnAgregarProductoCamisas.TabIndex = 152;
+            this.btnAgregarProductoCamisas.Text = "Agregar Producto\r\n Camisa";
+            this.btnAgregarProductoCamisas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregarProductoCamisas.UseVisualStyleBackColor = true;
+            this.btnAgregarProductoCamisas.Click += new System.EventHandler(this.btnAgregarProductoCamisas_Click);
             // 
-            // button4
+            // btnActualizarProductoCamisas
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Image = global::pl_Gurkas.Properties.Resources.empleado_update_32;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(775, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(176, 51);
-            this.button4.TabIndex = 153;
-            this.button4.Text = "Actualizar Producto Tecnologico";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnActualizarProductoCamisas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarProductoCamisas.Image = global::pl_Gurkas.Properties.Resources.empleado_update_32;
+            this.btnActualizarProductoCamisas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnActualizarProductoCamisas.Location = new System.Drawing.Point(775, 3);
+            this.btnActualizarProductoCamisas.Name = "btnActualizarProductoCamisas";
+            this.btnActualizarProductoCamisas.Size = new System.Drawing.Size(176, 51);
+            this.btnActualizarProductoCamisas.TabIndex = 153;
+            this.btnActualizarProductoCamisas.Text = "Actualizar Producto \r\nCamisa";
+            this.btnActualizarProductoCamisas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnActualizarProductoCamisas.UseVisualStyleBackColor = true;
             // 
             // frmNuevoProducto
             // 
@@ -5725,11 +5726,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.ComboBox cboNombreProductoTecnologico;
         private System.Windows.Forms.Label label81;
         private System.Windows.Forms.Button btnNuevoProductoTecnologico;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnNuevoProductoCamisas;
+        private System.Windows.Forms.Button btnBuscarProductoCamisas;
         private System.Windows.Forms.ComboBox cboProductoCamisas;
         private System.Windows.Forms.Label label113;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnAgregarProductoCamisas;
+        private System.Windows.Forms.Button btnActualizarProductoCamisas;
     }
 }
