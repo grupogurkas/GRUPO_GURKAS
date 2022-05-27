@@ -388,6 +388,28 @@ namespace pl_Gurkas.Datos
             }
         }
 
+        public void ObtenerProductoTecnologico(ComboBox cd)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("select COD_PRODUCTO_TECNOLOGICO,NOMBRE_EQUIPO from T_MAE_PRODUCTO_TECNOLOGICO ", conexiondbo.conexionBD());
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                DataRow fila = dt.NewRow();
+                fila["NOMBRE_EQUIPO"] = "---Seleccione un Producto---";
+                dt.Rows.InsertAt(fila, 0);
+                cd.ValueMember = "Cod_empCOD_PRODUCTO_TECNOLOGICOleado";
+                cd.DisplayMember = "NOMBRE_EQUIPO";
+                cd.DataSource = dt;
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se puede obtener el listado del Empleados \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
 
         public void ObtenerTallaPantalonProducto(ComboBox cd)
         {

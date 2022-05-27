@@ -55,6 +55,15 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 txtCodSistema.Text = "SUM0" + (numero + 1);
             }
         }
+        public void LimpiarDatosTecnologico()
+        {
+            LimpiarDatos.LimpiarGroupBox(groupBox2);
+            txtNombreEquipoTecnologia.Focus();
+            LimpiarDatos.LimpiarGroupBox(groupBox13);
+            GenerarCodigoTecnologico();
+            GenerarCodigoPrincipal();
+            Llenadocbo.ObtenerProductoTecnologico(cboNombreProductoTecnologico);
+        }
         public void GenerarCodigoTecnologico()
         {
             string resultado = "";
@@ -81,7 +90,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         }
         private void llenadoDeDatos()
         {
-            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadEquipoTecnologia);
+            
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad1);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad2);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad3);
@@ -89,7 +98,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad5);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad6);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad7);
-            Llenadocbo.ObtenerEstadoProducto(cboEstadoProducEquipoTecnologia);
+           
             Llenadocbo.ObtenerTallaPrendaProducto(cboTallaPrenda);
             Llenadocbo.ObtenerTallaCalzadoProducto(cboTallaCalzado);
             Llenadocbo.ObtenerTipoCalzadoProducto(cboTipoCalzado);
@@ -106,6 +115,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc11);
             Llenadocbo.ObtenerTipoTelaProducto(cboTipoTela1);
             Llenadocbo.ObtenerTallaPantalonProducto(cboTallaPantalon);
+
+            
+        }
+        private void llenadoProductoTecnologico()
+        {
+            Llenadocbo.ObtenerProductoTecnologico(cboNombreProductoTecnologico);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoProducEquipoTecnologia);
+            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadEquipoTecnologia);
         }
         private void ValidarCamposVacios()
         {
@@ -155,6 +172,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             txtCodSistema.Enabled = false;
             llenadoDeDatos();
             GenerarCodigoPrincipal();
+            llenadoProductoTecnologico();
             GenerarCodigoTecnologico();
         }
         private void tabPage1_Click_1(object sender, EventArgs e)
@@ -278,11 +296,23 @@ namespace pl_Gurkas.Vista.Logistica.producto
                     marca,  num_serie,  desp_equipo,  estado,  precio_unitario,  tipo_unidad,stock_inicial,  
                     stock_actual,  stock_minimo,  f_adquision,  f_registro,  observacion);
                 MessageBox.Show("Datos registrado correptamente", "Correpto");
+                LimpiarDatosTecnologico();
             }
             catch(Exception ex)
             {
                 MessageBox.Show("No se puede Regristrar el producto", "Error");
             }
+        }
+
+        private void btnNuevoProductoTecnologico_Click(object sender, EventArgs e)
+        {
+            LimpiarDatosTecnologico();
+        }
+
+        private void btnBuscarProductoTecnologia_Click(object sender, EventArgs e)
+        {
+            string cod_producto_tecnologia = cboNombreProductoTecnologico.SelectedValue.ToString();
+
         }
     }
 }
