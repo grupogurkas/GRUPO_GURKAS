@@ -99,11 +99,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label26 = new System.Windows.Forms.Label();
             this.textBox40 = new System.Windows.Forms.TextBox();
             this.label83 = new System.Windows.Forms.Label();
-            this.label81 = new System.Windows.Forms.Label();
             this.textBox38 = new System.Windows.Forms.TextBox();
             this.label80 = new System.Windows.Forms.Label();
             this.textBox37 = new System.Windows.Forms.TextBox();
-            this.cboTipoTela = new System.Windows.Forms.ComboBox();
             this.label79 = new System.Windows.Forms.Label();
             this.cboTallaPrenda = new System.Windows.Forms.ComboBox();
             this.label78 = new System.Windows.Forms.Label();
@@ -1117,11 +1115,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox1.Controls.Add(this.groupBox5);
             this.groupBox1.Controls.Add(this.textBox40);
             this.groupBox1.Controls.Add(this.label83);
-            this.groupBox1.Controls.Add(this.label81);
             this.groupBox1.Controls.Add(this.textBox38);
             this.groupBox1.Controls.Add(this.label80);
             this.groupBox1.Controls.Add(this.textBox37);
-            this.groupBox1.Controls.Add(this.cboTipoTela);
             this.groupBox1.Controls.Add(this.label79);
             this.groupBox1.Controls.Add(this.cboTallaPrenda);
             this.groupBox1.Controls.Add(this.label78);
@@ -1148,7 +1144,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(6, 276);
+            this.label9.Location = new System.Drawing.Point(6, 250);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(79, 15);
             this.label9.TabIndex = 181;
@@ -1158,7 +1154,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(4, 250);
+            this.label21.Location = new System.Drawing.Point(4, 224);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(87, 15);
             this.label21.TabIndex = 180;
@@ -1272,7 +1268,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // textBox40
             // 
-            this.textBox40.Location = new System.Drawing.Point(130, 297);
+            this.textBox40.Location = new System.Drawing.Point(130, 271);
             this.textBox40.Name = "textBox40";
             this.textBox40.Size = new System.Drawing.Size(158, 20);
             this.textBox40.TabIndex = 95;
@@ -1281,21 +1277,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.label83.AutoSize = true;
             this.label83.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label83.Location = new System.Drawing.Point(6, 302);
+            this.label83.Location = new System.Drawing.Point(6, 276);
             this.label83.Name = "label83";
             this.label83.Size = new System.Drawing.Size(85, 15);
             this.label83.TabIndex = 94;
             this.label83.Text = "Stock Minimo:";
-            // 
-            // label81
-            // 
-            this.label81.AutoSize = true;
-            this.label81.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label81.Location = new System.Drawing.Point(6, 197);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(61, 15);
-            this.label81.TabIndex = 91;
-            this.label81.Text = "Tipo Tela:";
             // 
             // textBox38
             // 
@@ -1320,16 +1306,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox37.Name = "textBox37";
             this.textBox37.Size = new System.Drawing.Size(158, 20);
             this.textBox37.TabIndex = 88;
-            // 
-            // cboTipoTela
-            // 
-            this.cboTipoTela.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboTipoTela.FormattingEnabled = true;
-            this.cboTipoTela.Location = new System.Drawing.Point(130, 191);
-            this.cboTipoTela.Name = "cboTipoTela";
-            this.cboTipoTela.Size = new System.Drawing.Size(158, 21);
-            this.cboTipoTela.TabIndex = 87;
-            this.cboTipoTela.SelectedIndexChanged += new System.EventHandler(this.cboTipoTela_SelectedIndexChanged);
             // 
             // label79
             // 
@@ -1362,14 +1338,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(130, 245);
+            this.textBox4.Location = new System.Drawing.Point(130, 219);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(158, 20);
             this.textBox4.TabIndex = 80;
             // 
             // label20
             // 
-            this.label20.Location = new System.Drawing.Point(110, 250);
+            this.label20.Location = new System.Drawing.Point(110, 224);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(27, 13);
             this.label20.TabIndex = 81;
@@ -1394,7 +1370,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // textBox31
             // 
-            this.textBox31.Location = new System.Drawing.Point(130, 271);
+            this.textBox31.Location = new System.Drawing.Point(130, 245);
             this.textBox31.Name = "textBox31";
             this.textBox31.Size = new System.Drawing.Size(158, 20);
             this.textBox31.TabIndex = 67;
@@ -1403,7 +1379,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(6, 324);
+            this.label29.Location = new System.Drawing.Point(6, 298);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(78, 15);
             this.label29.TabIndex = 63;
@@ -1411,7 +1387,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // textBox32
             // 
-            this.textBox32.Location = new System.Drawing.Point(130, 323);
+            this.textBox32.Location = new System.Drawing.Point(130, 297);
             this.textBox32.Multiline = true;
             this.textBox32.Name = "textBox32";
             this.textBox32.Size = new System.Drawing.Size(213, 56);
@@ -1438,7 +1414,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.cboEstadoProduc2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboEstadoProduc2.FormattingEnabled = true;
-            this.cboEstadoProduc2.Location = new System.Drawing.Point(130, 218);
+            this.cboEstadoProduc2.Location = new System.Drawing.Point(130, 192);
             this.cboEstadoProduc2.Name = "cboEstadoProduc2";
             this.cboEstadoProduc2.Size = new System.Drawing.Size(158, 21);
             this.cboEstadoProduc2.TabIndex = 26;
@@ -1448,7 +1424,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(6, 227);
+            this.label37.Location = new System.Drawing.Point(6, 201);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(51, 15);
             this.label37.TabIndex = 0;
@@ -5407,11 +5383,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TextBox textBox40;
         private System.Windows.Forms.Label label83;
-        private System.Windows.Forms.Label label81;
         private System.Windows.Forms.TextBox textBox38;
         private System.Windows.Forms.Label label80;
         private System.Windows.Forms.TextBox textBox37;
-        private System.Windows.Forms.ComboBox cboTipoTela;
         private System.Windows.Forms.Label label79;
         private System.Windows.Forms.ComboBox cboTallaPrenda;
         private System.Windows.Forms.Label label78;
