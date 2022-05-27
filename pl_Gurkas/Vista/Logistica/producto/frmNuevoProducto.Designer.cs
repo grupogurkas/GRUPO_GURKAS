@@ -800,9 +800,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label142.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label142.Location = new System.Drawing.Point(11, 297);
             this.label142.Name = "label142";
-            this.label142.Size = new System.Drawing.Size(59, 15);
+            this.label142.Size = new System.Drawing.Size(78, 15);
             this.label142.TabIndex = 156;
-            this.label142.Text = "Cantidad:";
+            this.label142.Text = "Stock Inicial :";
             // 
             // txtStockIni
             // 
