@@ -191,11 +191,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad5);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad6);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad7);
-            Llenadocbo.ObtenerTallaPrendaProducto(cboTallaPrenda);
+            Llenadocbo.ObtenerTallaPrendaProducto(cboTallaPrendaCamisas);
             Llenadocbo.ObtenerTallaCalzadoProducto(cboTallaCalzado);
             Llenadocbo.ObtenerTipoCalzadoProducto(cboTipoCalzado);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc1);
-            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc2);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduCamisas);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc3);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc4);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc5);
