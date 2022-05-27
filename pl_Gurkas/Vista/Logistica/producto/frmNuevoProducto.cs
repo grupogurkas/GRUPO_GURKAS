@@ -29,8 +29,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             InitializeComponent();
         }
+        public void BuscarProductoTecnologico(string cod_producto_tecnologia)
+        {
 
-
+        }
         public void GenerarCodigoPrincipal()
         {
             string resultado = "";
@@ -90,7 +92,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
         }
         private void llenadoDeDatos()
         {
-            
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad1);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad2);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad3);
@@ -98,7 +99,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad5);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad6);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad7);
-           
             Llenadocbo.ObtenerTallaPrendaProducto(cboTallaPrenda);
             Llenadocbo.ObtenerTallaCalzadoProducto(cboTallaCalzado);
             Llenadocbo.ObtenerTipoCalzadoProducto(cboTipoCalzado);
@@ -115,8 +115,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc11);
             Llenadocbo.ObtenerTipoTelaProducto(cboTipoTela1);
             Llenadocbo.ObtenerTallaPantalonProducto(cboTallaPantalon);
-
-            
         }
         private void llenadoProductoTecnologico()
         {
@@ -245,12 +243,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             var resutlado = MessageBox.Show(mensaje, titulo, MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (resutlado == DialogResult.Yes)
             {
-                //  DateTime fecha = DateTime.Now;
-                //  obtenerip_nombre();
-                // string username = Code.nivelUser._nombre;
-                // string detalle = "Cerrar Registro de Personal";
-                // string cod_buscado = "Cerro el registro de Personal";
-                // registrar.RegistrarRRHH(fecha, nombrepc, username, ipuser, cod_buscado, detalle);
                 this.Close();
             }
         }
@@ -312,7 +304,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void btnBuscarProductoTecnologia_Click(object sender, EventArgs e)
         {
             string cod_producto_tecnologia = cboNombreProductoTecnologico.SelectedValue.ToString();
-
+            BuscarProductoTecnologico( cod_producto_tecnologia);
         }
     }
 }
