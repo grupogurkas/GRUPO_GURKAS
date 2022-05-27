@@ -651,6 +651,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // btnBuscar
             // 
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
