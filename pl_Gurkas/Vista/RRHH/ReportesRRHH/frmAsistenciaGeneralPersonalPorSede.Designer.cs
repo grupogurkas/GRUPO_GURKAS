@@ -29,10 +29,12 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAsistenciaGeneralPersonalPorSede));
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.btnExcel = new System.Windows.Forms.Button();
             this.dgvAsistenciaPersonalGeneralSede = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnConsultar = new System.Windows.Forms.Button();
             this.cboUnidad = new System.Windows.Forms.ComboBox();
             this.Unida = new System.Windows.Forms.Label();
             this.cboSede = new System.Windows.Forms.ComboBox();
@@ -41,7 +43,6 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.label2 = new System.Windows.Forms.Label();
             this.dtpFechaInicio = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnConsultar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsistenciaPersonalGeneralSede)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -95,6 +96,20 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Asistencia General de Personal  por Sede";
+            // 
+            // btnConsultar
+            // 
+            this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultar.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
+            this.btnConsultar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsultar.Location = new System.Drawing.Point(485, 19);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(109, 46);
+            this.btnConsultar.TabIndex = 13;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // cboUnidad
             // 
@@ -171,20 +186,6 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.label1.TabIndex = 0;
             this.label1.Text = " Fecha ";
             // 
-            // btnConsultar
-            // 
-            this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultar.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
-            this.btnConsultar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConsultar.Location = new System.Drawing.Point(485, 19);
-            this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(109, 46);
-            this.btnConsultar.TabIndex = 13;
-            this.btnConsultar.Text = "Consultar";
-            this.btnConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnConsultar.UseVisualStyleBackColor = true;
-            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
-            // 
             // frmAsistenciaGeneralPersonalPorSede
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -193,6 +194,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.dgvAsistenciaPersonalGeneralSede);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAsistenciaGeneralPersonalPorSede";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ".:: Asistencia General del Personal por Sede ::..";

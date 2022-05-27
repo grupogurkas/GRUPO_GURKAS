@@ -29,6 +29,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPersonalPorUnidad));
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.dgvPersonalPorSede = new System.Windows.Forms.DataGridView();
             this.btnConsultar = new System.Windows.Forms.Button();
@@ -124,6 +125,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.dgvPersonalPorSede);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPersonalPorUnidad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "..:: Personal Por Unidad ::..";

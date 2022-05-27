@@ -29,6 +29,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAsistenciaGneralPersonal));
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.btnExcel = new System.Windows.Forms.Button();
             this.dgvAsistenciaGeneralPersonal = new System.Windows.Forms.DataGridView();
@@ -149,6 +150,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.dgvAsistenciaGeneralPersonal);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAsistenciaGneralPersonal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ".:: Asistencia Genera del Personal ::..";

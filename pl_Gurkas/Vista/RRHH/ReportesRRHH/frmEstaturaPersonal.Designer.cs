@@ -29,6 +29,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEstaturaPersonal));
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.btnExcel = new System.Windows.Forms.Button();
             this.dgvPersonalEstatura = new System.Windows.Forms.DataGridView();
@@ -94,6 +95,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.txtEstaturaFin.Size = new System.Drawing.Size(64, 20);
             this.txtEstaturaFin.TabIndex = 2;
             this.txtEstaturaFin.TextChanged += new System.EventHandler(this.txtEstaturaFin_TextChanged);
+            this.txtEstaturaFin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEstaturaFin_KeyPress);
             // 
             // txtEstaturaInicial
             // 
@@ -102,6 +104,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.txtEstaturaInicial.Size = new System.Drawing.Size(58, 20);
             this.txtEstaturaInicial.TabIndex = 1;
             this.txtEstaturaInicial.TextChanged += new System.EventHandler(this.txtEstaturaInicial_TextChanged);
+            this.txtEstaturaInicial.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEstaturaInicial_KeyPress);
             // 
             // btnConsultar
             // 
@@ -145,6 +148,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.dgvPersonalEstatura);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmEstaturaPersonal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "..:: Personal por Estatura ::..";
