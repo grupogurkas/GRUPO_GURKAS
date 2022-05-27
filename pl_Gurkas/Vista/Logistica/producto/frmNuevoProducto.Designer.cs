@@ -841,7 +841,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnSave.Text = "Guardar Imagen";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtObservacion
             // 
@@ -863,7 +862,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnCargarImagen.Text = "Subir Imagen";
             this.btnCargarImagen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCargarImagen.UseVisualStyleBackColor = false;
-            this.btnCargarImagen.Click += new System.EventHandler(this.btnSubirImage);
             // 
             // label6
             // 

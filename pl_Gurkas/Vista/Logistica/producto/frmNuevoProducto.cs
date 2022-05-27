@@ -171,7 +171,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+      /*  private void btnSave_Click(object sender, EventArgs e)
         {
             string ubicacion = lblrutaimagenteconologia.Text;
             byte[] imagen_byte = System.IO.File.ReadAllBytes(ubicacion);
@@ -187,7 +187,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
              cmd.ExecuteNonQuery();
              MessageBox.Show("Datos registrado correctamente", "Correcto");
 
-        }
+        }*/
 
         private void btnCerrar_Click_1(object sender, EventArgs e)
         {
