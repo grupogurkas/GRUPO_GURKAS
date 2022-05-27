@@ -22,6 +22,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.Actualizar actualizar = new Datos.Actualizar();
+        Datos.Producto po = new Datos.Producto();
         public frmNuevoProducto()
         {
             InitializeComponent();
@@ -94,7 +95,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             }
         }
 
-        Datos.Producto po = new Datos.Producto();
+        
         private void frmNuevoProducto_Load(object sender, EventArgs e)
         {
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad);
@@ -125,91 +126,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
             txtCodSistema.Enabled = false;
             GenerarCodigo();
         }
-        
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-         }
-
-        private void btnAgregar_Click(object sender, EventArgs e)
-        {
-            ValidarCamposVacios();
-            string codSistema = txtCodSistema.Text;
-            string codEquipo = txtCodEquipo.Text;
-            string nomEquipo = txtNombreTecno.Text;
-            string modelo = txtModelo.Text;
-            string marca = txtMarca.Text;
-            string descripcionProduct = txtDescripcion.Text;
-            int stockIni = (int)Convert.ToInt64(txtStockInicial.Text);
-            //int categoriaProduc = cboCategoria.SelectedIndex;
-            //DateTime fechaCompra = dtpFechaCompra.Value;
-            //DateTime fechaRegistro = dtpFechaRegistro.Value;
-            decimal precioCompra = Convert.ToDecimal(txtPrecioUnitario.Text);
-            int estadoProduct = cboEstadoProduc.SelectedIndex;
-            string descripcionProduc = txtDescripcion.Text;
-            //
-            const string titulo = "Actualizar datos en el Sistema";
-            const string mensaje = "Por favor verificar  la Imformacion antes de guardar en el sistema \n SI  =  GUARDAR IMFORMACION \n NO  =  VERIFICAR DATOS ANTES DE GUARDAR";
-            var resutlado = MessageBox.Show(mensaje, titulo, MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-            if (resutlado == DialogResult.Yes)
-            {
-                MessageBox.Show("Datos Laborados Actualizado Exitosamente", "Registrado");
-            }
-
-            MessageBox.Show("Datos registrado correctamente" + codSistema   +codEquipo ,nomEquipo+ "Correcto");
-        }
-
-
-        private void btnActualizar_Click(object sender, EventArgs e)
-        {
-            ValidarCamposVacios();
-            ActualizarProducto();
-
-
-        }
-
-        private void ActualizarProducto()
-        {
-
-            string codSistema = txtCodSistema.Text;
-            string codEquipo = txtCodEquipo.Text;
-            string nomEquipo = txtNombreTecno.Text;
-            string modelo = txtModelo.Text;
-            string marca = txtMarca.Text;
-            string descripcionProduct = txtDescripcion.Text;
-            int stockIni = (int)Convert.ToInt64(txtStockInicial.Text);
-            //int categoriaProduc = cboCategoria.SelectedIndex;
-            //DateTime fechaCompra = dtpFechaCompra.Value;
-            //DateTime fechaRegistro = dtpFechaRegistro.Value;
-            decimal precioCompra = Convert.ToDecimal(txtPrecioUnitario.Text);
-            int estadoProduct = cboEstadoProduc.SelectedIndex;
-            string descripcionProduc = txtDescripcion.Text;
-        }
-
-        private void label37_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox12_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void tabPage1_Click_1(object sender, EventArgs e)
         {
             //GenerarCodigo();
-        }
-
-        private void groupBox3_Enter(object sender, EventArgs e)
-        {
-
         }
 
         private void tbpUniforme_Click(object sender, EventArgs e)
@@ -228,17 +147,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 ptcImagenCamisas.SizeMode = PictureBoxSizeMode.StretchImage;
             }
         }
-
-        private void cboTipoTela_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSubirImage(object sender, EventArgs e)
         {
             OpenFileDialog dialogo = new OpenFileDialog();
@@ -307,131 +215,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             string codProducto = cboProducto.SelectedValue.ToString();
-        }
-
-        private void label151_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtDescripcionMobi_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label160_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label159_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label158_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label151_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label147_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label135_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label132_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cboEstadoProduc8_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtMarcaMobi_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label153_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label154_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtModeloMobi_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cboTipoUnidad4_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtCodEquipMobi_TextChanged(object sender, EventArgs e)
-        {
-            //goli
-        }
-
-        private void label111_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtNombreMobi_TextChanged(object sender, EventArgs e)
-        {
-           
         }
     }
 }

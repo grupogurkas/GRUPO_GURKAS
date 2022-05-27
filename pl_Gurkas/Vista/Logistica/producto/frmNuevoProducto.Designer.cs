@@ -3305,7 +3305,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnCargarImagen7.Text = "Subir Imagen";
             this.btnCargarImagen7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCargarImagen7.UseVisualStyleBackColor = false;
-            this.btnCargarImagen7.Click += new System.EventHandler(this.button7_Click);
             // 
             // label74
             // 
@@ -3891,7 +3890,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // label177
             // 
-            this.label177.Location = new System.Drawing.Point(130, 237);
+            this.label177.Location = new System.Drawing.Point(120, 237);
             this.label177.Name = "label177";
             this.label177.Size = new System.Drawing.Size(27, 13);
             this.label177.TabIndex = 196;
@@ -3972,7 +3971,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label111.Size = new System.Drawing.Size(48, 15);
             this.label111.TabIndex = 255;
             this.label111.Text = "Estado:";
-            this.label111.Click += new System.EventHandler(this.label111_Click);
             // 
             // txtDescripcionMobi
             // 
@@ -3981,7 +3979,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtDescripcionMobi.Name = "txtDescripcionMobi";
             this.txtDescripcionMobi.Size = new System.Drawing.Size(213, 56);
             this.txtDescripcionMobi.TabIndex = 253;
-            this.txtDescripcionMobi.TextChanged += new System.EventHandler(this.txtDescripcionMobi_TextChanged);
             // 
             // label160
             // 
@@ -3992,7 +3989,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label160.Size = new System.Drawing.Size(78, 15);
             this.label160.TabIndex = 254;
             this.label160.Text = "Descripcion :";
-            this.label160.Click += new System.EventHandler(this.label160_Click);
             // 
             // textBox5
             // 
@@ -4000,7 +3996,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(213, 20);
             this.textBox5.TabIndex = 252;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // textBox3
             // 
@@ -4008,7 +4003,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(213, 20);
             this.textBox3.TabIndex = 251;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox2
             // 
@@ -4016,7 +4010,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(213, 20);
             this.textBox2.TabIndex = 250;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // comboBox2
             // 
@@ -4032,7 +4025,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(158, 21);
             this.comboBox2.TabIndex = 249;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // textBox1
             // 
@@ -4040,7 +4032,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(213, 20);
             this.textBox1.TabIndex = 248;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label159
             // 
@@ -4051,7 +4042,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label159.Size = new System.Drawing.Size(84, 30);
             this.label159.TabIndex = 247;
             this.label159.Text = "Nº Tarjeta\r\nde Propiedad:\r\n";
-            this.label159.Click += new System.EventHandler(this.label159_Click);
             // 
             // label158
             // 
@@ -4062,7 +4052,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label158.Size = new System.Drawing.Size(57, 15);
             this.label158.TabIndex = 246;
             this.label158.Text = "Nº Placa:";
-            this.label158.Click += new System.EventHandler(this.label158_Click);
             // 
             // dateTimePicker1
             // 
@@ -4071,7 +4060,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(104, 20);
             this.dateTimePicker1.TabIndex = 240;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // label151
             // 
@@ -4082,7 +4070,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label151.Size = new System.Drawing.Size(98, 15);
             this.label151.TabIndex = 242;
             this.label151.Text = "Año Fabricacion:";
-            this.label151.Click += new System.EventHandler(this.label151_Click_1);
             // 
             // label147
             // 
@@ -4093,7 +4080,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label147.Size = new System.Drawing.Size(58, 15);
             this.label147.TabIndex = 245;
             this.label147.Text = "Nº Serial:";
-            this.label147.Click += new System.EventHandler(this.label147_Click);
             // 
             // label135
             // 
@@ -4104,7 +4090,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label135.Size = new System.Drawing.Size(79, 15);
             this.label135.TabIndex = 244;
             this.label135.Text = "Combustible:";
-            this.label135.Click += new System.EventHandler(this.label135_Click);
             // 
             // label132
             // 
@@ -4115,7 +4100,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label132.Size = new System.Drawing.Size(39, 15);
             this.label132.TabIndex = 243;
             this.label132.Text = "Color:";
-            this.label132.Click += new System.EventHandler(this.label132_Click);
             // 
             // comboBox1
             // 
@@ -4131,7 +4115,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(158, 21);
             this.comboBox1.TabIndex = 241;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // cboEstadoProduc8
             // 
@@ -4141,7 +4124,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.cboEstadoProduc8.Name = "cboEstadoProduc8";
             this.cboEstadoProduc8.Size = new System.Drawing.Size(158, 21);
             this.cboEstadoProduc8.TabIndex = 232;
-            this.cboEstadoProduc8.SelectedIndexChanged += new System.EventHandler(this.cboEstadoProduc8_SelectedIndexChanged);
             // 
             // txtMarcaMobi
             // 
@@ -4149,7 +4131,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtMarcaMobi.Name = "txtMarcaMobi";
             this.txtMarcaMobi.Size = new System.Drawing.Size(213, 20);
             this.txtMarcaMobi.TabIndex = 239;
-            this.txtMarcaMobi.TextChanged += new System.EventHandler(this.txtMarcaMobi_TextChanged);
             // 
             // label153
             // 
@@ -4160,7 +4141,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label153.Size = new System.Drawing.Size(77, 15);
             this.label153.TabIndex = 238;
             this.label153.Text = "Tipo Unidad:";
-            this.label153.Click += new System.EventHandler(this.label153_Click);
             // 
             // label154
             // 
@@ -4171,7 +4151,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label154.Size = new System.Drawing.Size(63, 15);
             this.label154.TabIndex = 237;
             this.label154.Text = "Categoria:";
-            this.label154.Click += new System.EventHandler(this.label154_Click);
             // 
             // txtModeloMobi
             // 
@@ -4179,7 +4158,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtModeloMobi.Name = "txtModeloMobi";
             this.txtModeloMobi.Size = new System.Drawing.Size(213, 20);
             this.txtModeloMobi.TabIndex = 236;
-            this.txtModeloMobi.TextChanged += new System.EventHandler(this.txtModeloMobi_TextChanged);
             // 
             // cboTipoUnidad4
             // 
@@ -4195,7 +4173,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.cboTipoUnidad4.Name = "cboTipoUnidad4";
             this.cboTipoUnidad4.Size = new System.Drawing.Size(158, 21);
             this.cboTipoUnidad4.TabIndex = 235;
-            this.cboTipoUnidad4.SelectedIndexChanged += new System.EventHandler(this.cboTipoUnidad4_SelectedIndexChanged);
             // 
             // label155
             // 
@@ -4223,7 +4200,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtCodEquipMobi.Name = "txtCodEquipMobi";
             this.txtCodEquipMobi.Size = new System.Drawing.Size(213, 20);
             this.txtCodEquipMobi.TabIndex = 231;
-            this.txtCodEquipMobi.TextChanged += new System.EventHandler(this.txtCodEquipMobi_TextChanged);
             // 
             // label167
             // 
@@ -4241,7 +4217,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtNombreMobi.Name = "txtNombreMobi";
             this.txtNombreMobi.Size = new System.Drawing.Size(213, 20);
             this.txtNombreMobi.TabIndex = 229;
-            this.txtNombreMobi.TextChanged += new System.EventHandler(this.txtNombreMobi_TextChanged);
             // 
             // label168
             // 
