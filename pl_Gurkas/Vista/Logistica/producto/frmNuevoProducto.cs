@@ -30,6 +30,36 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             InitializeComponent();
         }
+        public void BuscarProductoCamisas(string cod_uniforme_camisa)
+        {
+            try
+            {
+                SqlCommand comando = new SqlCommand("SELECT * FROM v_producto_camisa WHERE COD_PRODUCTO_UNI_CAMISAS = '" + cod_uniforme_camisa + "'", conexion.conexionBD());
+                SqlDataReader recorre = comando.ExecuteReader();
+                while (recorre.Read())
+                {
+                    txtCodSistema.Text = recorre["COD_PRODUCTO_SISTEMA"].ToString();
+                    txtcodcamisas.Text = recorre["COD_PRODUCTO_UNI_CAMISAS"].ToString();
+                    txtNombreCamisas.Text = recorre["NOMBRE_CAMISAS"].ToString();
+                    cboTallaPrendaCamisas.SelectedIndex = Convert.ToInt32(recorre["ID_TALLA_PRENDA"].ToString());
+                    txtColorCamisas.Text = recorre["COLOR"].ToString();
+                    txtStockInicialCamisas.Text = recorre["STOCK_INICIAL"].ToString();
+                    cboEstadoProduCamisas.SelectedIndex = Convert.ToInt32(recorre["ID_ESTADO_MATERIAL"].ToString());
+                    txtCostoUniCamisas.Text = recorre["COSTO_UNITARIO_CAM"].ToString();
+                    txtStockActualCamisas.Text = recorre["STOCK_ACTUAL"].ToString();
+                    txtStockMinimoCamisas.Text = (recorre["STOCK_MINIMO"].ToString());
+                    txtDescripcionCamisas.Text = (recorre["DESCRP_CAMISAS"].ToString());
+                    dtpAdquisicionCamisas.Text = (recorre["FECHA_ADQUISICION"].ToString());
+                    dtpRegistroCamisas.Text = (recorre["FECHA_REGISTRO"].ToString());
+                    txtObservacionCamisas.Text = (recorre["OBSERVACION"].ToString());
+                    
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
+            }
+        }
         public void actualizarDatosCamisas()
         {
             try
@@ -211,13 +241,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
         }
         public void LimpiarDatosCamisas()
         {
-            LimpiarDatos.LimpiarGroupBox(groupBox2);
+            LimpiarDatos.LimpiarGroupBox(groupBox1);
             txtNombreCamisas.Focus();
-            LimpiarDatos.LimpiarGroupBox(groupBox13);
+            LimpiarDatos.LimpiarGroupBox(groupBox5);
             GenerarCodigoTecnologico();
             GenerarCodigoCamisas();
             GenerarCodigoPrincipal();
-            Llenadocbo.ObtenerProductoCamisas(cboEstadoProduCamisas);
+            Llenadocbo.ObtenerProductoCamisas(cboProductoCamisas);
         }
         public void LimpiarDatosTecnologico()
         {
@@ -484,6 +514,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void btnActualizarProductoCamisas_Click(object sender, EventArgs e)
         {
             actualizarDatosCamisas();
+        }
+
+        private void btnBuscarProductoCamisas_Click(object sender, EventArgs e)
+        {
+            string cod_uniforme_camisa = cboProductoCamisas.SelectedValue.ToString();
+            BuscarProductoCamisas(cod_uniforme_camisa);
         }
     }
 }
