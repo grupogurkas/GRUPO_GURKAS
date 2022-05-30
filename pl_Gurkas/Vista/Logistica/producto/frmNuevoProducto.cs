@@ -236,6 +236,37 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 MessageBox.Show("No se puede Regristrar el producto", "Error");
             }
         }
+        public void AgregarActualizarAccesorio()
+        {
+            try
+            {
+                string cod_sistema = txtCodSistema.Text;
+                string cod_accesorio = txtCodAccesorio.Text;
+                string nombre_accesorio = txtNombreAccesorio.Text;
+                int talla_acc = cboTallaAccesorio.SelectedIndex;
+                string color_acc = txtColorAccesorio.Text;
+                int stock_inicial_acc = Convert.ToInt32(txtStockInicalAcessorio.Text);
+                int tipo_tela_acc = cboTipoTelaAccesorio.SelectedIndex;
+                int estado_acc = cboEstadoAccesorio.SelectedIndex;
+                decimal precio_unitario_acc = Convert.ToDecimal(txtCostoUnitarioAccesorio.Text);
+                int stock_actual_acc = Convert.ToInt32(txtStockActutalAccesorio.Text);
+                int stock_minimo_acc = Convert.ToInt32(txtStockMinimoAccesorio.Text);
+                string desp_acc = txtDespAccesorio.Text;
+                DateTime f_adquision_acc = dtpAdquAccesorio.Value;
+                DateTime f_registro_acc = dtpRegistroAccesorio.Value;
+                string observacion_acc = txtObservacionAccesorio.Text;
+
+                logisticaActualizar.ActualizarPrendaAccesorio(cod_sistema, cod_accesorio, nombre_accesorio, talla_acc,
+                        color_acc, stock_inicial_acc, tipo_tela_acc, estado_acc, precio_unitario_acc, stock_actual_acc,
+                       stock_minimo_acc, desp_acc, f_adquision_acc, f_registro_acc, observacion_acc);
+                MessageBox.Show("Datos registrado correptamente", "Correpto");
+                LimpiarDatosAccesorios();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede Regristrar el producto" + ex, "Error");
+            }
+        }
         public void AgregarProductoAccesorio()
         {
             try
@@ -837,6 +868,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void btnAgregarAccesorio_Click(object sender, EventArgs e)
         {
             AgregarProductoAccesorio();
+        }
+
+        private void btnActualizarAccesorio_Click(object sender, EventArgs e)
+        {
+            AgregarActualizarAccesorio();
         }
     }
 }
