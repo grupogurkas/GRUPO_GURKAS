@@ -2548,6 +2548,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnBuscarAccesorio.Text = "Buscar";
             this.btnBuscarAccesorio.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscarAccesorio.UseVisualStyleBackColor = true;
+            this.btnBuscarAccesorio.Click += new System.EventHandler(this.btnBuscarAccesorio_Click);
             // 
             // cboAccesorios
             // 

@@ -114,6 +114,36 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
             }
         }
+        public void BuscarProductoAccesorio(string cod_uniforme_Accesorio)
+        {
+            try
+            {
+                SqlCommand comando = new SqlCommand("SELECT * FROM v_producto_accesorio WHERE COD_PRODUCTO_UNI_ACCESORIO = '" + cod_uniforme_Accesorio + "'", conexion.conexionBD());
+                SqlDataReader recorre = comando.ExecuteReader();
+                while (recorre.Read())
+                {
+                    txtCodSistema.Text = recorre["COD_PRODUCTO_SISTEMA"].ToString();
+                    txtCodAccesorio.Text = recorre["COD_PRODUCTO_UNI_ACCESORIO"].ToString();
+                    txtNombreAccesorio.Text = recorre["NOMBRE_ACCESORIO"].ToString();
+                    cboTallaAccesorio.SelectedIndex = Convert.ToInt32(recorre["ID_TALLA_PRENDA_ACCESORIO"].ToString());
+                    txtColorAccesorio.Text = recorre["COLOR_ACCESORIO"].ToString();
+                    txtStockInicalAcessorio.Text = recorre["STOCK_INICIAL_ACCESORIO"].ToString();
+                    cboTipoTelaAccesorio.SelectedIndex = Convert.ToInt32(recorre["idTipoPrenda"].ToString());
+                    cboEstadoAccesorio.SelectedIndex = Convert.ToInt32(recorre["ID_ESTADO_MATERIAL_ACCESORIO"].ToString());
+                    txtCostoUnitarioAccesorio.Text = recorre["COSTO_UNITARIO_ACCESORIO"].ToString();
+                    txtStockActutalAccesorio.Text = (recorre["STOCK_ACTUAL_ACCESORIO"].ToString());
+                    txtStockMinimoAccesorio.Text = (recorre["STOCK_MINIMO_ACCESORIO"].ToString());
+                    txtDespAccesorio.Text = (recorre["DESCRP_ACCESORIO"].ToString());
+                    dtpAdquAccesorio.Text = (recorre["FECHA_ADQUISICION_ACCESORIO"].ToString());
+                    dtpRegistroAccesorio.Text = (recorre["FECHA_REGISTRO_ACCESORIO"].ToString());
+                    txtObservacionAccesorio.Text = (recorre["OBSERVACION_ACCESORIO"].ToString());
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
+            }
+        }
         public void actualizarDatosCamisas()
         {
             try
@@ -637,15 +667,15 @@ namespace pl_Gurkas.Vista.Logistica.producto
             int numero = Convert.ToInt32(resultado);
             if (numero < 10)
             {
-                txtCodCalzado.Text = "ACC000" + (numero + 1);
+                txtCodAccesorio.Text = "ACC000" + (numero + 1);
             }
             if (numero > 9 && numero < 100)
             {
-                txtCodCalzado.Text = "ACC00" + (numero + 1);
+                txtCodAccesorio.Text = "ACC00" + (numero + 1);
             }
             if (numero > 99 && numero < 1000)
             {
-                txtCodCalzado.Text = "ACC0" + (numero + 1);
+                txtCodAccesorio.Text = "ACC0" + (numero + 1);
             }
         }
         private void llenadoDeDatos()
@@ -873,6 +903,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void btnActualizarAccesorio_Click(object sender, EventArgs e)
         {
             AgregarActualizarAccesorio();
+        }
+
+        private void btnBuscarAccesorio_Click(object sender, EventArgs e)
+        {
+            string cod_uniforme_Accesorio = cboAccesorios.SelectedValue.ToString();
+            BuscarProductoAccesorio(cod_uniforme_Accesorio);
         }
     }
 }
