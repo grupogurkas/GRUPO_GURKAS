@@ -61,5 +61,30 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Actualizar
             cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
             cmd.ExecuteNonQuery();
         }
+        public void ActualizarPrendaCalzado(string cod_sistema, string cod_calzado, string nombre_calzado, int talla_cal, string color_cal,
+                 int tipo_calzado, int stock_inicial_cal, int estado_cal, decimal precio_unitario_cal, int stock_actual_cal,
+                 int stock_minimo_cal, string desp_cal,
+                 DateTime f_adquision_cal, DateTime f_registro_cal, string observacion_cal)
+        {
+            SqlCommand cmd = new SqlCommand("sp_registrar_producto_calzado ", conexion.conexionBD());
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@COD_PRODUCTO_SISTEMA", SqlDbType.VarChar).Value = cod_sistema;
+            cmd.Parameters.AddWithValue("@COD_PRODUCTO_UNI_CALZADO", SqlDbType.VarChar).Value = cod_calzado;
+            cmd.Parameters.AddWithValue("@NOMBRE_CALZADO", SqlDbType.VarChar).Value = nombre_calzado;
+            cmd.Parameters.AddWithValue("@ID_TALLA_PRENDA_CALZADO", SqlDbType.Int).Value = talla_cal;
+            cmd.Parameters.AddWithValue("@COLOR_CALZADO", SqlDbType.VarChar).Value = color_cal;
+            cmd.Parameters.AddWithValue("@IDTIPOCALZADO", SqlDbType.VarChar).Value = tipo_calzado;
+            cmd.Parameters.AddWithValue("@STOCK_INICIAL_CALZADO", SqlDbType.Int).Value = stock_inicial_cal;
+            cmd.Parameters.AddWithValue("@ID_ESTADO_MATERIAL", SqlDbType.Int).Value = estado_cal;
+            cmd.Parameters.AddWithValue("@COSTO_UNITARIO_CALZADO", SqlDbType.Decimal).Value = precio_unitario_cal;
+            cmd.Parameters.AddWithValue("@STOCK_ACTUAL_CALZADO", SqlDbType.Int).Value = stock_actual_cal;
+            cmd.Parameters.AddWithValue("@STOCK_MINIMO_CALZADO", SqlDbType.Int).Value = stock_minimo_cal;
+            cmd.Parameters.AddWithValue("@DESCRP_CALZADO", SqlDbType.VarChar).Value = desp_cal;
+            cmd.Parameters.AddWithValue("@FECHA_ADQUISICION_CALZADO", SqlDbType.VarChar).Value = f_adquision_cal;
+            cmd.Parameters.AddWithValue("@FECHA_REGISTRO_CALZADO", SqlDbType.VarChar).Value = f_registro_cal;
+            cmd.Parameters.AddWithValue("@OBSERVACION_CALZADO", SqlDbType.VarChar).Value = observacion_cal;
+            cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
+            cmd.ExecuteNonQuery();
+        }
     }
 }
