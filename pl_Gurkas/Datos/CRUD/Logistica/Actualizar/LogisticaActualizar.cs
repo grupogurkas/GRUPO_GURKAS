@@ -86,5 +86,30 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Actualizar
             cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
             cmd.ExecuteNonQuery();
         }
+        public void ActualizarPrendaPantalon(string cod_sistema, string cod_pantalon, string nombre_pantalon, int talla_pan,
+                   string color_pan,int stock_inicial_pan, int tipo_tela_pan, int estado_pan, decimal precio_unitario_pan,
+                   int stock_actual_pan, int stock_minimo_pan,string desp_pan,
+                     DateTime f_adquision_pan, DateTime f_registro_pan, string observacion_pan)
+        {
+            SqlCommand cmd = new SqlCommand("sp_registrar_producto_pantalon ", conexion.conexionBD());
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@COD_PRODUCTO_SISTEMA", SqlDbType.VarChar).Value = cod_sistema;
+            cmd.Parameters.AddWithValue("@COD_PRODUCTO_UNI_PANTALON", SqlDbType.VarChar).Value = cod_pantalon;
+            cmd.Parameters.AddWithValue("@NOMBRE_PANTALON", SqlDbType.VarChar).Value = nombre_pantalon;
+            cmd.Parameters.AddWithValue("@ID_TALLA_PRENDA_PANTALON", SqlDbType.Int).Value = talla_pan;
+            cmd.Parameters.AddWithValue("@COLOR_PANTALON", SqlDbType.VarChar).Value = color_pan;
+            cmd.Parameters.AddWithValue("@@idTipoPrenda", SqlDbType.Int).Value = tipo_tela_pan;
+            cmd.Parameters.AddWithValue("@STOCK_INICIAL_PANTALON", SqlDbType.Int).Value = stock_inicial_pan;
+            cmd.Parameters.AddWithValue("@ID_ESTADO_MATERIAL_PANTALON", SqlDbType.Int).Value = estado_pan;
+            cmd.Parameters.AddWithValue("@COSTO_UNITARIO_PANTALON", SqlDbType.Decimal).Value = precio_unitario_pan;
+            cmd.Parameters.AddWithValue("@STOCK_ACTUAL_PANTALON", SqlDbType.Int).Value = stock_actual_pan;
+            cmd.Parameters.AddWithValue("@STOCK_MINIMO_PANTALON", SqlDbType.Int).Value = stock_minimo_pan;
+            cmd.Parameters.AddWithValue("@DESCRP_PANTALON", SqlDbType.VarChar).Value = desp_pan;
+            cmd.Parameters.AddWithValue("@FECHA_ADQUISICION_PANTALON", SqlDbType.VarChar).Value = f_adquision_pan;
+            cmd.Parameters.AddWithValue("@FECHA_REGISTRO_PANTALON", SqlDbType.VarChar).Value = f_registro_pan;
+            cmd.Parameters.AddWithValue("@OBSERVACION_PANTALON", SqlDbType.VarChar).Value = observacion_pan;
+            cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
+            cmd.ExecuteNonQuery();
+        }
     }
 }

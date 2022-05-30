@@ -144,6 +144,37 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 MessageBox.Show("No se puede Regristrar el producto", "Error");
             }
         }
+        public void ActulizarPantalon()
+        {
+            try
+            {
+                string cod_sistema = txtCodPantalon.Text;
+                string cod_pantalon = txtCodCalzado.Text;
+                string nombre_pantalon = txtNombrePantalon.Text;
+                int talla_pan = cboTallaPantalon.SelectedIndex;
+                string color_pan = txtColorPantalon.Text;
+                int stock_inicial_pan = Convert.ToInt32(txtStockIniPantalon.Text);
+                int tipo_tela_pan = cboTipoTelaPantalon.SelectedIndex;
+                int estado_pan = cboEstadoPantalon.SelectedIndex;
+                decimal precio_unitario_pan = Convert.ToDecimal(txtCostoUniPantalon.Text);
+                int stock_actual_pan = Convert.ToInt32(txtStockActuPantalon.Text);
+                int stock_minimo_pan = Convert.ToInt32(txtStockMinPantalon.Text);
+                string desp_pan = txtDespPantalon.Text;
+                DateTime f_adquision_pan = dtpAdPantalon.Value;
+                DateTime f_registro_pan = dtpRegistroPantalon.Value;
+                string observacion_pan = txtObservacionPantalon.Text;
+
+                logisticaActualizar.ActualizarPrendaPantalon(cod_sistema, cod_pantalon, nombre_pantalon, talla_pan,
+                      color_pan, stock_inicial_pan, tipo_tela_pan, estado_pan, precio_unitario_pan, stock_actual_pan,
+                      stock_minimo_pan, desp_pan, f_adquision_pan, f_registro_pan, observacion_pan);
+                MessageBox.Show("Datos registrado correptamente", "Correpto");
+                LimpiarDatosPantalon();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede Regristrar el producto", "Error");
+            }
+        }
         public void AgregarActualizarCalzado()
         {
             try
@@ -691,6 +722,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void btnAgregarPantalon_Click(object sender, EventArgs e)
         {
             AgregarProductoPantalon();
+        }
+
+        private void btnActualizarPantalon_Click(object sender, EventArgs e)
+        {
+            ActulizarPantalon();
         }
     }
 }

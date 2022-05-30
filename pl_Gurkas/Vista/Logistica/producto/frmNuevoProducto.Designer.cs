@@ -2149,6 +2149,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnActualizarPantalon.Text = "Actualizar Producto \r\nPantalon";
             this.btnActualizarPantalon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnActualizarPantalon.UseVisualStyleBackColor = true;
+            this.btnActualizarPantalon.Click += new System.EventHandler(this.btnActualizarPantalon_Click);
             // 
             // groupBox9
             // 
