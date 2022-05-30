@@ -2102,6 +2102,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnBuscarPantalon.Text = "Buscar";
             this.btnBuscarPantalon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscarPantalon.UseVisualStyleBackColor = true;
+            this.btnBuscarPantalon.Click += new System.EventHandler(this.btnBuscarPantalon_Click);
             // 
             // cboPantalon
             // 
@@ -2520,6 +2521,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnNuevoAccesorio.Text = "Nuevo";
             this.btnNuevoAccesorio.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevoAccesorio.UseVisualStyleBackColor = true;
+            this.btnNuevoAccesorio.Click += new System.EventHandler(this.btnNuevoAccesorio_Click);
             // 
             // btnCargarImagen4
             // 
@@ -2599,6 +2601,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnAgregarAccesorio.Text = "Agregar Producto\r\nAccesorio";
             this.btnAgregarAccesorio.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregarAccesorio.UseVisualStyleBackColor = true;
+            this.btnAgregarAccesorio.Click += new System.EventHandler(this.btnAgregarAccesorio_Click);
             // 
             // btnActualizarAccesorio
             // 

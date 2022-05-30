@@ -91,14 +91,14 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Actualizar
                    int stock_actual_pan, int stock_minimo_pan,string desp_pan,
                      DateTime f_adquision_pan, DateTime f_registro_pan, string observacion_pan)
         {
-            SqlCommand cmd = new SqlCommand("sp_registrar_producto_pantalon ", conexion.conexionBD());
+            SqlCommand cmd = new SqlCommand("sp_actualizar_producto_pantalon ", conexion.conexionBD());
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@COD_PRODUCTO_SISTEMA", SqlDbType.VarChar).Value = cod_sistema;
             cmd.Parameters.AddWithValue("@COD_PRODUCTO_UNI_PANTALON", SqlDbType.VarChar).Value = cod_pantalon;
             cmd.Parameters.AddWithValue("@NOMBRE_PANTALON", SqlDbType.VarChar).Value = nombre_pantalon;
             cmd.Parameters.AddWithValue("@ID_TALLA_PRENDA_PANTALON", SqlDbType.Int).Value = talla_pan;
             cmd.Parameters.AddWithValue("@COLOR_PANTALON", SqlDbType.VarChar).Value = color_pan;
-            cmd.Parameters.AddWithValue("@@idTipoPrenda", SqlDbType.Int).Value = tipo_tela_pan;
+            cmd.Parameters.AddWithValue("@idTipoPrenda", SqlDbType.Int).Value = tipo_tela_pan;
             cmd.Parameters.AddWithValue("@STOCK_INICIAL_PANTALON", SqlDbType.Int).Value = stock_inicial_pan;
             cmd.Parameters.AddWithValue("@ID_ESTADO_MATERIAL_PANTALON", SqlDbType.Int).Value = estado_pan;
             cmd.Parameters.AddWithValue("@COSTO_UNITARIO_PANTALON", SqlDbType.Decimal).Value = precio_unitario_pan;

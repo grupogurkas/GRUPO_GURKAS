@@ -84,6 +84,36 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
             }
         }
+        public void BuscarProductoPantalon(string cod_uniforme_pantalon)
+        {
+            try
+            {
+                SqlCommand comando = new SqlCommand("SELECT * FROM v_producto_pantalon WHERE COD_PRODUCTO_UNI_PANTALON = '" + cod_uniforme_pantalon + "'", conexion.conexionBD());
+                SqlDataReader recorre = comando.ExecuteReader();
+                while (recorre.Read())
+                {
+                    txtCodSistema.Text = recorre["COD_PRODUCTO_SISTEMA"].ToString();
+                    txtCodPantalon.Text = recorre["COD_PRODUCTO_UNI_PANTALON"].ToString();
+                    txtNombrePantalon.Text = recorre["NOMBRE_PANTALON"].ToString();
+                    cboTallaPantalon.SelectedIndex = Convert.ToInt32(recorre["ID_TALLA_PRENDA_PANTALON"].ToString());
+                    txtColorPantalon.Text = recorre["COLOR_PANTALON"].ToString();
+                    txtStockIniPantalon.Text = recorre["STOCK_INICIAL_PANTALON"].ToString();
+                    cboTipoTelaPantalon.SelectedIndex = Convert.ToInt32(recorre["idTipoPrenda"].ToString());
+                    cboEstadoPantalon.SelectedIndex = Convert.ToInt32(recorre["ID_ESTADO_MATERIAL_PANTALON"].ToString());
+                    txtCostoUniPantalon.Text = recorre["COSTO_UNITARIO_PANTALON"].ToString();
+                    txtStockActuPantalon.Text = (recorre["STOCK_ACTUAL_PANTALON"].ToString());
+                    txtStockMinPantalon.Text = (recorre["STOCK_MINIMO_PANTALON"].ToString());
+                    txtDespPantalon.Text = (recorre["DESCRP_PANTALON"].ToString());
+                    dtpAdPantalon.Text = (recorre["FECHA_ADQUISICION_PANTALON"].ToString());
+                    dtpRegistroPantalon.Text = (recorre["FECHA_REGISTRO_PANTALON"].ToString());
+                    txtObservacionPantalon.Text = (recorre["OBSERVACION_PANTALON"].ToString());
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
+            }
+        }
         public void actualizarDatosCamisas()
         {
             try
@@ -148,8 +178,8 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                string cod_sistema = txtCodPantalon.Text;
-                string cod_pantalon = txtCodCalzado.Text;
+                string cod_sistema = txtCodSistema.Text;
+                string cod_pantalon = txtCodPantalon.Text;
                 string nombre_pantalon = txtNombrePantalon.Text;
                 int talla_pan = cboTallaPantalon.SelectedIndex;
                 string color_pan = txtColorPantalon.Text;
@@ -172,7 +202,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             }
             catch (Exception ex)
             {
-                MessageBox.Show("No se puede Regristrar el producto", "Error");
+                MessageBox.Show("No se puede Regristrar el producto" + ex, "Error");
             }
         }
         public void AgregarActualizarCalzado()
@@ -206,12 +236,43 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 MessageBox.Show("No se puede Regristrar el producto", "Error");
             }
         }
+        public void AgregarProductoAccesorio()
+        {
+            try
+            {
+                string cod_sistema = txtCodSistema.Text;
+                string cod_accesorio = txtCodAccesorio.Text;
+                string nombre_accesorio = txtNombreAccesorio.Text;
+                int talla_acc = cboTallaAccesorio.SelectedIndex;
+                string color_acc = txtColorAccesorio.Text;
+                int stock_inicial_acc = Convert.ToInt32(txtStockInicalAcessorio.Text);
+                int tipo_tela_acc = cboTipoTelaAccesorio.SelectedIndex;
+                int estado_acc = cboEstadoAccesorio.SelectedIndex;
+                decimal precio_unitario_acc = Convert.ToDecimal(txtCostoUnitarioAccesorio.Text);
+                int stock_actual_acc = Convert.ToInt32(txtStockActutalAccesorio.Text);
+                int stock_minimo_acc = Convert.ToInt32(txtStockMinimoAccesorio.Text);
+                string desp_acc = txtDespAccesorio.Text;
+                DateTime f_adquision_acc = dtpAdquAccesorio.Value;
+                DateTime f_registro_acc = dtpRegistroAccesorio.Value;
+                string observacion_acc = txtObservacionAccesorio.Text;
+
+                logisticaInsertar.RegistrarPrendaAccesorio( cod_sistema,  cod_accesorio,  nombre_accesorio,  talla_acc,
+                        color_acc,  stock_inicial_acc,  tipo_tela_acc,  estado_acc,  precio_unitario_acc,  stock_actual_acc,
+                       stock_minimo_acc,  desp_acc,  f_adquision_acc,  f_registro_acc,  observacion_acc);
+                MessageBox.Show("Datos registrado correptamente", "Correpto");
+                LimpiarDatosAccesorios();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede Regristrar el producto" + ex, "Error");
+            }
+        }
         public void AgregarProductoPantalon()
         {
             try
             {
-                string cod_sistema = txtCodPantalon.Text;
-                string cod_pantalon = txtCodCalzado.Text;
+                string cod_sistema = txtCodSistema.Text;
+                string cod_pantalon = txtCodPantalon.Text;
                 string nombre_pantalon = txtNombrePantalon.Text;
                 int talla_pan = cboTallaPantalon.SelectedIndex;
                 string color_pan = txtColorPantalon.Text;
@@ -234,7 +295,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             }
             catch (Exception ex)
             {
-                MessageBox.Show("No se puede Regristrar el producto", "Error");
+                MessageBox.Show("No se puede Regristrar el producto" + ex, "Error");
             }
         }
         public void AgregarProductoCalzado()
@@ -394,6 +455,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             GenerarCodigoPrincipal();
             GenerarCodigoCalzado();
             GenerarCodigoPantalon();
+            GenerarCodigoAccesorio();
         }
         public void LimpiarDatosCamisas()
         {
@@ -418,6 +480,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             LimpiarDatos.LimpiarGroupBox(groupBox8);
             generarCodigos();
             Llenadocbo.ObtenerProductoCalzado(cboCalzado);
+        }
+        public void LimpiarDatosAccesorios()
+        {
+            LimpiarDatos.LimpiarGroupBox(groupBox11);
+            txtNombreAccesorio.Focus();
+            LimpiarDatos.LimpiarGroupBox(groupBox12);
+            generarCodigos();
+            Llenadocbo.ObtenerProductoAccesorio(cboAccesorios);
         }
         public void LimpiarDatosPantalon()
         {
@@ -521,6 +591,30 @@ namespace pl_Gurkas.Vista.Logistica.producto
             if (numero > 99 && numero < 1000)
             {
                 txtCodCalzado.Text = "CAL0" + (numero + 1);
+            }
+        }
+        public void GenerarCodigoAccesorio()
+        {
+            string resultado = "";
+            SqlCommand comando = new SqlCommand("select count(ID_PRODUCTO_UNI_ACCESORIO) as 't' from T_MAE_UNI_ACCESORIO ", conexion.conexionBD());
+
+            SqlDataReader recorre = comando.ExecuteReader();
+            while (recorre.Read())
+            {
+                resultado = recorre["t"].ToString();
+            }
+            int numero = Convert.ToInt32(resultado);
+            if (numero < 10)
+            {
+                txtCodCalzado.Text = "ACC000" + (numero + 1);
+            }
+            if (numero > 9 && numero < 100)
+            {
+                txtCodCalzado.Text = "ACC00" + (numero + 1);
+            }
+            if (numero > 99 && numero < 1000)
+            {
+                txtCodCalzado.Text = "ACC0" + (numero + 1);
             }
         }
         private void llenadoDeDatos()
@@ -727,6 +821,22 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void btnActualizarPantalon_Click(object sender, EventArgs e)
         {
             ActulizarPantalon();
+        }
+
+        private void btnBuscarPantalon_Click(object sender, EventArgs e)
+        {
+            string cod_uniforme_pantalon = cboPantalon.SelectedValue.ToString();
+            BuscarProductoPantalon(cod_uniforme_pantalon);
+        }
+
+        private void btnNuevoAccesorio_Click(object sender, EventArgs e)
+        {
+            LimpiarDatosAccesorios();
+        }
+
+        private void btnAgregarAccesorio_Click(object sender, EventArgs e)
+        {
+            AgregarProductoAccesorio();
         }
     }
 }

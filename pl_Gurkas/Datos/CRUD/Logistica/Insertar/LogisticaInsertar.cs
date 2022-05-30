@@ -99,7 +99,7 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Insertar
             cmd.Parameters.AddWithValue("@NOMBRE_PANTALON", SqlDbType.VarChar).Value = nombre_pantalon;
             cmd.Parameters.AddWithValue("@ID_TALLA_PRENDA_PANTALON", SqlDbType.Int).Value = talla_pan;
             cmd.Parameters.AddWithValue("@COLOR_PANTALON", SqlDbType.VarChar).Value = color_pan;
-            cmd.Parameters.AddWithValue("@@idTipoPrenda", SqlDbType.Int).Value = tipo_tela_pan;
+            cmd.Parameters.AddWithValue("@idTipoPrenda", SqlDbType.Int).Value = tipo_tela_pan;
             cmd.Parameters.AddWithValue("@STOCK_INICIAL_PANTALON", SqlDbType.Int).Value = stock_inicial_pan;
             cmd.Parameters.AddWithValue("@ID_ESTADO_MATERIAL_PANTALON", SqlDbType.Int).Value = estado_pan;
             cmd.Parameters.AddWithValue("@COSTO_UNITARIO_PANTALON", SqlDbType.Decimal).Value = precio_unitario_pan;
@@ -109,6 +109,30 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Insertar
             cmd.Parameters.AddWithValue("@FECHA_ADQUISICION_PANTALON", SqlDbType.VarChar).Value = f_adquision_pan;
             cmd.Parameters.AddWithValue("@FECHA_REGISTRO_PANTALON", SqlDbType.VarChar).Value = f_registro_pan;
             cmd.Parameters.AddWithValue("@OBSERVACION_PANTALON", SqlDbType.VarChar).Value = observacion_pan;
+            cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
+            cmd.ExecuteNonQuery();
+        }
+        public void RegistrarPrendaAccesorio(string cod_sistema, string cod_accesorio, string nombre_accesorio, int talla_acc,
+                       string color_acc, int stock_inicial_acc, int tipo_tela_acc, int estado_acc, decimal precio_unitario_acc, int stock_actual_acc,
+                      int stock_minimo_acc, string desp_acc, DateTime f_adquision_acc, DateTime f_registro_acc, string observacion_acc)
+        {
+            SqlCommand cmd = new SqlCommand("sp_registrar_producto_accesorio ", conexion.conexionBD());
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@COD_PRODUCTO_SISTEMA", SqlDbType.VarChar).Value = cod_sistema;
+            cmd.Parameters.AddWithValue("@COD_PRODUCTO_UNI_ACCESORIO", SqlDbType.VarChar).Value = cod_accesorio;
+            cmd.Parameters.AddWithValue("@NOMBRE_ACCESORIO", SqlDbType.VarChar).Value = nombre_accesorio;
+            cmd.Parameters.AddWithValue("@ID_TALLA_PRENDA_ACCESORIO", SqlDbType.Int).Value = talla_acc;
+            cmd.Parameters.AddWithValue("@COLOR_ACCESORIO", SqlDbType.VarChar).Value = color_acc;
+            cmd.Parameters.AddWithValue("@idTipoPrenda", SqlDbType.Int).Value = tipo_tela_acc;
+            cmd.Parameters.AddWithValue("@STOCK_INICIAL_ACCESORIO", SqlDbType.Int).Value = stock_inicial_acc;
+            cmd.Parameters.AddWithValue("@ID_ESTADO_MATERIAL_ACCESORIO", SqlDbType.Int).Value = estado_acc;
+            cmd.Parameters.AddWithValue("@COSTO_UNITARIO_ACCESORIO", SqlDbType.Decimal).Value = precio_unitario_acc;
+            cmd.Parameters.AddWithValue("@STOCK_ACTUAL_ACCESORIO", SqlDbType.Int).Value = stock_actual_acc;
+            cmd.Parameters.AddWithValue("@STOCK_MINIMO_ACCESORIO", SqlDbType.Int).Value = stock_minimo_acc;
+            cmd.Parameters.AddWithValue("@DESCRP_ACCESORIO", SqlDbType.VarChar).Value = desp_acc;
+            cmd.Parameters.AddWithValue("@FECHA_ADQUISICION_ACCESORIO", SqlDbType.VarChar).Value = f_adquision_acc;
+            cmd.Parameters.AddWithValue("@FECHA_REGISTRO_ACCESORIO", SqlDbType.VarChar).Value = f_registro_acc;
+            cmd.Parameters.AddWithValue("@OBSERVACION_ACCESORIO", SqlDbType.VarChar).Value = observacion_acc;
             cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
             cmd.ExecuteNonQuery();
         }
