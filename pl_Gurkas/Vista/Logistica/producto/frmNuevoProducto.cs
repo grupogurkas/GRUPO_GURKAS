@@ -175,6 +175,37 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 MessageBox.Show("No se puede Regristrar el producto", "Error");
             }
         }
+        public void AgregarProductoPantalon()
+        {
+            try
+            {
+                string cod_sistema = txtCodPantalon.Text;
+                string cod_pantalon = txtCodCalzado.Text;
+                string nombre_pantalon = txtNombrePantalon.Text;
+                int talla_pan = cboTallaPantalon.SelectedIndex;
+                string color_pan = txtColorPantalon.Text;
+                int stock_inicial_pan = Convert.ToInt32(txtStockIniPantalon.Text);
+                int tipo_tela_pan = cboTipoTelaPantalon.SelectedIndex;
+                int estado_pan = cboEstadoPantalon.SelectedIndex;
+                decimal precio_unitario_pan = Convert.ToDecimal(txtCostoUniPantalon.Text);
+                int stock_actual_pan = Convert.ToInt32(txtStockActuPantalon.Text);
+                int stock_minimo_pan = Convert.ToInt32(txtStockMinPantalon.Text);
+                string desp_pan = txtDespPantalon.Text;
+                DateTime f_adquision_pan = dtpAdPantalon.Value;
+                DateTime f_registro_pan = dtpRegistroPantalon.Value;
+                string observacion_pan = txtObservacionPantalon.Text;
+
+                logisticaInsertar.RegistrarPrendaPantalon( cod_sistema,  cod_pantalon,  nombre_pantalon,  talla_pan,
+                      color_pan, stock_inicial_pan,  tipo_tela_pan,  estado_pan,  precio_unitario_pan,  stock_actual_pan,  
+                      stock_minimo_pan,  desp_pan,f_adquision_pan,  f_registro_pan,  observacion_pan);
+                MessageBox.Show("Datos registrado correptamente", "Correpto");
+                LimpiarDatosPantalon();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede Regristrar el producto", "Error");
+            }
+        }
         public void AgregarProductoCalzado()
         {
             try
@@ -331,6 +362,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             GenerarCodigoCamisas();
             GenerarCodigoPrincipal();
             GenerarCodigoCalzado();
+            GenerarCodigoPantalon();
         }
         public void LimpiarDatosCamisas()
         {
@@ -386,6 +418,30 @@ namespace pl_Gurkas.Vista.Logistica.producto
             if (numero > 99 && numero < 1000)
             {
                 txtCodEquipoTecnologia.Text = "TEC0" + (numero + 1);
+            }
+        }
+        public void GenerarCodigoPantalon()
+        {
+            string resultado = "";
+            SqlCommand comando = new SqlCommand("select count(ID_PRODUCTO_UNI_PANTALON) as 't' from T_MAE_UNI_PANTALON ", conexion.conexionBD());
+
+            SqlDataReader recorre = comando.ExecuteReader();
+            while (recorre.Read())
+            {
+                resultado = recorre["t"].ToString();
+            }
+            int numero = Convert.ToInt32(resultado);
+            if (numero < 10)
+            {
+                txtCodPantalon.Text = "PAN000" + (numero + 1);
+            }
+            if (numero > 9 && numero < 100)
+            {
+                txtCodPantalon.Text = "PAN00" + (numero + 1);
+            }
+            if (numero > 99 && numero < 1000)
+            {
+                txtCodPantalon.Text = "PAN0" + (numero + 1);
             }
         }
         public void GenerarCodigoCamisas()
@@ -500,10 +556,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             llenadoDatosCamisas();
             llenadoDatosCalzado();
             llenadoProductoPantalon();
-            GenerarCodigoTecnologico();
-            GenerarCodigoPrincipal();
-            GenerarCodigoCamisas();
-            GenerarCodigoCalzado();
+            generarCodigos();
         }
         private void tbpUniforme_Click(object sender, EventArgs e)
         {
@@ -537,7 +590,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 
             }    
         }
-
         private void btnSubirImagen_Click(object sender, EventArgs e)
         {
             
@@ -571,7 +623,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 this.Close();
             }
         }
-
         private void btnNuevo_Click_1(object sender, EventArgs e)
         {
             LimpiarDatos.LimpiarGroupBox(groupBox2);
@@ -585,68 +636,61 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             registrarProductoTecnologico();
         }
-
         private void btnNuevoProductoTecnologico_Click(object sender, EventArgs e)
         {
             LimpiarDatosTecnologico();
         }
-
         private void btnBuscarProductoTecnologia_Click(object sender, EventArgs e)
         {
             string cod_producto_tecnologia = cboNombreProductoTecnologico.SelectedValue.ToString();
             BuscarProductoTecnologico( cod_producto_tecnologia);
         }
-
         private void btnActualizarProductoTecnologico_Click(object sender, EventArgs e)
         {
             actualizarProductoTecnologico();
         }
-
         private void btnAgregarProductoCamisas_Click(object sender, EventArgs e)
         {
            AgregarProductoCamisas();
         }
-
         private void btnNuevoProductoCamisas_Click(object sender, EventArgs e)
         {
             LimpiarDatosCamisas();
         }
-
         private void btnActualizarProductoCamisas_Click(object sender, EventArgs e)
         {
             actualizarDatosCamisas();
         }
-
         private void btnBuscarProductoCamisas_Click(object sender, EventArgs e)
         {
             string cod_uniforme_camisa = cboProductoCamisas.SelectedValue.ToString();
             BuscarProductoCamisas(cod_uniforme_camisa);
         }
-
         private void btnAgregarCalzado_Click(object sender, EventArgs e)
         {
             AgregarProductoCalzado();
         }
-
         private void btnNuevoCalzado_Click(object sender, EventArgs e)
         {
             LimpiarDatosCalzado();
         }
-
         private void btnActualizarCalzado_Click(object sender, EventArgs e)
         {
             AgregarActualizarCalzado();
         }
-
         private void btnBuscarCalzado_Click(object sender, EventArgs e)
         {
             string cod_uniforme_calzado = cboCalzado.SelectedValue.ToString();
             BuscarProductoCalzado(cod_uniforme_calzado);
         }
-
         private void btnNuevoPantalon_Click(object sender, EventArgs e)
         {
             LimpiarDatosPantalon();
+        }
+
+        private void btnAgregarPantalon_Click(object sender, EventArgs e)
+        {
+            AgregarProductoPantalon();
         }
     }
 }

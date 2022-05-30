@@ -2135,6 +2135,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnAgregarPantalon.Text = "Agregar Producto\r\nPantalon";
             this.btnAgregarPantalon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregarPantalon.UseVisualStyleBackColor = true;
+            this.btnAgregarPantalon.Click += new System.EventHandler(this.btnAgregarPantalon_Click);
             // 
             // btnActualizarPantalon
             // 
