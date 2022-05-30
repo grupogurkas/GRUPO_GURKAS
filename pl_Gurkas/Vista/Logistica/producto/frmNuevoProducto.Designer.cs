@@ -2725,12 +2725,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.cboTipoTelaAccesorio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipoTelaAccesorio.FormattingEnabled = true;
-            this.cboTipoTelaAccesorio.Items.AddRange(new object[] {
-            "",
-            "Nuevo",
-            "Usado",
-            "Dañado",
-            "Baja"});
             this.cboTipoTelaAccesorio.Location = new System.Drawing.Point(130, 156);
             this.cboTipoTelaAccesorio.Name = "cboTipoTelaAccesorio";
             this.cboTipoTelaAccesorio.Size = new System.Drawing.Size(158, 21);
@@ -2750,12 +2744,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.cboTallaAccesorio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTallaAccesorio.FormattingEnabled = true;
-            this.cboTallaAccesorio.Items.AddRange(new object[] {
-            "",
-            "Nuevo",
-            "Usado",
-            "Dañado",
-            "Baja"});
             this.cboTallaAccesorio.Location = new System.Drawing.Point(130, 71);
             this.cboTallaAccesorio.Name = "cboTallaAccesorio";
             this.cboTallaAccesorio.Size = new System.Drawing.Size(158, 21);

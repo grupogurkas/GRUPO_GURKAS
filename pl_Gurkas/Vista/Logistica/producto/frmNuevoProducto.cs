@@ -680,21 +680,26 @@ namespace pl_Gurkas.Vista.Logistica.producto
         }
         private void llenadoDeDatos()
         {
-            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadUtiles);
+          /*  Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadUtiles);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadEquipo);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoEquipoPro);
-           // Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad4);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadMobi);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad6);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad7);
-            Llenadocbo.ObtenerEstadoProducto(cboEstadoAccesorio);
+           
             Llenadocbo.ObtenerEstadoProducto(cboEstadoUtilez);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoEquipo);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoEquipoPro);
-          //  Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc8);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoMobi);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc10);
-            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc11);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc11);*/
+        }
+        private void llenadoProductoAccesorios()
+        {
+            Llenadocbo.ObtenerProductoAccesorio(cboAccesorios);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoAccesorio);
+            Llenadocbo.ObtenerTipoTelaProducto(cboTipoTelaAccesorio);
+            Llenadocbo.ObtenerTallaPantalonProducto(cboTallaAccesorio);
         }
         private void llenadoProductoPantalon()
         {
@@ -742,6 +747,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             llenadoDatosCamisas();
             llenadoDatosCalzado();
             llenadoProductoPantalon();
+            llenadoProductoAccesorios();
             generarCodigos();
         }
         private void tbpUniforme_Click(object sender, EventArgs e)
