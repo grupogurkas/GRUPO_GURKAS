@@ -66,7 +66,7 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Actualizar
                  int stock_minimo_cal, string desp_cal,
                  DateTime f_adquision_cal, DateTime f_registro_cal, string observacion_cal)
         {
-            SqlCommand cmd = new SqlCommand("sp_registrar_producto_calzado ", conexion.conexionBD());
+            SqlCommand cmd = new SqlCommand("sp_actualizar_producto_calzado", conexion.conexionBD());
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@COD_PRODUCTO_SISTEMA", SqlDbType.VarChar).Value = cod_sistema;
             cmd.Parameters.AddWithValue("@COD_PRODUCTO_UNI_CALZADO", SqlDbType.VarChar).Value = cod_calzado;

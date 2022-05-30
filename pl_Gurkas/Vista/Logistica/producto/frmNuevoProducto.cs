@@ -14,18 +14,13 @@ using pl_Gurkas.Datos;
 
 namespace pl_Gurkas.Vista.Logistica.producto
 {
-    
-    public partial class frmNuevoProducto : Form
+   public partial class frmNuevoProducto : Form
     {
-         
         Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
         Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.Actualizar actualizar = new Datos.Actualizar();
-        Datos.Producto po = new Datos.Producto();
         Datos.CRUD.Logistica.Insertar.LogisticaInsertar logisticaInsertar = new Datos.CRUD.Logistica.Insertar.LogisticaInsertar();
         Datos.CRUD.Logistica.Actualizar.LogisticaActualizar logisticaActualizar = new Datos.CRUD.Logistica.Actualizar.LogisticaActualizar();
-
         public frmNuevoProducto()
         {
             InitializeComponent();
@@ -52,7 +47,36 @@ namespace pl_Gurkas.Vista.Logistica.producto
                     dtpAdquisicionCamisas.Text = (recorre["FECHA_ADQUISICION"].ToString());
                     dtpRegistroCamisas.Text = (recorre["FECHA_REGISTRO"].ToString());
                     txtObservacionCamisas.Text = (recorre["OBSERVACION"].ToString());
-                    
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
+            }
+        }
+        public void BuscarProductoCalzado(string cod_uniforme_calzado)
+        {
+            try
+            {
+                SqlCommand comando = new SqlCommand("SELECT * FROM v_producto_calzado WHERE COD_PRODUCTO_UNI_CALZADO = '" + cod_uniforme_calzado + "'", conexion.conexionBD());
+                SqlDataReader recorre = comando.ExecuteReader();
+                while (recorre.Read())
+                {
+                    txtCodSistema.Text = recorre["COD_PRODUCTO_SISTEMA"].ToString();
+                    txtCodCalzado.Text = recorre["COD_PRODUCTO_UNI_CALZADO"].ToString();
+                    txtNombreCalzado.Text = recorre["NOMBRE_CALZADO"].ToString();
+                    cboTallaCalzado.SelectedIndex = Convert.ToInt32(recorre["ID_TALLA_PRENDA_CALZADO"].ToString());
+                    txtColorCalzado.Text = recorre["COLOR_CALZADO"].ToString();
+                    cboTipoCalzado.SelectedIndex = Convert.ToInt32(recorre["IDTIPOCALZADO"].ToString());
+                    txtStockInicialCalzado.Text = recorre["STOCK_INICIAL_CALZADO"].ToString();
+                    cboEstadoCalzado.SelectedIndex = Convert.ToInt32(recorre["ID_ESTADO_MATERIAL"].ToString());
+                    txtCostoUniCalzado.Text = recorre["COSTO_UNITARIO_CALZADO"].ToString();
+                    txtStockActualCalzado.Text = (recorre["STOCK_ACTUAL_CALZADO"].ToString());
+                    txtStockMinimoCalzado.Text = (recorre["STOCK_MINIMO_CALZADO"].ToString());
+                    txtDespCalzado.Text = (recorre["DESCRP_CALZADO"].ToString());
+                    dtpAdquiCalzado.Text = (recorre["FECHA_ADQUISICION_CALZADO"].ToString());
+                    dtpRegistroCalzado.Text = (recorre["FECHA_REGISTRO_CALZADO"].ToString());
+                    txtObservacionCalzado.Text = (recorre["OBSERVACION_CALZADO"].ToString());
                 }
             }
             catch (Exception err)
@@ -327,10 +351,18 @@ namespace pl_Gurkas.Vista.Logistica.producto
         public void LimpiarDatosCalzado()
         {
             LimpiarDatos.LimpiarGroupBox(groupBox7);
-            txtCodCalzado.Focus();
+            txtNombreCalzado.Focus();
             LimpiarDatos.LimpiarGroupBox(groupBox8);
             generarCodigos();
             Llenadocbo.ObtenerProductoCalzado(cboCalzado);
+        }
+        public void LimpiarDatosPantalon()
+        {
+            LimpiarDatos.LimpiarGroupBox(groupBox9);
+            txtNombrePantalon.Focus();
+            LimpiarDatos.LimpiarGroupBox(groupBox10);
+            generarCodigos();
+            Llenadocbo.ObtenerProductoPantalon(cboPantalon);
         }
         public void GenerarCodigoTecnologico()
         {
@@ -413,9 +445,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadMobi);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad6);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad7);
-            
-            
-            Llenadocbo.ObtenerEstadoProducto(cboEstadoPantalon);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoAccesorio);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoUtilez);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoEquipo);
@@ -424,8 +453,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerEstadoProducto(cboEstadoMobi);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc10);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc11);
+        }
+        private void llenadoProductoPantalon()
+        {
+            Llenadocbo.ObtenerProductoPantalon(cboPantalon);
             Llenadocbo.ObtenerTipoTelaProducto(cboTipoTelaPantalon);
             Llenadocbo.ObtenerTallaPantalonProducto(cboTallaPantalon);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoPantalon);
         }
         private void llenadoProductoTecnologico()
         {
@@ -446,58 +480,28 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerTipoCalzadoProducto(cboTipoCalzado);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoCalzado);
         }
-        private void ValidarCamposVacios()
-        {
-            if(txtCodEquipoTecnologia.Text.Length == 0)
-            {
-                MessageBox.Show("Debe Insertar un codigo", "Advertencia");
-            }
-            if (txtNombreEquipoTecnologia.Text.Length == 0)
-            {
-                MessageBox.Show("Debe Insertar un nombre", "Advertencia");
-            }
-            if (txtModeloEquipoTecnologia.Text.Length == 0)
-            {
-                MessageBox.Show("Debe Insertar un codigo", "Advertencia");
-            }
-            if (txtMarcaEquipoTecnologia.Text.Length == 0)
-            {
-                MessageBox.Show("Debe Insertar un codigo", "Advertencia");
-            }
-            if (txtDescripcionEquipoTecnologia.Text.Length == 0)
-            {
-                MessageBox.Show("Debe Insertar un codigo", "Advertencia");
-            }
-            if (txtNumSerialEquipoTecnologia.Text.Length == 0)
-            {
-                MessageBox.Show("Debe Insertar un codigo", "Advertencia");
-            }
- 
-            if (txtPrecioUnitarioEquipoTecnologia.Text.Length == 0)
-            {
-                MessageBox.Show("Debe Insertar un codigo", "Advertencia");
-            }
-            if (cboEstadoProducEquipoTecnologia.SelectedIndex == 0)
-            {
-                MessageBox.Show("Debe Insertar un codigo", "Advertencia");
-            }
-            if (txtObservacionEquipoTecnologia.Text.Length == 0)
-            {
-                MessageBox.Show("Debe Insertar un codigo", "Advertencia");
-            }
-        }
         private void frmNuevoProducto_Load(object sender, EventArgs e)
         {
             txtCodEquipoTecnologia.Enabled = false;
             txtcodcamisas.Enabled = false;
             txtCodSistema.Enabled = false;
             txtCodCalzado.Enabled = false;
+            txtCodPantalon.Enabled = false;
+            txtCodAccesorio.Enabled = false;
+            txtCodigoUtiles.Enabled = false;
+            txtCodEquipoEquip.Enabled = false;
+            txtCodEquipProtec.Enabled = false;
+            txtCodEquipMobi.Enabled = false;
+            txtCodVehiculo.Enabled = false;
+            txtCodEquipAseo.Enabled = false;
+            txtCodEquipArma.Enabled = false;
             llenadoDeDatos();
-            GenerarCodigoPrincipal();
             llenadoProductoTecnologico();
             llenadoDatosCamisas();
             llenadoDatosCalzado();
+            llenadoProductoPantalon();
             GenerarCodigoTecnologico();
+            GenerarCodigoPrincipal();
             GenerarCodigoCamisas();
             GenerarCodigoCalzado();
         }
@@ -573,17 +577,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             LimpiarDatos.LimpiarGroupBox(groupBox2);
             txtCodEquipoTecnologia.Focus();
         }
-
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             string codProducto = cboProducto.SelectedValue.ToString();
         }
-
-        private void dtpFechaRegistro_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAgregarProductoTecnologico_Click(object sender, EventArgs e)
         {
             registrarProductoTecnologico();
@@ -639,6 +636,17 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void btnActualizarCalzado_Click(object sender, EventArgs e)
         {
             AgregarActualizarCalzado();
+        }
+
+        private void btnBuscarCalzado_Click(object sender, EventArgs e)
+        {
+            string cod_uniforme_calzado = cboCalzado.SelectedValue.ToString();
+            BuscarProductoCalzado(cod_uniforme_calzado);
+        }
+
+        private void btnNuevoPantalon_Click(object sender, EventArgs e)
+        {
+            LimpiarDatosPantalon();
         }
     }
 }

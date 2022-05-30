@@ -1107,7 +1107,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.dtpFechaRegistroEquipoTecnologia.Name = "dtpFechaRegistroEquipoTecnologia";
             this.dtpFechaRegistroEquipoTecnologia.Size = new System.Drawing.Size(109, 20);
             this.dtpFechaRegistroEquipoTecnologia.TabIndex = 153;
-            this.dtpFechaRegistroEquipoTecnologia.ValueChanged += new System.EventHandler(this.dtpFechaRegistro_ValueChanged);
             // 
             // label10
             // 
@@ -1669,6 +1668,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnBuscarCalzado.Text = "Buscar";
             this.btnBuscarCalzado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscarCalzado.UseVisualStyleBackColor = true;
+            this.btnBuscarCalzado.Click += new System.EventHandler(this.btnBuscarCalzado_Click);
             // 
             // cboCalzado
             // 
@@ -2088,6 +2088,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnNuevoPantalon.Text = "Nuevo";
             this.btnNuevoPantalon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevoPantalon.UseVisualStyleBackColor = true;
+            this.btnNuevoPantalon.Click += new System.EventHandler(this.btnNuevoPantalon_Click);
             // 
             // btnBuscarPantalon
             // 
