@@ -517,6 +517,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             GenerarCodigoCalzado();
             GenerarCodigoPantalon();
             GenerarCodigoAccesorio();
+            GenerarCodigoUtilesEscritorio();
         }
         public void LimpiarDatosCamisas()
         {
@@ -549,6 +550,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             LimpiarDatos.LimpiarGroupBox(groupBox12);
             generarCodigos();
             Llenadocbo.ObtenerProductoAccesorio(cboAccesorios);
+        }
+        public void LimpiarDatosUtilezEscritorio()
+        {
+            LimpiarDatos.LimpiarGroupBox(groupBox3);
+            txtNombreUtiles.Focus();
+            LimpiarDatos.LimpiarGroupBox(groupBox14);
+            generarCodigos();
+            Llenadocbo.ObtenerProductoUtilezEscritorio(cboUtilesEscritorio);
         }
         public void LimpiarDatosPantalon()
         {
@@ -678,22 +687,37 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 txtCodAccesorio.Text = "ACC0" + (numero + 1);
             }
         }
-        private void llenadoDeDatos()
+        public void GenerarCodigoUtilesEscritorio()
         {
-          /*  Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadUtiles);
-            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadEquipo);
-            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoEquipoPro);
-            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadMobi);
-            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad6);
-            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidad7);
-           
-            Llenadocbo.ObtenerEstadoProducto(cboEstadoUtilez);
-            Llenadocbo.ObtenerEstadoProducto(cboEstadoEquipo);
-            Llenadocbo.ObtenerEstadoProducto(cboEstadoEquipoPro);
-            Llenadocbo.ObtenerEstadoProducto(cboEstadoMobi);
-            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc10);
-            Llenadocbo.ObtenerEstadoProducto(cboEstadoProduc11);*/
+            string resultado = "";
+            SqlCommand comando = new SqlCommand("select count(ID_PRODUCTO_UTI_ESCRITORIO) as 't' from T_MAE_UTI_ESCRITORIO ", conexion.conexionBD());
+
+            SqlDataReader recorre = comando.ExecuteReader();
+            while (recorre.Read())
+            {
+                resultado = recorre["t"].ToString();
+            }
+            int numero = Convert.ToInt32(resultado);
+            if (numero < 10)
+            {
+                txtCodigoUtiles.Text = "UTI000" + (numero + 1);
+            }
+            if (numero > 9 && numero < 100)
+            {
+                txtCodigoUtiles.Text = "UTI00" + (numero + 1);
+            }
+            if (numero > 99 && numero < 1000)
+            {
+                txtCodigoUtiles.Text = "UTI0" + (numero + 1);
+            }
         }
+        private void llenadoUtilesEscritorio()
+        {
+            Llenadocbo.ObtenerProductoUtilezEscritorio(cboUtilesEscritorio);
+            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadUtiles);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoUtilez);
+        }
+
         private void llenadoProductoAccesorios()
         {
             Llenadocbo.ObtenerProductoAccesorio(cboAccesorios);
@@ -742,12 +766,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             txtCodVehiculo.Enabled = false;
             txtCodEquipAseo.Enabled = false;
             txtCodEquipArma.Enabled = false;
-            llenadoDeDatos();
             llenadoProductoTecnologico();
             llenadoDatosCamisas();
             llenadoDatosCalzado();
             llenadoProductoPantalon();
             llenadoProductoAccesorios();
+            llenadoUtilesEscritorio();
             generarCodigos();
         }
         private void tbpUniforme_Click(object sender, EventArgs e)
@@ -915,6 +939,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             string cod_uniforme_Accesorio = cboAccesorios.SelectedValue.ToString();
             BuscarProductoAccesorio(cod_uniforme_Accesorio);
+        }
+
+        private void btnNuevoUtiles_Click(object sender, EventArgs e)
+        {
+            LimpiarDatosUtilezEscritorio();
         }
     }
 }

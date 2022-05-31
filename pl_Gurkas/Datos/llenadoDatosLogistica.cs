@@ -492,6 +492,27 @@ namespace pl_Gurkas.Datos
                 MessageBox.Show("No se puede obtener el listado del Empleados \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+        public void ObtenerProductoUtilezEscritorio(ComboBox cd)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("select COD_PRODUCTO_UTI_ESCRITORIO,NOMBRE_UTI_ESCRITORIO from T_MAE_UTI_ESCRITORIO ", conexiondbo.conexionBD());
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                DataRow fila = dt.NewRow();
+                fila["NOMBRE_UTI_ESCRITORIO"] = "---Seleccione un Producto---";
+                dt.Rows.InsertAt(fila, 0);
+                cd.ValueMember = "COD_PRODUCTO_UTI_ESCRITORIO";
+                cd.DisplayMember = "NOMBRE_UTI_ESCRITORIO";
+                cd.DataSource = dt;
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se puede obtener el listado del Empleados \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
         public void ObtenerTallaPantalonProducto(ComboBox cd)
         {
             try

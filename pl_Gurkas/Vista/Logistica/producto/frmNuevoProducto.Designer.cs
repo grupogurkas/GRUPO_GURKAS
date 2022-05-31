@@ -2954,6 +2954,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnNuevoUtiles.Text = "Nuevo";
             this.btnNuevoUtiles.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevoUtiles.UseVisualStyleBackColor = true;
+            this.btnNuevoUtiles.Click += new System.EventHandler(this.btnNuevoUtiles_Click);
             // 
             // btnCargarImagen5
             // 
@@ -3161,12 +3162,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.cboTipoUnidadUtiles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipoUnidadUtiles.FormattingEnabled = true;
-            this.cboTipoUnidadUtiles.Items.AddRange(new object[] {
-            "",
-            "Nuevo",
-            "Usado",
-            "Dañado",
-            "Baja"});
             this.cboTipoUnidadUtiles.Location = new System.Drawing.Point(137, 130);
             this.cboTipoUnidadUtiles.Name = "cboTipoUnidadUtiles";
             this.cboTipoUnidadUtiles.Size = new System.Drawing.Size(158, 21);
