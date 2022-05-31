@@ -135,5 +135,30 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Actualizar
             cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
             cmd.ExecuteNonQuery();
         }
+        public void ActualizarUtiles(string cod_sistema, string cod_utiles, string nombre_utiles, string marca_utiles,
+                        string modelo_utiles, int tipo_unidad_utiles, int stock_inicial_utiles, int estado_utiles, decimal precio_unitario_utiles,
+                         int stock_actual_utiles,
+                      int stock_minimo_utiles, string desp_utiles, DateTime f_adquision_utiles, DateTime f_registro_utiles, string observacion_utiles)
+        {
+            SqlCommand cmd = new SqlCommand("sp_actualizar_producto_utiles_escritorio ", conexion.conexionBD());
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@COD_PRODUCTO_SISTEMA", SqlDbType.VarChar).Value = cod_sistema;
+            cmd.Parameters.AddWithValue("@COD_PRODUCTO_UTI_ESCRITORIO", SqlDbType.VarChar).Value = cod_utiles;
+            cmd.Parameters.AddWithValue("@NOMBRE_UTI_ESCRITORIO", SqlDbType.VarChar).Value = nombre_utiles;
+            cmd.Parameters.AddWithValue("@MARCA_UTI_ESCRITORIO", SqlDbType.VarChar).Value = marca_utiles;
+            cmd.Parameters.AddWithValue("@MODELO_UTI_ESCRITORIO", SqlDbType.VarChar).Value = modelo_utiles;
+            cmd.Parameters.AddWithValue("@idunidad_producto_UTI_ESCRITORIO", SqlDbType.Int).Value = tipo_unidad_utiles;
+            cmd.Parameters.AddWithValue("@STOCK_INICIAL_UTI_ESCRITORIO", SqlDbType.Int).Value = stock_inicial_utiles;
+            cmd.Parameters.AddWithValue("@ID_ESTADO_MATERIAL_UTI_ESCRITORIO", SqlDbType.Int).Value = estado_utiles;
+            cmd.Parameters.AddWithValue("@COSTO_UNITARIO_UTI_ESCRITORIO", SqlDbType.Decimal).Value = precio_unitario_utiles;
+            cmd.Parameters.AddWithValue("@STOCK_ACTUAL_UTI_ESCRITORIO", SqlDbType.Int).Value = stock_actual_utiles;
+            cmd.Parameters.AddWithValue("@STOCK_MINIMO_UTI_ESCRITORIO", SqlDbType.Int).Value = stock_minimo_utiles;
+            cmd.Parameters.AddWithValue("@DESCRP_UTI_ESCRITORIO", SqlDbType.VarChar).Value = desp_utiles;
+            cmd.Parameters.AddWithValue("@FECHA_ADQUISICION_UTI_ESCRITORIO", SqlDbType.VarChar).Value = f_adquision_utiles;
+            cmd.Parameters.AddWithValue("@FECHA_REGISTRO_UTI_ESCRITORIO", SqlDbType.VarChar).Value = f_registro_utiles;
+            cmd.Parameters.AddWithValue("@OBSERVACION_UTI_ESCRITORIO", SqlDbType.VarChar).Value = observacion_utiles;
+            cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
+            cmd.ExecuteNonQuery();
+        }
     }
 }

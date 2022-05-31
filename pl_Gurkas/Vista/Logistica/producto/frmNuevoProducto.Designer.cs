@@ -2981,6 +2981,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnBuscarUtilez.Text = "Buscar";
             this.btnBuscarUtilez.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscarUtilez.UseVisualStyleBackColor = true;
+            this.btnBuscarUtilez.Click += new System.EventHandler(this.btnBuscarUtilez_Click);
             // 
             // cboUtilesEscritorio
             // 
@@ -3034,6 +3035,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnAgregarUtiles.Text = "Agregar Producto\r\nUtiles";
             this.btnAgregarUtiles.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregarUtiles.UseVisualStyleBackColor = true;
+            this.btnAgregarUtiles.Click += new System.EventHandler(this.btnAgregarUtiles_Click);
             // 
             // btnActualizarUtiles
             // 
@@ -3047,6 +3049,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnActualizarUtiles.Text = "Actualizar Producto \r\nUtiles";
             this.btnActualizarUtiles.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnActualizarUtiles.UseVisualStyleBackColor = true;
+            this.btnActualizarUtiles.Click += new System.EventHandler(this.btnActualizarUtiles_Click);
             // 
             // groupBox3
             // 

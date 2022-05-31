@@ -144,6 +144,36 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
             }
         }
+        public void BuscarProductoEscritorio(string cod_utiles_escritorio)
+        {
+            try
+            {
+                SqlCommand comando = new SqlCommand("SELECT * FROM v_producto_utiles WHERE COD_PRODUCTO_UTI_ESCRITORIO = '" + cod_utiles_escritorio + "'", conexion.conexionBD());
+                SqlDataReader recorre = comando.ExecuteReader();
+                while (recorre.Read())
+                {
+                    txtCodSistema.Text = recorre["COD_PRODUCTO_SISTEMA"].ToString();
+                    txtCodigoUtiles.Text = recorre["COD_PRODUCTO_UTI_ESCRITORIO"].ToString();
+                    txtNombreUtiles.Text = recorre["NOMBRE_UTI_ESCRITORIO"].ToString();
+                    txtMarcaUtiles.Text = recorre["MARCA_UTI_ESCRITORIO"].ToString();
+                    txtModeloUtiles.Text = recorre["MODELO_UTI_ESCRITORIO"].ToString();
+                    cboTipoUnidadUtiles.SelectedIndex = Convert.ToInt32(recorre["idunidad_producto_UTI_ESCRITORIO"].ToString());
+                    txtCantidadUtiles.Text = recorre["STOCK_INICIAL_UTI_ESCRITORIO"].ToString();
+                    cboEstadoUtilez.SelectedIndex = Convert.ToInt32(recorre["ID_ESTADO_MATERIAL_UTI_ESCRITORIO"].ToString());
+                    txtPrecioUnitarioUtiles.Text = (recorre["COSTO_UNITARIO_UTI_ESCRITORIO"].ToString());
+                    txtStockIniUtiles.Text = (recorre["STOCK_ACTUAL_UTI_ESCRITORIO"].ToString());
+                    txtStockMinUtiles.Text = (recorre["STOCK_MINIMO_UTI_ESCRITORIO"].ToString());
+                    txtDescripcionUti.Text = (recorre["DESCRP_UTI_ESCRITORIO"].ToString());
+                    dtpFechaAdUtiles.Text = (recorre["FECHA_ADQUISICION_UTI_ESCRITORIO"].ToString());
+                    dtpFechaRegisUtiles.Text = (recorre["FECHA_REGISTRO_UTI_ESCRITORIO"].ToString());
+                    txtObservacionUti.Text = (recorre["OBSERVACION_UTI_ESCRITORIO"].ToString());
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
+            }
+        }
         public void actualizarDatosCamisas()
         {
             try
@@ -297,6 +327,38 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 MessageBox.Show("No se puede Regristrar el producto" + ex, "Error");
             }
         }
+        public void AgregarActualizarUtiles()
+        {
+            try
+            {
+                string cod_sistema = txtCodSistema.Text;
+                string cod_utiles = txtCodigoUtiles.Text;
+                string nombre_utiles = txtNombreUtiles.Text;
+                string marca_utiles = txtMarcaUtiles.Text;
+                string modelo_utiles = txtModeloUtiles.Text;
+                int tipo_unidad_utiles = cboTipoUnidadUtiles.SelectedIndex;
+                int stock_inicial_utiles = Convert.ToInt32(txtCantidadUtiles.Text);
+                int estado_utiles = cboEstadoUtilez.SelectedIndex;
+                decimal precio_unitario_utiles = Convert.ToDecimal(txtPrecioUnitarioUtiles.Text);
+                int stock_actual_utiles = Convert.ToInt32(txtStockIniUtiles.Text);
+                int stock_minimo_utiles = Convert.ToInt32(txtStockMinUtiles.Text);
+                string desp_utiles = txtDescripcionUti.Text;
+                DateTime f_adquision_utiles = dtpFechaAdUtiles.Value;
+                DateTime f_registro_utiles = dtpFechaRegisUtiles.Value;
+                string observacion_utiles = txtObservacionUti.Text;
+
+                logisticaActualizar.ActualizarUtiles(cod_sistema, cod_utiles, nombre_utiles, marca_utiles,
+                          modelo_utiles, tipo_unidad_utiles, stock_inicial_utiles, estado_utiles, precio_unitario_utiles,
+                           stock_actual_utiles,
+                        stock_minimo_utiles, desp_utiles, f_adquision_utiles, f_registro_utiles, observacion_utiles);
+                MessageBox.Show("Datos Actualizado correptamente", "Correpto");
+                LimpiarDatosUtilezEscritorio();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede actualizar el producto" + ex, "Error");
+            }
+        }
         public void AgregarProductoAccesorio()
         {
             try
@@ -322,6 +384,38 @@ namespace pl_Gurkas.Vista.Logistica.producto
                        stock_minimo_acc,  desp_acc,  f_adquision_acc,  f_registro_acc,  observacion_acc);
                 MessageBox.Show("Datos registrado correptamente", "Correpto");
                 LimpiarDatosAccesorios();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede Regristrar el producto" + ex, "Error");
+            }
+        }
+        public void AgregarProductoUtiles()
+        {
+            try
+            {
+                string cod_sistema = txtCodSistema.Text;
+                string cod_utiles = txtCodigoUtiles.Text;
+                string nombre_utiles = txtNombreUtiles.Text;
+                string marca_utiles = txtMarcaUtiles.Text;
+                string modelo_utiles = txtModeloUtiles.Text;
+                int tipo_unidad_utiles = cboTipoUnidadUtiles.SelectedIndex;
+                int stock_inicial_utiles = Convert.ToInt32(txtCantidadUtiles.Text);
+                int estado_utiles = cboEstadoUtilez.SelectedIndex;
+                decimal precio_unitario_utiles = Convert.ToDecimal(txtPrecioUnitarioUtiles.Text);
+                int stock_actual_utiles = Convert.ToInt32(txtStockIniUtiles.Text);
+                int stock_minimo_utiles = Convert.ToInt32(txtStockMinUtiles.Text);
+                string desp_utiles = txtDescripcionUti.Text;
+                DateTime f_adquision_utiles = dtpFechaAdUtiles.Value;
+                DateTime f_registro_utiles = dtpFechaRegisUtiles.Value;
+                string observacion_utiles = txtObservacionUti.Text;
+
+                logisticaInsertar.RegistrarUtiles( cod_sistema,  cod_utiles,  nombre_utiles,  marca_utiles,
+                          modelo_utiles,  tipo_unidad_utiles,  stock_inicial_utiles,  estado_utiles,  precio_unitario_utiles,
+                           stock_actual_utiles,
+                        stock_minimo_utiles,  desp_utiles,  f_adquision_utiles,  f_registro_utiles,  observacion_utiles);
+                MessageBox.Show("Datos registrado correptamente", "Correpto");
+                LimpiarDatosUtilezEscritorio();
             }
             catch (Exception ex)
             {
@@ -717,7 +811,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadUtiles);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoUtilez);
         }
-
         private void llenadoProductoAccesorios()
         {
             Llenadocbo.ObtenerProductoAccesorio(cboAccesorios);
@@ -903,47 +996,55 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             LimpiarDatosPantalon();
         }
-
         private void btnAgregarPantalon_Click(object sender, EventArgs e)
         {
             AgregarProductoPantalon();
         }
-
         private void btnActualizarPantalon_Click(object sender, EventArgs e)
         {
             ActulizarPantalon();
         }
-
         private void btnBuscarPantalon_Click(object sender, EventArgs e)
         {
             string cod_uniforme_pantalon = cboPantalon.SelectedValue.ToString();
             BuscarProductoPantalon(cod_uniforme_pantalon);
         }
-
         private void btnNuevoAccesorio_Click(object sender, EventArgs e)
         {
             LimpiarDatosAccesorios();
         }
-
         private void btnAgregarAccesorio_Click(object sender, EventArgs e)
         {
             AgregarProductoAccesorio();
         }
-
         private void btnActualizarAccesorio_Click(object sender, EventArgs e)
         {
             AgregarActualizarAccesorio();
         }
-
         private void btnBuscarAccesorio_Click(object sender, EventArgs e)
         {
             string cod_uniforme_Accesorio = cboAccesorios.SelectedValue.ToString();
             BuscarProductoAccesorio(cod_uniforme_Accesorio);
         }
-
         private void btnNuevoUtiles_Click(object sender, EventArgs e)
         {
             LimpiarDatosUtilezEscritorio();
+        }
+
+        private void btnAgregarUtiles_Click(object sender, EventArgs e)
+        {
+            AgregarProductoUtiles();
+        }
+
+        private void btnActualizarUtiles_Click(object sender, EventArgs e)
+        {
+            AgregarActualizarUtiles();
+        }
+
+        private void btnBuscarUtilez_Click(object sender, EventArgs e)
+        {
+            string cod_utiles_escritorio = cboUtilesEscritorio.SelectedValue.ToString();
+            BuscarProductoEscritorio(cod_utiles_escritorio);
         }
     }
 }
