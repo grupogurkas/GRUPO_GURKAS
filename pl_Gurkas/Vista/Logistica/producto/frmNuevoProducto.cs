@@ -174,6 +174,36 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
             }
         }
+        public void BuscarProductoEquipoLogistico(string cod_equi_logistico)
+        {
+            try
+            {
+                SqlCommand comando = new SqlCommand("SELECT * FROM v_producto_utiles WHERE COD_PRODUCTO_UTI_ESCRITORIO = '" + cod_equi_logistico + "'", conexion.conexionBD());
+                SqlDataReader recorre = comando.ExecuteReader();
+                while (recorre.Read())
+                {
+                    txtCodSistema.Text = recorre["COD_PRODUCTO_SISTEMA"].ToString();
+                    txtCodigoUtiles.Text = recorre["COD_PRODUCTO_UTI_ESCRITORIO"].ToString();
+                    txtNombreUtiles.Text = recorre["NOMBRE_UTI_ESCRITORIO"].ToString();
+                    txtMarcaUtiles.Text = recorre["MARCA_UTI_ESCRITORIO"].ToString();
+                    txtModeloUtiles.Text = recorre["MODELO_UTI_ESCRITORIO"].ToString();
+                    cboTipoUnidadUtiles.SelectedIndex = Convert.ToInt32(recorre["idunidad_producto_UTI_ESCRITORIO"].ToString());
+                    txtCantidadUtiles.Text = recorre["STOCK_INICIAL_UTI_ESCRITORIO"].ToString();
+                    cboEstadoUtilez.SelectedIndex = Convert.ToInt32(recorre["ID_ESTADO_MATERIAL_UTI_ESCRITORIO"].ToString());
+                    txtPrecioUnitarioUtiles.Text = (recorre["COSTO_UNITARIO_UTI_ESCRITORIO"].ToString());
+                    txtStockIniUtiles.Text = (recorre["STOCK_ACTUAL_UTI_ESCRITORIO"].ToString());
+                    txtStockMinUtiles.Text = (recorre["STOCK_MINIMO_UTI_ESCRITORIO"].ToString());
+                    txtDescripcionUti.Text = (recorre["DESCRP_UTI_ESCRITORIO"].ToString());
+                    dtpFechaAdUtiles.Text = (recorre["FECHA_ADQUISICION_UTI_ESCRITORIO"].ToString());
+                    dtpFechaRegisUtiles.Text = (recorre["FECHA_REGISTRO_UTI_ESCRITORIO"].ToString());
+                    txtObservacionUti.Text = (recorre["OBSERVACION_UTI_ESCRITORIO"].ToString());
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
+            }
+        }
         public void actualizarDatosCamisas()
         {
             try
@@ -357,6 +387,38 @@ namespace pl_Gurkas.Vista.Logistica.producto
             catch (Exception ex)
             {
                 MessageBox.Show("No se puede actualizar el producto" + ex, "Error");
+            }
+        }
+        public void ActualizarEquipamientoLogistico()
+        {
+            try
+            {
+                string cod_sistema = txtCodSistema.Text;
+                string cod_logistico = txtCodEquipoEquip.Text;
+                string nombre_logistico = txtNombreEquip.Text;
+                string marca_logistico = txtMarcaEquip.Text;
+                string modelo_logistico = txtModeloEquip.Text;
+                int tipo_unidad_logistico = cboTipoUnidadEquipo.SelectedIndex;
+                int stock_inicial_logistico = Convert.ToInt32(txtCantidadEquip.Text);
+                int estado_logistico = cboEstadoEquipo.SelectedIndex;
+                decimal precio_unitario_logistico = Convert.ToDecimal(txtPrecioUniEquip.Text);
+                int stock_actual_logistico = Convert.ToInt32(txtStockIniEquip.Text);
+                int stock_minimo_logistico = Convert.ToInt32(txtStockMinEquip.Text);
+                string desp_logistico = txtDescripcionEquip.Text;
+                DateTime f_adquision_logistico = dtpFechaAdEquip.Value;
+                DateTime f_registro_logistico = dtpFechaRegisEquip.Value;
+                string observacion_logistico = txtObservacionEquip.Text;
+
+                logisticaActualizar.ActualizarEquipoLogistico(cod_sistema, cod_logistico, nombre_logistico, marca_logistico,
+                           modelo_logistico, tipo_unidad_logistico, stock_inicial_logistico, estado_logistico, precio_unitario_logistico,
+                            stock_actual_logistico,
+                         stock_minimo_logistico, desp_logistico, f_adquision_logistico, f_registro_logistico, observacion_logistico);
+                MessageBox.Show("Datos actualizado correptamente", "Correpto");
+                LimpiarDatosEquipamientoLogistico();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede Regristrar el producto" + ex, "Error");
             }
         }
         public void AgregarProductoAccesorio()
@@ -1127,6 +1189,17 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void btnNuevoLogistico_Click(object sender, EventArgs e)
         {
             AgregarEquipamientoLogistico();
+        }
+
+        private void btnActualizarLogistico_Click(object sender, EventArgs e)
+        {
+            ActualizarEquipamientoLogistico();
+        }
+
+        private void btnBuscarLogistico_Click(object sender, EventArgs e)
+        {
+            string cod_equi_logistico = cboEquipamientoLogistico.SelectedValue.ToString();
+            BuscarProductoEquipoLogistico(cod_equi_logistico);
         }
     }
 }

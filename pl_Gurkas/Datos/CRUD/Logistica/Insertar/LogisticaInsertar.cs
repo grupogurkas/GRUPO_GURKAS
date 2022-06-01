@@ -167,14 +167,14 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Insertar
                            int stock_actual_logistico,
                         int stock_minimo_logistico, string desp_logistico, DateTime f_adquision_logistico, DateTime f_registro_logistico, string observacion_logistico)
         {
-            SqlCommand cmd = new SqlCommand("sp_registrar_producto_utiles_escritorio ", conexion.conexionBD());
+            SqlCommand cmd = new SqlCommand("sp_registrar_producto_equipamiento_logistico ", conexion.conexionBD());
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@COD_PRODUCTO_SISTEMA", SqlDbType.VarChar).Value = cod_sistema;
             cmd.Parameters.AddWithValue("@COD_PRODUCTO_EQUIP_LOGISTICO", SqlDbType.VarChar).Value = cod_logistico;
             cmd.Parameters.AddWithValue("@NOMBRE_EQUIP_LOGISTICO", SqlDbType.VarChar).Value = nombre_logistico;
             cmd.Parameters.AddWithValue("@MARCA_EQUIP_LOGISTICO", SqlDbType.VarChar).Value = marca_logistico;
             cmd.Parameters.AddWithValue("@MODELO_EQUIP_LOGISTICO", SqlDbType.VarChar).Value = modelo_logistico;
-            cmd.Parameters.AddWithValue("idunidad_producto_UTI_ESCRITORIO", SqlDbType.Int).Value = tipo_unidad_logistico;
+            cmd.Parameters.AddWithValue("@idunidad_producto_EQUIP_LOGISTICO", SqlDbType.Int).Value = tipo_unidad_logistico;
             cmd.Parameters.AddWithValue("@STOCK_INICIAL_EQUIP_LOGISTICO", SqlDbType.Int).Value = stock_inicial_logistico;
             cmd.Parameters.AddWithValue("@ID_ESTADO_MATERIAL_EQUIP_LOGISTICO", SqlDbType.Int).Value = estado_logistico;
             cmd.Parameters.AddWithValue("@COSTO_UNITARIO_EQUIP_LOGISTICO", SqlDbType.Decimal).Value = precio_unitario_logistico;

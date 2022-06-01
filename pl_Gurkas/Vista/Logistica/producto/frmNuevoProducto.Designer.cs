@@ -3399,6 +3399,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnBuscarLogistico.Text = "Buscar";
             this.btnBuscarLogistico.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscarLogistico.UseVisualStyleBackColor = true;
+            this.btnBuscarLogistico.Click += new System.EventHandler(this.btnBuscarLogistico_Click);
             // 
             // cboEquipamientoLogistico
             // 
@@ -3446,6 +3447,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnActualizarLogistico.Text = "Actualizar Producto \r\nMaterial Logistico";
             this.btnActualizarLogistico.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnActualizarLogistico.UseVisualStyleBackColor = true;
+            this.btnActualizarLogistico.Click += new System.EventHandler(this.btnActualizarLogistico_Click);
             // 
             // groupBox4
             // 

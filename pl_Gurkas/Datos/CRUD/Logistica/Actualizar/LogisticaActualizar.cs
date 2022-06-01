@@ -160,5 +160,30 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Actualizar
             cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
             cmd.ExecuteNonQuery();
         }
+        public void ActualizarEquipoLogistico(string cod_sistema, string cod_logistico, string nombre_logistico, string marca_logistico,
+                          string modelo_logistico, int tipo_unidad_logistico, int stock_inicial_logistico, int estado_logistico, decimal precio_unitario_logistico,
+                           int stock_actual_logistico,
+                        int stock_minimo_logistico, string desp_logistico, DateTime f_adquision_logistico, DateTime f_registro_logistico, string observacion_logistico)
+        {
+            SqlCommand cmd = new SqlCommand("sp_actualizar_producto_equipamiento_logistico", conexion.conexionBD());
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@COD_PRODUCTO_SISTEMA", SqlDbType.VarChar).Value = cod_sistema;
+            cmd.Parameters.AddWithValue("@COD_PRODUCTO_EQUIP_LOGISTICO", SqlDbType.VarChar).Value = cod_logistico;
+            cmd.Parameters.AddWithValue("@NOMBRE_EQUIP_LOGISTICO", SqlDbType.VarChar).Value = nombre_logistico;
+            cmd.Parameters.AddWithValue("@MARCA_EQUIP_LOGISTICO", SqlDbType.VarChar).Value = marca_logistico;
+            cmd.Parameters.AddWithValue("@MODELO_EQUIP_LOGISTICO", SqlDbType.VarChar).Value = modelo_logistico;
+            cmd.Parameters.AddWithValue("@idunidad_producto_EQUIP_LOGISTICO", SqlDbType.Int).Value = tipo_unidad_logistico;
+            cmd.Parameters.AddWithValue("@STOCK_INICIAL_EQUIP_LOGISTICO", SqlDbType.Int).Value = stock_inicial_logistico;
+            cmd.Parameters.AddWithValue("@ID_ESTADO_MATERIAL_EQUIP_LOGISTICO", SqlDbType.Int).Value = estado_logistico;
+            cmd.Parameters.AddWithValue("@COSTO_UNITARIO_EQUIP_LOGISTICO", SqlDbType.Decimal).Value = precio_unitario_logistico;
+            cmd.Parameters.AddWithValue("@STOCK_ACTUAL_EQUIP_LOGISTICO", SqlDbType.Int).Value = stock_actual_logistico;
+            cmd.Parameters.AddWithValue("@STOCK_MINIMO_EQUIP_LOGISTICO", SqlDbType.Int).Value = stock_minimo_logistico;
+            cmd.Parameters.AddWithValue("@DESCRP_EQUIP_LOGISTICO", SqlDbType.VarChar).Value = desp_logistico;
+            cmd.Parameters.AddWithValue("@FECHA_ADQUISICION_EQUIP_LOGISTICO", SqlDbType.VarChar).Value = f_adquision_logistico;
+            cmd.Parameters.AddWithValue("@FECHA_REGISTRO_EQUIP_LOGISTICO", SqlDbType.VarChar).Value = f_registro_logistico;
+            cmd.Parameters.AddWithValue("@OBSERVACION_EQUIP_LOGISTICO", SqlDbType.VarChar).Value = observacion_logistico;
+            cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
+            cmd.ExecuteNonQuery();
+        }
     }
 }
