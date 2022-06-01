@@ -422,6 +422,38 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 MessageBox.Show("No se puede Regristrar el producto" + ex, "Error");
             }
         }
+        public void AgregarEquipamientoLogistico()
+        {
+            try
+            {
+                string cod_sistema = txtCodSistema.Text;
+                string cod_logistico = txtCodEquipoEquip.Text;
+                string nombre_logistico = txtNombreEquip.Text;
+                string marca_logistico = txtMarcaEquip.Text;
+                string modelo_logistico = txtModeloEquip.Text;
+                int tipo_unidad_logistico = cboTipoUnidadEquipo.SelectedIndex;
+                int stock_inicial_logistico = Convert.ToInt32(txtCantidadEquip.Text);
+                int estado_logistico = cboEstadoEquipo.SelectedIndex;
+                decimal precio_unitario_logistico = Convert.ToDecimal(txtPrecioUniEquip.Text);
+                int stock_actual_logistico = Convert.ToInt32(txtStockIniEquip.Text);
+                int stock_minimo_logistico = Convert.ToInt32(txtStockMinEquip.Text);
+                string desp_logistico = txtDescripcionEquip.Text;
+                DateTime f_adquision_logistico = dtpFechaAdEquip.Value;
+                DateTime f_registro_logistico = dtpFechaRegisEquip.Value;
+                string observacion_logistico = txtObservacionEquip.Text;
+
+                logisticaInsertar.RegistrarEquipaminetoLogistico( cod_sistema,  cod_logistico,  nombre_logistico,  marca_logistico,
+                           modelo_logistico,  tipo_unidad_logistico,  stock_inicial_logistico,  estado_logistico,  precio_unitario_logistico,
+                            stock_actual_logistico,
+                         stock_minimo_logistico,  desp_logistico,  f_adquision_logistico,  f_registro_logistico,  observacion_logistico);
+                MessageBox.Show("Datos registrado correptamente", "Correpto");
+                LimpiarDatosEquipamientoLogistico();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede Regristrar el producto" + ex, "Error");
+            }
+        }
         public void AgregarProductoPantalon()
         {
             try
@@ -612,6 +644,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             GenerarCodigoPantalon();
             GenerarCodigoAccesorio();
             GenerarCodigoUtilesEscritorio();
+            GenerarCodigoEquipamientoLogistico();
         }
         public void LimpiarDatosCamisas()
         {
@@ -660,6 +693,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             LimpiarDatos.LimpiarGroupBox(groupBox10);
             generarCodigos();
             Llenadocbo.ObtenerProductoPantalon(cboPantalon);
+        }
+        public void LimpiarDatosEquipamientoLogistico()
+        {
+            LimpiarDatos.LimpiarGroupBox(groupBox4);
+            txtNombreEquip.Focus();
+            LimpiarDatos.LimpiarGroupBox(groupBox15);
+            generarCodigos();
+            Llenadocbo.ObtenerEquipoLogistico(cboEquipamientoLogistico);
         }
         public void GenerarCodigoTecnologico()
         {
@@ -805,6 +846,30 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 txtCodigoUtiles.Text = "UTI0" + (numero + 1);
             }
         }
+        public void GenerarCodigoEquipamientoLogistico()
+        {
+            string resultado = "";
+            SqlCommand comando = new SqlCommand("select count(ID_PRODUCTO_EQUIP_LOGISTICO) as 't' from T_MAE_PRODUCTO_EQUIP_LOGISTICO ", conexion.conexionBD());
+
+            SqlDataReader recorre = comando.ExecuteReader();
+            while (recorre.Read())
+            {
+                resultado = recorre["t"].ToString();
+            }
+            int numero = Convert.ToInt32(resultado);
+            if (numero < 10)
+            {
+                txtCodEquipoEquip.Text = "EQL000" + (numero + 1);
+            }
+            if (numero > 9 && numero < 100)
+            {
+                txtCodEquipoEquip.Text = "EQL00" + (numero + 1);
+            }
+            if (numero > 99 && numero < 1000)
+            {
+                txtCodEquipoEquip.Text = "EQL0" + (numero + 1);
+            }
+        }
         private void llenadoUtilesEscritorio()
         {
             Llenadocbo.ObtenerProductoUtilezEscritorio(cboUtilesEscritorio);
@@ -844,6 +909,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerTipoCalzadoProducto(cboTipoCalzado);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoCalzado);
         }
+        private void llenadoDatosEquipamientoLogistico()
+        {
+            Llenadocbo.ObtenerEquipoLogistico(cboEquipamientoLogistico);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoEquipo);
+            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadEquipo);
+        }
         private void frmNuevoProducto_Load(object sender, EventArgs e)
         {
             txtCodEquipoTecnologia.Enabled = false;
@@ -865,6 +936,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             llenadoProductoPantalon();
             llenadoProductoAccesorios();
             llenadoUtilesEscritorio();
+            llenadoDatosEquipamientoLogistico();
             generarCodigos();
         }
         private void tbpUniforme_Click(object sender, EventArgs e)
@@ -1045,6 +1117,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             string cod_utiles_escritorio = cboUtilesEscritorio.SelectedValue.ToString();
             BuscarProductoEscritorio(cod_utiles_escritorio);
+        }
+
+        private void btnNuevoMaterialLogistico_Click(object sender, EventArgs e)
+        {
+            LimpiarDatosEquipamientoLogistico();
+        }
+
+        private void btnNuevoLogistico_Click(object sender, EventArgs e)
+        {
+            AgregarEquipamientoLogistico();
         }
     }
 }

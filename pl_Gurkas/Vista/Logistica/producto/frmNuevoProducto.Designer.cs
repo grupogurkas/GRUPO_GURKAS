@@ -3385,6 +3385,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnNuevoMaterialLogistico.Text = "Nuevo";
             this.btnNuevoMaterialLogistico.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevoMaterialLogistico.UseVisualStyleBackColor = true;
+            this.btnNuevoMaterialLogistico.Click += new System.EventHandler(this.btnNuevoMaterialLogistico_Click);
             // 
             // btnBuscarLogistico
             // 
@@ -3431,6 +3432,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnNuevoLogistico.Text = "Agregar Producto\r\nMaterial Logistico";
             this.btnNuevoLogistico.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevoLogistico.UseVisualStyleBackColor = true;
+            this.btnNuevoLogistico.Click += new System.EventHandler(this.btnNuevoLogistico_Click);
             // 
             // btnActualizarLogistico
             // 
@@ -3559,12 +3561,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.cboTipoUnidadEquipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipoUnidadEquipo.FormattingEnabled = true;
-            this.cboTipoUnidadEquipo.Items.AddRange(new object[] {
-            "",
-            "Nuevo",
-            "Usado",
-            "Dañado",
-            "Baja"});
             this.cboTipoUnidadEquipo.Location = new System.Drawing.Point(133, 123);
             this.cboTipoUnidadEquipo.Name = "cboTipoUnidadEquipo";
             this.cboTipoUnidadEquipo.Size = new System.Drawing.Size(158, 21);
