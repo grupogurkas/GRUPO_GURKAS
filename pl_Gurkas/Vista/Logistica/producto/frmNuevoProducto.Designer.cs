@@ -334,7 +334,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tbpEpp = new System.Windows.Forms.TabPage();
             this.btnNuevoEquipoProPe = new System.Windows.Forms.Button();
             this.btnBuscarEquipoProtec = new System.Windows.Forms.Button();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.cboEpp = new System.Windows.Forms.ComboBox();
             this.label179 = new System.Windows.Forms.Label();
             this.btnAgregarEquipoPro = new System.Windows.Forms.Button();
             this.btnActualizarEquipoPro = new System.Windows.Forms.Button();
@@ -3385,6 +3385,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnNuevoMaterialLogistico.Text = "Nuevo";
             this.btnNuevoMaterialLogistico.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevoMaterialLogistico.UseVisualStyleBackColor = true;
+            this.btnNuevoMaterialLogistico.Click += new System.EventHandler(this.btnNuevoMaterialLogistico_Click);
             // 
             // btnBuscarLogistico
             // 
@@ -3398,6 +3399,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnBuscarLogistico.Text = "Buscar";
             this.btnBuscarLogistico.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscarLogistico.UseVisualStyleBackColor = true;
+            this.btnBuscarLogistico.Click += new System.EventHandler(this.btnBuscarLogistico_Click);
             // 
             // cboEquipamientoLogistico
             // 
@@ -3431,6 +3433,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnNuevoLogistico.Text = "Agregar Producto\r\nMaterial Logistico";
             this.btnNuevoLogistico.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevoLogistico.UseVisualStyleBackColor = true;
+            this.btnNuevoLogistico.Click += new System.EventHandler(this.btnNuevoLogistico_Click);
             // 
             // btnActualizarLogistico
             // 
@@ -3444,6 +3447,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnActualizarLogistico.Text = "Actualizar Producto \r\nMaterial Logistico";
             this.btnActualizarLogistico.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnActualizarLogistico.UseVisualStyleBackColor = true;
+            this.btnActualizarLogistico.Click += new System.EventHandler(this.btnActualizarLogistico_Click);
             // 
             // groupBox4
             // 
@@ -3559,12 +3563,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.cboTipoUnidadEquipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipoUnidadEquipo.FormattingEnabled = true;
-            this.cboTipoUnidadEquipo.Items.AddRange(new object[] {
-            "",
-            "Nuevo",
-            "Usado",
-            "Dañado",
-            "Baja"});
             this.cboTipoUnidadEquipo.Location = new System.Drawing.Point(133, 123);
             this.cboTipoUnidadEquipo.Name = "cboTipoUnidadEquipo";
             this.cboTipoUnidadEquipo.Size = new System.Drawing.Size(158, 21);
@@ -3789,7 +3787,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.tbpEpp.Controls.Add(this.btnNuevoEquipoProPe);
             this.tbpEpp.Controls.Add(this.btnBuscarEquipoProtec);
-            this.tbpEpp.Controls.Add(this.comboBox8);
+            this.tbpEpp.Controls.Add(this.cboEpp);
             this.tbpEpp.Controls.Add(this.label179);
             this.tbpEpp.Controls.Add(this.btnAgregarEquipoPro);
             this.tbpEpp.Controls.Add(this.btnActualizarEquipoPro);
@@ -3818,6 +3816,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnNuevoEquipoProPe.Text = "Nuevo";
             this.btnNuevoEquipoProPe.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevoEquipoProPe.UseVisualStyleBackColor = true;
+            this.btnNuevoEquipoProPe.Click += new System.EventHandler(this.btnNuevoEquipoProPe_Click);
             // 
             // btnBuscarEquipoProtec
             // 
@@ -3831,16 +3830,17 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnBuscarEquipoProtec.Text = "Buscar";
             this.btnBuscarEquipoProtec.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscarEquipoProtec.UseVisualStyleBackColor = true;
+            this.btnBuscarEquipoProtec.Click += new System.EventHandler(this.btnBuscarEquipoProtec_Click);
             // 
-            // comboBox8
+            // cboEpp
             // 
-            this.comboBox8.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox8.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(120, 17);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(335, 21);
-            this.comboBox8.TabIndex = 198;
+            this.cboEpp.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboEpp.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboEpp.FormattingEnabled = true;
+            this.cboEpp.Location = new System.Drawing.Point(120, 17);
+            this.cboEpp.Name = "cboEpp";
+            this.cboEpp.Size = new System.Drawing.Size(335, 21);
+            this.cboEpp.TabIndex = 198;
             // 
             // label179
             // 
@@ -3864,6 +3864,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnAgregarEquipoPro.Text = "Agregar Producto\r\nEquipo Proteccion";
             this.btnAgregarEquipoPro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregarEquipoPro.UseVisualStyleBackColor = true;
+            this.btnAgregarEquipoPro.Click += new System.EventHandler(this.btnAgregarEquipoPro_Click);
             // 
             // btnActualizarEquipoPro
             // 
@@ -3877,6 +3878,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnActualizarEquipoPro.Text = "Actualizar Producto \r\nEquipo Proteccion";
             this.btnActualizarEquipoPro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnActualizarEquipoPro.UseVisualStyleBackColor = true;
+            this.btnActualizarEquipoPro.Click += new System.EventHandler(this.btnActualizarEquipoPro_Click);
             // 
             // groupBox6
             // 
@@ -3992,12 +3994,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.cboTipoEquipoPro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipoEquipoPro.FormattingEnabled = true;
-            this.cboTipoEquipoPro.Items.AddRange(new object[] {
-            "",
-            "Nuevo",
-            "Usado",
-            "Dañado",
-            "Baja"});
             this.cboTipoEquipoPro.Location = new System.Drawing.Point(135, 123);
             this.cboTipoEquipoPro.Name = "cboTipoEquipoPro";
             this.cboTipoEquipoPro.Size = new System.Drawing.Size(158, 21);
@@ -6412,7 +6408,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.Button btnActualizarLogistico;
         private System.Windows.Forms.Button btnNuevoEquipoProPe;
         private System.Windows.Forms.Button btnBuscarEquipoProtec;
-        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox cboEpp;
         private System.Windows.Forms.Label label179;
         private System.Windows.Forms.Button btnAgregarEquipoPro;
         private System.Windows.Forms.Button btnActualizarEquipoPro;
