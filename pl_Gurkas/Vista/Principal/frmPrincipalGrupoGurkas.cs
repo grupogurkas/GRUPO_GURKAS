@@ -510,6 +510,7 @@ namespace pl_Gurkas.Vista.Principal
         private void vercionToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+            MessageBox.Show("");
             modulo.auditoria("Archivos","Comprobar la vercion del sistema  Gurkas","","");
         }
         private void historialDePlanillaPorDiasLaboradosToolStripMenuItem_Click(object sender, EventArgs e)

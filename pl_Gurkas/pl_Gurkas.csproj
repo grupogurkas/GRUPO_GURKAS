@@ -1574,6 +1574,10 @@
   <ItemGroup>
     <Content Include="png %281%29.ico" />
     <Content Include="png iconb.ico" />
+    <None Include="Resources\edit_32.png" />
+    <None Include="Resources\edit_16.png" />
+    <None Include="Resources\delete_32.png" />
+    <None Include="Resources\delete_16.png" />
     <None Include="Resources\version_32.png" />
     <None Include="Resources\conexion_32.png" />
     <None Include="Resources\cerrarsesion_32.png" />
