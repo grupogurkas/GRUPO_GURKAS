@@ -178,25 +178,25 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                SqlCommand comando = new SqlCommand("SELECT * FROM v_producto_utiles WHERE COD_PRODUCTO_UTI_ESCRITORIO = '" + cod_equi_logistico + "'", conexion.conexionBD());
+                SqlCommand comando = new SqlCommand("SELECT * FROM v_producto_equipo_logistico WHERE COD_PRODUCTO_UTI_ESCRITORIO = '" + cod_equi_logistico + "'", conexion.conexionBD());
                 SqlDataReader recorre = comando.ExecuteReader();
                 while (recorre.Read())
                 {
                     txtCodSistema.Text = recorre["COD_PRODUCTO_SISTEMA"].ToString();
-                    txtCodigoUtiles.Text = recorre["COD_PRODUCTO_UTI_ESCRITORIO"].ToString();
-                    txtNombreUtiles.Text = recorre["NOMBRE_UTI_ESCRITORIO"].ToString();
-                    txtMarcaUtiles.Text = recorre["MARCA_UTI_ESCRITORIO"].ToString();
-                    txtModeloUtiles.Text = recorre["MODELO_UTI_ESCRITORIO"].ToString();
-                    cboTipoUnidadUtiles.SelectedIndex = Convert.ToInt32(recorre["idunidad_producto_UTI_ESCRITORIO"].ToString());
-                    txtCantidadUtiles.Text = recorre["STOCK_INICIAL_UTI_ESCRITORIO"].ToString();
-                    cboEstadoUtilez.SelectedIndex = Convert.ToInt32(recorre["ID_ESTADO_MATERIAL_UTI_ESCRITORIO"].ToString());
-                    txtPrecioUnitarioUtiles.Text = (recorre["COSTO_UNITARIO_UTI_ESCRITORIO"].ToString());
-                    txtStockIniUtiles.Text = (recorre["STOCK_ACTUAL_UTI_ESCRITORIO"].ToString());
-                    txtStockMinUtiles.Text = (recorre["STOCK_MINIMO_UTI_ESCRITORIO"].ToString());
-                    txtDescripcionUti.Text = (recorre["DESCRP_UTI_ESCRITORIO"].ToString());
-                    dtpFechaAdUtiles.Text = (recorre["FECHA_ADQUISICION_UTI_ESCRITORIO"].ToString());
-                    dtpFechaRegisUtiles.Text = (recorre["FECHA_REGISTRO_UTI_ESCRITORIO"].ToString());
-                    txtObservacionUti.Text = (recorre["OBSERVACION_UTI_ESCRITORIO"].ToString());
+                    txtCodEquipoEquip.Text = recorre["COD_PRODUCTO_EQUIP_LOGISTICO"].ToString();
+                    txtNombreEquip.Text = recorre["NOMBRE_EQUIP_LOGISTICO"].ToString();
+                    txtMarcaEquip.Text = recorre["MARCA_EQUIP_LOGISTICO"].ToString();
+                    txtModeloEquip.Text = recorre["MODELO_EQUIP_LOGISTICO"].ToString();
+                    cboTipoUnidadEquipo.SelectedIndex = Convert.ToInt32(recorre["idunidad_producto_EQUIP_LOGISTICO"].ToString());
+                    txtCantidadEquip.Text = recorre["STOCK_INICIAL_EQUIP_LOGISTICO"].ToString();
+                    cboEstadoEquipo.SelectedIndex = Convert.ToInt32(recorre["ID_ESTADO_MATERIAL_EQUIP_LOGISTICO"].ToString());
+                    txtPrecioUniEquip.Text = (recorre["COSTO_UNITARIO_EQUIP_LOGISTICO"].ToString());
+                    txtStockIniEquip.Text = (recorre["STOCK_ACTUAL_EQUIP_LOGISTICO"].ToString());
+                    txtStockMinEquip.Text = (recorre["STOCK_MINIMO_EQUIP_LOGISTICO"].ToString());
+                    txtDescripcionEquip.Text = (recorre["DESCRP_EQUIP_LOGISTICO"].ToString());
+                    dtpFechaAdEquip.Text = (recorre["FECHA_ADQUISICION_EQUIP_LOGISTICO"].ToString());
+                    dtpFechaRegisEquip.Text = (recorre["FECHA_REGISTRO_EQUIP_LOGISTICO"].ToString());
+                    txtObservacionEquip.Text = (recorre["OBSERVACION_EQUIP_LOGISTICO"].ToString());
                 }
             }
             catch (Exception err)
