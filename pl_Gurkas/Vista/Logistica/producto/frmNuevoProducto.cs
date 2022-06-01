@@ -204,6 +204,36 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
             }
         }
+        public void BuscarProductoEpp(string cod_equi_epp)
+        {
+            try
+            {
+                SqlCommand comando = new SqlCommand("SELECT * FROM v_producto_epp WHERE COD_PRODUCTO_EPP = '" + cod_equi_epp + "'", conexion.conexionBD());
+                SqlDataReader recorre = comando.ExecuteReader();
+                while (recorre.Read())
+                {
+                    txtCodSistema.Text = recorre["COD_PRODUCTO_SISTEMA"].ToString();
+                    txtCodEquipProtec.Text = recorre["COD_PRODUCTO_EPP"].ToString();
+                    txtNombreProtec.Text = recorre["NOMBRE_EQUIP_EPP"].ToString();
+                    txtMarcaProtec.Text = recorre["MARCA_EQUIP_EPPP"].ToString();
+                    txtModeloProtec.Text = recorre["MODELO_EQUIP_EPP"].ToString();
+                    cboTipoEquipoPro.SelectedIndex = Convert.ToInt32(recorre["idunidad_producto_EQUIP_EPP"].ToString());
+                    txtCantidadProtec.Text = recorre["STOCK_INICIAL_EQUIP_EPP"].ToString();
+                    cboEstadoEquipoPro.SelectedIndex = Convert.ToInt32(recorre["ID_ESTADO_MATERIAL_EQUIP_EPP"].ToString());
+                    txtPrecioUniProtec.Text = (recorre["COSTO_UNITARIO_EQUIP_EPP"].ToString());
+                    txtStockIniProtec.Text = (recorre["STOCK_ACTUAL_EQUIP_EPP"].ToString());
+                    txtStockMinProtec.Text = (recorre["STOCK_MINIMO_EQUIP_EPP"].ToString());
+                    txtDescripcionProtec.Text = (recorre["DESCRP_EQUIP_EQUIP_EPP"].ToString());
+                    dtpFechaAdProtec.Text = (recorre["FECHA_ADQUISICION_EQUIP_EPP"].ToString());
+                    dtpFechaRegisProtec.Text = (recorre["FECHA_REGISTRO_EQUIP_EPP"].ToString());
+                    txtObservacionProtec.Text = (recorre["OBSERVACION_EQUIP_EPP"].ToString());
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
+            }
+        }
         public void actualizarDatosCamisas()
         {
             try
@@ -1318,6 +1348,17 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void btnActualizarEquipoPro_Click(object sender, EventArgs e)
         {
             ActualizarEPP();
+        }
+
+        private void btnBuscarEquipoProtec_Click(object sender, EventArgs e)
+        {
+            string cod_equi_epp = cboEpp.SelectedValue.ToString();
+            BuscarProductoEpp(cod_equi_epp);
+        }
+
+        private void btnNuevoEquipoProPe_Click(object sender, EventArgs e)
+        {
+            LimpiarDatosEpp();
         }
     }
 }

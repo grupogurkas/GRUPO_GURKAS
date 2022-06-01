@@ -3816,6 +3816,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnNuevoEquipoProPe.Text = "Nuevo";
             this.btnNuevoEquipoProPe.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevoEquipoProPe.UseVisualStyleBackColor = true;
+            this.btnNuevoEquipoProPe.Click += new System.EventHandler(this.btnNuevoEquipoProPe_Click);
             // 
             // btnBuscarEquipoProtec
             // 
@@ -3829,6 +3830,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnBuscarEquipoProtec.Text = "Buscar";
             this.btnBuscarEquipoProtec.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscarEquipoProtec.UseVisualStyleBackColor = true;
+            this.btnBuscarEquipoProtec.Click += new System.EventHandler(this.btnBuscarEquipoProtec_Click);
             // 
             // cboEpp
             // 
@@ -3992,12 +3994,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.cboTipoEquipoPro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipoEquipoPro.FormattingEnabled = true;
-            this.cboTipoEquipoPro.Items.AddRange(new object[] {
-            "",
-            "Nuevo",
-            "Usado",
-            "Dañado",
-            "Baja"});
             this.cboTipoEquipoPro.Location = new System.Drawing.Point(135, 123);
             this.cboTipoEquipoPro.Name = "cboTipoEquipoPro";
             this.cboTipoEquipoPro.Size = new System.Drawing.Size(158, 21);
