@@ -334,7 +334,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tbpEpp = new System.Windows.Forms.TabPage();
             this.btnNuevoEquipoProPe = new System.Windows.Forms.Button();
             this.btnBuscarEquipoProtec = new System.Windows.Forms.Button();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.cboEpp = new System.Windows.Forms.ComboBox();
             this.label179 = new System.Windows.Forms.Label();
             this.btnAgregarEquipoPro = new System.Windows.Forms.Button();
             this.btnActualizarEquipoPro = new System.Windows.Forms.Button();
@@ -3787,7 +3787,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.tbpEpp.Controls.Add(this.btnNuevoEquipoProPe);
             this.tbpEpp.Controls.Add(this.btnBuscarEquipoProtec);
-            this.tbpEpp.Controls.Add(this.comboBox8);
+            this.tbpEpp.Controls.Add(this.cboEpp);
             this.tbpEpp.Controls.Add(this.label179);
             this.tbpEpp.Controls.Add(this.btnAgregarEquipoPro);
             this.tbpEpp.Controls.Add(this.btnActualizarEquipoPro);
@@ -3830,15 +3830,15 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnBuscarEquipoProtec.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscarEquipoProtec.UseVisualStyleBackColor = true;
             // 
-            // comboBox8
+            // cboEpp
             // 
-            this.comboBox8.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox8.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(120, 17);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(335, 21);
-            this.comboBox8.TabIndex = 198;
+            this.cboEpp.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboEpp.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboEpp.FormattingEnabled = true;
+            this.cboEpp.Location = new System.Drawing.Point(120, 17);
+            this.cboEpp.Name = "cboEpp";
+            this.cboEpp.Size = new System.Drawing.Size(335, 21);
+            this.cboEpp.TabIndex = 198;
             // 
             // label179
             // 
@@ -3862,6 +3862,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnAgregarEquipoPro.Text = "Agregar Producto\r\nEquipo Proteccion";
             this.btnAgregarEquipoPro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregarEquipoPro.UseVisualStyleBackColor = true;
+            this.btnAgregarEquipoPro.Click += new System.EventHandler(this.btnAgregarEquipoPro_Click);
             // 
             // btnActualizarEquipoPro
             // 
@@ -3875,6 +3876,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnActualizarEquipoPro.Text = "Actualizar Producto \r\nEquipo Proteccion";
             this.btnActualizarEquipoPro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnActualizarEquipoPro.UseVisualStyleBackColor = true;
+            this.btnActualizarEquipoPro.Click += new System.EventHandler(this.btnActualizarEquipoPro_Click);
             // 
             // groupBox6
             // 
@@ -6410,7 +6412,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.Button btnActualizarLogistico;
         private System.Windows.Forms.Button btnNuevoEquipoProPe;
         private System.Windows.Forms.Button btnBuscarEquipoProtec;
-        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox cboEpp;
         private System.Windows.Forms.Label label179;
         private System.Windows.Forms.Button btnAgregarEquipoPro;
         private System.Windows.Forms.Button btnActualizarEquipoPro;

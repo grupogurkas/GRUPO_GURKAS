@@ -178,7 +178,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                SqlCommand comando = new SqlCommand("SELECT * FROM v_producto_equipo_logistico WHERE COD_PRODUCTO_UTI_ESCRITORIO = '" + cod_equi_logistico + "'", conexion.conexionBD());
+                SqlCommand comando = new SqlCommand("SELECT * FROM v_producto_equipo_logistico WHERE COD_PRODUCTO_EQUIP_LOGISTICO = '" + cod_equi_logistico + "'", conexion.conexionBD());
                 SqlDataReader recorre = comando.ExecuteReader();
                 while (recorre.Read())
                 {
@@ -421,6 +421,38 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 MessageBox.Show("No se puede Regristrar el producto" + ex, "Error");
             }
         }
+        public void ActualizarEPP()
+        {
+            try
+            {
+                string cod_sistema = txtCodSistema.Text;
+                string cod_epp = txtCodEquipProtec.Text;
+                string nombre_epp = txtNombreProtec.Text;
+                string marca_epp = txtMarcaProtec.Text;
+                string modelo_epp = txtModeloProtec.Text;
+                int tipo_unidad_epp = cboTipoEquipoPro.SelectedIndex;
+                int stock_inicial_epp = Convert.ToInt32(txtCantidadProtec.Text);
+                int estado_epp = cboEstadoEquipoPro.SelectedIndex;
+                decimal precio_unitario_epp = Convert.ToDecimal(txtPrecioUniProtec.Text);
+                int stock_actual_epp = Convert.ToInt32(txtStockIniProtec.Text);
+                int stock_minimo_epp = Convert.ToInt32(txtStockMinProtec.Text);
+                string desp_epp = txtDescripcionProtec.Text;
+                DateTime f_adquision_epp = dtpFechaAdProtec.Value;
+                DateTime f_registro_epp = dtpFechaRegisProtec.Value;
+                string observacion_epp = txtObservacionProtec.Text;
+
+                logisticaActualizar.ActualizarEpp(cod_sistema, cod_epp, nombre_epp, marca_epp,
+                            modelo_epp, tipo_unidad_epp, stock_inicial_epp, estado_epp, precio_unitario_epp,
+                             stock_actual_epp,
+                          stock_minimo_epp, desp_epp, f_adquision_epp, f_registro_epp, observacion_epp);
+                MessageBox.Show("Datos Actualizado correptamente", "Correpto");
+                LimpiarDatosEpp();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede Regristrar el producto" + ex, "Error");
+            }
+        }
         public void AgregarProductoAccesorio()
         {
             try
@@ -510,6 +542,38 @@ namespace pl_Gurkas.Vista.Logistica.producto
                          stock_minimo_logistico,  desp_logistico,  f_adquision_logistico,  f_registro_logistico,  observacion_logistico);
                 MessageBox.Show("Datos registrado correptamente", "Correpto");
                 LimpiarDatosEquipamientoLogistico();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede Regristrar el producto" + ex, "Error");
+            }
+        }
+        public void AgregarEPP()
+        {
+            try
+            {
+                string cod_sistema = txtCodSistema.Text;
+                string cod_epp = txtCodEquipProtec.Text;
+                string nombre_epp = txtNombreProtec.Text;
+                string marca_epp = txtMarcaProtec.Text;
+                string modelo_epp = txtModeloProtec.Text;
+                int tipo_unidad_epp = cboTipoEquipoPro.SelectedIndex;
+                int stock_inicial_epp = Convert.ToInt32(txtCantidadProtec.Text);
+                int estado_epp = cboEstadoEquipoPro.SelectedIndex;
+                decimal precio_unitario_epp = Convert.ToDecimal(txtPrecioUniProtec.Text);
+                int stock_actual_epp = Convert.ToInt32(txtStockIniProtec.Text);
+                int stock_minimo_epp = Convert.ToInt32(txtStockMinProtec.Text);
+                string desp_epp = txtDescripcionProtec.Text;
+                DateTime f_adquision_epp = dtpFechaAdProtec.Value;
+                DateTime f_registro_epp = dtpFechaRegisProtec.Value;
+                string observacion_epp = txtObservacionProtec.Text;
+
+                logisticaInsertar.RegistrarEpp( cod_sistema,  cod_epp,  nombre_epp,  marca_epp,
+                            modelo_epp,  tipo_unidad_epp,  stock_inicial_epp,  estado_epp,  precio_unitario_epp,
+                             stock_actual_epp,
+                          stock_minimo_epp,  desp_epp,  f_adquision_epp,  f_registro_epp,  observacion_epp);
+                MessageBox.Show("Datos registrado correptamente", "Correpto");
+                LimpiarDatosEpp();
             }
             catch (Exception ex)
             {
@@ -707,6 +771,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             GenerarCodigoAccesorio();
             GenerarCodigoUtilesEscritorio();
             GenerarCodigoEquipamientoLogistico();
+            GenerarCodigoEquipoPersonal();
         }
         public void LimpiarDatosCamisas()
         {
@@ -763,6 +828,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             LimpiarDatos.LimpiarGroupBox(groupBox15);
             generarCodigos();
             Llenadocbo.ObtenerEquipoLogistico(cboEquipamientoLogistico);
+        }
+        public void LimpiarDatosEpp()
+        {
+            LimpiarDatos.LimpiarGroupBox(groupBox6);
+            txtCodEquipProtec.Focus();
+            LimpiarDatos.LimpiarGroupBox(groupBox16);
+            generarCodigos();
+            Llenadocbo.ObtenerEpp(cboEpp);
         }
         public void GenerarCodigoTecnologico()
         {
@@ -932,6 +1005,30 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 txtCodEquipoEquip.Text = "EQL0" + (numero + 1);
             }
         }
+        public void GenerarCodigoEquipoPersonal()
+        {
+            string resultado = "";
+            SqlCommand comando = new SqlCommand("select count(ID_PRODUCTO_EQUIP_EPP) as 't' from T_MAE_PRODUCTO_EQUIP_PROTEC_PERSONAL ", conexion.conexionBD());
+
+            SqlDataReader recorre = comando.ExecuteReader();
+            while (recorre.Read())
+            {
+                resultado = recorre["t"].ToString();
+            }
+            int numero = Convert.ToInt32(resultado);
+            if (numero < 10)
+            {
+                txtCodEquipProtec.Text = "EPP000" + (numero + 1);
+            }
+            if (numero > 9 && numero < 100)
+            {
+                txtCodEquipProtec.Text = "EPP00" + (numero + 1);
+            }
+            if (numero > 99 && numero < 1000)
+            {
+                txtCodEquipProtec.Text = "EPP0" + (numero + 1);
+            }
+        }
         private void llenadoUtilesEscritorio()
         {
             Llenadocbo.ObtenerProductoUtilezEscritorio(cboUtilesEscritorio);
@@ -977,7 +1074,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerEstadoProducto(cboEstadoEquipo);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadEquipo);
         }
-        private void frmNuevoProducto_Load(object sender, EventArgs e)
+        private void llenadoDatosEquipoProteccion()
+        {
+            Llenadocbo.ObtenerEpp(cboEpp);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoEquipoPro);
+            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoEquipoPro);
+        }
+        private void bloqueodecodigo()
         {
             txtCodEquipoTecnologia.Enabled = false;
             txtcodcamisas.Enabled = false;
@@ -992,6 +1095,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             txtCodVehiculo.Enabled = false;
             txtCodEquipAseo.Enabled = false;
             txtCodEquipArma.Enabled = false;
+        }
+        private void frmNuevoProducto_Load(object sender, EventArgs e)
+        {
+            bloqueodecodigo();
             llenadoProductoTecnologico();
             llenadoDatosCamisas();
             llenadoDatosCalzado();
@@ -999,6 +1106,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             llenadoProductoAccesorios();
             llenadoUtilesEscritorio();
             llenadoDatosEquipamientoLogistico();
+            llenadoDatosEquipoProteccion();
             generarCodigos();
         }
         private void tbpUniforme_Click(object sender, EventArgs e)
@@ -1200,6 +1308,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             string cod_equi_logistico = cboEquipamientoLogistico.SelectedValue.ToString();
             BuscarProductoEquipoLogistico(cod_equi_logistico);
+        }
+
+        private void btnAgregarEquipoPro_Click(object sender, EventArgs e)
+        {
+            AgregarEPP();
+        }
+
+        private void btnActualizarEquipoPro_Click(object sender, EventArgs e)
+        {
+            ActualizarEPP();
         }
     }
 }

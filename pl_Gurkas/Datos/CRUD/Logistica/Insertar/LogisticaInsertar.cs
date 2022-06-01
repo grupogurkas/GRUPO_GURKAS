@@ -187,5 +187,31 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Insertar
             cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
             cmd.ExecuteNonQuery();
         }
+
+        public void RegistrarEpp(string cod_sistema, string cod_epp, string nombre_epp, string marca_epp,
+                           string modelo_epp, int tipo_unidad_epp, int stock_inicial_epp, int estado_epp, decimal precio_unitario_epp,
+                            int stock_actual_epp,
+                         int stock_minimo_epp, string desp_epp, DateTime f_adquision_epp, DateTime f_registro_epp, string observacion_epp)
+        {
+            SqlCommand cmd = new SqlCommand("sp_registrar_producto_epp ", conexion.conexionBD());
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@COD_PRODUCTO_SISTEMA", SqlDbType.VarChar).Value = cod_sistema;
+            cmd.Parameters.AddWithValue("@COD_PRODUCTO_EPP", SqlDbType.VarChar).Value = cod_epp;
+            cmd.Parameters.AddWithValue("@NOMBRE_EQUIP_EPP", SqlDbType.VarChar).Value = nombre_epp;
+            cmd.Parameters.AddWithValue("@MARCA_EQUIP_EPPP", SqlDbType.VarChar).Value = marca_epp;
+            cmd.Parameters.AddWithValue("@MODELO_EQUIP_EPP", SqlDbType.VarChar).Value = modelo_epp;
+            cmd.Parameters.AddWithValue("@idunidad_producto_EQUIP_EPP", SqlDbType.Int).Value = tipo_unidad_epp;
+            cmd.Parameters.AddWithValue("@STOCK_INICIAL_EQUIP_EPP", SqlDbType.Int).Value = stock_inicial_epp;
+            cmd.Parameters.AddWithValue("@ID_ESTADO_MATERIAL_EQUIP_EPP", SqlDbType.Int).Value = estado_epp;
+            cmd.Parameters.AddWithValue("@COSTO_UNITARIO_EQUIP_EPP", SqlDbType.Decimal).Value = precio_unitario_epp;
+            cmd.Parameters.AddWithValue("@STOCK_ACTUAL_EQUIP_EPP", SqlDbType.Int).Value = stock_actual_epp;
+            cmd.Parameters.AddWithValue("@STOCK_MINIMO_EQUIP_EPP", SqlDbType.Int).Value = stock_minimo_epp;
+            cmd.Parameters.AddWithValue("@DESCRP_EQUIP_EQUIP_EPP", SqlDbType.VarChar).Value = desp_epp;
+            cmd.Parameters.AddWithValue("@FECHA_ADQUISICION_EQUIP_EPP", SqlDbType.VarChar).Value = f_adquision_epp;
+            cmd.Parameters.AddWithValue("@FECHA_REGISTRO_EQUIP_EPP", SqlDbType.VarChar).Value = f_registro_epp;
+            cmd.Parameters.AddWithValue("@OBSERVACION_EQUIP_EPP", SqlDbType.VarChar).Value = observacion_epp;
+            cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
+            cmd.ExecuteNonQuery();
+        }
     }
 }
