@@ -910,6 +910,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             LimpiarDatos.LimpiarGroupBox(groupBox5);
             generarCodigos();
             Llenadocbo.ObtenerProductoCamisas(cboProductoCamisas);
+            btnAgregarProductoCamisas.Enabled = true;
         }
         public void LimpiarDatosTecnologico()
         {
@@ -918,6 +919,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             LimpiarDatos.LimpiarGroupBox(groupBox13);
             generarCodigos();
             Llenadocbo.ObtenerProductoTecnologico(cboNombreProductoTecnologico);
+            btnAgregarProductoTecnologico.Enabled = true;
         }
         public void LimpiarDatosCalzado()
         {
@@ -926,6 +928,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             LimpiarDatos.LimpiarGroupBox(groupBox8);
             generarCodigos();
             Llenadocbo.ObtenerProductoCalzado(cboCalzado);
+            btnAgregarCalzado.Enabled = true;
         }
         public void LimpiarDatosAccesorios()
         {
@@ -934,6 +937,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             LimpiarDatos.LimpiarGroupBox(groupBox12);
             generarCodigos();
             Llenadocbo.ObtenerProductoAccesorio(cboAccesorios);
+            btnAgregarAccesorio.Enabled = true;
         }
         public void LimpiarDatosUtilezEscritorio()
         {
@@ -942,6 +946,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             LimpiarDatos.LimpiarGroupBox(groupBox14);
             generarCodigos();
             Llenadocbo.ObtenerProductoUtilezEscritorio(cboUtilesEscritorio);
+            btnAgregarUtiles.Enabled = true;
         }
         public void LimpiarDatosPantalon()
         {
@@ -950,6 +955,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             LimpiarDatos.LimpiarGroupBox(groupBox10);
             generarCodigos();
             Llenadocbo.ObtenerProductoPantalon(cboPantalon);
+            btnAgregarPantalon.Enabled = true;
         }
         public void LimpiarDatosEquipamientoLogistico()
         {
@@ -958,6 +964,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             LimpiarDatos.LimpiarGroupBox(groupBox15);
             generarCodigos();
             Llenadocbo.ObtenerEquipoLogistico(cboEquipamientoLogistico);
+            btnNuevoLogistico.Enabled = true;
         }
         public void LimpiarDatosEpp()
         {
@@ -966,6 +973,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             LimpiarDatos.LimpiarGroupBox(groupBox16);
             generarCodigos();
             Llenadocbo.ObtenerEpp(cboEpp);
+            btnAgregarEquipoPro.Enabled = true;
         }
         public void LimpiarDatosMobiliario()
         {
@@ -974,6 +982,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             LimpiarDatos.LimpiarGroupBox(groupBox18);
             generarCodigos();
             Llenadocbo.ObtenerMobiliario(cboMobiliario);
+            btnagregarMobil.Enabled = true;
         }
         public void GenerarCodigoTecnologico()
         {
@@ -1248,6 +1257,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerEstadoProducto(cboEstadoMobi);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadMobi);
         }
+        private void llenadoDatosVehiculo()
+        {
+            Llenadocbo.ObtenerMobiliario(cboMobiliario);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoVehiculo);
+            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadVehiculo);
+            Llenadocbo.ObtenerCategoriaVehiculo(cboCategoriaVehiculo);
+            Llenadocbo.ObtenerTipoCombustible(cboCombustibleVehiculo);
+        }
         private void bloqueodecodigo()
         {
             txtCodEquipoTecnologia.Enabled = false;
@@ -1300,7 +1317,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         }
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            string codProducto = cboProducto.SelectedValue.ToString();
+           // string codProducto = cboProducto.SelectedValue.ToString();
         }
         private void btnAgregarProductoTecnologico_Click(object sender, EventArgs e)
         {
@@ -1314,6 +1331,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             string cod_producto_tecnologia = cboNombreProductoTecnologico.SelectedValue.ToString();
             BuscarProductoTecnologico( cod_producto_tecnologia);
+            btnAgregarProductoTecnologico.Enabled = false;
         }
         private void btnActualizarProductoTecnologico_Click(object sender, EventArgs e)
         {
@@ -1335,6 +1353,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             string cod_uniforme_camisa = cboProductoCamisas.SelectedValue.ToString();
             BuscarProductoCamisas(cod_uniforme_camisa);
+            btnAgregarProductoCamisas.Enabled = false;
         }
         private void btnAgregarCalzado_Click(object sender, EventArgs e)
         {
@@ -1352,6 +1371,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             string cod_uniforme_calzado = cboCalzado.SelectedValue.ToString();
             BuscarProductoCalzado(cod_uniforme_calzado);
+            btnAgregarCalzado.Enabled = false;
         }
         private void btnNuevoPantalon_Click(object sender, EventArgs e)
         {
@@ -1369,6 +1389,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             string cod_uniforme_pantalon = cboPantalon.SelectedValue.ToString();
             BuscarProductoPantalon(cod_uniforme_pantalon);
+            btnAgregarPantalon.Enabled = false;
         }
         private void btnNuevoAccesorio_Click(object sender, EventArgs e)
         {
@@ -1386,6 +1407,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             string cod_uniforme_Accesorio = cboAccesorios.SelectedValue.ToString();
             BuscarProductoAccesorio(cod_uniforme_Accesorio);
+            btnAgregarAccesorio.Enabled = false;
         }
         private void btnNuevoUtiles_Click(object sender, EventArgs e)
         {
@@ -1406,6 +1428,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             string cod_utiles_escritorio = cboUtilesEscritorio.SelectedValue.ToString();
             BuscarProductoEscritorio(cod_utiles_escritorio);
+            btnAgregarUtiles.Enabled = false;
         }
 
         private void btnNuevoMaterialLogistico_Click(object sender, EventArgs e)
@@ -1427,6 +1450,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             string cod_equi_logistico = cboEquipamientoLogistico.SelectedValue.ToString();
             BuscarProductoEquipoLogistico(cod_equi_logistico);
+            btnNuevoLogistico.Enabled = false;
         }
 
         private void btnAgregarEquipoPro_Click(object sender, EventArgs e)
@@ -1443,6 +1467,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             string cod_equi_epp = cboEpp.SelectedValue.ToString();
             BuscarProductoEpp(cod_equi_epp);
+            btnAgregarEquipoPro.Enabled = false;
         }
 
         private void btnNuevoEquipoProPe_Click(object sender, EventArgs e)
@@ -1469,6 +1494,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             string cod_mobiliario = cboMobiliario.SelectedValue.ToString();
             BuscarProductoMobiliario(cod_mobiliario);
+            btnagregarMobil.Enabled = false;
         }
     }
 }

@@ -272,7 +272,42 @@ namespace pl_Gurkas.Datos
                 MessageBox.Show("No se puede obtener la imformacion de tipo de proveedor \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+        public void ObtenerCategoriaVehiculo(ComboBox cd)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SELECT desp_vehiculo FROM T_TIPO_VEHICULO  ", conexiondbo.conexionBD());
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    cd.Items.Add(dr[0].ToString());
+                }
+                cd.Items.Insert(0, "--- Seleccione Una Categoria ---");
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede obtener la imformacion de tipo de Categoria \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public void ObtenerTipoCombustible(ComboBox cd)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SELECT desp_combustible FROM T_COMBUSTIBLE  ", conexiondbo.conexionBD());
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    cd.Items.Add(dr[0].ToString());
+                }
+                cd.Items.Insert(0, "--- Seleccione Un Tipo Combustible ---");
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede obtener la imformacion de tipo de Combustible \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         public void ObtenerEstadoProducto(ComboBox cd)
         {
             try

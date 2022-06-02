@@ -402,7 +402,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtDescripcionVehiculo = new System.Windows.Forms.TextBox();
             this.label158 = new System.Windows.Forms.Label();
             this.label160 = new System.Windows.Forms.Label();
-            this.dtpAnioFabriVehiculo = new System.Windows.Forms.DateTimePicker();
             this.label151 = new System.Windows.Forms.Label();
             this.label147 = new System.Windows.Forms.Label();
             this.label135 = new System.Windows.Forms.Label();
@@ -507,6 +506,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.txtaniovehiculo = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.btcPanel.SuspendLayout();
             this.tbpTecnologico.SuspendLayout();
@@ -4368,6 +4368,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // groupBox19
             // 
+            this.groupBox19.Controls.Add(this.txtaniovehiculo);
             this.groupBox19.Controls.Add(this.label111);
             this.groupBox19.Controls.Add(this.txtNTarjetaVehiculo);
             this.groupBox19.Controls.Add(this.txtPlacaVehiculo);
@@ -4378,7 +4379,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox19.Controls.Add(this.txtDescripcionVehiculo);
             this.groupBox19.Controls.Add(this.label158);
             this.groupBox19.Controls.Add(this.label160);
-            this.groupBox19.Controls.Add(this.dtpAnioFabriVehiculo);
             this.groupBox19.Controls.Add(this.label151);
             this.groupBox19.Controls.Add(this.label147);
             this.groupBox19.Controls.Add(this.label135);
@@ -4438,12 +4438,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.cboCombustibleVehiculo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCombustibleVehiculo.FormattingEnabled = true;
-            this.cboCombustibleVehiculo.Items.AddRange(new object[] {
-            "",
-            "Nuevo",
-            "Usado",
-            "Dañado",
-            "Baja"});
             this.cboCombustibleVehiculo.Location = new System.Drawing.Point(498, 41);
             this.cboCombustibleVehiculo.Name = "cboCombustibleVehiculo";
             this.cboCombustibleVehiculo.Size = new System.Drawing.Size(211, 21);
@@ -4494,14 +4488,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label160.TabIndex = 254;
             this.label160.Text = "Descripcion :";
             // 
-            // dtpAnioFabriVehiculo
-            // 
-            this.dtpAnioFabriVehiculo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpAnioFabriVehiculo.Location = new System.Drawing.Point(496, 94);
-            this.dtpAnioFabriVehiculo.Name = "dtpAnioFabriVehiculo";
-            this.dtpAnioFabriVehiculo.Size = new System.Drawing.Size(213, 20);
-            this.dtpAnioFabriVehiculo.TabIndex = 240;
-            // 
             // label151
             // 
             this.label151.AutoSize = true;
@@ -4546,12 +4532,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.cboCategoriaVehiculo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCategoriaVehiculo.FormattingEnabled = true;
-            this.cboCategoriaVehiculo.Items.AddRange(new object[] {
-            "",
-            "Nuevo",
-            "Usado",
-            "Dañado",
-            "Baja"});
             this.cboCategoriaVehiculo.Location = new System.Drawing.Point(140, 146);
             this.cboCategoriaVehiculo.Name = "cboCategoriaVehiculo";
             this.cboCategoriaVehiculo.Size = new System.Drawing.Size(211, 21);
@@ -4604,12 +4584,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.cboTipoUnidadVehiculo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipoUnidadVehiculo.FormattingEnabled = true;
-            this.cboTipoUnidadVehiculo.Items.AddRange(new object[] {
-            "",
-            "Nuevo",
-            "Usado",
-            "Dañado",
-            "Baja"});
             this.cboTipoUnidadVehiculo.Location = new System.Drawing.Point(139, 119);
             this.cboTipoUnidadVehiculo.Name = "cboTipoUnidadVehiculo";
             this.cboTipoUnidadVehiculo.Size = new System.Drawing.Size(213, 21);
@@ -5548,6 +5522,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.pictureBox10.TabIndex = 261;
             this.pictureBox10.TabStop = false;
             // 
+            // txtaniovehiculo
+            // 
+            this.txtaniovehiculo.Location = new System.Drawing.Point(496, 93);
+            this.txtaniovehiculo.Name = "txtaniovehiculo";
+            this.txtaniovehiculo.Size = new System.Drawing.Size(213, 20);
+            this.txtaniovehiculo.TabIndex = 256;
+            // 
             // frmNuevoProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -6098,7 +6079,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.TextBox txtDescripcionVehiculo;
         private System.Windows.Forms.Label label158;
         private System.Windows.Forms.Label label160;
-        private System.Windows.Forms.DateTimePicker dtpAnioFabriVehiculo;
         private System.Windows.Forms.Label label151;
         private System.Windows.Forms.Label label147;
         private System.Windows.Forms.Label label135;
@@ -6128,5 +6108,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.TextBox txtaniovehiculo;
     }
 }
