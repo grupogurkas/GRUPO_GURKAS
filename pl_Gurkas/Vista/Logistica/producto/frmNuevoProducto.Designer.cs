@@ -400,7 +400,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtModeloMobi = new System.Windows.Forms.TextBox();
             this.label180 = new System.Windows.Forms.Label();
             this.cboTipoUnidadMobi = new System.Windows.Forms.ComboBox();
-            this.txtStockIniMobi = new System.Windows.Forms.TextBox();
+            this.txtStockactualMobi = new System.Windows.Forms.TextBox();
             this.label175 = new System.Windows.Forms.Label();
             this.label177 = new System.Windows.Forms.Label();
             this.label176 = new System.Windows.Forms.Label();
@@ -4247,6 +4247,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnNuevoMobil.Text = "Nuevo";
             this.btnNuevoMobil.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevoMobil.UseVisualStyleBackColor = true;
+            this.btnNuevoMobil.Click += new System.EventHandler(this.btnNuevoMobil_Click);
             // 
             // btnBuscarMobil
             // 
@@ -4260,6 +4261,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnBuscarMobil.Text = "Buscar";
             this.btnBuscarMobil.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscarMobil.UseVisualStyleBackColor = true;
+            this.btnBuscarMobil.Click += new System.EventHandler(this.btnBuscarMobil_Click);
             // 
             // cboMobiliario
             // 
@@ -4293,6 +4295,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnagregarMobil.Text = "Agregar Producto\r\nMobiliario";
             this.btnagregarMobil.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnagregarMobil.UseVisualStyleBackColor = true;
+            this.btnagregarMobil.Click += new System.EventHandler(this.btnagregarMobil_Click);
             // 
             // btnActualizar
             // 
@@ -4306,6 +4309,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnActualizar.Text = "Actualizar Producto \r\nMobiliario";
             this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // groupBox17
             // 
@@ -4329,7 +4333,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox17.Controls.Add(this.txtModeloMobi);
             this.groupBox17.Controls.Add(this.label180);
             this.groupBox17.Controls.Add(this.cboTipoUnidadMobi);
-            this.groupBox17.Controls.Add(this.txtStockIniMobi);
+            this.groupBox17.Controls.Add(this.txtStockactualMobi);
             this.groupBox17.Controls.Add(this.label175);
             this.groupBox17.Controls.Add(this.label177);
             this.groupBox17.Controls.Add(this.label176);
@@ -4511,23 +4515,17 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.cboTipoUnidadMobi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipoUnidadMobi.FormattingEnabled = true;
-            this.cboTipoUnidadMobi.Items.AddRange(new object[] {
-            "",
-            "Nuevo",
-            "Usado",
-            "Dañado",
-            "Baja"});
             this.cboTipoUnidadMobi.Location = new System.Drawing.Point(139, 123);
             this.cboTipoUnidadMobi.Name = "cboTipoUnidadMobi";
             this.cboTipoUnidadMobi.Size = new System.Drawing.Size(158, 21);
             this.cboTipoUnidadMobi.TabIndex = 199;
             // 
-            // txtStockIniMobi
+            // txtStockactualMobi
             // 
-            this.txtStockIniMobi.Location = new System.Drawing.Point(140, 259);
-            this.txtStockIniMobi.Name = "txtStockIniMobi";
-            this.txtStockIniMobi.Size = new System.Drawing.Size(158, 20);
-            this.txtStockIniMobi.TabIndex = 194;
+            this.txtStockactualMobi.Location = new System.Drawing.Point(140, 259);
+            this.txtStockactualMobi.Name = "txtStockactualMobi";
+            this.txtStockactualMobi.Size = new System.Drawing.Size(158, 20);
+            this.txtStockactualMobi.TabIndex = 194;
             // 
             // label175
             // 
@@ -6443,7 +6441,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.TextBox txtModeloMobi;
         private System.Windows.Forms.Label label180;
         private System.Windows.Forms.ComboBox cboTipoUnidadMobi;
-        private System.Windows.Forms.TextBox txtStockIniMobi;
+        private System.Windows.Forms.TextBox txtStockactualMobi;
         private System.Windows.Forms.Label label175;
         private System.Windows.Forms.Label label177;
         private System.Windows.Forms.Label label176;
