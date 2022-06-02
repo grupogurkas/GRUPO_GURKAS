@@ -14,7 +14,7 @@ using pl_Gurkas.Datos;
 
 namespace pl_Gurkas.Vista.Logistica.producto
 {
-   public partial class frmNuevoProducto : Form
+    public partial class frmNuevoProducto : Form
     {
         Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
         Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
@@ -320,7 +320,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 MessageBox.Show("Datos registrado correptamente", "Correpto");
                 LimpiarDatosCamisas();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("No se puede Regristrar el producto", "Error");
             }
@@ -568,9 +568,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 DateTime f_registro_acc = dtpRegistroAccesorio.Value;
                 string observacion_acc = txtObservacionAccesorio.Text;
 
-                logisticaInsertar.RegistrarPrendaAccesorio( cod_sistema,  cod_accesorio,  nombre_accesorio,  talla_acc,
-                        color_acc,  stock_inicial_acc,  tipo_tela_acc,  estado_acc,  precio_unitario_acc,  stock_actual_acc,
-                       stock_minimo_acc,  desp_acc,  f_adquision_acc,  f_registro_acc,  observacion_acc);
+                logisticaInsertar.RegistrarPrendaAccesorio(cod_sistema, cod_accesorio, nombre_accesorio, talla_acc,
+                        color_acc, stock_inicial_acc, tipo_tela_acc, estado_acc, precio_unitario_acc, stock_actual_acc,
+                       stock_minimo_acc, desp_acc, f_adquision_acc, f_registro_acc, observacion_acc);
                 MessageBox.Show("Datos registrado correptamente", "Correpto");
                 LimpiarDatosAccesorios();
             }
@@ -599,10 +599,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 DateTime f_registro_utiles = dtpFechaRegisUtiles.Value;
                 string observacion_utiles = txtObservacionUti.Text;
 
-                logisticaInsertar.RegistrarUtiles( cod_sistema,  cod_utiles,  nombre_utiles,  marca_utiles,
-                          modelo_utiles,  tipo_unidad_utiles,  stock_inicial_utiles,  estado_utiles,  precio_unitario_utiles,
+                logisticaInsertar.RegistrarUtiles(cod_sistema, cod_utiles, nombre_utiles, marca_utiles,
+                          modelo_utiles, tipo_unidad_utiles, stock_inicial_utiles, estado_utiles, precio_unitario_utiles,
                            stock_actual_utiles,
-                        stock_minimo_utiles,  desp_utiles,  f_adquision_utiles,  f_registro_utiles,  observacion_utiles);
+                        stock_minimo_utiles, desp_utiles, f_adquision_utiles, f_registro_utiles, observacion_utiles);
                 MessageBox.Show("Datos registrado correptamente", "Correpto");
                 LimpiarDatosUtilezEscritorio();
             }
@@ -631,10 +631,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 DateTime f_registro_logistico = dtpFechaRegisEquip.Value;
                 string observacion_logistico = txtObservacionEquip.Text;
 
-                logisticaInsertar.RegistrarEquipaminetoLogistico( cod_sistema,  cod_logistico,  nombre_logistico,  marca_logistico,
-                           modelo_logistico,  tipo_unidad_logistico,  stock_inicial_logistico,  estado_logistico,  precio_unitario_logistico,
+                logisticaInsertar.RegistrarEquipaminetoLogistico(cod_sistema, cod_logistico, nombre_logistico, marca_logistico,
+                           modelo_logistico, tipo_unidad_logistico, stock_inicial_logistico, estado_logistico, precio_unitario_logistico,
                             stock_actual_logistico,
-                         stock_minimo_logistico,  desp_logistico,  f_adquision_logistico,  f_registro_logistico,  observacion_logistico);
+                         stock_minimo_logistico, desp_logistico, f_adquision_logistico, f_registro_logistico, observacion_logistico);
                 MessageBox.Show("Datos registrado correptamente", "Correpto");
                 LimpiarDatosEquipamientoLogistico();
             }
@@ -663,10 +663,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 DateTime f_registro_epp = dtpFechaRegisProtec.Value;
                 string observacion_epp = txtObservacionProtec.Text;
 
-                logisticaInsertar.RegistrarEpp( cod_sistema,  cod_epp,  nombre_epp,  marca_epp,
-                            modelo_epp,  tipo_unidad_epp,  stock_inicial_epp,  estado_epp,  precio_unitario_epp,
+                logisticaInsertar.RegistrarEpp(cod_sistema, cod_epp, nombre_epp, marca_epp,
+                            modelo_epp, tipo_unidad_epp, stock_inicial_epp, estado_epp, precio_unitario_epp,
                              stock_actual_epp,
-                          stock_minimo_epp,  desp_epp,  f_adquision_epp,  f_registro_epp,  observacion_epp);
+                          stock_minimo_epp, desp_epp, f_adquision_epp, f_registro_epp, observacion_epp);
                 MessageBox.Show("Datos registrado correptamente", "Correpto");
                 LimpiarDatosEpp();
             }
@@ -696,10 +696,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 DateTime f_registro_mobi = dtpFechaRegisMobi.Value;
                 string observacion_mobi = txtObservacionMobi.Text;
 
-                logisticaInsertar.RegistrarMobiliario( cod_sistema,  cod_mobi,  nombre_mobi,  marca_mobi,
-                             modelo_mobi,  tipo_unidad_mobi,  categoria_mobi,  estado_mobi,  precio_unitario_mobi,
+                logisticaInsertar.RegistrarMobiliario(cod_sistema, cod_mobi, nombre_mobi, marca_mobi,
+                             modelo_mobi, tipo_unidad_mobi, categoria_mobi, estado_mobi, precio_unitario_mobi,
                               stock_inicial_mobi,
-                           stock_actual_mobi,  stock_minimo_mobi,  desp_mobi,  f_adquision_mobi,  f_registro_mobi,
+                           stock_actual_mobi, stock_minimo_mobi, desp_mobi, f_adquision_mobi, f_registro_mobi,
                            observacion_mobi);
                 MessageBox.Show("Datos registrado correptamente", "Correpto");
                 LimpiarDatosMobiliario();
@@ -729,9 +729,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 DateTime f_registro_pan = dtpRegistroPantalon.Value;
                 string observacion_pan = txtObservacionPantalon.Text;
 
-                logisticaInsertar.RegistrarPrendaPantalon( cod_sistema,  cod_pantalon,  nombre_pantalon,  talla_pan,
-                      color_pan, stock_inicial_pan,  tipo_tela_pan,  estado_pan,  precio_unitario_pan,  stock_actual_pan,  
-                      stock_minimo_pan,  desp_pan,f_adquision_pan,  f_registro_pan,  observacion_pan);
+                logisticaInsertar.RegistrarPrendaPantalon(cod_sistema, cod_pantalon, nombre_pantalon, talla_pan,
+                      color_pan, stock_inicial_pan, tipo_tela_pan, estado_pan, precio_unitario_pan, stock_actual_pan,
+                      stock_minimo_pan, desp_pan, f_adquision_pan, f_registro_pan, observacion_pan);
                 MessageBox.Show("Datos registrado correptamente", "Correpto");
                 LimpiarDatosPantalon();
             }
@@ -760,9 +760,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 DateTime f_registro_cal = dtpRegistroCalzado.Value;
                 string observacion_cal = txtObservacionCalzado.Text;
 
-              logisticaInsertar.RegistrarPrendaCalzado( cod_sistema,  cod_calzado,  nombre_calzado,  talla_cal,  color_cal,
-                   tipo_calzado,  stock_inicial_cal,  estado_cal,  precio_unitario_cal,  stock_actual_cal,  stock_minimo_cal,  desp_cal,
-                   f_adquision_cal,  f_registro_cal,  observacion_cal);
+                logisticaInsertar.RegistrarPrendaCalzado(cod_sistema, cod_calzado, nombre_calzado, talla_cal, color_cal,
+                     tipo_calzado, stock_inicial_cal, estado_cal, precio_unitario_cal, stock_actual_cal, stock_minimo_cal, desp_cal,
+                     f_adquision_cal, f_registro_cal, observacion_cal);
                 MessageBox.Show("Datos registrado correptamente", "Correpto");
                 LimpiarDatosCalzado();
             }
@@ -1281,57 +1281,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void tbpUniforme_Click(object sender, EventArgs e)
         {
 
-        }
-        private void btnCargarDatos_Click_1(object sender, EventArgs e)
-        {
-            OpenFileDialog abrirImagen = new OpenFileDialog();
-            //Abrimos el explorador de archivos de windows
-            if (abrirImagen.ShowDialog() == DialogResult.OK)
-            {
-                ptcImagenCamisas.ImageLocation = abrirImagen.FileName;
-                ptcImagenCamisas.SizeMode = PictureBoxSizeMode.StretchImage;
-            }
-        }
-        private void btnSubirImage(object sender, EventArgs e)
-        {
-            OpenFileDialog dialogo = new OpenFileDialog();
-            DialogResult resultado = dialogo.ShowDialog();
-            if(resultado == DialogResult.OK)
-            {
-                try
-                {
-                    ptcImageTecnologia.Image = Image.FromFile(dialogo.FileName);
-                    lblrutaimagenteconologia.Text = dialogo.FileName;
-                }
-                catch
-                {
-                    MessageBox.Show("Error" + Image.FromFile(dialogo.FileName));
-                }
-                
-            }    
-        }
-        private void btnSubirImagen_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-      /*  private void btnSave_Click(object sender, EventArgs e)
-        {
-            string ubicacion = lblrutaimagenteconologia.Text;
-            byte[] imagen_byte = System.IO.File.ReadAllBytes(ubicacion);
-            string imagen_base64 = Convert.ToBase64String(imagen_byte, 0, imagen_byte.Length);
-
-            // var pic = Convert.FromBase64String(ptcImageTecnologia.);
-            //ptcImageTecnologia.Image.Save(ms, ImageFormat.Jpeg);
-            // MemoryStream ms = new MemoryStream(pic);
-
-             SqlCommand cmd = new SqlCommand("sp_insertarProducto ", conexion.conexionBD());
-             cmd.CommandType = CommandType.StoredProcedure;
-             cmd.Parameters.AddWithValue("@Imagen", SqlDbType.VarChar).Value = imagen_base64;
-             cmd.ExecuteNonQuery();
-             MessageBox.Show("Datos registrado correctamente", "Correcto");
-
-        }*/
+        } 
 
         private void btnCerrar_Click_1(object sender, EventArgs e)
         {
