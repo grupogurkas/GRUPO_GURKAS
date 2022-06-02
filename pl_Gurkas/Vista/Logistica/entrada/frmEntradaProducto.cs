@@ -8,6 +8,7 @@ using System.Data.SqlClient;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections;
 
 namespace pl_Gurkas.Vista.Logistica.entrada
 {
@@ -26,6 +27,8 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             InitializeComponent();
             ti.Enabled = true;
         }
+
+       
 
         private void eventoTimer(object sender, EventArgs e)
         {
@@ -60,12 +63,47 @@ namespace pl_Gurkas.Vista.Logistica.entrada
 
         }
 
+        void origendatos()
+        {
+            //dgvListaProducto.DataSource = ClasDA.ConsultarEXISTENAGOTADMedicamentos();
+
+        }
+
         private void frmEntradaProducto_Load(object sender, EventArgs e)
         {
             Llenadocbo.ObtenerTipoPuesto(cboTipoPuesto);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoMaterial);
             Llenadocbo.ObtenerPersonalRRHH(cboempleadoActivo);
             Llenadocbo.ObtenerArea(cboAreaLaboral);
+
+            //cargarGrid();
+
+
+
+            //dataGridView1.Columns[5].Name = "ID";
+            //dataGridView1.Columns[6].Name = "ID";
+            dgvListaProducto.ColumnCount = 5;
+
+            ArrayList AL = new ArrayList();
+            AL.Add("1");
+            AL.Add("Laptop Core I3");
+            AL.Add("HP");
+            AL.Add("1");
+            AL.Add("10/10/2022");
+            dgvListaProducto.Rows.Add(AL.ToArray());
+
+  
+            dgvListaProducto.Columns[0].Name = "ID";
+            dgvListaProducto.Columns[1].Name = "Nombre";
+            dgvListaProducto.Columns[2].Name = "Marca";
+            dgvListaProducto.Columns[3].Name = "Cantidad";
+            dgvListaProducto.Columns[4].Name = "Fecha";
+
+
+            DataGridViewButtonColumn btnclm = new DataGridViewButtonColumn();
+            btnclm.Name = "Eliminar";
+            dgvListaProducto.Columns.Add(btnclm);
+
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -79,7 +117,7 @@ namespace pl_Gurkas.Vista.Logistica.entrada
                 SqlDataReader recorre = comando.ExecuteReader();
                 while (recorre.Read())
                 {
-                    txtNombrePersonal.Text = recorre["NOMBRE_EMPLEADO" + "APELLIDO_PATERNO"].ToString();
+                    txtNombrePersonal.Text = recorre["NOMBRE_EMPLEADO"].ToString();
 
                 }
             }
@@ -92,6 +130,32 @@ namespace pl_Gurkas.Vista.Logistica.entrada
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dgvListaProducto_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(this.dgvListaProducto.Columns[e.ColumnIndex].DisplayIndex == 5)
+            {
+                dgvListaProducto.Rows.Remove(dgvListaProducto.CurrentRow);
+            }
+        }
+
+        private void dgvListaProducto_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+        {
+            if(e.ColumnIndex >= 0 && this.dgvListaProducto.Columns[e.ColumnIndex].Name == "Eliminar" && e.RowIndex >=0)
+            {
+                e.Paint(e.CellBounds, DataGridViewPaintParts.All);
+
+                DataGridViewButtonCell celboton = this.dgvListaProducto.Rows[e.RowIndex].Cells["Eliminar"] as DataGridViewButtonCell;
+                Icon icoAtomico = new Icon(Environment.CurrentDirectory + @"\\icono.ico");
+                e.Graphics.DrawIcon(icoAtomico, e.CellBounds.Left + 15, e.CellBounds.Top + 3);
+
+                this.dgvListaProducto.Rows[e.RowIndex].Height = icoAtomico.Height + 10;
+                this.dgvListaProducto.Columns[e.ColumnIndex].Width = icoAtomico.Width + 31;
+
+                e.Handled = true;
+
+            }
         }
     }
 }
