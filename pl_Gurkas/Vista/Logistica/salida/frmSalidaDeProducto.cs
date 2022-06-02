@@ -33,5 +33,10 @@ namespace pl_Gurkas.Vista.Logistica.salida
                 this.Close();
             }
         }
+
+        private void frmSalidaDeProducto_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

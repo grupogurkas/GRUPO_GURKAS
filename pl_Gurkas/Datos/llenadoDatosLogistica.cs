@@ -710,7 +710,116 @@ namespace pl_Gurkas.Datos
                 MessageBox.Show("No se puede obtener la imformacion de tipo de proveedor \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
+        public void ObtenerProducto(ComboBox cd)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SELECT  FROM   ", conexiondbo.conexionBD());
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    cd.Items.Add(dr[0].ToString());
+                }
+                cd.Items.Insert(0, "-- Seleccione Un Producto --");
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede obtener la imformacion del producto \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void ObtenerUnidadRRHH(ComboBox cd)
+        {
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SELECT cod_unidad,razon_social FROM t_unidad where ID_ESTADO_UNIDAD = 2 order by Razon_social asc", conexiondbo.conexionBD());
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                DataRow fila = dt.NewRow();
+                fila["razon_social"] = "--- Seleccione una Unidad ---";
+                dt.Rows.InsertAt(fila, 0);
+                cd.ValueMember = "cod_unidad";
+                cd.DisplayMember = "razon_social";
+                cd.DataSource = dt;
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se puede obtener el listado de las Unidades \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        public void ObtenerSedeRRHH(ComboBox cd, string cod_unidad)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("select COD_SEDE , NOMBRE_SEDE from T_SEDE where COD_UNIDAD = @COD_UNIDAD and ID_ESTADO_SEDE = 2 ", conexiondbo.conexionBD());
+                cmd.Parameters.AddWithValue("COD_UNIDAD", cod_unidad);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                DataRow fila = dt.NewRow();
+                fila["NOMBRE_SEDE"] = "--- Seleccione una sede ---";
+                dt.Rows.InsertAt(fila, 0);
+                cd.ValueMember = "COD_SEDE";
+                cd.DisplayMember = "NOMBRE_SEDE";
+                cd.DataSource = dt;
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se puede obtener el listado de las sedes \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+
+        public void ObtenerEmpresaRRHH_2(ComboBox cd)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SELECT NOMBRE_EMPRESA FROM T_EMPRESA where ID_EMPRESA = " + id_empresa, conexiondbo.conexionBD());
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    cd.Items.Add(dr[0].ToString());
+                }
+                cd.Items.Insert(0, "--- Seleccione Una Empresa ---");
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede obtener la imformacion de la Empresa \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void ObtenerUnidadRRHHEmpresa(ComboBox cd, int empresa)
+        {
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SELECT COD_UNIDAD,RAZON_SOCIAL FROM T_UNIDAD where ID_ESTADO_UNIDAD = 2 and ID_EMPRESA =" + empresa + " order by RAZON_SOCIAL asc", conexiondbo.conexionBD());
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                DataRow fila = dt.NewRow();
+                fila["RAZON_SOCIAL"] = "--- Seleccione una Unidad ---";
+                dt.Rows.InsertAt(fila, 0);
+                cd.ValueMember = "COD_UNIDAD";
+                cd.DisplayMember = "RAZON_SOCIAL";
+                cd.DataSource = dt;
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se puede obtener el listado de las Unidades \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
+    
 }
 
 

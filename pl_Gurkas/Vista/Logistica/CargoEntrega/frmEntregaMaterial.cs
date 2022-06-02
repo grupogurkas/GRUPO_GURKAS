@@ -1,26 +1,30 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
-using System.Data.SqlClient;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Collections;
 
-namespace pl_Gurkas.Vista.Logistica.entrada
+namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 {
-    public partial class frmEntradaProducto : Form
-    {  Datos.Conexiondbo conexion = new Datos.Conexiondbo();
+    public partial class frmEntregaMaterial : Form
+
+    {
+
+        Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.ConexionMysql conexionmysql = new Datos.ConexionMysql();
         Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
         Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
         private Timer ti;
-      
 
-        public frmEntradaProducto()
+
+
+        public frmEntregaMaterial()
         {
             ti = new Timer();
             ti.Tick += new EventHandler(eventoTimer);
@@ -28,7 +32,6 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             ti.Enabled = true;
         }
 
-       
 
         private void eventoTimer(object sender, EventArgs e)
         {
@@ -36,41 +39,9 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             lblRelog.Text = hoy.ToString("hh:mm:ss tt");
         }
 
-        private void btnCerrar_Click(object sender, EventArgs e)
-        {
-            const string titulo = "Cerrar Registro de Personal";
-            const string mensaje = "Estas seguro que deseas cerra el Registro de Personal";
-            var resutlado = MessageBox.Show(mensaje, titulo, MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-            if (resutlado == DialogResult.Yes)
-            {
-                //  DateTime fecha = DateTime.Now;
-                //  obtenerip_nombre();
-                // string username = Code.nivelUser._nombre;
-                // string detalle = "Cerrar Registro de Personal";
-                // string cod_buscado = "Cerro el registro de Personal";
-                // registrar.RegistrarRRHH(fecha, nombrepc, username, ipuser, cod_buscado, detalle);
-                this.Close();
-            }
-        }
-
-        private void label42_Click(object sender, EventArgs e)
+        private void frmEntregaMaterial_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        void origendatos()
-        {
-            //dgvListaProducto.DataSource = ClasDA.ConsultarEXISTENAGOTADMedicamentos();
-
-        }
-
-        private void frmEntradaProducto_Load(object sender, EventArgs e)
-        {
             Llenadocbo.ObtenerTipoPuesto(cboTipoPuesto);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoMaterial);
             Llenadocbo.ObtenerPersonalRRHH(cboempleadoActivo);
@@ -95,7 +66,7 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             AL.Add("10/10/2022");
             dgvListaProducto.Rows.Add(AL.ToArray());
 
-  
+
             dgvListaProducto.Columns[0].Name = "ID";
             dgvListaProducto.Columns[1].Name = "Nombre";
             dgvListaProducto.Columns[2].Name = "Marca";
@@ -130,22 +101,26 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             }
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void btnCerrar_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void dgvListaProducto_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if(this.dgvListaProducto.Columns[e.ColumnIndex].DisplayIndex == 5)
+            const string titulo = "Cerrar Registro de Personal";
+            const string mensaje = "Estas seguro que deseas cerra el Registro de Personal";
+            var resutlado = MessageBox.Show(mensaje, titulo, MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (resutlado == DialogResult.Yes)
             {
-                dgvListaProducto.Rows.Remove(dgvListaProducto.CurrentRow);
+                //  DateTime fecha = DateTime.Now;
+                //  obtenerip_nombre();
+                // string username = Code.nivelUser._nombre;
+                // string detalle = "Cerrar Registro de Personal";
+                // string cod_buscado = "Cerro el registro de Personal";
+                // registrar.RegistrarRRHH(fecha, nombrepc, username, ipuser, cod_buscado, detalle);
+                this.Close();
             }
         }
 
         private void dgvListaProducto_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
         {
-            if(e.ColumnIndex >= 0 && this.dgvListaProducto.Columns[e.ColumnIndex].Name == "Eliminar" && e.RowIndex >=0)
+            if (e.ColumnIndex >= 0 && this.dgvListaProducto.Columns[e.ColumnIndex].Name == "Eliminar" && e.RowIndex >= 0)
             {
                 e.Paint(e.CellBounds, DataGridViewPaintParts.All);
 
@@ -161,9 +136,12 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             }
         }
 
-        private void dtpFechaAdquisicion_ValueChanged(object sender, EventArgs e)
+        private void dgvListaProducto_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            if (this.dgvListaProducto.Columns[e.ColumnIndex].DisplayIndex == 5)
+            {
+                dgvListaProducto.Rows.Remove(dgvListaProducto.CurrentRow);
+            }
         }
 
         private void cboUnidad_SelectedIndexChanged(object sender, EventArgs e)
@@ -174,6 +152,11 @@ namespace pl_Gurkas.Vista.Logistica.entrada
                 Llenadocbo.ObtenerSedeRRHH(cboSede, cod_unidad);
 
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
