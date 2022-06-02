@@ -145,12 +145,12 @@ namespace pl_Gurkas.Vista.Logistica.entrada
 
         private void dgvListaProducto_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
         {
-            if(e.ColumnIndex >= 0 && this.dgvListaProducto.Columns[e.ColumnIndex].Name == "Eliminar" && e.RowIndex >=0)
+          /*  if(e.ColumnIndex >= 0 && this.dgvListaProducto.Columns[e.ColumnIndex].Name == "Eliminar" && e.RowIndex >=0)
             {
                 e.Paint(e.CellBounds, DataGridViewPaintParts.All);
 
                 DataGridViewButtonCell celboton = this.dgvListaProducto.Rows[e.RowIndex].Cells["Eliminar"] as DataGridViewButtonCell;
-                Icon icoAtomico = new Icon(Environment.CurrentDirectory + @"\\icono.ico");
+               // Icon icoAtomico = new Icon(Environment.CurrentDirectory + @"\\icono.ico");
                 e.Graphics.DrawIcon(icoAtomico, e.CellBounds.Left + 15, e.CellBounds.Top + 3);
 
                 this.dgvListaProducto.Rows[e.RowIndex].Height = icoAtomico.Height + 10;
@@ -158,7 +158,7 @@ namespace pl_Gurkas.Vista.Logistica.entrada
 
                 e.Handled = true;
 
-            }
+            }*/
         }
 
         private void dtpFechaAdquisicion_ValueChanged(object sender, EventArgs e)

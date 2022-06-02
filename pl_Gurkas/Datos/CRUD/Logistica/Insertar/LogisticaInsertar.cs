@@ -248,7 +248,7 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Insertar
         {
             SqlCommand cmd = new SqlCommand("sp_registrar_producto_vehiculo ", conexion.conexionBD());
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("COD_PRODUCTO_SISTEMA", SqlDbType.VarChar).Value = cod_sistema;
+            cmd.Parameters.AddWithValue("@COD_PRODUCTO_SISTEMA", SqlDbType.VarChar).Value = cod_sistema;
             cmd.Parameters.AddWithValue("COD_PRODUCTO_MOBILIARIO", SqlDbType.VarChar).Value = cod_vehi;
             cmd.Parameters.AddWithValue("NOMBRE_EQUIP_MOBILIARIO", SqlDbType.VarChar).Value = nombre_vehi;
             cmd.Parameters.AddWithValue("MARCA_EQUIP_MOBILIARIO", SqlDbType.VarChar).Value = marca_vehi;
