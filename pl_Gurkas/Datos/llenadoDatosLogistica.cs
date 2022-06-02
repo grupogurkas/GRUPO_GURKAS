@@ -569,6 +569,27 @@ namespace pl_Gurkas.Datos
                 MessageBox.Show("No se puede obtener el listado del Empleados \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+        public void ObtenerVehiculo(ComboBox cd)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("select COD_PRODUCTO_VEHICULO,NOMBRE_EQUIP_VEHICULO from T_MAE_PRODUCTO_VEHICULO ", conexiondbo.conexionBD());
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                DataRow fila = dt.NewRow();
+                fila["NOMBRE_EQUIP_VEHICULO"] = "---Seleccione un Vehiculo---";
+                dt.Rows.InsertAt(fila, 0);
+                cd.ValueMember = "COD_PRODUCTO_VEHICULO";
+                cd.DisplayMember = "NOMBRE_EQUIP_VEHICULO";
+                cd.DataSource = dt;
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se puede obtener el listado del Vehiculo \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
         public void ObtenerProductoAccesorio(ComboBox cd)
         {
             try

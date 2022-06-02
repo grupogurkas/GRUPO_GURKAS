@@ -4306,6 +4306,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnNuevoVehicul.Text = "Nuevo";
             this.btnNuevoVehicul.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevoVehicul.UseVisualStyleBackColor = true;
+            this.btnNuevoVehicul.Click += new System.EventHandler(this.btnNuevoVehicul_Click);
             // 
             // btnNuevoVehiculo
             // 
@@ -4319,6 +4320,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnNuevoVehiculo.Text = "Buscar";
             this.btnNuevoVehiculo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevoVehiculo.UseVisualStyleBackColor = true;
+            this.btnNuevoVehiculo.Click += new System.EventHandler(this.btnNuevoVehiculo_Click);
             // 
             // cboVehiculo
             // 
@@ -4352,6 +4354,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnAgregarVehiculo.Text = "Agregar Producto\r\nVehiculo";
             this.btnAgregarVehiculo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregarVehiculo.UseVisualStyleBackColor = true;
+            this.btnAgregarVehiculo.Click += new System.EventHandler(this.btnAgregarVehiculo_Click);
             // 
             // btnActualizarVehiculo
             // 
@@ -4365,6 +4368,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnActualizarVehiculo.Text = "Actualizar \r\nVehiculo";
             this.btnActualizarVehiculo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnActualizarVehiculo.UseVisualStyleBackColor = true;
+            this.btnActualizarVehiculo.Click += new System.EventHandler(this.btnActualizarVehiculo_Click);
             // 
             // groupBox19
             // 

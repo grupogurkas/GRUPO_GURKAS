@@ -265,6 +265,39 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
             }
         }
+        public void BuscarProductoVehiculo(string cod_vehiculo)
+        {
+            try
+            {
+                SqlCommand comando = new SqlCommand("SELECT * FROM v_producto_mobiliario WHERE COD_PRODUCTO_MOBILIARIO = '" + cod_vehiculo + "'", conexion.conexionBD());
+                SqlDataReader recorre = comando.ExecuteReader();
+                while (recorre.Read())
+                {
+                    txtCodSistema.Text = recorre["COD_PRODUCTO_SISTEMA"].ToString();
+                    txtCodVehiculo.Text = recorre["COD_PRODUCTO_MOBILIARIO"].ToString();
+                    txtNombreVehiculo.Text = recorre["NOMBRE_EQUIP_MOBILIARIO"].ToString();
+                    txtMarcaVehiculo.Text = recorre["MARCA_EQUIP_MOBILIARIO"].ToString();
+                    txtModeloVehiculo.Text = recorre["MODELO_EQUIP_MOBILIARIO"].ToString();
+                    cboTipoUnidadVehiculo.SelectedIndex = Convert.ToInt32(recorre["idunidad_producto_EQUIP_MOBILIARIO"].ToString());
+                    cboCategoriaVehiculo.SelectedIndex = Convert.ToInt32(recorre["idunidad_producto_EQUIP_MOBILIARIO"].ToString());
+                    txtcolorVehiculo.Text = recorre["CATEGORIA_MOBILIARIO"].ToString();
+                    cboCombustibleVehiculo.SelectedIndex = Convert.ToInt32(recorre["ID_ESTADO_MATERIAL_EQUIP_MOBILIARIO"].ToString());
+                    txtserialVehiculo.Text = (recorre["COSTO_UNITARIO_EQUIP_MOBILIARIO"].ToString());
+                    txtaniovehiculo.Text = (recorre["STOCK_INICIAL_EQUIP_MOBILIARIO"].ToString());
+                    txtPlacaVehiculo.Text = (recorre["STOCK_ACTUAL_EQUIP_MOBILIARIO"].ToString());
+                    txtNTarjetaVehiculo.Text = (recorre["STOCK_MINIMO_EQUIP_MOBILIARIO"].ToString());
+                    cboEstadoVehiculo.SelectedIndex = Convert.ToInt32(recorre["idunidad_producto_EQUIP_MOBILIARIO"].ToString());
+                    txtDescripcionVehiculo.Text = (recorre["DESCRP_EQUIP_EQUIP_MOBILIARIO"].ToString());
+                    dtpFechaAdVehiculo.Text = (recorre["FECHA_ADQUISICION_EQUIP_MOBILIARIO"].ToString());
+                    dtpFechaRegisVehi.Text = (recorre["FECHA_REGISTRO_EQUIP_MOBILIARIO"].ToString());
+                    txtObservacionVehi.Text = (recorre["OBSERVACION_EQUIP_MOBILIARIO"].ToString());
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
+            }
+        }
         public void actualizarDatosCamisas()
         {
             try
@@ -548,6 +581,42 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 MessageBox.Show("No se puede Regristrar el producto" + ex, "Error");
             }
         }
+        public void ActualizarVehiculo()
+        {
+            try
+            {
+                string cod_sistema = txtCodSistema.Text;
+                string cod_vehi = txtCodVehiculo.Text;
+                string nombre_vehi = txtNombreVehiculo.Text;
+                string marca_vehi = txtMarcaVehiculo.Text;
+                string modelo_vehi = txtModeloVehiculo.Text;
+                int tipo_unidad_vehi = cboTipoUnidadVehiculo.SelectedIndex;
+                int categoria_vehi = cboCategoriaVehiculo.SelectedIndex;
+                string color_vehi = txtcolorVehiculo.Text;
+                int combustible_vehi = cboCombustibleVehiculo.SelectedIndex;
+                string serial_vehi = txtserialVehiculo.Text;
+                string anio_vehi = txtaniovehiculo.Text;
+                string placa_vehi = txtPlacaVehiculo.Text;
+                string tarejta_vehi = txtNTarjetaVehiculo.Text;
+                int estado_vehi = cboEstadoVehiculo.SelectedIndex;
+                string desp_vehi = txtDescripcionVehiculo.Text;
+                DateTime f_adquision_vehi = dtpFechaAdVehiculo.Value;
+                DateTime f_registro_vehi = dtpFechaRegisVehi.Value;
+                string observacion_vehi = txtObservacionVehi.Text;
+
+                logisticaActualizar.ActualizarVehiculo(cod_sistema, cod_vehi, nombre_vehi, marca_vehi,
+                              modelo_vehi, tipo_unidad_vehi, categoria_vehi, color_vehi, combustible_vehi,
+                               serial_vehi,
+                            anio_vehi, placa_vehi, tarejta_vehi, estado_vehi, desp_vehi,
+                            f_adquision_vehi, f_registro_vehi, observacion_vehi);
+                MessageBox.Show("Datos Actualizado correptamente", "Correpto");
+                LimpiarDatosVehiculo();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede Regristrar el producto" + ex, "Error");
+            }
+        }
         public void AgregarProductoAccesorio()
         {
             try
@@ -703,6 +772,42 @@ namespace pl_Gurkas.Vista.Logistica.producto
                            observacion_mobi);
                 MessageBox.Show("Datos registrado correptamente", "Correpto");
                 LimpiarDatosMobiliario();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede Regristrar el producto" + ex, "Error");
+            }
+        }
+        public void AgregarVehiculo()
+        {
+            try
+            {
+                string cod_sistema = txtCodSistema.Text;
+                string cod_vehi = txtCodVehiculo.Text;
+                string nombre_vehi = txtNombreVehiculo.Text;
+                string marca_vehi = txtMarcaVehiculo.Text;
+                string modelo_vehi = txtModeloVehiculo.Text;
+                int tipo_unidad_vehi = cboTipoUnidadVehiculo.SelectedIndex;
+                int categoria_vehi = cboCategoriaVehiculo.SelectedIndex;
+                string color_vehi = txtcolorVehiculo.Text;
+                int combustible_vehi = cboCombustibleVehiculo.SelectedIndex;
+                string serial_vehi = txtserialVehiculo.Text;
+                string anio_vehi = txtaniovehiculo.Text;
+                string placa_vehi = txtPlacaVehiculo.Text;
+                string tarejta_vehi = txtNTarjetaVehiculo.Text;
+                int estado_vehi = cboEstadoVehiculo.SelectedIndex;
+                string desp_vehi = txtDescripcionVehiculo.Text;
+                DateTime f_adquision_vehi = dtpFechaAdVehiculo.Value;
+                DateTime f_registro_vehi = dtpFechaRegisVehi.Value;
+                string observacion_vehi = txtObservacionVehi.Text;
+
+                logisticaInsertar.RegistrarVehiculo( cod_sistema,  cod_vehi,  nombre_vehi,  marca_vehi,
+                              modelo_vehi,  tipo_unidad_vehi,  categoria_vehi,  color_vehi,  combustible_vehi,
+                               serial_vehi,
+                            anio_vehi,  placa_vehi,  tarejta_vehi,  estado_vehi,  desp_vehi,
+                            f_adquision_vehi,  f_registro_vehi,  observacion_vehi);
+                MessageBox.Show("Datos registrado correptamente", "Correpto");
+                LimpiarDatosVehiculo();
             }
             catch (Exception ex)
             {
@@ -902,6 +1007,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             GenerarCodigoEquipamientoLogistico();
             GenerarCodigoEquipoPersonal();
             GenerarCodigoMobiliario();
+            GenerarCodigoVehiculo();
         }
         public void LimpiarDatosCamisas()
         {
@@ -983,6 +1089,15 @@ namespace pl_Gurkas.Vista.Logistica.producto
             generarCodigos();
             Llenadocbo.ObtenerMobiliario(cboMobiliario);
             btnagregarMobil.Enabled = true;
+        }
+        public void LimpiarDatosVehiculo()
+        {
+            LimpiarDatos.LimpiarGroupBox(groupBox19);
+            txtNombreVehiculo.Focus();
+            LimpiarDatos.LimpiarGroupBox(groupBox20);
+            generarCodigos();
+            Llenadocbo.ObtenerVehiculo(cboVehiculo);
+            btnAgregarVehiculo.Enabled = true;
         }
         public void GenerarCodigoTecnologico()
         {
@@ -1200,6 +1315,30 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 txtCodEquipMobi.Text = "MOB0" + (numero + 1);
             }
         }
+        public void GenerarCodigoVehiculo()
+        {
+            string resultado = "";
+            SqlCommand comando = new SqlCommand("select count(ID_PRODUCTO_VEHICULO) as 't' from T_MAE_PRODUCTO_VEHICULO ", conexion.conexionBD());
+
+            SqlDataReader recorre = comando.ExecuteReader();
+            while (recorre.Read())
+            {
+                resultado = recorre["t"].ToString();
+            }
+            int numero = Convert.ToInt32(resultado);
+            if (numero < 10)
+            {
+                txtCodVehiculo.Text = "VEH000" + (numero + 1);
+            }
+            if (numero > 9 && numero < 100)
+            {
+                txtCodVehiculo.Text = "VEH00" + (numero + 1);
+            }
+            if (numero > 99 && numero < 1000)
+            {
+                txtCodVehiculo.Text = "VEH0" + (numero + 1);
+            }
+        }
         private void llenadoUtilesEscritorio()
         {
             Llenadocbo.ObtenerProductoUtilezEscritorio(cboUtilesEscritorio);
@@ -1259,7 +1398,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         }
         private void llenadoDatosVehiculo()
         {
-            Llenadocbo.ObtenerMobiliario(cboMobiliario);
+            Llenadocbo.ObtenerVehiculo(cboVehiculo);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoVehiculo);
             Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadVehiculo);
             Llenadocbo.ObtenerCategoriaVehiculo(cboCategoriaVehiculo);
@@ -1293,11 +1432,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             llenadoDatosEquipamientoLogistico();
             llenadoDatosEquipoProteccion();
             llenadoDatosEquipoMobiliario();
+            llenadoDatosVehiculo();
             generarCodigos();
         }
         private void tbpUniforme_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("s","ss");
         } 
 
         private void btnCerrar_Click_1(object sender, EventArgs e)
@@ -1495,6 +1635,28 @@ namespace pl_Gurkas.Vista.Logistica.producto
             string cod_mobiliario = cboMobiliario.SelectedValue.ToString();
             BuscarProductoMobiliario(cod_mobiliario);
             btnagregarMobil.Enabled = false;
+        }
+
+        private void btnNuevoVehicul_Click(object sender, EventArgs e)
+        {
+            LimpiarDatosVehiculo();
+        }
+
+        private void btnNuevoVehiculo_Click(object sender, EventArgs e)
+        {
+            string cod_vehiculo = cboVehiculo.SelectedValue.ToString();
+            BuscarProductoVehiculo(cod_vehiculo);
+            btnAgregarVehiculo.Enabled = false;
+        }
+
+        private void btnAgregarVehiculo_Click(object sender, EventArgs e)
+        {
+            AgregarVehiculo();
+        }
+
+        private void btnActualizarVehiculo_Click(object sender, EventArgs e)
+        {
+            ActualizarVehiculo();
         }
     }
 }
