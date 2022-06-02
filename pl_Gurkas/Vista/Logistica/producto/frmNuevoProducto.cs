@@ -231,7 +231,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             }
             catch (Exception err)
             {
-                MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
+                MessageBox.Show("No se encontro ningun registro \n\n  " + err, "ERROR");
             }
         }
         public void BuscarProductoMobiliario(string cod_mobiliario)
