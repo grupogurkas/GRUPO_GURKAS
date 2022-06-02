@@ -210,5 +210,61 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Actualizar
             cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
             cmd.ExecuteNonQuery();
         }
+        public void ActualizarMobiliario(string cod_sistema, string cod_mobi, string nombre_mobi, string marca_mobi,
+                           string modelo_mobi, int tipo_unidad_mobi, string categoria_mobi, int estado_mobi,
+                           decimal precio_unitario_mobi, int stock_inicial_mobi,
+                         int stock_actual_mobi, int stock_minimo_mobi, string desp_mobi, DateTime f_adquision_mobi,
+                         DateTime f_registro_mobi, string observacion_mobi)
+        {
+            SqlCommand cmd = new SqlCommand("sp_actualizar_producto_mobiliario ", conexion.conexionBD());
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@COD_PRODUCTO_SISTEMA", SqlDbType.VarChar).Value = cod_sistema;
+            cmd.Parameters.AddWithValue("@COD_PRODUCTO_MOBILIARIO", SqlDbType.VarChar).Value = cod_mobi;
+            cmd.Parameters.AddWithValue("@NOMBRE_EQUIP_MOBILIARIO", SqlDbType.VarChar).Value = nombre_mobi;
+            cmd.Parameters.AddWithValue("@MARCA_EQUIP_MOBILIARIO", SqlDbType.VarChar).Value = marca_mobi;
+            cmd.Parameters.AddWithValue("@MODELO_EQUIP_MOBILIARIO", SqlDbType.VarChar).Value = modelo_mobi;
+            cmd.Parameters.AddWithValue("@idunidad_producto_EQUIP_MOBILIARIO", SqlDbType.Int).Value = tipo_unidad_mobi;
+            cmd.Parameters.AddWithValue("@CATEGORIA_MOBILIARIO", SqlDbType.VarChar).Value = categoria_mobi;
+            cmd.Parameters.AddWithValue("@ID_ESTADO_MATERIAL_EQUIP_MOBILIARIO", SqlDbType.Int).Value = estado_mobi;
+            cmd.Parameters.AddWithValue("@COSTO_UNITARIO_EQUIP_MOBILIARIO", SqlDbType.Decimal).Value = precio_unitario_mobi;
+            cmd.Parameters.AddWithValue("@STOCK_INICIAL_EQUIP_MOBILIARIO", SqlDbType.Int).Value = stock_inicial_mobi;
+            cmd.Parameters.AddWithValue("@STOCK_ACTUAL_EQUIP_MOBILIARIO", SqlDbType.Int).Value = stock_actual_mobi;
+            cmd.Parameters.AddWithValue("@STOCK_MINIMO_EQUIP_MOBILIARIO", SqlDbType.Int).Value = stock_minimo_mobi;
+            cmd.Parameters.AddWithValue("@DESCRP_EQUIP_EQUIP_MOBILIARIO", SqlDbType.VarChar).Value = desp_mobi;
+            cmd.Parameters.AddWithValue("@FECHA_ADQUISICION_EQUIP_MOBILIARIO", SqlDbType.VarChar).Value = f_adquision_mobi;
+            cmd.Parameters.AddWithValue("@FECHA_REGISTRO_EQUIP_MOBILIARIO", SqlDbType.VarChar).Value = f_registro_mobi;
+            cmd.Parameters.AddWithValue("@OBSERVACION_EQUIP_MOBILIARIO", SqlDbType.VarChar).Value = observacion_mobi;
+            cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
+            cmd.ExecuteNonQuery();
+        }
+        public void ActualizarVehiculo(string cod_sistema, string cod_vehi, string nombre_vehi, string marca_vehi,
+                             string modelo_vehi, int tipo_unidad_vehi, int categoria_vehi, string color_vehi, int combustible_vehi,
+                              string serial_vehi,
+                           string anio_vehi, string placa_vehi, string tarejta_vehi, int estado_vehi, string desp_vehi,
+                           DateTime f_adquision_vehi, DateTime f_registro_vehi, string observacion_vehi)
+        {
+            SqlCommand cmd = new SqlCommand("sp_actualizar_vehiculo ", conexion.conexionBD());
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("COD_PRODUCTO_SISTEMA", SqlDbType.VarChar).Value = cod_sistema;
+            cmd.Parameters.AddWithValue("COD_PRODUCTO_MOBILIARIO", SqlDbType.VarChar).Value = cod_vehi;
+            cmd.Parameters.AddWithValue("NOMBRE_EQUIP_MOBILIARIO", SqlDbType.VarChar).Value = nombre_vehi;
+            cmd.Parameters.AddWithValue("MARCA_EQUIP_MOBILIARIO", SqlDbType.VarChar).Value = marca_vehi;
+            cmd.Parameters.AddWithValue("MODELO_EQUIP_MOBILIARIO", SqlDbType.VarChar).Value = modelo_vehi;
+            cmd.Parameters.AddWithValue("idunidad_producto_EQUIP_MOBILIARIO", SqlDbType.Int).Value = tipo_unidad_vehi;
+            cmd.Parameters.AddWithValue("CATEGORIA_MOBILIARIO", SqlDbType.Int).Value = categoria_vehi;
+            cmd.Parameters.AddWithValue("ID_ESTADO_MATERIAL_EQUIP_MOBILIARIO", SqlDbType.VarChar).Value = color_vehi;
+            cmd.Parameters.AddWithValue("COSTO_UNITARIO_EQUIP_MOBILIARIO", SqlDbType.Int).Value = combustible_vehi;
+            cmd.Parameters.AddWithValue("STOCK_INICIAL_EQUIP_MOBILIARIO", SqlDbType.VarChar).Value = serial_vehi;
+            cmd.Parameters.AddWithValue("STOCK_ACTUAL_EQUIP_MOBILIARIO", SqlDbType.VarChar).Value = anio_vehi;
+            cmd.Parameters.AddWithValue("STOCK_MINIMO_EQUIP_MOBILIARIO", SqlDbType.VarChar).Value = placa_vehi;
+            cmd.Parameters.AddWithValue("DESCRP_EQUIP_EQUIP_MOBILIARIO", SqlDbType.VarChar).Value = tarejta_vehi;
+            cmd.Parameters.AddWithValue("FECHA_ADQUISICION_EQUIP_MOBILIARIO", SqlDbType.Int).Value = estado_vehi;
+            cmd.Parameters.AddWithValue("FECHA_REGISTRO_EQUIP_MOBILIARIO", SqlDbType.VarChar).Value = desp_vehi;
+            cmd.Parameters.AddWithValue("OBSERVACION_EQUIP_MOBILIARIO", SqlDbType.VarChar).Value = f_adquision_vehi;
+            cmd.Parameters.AddWithValue("OBSERVACION_EQUIP_MOBILIARIO", SqlDbType.VarChar).Value = f_registro_vehi;
+            cmd.Parameters.AddWithValue("OBSERVACION_EQUIP_MOBILIARIO", SqlDbType.VarChar).Value = observacion_vehi;
+            cmd.Parameters.AddWithValue("USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
+            cmd.ExecuteNonQuery();
+        }
     }
 }
