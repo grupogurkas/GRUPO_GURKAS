@@ -103,6 +103,26 @@ namespace pl_Gurkas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AFP_32 {
+            get {
+                object obj = ResourceManager.GetObject("AFP_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap almacen_32 {
+            get {
+                object obj = ResourceManager.GetObject("almacen_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap apoyo_32 {
             get {
                 object obj = ResourceManager.GetObject("apoyo_32", resourceCulture);
@@ -206,6 +226,16 @@ namespace pl_Gurkas.Properties {
         internal static System.Drawing.Bitmap cargamasiva_32 {
             get {
                 object obj = ResourceManager.GetObject("cargamasiva_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carnetsucamec_32 {
+            get {
+                object obj = ResourceManager.GetObject("carnetsucamec_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -513,6 +543,16 @@ namespace pl_Gurkas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap historialplanilla_32 {
+            get {
+                object obj = ResourceManager.GetObject("historialplanilla_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_validare_300__1_ {
             get {
                 object obj = ResourceManager.GetObject("icon_validare_300__1_", resourceCulture);
@@ -733,6 +773,16 @@ namespace pl_Gurkas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap plame_32 {
+            get {
+                object obj = ResourceManager.GetObject("plame_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap planilla_32 {
             get {
                 object obj = ResourceManager.GetObject("planilla_32", resourceCulture);
@@ -743,9 +793,59 @@ namespace pl_Gurkas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Planilla_conta_16 {
+            get {
+                object obj = ResourceManager.GetObject("Planilla_conta_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Planilla_conta_32 {
+            get {
+                object obj = ResourceManager.GetObject("Planilla_conta_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap planillas_16 {
+            get {
+                object obj = ResourceManager.GetObject("planillas_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap planillas_32 {
             get {
                 object obj = ResourceManager.GetObject("planillas_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plataformaplanilla_16 {
+            get {
+                object obj = ResourceManager.GetObject("plataformaplanilla_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plataformaplanilla_32 {
+            get {
+                object obj = ResourceManager.GetObject("plataformaplanilla_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -946,6 +1046,16 @@ namespace pl_Gurkas.Properties {
         internal static System.Drawing.Bitmap subir_32 {
             get {
                 object obj = ResourceManager.GetObject("subir_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap subirdatos_32 {
+            get {
+                object obj = ResourceManager.GetObject("subirdatos_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

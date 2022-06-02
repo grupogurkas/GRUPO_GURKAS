@@ -1,7 +1,7 @@
 ﻿
-namespace pl_Gurkas.Vista.Logistica.entrada
+namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 {
-    partial class frmEntradaProducto
+    partial class frmEntregaMaterial
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,11 @@ namespace pl_Gurkas.Vista.Logistica.entrada
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.cboempleadoActivo = new System.Windows.Forms.ComboBox();
+            this.label42 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cboProducto = new System.Windows.Forms.ComboBox();
@@ -48,6 +52,12 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             this.label12 = new System.Windows.Forms.Label();
             this.dtpFechaAdquisicion = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cboEmpresa = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cboUnidad = new System.Windows.Forms.ComboBox();
+            this.cboSede = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.cboTipoPuesto = new System.Windows.Forms.ComboBox();
             this.txtObservacion = new System.Windows.Forms.TextBox();
@@ -56,17 +66,7 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             this.cboAreaLaboral = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.cboempleadoActivo = new System.Windows.Forms.ComboBox();
-            this.label42 = new System.Windows.Forms.Label();
-            this.btnNuevo = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.cboUnidad = new System.Windows.Forms.ComboBox();
-            this.cboSede = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cboEmpresa = new System.Windows.Forms.ComboBox();
-            this.label27 = new System.Windows.Forms.Label();
+            this.btnCerrar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
@@ -74,29 +74,75 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnCerrar
+            // btnNuevo
             // 
-            this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrar.Image = global::pl_Gurkas.Properties.Resources.cerrar_sesion_32;
-            this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrar.Location = new System.Drawing.Point(809, 20);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(99, 46);
-            this.btnCerrar.TabIndex = 61;
-            this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.Image = global::pl_Gurkas.Properties.Resources.nuevo_emplado_32;
+            this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevo.Location = new System.Drawing.Point(713, 12);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(103, 46);
+            this.btnNuevo.TabIndex = 100;
+            this.btnNuevo.Text = "Nueva Entrega";
+            this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = global::pl_Gurkas.Properties.Resources.add_trabajador_32;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(603, 11);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(104, 46);
+            this.button2.TabIndex = 99;
+            this.button2.Text = "Registrar Entrega";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.Location = new System.Drawing.Point(503, 11);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(94, 46);
+            this.btnBuscar.TabIndex = 98;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // cboempleadoActivo
+            // 
+            this.cboempleadoActivo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboempleadoActivo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboempleadoActivo.FormattingEnabled = true;
+            this.cboempleadoActivo.Location = new System.Drawing.Point(144, 26);
+            this.cboempleadoActivo.Name = "cboempleadoActivo";
+            this.cboempleadoActivo.Size = new System.Drawing.Size(335, 21);
+            this.cboempleadoActivo.TabIndex = 97;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(35, 25);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(100, 15);
+            this.label42.TabIndex = 96;
+            this.label42.Text = "Buscar Personal:";
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Location = new System.Drawing.Point(12, 85);
+            this.panel1.Location = new System.Drawing.Point(25, 77);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1298, 538);
-            this.panel1.TabIndex = 62;
+            this.panel1.Size = new System.Drawing.Size(1327, 550);
+            this.panel1.TabIndex = 95;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // groupBox2
@@ -118,7 +164,7 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             this.groupBox2.Controls.Add(this.dtpFechaAdquisicion);
             this.groupBox2.Location = new System.Drawing.Point(432, 13);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(859, 500);
+            this.groupBox2.Size = new System.Drawing.Size(888, 530);
             this.groupBox2.TabIndex = 212;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos Producto Entrega";
@@ -142,7 +188,6 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             this.label3.Size = new System.Drawing.Size(79, 30);
             this.label3.TabIndex = 227;
             this.label3.Text = "Condicion de\r\nEntrega";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // cboEstadoMaterial
             // 
@@ -273,7 +318,6 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             this.dtpFechaAdquisicion.Name = "dtpFechaAdquisicion";
             this.dtpFechaAdquisicion.Size = new System.Drawing.Size(104, 20);
             this.dtpFechaAdquisicion.TabIndex = 193;
-            this.dtpFechaAdquisicion.ValueChanged += new System.EventHandler(this.dtpFechaAdquisicion_ValueChanged);
             // 
             // groupBox1
             // 
@@ -294,10 +338,68 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox1.Location = new System.Drawing.Point(11, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(415, 500);
+            this.groupBox1.Size = new System.Drawing.Size(415, 530);
             this.groupBox1.TabIndex = 211;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Generales:";
+            // 
+            // cboEmpresa
+            // 
+            this.cboEmpresa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEmpresa.FormattingEnabled = true;
+            this.cboEmpresa.Location = new System.Drawing.Point(151, 100);
+            this.cboEmpresa.Name = "cboEmpresa";
+            this.cboEmpresa.Size = new System.Drawing.Size(246, 21);
+            this.cboEmpresa.TabIndex = 218;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(14, 160);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(39, 15);
+            this.label7.TabIndex = 216;
+            this.label7.Text = "Sede:";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(14, 100);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(66, 15);
+            this.label27.TabIndex = 217;
+            this.label27.Text = "Empresa : ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(14, 133);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(50, 15);
+            this.label2.TabIndex = 215;
+            this.label2.Text = "Unidad:";
+            // 
+            // cboUnidad
+            // 
+            this.cboUnidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboUnidad.FormattingEnabled = true;
+            this.cboUnidad.Location = new System.Drawing.Point(151, 127);
+            this.cboUnidad.Name = "cboUnidad";
+            this.cboUnidad.Size = new System.Drawing.Size(246, 21);
+            this.cboUnidad.TabIndex = 213;
+            this.cboUnidad.SelectedIndexChanged += new System.EventHandler(this.cboUnidad_SelectedIndexChanged);
+            // 
+            // cboSede
+            // 
+            this.cboSede.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboSede.FormattingEnabled = true;
+            this.cboSede.Location = new System.Drawing.Point(151, 154);
+            this.cboSede.Name = "cboSede";
+            this.cboSede.Size = new System.Drawing.Size(246, 21);
+            this.cboSede.TabIndex = 214;
             // 
             // label6
             // 
@@ -373,130 +475,25 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             this.textBox1.Size = new System.Drawing.Size(246, 20);
             this.textBox1.TabIndex = 195;
             // 
-            // cboempleadoActivo
+            // btnCerrar
             // 
-            this.cboempleadoActivo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cboempleadoActivo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cboempleadoActivo.FormattingEnabled = true;
-            this.cboempleadoActivo.Location = new System.Drawing.Point(131, 34);
-            this.cboempleadoActivo.Name = "cboempleadoActivo";
-            this.cboempleadoActivo.Size = new System.Drawing.Size(335, 21);
-            this.cboempleadoActivo.TabIndex = 89;
+            this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar.Image = global::pl_Gurkas.Properties.Resources.cerrar_sesion_32;
+            this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCerrar.Location = new System.Drawing.Point(822, 12);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(99, 46);
+            this.btnCerrar.TabIndex = 94;
+            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(22, 33);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(100, 15);
-            this.label42.TabIndex = 88;
-            this.label42.Text = "Buscar Personal:";
-            this.label42.Click += new System.EventHandler(this.label42_Click);
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Image = global::pl_Gurkas.Properties.Resources.nuevo_emplado_32;
-            this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevo.Location = new System.Drawing.Point(700, 20);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(103, 46);
-            this.btnNuevo.TabIndex = 93;
-            this.btnNuevo.Text = "Nueva Entrega";
-            this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnNuevo.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::pl_Gurkas.Properties.Resources.add_trabajador_32;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(590, 19);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 46);
-            this.button2.TabIndex = 92;
-            this.button2.Text = "Registrar Entrega";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
-            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(490, 19);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(94, 46);
-            this.btnBuscar.TabIndex = 90;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
-            // cboUnidad
-            // 
-            this.cboUnidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboUnidad.FormattingEnabled = true;
-            this.cboUnidad.Location = new System.Drawing.Point(151, 127);
-            this.cboUnidad.Name = "cboUnidad";
-            this.cboUnidad.Size = new System.Drawing.Size(246, 21);
-            this.cboUnidad.TabIndex = 213;
-            this.cboUnidad.SelectedIndexChanged += new System.EventHandler(this.cboUnidad_SelectedIndexChanged);
-            // 
-            // cboSede
-            // 
-            this.cboSede.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboSede.FormattingEnabled = true;
-            this.cboSede.Location = new System.Drawing.Point(151, 154);
-            this.cboSede.Name = "cboSede";
-            this.cboSede.Size = new System.Drawing.Size(246, 21);
-            this.cboSede.TabIndex = 214;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(14, 133);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 15);
-            this.label2.TabIndex = 215;
-            this.label2.Text = "Unidad:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(14, 160);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(39, 15);
-            this.label7.TabIndex = 216;
-            this.label7.Text = "Sede:";
-            // 
-            // cboEmpresa
-            // 
-            this.cboEmpresa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboEmpresa.FormattingEnabled = true;
-            this.cboEmpresa.Location = new System.Drawing.Point(151, 100);
-            this.cboEmpresa.Name = "cboEmpresa";
-            this.cboEmpresa.Size = new System.Drawing.Size(246, 21);
-            this.cboEmpresa.TabIndex = 218;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(14, 100);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(66, 15);
-            this.label27.TabIndex = 217;
-            this.label27.Text = "Empresa : ";
-            // 
-            // frmEntradaProducto
+            // frmEntregaMaterial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1322, 651);
+            this.ClientSize = new System.Drawing.Size(1364, 639);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnBuscar);
@@ -505,10 +502,9 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnCerrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmEntradaProducto";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "**********";
-            this.Load += new System.EventHandler(this.frmEntradaProducto_Load);
+            this.Name = "frmEntregaMaterial";
+            this.Text = "frmEntregaMaterial";
+            this.Load += new System.EventHandler(this.frmEntregaMaterial_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -523,43 +519,43 @@ namespace pl_Gurkas.Vista.Logistica.entrada
 
         #endregion
 
-        private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox cboempleadoActivo;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.ComboBox cboAreaLaboral;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DateTimePicker dtpFechaAdquisicion;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtObservacion;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox txtCantidadTecno;
-        private System.Windows.Forms.Label label142;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.DataGridView dgvListaProducto;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.Label lblRelog;
-        private System.Windows.Forms.Button btnCertificadoBasc;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox cboTipoPuesto;
+        private System.Windows.Forms.ComboBox cboempleadoActivo;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ComboBox cboProducto;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cboEstadoMaterial;
-        private System.Windows.Forms.ComboBox cboProducto;
+        private System.Windows.Forms.Button btnCertificadoBasc;
+        private System.Windows.Forms.Label lblRelog;
+        private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dgvListaProducto;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtCantidadTecno;
+        private System.Windows.Forms.Label label142;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.DateTimePicker dtpFechaAdquisicion;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ComboBox cboEmpresa;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cboUnidad;
         private System.Windows.Forms.ComboBox cboSede;
-        private System.Windows.Forms.ComboBox cboEmpresa;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cboTipoPuesto;
+        private System.Windows.Forms.TextBox txtObservacion;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cboAreaLaboral;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnCerrar;
     }
 }

@@ -458,6 +458,12 @@
     <Compile Include="Vista\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Logistica\CargoEntrega\frmEntregaMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Logistica\CargoEntrega\frmEntregaMaterial.Designer.cs">
+      <DependentUpon>frmEntregaMaterial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Logistica\entrada\frmBuscarEntradaProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1094,6 +1100,9 @@
     <EmbeddedResource Include="Vista\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Logistica\CargoEntrega\frmEntregaMaterial.resx">
+      <DependentUpon>frmEntregaMaterial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\entrada\frmBuscarEntradaProducto.resx">
       <DependentUpon>frmBuscarEntradaProducto.cs</DependentUpon>
     </EmbeddedResource>
@@ -1574,6 +1583,17 @@
   <ItemGroup>
     <Content Include="png %281%29.ico" />
     <Content Include="png iconb.ico" />
+    <None Include="Resources\plataformaplanilla_32.png" />
+    <None Include="Resources\plataformaplanilla_16.png" />
+    <None Include="Resources\planillas_16.png" />
+    <None Include="Resources\Planilla_conta_16.png" />
+    <None Include="Resources\plame_32.png" />
+    <None Include="Resources\subirdatos_32.png" />
+    <None Include="Resources\historialplanilla_32.png" />
+    <None Include="Resources\AFP_32.png" />
+    <None Include="Resources\Planilla_conta_32.png" />
+    <None Include="Resources\carnetsucamec_32.png" />
+    <None Include="Resources\almacen_32.png" />
     <None Include="Resources\edit_32.png" />
     <None Include="Resources\edit_16.png" />
     <None Include="Resources\delete_32.png" />
