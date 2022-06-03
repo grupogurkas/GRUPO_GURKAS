@@ -269,28 +269,28 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                SqlCommand comando = new SqlCommand("SELECT * FROM v_producto_mobiliario WHERE COD_PRODUCTO_MOBILIARIO = '" + cod_vehiculo + "'", conexion.conexionBD());
+                SqlCommand comando = new SqlCommand("SELECT * FROM v_producto_vehiculo WHERE COD_PRODUCTO_VEHICULO = '" + cod_vehiculo + "'", conexion.conexionBD());
                 SqlDataReader recorre = comando.ExecuteReader();
                 while (recorre.Read())
                 {
                     txtCodSistema.Text = recorre["COD_PRODUCTO_SISTEMA"].ToString();
-                    txtCodVehiculo.Text = recorre["COD_PRODUCTO_MOBILIARIO"].ToString();
-                    txtNombreVehiculo.Text = recorre["NOMBRE_EQUIP_MOBILIARIO"].ToString();
-                    txtMarcaVehiculo.Text = recorre["MARCA_EQUIP_MOBILIARIO"].ToString();
-                    txtModeloVehiculo.Text = recorre["MODELO_EQUIP_MOBILIARIO"].ToString();
-                    cboTipoUnidadVehiculo.SelectedIndex = Convert.ToInt32(recorre["idunidad_producto_EQUIP_MOBILIARIO"].ToString());
-                    cboCategoriaVehiculo.SelectedIndex = Convert.ToInt32(recorre["idunidad_producto_EQUIP_MOBILIARIO"].ToString());
-                    txtcolorVehiculo.Text = recorre["CATEGORIA_MOBILIARIO"].ToString();
-                    cboCombustibleVehiculo.SelectedIndex = Convert.ToInt32(recorre["ID_ESTADO_MATERIAL_EQUIP_MOBILIARIO"].ToString());
-                    txtserialVehiculo.Text = (recorre["COSTO_UNITARIO_EQUIP_MOBILIARIO"].ToString());
-                    txtaniovehiculo.Text = (recorre["STOCK_INICIAL_EQUIP_MOBILIARIO"].ToString());
-                    txtPlacaVehiculo.Text = (recorre["STOCK_ACTUAL_EQUIP_MOBILIARIO"].ToString());
-                    txtNTarjetaVehiculo.Text = (recorre["STOCK_MINIMO_EQUIP_MOBILIARIO"].ToString());
-                    cboEstadoVehiculo.SelectedIndex = Convert.ToInt32(recorre["idunidad_producto_EQUIP_MOBILIARIO"].ToString());
-                    txtDescripcionVehiculo.Text = (recorre["DESCRP_EQUIP_EQUIP_MOBILIARIO"].ToString());
-                    dtpFechaAdVehiculo.Text = (recorre["FECHA_ADQUISICION_EQUIP_MOBILIARIO"].ToString());
-                    dtpFechaRegisVehi.Text = (recorre["FECHA_REGISTRO_EQUIP_MOBILIARIO"].ToString());
-                    txtObservacionVehi.Text = (recorre["OBSERVACION_EQUIP_MOBILIARIO"].ToString());
+                    txtCodVehiculo.Text = recorre["COD_PRODUCTO_VEHICULO"].ToString();
+                    txtNombreVehiculo.Text = recorre["NOMBRE_EQUIP_VEHICULO"].ToString();
+                    txtMarcaVehiculo.Text = recorre["MARCA_EQUIP_VEHICULO"].ToString();
+                    txtModeloVehiculo.Text = recorre["MODELO_EQUIP_VEHICULO"].ToString();
+                    cboTipoUnidadVehiculo.SelectedIndex = Convert.ToInt32(recorre["idunidad_producto_VEHICULO"].ToString());
+                    cboCategoriaVehiculo.SelectedIndex = Convert.ToInt32(recorre["id_vehiculo_categoria"].ToString());
+                    txtcolorVehiculo.Text = recorre["COLOR_VEHICULO"].ToString();
+                    cboCombustibleVehiculo.SelectedIndex = Convert.ToInt32(recorre["id_combustible"].ToString());
+                    txtserialVehiculo.Text = (recorre["NUM_SERIAL_VEHICULO"].ToString());
+                    txtaniovehiculo.Text = (recorre["ANIO_FABRICACION_VEHICULO"].ToString());
+                    txtPlacaVehiculo.Text = (recorre["PLACA_VEHICULO"].ToString());
+                    txtNTarjetaVehiculo.Text = (recorre["NUM_TAJETA_PROPIEDAD_VEHICULO"].ToString());
+                    cboEstadoVehiculo.SelectedIndex = Convert.ToInt32(recorre["ID_ESTADO_MATERIAL_VEHICULO"].ToString());
+                    txtDescripcionVehiculo.Text = (recorre["DESCRP_EQUIP_VEHICULO"].ToString());
+                    dtpFechaAdVehiculo.Text = (recorre["FECHA_ADQUISICION_VEHICULO"].ToString());
+                    dtpFechaRegisVehi.Text = (recorre["FECHA_REGISTRO_VEHICULO"].ToString());
+                    txtObservacionVehi.Text = (recorre["OBSERVACION_VEHICULO"].ToString());
                 }
             }
             catch (Exception err)
