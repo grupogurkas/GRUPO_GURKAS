@@ -75,16 +75,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
            DataGridViewButtonColumn btnclm = new DataGridViewButtonColumn();
             btnclm.Name = "Eliminar";
             dgvListaProducto.Columns.Add(btnclm);
-          /*  Image someImage = Properties.Resources.eliminar_16;
-
-            dgvListaProducto.Columns.Add(new DataGridViewImageColumn()
-            {
-                Image = someImage,
-                Name = "someName",
-                HeaderText = "Eliminar" 
-          12:35
-            });*/
-
 
             dgvListaProducto.RowHeadersVisible = false;
             dgvListaProducto.AllowUserToAddRows = false;
