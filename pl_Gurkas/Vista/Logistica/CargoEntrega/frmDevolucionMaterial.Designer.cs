@@ -1,7 +1,7 @@
 ﻿
 namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 {
-    partial class frmEntregaMaterial
+    partial class frmDevolucionMaterial
     {
         /// <summary>
         /// Required designer variable.
@@ -79,10 +79,10 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.Image = global::pl_Gurkas.Properties.Resources.nuevo_emplado_32;
             this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevo.Location = new System.Drawing.Point(713, 12);
+            this.btnNuevo.Location = new System.Drawing.Point(707, 20);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(103, 46);
-            this.btnNuevo.TabIndex = 100;
+            this.btnNuevo.TabIndex = 107;
             this.btnNuevo.Text = "Nueva Entrega";
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevo.UseVisualStyleBackColor = true;
@@ -92,10 +92,10 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = global::pl_Gurkas.Properties.Resources.add_trabajador_32;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(603, 11);
+            this.button2.Location = new System.Drawing.Point(597, 19);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(104, 46);
-            this.button2.TabIndex = 99;
+            this.button2.TabIndex = 106;
             this.button2.Text = "Registrar Entrega";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = true;
@@ -105,33 +105,32 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(503, 11);
+            this.btnBuscar.Location = new System.Drawing.Point(497, 19);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(94, 46);
-            this.btnBuscar.TabIndex = 98;
+            this.btnBuscar.TabIndex = 105;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // cboempleadoActivo
             // 
             this.cboempleadoActivo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cboempleadoActivo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboempleadoActivo.FormattingEnabled = true;
-            this.cboempleadoActivo.Location = new System.Drawing.Point(144, 26);
+            this.cboempleadoActivo.Location = new System.Drawing.Point(138, 34);
             this.cboempleadoActivo.Name = "cboempleadoActivo";
             this.cboempleadoActivo.Size = new System.Drawing.Size(335, 21);
-            this.cboempleadoActivo.TabIndex = 97;
+            this.cboempleadoActivo.TabIndex = 104;
             // 
             // label42
             // 
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(35, 25);
+            this.label42.Location = new System.Drawing.Point(29, 33);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(100, 15);
-            this.label42.TabIndex = 96;
+            this.label42.TabIndex = 103;
             this.label42.Text = "Buscar Personal:";
             // 
             // panel1
@@ -139,11 +138,10 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Location = new System.Drawing.Point(25, 77);
+            this.panel1.Location = new System.Drawing.Point(19, 85);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1327, 550);
-            this.panel1.TabIndex = 95;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panel1.TabIndex = 102;
             // 
             // groupBox2
             // 
@@ -261,8 +259,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.dgvListaProducto.Name = "dgvListaProducto";
             this.dgvListaProducto.Size = new System.Drawing.Size(836, 230);
             this.dgvListaProducto.TabIndex = 220;
-            this.dgvListaProducto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListaProducto_CellContentClick);
-            this.dgvListaProducto.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvListaProducto_CellPainting);
             // 
             // textBox3
             // 
@@ -390,7 +386,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.cboUnidad.Name = "cboUnidad";
             this.cboUnidad.Size = new System.Drawing.Size(246, 21);
             this.cboUnidad.TabIndex = 213;
-            this.cboUnidad.SelectedIndexChanged += new System.EventHandler(this.cboUnidad_SelectedIndexChanged);
             // 
             // cboSede
             // 
@@ -480,20 +475,20 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.Image = global::pl_Gurkas.Properties.Resources.cerrar_sesion_32;
             this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrar.Location = new System.Drawing.Point(822, 12);
+            this.btnCerrar.Location = new System.Drawing.Point(816, 20);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(99, 46);
-            this.btnCerrar.TabIndex = 94;
+            this.btnCerrar.TabIndex = 101;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // frmEntregaMaterial
+            // frmDevolucionMaterial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1369, 640);
+            this.ClientSize = new System.Drawing.Size(1365, 655);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnBuscar);
@@ -502,9 +497,9 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnCerrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmEntregaMaterial";
-            this.Text = "frmEntregaMaterial";
-            this.Load += new System.EventHandler(this.frmEntregaMaterial_Load);
+            this.Name = "frmDevolucionMaterial";
+            this.Text = "frmDevolucionMaterial";
+            this.Load += new System.EventHandler(this.frmDevolucionMaterial_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

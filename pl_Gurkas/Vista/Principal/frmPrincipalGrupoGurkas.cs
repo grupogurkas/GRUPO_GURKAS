@@ -920,5 +920,11 @@ namespace pl_Gurkas.Vista.Principal
             controlvistaformulario.ControlVista(this, new Vista.Logistica.CargoEntrega.frmEntregaMaterial());
             modulo.auditoria("Logistica", "Almacen", "Cargo Entrega", "Entrega");
         }
+
+        private void internamientoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.CargoEntrega.frmDevolucionMaterial());
+            modulo.auditoria("Logistica", "Almacen", "Cargo Entrega", "Internamiento");
+        }
     }
 }

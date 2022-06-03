@@ -990,6 +990,7 @@ namespace pl_Gurkas.Vista.Principal
             this.internamientoToolStripMenuItem.Name = "internamientoToolStripMenuItem";
             this.internamientoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.internamientoToolStripMenuItem.Text = "Internamiento";
+            this.internamientoToolStripMenuItem.Click += new System.EventHandler(this.internamientoToolStripMenuItem_Click);
             // 
             // entregaToolStripMenuItem
             // 
