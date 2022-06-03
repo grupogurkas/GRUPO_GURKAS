@@ -31,7 +31,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         {
             this.btnNuevo = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.cboempleadoActivo = new System.Windows.Forms.ComboBox();
             this.label42 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -99,20 +98,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.button2.Text = "Registrar Entrega";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
-            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(485, 9);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(94, 46);
-            this.btnBuscar.TabIndex = 98;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // cboempleadoActivo
             // 
@@ -491,7 +476,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.ClientSize = new System.Drawing.Size(1361, 651);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.cboempleadoActivo);
             this.Controls.Add(this.lblRelog);
             this.Controls.Add(this.label42);
@@ -522,7 +506,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.ComboBox cboempleadoActivo;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Panel panel1;
