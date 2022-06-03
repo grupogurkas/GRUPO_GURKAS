@@ -814,6 +814,43 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 MessageBox.Show("No se puede Regristrar el producto" + ex, "Error");
             }
         }
+
+
+        public void AgregarUtilesAseo()
+        {
+            try
+            {
+                string cod_sistema = txtCodSistema.Text;
+                string cod_mobi = txtCodEquipMobi.Text;
+                string nombre_mobi = txtNombreMobi.Text;
+                string marca_mobi = txtMarcaMobi.Text;
+                string modelo_mobi = txtModeloMobi.Text;
+                int tipo_unidad_mobi = cboTipoUnidadMobi.SelectedIndex;
+                string categoria_mobi = txtCantidadMobi.Text;
+                int estado_mobi = cboEstadoMobi.SelectedIndex;
+                decimal precio_unitario_mobi = Convert.ToDecimal(txtPrecioUniMobi.Text);
+                int stock_inicial_mobi = Convert.ToInt32(txtStockIniMobil.Text);
+                int stock_actual_mobi = Convert.ToInt32(txtStockactualMobi.Text);
+                int stock_minimo_mobi = Convert.ToInt32(txtStockMinMobi.Text);
+                string desp_mobi = txtDescripcionMobi.Text;
+                DateTime f_adquision_mobi = dtpFechaAdMobi.Value;
+                DateTime f_registro_mobi = dtpFechaRegisMobi.Value;
+                string observacion_mobi = txtObservacionMobi.Text;
+
+                logisticaInsertar.RegistrarMobiliario(cod_sistema, cod_mobi, nombre_mobi, marca_mobi,
+                             modelo_mobi, tipo_unidad_mobi, categoria_mobi, estado_mobi, precio_unitario_mobi,
+                              stock_inicial_mobi,
+                           stock_actual_mobi, stock_minimo_mobi, desp_mobi, f_adquision_mobi, f_registro_mobi,
+                           observacion_mobi);
+                MessageBox.Show("Datos registrado correptamente", "Correpto");
+                LimpiarDatosMobiliario();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede Regristrar el producto" + ex, "Error");
+            }
+        }
+
         public void AgregarProductoPantalon()
         {
             try
@@ -1404,6 +1441,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerCategoriaVehiculo(cboCategoriaVehiculo);
             Llenadocbo.ObtenerTipoCombustible(cboCombustibleVehiculo);
         }
+
+        private void llenadoDatosUtilesAseo()
+        {
+            Llenadocbo.ObtenerUtilesAseo(cboUtilesAseoLogistico);
+            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadAseo);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoAseo);
+
+        }
         private void bloqueodecodigo()
         {
             txtCodEquipoTecnologia.Enabled = false;
@@ -1433,6 +1478,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             llenadoDatosEquipoProteccion();
             llenadoDatosEquipoMobiliario();
             llenadoDatosVehiculo();
+            llenadoDatosUtilesAseo();
             generarCodigos();
         }
         private void tbpUniforme_Click(object sender, EventArgs e)
@@ -1657,6 +1703,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void btnActualizarVehiculo_Click(object sender, EventArgs e)
         {
             ActualizarVehiculo();
+        }
+
+        private void btnAgregarUtilesAseo_Click(object sender, EventArgs e)
+        {
+            AgregarUtilesAseo();
         }
     }
 }
