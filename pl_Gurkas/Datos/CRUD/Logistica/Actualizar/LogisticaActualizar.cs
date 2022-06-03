@@ -87,8 +87,8 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Actualizar
             cmd.ExecuteNonQuery();
         }
         public void ActualizarPrendaPantalon(string cod_sistema, string cod_pantalon, string nombre_pantalon, int talla_pan,
-                   string color_pan,int stock_inicial_pan, int tipo_tela_pan, int estado_pan, decimal precio_unitario_pan,
-                   int stock_actual_pan, int stock_minimo_pan,string desp_pan,
+                   string color_pan, int stock_inicial_pan, int tipo_tela_pan, int estado_pan, decimal precio_unitario_pan,
+                   int stock_actual_pan, int stock_minimo_pan, string desp_pan,
                      DateTime f_adquision_pan, DateTime f_registro_pan, string observacion_pan)
         {
             SqlCommand cmd = new SqlCommand("sp_actualizar_producto_pantalon ", conexion.conexionBD());
@@ -263,6 +263,37 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Actualizar
             cmd.Parameters.AddWithValue("@FECHA_ADQUISICION_VEHICULO", SqlDbType.VarChar).Value = f_adquision_vehi;
             cmd.Parameters.AddWithValue("@FECHA_REGISTRO_VEHICULO", SqlDbType.VarChar).Value = f_registro_vehi;
             cmd.Parameters.AddWithValue("@OBSERVACION_VEHICULO", SqlDbType.VarChar).Value = observacion_vehi;
+            cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
+            cmd.ExecuteNonQuery();
+        }
+
+        public void ActualizarUtilesAseo(string cod_sistema, string cod_aseo, string nombre_aseo, string marca_aseo,
+                             int tipo_unidad_aseo, DateTime f_fabricacion_aseo, DateTime f_vencimiento_aseo, int estado_aseo,
+                            decimal precio_unitario_aseo, int stock_inicial_aseo,
+                          int stock_actual_aseo, int stock_minimo_aseo, string desp_aseo, DateTime f_adquision_aseo,
+                          DateTime f_registro_aseo, string observacion_aseo)
+
+
+
+        {
+            SqlCommand cmd = new SqlCommand("sp_registrar_producto_aseo ", conexion.conexionBD());
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@COD_PRODUCTO_SISTEMA", SqlDbType.VarChar).Value = cod_sistema;
+            cmd.Parameters.AddWithValue("@COD_PRODUCTO_UTI_ASEO", SqlDbType.VarChar).Value = cod_aseo;
+            cmd.Parameters.AddWithValue("@NOMBRE_UTI_ASEO", SqlDbType.VarChar).Value = nombre_aseo;
+            cmd.Parameters.AddWithValue("@MARCA_UTI_ASEO", SqlDbType.VarChar).Value = marca_aseo;
+            cmd.Parameters.AddWithValue("@idunidad_producto_UTI_ASEO", SqlDbType.Int).Value = tipo_unidad_aseo;
+            cmd.Parameters.AddWithValue("@FECHA_FABRICACION_UTI_ASEO", SqlDbType.VarChar).Value = f_fabricacion_aseo;
+            cmd.Parameters.AddWithValue("@FECHA_VENCIMIENTO_UTI_ASEO", SqlDbType.VarChar).Value = f_vencimiento_aseo;
+            cmd.Parameters.AddWithValue("@ID_ESTADO_MATERIAL_UTIL_ASEO", SqlDbType.Int).Value = estado_aseo;
+            cmd.Parameters.AddWithValue("@STOCK_INICIAL_UTI_ASEO", SqlDbType.Int).Value = stock_inicial_aseo;
+            cmd.Parameters.AddWithValue("@COSTO_UNITARIO_UTI_ASEO", SqlDbType.Decimal).Value = precio_unitario_aseo;
+            cmd.Parameters.AddWithValue("@STOCK_ACTUAL_UTI_ASEO", SqlDbType.Int).Value = stock_actual_aseo;
+            cmd.Parameters.AddWithValue("@STOCK_MINIMO_UTI_ASEO", SqlDbType.Int).Value = stock_minimo_aseo;
+            cmd.Parameters.AddWithValue("@DESCRP_UTI_ASEO", SqlDbType.VarChar).Value = desp_aseo;
+            cmd.Parameters.AddWithValue("@FECHA_ADQUISICION_UTI_ASEO", SqlDbType.VarChar).Value = f_adquision_aseo;
+            cmd.Parameters.AddWithValue("@FECHA_REGISTRO_UTI_ASEO", SqlDbType.VarChar).Value = f_registro_aseo;
+            cmd.Parameters.AddWithValue("@OBSERVACION_UTI_ASEO", SqlDbType.VarChar).Value = observacion_aseo;
             cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
             cmd.ExecuteNonQuery();
         }

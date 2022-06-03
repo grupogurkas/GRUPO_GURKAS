@@ -438,6 +438,46 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.dtpFechaAdVehiculo = new System.Windows.Forms.DateTimePicker();
             this.label119 = new System.Windows.Forms.Label();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.btnNuevoAseo = new System.Windows.Forms.Button();
+            this.btnBuscarUtilesAseo = new System.Windows.Forms.Button();
+            this.cboUtilesAseoLogistico = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.btnAgregarUtilesAseo = new System.Windows.Forms.Button();
+            this.btnActualizarUtilesAseo = new System.Windows.Forms.Button();
+            this.groupBox21 = new System.Windows.Forms.GroupBox();
+            this.dtpFechaVecAseo = new System.Windows.Forms.DateTimePicker();
+            this.label148 = new System.Windows.Forms.Label();
+            this.dtpFechaFabAseo = new System.Windows.Forms.DateTimePicker();
+            this.label162 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.txtMarcaUtilesAseo = new System.Windows.Forms.TextBox();
+            this.txtStockMinAseo = new System.Windows.Forms.TextBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.txtDescripcionAseo = new System.Windows.Forms.TextBox();
+            this.label109 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.txtStockIniAseo = new System.Windows.Forms.TextBox();
+            this.label62 = new System.Windows.Forms.Label();
+            this.cboTipoUnidadAseo = new System.Windows.Forms.ComboBox();
+            this.label82 = new System.Windows.Forms.Label();
+            this.txtCostoUtilesAseo = new System.Windows.Forms.TextBox();
+            this.label90 = new System.Windows.Forms.Label();
+            this.txtStockActualAseo = new System.Windows.Forms.TextBox();
+            this.cboEstadoAseo = new System.Windows.Forms.ComboBox();
+            this.label122 = new System.Windows.Forms.Label();
+            this.txtCodEquipAseo = new System.Windows.Forms.TextBox();
+            this.label128 = new System.Windows.Forms.Label();
+            this.txtNombreUtilesAseo = new System.Windows.Forms.TextBox();
+            this.label137 = new System.Windows.Forms.Label();
+            this.groupBox22 = new System.Windows.Forms.GroupBox();
+            this.txtObservacionAseo = new System.Windows.Forms.TextBox();
+            this.label138 = new System.Windows.Forms.Label();
+            this.dtpFechaRegisAseo = new System.Windows.Forms.DateTimePicker();
+            this.label141 = new System.Windows.Forms.Label();
+            this.dtpFechaAdAseo = new System.Windows.Forms.DateTimePicker();
+            this.label144 = new System.Windows.Forms.Label();
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.groupBox23 = new System.Windows.Forms.GroupBox();
             this.groupBox24 = new System.Windows.Forms.GroupBox();
@@ -473,46 +513,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label204 = new System.Windows.Forms.Label();
             this.txtNombreArma = new System.Windows.Forms.TextBox();
             this.label205 = new System.Windows.Forms.Label();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.btnNuevoAseo = new System.Windows.Forms.Button();
-            this.btnBuscarUtilesAseo = new System.Windows.Forms.Button();
-            this.cboUtilesAseoLogistico = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.btnAgregarUtilesAseo = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.groupBox21 = new System.Windows.Forms.GroupBox();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.txtMarcaUtilesAseo = new System.Windows.Forms.TextBox();
-            this.txtStockMinAseo = new System.Windows.Forms.TextBox();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.txtStockIniAseo = new System.Windows.Forms.TextBox();
-            this.label62 = new System.Windows.Forms.Label();
-            this.cboTipoUnidadAseo = new System.Windows.Forms.ComboBox();
-            this.label82 = new System.Windows.Forms.Label();
-            this.txtCostoUtilesAseo = new System.Windows.Forms.TextBox();
-            this.label90 = new System.Windows.Forms.Label();
-            this.txtStockActualAseo = new System.Windows.Forms.TextBox();
-            this.label109 = new System.Windows.Forms.Label();
-            this.txtDescripcionAseo = new System.Windows.Forms.TextBox();
-            this.cboEstadoAseo = new System.Windows.Forms.ComboBox();
-            this.label122 = new System.Windows.Forms.Label();
-            this.txtCodEquipAseo = new System.Windows.Forms.TextBox();
-            this.label128 = new System.Windows.Forms.Label();
-            this.txtNombreUtilesAseo = new System.Windows.Forms.TextBox();
-            this.label137 = new System.Windows.Forms.Label();
-            this.groupBox22 = new System.Windows.Forms.GroupBox();
-            this.txtObservacionAseo = new System.Windows.Forms.TextBox();
-            this.label138 = new System.Windows.Forms.Label();
-            this.dtpFechaRegisAseo = new System.Windows.Forms.DateTimePicker();
-            this.label141 = new System.Windows.Forms.Label();
-            this.dtpFechaAdAseo = new System.Windows.Forms.DateTimePicker();
-            this.label144 = new System.Windows.Forms.Label();
-            this.dtpFechaVecAseo = new System.Windows.Forms.DateTimePicker();
-            this.label148 = new System.Windows.Forms.Label();
-            this.dtpFechaFabAseo = new System.Windows.Forms.DateTimePicker();
-            this.label162 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.btcPanel.SuspendLayout();
             this.tbpTecnologico.SuspendLayout();
@@ -558,13 +558,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox19.SuspendLayout();
             this.groupBox20.SuspendLayout();
             this.tabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            this.groupBox21.SuspendLayout();
+            this.groupBox22.SuspendLayout();
             this.tabPage9.SuspendLayout();
             this.groupBox23.SuspendLayout();
             this.groupBox24.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptcImagenArmamento)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            this.groupBox21.SuspendLayout();
-            this.groupBox22.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -4837,7 +4837,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tabPage8.Controls.Add(this.cboUtilesAseoLogistico);
             this.tabPage8.Controls.Add(this.label15);
             this.tabPage8.Controls.Add(this.btnAgregarUtilesAseo);
-            this.tabPage8.Controls.Add(this.button4);
+            this.tabPage8.Controls.Add(this.btnActualizarUtilesAseo);
             this.tabPage8.Controls.Add(this.groupBox21);
             this.tabPage8.Controls.Add(this.groupBox22);
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
@@ -4847,6 +4847,414 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tabPage8.TabIndex = 9;
             this.tabPage8.Text = "Utiles de Aseo";
             this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::pl_Gurkas.Properties.Resources.png;
+            this.pictureBox11.Location = new System.Drawing.Point(1105, 24);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(180, 191);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 202;
+            this.pictureBox11.TabStop = false;
+            // 
+            // btnNuevoAseo
+            // 
+            this.btnNuevoAseo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevoAseo.Image = global::pl_Gurkas.Properties.Resources.nuevo_emplado_32;
+            this.btnNuevoAseo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevoAseo.Location = new System.Drawing.Point(961, 14);
+            this.btnNuevoAseo.Name = "btnNuevoAseo";
+            this.btnNuevoAseo.Size = new System.Drawing.Size(119, 51);
+            this.btnNuevoAseo.TabIndex = 198;
+            this.btnNuevoAseo.Text = "Nuevo";
+            this.btnNuevoAseo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNuevoAseo.UseVisualStyleBackColor = true;
+            this.btnNuevoAseo.Click += new System.EventHandler(this.btnNuevoAseo_Click);
+            // 
+            // btnBuscarUtilesAseo
+            // 
+            this.btnBuscarUtilesAseo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarUtilesAseo.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
+            this.btnBuscarUtilesAseo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscarUtilesAseo.Location = new System.Drawing.Point(472, 14);
+            this.btnBuscarUtilesAseo.Name = "btnBuscarUtilesAseo";
+            this.btnBuscarUtilesAseo.Size = new System.Drawing.Size(119, 51);
+            this.btnBuscarUtilesAseo.TabIndex = 199;
+            this.btnBuscarUtilesAseo.Text = "Buscar";
+            this.btnBuscarUtilesAseo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscarUtilesAseo.UseVisualStyleBackColor = true;
+            this.btnBuscarUtilesAseo.Click += new System.EventHandler(this.btnBuscarUtilesAseo_Click);
+            // 
+            // cboUtilesAseoLogistico
+            // 
+            this.cboUtilesAseoLogistico.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboUtilesAseoLogistico.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboUtilesAseoLogistico.FormattingEnabled = true;
+            this.cboUtilesAseoLogistico.Location = new System.Drawing.Point(159, 25);
+            this.cboUtilesAseoLogistico.Name = "cboUtilesAseoLogistico";
+            this.cboUtilesAseoLogistico.Size = new System.Drawing.Size(307, 21);
+            this.cboUtilesAseoLogistico.TabIndex = 201;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(22, 26);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(129, 15);
+            this.label15.TabIndex = 200;
+            this.label15.Text = "Buscar Utiles de Aseo:";
+            // 
+            // btnAgregarUtilesAseo
+            // 
+            this.btnAgregarUtilesAseo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarUtilesAseo.Image = global::pl_Gurkas.Properties.Resources.add_trabajador_32;
+            this.btnAgregarUtilesAseo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarUtilesAseo.Location = new System.Drawing.Point(597, 14);
+            this.btnAgregarUtilesAseo.Name = "btnAgregarUtilesAseo";
+            this.btnAgregarUtilesAseo.Size = new System.Drawing.Size(176, 51);
+            this.btnAgregarUtilesAseo.TabIndex = 196;
+            this.btnAgregarUtilesAseo.Text = "Agregar Producto\r\nUtiles de Aseo";
+            this.btnAgregarUtilesAseo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregarUtilesAseo.UseVisualStyleBackColor = true;
+            this.btnAgregarUtilesAseo.Click += new System.EventHandler(this.btnAgregarUtilesAseo_Click);
+            // 
+            // btnActualizarUtilesAseo
+            // 
+            this.btnActualizarUtilesAseo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarUtilesAseo.Image = global::pl_Gurkas.Properties.Resources.empleado_update_32;
+            this.btnActualizarUtilesAseo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnActualizarUtilesAseo.Location = new System.Drawing.Point(779, 14);
+            this.btnActualizarUtilesAseo.Name = "btnActualizarUtilesAseo";
+            this.btnActualizarUtilesAseo.Size = new System.Drawing.Size(176, 51);
+            this.btnActualizarUtilesAseo.TabIndex = 197;
+            this.btnActualizarUtilesAseo.Text = "Actualizar Producto \r\nUtiles de Aseo";
+            this.btnActualizarUtilesAseo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnActualizarUtilesAseo.UseVisualStyleBackColor = true;
+            this.btnActualizarUtilesAseo.Click += new System.EventHandler(this.btnActualizarUtilesAseo_Click);
+            // 
+            // groupBox21
+            // 
+            this.groupBox21.Controls.Add(this.dtpFechaVecAseo);
+            this.groupBox21.Controls.Add(this.label148);
+            this.groupBox21.Controls.Add(this.dtpFechaFabAseo);
+            this.groupBox21.Controls.Add(this.label162);
+            this.groupBox21.Controls.Add(this.label28);
+            this.groupBox21.Controls.Add(this.label32);
+            this.groupBox21.Controls.Add(this.txtMarcaUtilesAseo);
+            this.groupBox21.Controls.Add(this.txtStockMinAseo);
+            this.groupBox21.Controls.Add(this.label42);
+            this.groupBox21.Controls.Add(this.txtDescripcionAseo);
+            this.groupBox21.Controls.Add(this.label109);
+            this.groupBox21.Controls.Add(this.label59);
+            this.groupBox21.Controls.Add(this.txtStockIniAseo);
+            this.groupBox21.Controls.Add(this.label62);
+            this.groupBox21.Controls.Add(this.cboTipoUnidadAseo);
+            this.groupBox21.Controls.Add(this.label82);
+            this.groupBox21.Controls.Add(this.txtCostoUtilesAseo);
+            this.groupBox21.Controls.Add(this.label90);
+            this.groupBox21.Controls.Add(this.txtStockActualAseo);
+            this.groupBox21.Controls.Add(this.cboEstadoAseo);
+            this.groupBox21.Controls.Add(this.label122);
+            this.groupBox21.Controls.Add(this.txtCodEquipAseo);
+            this.groupBox21.Controls.Add(this.label128);
+            this.groupBox21.Controls.Add(this.txtNombreUtilesAseo);
+            this.groupBox21.Controls.Add(this.label137);
+            this.groupBox21.Location = new System.Drawing.Point(8, 71);
+            this.groupBox21.Name = "groupBox21";
+            this.groupBox21.Size = new System.Drawing.Size(765, 244);
+            this.groupBox21.TabIndex = 194;
+            this.groupBox21.TabStop = false;
+            this.groupBox21.Text = "Datos del Equipo";
+            // 
+            // dtpFechaVecAseo
+            // 
+            this.dtpFechaVecAseo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaVecAseo.Location = new System.Drawing.Point(133, 170);
+            this.dtpFechaVecAseo.Name = "dtpFechaVecAseo";
+            this.dtpFechaVecAseo.Size = new System.Drawing.Size(114, 20);
+            this.dtpFechaVecAseo.TabIndex = 188;
+            // 
+            // label148
+            // 
+            this.label148.AutoSize = true;
+            this.label148.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label148.Location = new System.Drawing.Point(12, 169);
+            this.label148.Name = "label148";
+            this.label148.Size = new System.Drawing.Size(118, 15);
+            this.label148.TabIndex = 189;
+            this.label148.Text = "Fecha Vencimiento :";
+            // 
+            // dtpFechaFabAseo
+            // 
+            this.dtpFechaFabAseo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaFabAseo.Location = new System.Drawing.Point(133, 131);
+            this.dtpFechaFabAseo.Name = "dtpFechaFabAseo";
+            this.dtpFechaFabAseo.Size = new System.Drawing.Size(114, 20);
+            this.dtpFechaFabAseo.TabIndex = 186;
+            // 
+            // label162
+            // 
+            this.label162.AutoSize = true;
+            this.label162.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label162.Location = new System.Drawing.Point(12, 136);
+            this.label162.Name = "label162";
+            this.label162.Size = new System.Drawing.Size(111, 15);
+            this.label162.TabIndex = 187;
+            this.label162.Text = "Fecha Fabricacion:";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(367, 99);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(79, 15);
+            this.label28.TabIndex = 185;
+            this.label28.Text = "Stock Actual :";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(365, 50);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(87, 15);
+            this.label32.TabIndex = 184;
+            this.label32.Text = "Costo Unitario:";
+            // 
+            // txtMarcaUtilesAseo
+            // 
+            this.txtMarcaUtilesAseo.Location = new System.Drawing.Point(132, 71);
+            this.txtMarcaUtilesAseo.Name = "txtMarcaUtilesAseo";
+            this.txtMarcaUtilesAseo.Size = new System.Drawing.Size(213, 20);
+            this.txtMarcaUtilesAseo.TabIndex = 179;
+            // 
+            // txtStockMinAseo
+            // 
+            this.txtStockMinAseo.Location = new System.Drawing.Point(489, 119);
+            this.txtStockMinAseo.Name = "txtStockMinAseo";
+            this.txtStockMinAseo.Size = new System.Drawing.Size(213, 20);
+            this.txtStockMinAseo.TabIndex = 178;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(364, 125);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(85, 15);
+            this.label42.TabIndex = 177;
+            this.label42.Text = "Stock Minimo:";
+            // 
+            // txtDescripcionAseo
+            // 
+            this.txtDescripcionAseo.Location = new System.Drawing.Point(370, 174);
+            this.txtDescripcionAseo.Multiline = true;
+            this.txtDescripcionAseo.Name = "txtDescripcionAseo";
+            this.txtDescripcionAseo.Size = new System.Drawing.Size(339, 56);
+            this.txtDescripcionAseo.TabIndex = 162;
+            // 
+            // label109
+            // 
+            this.label109.AutoSize = true;
+            this.label109.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label109.Location = new System.Drawing.Point(367, 155);
+            this.label109.Name = "label109";
+            this.label109.Size = new System.Drawing.Size(78, 15);
+            this.label109.TabIndex = 163;
+            this.label109.Text = "Descripcion :";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.Location = new System.Drawing.Point(9, 105);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(77, 15);
+            this.label59.TabIndex = 176;
+            this.label59.Text = "Tipo Unidad:";
+            // 
+            // txtStockIniAseo
+            // 
+            this.txtStockIniAseo.Location = new System.Drawing.Point(489, 69);
+            this.txtStockIniAseo.Name = "txtStockIniAseo";
+            this.txtStockIniAseo.Size = new System.Drawing.Size(213, 20);
+            this.txtStockIniAseo.TabIndex = 175;
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.Location = new System.Drawing.Point(366, 76);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(78, 15);
+            this.label62.TabIndex = 174;
+            this.label62.Text = "Stock Inicial :";
+            // 
+            // cboTipoUnidadAseo
+            // 
+            this.cboTipoUnidadAseo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTipoUnidadAseo.FormattingEnabled = true;
+            this.cboTipoUnidadAseo.Location = new System.Drawing.Point(133, 99);
+            this.cboTipoUnidadAseo.Name = "cboTipoUnidadAseo";
+            this.cboTipoUnidadAseo.Size = new System.Drawing.Size(213, 21);
+            this.cboTipoUnidadAseo.TabIndex = 172;
+            // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label82.Location = new System.Drawing.Point(9, 76);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(45, 15);
+            this.label82.TabIndex = 169;
+            this.label82.Text = "Marca:";
+            // 
+            // txtCostoUtilesAseo
+            // 
+            this.txtCostoUtilesAseo.Location = new System.Drawing.Point(489, 44);
+            this.txtCostoUtilesAseo.Name = "txtCostoUtilesAseo";
+            this.txtCostoUtilesAseo.Size = new System.Drawing.Size(213, 20);
+            this.txtCostoUtilesAseo.TabIndex = 167;
+            // 
+            // label90
+            // 
+            this.label90.Location = new System.Drawing.Point(468, 50);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(27, 13);
+            this.label90.TabIndex = 168;
+            this.label90.Text = "S/. ";
+            // 
+            // txtStockActualAseo
+            // 
+            this.txtStockActualAseo.Location = new System.Drawing.Point(489, 94);
+            this.txtStockActualAseo.Name = "txtStockActualAseo";
+            this.txtStockActualAseo.Size = new System.Drawing.Size(213, 20);
+            this.txtStockActualAseo.TabIndex = 165;
+            // 
+            // cboEstadoAseo
+            // 
+            this.cboEstadoAseo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEstadoAseo.FormattingEnabled = true;
+            this.cboEstadoAseo.Location = new System.Drawing.Point(489, 18);
+            this.cboEstadoAseo.Name = "cboEstadoAseo";
+            this.cboEstadoAseo.Size = new System.Drawing.Size(213, 21);
+            this.cboEstadoAseo.TabIndex = 161;
+            // 
+            // label122
+            // 
+            this.label122.AutoSize = true;
+            this.label122.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label122.Location = new System.Drawing.Point(365, 24);
+            this.label122.Name = "label122";
+            this.label122.Size = new System.Drawing.Size(51, 15);
+            this.label122.TabIndex = 160;
+            this.label122.Text = "Estado :";
+            // 
+            // txtCodEquipAseo
+            // 
+            this.txtCodEquipAseo.Location = new System.Drawing.Point(132, 19);
+            this.txtCodEquipAseo.Name = "txtCodEquipAseo";
+            this.txtCodEquipAseo.Size = new System.Drawing.Size(215, 20);
+            this.txtCodEquipAseo.TabIndex = 78;
+            // 
+            // label128
+            // 
+            this.label128.AutoSize = true;
+            this.label128.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label128.Location = new System.Drawing.Point(8, 20);
+            this.label128.Name = "label128";
+            this.label128.Size = new System.Drawing.Size(96, 15);
+            this.label128.TabIndex = 77;
+            this.label128.Text = "Cod. Utiles Aseo";
+            // 
+            // txtNombreUtilesAseo
+            // 
+            this.txtNombreUtilesAseo.Location = new System.Drawing.Point(133, 45);
+            this.txtNombreUtilesAseo.Name = "txtNombreUtilesAseo";
+            this.txtNombreUtilesAseo.Size = new System.Drawing.Size(213, 20);
+            this.txtNombreUtilesAseo.TabIndex = 57;
+            // 
+            // label137
+            // 
+            this.label137.AutoSize = true;
+            this.label137.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label137.Location = new System.Drawing.Point(8, 50);
+            this.label137.Name = "label137";
+            this.label137.Size = new System.Drawing.Size(55, 15);
+            this.label137.TabIndex = 56;
+            this.label137.Text = "Nombre:";
+            // 
+            // groupBox22
+            // 
+            this.groupBox22.Controls.Add(this.txtObservacionAseo);
+            this.groupBox22.Controls.Add(this.label138);
+            this.groupBox22.Controls.Add(this.dtpFechaRegisAseo);
+            this.groupBox22.Controls.Add(this.label141);
+            this.groupBox22.Controls.Add(this.dtpFechaAdAseo);
+            this.groupBox22.Controls.Add(this.label144);
+            this.groupBox22.Location = new System.Drawing.Point(779, 71);
+            this.groupBox22.Name = "groupBox22";
+            this.groupBox22.Size = new System.Drawing.Size(301, 244);
+            this.groupBox22.TabIndex = 195;
+            this.groupBox22.TabStop = false;
+            this.groupBox22.Text = "Datos Adicionales";
+            // 
+            // txtObservacionAseo
+            // 
+            this.txtObservacionAseo.Location = new System.Drawing.Point(26, 131);
+            this.txtObservacionAseo.Multiline = true;
+            this.txtObservacionAseo.Name = "txtObservacionAseo";
+            this.txtObservacionAseo.Size = new System.Drawing.Size(266, 99);
+            this.txtObservacionAseo.TabIndex = 168;
+            // 
+            // label138
+            // 
+            this.label138.AutoSize = true;
+            this.label138.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label138.Location = new System.Drawing.Point(23, 105);
+            this.label138.Name = "label138";
+            this.label138.Size = new System.Drawing.Size(81, 15);
+            this.label138.TabIndex = 169;
+            this.label138.Text = "Observacion :";
+            // 
+            // dtpFechaRegisAseo
+            // 
+            this.dtpFechaRegisAseo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaRegisAseo.Location = new System.Drawing.Point(139, 71);
+            this.dtpFechaRegisAseo.Name = "dtpFechaRegisAseo";
+            this.dtpFechaRegisAseo.Size = new System.Drawing.Size(114, 20);
+            this.dtpFechaRegisAseo.TabIndex = 153;
+            // 
+            // label141
+            // 
+            this.label141.AutoSize = true;
+            this.label141.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label141.Location = new System.Drawing.Point(18, 70);
+            this.label141.Name = "label141";
+            this.label141.Size = new System.Drawing.Size(96, 15);
+            this.label141.TabIndex = 154;
+            this.label141.Text = "Fecha Registro :";
+            // 
+            // dtpFechaAdAseo
+            // 
+            this.dtpFechaAdAseo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaAdAseo.Location = new System.Drawing.Point(139, 32);
+            this.dtpFechaAdAseo.Name = "dtpFechaAdAseo";
+            this.dtpFechaAdAseo.Size = new System.Drawing.Size(114, 20);
+            this.dtpFechaAdAseo.TabIndex = 151;
+            // 
+            // label144
+            // 
+            this.label144.AutoSize = true;
+            this.label144.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label144.Location = new System.Drawing.Point(18, 37);
+            this.label144.Name = "label144";
+            this.label144.Size = new System.Drawing.Size(110, 15);
+            this.label144.TabIndex = 152;
+            this.label144.Text = "Fecha Adquisicion:";
             // 
             // tabPage9
             // 
@@ -5203,413 +5611,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label205.TabIndex = 56;
             this.label205.Text = "Nombre:";
             // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::pl_Gurkas.Properties.Resources.png;
-            this.pictureBox11.Location = new System.Drawing.Point(1105, 24);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(180, 191);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 202;
-            this.pictureBox11.TabStop = false;
-            // 
-            // btnNuevoAseo
-            // 
-            this.btnNuevoAseo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevoAseo.Image = global::pl_Gurkas.Properties.Resources.nuevo_emplado_32;
-            this.btnNuevoAseo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevoAseo.Location = new System.Drawing.Point(961, 14);
-            this.btnNuevoAseo.Name = "btnNuevoAseo";
-            this.btnNuevoAseo.Size = new System.Drawing.Size(119, 51);
-            this.btnNuevoAseo.TabIndex = 198;
-            this.btnNuevoAseo.Text = "Nuevo";
-            this.btnNuevoAseo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnNuevoAseo.UseVisualStyleBackColor = true;
-            this.btnNuevoAseo.Click += new System.EventHandler(this.btnNuevoAseo_Click);
-            // 
-            // btnBuscarUtilesAseo
-            // 
-            this.btnBuscarUtilesAseo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarUtilesAseo.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
-            this.btnBuscarUtilesAseo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarUtilesAseo.Location = new System.Drawing.Point(472, 14);
-            this.btnBuscarUtilesAseo.Name = "btnBuscarUtilesAseo";
-            this.btnBuscarUtilesAseo.Size = new System.Drawing.Size(119, 51);
-            this.btnBuscarUtilesAseo.TabIndex = 199;
-            this.btnBuscarUtilesAseo.Text = "Buscar";
-            this.btnBuscarUtilesAseo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBuscarUtilesAseo.UseVisualStyleBackColor = true;
-            this.btnBuscarUtilesAseo.Click += new System.EventHandler(this.btnBuscarUtilesAseo_Click);
-            // 
-            // cboUtilesAseoLogistico
-            // 
-            this.cboUtilesAseoLogistico.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cboUtilesAseoLogistico.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cboUtilesAseoLogistico.FormattingEnabled = true;
-            this.cboUtilesAseoLogistico.Location = new System.Drawing.Point(159, 25);
-            this.cboUtilesAseoLogistico.Name = "cboUtilesAseoLogistico";
-            this.cboUtilesAseoLogistico.Size = new System.Drawing.Size(307, 21);
-            this.cboUtilesAseoLogistico.TabIndex = 201;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(22, 26);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(129, 15);
-            this.label15.TabIndex = 200;
-            this.label15.Text = "Buscar Utiles de Aseo:";
-            // 
-            // btnAgregarUtilesAseo
-            // 
-            this.btnAgregarUtilesAseo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarUtilesAseo.Image = global::pl_Gurkas.Properties.Resources.add_trabajador_32;
-            this.btnAgregarUtilesAseo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarUtilesAseo.Location = new System.Drawing.Point(597, 14);
-            this.btnAgregarUtilesAseo.Name = "btnAgregarUtilesAseo";
-            this.btnAgregarUtilesAseo.Size = new System.Drawing.Size(176, 51);
-            this.btnAgregarUtilesAseo.TabIndex = 196;
-            this.btnAgregarUtilesAseo.Text = "Agregar Producto\r\nUtiles de Aseo";
-            this.btnAgregarUtilesAseo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAgregarUtilesAseo.UseVisualStyleBackColor = true;
-            this.btnAgregarUtilesAseo.Click += new System.EventHandler(this.btnAgregarUtilesAseo_Click);
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Image = global::pl_Gurkas.Properties.Resources.empleado_update_32;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(779, 14);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(176, 51);
-            this.button4.TabIndex = 197;
-            this.button4.Text = "Actualizar Producto \r\nUtiles de Aseo";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // groupBox21
-            // 
-            this.groupBox21.Controls.Add(this.dtpFechaVecAseo);
-            this.groupBox21.Controls.Add(this.label148);
-            this.groupBox21.Controls.Add(this.dtpFechaFabAseo);
-            this.groupBox21.Controls.Add(this.label162);
-            this.groupBox21.Controls.Add(this.label28);
-            this.groupBox21.Controls.Add(this.label32);
-            this.groupBox21.Controls.Add(this.txtMarcaUtilesAseo);
-            this.groupBox21.Controls.Add(this.txtStockMinAseo);
-            this.groupBox21.Controls.Add(this.label42);
-            this.groupBox21.Controls.Add(this.txtDescripcionAseo);
-            this.groupBox21.Controls.Add(this.label109);
-            this.groupBox21.Controls.Add(this.label59);
-            this.groupBox21.Controls.Add(this.txtStockIniAseo);
-            this.groupBox21.Controls.Add(this.label62);
-            this.groupBox21.Controls.Add(this.cboTipoUnidadAseo);
-            this.groupBox21.Controls.Add(this.label82);
-            this.groupBox21.Controls.Add(this.txtCostoUtilesAseo);
-            this.groupBox21.Controls.Add(this.label90);
-            this.groupBox21.Controls.Add(this.txtStockActualAseo);
-            this.groupBox21.Controls.Add(this.cboEstadoAseo);
-            this.groupBox21.Controls.Add(this.label122);
-            this.groupBox21.Controls.Add(this.txtCodEquipAseo);
-            this.groupBox21.Controls.Add(this.label128);
-            this.groupBox21.Controls.Add(this.txtNombreUtilesAseo);
-            this.groupBox21.Controls.Add(this.label137);
-            this.groupBox21.Location = new System.Drawing.Point(8, 71);
-            this.groupBox21.Name = "groupBox21";
-            this.groupBox21.Size = new System.Drawing.Size(765, 244);
-            this.groupBox21.TabIndex = 194;
-            this.groupBox21.TabStop = false;
-            this.groupBox21.Text = "Datos del Equipo";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(367, 99);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(79, 15);
-            this.label28.TabIndex = 185;
-            this.label28.Text = "Stock Actual :";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(365, 50);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(87, 15);
-            this.label32.TabIndex = 184;
-            this.label32.Text = "Costo Unitario:";
-            // 
-            // txtMarcaUtilesAseo
-            // 
-            this.txtMarcaUtilesAseo.Location = new System.Drawing.Point(132, 71);
-            this.txtMarcaUtilesAseo.Name = "txtMarcaUtilesAseo";
-            this.txtMarcaUtilesAseo.Size = new System.Drawing.Size(213, 20);
-            this.txtMarcaUtilesAseo.TabIndex = 179;
-            // 
-            // txtStockMinAseo
-            // 
-            this.txtStockMinAseo.Location = new System.Drawing.Point(489, 119);
-            this.txtStockMinAseo.Name = "txtStockMinAseo";
-            this.txtStockMinAseo.Size = new System.Drawing.Size(213, 20);
-            this.txtStockMinAseo.TabIndex = 178;
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(364, 125);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(85, 15);
-            this.label42.TabIndex = 177;
-            this.label42.Text = "Stock Minimo:";
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.Location = new System.Drawing.Point(9, 105);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(77, 15);
-            this.label59.TabIndex = 176;
-            this.label59.Text = "Tipo Unidad:";
-            // 
-            // txtStockIniAseo
-            // 
-            this.txtStockIniAseo.Location = new System.Drawing.Point(489, 69);
-            this.txtStockIniAseo.Name = "txtStockIniAseo";
-            this.txtStockIniAseo.Size = new System.Drawing.Size(213, 20);
-            this.txtStockIniAseo.TabIndex = 175;
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label62.Location = new System.Drawing.Point(366, 76);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(78, 15);
-            this.label62.TabIndex = 174;
-            this.label62.Text = "Stock Inicial :";
-            // 
-            // cboTipoUnidadAseo
-            // 
-            this.cboTipoUnidadAseo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboTipoUnidadAseo.FormattingEnabled = true;
-            this.cboTipoUnidadAseo.Location = new System.Drawing.Point(133, 99);
-            this.cboTipoUnidadAseo.Name = "cboTipoUnidadAseo";
-            this.cboTipoUnidadAseo.Size = new System.Drawing.Size(213, 21);
-            this.cboTipoUnidadAseo.TabIndex = 172;
-            // 
-            // label82
-            // 
-            this.label82.AutoSize = true;
-            this.label82.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label82.Location = new System.Drawing.Point(9, 76);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(45, 15);
-            this.label82.TabIndex = 169;
-            this.label82.Text = "Marca:";
-            // 
-            // txtCostoUtilesAseo
-            // 
-            this.txtCostoUtilesAseo.Location = new System.Drawing.Point(489, 44);
-            this.txtCostoUtilesAseo.Name = "txtCostoUtilesAseo";
-            this.txtCostoUtilesAseo.Size = new System.Drawing.Size(213, 20);
-            this.txtCostoUtilesAseo.TabIndex = 167;
-            // 
-            // label90
-            // 
-            this.label90.Location = new System.Drawing.Point(468, 50);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(27, 13);
-            this.label90.TabIndex = 168;
-            this.label90.Text = "S/. ";
-            // 
-            // txtStockActualAseo
-            // 
-            this.txtStockActualAseo.Location = new System.Drawing.Point(489, 94);
-            this.txtStockActualAseo.Name = "txtStockActualAseo";
-            this.txtStockActualAseo.Size = new System.Drawing.Size(213, 20);
-            this.txtStockActualAseo.TabIndex = 165;
-            // 
-            // label109
-            // 
-            this.label109.AutoSize = true;
-            this.label109.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label109.Location = new System.Drawing.Point(367, 155);
-            this.label109.Name = "label109";
-            this.label109.Size = new System.Drawing.Size(78, 15);
-            this.label109.TabIndex = 163;
-            this.label109.Text = "Descripcion :";
-            // 
-            // txtDescripcionAseo
-            // 
-            this.txtDescripcionAseo.Location = new System.Drawing.Point(370, 174);
-            this.txtDescripcionAseo.Multiline = true;
-            this.txtDescripcionAseo.Name = "txtDescripcionAseo";
-            this.txtDescripcionAseo.Size = new System.Drawing.Size(339, 56);
-            this.txtDescripcionAseo.TabIndex = 162;
-            // 
-            // cboEstadoAseo
-            // 
-            this.cboEstadoAseo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboEstadoAseo.FormattingEnabled = true;
-            this.cboEstadoAseo.Location = new System.Drawing.Point(489, 18);
-            this.cboEstadoAseo.Name = "cboEstadoAseo";
-            this.cboEstadoAseo.Size = new System.Drawing.Size(213, 21);
-            this.cboEstadoAseo.TabIndex = 161;
-            // 
-            // label122
-            // 
-            this.label122.AutoSize = true;
-            this.label122.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label122.Location = new System.Drawing.Point(365, 24);
-            this.label122.Name = "label122";
-            this.label122.Size = new System.Drawing.Size(51, 15);
-            this.label122.TabIndex = 160;
-            this.label122.Text = "Estado :";
-            // 
-            // txtCodEquipAseo
-            // 
-            this.txtCodEquipAseo.Location = new System.Drawing.Point(132, 19);
-            this.txtCodEquipAseo.Name = "txtCodEquipAseo";
-            this.txtCodEquipAseo.Size = new System.Drawing.Size(215, 20);
-            this.txtCodEquipAseo.TabIndex = 78;
-            // 
-            // label128
-            // 
-            this.label128.AutoSize = true;
-            this.label128.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label128.Location = new System.Drawing.Point(8, 20);
-            this.label128.Name = "label128";
-            this.label128.Size = new System.Drawing.Size(96, 15);
-            this.label128.TabIndex = 77;
-            this.label128.Text = "Cod. Utiles Aseo";
-            // 
-            // txtNombreUtilesAseo
-            // 
-            this.txtNombreUtilesAseo.Location = new System.Drawing.Point(133, 45);
-            this.txtNombreUtilesAseo.Name = "txtNombreUtilesAseo";
-            this.txtNombreUtilesAseo.Size = new System.Drawing.Size(213, 20);
-            this.txtNombreUtilesAseo.TabIndex = 57;
-            // 
-            // label137
-            // 
-            this.label137.AutoSize = true;
-            this.label137.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label137.Location = new System.Drawing.Point(8, 50);
-            this.label137.Name = "label137";
-            this.label137.Size = new System.Drawing.Size(55, 15);
-            this.label137.TabIndex = 56;
-            this.label137.Text = "Nombre:";
-            // 
-            // groupBox22
-            // 
-            this.groupBox22.Controls.Add(this.txtObservacionAseo);
-            this.groupBox22.Controls.Add(this.label138);
-            this.groupBox22.Controls.Add(this.dtpFechaRegisAseo);
-            this.groupBox22.Controls.Add(this.label141);
-            this.groupBox22.Controls.Add(this.dtpFechaAdAseo);
-            this.groupBox22.Controls.Add(this.label144);
-            this.groupBox22.Location = new System.Drawing.Point(779, 71);
-            this.groupBox22.Name = "groupBox22";
-            this.groupBox22.Size = new System.Drawing.Size(301, 244);
-            this.groupBox22.TabIndex = 195;
-            this.groupBox22.TabStop = false;
-            this.groupBox22.Text = "Datos Adicionales";
-            // 
-            // txtObservacionAseo
-            // 
-            this.txtObservacionAseo.Location = new System.Drawing.Point(26, 131);
-            this.txtObservacionAseo.Multiline = true;
-            this.txtObservacionAseo.Name = "txtObservacionAseo";
-            this.txtObservacionAseo.Size = new System.Drawing.Size(266, 99);
-            this.txtObservacionAseo.TabIndex = 168;
-            // 
-            // label138
-            // 
-            this.label138.AutoSize = true;
-            this.label138.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label138.Location = new System.Drawing.Point(23, 105);
-            this.label138.Name = "label138";
-            this.label138.Size = new System.Drawing.Size(81, 15);
-            this.label138.TabIndex = 169;
-            this.label138.Text = "Observacion :";
-            // 
-            // dtpFechaRegisAseo
-            // 
-            this.dtpFechaRegisAseo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaRegisAseo.Location = new System.Drawing.Point(139, 71);
-            this.dtpFechaRegisAseo.Name = "dtpFechaRegisAseo";
-            this.dtpFechaRegisAseo.Size = new System.Drawing.Size(114, 20);
-            this.dtpFechaRegisAseo.TabIndex = 153;
-            // 
-            // label141
-            // 
-            this.label141.AutoSize = true;
-            this.label141.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label141.Location = new System.Drawing.Point(18, 70);
-            this.label141.Name = "label141";
-            this.label141.Size = new System.Drawing.Size(96, 15);
-            this.label141.TabIndex = 154;
-            this.label141.Text = "Fecha Registro :";
-            // 
-            // dtpFechaAdAseo
-            // 
-            this.dtpFechaAdAseo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaAdAseo.Location = new System.Drawing.Point(139, 32);
-            this.dtpFechaAdAseo.Name = "dtpFechaAdAseo";
-            this.dtpFechaAdAseo.Size = new System.Drawing.Size(114, 20);
-            this.dtpFechaAdAseo.TabIndex = 151;
-            // 
-            // label144
-            // 
-            this.label144.AutoSize = true;
-            this.label144.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label144.Location = new System.Drawing.Point(18, 37);
-            this.label144.Name = "label144";
-            this.label144.Size = new System.Drawing.Size(110, 15);
-            this.label144.TabIndex = 152;
-            this.label144.Text = "Fecha Adquisicion:";
-            // 
-            // dtpFechaVecAseo
-            // 
-            this.dtpFechaVecAseo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaVecAseo.Location = new System.Drawing.Point(133, 170);
-            this.dtpFechaVecAseo.Name = "dtpFechaVecAseo";
-            this.dtpFechaVecAseo.Size = new System.Drawing.Size(114, 20);
-            this.dtpFechaVecAseo.TabIndex = 188;
-            // 
-            // label148
-            // 
-            this.label148.AutoSize = true;
-            this.label148.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label148.Location = new System.Drawing.Point(12, 169);
-            this.label148.Name = "label148";
-            this.label148.Size = new System.Drawing.Size(118, 15);
-            this.label148.TabIndex = 189;
-            this.label148.Text = "Fecha Vencimiento :";
-            // 
-            // dtpFechaFabAseo
-            // 
-            this.dtpFechaFabAseo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaFabAseo.Location = new System.Drawing.Point(133, 131);
-            this.dtpFechaFabAseo.Name = "dtpFechaFabAseo";
-            this.dtpFechaFabAseo.Size = new System.Drawing.Size(114, 20);
-            this.dtpFechaFabAseo.TabIndex = 186;
-            // 
-            // label162
-            // 
-            this.label162.AutoSize = true;
-            this.label162.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label162.Location = new System.Drawing.Point(12, 136);
-            this.label162.Name = "label162";
-            this.label162.Size = new System.Drawing.Size(111, 15);
-            this.label162.TabIndex = 187;
-            this.label162.Text = "Fecha Fabricacion:";
-            // 
             // frmNuevoProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -5698,17 +5699,17 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox20.PerformLayout();
             this.tabPage8.ResumeLayout(false);
             this.tabPage8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            this.groupBox21.ResumeLayout(false);
+            this.groupBox21.PerformLayout();
+            this.groupBox22.ResumeLayout(false);
+            this.groupBox22.PerformLayout();
             this.tabPage9.ResumeLayout(false);
             this.groupBox23.ResumeLayout(false);
             this.groupBox23.PerformLayout();
             this.groupBox24.ResumeLayout(false);
             this.groupBox24.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptcImagenArmamento)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            this.groupBox21.ResumeLayout(false);
-            this.groupBox21.PerformLayout();
-            this.groupBox22.ResumeLayout(false);
-            this.groupBox22.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -6163,7 +6164,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.ComboBox cboUtilesAseoLogistico;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button btnAgregarUtilesAseo;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnActualizarUtilesAseo;
         private System.Windows.Forms.GroupBox groupBox21;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label32;

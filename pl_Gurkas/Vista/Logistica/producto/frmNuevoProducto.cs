@@ -651,6 +651,42 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 MessageBox.Show("No se puede Regristrar el producto" + ex, "Error");
             }
         }
+
+        public void ActualizarUtilesAseo()
+        {
+            try
+            {
+                string cod_sistema = txtCodSistema.Text;
+                string cod_aseo = txtCodEquipAseo.Text;
+                string nombre_aseo = txtNombreUtilesAseo.Text;
+                string marca_aseo = txtMarcaUtilesAseo.Text;
+                int tipo_unidad_aseo = Convert.ToInt32(cboTipoUnidadAseo.SelectedIndex);
+                DateTime f_fabricacion_aseo = dtpFechaFabAseo.Value;
+                DateTime f_vencimiento_aseo = dtpFechaVecAseo.Value;
+                int estado_aseo = cboEstadoAseo.SelectedIndex;
+                decimal precio_unitario_aseo = Convert.ToDecimal(txtCostoUtilesAseo.Text);
+                int stock_inicial_aseo = Convert.ToInt32(txtStockIniAseo.Text);
+                int stock_actual_aseo = Convert.ToInt32(txtStockActualAseo.Text);
+                int stock_minimo_aseo = Convert.ToInt32(txtStockMinAseo.Text);
+                string desp_aseo = txtDescripcionAseo.Text;
+                DateTime f_adquision_aseo = dtpFechaAdAseo.Value;
+                DateTime f_registro_aseo = dtpFechaRegisAseo.Value;
+                string observacion_aseo = txtObservacionAseo.Text;
+
+                logisticaActualizar.ActualizarUtilesAseo(cod_sistema, cod_aseo, nombre_aseo, marca_aseo,
+                             tipo_unidad_aseo, f_fabricacion_aseo, f_vencimiento_aseo, estado_aseo, precio_unitario_aseo,
+                              stock_inicial_aseo,
+                           stock_actual_aseo, stock_minimo_aseo, desp_aseo, f_adquision_aseo, f_registro_aseo,
+                           observacion_aseo);
+                MessageBox.Show("Datos registrado correctamente", "Correcto");
+                LimpiarDatosAseo();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede Regristrar el producto" + ex, "Error");
+            }
+        }
+
         public void AgregarProductoAccesorio()
         {
             try
@@ -861,7 +897,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 int tipo_unidad_aseo = Convert.ToInt32(cboTipoUnidadAseo.SelectedIndex);
                 DateTime f_fabricacion_aseo = dtpFechaFabAseo.Value;
                 DateTime f_vencimiento_aseo = dtpFechaVecAseo.Value;
-                //string categoria_aseo = txtCantidadMobi.Text;
                 int estado_aseo = cboEstadoAseo.SelectedIndex;
                 decimal precio_unitario_aseo = Convert.ToDecimal(txtCostoUtilesAseo.Text);
                 int stock_inicial_aseo = Convert.ToInt32(txtStockIniAseo.Text);
@@ -1794,6 +1829,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
             string cod_aseo = cboUtilesAseoLogistico.SelectedValue.ToString();
             BuscarProductoAseo(cod_aseo);
             btnAgregarUtilesAseo.Enabled = false;
+        }
+
+        private void btnActualizarUtilesAseo_Click(object sender, EventArgs e)
+        {
+            ActualizarUtilesAseo();
         }
     }
 }
