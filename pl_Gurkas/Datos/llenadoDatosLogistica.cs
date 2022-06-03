@@ -716,18 +716,21 @@ namespace pl_Gurkas.Datos
         {
             try
             {
-                SqlCommand cmd = new SqlCommand("SELECT  FROM   ", conexiondbo.conexionBD());
-                SqlDataReader dr = cmd.ExecuteReader();
-                while (dr.Read())
-                {
-                    cd.Items.Add(dr[0].ToString());
-                }
-                cd.Items.Insert(0, "-- Seleccione Un Producto --");
+                SqlCommand cmd = new SqlCommand("select COD_PRODUCTO_MATERIAL,NOMBRE_PRODUCTO from T_MAE_PRODUCTO ", conexiondbo.conexionBD());
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                DataRow fila = dt.NewRow();
+                fila["NOMBRE_PRODUCTO"] = "---Seleccione un Producto---";
+                dt.Rows.InsertAt(fila, 0);
+                cd.ValueMember = "COD_PRODUCTO_MATERIAL";
+                cd.DisplayMember = "NOMBRE_PRODUCTO";
+                cd.DataSource = dt;
                 cd.SelectedIndex = 0;
             }
-            catch (Exception ex)
+            catch (Exception err)
             {
-                MessageBox.Show("No se puede obtener la imformacion del producto \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("No se puede obtener el listado del Empleados \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
