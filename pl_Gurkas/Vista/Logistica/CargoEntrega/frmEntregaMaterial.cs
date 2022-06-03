@@ -72,49 +72,22 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             dgvListaProducto.Columns[4].Name = "Fecha";
 
 
-            DataGridViewButtonColumn btnclm = new DataGridViewButtonColumn();
-            btnclm.HeaderText = "EliminarProducto";
+           DataGridViewButtonColumn btnclm = new DataGridViewButtonColumn();
             btnclm.Name = "Eliminar";
             dgvListaProducto.Columns.Add(btnclm);
-
-            //ADD Image
-            DataGridViewImageColumn Images = new DataGridViewImageColumn();
-            Images.HeaderText = "Image";
-            dgvListaProducto.Columns.Add(Images);
-
-            Image someImage = Properties.Resources.activo_32;
+          /*  Image someImage = Properties.Resources.eliminar_16;
 
             dgvListaProducto.Columns.Add(new DataGridViewImageColumn()
             {
                 Image = someImage,
                 Name = "someName",
-                HeaderText = "Some Text"
-            });
+                HeaderText = "Eliminar" 
+          12:35
+            });*/
 
 
             dgvListaProducto.RowHeadersVisible = false;
             dgvListaProducto.AllowUserToAddRows = false;
-        }
-
-        private void btnBuscar_Click(object sender, EventArgs e)
-        {
-          /*  try
-            {
-                string codEmpleado = cboempleadoActivo.SelectedValue.ToString();
-
-                SqlCommand comando = new SqlCommand("SELECT * FROM T_MAE_PERSONAL WHERE Cod_empleado = '" + codEmpleado + "'", conexion.conexionBD());
-
-                SqlDataReader recorre = comando.ExecuteReader();
-                while (recorre.Read())
-                {
-                    //txtNombrePersonal.Text = recorre["NOMBRE_COMPLETO"].ToString();
-
-                }
-            }
-            catch (Exception err)
-            {
-                MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
-            }*/
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -136,19 +109,19 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
         private void dgvListaProducto_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
         {
-           /* if (e.ColumnIndex >= 0 && this.dgvListaProducto.Columns[e.ColumnIndex].Name == "Eliminar" && e.RowIndex >= 0)
-            {
-                e.Paint(e.CellBounds, DataGridViewPaintParts.All);
+            Image someImage = Properties.Resources.delete_16;
 
-                DataGridViewButtonCell celboton = this.dgvListaProducto.Rows[e.RowIndex].Cells["Eliminar"] as DataGridViewButtonCell;
-                Icon icoAtomico = new Icon(Environment.CurrentDirectory + @"\\icono.ico");
-                e.Graphics.DrawIcon(icoAtomico, e.CellBounds.Left + 15, e.CellBounds.Top + 3);
+           if (e.ColumnIndex >= 0 && this.dgvListaProducto.Columns[e.ColumnIndex].Name == "Eliminar" && e.RowIndex >= 0)
+             {
+                 e.Paint(e.CellBounds, DataGridViewPaintParts.All);
 
-                this.dgvListaProducto.Rows[e.RowIndex].Height = icoAtomico.Height + 10;
-                this.dgvListaProducto.Columns[e.ColumnIndex].Width = icoAtomico.Width + 31;
+                 DataGridViewButtonCell celboton = this.dgvListaProducto.Rows[e.RowIndex].Cells["Eliminar"] as DataGridViewButtonCell;
+                 e.Graphics.DrawImage(someImage, e.CellBounds.Left + 15, e.CellBounds.Top + 3);
+                 this.dgvListaProducto.Rows[e.RowIndex].Height = someImage.Height + 10;
+                 this.dgvListaProducto.Columns[e.ColumnIndex].Width = someImage.Width + 31;
 
-                e.Handled = true;
-            }*/
+                 e.Handled = true;
+             }
         }
 
         private void dgvListaProducto_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -1592,6 +1592,7 @@
   <ItemGroup>
     <Content Include="png %281%29.ico" />
     <Content Include="png iconb.ico" />
+    <None Include="Resources\eliminar_16.png" />
     <None Include="Resources\plataformaplanilla_32.png" />
     <None Include="Resources\plataformaplanilla_16.png" />
     <None Include="Resources\planillas_16.png" />
