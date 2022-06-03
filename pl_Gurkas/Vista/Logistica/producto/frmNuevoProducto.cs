@@ -298,6 +298,40 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
             }
         }
+
+        public void BuscarProductoAseo(string cod_aseo)
+        {
+            try
+            {
+                SqlCommand comando = new SqlCommand("SELECT * FROM v_producto_aseo WHERE COD_PRODUCTO_UTI_ASEO = '" + cod_aseo + "'", conexion.conexionBD());
+                SqlDataReader recorre = comando.ExecuteReader();
+                while (recorre.Read())
+                {
+                    txtCodSistema.Text = recorre["COD_PRODUCTO_SISTEMA"].ToString();
+                    txtCodEquipAseo.Text = recorre["COD_PRODUCTO_UTI_ASEO"].ToString();
+                    txtNombreUtilesAseo.Text = recorre["NOMBRE_UTI_ASEO"].ToString();
+                    txtMarcaUtilesAseo.Text = recorre["MARCA_UTI_ASEO"].ToString();
+                    cboTipoUnidadAseo.SelectedIndex = Convert.ToInt32(recorre["idunidad_producto_UTI_ASEO"].ToString());
+                    dtpFechaFabAseo.Text = (recorre["FECHA_FABRICACION_UTI_ASEO"].ToString());
+                    dtpFechaVecAseo.Text = (recorre["FECHA_VENCIMIENTO_UTI_ASEO"].ToString());
+                    cboEstadoAseo.SelectedIndex = Convert.ToInt32(recorre["ID_ESTADO_MATERIAL_UTIL_ASEO"].ToString());
+                    txtStockIniAseo.Text = (recorre["STOCK_INICIAL_UTI_ASEO"].ToString());
+                    txtCostoUtilesAseo.Text = (recorre["COSTO_UNITARIO_UTI_ASEO"].ToString());
+                    txtStockActualAseo.Text = (recorre["STOCK_ACTUAL_UTI_ASEO"].ToString());
+                    txtStockMinAseo.Text = (recorre["STOCK_MINIMO_UTI_ASEO"].ToString());
+                    txtDescripcionAseo.Text = (recorre["DESCRP_UTI_ASEO"].ToString());
+                    dtpFechaAdAseo.Text = (recorre["FECHA_ADQUISICION_UTI_ASEO"].ToString());
+                    dtpFechaRegisAseo.Text = (recorre["FECHA_REGISTRO_UTI_ASEO"].ToString());
+                    txtObservacionAseo.Text = (recorre["OBSERVACION_UTI_ASEO"].ToString());
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
+            }
+        }
+
+
         public void actualizarDatosCamisas()
         {
             try
@@ -821,29 +855,30 @@ namespace pl_Gurkas.Vista.Logistica.producto
             try
             {
                 string cod_sistema = txtCodSistema.Text;
-                string cod_mobi = txtCodEquipMobi.Text;
-                string nombre_mobi = txtNombreMobi.Text;
-                string marca_mobi = txtMarcaMobi.Text;
-                string modelo_mobi = txtModeloMobi.Text;
-                int tipo_unidad_mobi = cboTipoUnidadMobi.SelectedIndex;
-                string categoria_mobi = txtCantidadMobi.Text;
-                int estado_mobi = cboEstadoMobi.SelectedIndex;
-                decimal precio_unitario_mobi = Convert.ToDecimal(txtPrecioUniMobi.Text);
-                int stock_inicial_mobi = Convert.ToInt32(txtStockIniMobil.Text);
-                int stock_actual_mobi = Convert.ToInt32(txtStockactualMobi.Text);
-                int stock_minimo_mobi = Convert.ToInt32(txtStockMinMobi.Text);
-                string desp_mobi = txtDescripcionMobi.Text;
-                DateTime f_adquision_mobi = dtpFechaAdMobi.Value;
-                DateTime f_registro_mobi = dtpFechaRegisMobi.Value;
-                string observacion_mobi = txtObservacionMobi.Text;
+                string cod_aseo = txtCodEquipAseo.Text;
+                string nombre_aseo = txtNombreUtilesAseo.Text;
+                string marca_aseo = txtMarcaUtilesAseo.Text;
+                int tipo_unidad_aseo = Convert.ToInt32(cboTipoUnidadAseo.SelectedIndex);
+                DateTime f_fabricacion_aseo = dtpFechaFabAseo.Value;
+                DateTime f_vencimiento_aseo = dtpFechaVecAseo.Value;
+                //string categoria_aseo = txtCantidadMobi.Text;
+                int estado_aseo = cboEstadoAseo.SelectedIndex;
+                decimal precio_unitario_aseo = Convert.ToDecimal(txtCostoUtilesAseo.Text);
+                int stock_inicial_aseo = Convert.ToInt32(txtStockIniAseo.Text);
+                int stock_actual_aseo = Convert.ToInt32(txtStockActualAseo.Text);
+                int stock_minimo_aseo = Convert.ToInt32(txtStockMinAseo.Text);
+                string desp_aseo = txtDescripcionAseo.Text;
+                DateTime f_adquision_aseo = dtpFechaAdAseo.Value;
+                DateTime f_registro_aseo = dtpFechaRegisAseo.Value;
+                string observacion_aseo = txtObservacionAseo.Text;
 
-                logisticaInsertar.RegistrarMobiliario(cod_sistema, cod_mobi, nombre_mobi, marca_mobi,
-                             modelo_mobi, tipo_unidad_mobi, categoria_mobi, estado_mobi, precio_unitario_mobi,
-                              stock_inicial_mobi,
-                           stock_actual_mobi, stock_minimo_mobi, desp_mobi, f_adquision_mobi, f_registro_mobi,
-                           observacion_mobi);
-                MessageBox.Show("Datos registrado correptamente", "Correpto");
-                LimpiarDatosMobiliario();
+                logisticaInsertar.RegistrarAseo(cod_sistema, cod_aseo, nombre_aseo, marca_aseo,
+                             tipo_unidad_aseo, f_fabricacion_aseo, f_vencimiento_aseo, estado_aseo, precio_unitario_aseo,
+                              stock_inicial_aseo,
+                           stock_actual_aseo, stock_minimo_aseo, desp_aseo, f_adquision_aseo, f_registro_aseo,
+                           observacion_aseo);
+                MessageBox.Show("Datos registrado correctamente", "Correcto");
+                LimpiarDatosAseo();
             }
             catch (Exception ex)
             {
@@ -1045,6 +1080,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             GenerarCodigoEquipoPersonal();
             GenerarCodigoMobiliario();
             GenerarCodigoVehiculo();
+            GenerarCodigoUtilesAseo();
         }
         public void LimpiarDatosCamisas()
         {
@@ -1136,6 +1172,17 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerVehiculo(cboVehiculo);
             btnAgregarVehiculo.Enabled = true;
         }
+
+        public void LimpiarDatosAseo()
+        {
+            LimpiarDatos.LimpiarGroupBox(groupBox21);
+            txtNombreUtilesAseo.Focus();
+            LimpiarDatos.LimpiarGroupBox(groupBox22);
+            generarCodigos();
+            Llenadocbo.ObtenerUtilesAseo(cboUtilesAseoLogistico);
+            btnAgregarUtilesAseo.Enabled = true;
+        }
+        
         public void GenerarCodigoTecnologico()
         {
             string resultado = "";
@@ -1352,6 +1399,33 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 txtCodEquipMobi.Text = "MOB0" + (numero + 1);
             }
         }
+
+             public void GenerarCodigoUtilesAseo()
+             {
+            string resultado = "";
+            SqlCommand comando = new SqlCommand("select count(ID_PRODUCTO_UTI_ASEO) as 't' from T_MAE_UTI_ASEO ", conexion.conexionBD());
+
+            SqlDataReader recorre = comando.ExecuteReader();
+            while (recorre.Read())
+            {
+                resultado = recorre["t"].ToString();
+            }
+            int numero = Convert.ToInt32(resultado);
+            if (numero < 10)
+            {
+                txtCodEquipAseo.Text = "ACE000" + (numero + 1);
+            }
+            if (numero > 9 && numero < 100)
+            {
+                txtCodEquipAseo.Text = "ACE00" + (numero + 1);
+            }
+            if (numero > 99 && numero < 1000)
+            {
+                txtCodEquipAseo.Text = "ACE0" + (numero + 1);
+            }
+             }
+
+
         public void GenerarCodigoVehiculo()
         {
             string resultado = "";
@@ -1708,6 +1782,18 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void btnAgregarUtilesAseo_Click(object sender, EventArgs e)
         {
             AgregarUtilesAseo();
+        }
+
+        private void btnNuevoAseo_Click(object sender, EventArgs e)
+        {
+            LimpiarDatosAseo();
+        }
+
+        private void btnBuscarUtilesAseo_Click(object sender, EventArgs e)
+        {
+            string cod_aseo = cboUtilesAseoLogistico.SelectedValue.ToString();
+            BuscarProductoAseo(cod_aseo);
+            btnAgregarUtilesAseo.Enabled = false;
         }
     }
 }

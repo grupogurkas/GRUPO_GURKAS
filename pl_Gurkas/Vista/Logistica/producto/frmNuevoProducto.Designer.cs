@@ -474,8 +474,8 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtNombreArma = new System.Windows.Forms.TextBox();
             this.label205 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnNuevoAseo = new System.Windows.Forms.Button();
+            this.btnBuscarUtilesAseo = new System.Windows.Forms.Button();
             this.cboUtilesAseoLogistico = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.btnAgregarUtilesAseo = new System.Windows.Forms.Button();
@@ -483,37 +483,35 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox21 = new System.Windows.Forms.GroupBox();
             this.label28 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtMarcaUtilesAseo = new System.Windows.Forms.TextBox();
+            this.txtStockMinAseo = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtStockIniAseo = new System.Windows.Forms.TextBox();
             this.label62 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.cboTipoUnidadAseo = new System.Windows.Forms.ComboBox();
-            this.label75 = new System.Windows.Forms.Label();
             this.label82 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtCostoUtilesAseo = new System.Windows.Forms.TextBox();
             this.label90 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtStockActualAseo = new System.Windows.Forms.TextBox();
             this.label109 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtDescripcionAseo = new System.Windows.Forms.TextBox();
             this.cboEstadoAseo = new System.Windows.Forms.ComboBox();
             this.label122 = new System.Windows.Forms.Label();
             this.txtCodEquipAseo = new System.Windows.Forms.TextBox();
             this.label128 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtNombreUtilesAseo = new System.Windows.Forms.TextBox();
             this.label137 = new System.Windows.Forms.Label();
             this.groupBox22 = new System.Windows.Forms.GroupBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtObservacionAseo = new System.Windows.Forms.TextBox();
             this.label138 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaRegisAseo = new System.Windows.Forms.DateTimePicker();
             this.label141 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaAdAseo = new System.Windows.Forms.DateTimePicker();
             this.label144 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaVecAseo = new System.Windows.Forms.DateTimePicker();
             this.label148 = new System.Windows.Forms.Label();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaFabAseo = new System.Windows.Forms.DateTimePicker();
             this.label162 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.btcPanel.SuspendLayout();
@@ -4834,8 +4832,8 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // tabPage8
             // 
             this.tabPage8.Controls.Add(this.pictureBox11);
-            this.tabPage8.Controls.Add(this.button1);
-            this.tabPage8.Controls.Add(this.button2);
+            this.tabPage8.Controls.Add(this.btnNuevoAseo);
+            this.tabPage8.Controls.Add(this.btnBuscarUtilesAseo);
             this.tabPage8.Controls.Add(this.cboUtilesAseoLogistico);
             this.tabPage8.Controls.Add(this.label15);
             this.tabPage8.Controls.Add(this.btnAgregarUtilesAseo);
@@ -5215,31 +5213,33 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.pictureBox11.TabIndex = 202;
             this.pictureBox11.TabStop = false;
             // 
-            // button1
+            // btnNuevoAseo
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::pl_Gurkas.Properties.Resources.nuevo_emplado_32;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(961, 14);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 51);
-            this.button1.TabIndex = 198;
-            this.button1.Text = "Nuevo";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnNuevoAseo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevoAseo.Image = global::pl_Gurkas.Properties.Resources.nuevo_emplado_32;
+            this.btnNuevoAseo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevoAseo.Location = new System.Drawing.Point(961, 14);
+            this.btnNuevoAseo.Name = "btnNuevoAseo";
+            this.btnNuevoAseo.Size = new System.Drawing.Size(119, 51);
+            this.btnNuevoAseo.TabIndex = 198;
+            this.btnNuevoAseo.Text = "Nuevo";
+            this.btnNuevoAseo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNuevoAseo.UseVisualStyleBackColor = true;
+            this.btnNuevoAseo.Click += new System.EventHandler(this.btnNuevoAseo_Click);
             // 
-            // button2
+            // btnBuscarUtilesAseo
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(472, 14);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(119, 51);
-            this.button2.TabIndex = 199;
-            this.button2.Text = "Buscar";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnBuscarUtilesAseo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarUtilesAseo.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
+            this.btnBuscarUtilesAseo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscarUtilesAseo.Location = new System.Drawing.Point(472, 14);
+            this.btnBuscarUtilesAseo.Name = "btnBuscarUtilesAseo";
+            this.btnBuscarUtilesAseo.Size = new System.Drawing.Size(119, 51);
+            this.btnBuscarUtilesAseo.TabIndex = 199;
+            this.btnBuscarUtilesAseo.Text = "Buscar";
+            this.btnBuscarUtilesAseo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscarUtilesAseo.UseVisualStyleBackColor = true;
+            this.btnBuscarUtilesAseo.Click += new System.EventHandler(this.btnBuscarUtilesAseo_Click);
             // 
             // cboUtilesAseoLogistico
             // 
@@ -5290,32 +5290,30 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // groupBox21
             // 
-            this.groupBox21.Controls.Add(this.dateTimePicker3);
+            this.groupBox21.Controls.Add(this.dtpFechaVecAseo);
             this.groupBox21.Controls.Add(this.label148);
-            this.groupBox21.Controls.Add(this.dateTimePicker4);
+            this.groupBox21.Controls.Add(this.dtpFechaFabAseo);
             this.groupBox21.Controls.Add(this.label162);
             this.groupBox21.Controls.Add(this.label28);
             this.groupBox21.Controls.Add(this.label32);
-            this.groupBox21.Controls.Add(this.textBox1);
-            this.groupBox21.Controls.Add(this.textBox2);
+            this.groupBox21.Controls.Add(this.txtMarcaUtilesAseo);
+            this.groupBox21.Controls.Add(this.txtStockMinAseo);
             this.groupBox21.Controls.Add(this.label42);
-            this.groupBox21.Controls.Add(this.textBox7);
+            this.groupBox21.Controls.Add(this.txtDescripcionAseo);
             this.groupBox21.Controls.Add(this.label109);
             this.groupBox21.Controls.Add(this.label59);
-            this.groupBox21.Controls.Add(this.textBox3);
+            this.groupBox21.Controls.Add(this.txtStockIniAseo);
             this.groupBox21.Controls.Add(this.label62);
-            this.groupBox21.Controls.Add(this.textBox4);
             this.groupBox21.Controls.Add(this.cboTipoUnidadAseo);
-            this.groupBox21.Controls.Add(this.label75);
             this.groupBox21.Controls.Add(this.label82);
-            this.groupBox21.Controls.Add(this.textBox5);
+            this.groupBox21.Controls.Add(this.txtCostoUtilesAseo);
             this.groupBox21.Controls.Add(this.label90);
-            this.groupBox21.Controls.Add(this.textBox6);
+            this.groupBox21.Controls.Add(this.txtStockActualAseo);
             this.groupBox21.Controls.Add(this.cboEstadoAseo);
             this.groupBox21.Controls.Add(this.label122);
             this.groupBox21.Controls.Add(this.txtCodEquipAseo);
             this.groupBox21.Controls.Add(this.label128);
-            this.groupBox21.Controls.Add(this.textBox9);
+            this.groupBox21.Controls.Add(this.txtNombreUtilesAseo);
             this.groupBox21.Controls.Add(this.label137);
             this.groupBox21.Location = new System.Drawing.Point(8, 71);
             this.groupBox21.Name = "groupBox21";
@@ -5344,19 +5342,19 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label32.TabIndex = 184;
             this.label32.Text = "Costo Unitario:";
             // 
-            // textBox1
+            // txtMarcaUtilesAseo
             // 
-            this.textBox1.Location = new System.Drawing.Point(132, 71);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(213, 20);
-            this.textBox1.TabIndex = 179;
+            this.txtMarcaUtilesAseo.Location = new System.Drawing.Point(132, 71);
+            this.txtMarcaUtilesAseo.Name = "txtMarcaUtilesAseo";
+            this.txtMarcaUtilesAseo.Size = new System.Drawing.Size(213, 20);
+            this.txtMarcaUtilesAseo.TabIndex = 179;
             // 
-            // textBox2
+            // txtStockMinAseo
             // 
-            this.textBox2.Location = new System.Drawing.Point(489, 119);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(213, 20);
-            this.textBox2.TabIndex = 178;
+            this.txtStockMinAseo.Location = new System.Drawing.Point(489, 119);
+            this.txtStockMinAseo.Name = "txtStockMinAseo";
+            this.txtStockMinAseo.Size = new System.Drawing.Size(213, 20);
+            this.txtStockMinAseo.TabIndex = 178;
             // 
             // label42
             // 
@@ -5372,18 +5370,18 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.label59.AutoSize = true;
             this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.Location = new System.Drawing.Point(9, 129);
+            this.label59.Location = new System.Drawing.Point(9, 105);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(77, 15);
             this.label59.TabIndex = 176;
             this.label59.Text = "Tipo Unidad:";
             // 
-            // textBox3
+            // txtStockIniAseo
             // 
-            this.textBox3.Location = new System.Drawing.Point(489, 69);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(213, 20);
-            this.textBox3.TabIndex = 175;
+            this.txtStockIniAseo.Location = new System.Drawing.Point(489, 69);
+            this.txtStockIniAseo.Name = "txtStockIniAseo";
+            this.txtStockIniAseo.Size = new System.Drawing.Size(213, 20);
+            this.txtStockIniAseo.TabIndex = 175;
             // 
             // label62
             // 
@@ -5395,31 +5393,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label62.TabIndex = 174;
             this.label62.Text = "Stock Inicial :";
             // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(133, 97);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(213, 20);
-            this.textBox4.TabIndex = 173;
-            // 
             // cboTipoUnidadAseo
             // 
             this.cboTipoUnidadAseo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipoUnidadAseo.FormattingEnabled = true;
-            this.cboTipoUnidadAseo.Location = new System.Drawing.Point(133, 123);
+            this.cboTipoUnidadAseo.Location = new System.Drawing.Point(133, 99);
             this.cboTipoUnidadAseo.Name = "cboTipoUnidadAseo";
             this.cboTipoUnidadAseo.Size = new System.Drawing.Size(213, 21);
             this.cboTipoUnidadAseo.TabIndex = 172;
-            // 
-            // label75
-            // 
-            this.label75.AutoSize = true;
-            this.label75.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label75.Location = new System.Drawing.Point(8, 102);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(52, 15);
-            this.label75.TabIndex = 171;
-            this.label75.Text = "Modelo:";
             // 
             // label82
             // 
@@ -5431,12 +5412,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label82.TabIndex = 169;
             this.label82.Text = "Marca:";
             // 
-            // textBox5
+            // txtCostoUtilesAseo
             // 
-            this.textBox5.Location = new System.Drawing.Point(489, 44);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(213, 20);
-            this.textBox5.TabIndex = 167;
+            this.txtCostoUtilesAseo.Location = new System.Drawing.Point(489, 44);
+            this.txtCostoUtilesAseo.Name = "txtCostoUtilesAseo";
+            this.txtCostoUtilesAseo.Size = new System.Drawing.Size(213, 20);
+            this.txtCostoUtilesAseo.TabIndex = 167;
             // 
             // label90
             // 
@@ -5446,12 +5427,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label90.TabIndex = 168;
             this.label90.Text = "S/. ";
             // 
-            // textBox6
+            // txtStockActualAseo
             // 
-            this.textBox6.Location = new System.Drawing.Point(489, 94);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(213, 20);
-            this.textBox6.TabIndex = 165;
+            this.txtStockActualAseo.Location = new System.Drawing.Point(489, 94);
+            this.txtStockActualAseo.Name = "txtStockActualAseo";
+            this.txtStockActualAseo.Size = new System.Drawing.Size(213, 20);
+            this.txtStockActualAseo.TabIndex = 165;
             // 
             // label109
             // 
@@ -5463,13 +5444,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label109.TabIndex = 163;
             this.label109.Text = "Descripcion :";
             // 
-            // textBox7
+            // txtDescripcionAseo
             // 
-            this.textBox7.Location = new System.Drawing.Point(370, 174);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(339, 56);
-            this.textBox7.TabIndex = 162;
+            this.txtDescripcionAseo.Location = new System.Drawing.Point(370, 174);
+            this.txtDescripcionAseo.Multiline = true;
+            this.txtDescripcionAseo.Name = "txtDescripcionAseo";
+            this.txtDescripcionAseo.Size = new System.Drawing.Size(339, 56);
+            this.txtDescripcionAseo.TabIndex = 162;
             // 
             // cboEstadoAseo
             // 
@@ -5507,12 +5488,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label128.TabIndex = 77;
             this.label128.Text = "Cod. Utiles Aseo";
             // 
-            // textBox9
+            // txtNombreUtilesAseo
             // 
-            this.textBox9.Location = new System.Drawing.Point(133, 45);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(213, 20);
-            this.textBox9.TabIndex = 57;
+            this.txtNombreUtilesAseo.Location = new System.Drawing.Point(133, 45);
+            this.txtNombreUtilesAseo.Name = "txtNombreUtilesAseo";
+            this.txtNombreUtilesAseo.Size = new System.Drawing.Size(213, 20);
+            this.txtNombreUtilesAseo.TabIndex = 57;
             // 
             // label137
             // 
@@ -5526,11 +5507,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // groupBox22
             // 
-            this.groupBox22.Controls.Add(this.textBox10);
+            this.groupBox22.Controls.Add(this.txtObservacionAseo);
             this.groupBox22.Controls.Add(this.label138);
-            this.groupBox22.Controls.Add(this.dateTimePicker1);
+            this.groupBox22.Controls.Add(this.dtpFechaRegisAseo);
             this.groupBox22.Controls.Add(this.label141);
-            this.groupBox22.Controls.Add(this.dateTimePicker2);
+            this.groupBox22.Controls.Add(this.dtpFechaAdAseo);
             this.groupBox22.Controls.Add(this.label144);
             this.groupBox22.Location = new System.Drawing.Point(779, 71);
             this.groupBox22.Name = "groupBox22";
@@ -5539,13 +5520,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox22.TabStop = false;
             this.groupBox22.Text = "Datos Adicionales";
             // 
-            // textBox10
+            // txtObservacionAseo
             // 
-            this.textBox10.Location = new System.Drawing.Point(26, 131);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(266, 99);
-            this.textBox10.TabIndex = 168;
+            this.txtObservacionAseo.Location = new System.Drawing.Point(26, 131);
+            this.txtObservacionAseo.Multiline = true;
+            this.txtObservacionAseo.Name = "txtObservacionAseo";
+            this.txtObservacionAseo.Size = new System.Drawing.Size(266, 99);
+            this.txtObservacionAseo.TabIndex = 168;
             // 
             // label138
             // 
@@ -5557,13 +5538,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label138.TabIndex = 169;
             this.label138.Text = "Observacion :";
             // 
-            // dateTimePicker1
+            // dtpFechaRegisAseo
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(139, 71);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(114, 20);
-            this.dateTimePicker1.TabIndex = 153;
+            this.dtpFechaRegisAseo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaRegisAseo.Location = new System.Drawing.Point(139, 71);
+            this.dtpFechaRegisAseo.Name = "dtpFechaRegisAseo";
+            this.dtpFechaRegisAseo.Size = new System.Drawing.Size(114, 20);
+            this.dtpFechaRegisAseo.TabIndex = 153;
             // 
             // label141
             // 
@@ -5575,13 +5556,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label141.TabIndex = 154;
             this.label141.Text = "Fecha Registro :";
             // 
-            // dateTimePicker2
+            // dtpFechaAdAseo
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(139, 32);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(114, 20);
-            this.dateTimePicker2.TabIndex = 151;
+            this.dtpFechaAdAseo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaAdAseo.Location = new System.Drawing.Point(139, 32);
+            this.dtpFechaAdAseo.Name = "dtpFechaAdAseo";
+            this.dtpFechaAdAseo.Size = new System.Drawing.Size(114, 20);
+            this.dtpFechaAdAseo.TabIndex = 151;
             // 
             // label144
             // 
@@ -5593,37 +5574,37 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label144.TabIndex = 152;
             this.label144.Text = "Fecha Adquisicion:";
             // 
-            // dateTimePicker3
+            // dtpFechaVecAseo
             // 
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker3.Location = new System.Drawing.Point(133, 194);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(114, 20);
-            this.dateTimePicker3.TabIndex = 188;
+            this.dtpFechaVecAseo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaVecAseo.Location = new System.Drawing.Point(133, 170);
+            this.dtpFechaVecAseo.Name = "dtpFechaVecAseo";
+            this.dtpFechaVecAseo.Size = new System.Drawing.Size(114, 20);
+            this.dtpFechaVecAseo.TabIndex = 188;
             // 
             // label148
             // 
             this.label148.AutoSize = true;
             this.label148.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label148.Location = new System.Drawing.Point(12, 193);
+            this.label148.Location = new System.Drawing.Point(12, 169);
             this.label148.Name = "label148";
             this.label148.Size = new System.Drawing.Size(118, 15);
             this.label148.TabIndex = 189;
             this.label148.Text = "Fecha Vencimiento :";
             // 
-            // dateTimePicker4
+            // dtpFechaFabAseo
             // 
-            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker4.Location = new System.Drawing.Point(133, 155);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(114, 20);
-            this.dateTimePicker4.TabIndex = 186;
+            this.dtpFechaFabAseo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaFabAseo.Location = new System.Drawing.Point(133, 131);
+            this.dtpFechaFabAseo.Name = "dtpFechaFabAseo";
+            this.dtpFechaFabAseo.Size = new System.Drawing.Size(114, 20);
+            this.dtpFechaFabAseo.TabIndex = 186;
             // 
             // label162
             // 
             this.label162.AutoSize = true;
             this.label162.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label162.Location = new System.Drawing.Point(12, 160);
+            this.label162.Location = new System.Drawing.Point(12, 136);
             this.label162.Name = "label162";
             this.label162.Size = new System.Drawing.Size(111, 15);
             this.label162.TabIndex = 187;
@@ -6177,8 +6158,8 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.TextBox txtaniovehiculo;
         private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnNuevoAseo;
+        private System.Windows.Forms.Button btnBuscarUtilesAseo;
         private System.Windows.Forms.ComboBox cboUtilesAseoLogistico;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button btnAgregarUtilesAseo;
@@ -6186,37 +6167,35 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.GroupBox groupBox21;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtMarcaUtilesAseo;
+        private System.Windows.Forms.TextBox txtStockMinAseo;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtStockIniAseo;
         private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.ComboBox cboTipoUnidadAseo;
-        private System.Windows.Forms.Label label75;
         private System.Windows.Forms.Label label82;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtCostoUtilesAseo;
         private System.Windows.Forms.Label label90;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtStockActualAseo;
         private System.Windows.Forms.Label label109;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtDescripcionAseo;
         private System.Windows.Forms.ComboBox cboEstadoAseo;
         private System.Windows.Forms.Label label122;
         private System.Windows.Forms.TextBox txtCodEquipAseo;
         private System.Windows.Forms.Label label128;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtNombreUtilesAseo;
         private System.Windows.Forms.Label label137;
         private System.Windows.Forms.GroupBox groupBox22;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtObservacionAseo;
         private System.Windows.Forms.Label label138;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpFechaRegisAseo;
         private System.Windows.Forms.Label label141;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpFechaAdAseo;
         private System.Windows.Forms.Label label144;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.DateTimePicker dtpFechaVecAseo;
         private System.Windows.Forms.Label label148;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
+        private System.Windows.Forms.DateTimePicker dtpFechaFabAseo;
         private System.Windows.Forms.Label label162;
     }
 }
