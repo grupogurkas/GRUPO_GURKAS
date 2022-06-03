@@ -77,10 +77,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             btnclm.Name = "Eliminar";
             dgvListaProducto.Columns.Add(btnclm);
 
-            //ADD Image
-            DataGridViewImageColumn Images = new DataGridViewImageColumn();
-            Images.HeaderText = "Image";
-            dgvListaProducto.Columns.Add(Images);
 
             Image someImage = Properties.Resources.activo_32;
 
@@ -88,7 +84,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             {
                 Image = someImage,
                 Name = "someName",
-                HeaderText = "Some Text"
+                HeaderText = "Eliminar"
             });
 
 
