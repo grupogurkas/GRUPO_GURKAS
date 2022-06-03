@@ -22,8 +22,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
         private Timer ti;
 
-
-
         public frmEntregaMaterial()
         {
             ti = new Timer();
@@ -75,6 +73,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
 
             DataGridViewButtonColumn btnclm = new DataGridViewButtonColumn();
+            btnclm.HeaderText = "EliminarProducto";
             btnclm.Name = "Eliminar";
             dgvListaProducto.Columns.Add(btnclm);
 
@@ -82,7 +81,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            try
+          /*  try
             {
                 string codEmpleado = cboempleadoActivo.SelectedValue.ToString();
 
@@ -98,7 +97,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             catch (Exception err)
             {
                 MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
-            }
+            }*/
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -120,7 +119,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
         private void dgvListaProducto_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
         {
-            if (e.ColumnIndex >= 0 && this.dgvListaProducto.Columns[e.ColumnIndex].Name == "Eliminar" && e.RowIndex >= 0)
+          /*  if (e.ColumnIndex >= 0 && this.dgvListaProducto.Columns[e.ColumnIndex].Name == "Eliminar" && e.RowIndex >= 0)
             {
                 e.Paint(e.CellBounds, DataGridViewPaintParts.All);
 
@@ -133,7 +132,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
                 e.Handled = true;
 
-            }
+            }*/
         }
 
         private void dgvListaProducto_CellContentClick(object sender, DataGridViewCellEventArgs e)
