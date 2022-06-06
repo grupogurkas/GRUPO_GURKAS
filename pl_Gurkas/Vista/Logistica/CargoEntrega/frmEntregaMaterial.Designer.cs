@@ -40,7 +40,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.cboEstadoMaterial = new System.Windows.Forms.ComboBox();
             this.btnCertificadoBasc = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtInformacionAdicional = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.txtCantidadTecno = new System.Windows.Forms.TextBox();
@@ -138,7 +138,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.groupBox2.Controls.Add(this.cboEstadoMaterial);
             this.groupBox2.Controls.Add(this.btnCertificadoBasc);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.txtInformacionAdicional);
             this.groupBox2.Controls.Add(this.btnAgregar);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.txtCantidadTecno);
@@ -204,13 +204,13 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.label1.Text = "Producto \r\nSe Entrega\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox3
+            // txtInformacionAdicional
             // 
-            this.textBox3.Location = new System.Drawing.Point(6, 114);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(491, 70);
-            this.textBox3.TabIndex = 218;
+            this.txtInformacionAdicional.Location = new System.Drawing.Point(6, 114);
+            this.txtInformacionAdicional.Multiline = true;
+            this.txtInformacionAdicional.Name = "txtInformacionAdicional";
+            this.txtInformacionAdicional.Size = new System.Drawing.Size(491, 70);
+            this.txtInformacionAdicional.TabIndex = 218;
             // 
             // btnAgregar
             // 
@@ -224,6 +224,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.btnAgregar.Text = "Agregar Producto";
             this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // label14
             // 
@@ -522,7 +523,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvListaProducto;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtInformacionAdicional;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox txtCantidadTecno;
         private System.Windows.Forms.Label label142;

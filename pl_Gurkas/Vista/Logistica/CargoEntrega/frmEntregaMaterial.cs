@@ -21,7 +21,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
         Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
         private Timer ti;
-
+        private DataTable dt;
         public frmEntregaMaterial()
         {
             ti = new Timer();
@@ -52,33 +52,19 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             Llenadocbo.ObtenerUnidadRRHH(cboUnidad);
             Llenadocbo.ObtenerEmpresaRRHH_2(cboEmpresa);
 
-            //cargarGrid();
-
-
-
-            //dataGridView1.Columns[5].Name = "ID";
-            //dataGridView1.Columns[6].Name = "ID";
-            dgvListaProducto.ColumnCount = 5;
-
-            ArrayList AL = new ArrayList();
-            AL.Add("1");
-            AL.Add("Laptop Core I3");
-            AL.Add("HP");
-            AL.Add("1");
-            AL.Add("10/10/2022");
-            dgvListaProducto.Rows.Add(AL.ToArray());
-
-
-            dgvListaProducto.Columns[0].Name = "ID";
-            dgvListaProducto.Columns[1].Name = "Nombre";
-            dgvListaProducto.Columns[2].Name = "Marca";
-            dgvListaProducto.Columns[3].Name = "Cantidad";
-            dgvListaProducto.Columns[4].Name = "Fecha";
-
-
-           DataGridViewButtonColumn btnclm = new DataGridViewButtonColumn();
+            DataGridViewButtonColumn btnclm = new DataGridViewButtonColumn();
             btnclm.Name = "Eliminar";
             dgvListaProducto.Columns.Add(btnclm);
+
+
+            dt = new DataTable();
+            dt.Columns.Add("ID");
+            dt.Columns.Add("CodProducto");
+            dt.Columns.Add("Nombre");
+            dt.Columns.Add("CondicionEntrega");
+            dt.Columns.Add("ImformacionAdicional");
+            dt.Columns.Add("Cantidad");
+            dgvListaProducto.DataSource = dt;
 
             dgvListaProducto.RowHeadersVisible = false;
             dgvListaProducto.AllowUserToAddRows = false;
@@ -120,7 +106,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
         private void dgvListaProducto_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (this.dgvListaProducto.Columns[e.ColumnIndex].DisplayIndex == 5)
+            if (this.dgvListaProducto.Columns[e.ColumnIndex].DisplayIndex == 0)
             {
                 dgvListaProducto.Rows.Remove(dgvListaProducto.CurrentRow);
             }
@@ -132,6 +118,25 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                 string cod_unidad = cboUnidad.SelectedValue.ToString();
                 Llenadocbo.ObtenerSedeLogistica(cboSede, cod_unidad);
             }
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+        
+            string cod_producto = cboProducto.SelectedValue.ToString();
+            string nombre_producto = cboProducto.GetItemText(cboProducto.SelectedItem);
+            string cantidad = txtCantidadTecno.Text;
+            string imfor_adicional = txtInformacionAdicional.Text;
+            string Condicion_Entrega = cboEstadoMaterial.GetItemText(cboEstadoMaterial.SelectedItem);
+
+            DataRow row = dt.NewRow();
+             row["ID"] = "1";
+             row["CodProducto"] = cod_producto;
+             row["Nombre"] = nombre_producto;
+             row["CondicionEntrega"] = Condicion_Entrega;
+             row["ImformacionAdicional"] = imfor_adicional;
+             row["Cantidad"] = cantidad;
+             dt.Rows.Add(row);
         }
     }
 }
