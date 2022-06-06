@@ -71,7 +71,7 @@ namespace pl_Gurkas.Vista.Logistica.entrada
 
         private void frmEntradaProducto_Load(object sender, EventArgs e)
         {
-            Llenadocbo.ObtenerTipoPuesto(cboTipoPuesto);
+            /*Llenadocbo.ObtenerTipoPuesto(cboTipoPuesto);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoMaterial);
             Llenadocbo.ObtenerPersonalRRHH(cboempleadoActivo);
             Llenadocbo.ObtenerArea(cboAreaLaboral);
@@ -106,7 +106,7 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             DataGridViewButtonColumn btnclm = new DataGridViewButtonColumn();
             btnclm.Name = "Eliminar";
             dgvListaProducto.Columns.Add(btnclm);
-
+            */
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -137,10 +137,10 @@ namespace pl_Gurkas.Vista.Logistica.entrada
 
         private void dgvListaProducto_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(this.dgvListaProducto.Columns[e.ColumnIndex].DisplayIndex == 5)
+           /* if(this.dgvListaProducto.Columns[e.ColumnIndex].DisplayIndex == 5)
             {
                 dgvListaProducto.Rows.Remove(dgvListaProducto.CurrentRow);
-            }
+            }*/
         }
 
         private void dgvListaProducto_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
@@ -168,12 +168,12 @@ namespace pl_Gurkas.Vista.Logistica.entrada
 
         private void cboUnidad_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cboUnidad.SelectedValue.ToString() != null)
+           /* if (cboUnidad.SelectedValue.ToString() != null)
             {
                 string cod_unidad = cboUnidad.SelectedValue.ToString();
                 Llenadocbo.ObtenerSedeLogistica(cboSede, cod_unidad);
 
-            }
+            }*/
         }
     }
 }

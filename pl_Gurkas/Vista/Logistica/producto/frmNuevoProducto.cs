@@ -1607,7 +1607,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             txtCodEquipMobi.Enabled = false;
             txtCodVehiculo.Enabled = false;
             txtCodEquipAseo.Enabled = false;
-            txtCodEquipArma.Enabled = false;
+            txtCodEquipArmamento.Enabled = false;
         }
         private void frmNuevoProducto_Load(object sender, EventArgs e)
         {
