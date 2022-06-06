@@ -29,6 +29,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEntregaMaterial));
             this.btnNuevo = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.cboempleadoActivo = new System.Windows.Forms.ComboBox();
@@ -46,6 +47,10 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.txtCantidadTecno = new System.Windows.Forms.TextBox();
             this.label142 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cboTipoPuesto = new System.Windows.Forms.ComboBox();
+            this.cboAreaLaboral = new System.Windows.Forms.ComboBox();
+            this.cboUnidad = new System.Windows.Forms.ComboBox();
+            this.cboSede = new System.Windows.Forms.ComboBox();
             this.cboEmpresa = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
@@ -62,10 +67,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.label5 = new System.Windows.Forms.Label();
             this.txtUsuarioEntrega = new System.Windows.Forms.TextBox();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.cboSede = new System.Windows.Forms.ComboBox();
-            this.cboUnidad = new System.Windows.Forms.ComboBox();
-            this.cboAreaLaboral = new System.Windows.Forms.ComboBox();
-            this.cboTipoPuesto = new System.Windows.Forms.ComboBox();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -191,6 +194,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.btnCertificadoBasc.Text = "Imprimir";
             this.btnCertificadoBasc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCertificadoBasc.UseVisualStyleBackColor = true;
+            this.btnCertificadoBasc.Click += new System.EventHandler(this.btnCertificadoBasc_Click);
             // 
             // label1
             // 
@@ -274,6 +278,47 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.groupBox1.TabIndex = 211;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Generales:";
+            // 
+            // cboTipoPuesto
+            // 
+            this.cboTipoPuesto.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboTipoPuesto.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboTipoPuesto.FormattingEnabled = true;
+            this.cboTipoPuesto.Location = new System.Drawing.Point(104, 26);
+            this.cboTipoPuesto.Name = "cboTipoPuesto";
+            this.cboTipoPuesto.Size = new System.Drawing.Size(246, 21);
+            this.cboTipoPuesto.TabIndex = 229;
+            // 
+            // cboAreaLaboral
+            // 
+            this.cboAreaLaboral.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboAreaLaboral.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboAreaLaboral.FormattingEnabled = true;
+            this.cboAreaLaboral.Location = new System.Drawing.Point(104, 54);
+            this.cboAreaLaboral.Name = "cboAreaLaboral";
+            this.cboAreaLaboral.Size = new System.Drawing.Size(246, 21);
+            this.cboAreaLaboral.TabIndex = 228;
+            // 
+            // cboUnidad
+            // 
+            this.cboUnidad.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboUnidad.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboUnidad.FormattingEnabled = true;
+            this.cboUnidad.Location = new System.Drawing.Point(104, 113);
+            this.cboUnidad.Name = "cboUnidad";
+            this.cboUnidad.Size = new System.Drawing.Size(246, 21);
+            this.cboUnidad.TabIndex = 227;
+            this.cboUnidad.SelectedIndexChanged += new System.EventHandler(this.cboUnidad_SelectedIndexChanged_1);
+            // 
+            // cboSede
+            // 
+            this.cboSede.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboSede.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboSede.FormattingEnabled = true;
+            this.cboSede.Location = new System.Drawing.Point(104, 140);
+            this.cboSede.Name = "cboSede";
+            this.cboSede.Size = new System.Drawing.Size(246, 21);
+            this.cboSede.TabIndex = 226;
             // 
             // cboEmpresa
             // 
@@ -432,46 +477,20 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // cboSede
+            // printDocument1
             // 
-            this.cboSede.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cboSede.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cboSede.FormattingEnabled = true;
-            this.cboSede.Location = new System.Drawing.Point(104, 140);
-            this.cboSede.Name = "cboSede";
-            this.cboSede.Size = new System.Drawing.Size(246, 21);
-            this.cboSede.TabIndex = 226;
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
-            // cboUnidad
+            // printPreviewDialog1
             // 
-            this.cboUnidad.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cboUnidad.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cboUnidad.FormattingEnabled = true;
-            this.cboUnidad.Location = new System.Drawing.Point(104, 113);
-            this.cboUnidad.Name = "cboUnidad";
-            this.cboUnidad.Size = new System.Drawing.Size(246, 21);
-            this.cboUnidad.TabIndex = 227;
-            this.cboUnidad.SelectedIndexChanged += new System.EventHandler(this.cboUnidad_SelectedIndexChanged_1);
-            // 
-            // cboAreaLaboral
-            // 
-            this.cboAreaLaboral.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cboAreaLaboral.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cboAreaLaboral.FormattingEnabled = true;
-            this.cboAreaLaboral.Location = new System.Drawing.Point(104, 54);
-            this.cboAreaLaboral.Name = "cboAreaLaboral";
-            this.cboAreaLaboral.Size = new System.Drawing.Size(246, 21);
-            this.cboAreaLaboral.TabIndex = 228;
-            // 
-            // cboTipoPuesto
-            // 
-            this.cboTipoPuesto.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cboTipoPuesto.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cboTipoPuesto.FormattingEnabled = true;
-            this.cboTipoPuesto.Location = new System.Drawing.Point(104, 26);
-            this.cboTipoPuesto.Name = "cboTipoPuesto";
-            this.cboTipoPuesto.Size = new System.Drawing.Size(246, 21);
-            this.cboTipoPuesto.TabIndex = 229;
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Document = this.printDocument1;
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
             // 
             // frmEntregaMaterial
             // 
@@ -545,5 +564,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private System.Windows.Forms.ComboBox cboSede;
         private System.Windows.Forms.ComboBox cboTipoPuesto;
         private System.Windows.Forms.ComboBox cboAreaLaboral;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
     }
 }

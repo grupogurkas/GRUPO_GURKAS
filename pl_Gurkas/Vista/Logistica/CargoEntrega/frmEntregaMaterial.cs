@@ -22,6 +22,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
         private Timer ti;
         private DataTable dt;
+        int i = 0;
         public frmEntregaMaterial()
         {
             ti = new Timer();
@@ -52,9 +53,9 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             Llenadocbo.ObtenerUnidadRRHH(cboUnidad);
             Llenadocbo.ObtenerEmpresaRRHH_2(cboEmpresa);
 
-            DataGridViewButtonColumn btnclm = new DataGridViewButtonColumn();
+         /*   DataGridViewButtonColumn btnclm = new DataGridViewButtonColumn();
             btnclm.Name = "Eliminar";
-            dgvListaProducto.Columns.Add(btnclm);
+            dgvListaProducto.Columns.Add(btnclm);*/
 
 
             dt = new DataTable();
@@ -131,13 +132,124 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             int n = dgvListaProducto.Rows.Count;
             string c = Convert.ToString(n + 1);
             DataRow row = dt.NewRow();
-             row["ID"] = c;
-             row["CodProducto"] = cod_producto;
-             row["Nombre"] = nombre_producto;
-             row["CondicionEntrega"] = Condicion_Entrega;
-             row["ImformacionAdicional"] = imfor_adicional;
-             row["Cantidad"] = cantidad;
-             dt.Rows.Add(row);
+            row["ID"] = c;
+            row["CodProducto"] = cod_producto;
+            row["Nombre"] = nombre_producto;
+            row["CondicionEntrega"] = Condicion_Entrega;
+            row["ImformacionAdicional"] = imfor_adicional;
+            row["Cantidad"] = cantidad;
+            dt.Rows.Add(row);
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            Image cabezera = Properties.Resources.ENTREGA_CABEZERA_3;
+            Image pie_pagina = Properties.Resources.fimar;
+
+            string TIPO_PERSONAL = cboTipoPuesto.GetItemText(cboTipoPuesto.SelectedItem);
+            string AREA_ENTREGA = cboAreaLaboral.GetItemText(cboAreaLaboral.SelectedItem);
+            string EMPRESA = cboEmpresa.GetItemText(cboEmpresa.SelectedItem);
+            string UNIDAD = cboUnidad.GetItemText(cboUnidad.SelectedItem);
+            string SEDE = cboSede.GetItemText(cboSede.SelectedItem);
+
+            Font tipoTexto = new Font("Arial", 10, FontStyle.Bold);
+            e.Graphics.DrawImage(cabezera, 30, 20);
+
+            e.Graphics.DrawString("TIPO DE PERSONAL : ", tipoTexto, Brushes.Black, 50, 160);
+            e.Graphics.DrawString(TIPO_PERSONAL, tipoTexto, Brushes.Black, 200, 160);
+
+            e.Graphics.DrawString("AREA DE ENTREGA : ", tipoTexto, Brushes.Black, 50, 190);
+            e.Graphics.DrawString(AREA_ENTREGA, tipoTexto, Brushes.Black, 200, 190);
+
+            e.Graphics.DrawString("EMPRESA : ", tipoTexto, Brushes.Black, 50, 220);
+            e.Graphics.DrawString(EMPRESA, tipoTexto, Brushes.Black, 200, 220);
+
+            e.Graphics.DrawString("UNIDA : ", tipoTexto, Brushes.Black, 50, 250);
+            e.Graphics.DrawString(UNIDAD, tipoTexto, Brushes.Black, 200, 250);
+
+            e.Graphics.DrawString("SEDE : ", tipoTexto, Brushes.Black, 50, 280);
+            e.Graphics.DrawString(SEDE, tipoTexto, Brushes.Black, 200, 280);
+       
+            e.Graphics.DrawImage(pie_pagina, 100, 1000);
+
+
+            int width = 0;
+            int height = 0;
+            int x = 0;
+            int y = 0;
+            int rowheight = 0;
+            int columnwidth = 0;
+
+            //region Draw Column 1 
+            StringFormat str = new StringFormat();
+            str.Alignment = StringAlignment.Near;
+            str.LineAlignment = StringAlignment.Center;
+            str.Trimming = StringTrimming.EllipsisCharacter;
+
+            e.Graphics.FillRectangle(Brushes.LightGray, 
+                new Rectangle(100, 100, dgvListaProducto.Columns[0].Width, dgvListaProducto.Rows[0].Height));
+            e.Graphics.DrawRectangle(Pens.Black, 100, 100, dgvListaProducto.Columns[0].Width, dgvListaProducto.Rows[0].Height);
+            e.Graphics.DrawString(dgvListaProducto.Columns[0].HeaderText, dgvListaProducto.Font, Brushes.Black,
+                new RectangleF(100, 100, dgvListaProducto.Columns[0].Width, dgvListaProducto.Rows[0].Height), str);
+
+            //region Draw Column 2 /* https://www.c-sharpcorner.com/article/how-to-print-grid-view-c-sharp-more-pages-basic-curd-application-ms-access-database/ */
+            e.Graphics.FillRectangle(Brushes.LightGray, new Rectangle(100 + dgvListaProducto.Columns[0].Width, 100, dgvListaProducto.Columns[0].Width, dgvListaProducto.Rows[0].Height));
+            e.Graphics.DrawRectangle(Pens.Black, 100 + dgvListaProducto.Columns[0].Width, 100, dgvListaProducto.Columns[0].Width, dgvListaProducto.Rows[0].Height);
+            e.Graphics.DrawString(dgvListaProducto.Columns[1].HeaderText, dgvListaProducto.Font, Brushes.Black, new RectangleF(100 + dgvListaProducto.Columns[0].Width, 100, dgvListaProducto.Columns[0].Width, dgvListaProducto.Rows[0].Height), str);
+
+
+            //region Draw Column 3  /* https://www.codeproject.com/Articles/43569/Printing-a-datagridview-in-C-NET-2-0 */
+            e.Graphics.FillRectangle(Brushes.LightGray, new Rectangle(100 + dgvListaProducto.Columns[0].Width, 100, dgvListaProducto.Columns[0].Width, dgvListaProducto.Rows[0].Height));
+            e.Graphics.DrawRectangle(Pens.Black, 100 + dgvListaProducto.Columns[0].Width, 
+                100, dgvListaProducto.Columns[0].Width, dgvListaProducto.Rows[0].Height);
+            e.Graphics.DrawString(dgvListaProducto.Columns[2].HeaderText, 
+                dgvListaProducto.Font, Brushes.Black,
+                new RectangleF(100 + dgvListaProducto.Columns[0].Width, 100, dgvListaProducto.Columns[0].Width, 
+                dgvListaProducto.Rows[0].Height), str);
+
+
+            width = 100 + dgvListaProducto.Columns[0].Width;
+            height = 100;
+            while (i < dgvListaProducto.Rows.Count)
+            {
+                if (height > e.MarginBounds.Height)
+                {
+                    height = 100;
+                    width = 100;
+                    e.HasMorePages = true;
+                    return;
+                }
+
+                height += dgvListaProducto.Rows[i].Height;
+                e.Graphics.DrawRectangle(Pens.Black, 100, height, dgvListaProducto.Columns[0].Width, dgvListaProducto.Rows[0].Height);
+                e.Graphics.DrawString(dgvListaProducto.Rows[i].Cells[0].FormattedValue.ToString(), dgvListaProducto.Font,
+                    Brushes.Black, new RectangleF(100, height, dgvListaProducto.Columns[0].Width, dgvListaProducto.Rows[0].Height), str);
+
+                e.Graphics.DrawRectangle(Pens.Black, 100 + dgvListaProducto.Columns[0].Width, height, dgvListaProducto.Columns[0].Width,
+                    dgvListaProducto.Rows[0].Height);
+                e.Graphics.DrawString(dgvListaProducto.Rows[i].Cells[1].Value.ToString(), dgvListaProducto.Font, Brushes.Black,
+                    new RectangleF(100 + dgvListaProducto.Columns[0].Width, height, dgvListaProducto.Columns[0].Width,
+                    dgvListaProducto.Rows[0].Height), str);
+
+                width += dgvListaProducto.Columns[0].Width;
+                i++;
+            }
+
+            /*
+                         Bitmap bmp;
+
+            int height = dgvListaProducto.Height;
+            dgvListaProducto.Height = dgvListaProducto.RowCount * dgvListaProducto.RowTemplate.Height * 2;
+            bmp = new Bitmap(dgvListaProducto.Width, dgvListaProducto.Height);
+            dgvListaProducto.DrawToBitmap(bmp, new Rectangle(0, 0, dgvListaProducto.Width, dgvListaProducto.Height));
+            dgvListaProducto.Height = height;
+            e.Graphics.DrawImage(bmp, 0, 0);
+             */
+        }
+
+        private void btnCertificadoBasc_Click(object sender, EventArgs e)
+        {
+            printPreviewDialog1.ShowDialog();
         }
     }
 }
