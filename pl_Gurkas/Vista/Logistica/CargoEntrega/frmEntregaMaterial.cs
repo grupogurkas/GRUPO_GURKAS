@@ -128,9 +128,10 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             string cantidad = txtCantidadTecno.Text;
             string imfor_adicional = txtInformacionAdicional.Text;
             string Condicion_Entrega = cboEstadoMaterial.GetItemText(cboEstadoMaterial.SelectedItem);
-
+            int n = dgvListaProducto.Rows.Count;
+            string c = Convert.ToString(n + 1);
             DataRow row = dt.NewRow();
-             row["ID"] = "1";
+             row["ID"] = c;
              row["CodProducto"] = cod_producto;
              row["Nombre"] = nombre_producto;
              row["CondicionEntrega"] = Condicion_Entrega;
