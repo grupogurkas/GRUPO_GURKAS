@@ -171,7 +171,7 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             if (cboUnidad.SelectedValue.ToString() != null)
             {
                 string cod_unidad = cboUnidad.SelectedValue.ToString();
-                Llenadocbo.ObtenerSedeRRHH(cboSede, cod_unidad);
+                Llenadocbo.ObtenerSedeLogistica(cboSede, cod_unidad);
 
             }
         }
