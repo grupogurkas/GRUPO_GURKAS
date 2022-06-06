@@ -757,7 +757,7 @@ namespace pl_Gurkas.Datos
             }
         }
 
-        public void ObtenerSedeRRHH(ComboBox cd, string cod_unidad)
+        public void ObtenerSedeLogistica(ComboBox cd, string cod_unidad)
         {
             try
             {

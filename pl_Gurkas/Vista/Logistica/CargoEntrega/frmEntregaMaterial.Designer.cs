@@ -130,7 +130,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1327, 538);
             this.panel1.TabIndex = 95;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // groupBox2
             // 

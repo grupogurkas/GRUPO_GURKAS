@@ -125,25 +125,13 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                 dgvListaProducto.Rows.Remove(dgvListaProducto.CurrentRow);
             }
         }
-
-        private void cboUnidad_SelectedIndexChanged(object sender, EventArgs e)
+        private void cboUnidad_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             if (cboUnidad.SelectedValue.ToString() != null)
             {
                 string cod_unidad = cboUnidad.SelectedValue.ToString();
-                Llenadocbo.ObtenerSedeRRHH(cboSede, cod_unidad);
-
+                Llenadocbo.ObtenerSedeLogistica(cboSede, cod_unidad);
             }
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void cboUnidad_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-
         }
     }
 }
