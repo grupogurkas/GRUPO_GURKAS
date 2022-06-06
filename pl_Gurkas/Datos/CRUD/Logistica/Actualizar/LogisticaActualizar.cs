@@ -274,9 +274,8 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Actualizar
                           DateTime f_registro_aseo, string observacion_aseo)
 
 
-
         {
-            SqlCommand cmd = new SqlCommand("sp_registrar_producto_aseo ", conexion.conexionBD());
+            SqlCommand cmd = new SqlCommand("sp_actualizar_producto_aseo ", conexion.conexionBD());
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@COD_PRODUCTO_SISTEMA", SqlDbType.VarChar).Value = cod_sistema;
             cmd.Parameters.AddWithValue("@COD_PRODUCTO_UTI_ASEO", SqlDbType.VarChar).Value = cod_aseo;

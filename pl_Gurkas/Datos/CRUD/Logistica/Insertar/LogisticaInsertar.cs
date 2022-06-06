@@ -11,7 +11,7 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Insertar
     class LogisticaInsertar
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        //Datos.DatosUsuario DatosUsuario = new Datos.DatosUsuario();
+        Datos.DatosUsuario DatosUsuario = new Datos.DatosUsuario();
         string nombre_usuario = DatosUsuario._usuario;
         public void RegistrarEquipoTecnologico(string cod_sistema, string cod_producto, string nombre_producto, string modelo
             , string marca, string num_serie, string desp_equipo, int estado, decimal precio_unitario, int tipo_unidad,
@@ -240,14 +240,14 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Insertar
             cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
             cmd.ExecuteNonQuery();
         }
+        
+
 
         public void RegistrarAseo(string cod_sistema, string cod_aseo, string nombre_aseo, string marca_aseo,
                              int tipo_unidad_aseo, DateTime f_fabricacion_aseo, DateTime f_vencimiento_aseo, int estado_aseo,
                             decimal precio_unitario_aseo, int stock_inicial_aseo,
                           int stock_actual_aseo, int stock_minimo_aseo, string desp_aseo, DateTime f_adquision_aseo,
                           DateTime f_registro_aseo, string observacion_aseo)
-
- 
 
         {
             SqlCommand cmd = new SqlCommand("sp_registrar_producto_aseo ", conexion.conexionBD());
@@ -268,6 +268,35 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Insertar
             cmd.Parameters.AddWithValue("@FECHA_ADQUISICION_UTI_ASEO", SqlDbType.VarChar).Value = f_adquision_aseo;
             cmd.Parameters.AddWithValue("@FECHA_REGISTRO_UTI_ASEO", SqlDbType.VarChar).Value = f_registro_aseo;
             cmd.Parameters.AddWithValue("@OBSERVACION_UTI_ASEO", SqlDbType.VarChar).Value = observacion_aseo;
+            cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
+            cmd.ExecuteNonQuery();
+        }
+
+        public void RegistrarArmamento(string cod_sistema, string cod_armamento, string nombre_armamento, string marca_armamento,
+                             string num_serie_armamento, DateTime f_inicio_armamento, DateTime f_vencimiento_armamento, int estado_armamento,
+                             int stock_inicial_armamento,
+                          int stock_actual_armamento, int stock_minimo_armamento, int tipo_unidad_armamento, string desp_armamento, DateTime f_adquision_armamento,
+                          DateTime f_registro_armamento, string observacion_armamento)
+
+        {
+            SqlCommand cmd = new SqlCommand("sp_registrar_producto_aseo ", conexion.conexionBD());
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@COD_PRODUCTO_SISTEMA", SqlDbType.VarChar).Value = cod_sistema;
+            cmd.Parameters.AddWithValue("@COD_PRODUCTO_UTI_ASEO", SqlDbType.VarChar).Value = cod_armamento;
+            cmd.Parameters.AddWithValue("@NOMBRE_UTI_ASEO", SqlDbType.VarChar).Value = nombre_armamento;
+            cmd.Parameters.AddWithValue("@MARCA_UTI_ASEO", SqlDbType.VarChar).Value = marca_armamento;
+            cmd.Parameters.AddWithValue("@idunidad_producto_UTI_ASEO", SqlDbType.Int).Value = num_serie_armamento;
+            cmd.Parameters.AddWithValue("@FECHA_FABRICACION_UTI_ASEO", SqlDbType.VarChar).Value = f_inicio_armamento;
+            cmd.Parameters.AddWithValue("@FECHA_VENCIMIENTO_UTI_ASEO", SqlDbType.VarChar).Value = f_vencimiento_armamento;
+            cmd.Parameters.AddWithValue("@ID_ESTADO_MATERIAL_UTIL_ASEO", SqlDbType.Int).Value = estado_armamento;
+            cmd.Parameters.AddWithValue("@STOCK_INICIAL_UTI_ASEO", SqlDbType.Int).Value = stock_inicial_armamento;
+            cmd.Parameters.AddWithValue("@STOCK_ACTUAL_UTI_ASEO", SqlDbType.Int).Value = stock_actual_armamento;
+            cmd.Parameters.AddWithValue("@STOCK_MINIMO_UTI_ASEO", SqlDbType.Int).Value = stock_minimo_armamento;
+            cmd.Parameters.AddWithValue("@idunidad_producto_UTI_ASEO", SqlDbType.Int).Value = tipo_unidad_armamento;
+            cmd.Parameters.AddWithValue("@DESCRP_UTI_ASEO", SqlDbType.VarChar).Value = desp_armamento;
+            cmd.Parameters.AddWithValue("@FECHA_ADQUISICION_UTI_ASEO", SqlDbType.VarChar).Value = f_adquision_armamento;
+            cmd.Parameters.AddWithValue("@FECHA_REGISTRO_UTI_ASEO", SqlDbType.VarChar).Value = f_registro_armamento;
+            cmd.Parameters.AddWithValue("@OBSERVACION_UTI_ASEO", SqlDbType.VarChar).Value = observacion_armamento;
             cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
             cmd.ExecuteNonQuery();
         }

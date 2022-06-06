@@ -920,6 +920,41 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 MessageBox.Show("No se puede Regristrar el producto" + ex, "Error");
             }
         }
+      
+
+        public void AgregarArmamentos()
+        {
+            try
+            {
+                string cod_sistema = txtCodSistema.Text;
+                string cod_armamento = txtCodEquipArmamento.Text;
+                string nombre_armamento = txtNombreArmamento.Text;
+                string marca_armamento = txtMarcaArmamento.Text;
+                string num_serie_armamento = txtNumbSerialArmamento.Text;
+                DateTime f_inicio_armamento = dtpFechaIniArmamento.Value;
+                DateTime f_vencimiento_armamento = dtpFechaVecArmamento.Value;
+                int estado_armamento = cboEstadoArmamento.SelectedIndex;
+                int stock_inicial_armamento = Convert.ToInt32(txtStockIniArmamento.Text);
+                int stock_actual_armamento = Convert.ToInt32(txtStockActualArmamento.Text);
+                int stock_minimo_armamento = Convert.ToInt32(txtStockMinArmamento.Text);
+                int tipo_unidad_armamento = Convert.ToInt32(cboTipoUnidadArmamento.SelectedIndex);
+                string desp_armamento = txtDespArmamento.Text;
+                DateTime f_adquision_armamento = dtpFechaAdArmamento.Value;
+                DateTime f_registro_armamento = dtpFechaRegisArmamento.Value;
+                string observacion_armamento = txtObsArmamento.Text;
+
+                logisticaInsertar.RegistrarArmamento(cod_sistema, cod_armamento, nombre_armamento, marca_armamento,
+                             num_serie_armamento, f_inicio_armamento, f_vencimiento_armamento, estado_armamento, stock_inicial_armamento,
+                           stock_actual_armamento, stock_minimo_armamento, tipo_unidad_armamento, desp_armamento, f_adquision_armamento,
+                           f_registro_armamento, observacion_armamento);
+                MessageBox.Show("Datos registrado correctamente", "Correcto");
+                LimpiarDatosAseo();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede Regristrar el producto" + ex, "Error");
+            }
+        }
 
         public void AgregarProductoPantalon()
         {
@@ -1834,6 +1869,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void btnActualizarUtilesAseo_Click(object sender, EventArgs e)
         {
             ActualizarUtilesAseo();
+        }
+
+        private void btnAgregarArmamento_Click(object sender, EventArgs e)
+        {
+            AgregarArmamentos();
         }
     }
 }
