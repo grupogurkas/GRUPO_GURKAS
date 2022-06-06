@@ -39,6 +39,10 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
         private void frmEntregaMaterial_Load(object sender, EventArgs e)
         {
+            txtUsuarioEntrega.Enabled = false;
+            string nombre_user = Datos.DatosUsuario._usuario;
+            txtUsuarioEntrega.Text = nombre_user;
+
 
             Llenadocbo.ObtenerTipoPuesto(cboTipoPuesto);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoMaterial);
@@ -133,6 +137,11 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void cboUnidad_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
         }
