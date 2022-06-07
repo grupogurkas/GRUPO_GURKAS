@@ -41,9 +41,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.cboEstadoMaterial = new System.Windows.Forms.ComboBox();
             this.btnCertificadoBasc = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtInformacionAdicional = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
             this.txtCantidadTecno = new System.Windows.Forms.TextBox();
             this.label142 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -52,12 +50,12 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.cboUnidad = new System.Windows.Forms.ComboBox();
             this.cboSede = new System.Windows.Forms.ComboBox();
             this.cboEmpresa = new System.Windows.Forms.ComboBox();
+            this.txtInformacionAdicional = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtObservacion = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dgvListaProducto = new System.Windows.Forms.DataGridView();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
@@ -141,14 +139,12 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.groupBox2.Controls.Add(this.cboEstadoMaterial);
             this.groupBox2.Controls.Add(this.btnCertificadoBasc);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.txtInformacionAdicional);
             this.groupBox2.Controls.Add(this.btnAgregar);
-            this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.txtCantidadTecno);
             this.groupBox2.Controls.Add(this.label142);
             this.groupBox2.Location = new System.Drawing.Point(699, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(621, 196);
+            this.groupBox2.Size = new System.Drawing.Size(621, 142);
             this.groupBox2.TabIndex = 212;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos Producto Entrega";
@@ -187,7 +183,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.btnCertificadoBasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCertificadoBasc.Image = global::pl_Gurkas.Properties.Resources.descarga_32;
             this.btnCertificadoBasc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCertificadoBasc.Location = new System.Drawing.Point(503, 126);
+            this.btnCertificadoBasc.Location = new System.Drawing.Point(9, 85);
             this.btnCertificadoBasc.Name = "btnCertificadoBasc";
             this.btnCertificadoBasc.Size = new System.Drawing.Size(110, 46);
             this.btnCertificadoBasc.TabIndex = 226;
@@ -208,20 +204,12 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.label1.Text = "Producto \r\nSe Entrega\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // txtInformacionAdicional
-            // 
-            this.txtInformacionAdicional.Location = new System.Drawing.Point(6, 114);
-            this.txtInformacionAdicional.Multiline = true;
-            this.txtInformacionAdicional.Name = "txtInformacionAdicional";
-            this.txtInformacionAdicional.Size = new System.Drawing.Size(491, 70);
-            this.txtInformacionAdicional.TabIndex = 218;
-            // 
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.Image = global::pl_Gurkas.Properties.Resources.add_trabajador_32;
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.Location = new System.Drawing.Point(503, 26);
+            this.btnAgregar.Location = new System.Drawing.Point(503, 29);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(110, 46);
             this.btnAgregar.TabIndex = 223;
@@ -229,16 +217,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(6, 88);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(131, 15);
-            this.label14.TabIndex = 219;
-            this.label14.Text = "Informacion  Adicional:";
             // 
             // txtCantidadTecno
             // 
@@ -264,17 +242,17 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.groupBox1.Controls.Add(this.cboUnidad);
             this.groupBox1.Controls.Add(this.cboSede);
             this.groupBox1.Controls.Add(this.cboEmpresa);
+            this.groupBox1.Controls.Add(this.txtInformacionAdicional);
             this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label27);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtObservacion);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox1.Location = new System.Drawing.Point(11, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(682, 196);
+            this.groupBox1.Size = new System.Drawing.Size(682, 174);
             this.groupBox1.TabIndex = 211;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Generales:";
@@ -329,6 +307,15 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.cboEmpresa.Size = new System.Drawing.Size(246, 21);
             this.cboEmpresa.TabIndex = 218;
             // 
+            // txtInformacionAdicional
+            // 
+            this.txtInformacionAdicional.Location = new System.Drawing.Point(356, 53);
+            this.txtInformacionAdicional.Multiline = true;
+            this.txtInformacionAdicional.Name = "txtInformacionAdicional";
+            this.txtInformacionAdicional.Size = new System.Drawing.Size(312, 108);
+            this.txtInformacionAdicional.TabIndex = 218;
+            this.txtInformacionAdicional.TextChanged += new System.EventHandler(this.txtInformacionAdicional_TextChanged);
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -338,6 +325,16 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.label7.Size = new System.Drawing.Size(39, 15);
             this.label7.TabIndex = 216;
             this.label7.Text = "Sede:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(356, 27);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(131, 15);
+            this.label14.TabIndex = 219;
+            this.label14.Text = "Informacion  Adicional:";
             // 
             // label27
             // 
@@ -359,33 +356,15 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.label2.TabIndex = 215;
             this.label2.Text = "Unidad:";
             // 
-            // txtObservacion
-            // 
-            this.txtObservacion.Location = new System.Drawing.Point(378, 53);
-            this.txtObservacion.Multiline = true;
-            this.txtObservacion.Name = "txtObservacion";
-            this.txtObservacion.Size = new System.Drawing.Size(286, 131);
-            this.txtObservacion.TabIndex = 209;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(12, 27);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 15);
+            this.label6.Size = new System.Drawing.Size(51, 15);
             this.label6.TabIndex = 211;
-            this.label6.Text = "Tipo Personal:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(375, 28);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(81, 15);
-            this.label11.TabIndex = 210;
-            this.label11.Text = "Observacion :";
+            this.label6.Text = "Puesto :";
             // 
             // label4
             // 
@@ -399,8 +378,9 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             // 
             // dgvListaProducto
             // 
+            this.dgvListaProducto.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvListaProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListaProducto.Location = new System.Drawing.Point(11, 215);
+            this.dgvListaProducto.Location = new System.Drawing.Point(11, 183);
             this.dgvListaProducto.Name = "dgvListaProducto";
             this.dgvListaProducto.Size = new System.Drawing.Size(1309, 209);
             this.dgvListaProducto.TabIndex = 220;
@@ -554,8 +534,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtObservacion;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtUsuarioEntrega;

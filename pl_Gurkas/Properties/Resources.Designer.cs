@@ -453,6 +453,16 @@ namespace pl_Gurkas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ENTREGA_CABEZERA_1 {
+            get {
+                object obj = ResourceManager.GetObject("ENTREGA_CABEZERA_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ENTREGA_CABEZERA_3 {
             get {
                 object obj = ResourceManager.GetObject("ENTREGA_CABEZERA_3", resourceCulture);
@@ -506,6 +516,16 @@ namespace pl_Gurkas.Properties {
         internal static System.Drawing.Bitmap fimar {
             get {
                 object obj = ResourceManager.GetObject("fimar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fimar_1 {
+            get {
+                object obj = ResourceManager.GetObject("fimar_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

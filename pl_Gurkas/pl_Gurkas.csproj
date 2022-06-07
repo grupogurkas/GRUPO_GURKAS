@@ -1592,6 +1592,8 @@
   <ItemGroup>
     <Content Include="png %281%29.ico" />
     <Content Include="png iconb.ico" />
+    <None Include="Resources\fimar_1.JPG" />
+    <None Include="Resources\ENTREGA_CABEZERA_1.JPG" />
     <None Include="Resources\fimar.JPG" />
     <None Include="Resources\ENTREGA_CABEZERA_3.JPG" />
     <None Include="Resources\ENTREGA_CABEZERA.JPG" />
