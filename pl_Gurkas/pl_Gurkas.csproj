@@ -13,7 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\Soporte TI\Desktop\PRO_CAMPO_V3\</PublishUrl>
+    <PublishUrl>C:\Users\Soporte TI\Desktop\Sistema Escritorio Gurkas\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -24,7 +24,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <UpdateUrl>\\192.168.1.13\compartida\SISTEMA_GURKAS\</UpdateUrl>
-    <ApplicationRevision>35</ApplicationRevision>
+    <ApplicationRevision>36</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -487,6 +487,12 @@
     </Compile>
     <Compile Include="Vista\Logistica\entrada\HistorialEntradaProducto.Designer.cs">
       <DependentUpon>HistorialEntradaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Logistica\Ordenes\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Logistica\Ordenes\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Logistica\producto\frmGenerarCodigoBarra.cs">
       <SubType>Form</SubType>
@@ -1120,6 +1126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\entrada\HistorialEntradaProducto.resx">
       <DependentUpon>HistorialEntradaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Logistica\Ordenes\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\producto\frmGenerarCodigoBarra.resx">
       <DependentUpon>frmGenerarCodigoBarra.cs</DependentUpon>

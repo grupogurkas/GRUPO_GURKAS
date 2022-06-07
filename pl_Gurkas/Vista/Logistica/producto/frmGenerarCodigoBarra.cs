@@ -7,6 +7,7 @@ using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace pl_Gurkas.Vista.Logistica.producto
@@ -15,6 +16,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
     {
 
         Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
+        Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
+        Datos.Conexiondbo conexion = new Datos.Conexiondbo();
+
 
         public frmGenerarCodigoBarra()
         {
@@ -26,6 +30,8 @@ namespace pl_Gurkas.Vista.Logistica.producto
 
         private void frmGenerarCodigoBarra_Load(object sender, EventArgs e)
         {
+            llenadoDatosProducto();
+            
 
         }
 
@@ -35,6 +41,24 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Codigo.IncludeLabel = true;
             PanelCodigo.BackgroundImage = Codigo.Encode(BarcodeLib.TYPE.CODE128, txtCodigoBarra.Text, Color.Black, Color.White, 350, 100);
             btnGuardarCodigo.Enabled = true;
+        }
+
+        public void BuscarProducto(string cod_producto)
+        {
+            try
+            {
+                SqlCommand comando = new SqlCommand("SELECT * FROM T_MAE_PRODUCTO WHERE COD_PRODUCTO_MATERIAL = '" + cod_producto + "'", conexion.conexionBD());
+                SqlDataReader recorre = comando.ExecuteReader();
+                while (recorre.Read())
+                {
+                    //txtCodSistema.Text = recorre["COD_PRODUCTO_SISTEMA"].ToString();
+                    txtCodigoBarra.Text = recorre["COD_PRODUCTO_MATERIAL"].ToString();
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
+            }
         }
 
         private void btnGuardarCodigo_Click(object sender, EventArgs e)
@@ -52,6 +76,17 @@ namespace pl_Gurkas.Vista.Logistica.producto
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void llenadoDatosProducto()
+        {
+            Llenadocbo.ObtenerProductosGeneral(cboProducto);
+
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
         {
 
         }

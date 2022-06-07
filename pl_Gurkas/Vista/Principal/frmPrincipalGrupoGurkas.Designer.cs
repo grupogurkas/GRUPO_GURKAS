@@ -196,6 +196,9 @@ namespace pl_Gurkas.Vista.Principal
             this.reporteDeAsistenciaPorPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.activarModoAdministradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kardexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registroOrdenesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordenDeServicioCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -915,7 +918,8 @@ namespace pl_Gurkas.Vista.Principal
             this.cargoEntregaToolStripMenuItem,
             this.entradaDeProductoToolStripMenuItem,
             this.salidaDeProductoToolStripMenuItem,
-            this.inventariadoToolStripMenuItem});
+            this.inventariadoToolStripMenuItem,
+            this.registroOrdenesToolStripMenuItem});
             this.almacenToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.almacen_32;
             this.almacenToolStripMenuItem.Name = "almacenToolStripMenuItem";
             this.almacenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
@@ -982,21 +986,21 @@ namespace pl_Gurkas.Vista.Principal
             this.internamientoToolStripMenuItem,
             this.entregaToolStripMenuItem});
             this.cargoEntregaToolStripMenuItem.Name = "cargoEntregaToolStripMenuItem";
-            this.cargoEntregaToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
-            this.cargoEntregaToolStripMenuItem.Text = "Cargo Entrega";
+            this.cargoEntregaToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.cargoEntregaToolStripMenuItem.Text = "Cargo Entrega Productos";
             // 
             // internamientoToolStripMenuItem
             // 
             this.internamientoToolStripMenuItem.Name = "internamientoToolStripMenuItem";
-            this.internamientoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.internamientoToolStripMenuItem.Text = "Internamiento";
+            this.internamientoToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.internamientoToolStripMenuItem.Text = "Internamiento Productos";
             this.internamientoToolStripMenuItem.Click += new System.EventHandler(this.internamientoToolStripMenuItem_Click);
             // 
             // entregaToolStripMenuItem
             // 
             this.entregaToolStripMenuItem.Name = "entregaToolStripMenuItem";
-            this.entregaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.entregaToolStripMenuItem.Text = "Entrega";
+            this.entregaToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.entregaToolStripMenuItem.Text = "Entrega Productos";
             this.entregaToolStripMenuItem.Click += new System.EventHandler(this.entregaToolStripMenuItem_Click);
             // 
             // entradaDeProductoToolStripMenuItem
@@ -1063,6 +1067,8 @@ namespace pl_Gurkas.Vista.Principal
             // 
             // inventariadoToolStripMenuItem
             // 
+            this.inventariadoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.kardexToolStripMenuItem});
             this.inventariadoToolStripMenuItem.Name = "inventariadoToolStripMenuItem";
             this.inventariadoToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.inventariadoToolStripMenuItem.Text = "Inventariado";
@@ -1579,6 +1585,26 @@ namespace pl_Gurkas.Vista.Principal
             this.activarModoAdministradorToolStripMenuItem.Text = "Activar Modo Administrador";
             this.activarModoAdministradorToolStripMenuItem.Click += new System.EventHandler(this.activarModoAdministradorToolStripMenuItem_Click);
             // 
+            // kardexToolStripMenuItem
+            // 
+            this.kardexToolStripMenuItem.Name = "kardexToolStripMenuItem";
+            this.kardexToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.kardexToolStripMenuItem.Text = "Kardex";
+            // 
+            // registroOrdenesToolStripMenuItem
+            // 
+            this.registroOrdenesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ordenDeServicioCompraToolStripMenuItem});
+            this.registroOrdenesToolStripMenuItem.Name = "registroOrdenesToolStripMenuItem";
+            this.registroOrdenesToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.registroOrdenesToolStripMenuItem.Text = "Registro Ordenes";
+            // 
+            // ordenDeServicioCompraToolStripMenuItem
+            // 
+            this.ordenDeServicioCompraToolStripMenuItem.Name = "ordenDeServicioCompraToolStripMenuItem";
+            this.ordenDeServicioCompraToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
+            this.ordenDeServicioCompraToolStripMenuItem.Text = "Orden de Servicio/Compra";
+            // 
             // frmPrincipalGrupoGurkas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1775,5 +1801,8 @@ namespace pl_Gurkas.Vista.Principal
         private System.Windows.Forms.ToolStripMenuItem cargoEntregaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem internamientoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem entregaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem kardexToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registroOrdenesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ordenDeServicioCompraToolStripMenuItem;
     }
 }

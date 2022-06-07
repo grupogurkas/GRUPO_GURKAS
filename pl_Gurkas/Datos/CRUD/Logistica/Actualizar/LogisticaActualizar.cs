@@ -296,5 +296,38 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Actualizar
             cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
             cmd.ExecuteNonQuery();
         }
+
+
+        public void ActualizarArmamento(string cod_sistema, string cod_armamento, string nombre_armamento, string marca_armamento,
+                             string num_serie_armamento, string num_tarjeta_propiedad, DateTime f_inicio_armamento, DateTime f_vencimiento_armamento, int estado_armamento,
+                             int stock_inicial_armamento,
+                          int stock_actual_armamento, int stock_minimo_armamento, int tipo_unidad_armamento, string desp_armamento, DateTime f_adquision_armamento,
+                          DateTime f_registro_armamento, string observacion_armamento)
+
+        {
+            SqlCommand cmd = new SqlCommand("sp_actualizar_producto_armamento ", conexion.conexionBD());
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@COD_PRODUCTO_SISTEMA", SqlDbType.VarChar).Value = cod_sistema;
+            cmd.Parameters.AddWithValue("@COD_PRODUCTO_ARMAMENTO", SqlDbType.VarChar).Value = cod_armamento;
+            cmd.Parameters.AddWithValue("@NOMBRE_ARMAMENTO", SqlDbType.VarChar).Value = nombre_armamento;
+            cmd.Parameters.AddWithValue("@MARCA_ARMAMENTO", SqlDbType.VarChar).Value = marca_armamento;
+            cmd.Parameters.AddWithValue("@NUMB_SERIAL_ARMAMENTO", SqlDbType.Int).Value = num_serie_armamento;
+            cmd.Parameters.AddWithValue("@NUMB_TARJETA_PROPIEDAD", SqlDbType.VarChar).Value = num_tarjeta_propiedad;
+            cmd.Parameters.AddWithValue("@FECHA_INICIO_ARMAMENTO", SqlDbType.VarChar).Value = f_inicio_armamento;
+            cmd.Parameters.AddWithValue("@FECHA_VENCIMIENTO_ARMAMENTO", SqlDbType.VarChar).Value = f_vencimiento_armamento;
+            cmd.Parameters.AddWithValue("@ID_ESTADO_MATERIAL_ARMAMENTO", SqlDbType.Int).Value = estado_armamento;
+            cmd.Parameters.AddWithValue("@STOCK_INICIAL_ARMAMENTO", SqlDbType.Int).Value = stock_inicial_armamento;
+            cmd.Parameters.AddWithValue("@STOCK_ACTUAL_ARMAMENTO", SqlDbType.Int).Value = stock_actual_armamento;
+            cmd.Parameters.AddWithValue("@STOCK_MINIMO_ARMAMENTO", SqlDbType.Int).Value = stock_minimo_armamento;
+            cmd.Parameters.AddWithValue("@idunidad_producto_armamento", SqlDbType.Int).Value = tipo_unidad_armamento;
+            cmd.Parameters.AddWithValue("@DESCRP_ARMAMENTO", SqlDbType.VarChar).Value = desp_armamento;
+            cmd.Parameters.AddWithValue("@FECHA_ADQUISICION_ARMAMENTO", SqlDbType.VarChar).Value = f_adquision_armamento;
+            cmd.Parameters.AddWithValue("@FECHA_REGISTRO_ARMAMENTO", SqlDbType.VarChar).Value = f_registro_armamento;
+            cmd.Parameters.AddWithValue("@OBSERVACION_ARMAMENTO", SqlDbType.VarChar).Value = observacion_armamento;
+            cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
+            cmd.ExecuteNonQuery();
+        }
+
+
     }
 }

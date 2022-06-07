@@ -29,6 +29,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGenerarCodigoBarra));
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
@@ -39,6 +40,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.PanelCodigo = new System.Windows.Forms.Panel();
             this.btnGenerar = new System.Windows.Forms.Button();
             this.txtCodigoBarra = new System.Windows.Forms.TextBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.SuspendLayout();
@@ -57,6 +59,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel1.Controls.Add(this.btnBuscar);
             this.panel1.Controls.Add(this.pictureBox16);
             this.panel1.Controls.Add(this.btnCerrar);
             this.panel1.Controls.Add(this.cboProducto);
@@ -159,6 +162,20 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtCodigoBarra.Size = new System.Drawing.Size(229, 20);
             this.txtCodigoBarra.TabIndex = 165;
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Image = global::pl_Gurkas.Properties.Resources.cerrar_sesion_32;
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.Location = new System.Drawing.Point(407, 123);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(109, 40);
+            this.btnBuscar.TabIndex = 172;
+            this.btnBuscar.Text = "Cerrar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
             // frmGenerarCodigoBarra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -166,8 +183,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(538, 296);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmGenerarCodigoBarra";
-            this.Text = "Form1";
+            this.Text = "Generar Codigo Barra";
             this.Load += new System.EventHandler(this.frmGenerarCodigoBarra_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -187,5 +205,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }
