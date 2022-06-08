@@ -29,7 +29,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
         public frmEntregaMaterial()
         {
-           
+            InitializeComponent();
         }
         private void frmEntregaMaterial_Load(object sender, EventArgs e)
         {
@@ -46,7 +46,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             Llenadocbo.ObtenerUnidadRRHH(cboUnidad);
             Llenadocbo.ObtenerEmpresaRRHH_2(cboEmpresa);
 
-            MessageBox.Show("entroo","ss");
+            
 
             dt = new DataTable();
             dt.Columns.Add("ID");

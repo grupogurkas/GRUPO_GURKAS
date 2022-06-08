@@ -33,5 +33,10 @@ namespace pl_Gurkas.Vista.Logistica.entrada
                 this.Close();
             }
         }
+
+        private void HistorialEntradaProducto_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

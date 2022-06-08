@@ -199,7 +199,6 @@ namespace pl_Gurkas.Vista.Principal
             this.reporteDeAsistenciaPorPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.activarModoAdministradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cargoDeEntregaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -888,8 +887,7 @@ namespace pl_Gurkas.Vista.Principal
             // 
             this.logisticaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.personalToolStripMenuItem3,
-            this.almacenToolStripMenuItem,
-            this.cargoDeEntregaToolStripMenuItem});
+            this.almacenToolStripMenuItem});
             this.logisticaToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.logistica_32;
             this.logisticaToolStripMenuItem.Name = "logisticaToolStripMenuItem";
             this.logisticaToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
@@ -1607,13 +1605,6 @@ namespace pl_Gurkas.Vista.Principal
             this.activarModoAdministradorToolStripMenuItem.Text = "Activar Modo Administrador";
             this.activarModoAdministradorToolStripMenuItem.Click += new System.EventHandler(this.activarModoAdministradorToolStripMenuItem_Click);
             // 
-            // cargoDeEntregaToolStripMenuItem
-            // 
-            this.cargoDeEntregaToolStripMenuItem.Name = "cargoDeEntregaToolStripMenuItem";
-            this.cargoDeEntregaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cargoDeEntregaToolStripMenuItem.Text = "Cargo de Entrega";
-            this.cargoDeEntregaToolStripMenuItem.Click += new System.EventHandler(this.cargoDeEntregaToolStripMenuItem_Click);
-            // 
             // frmPrincipalGrupoGurkas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1813,6 +1804,5 @@ namespace pl_Gurkas.Vista.Principal
         private System.Windows.Forms.ToolStripMenuItem kardexToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroOrdenesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ordenDeServicioCompraToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cargoDeEntregaToolStripMenuItem;
     }
 }

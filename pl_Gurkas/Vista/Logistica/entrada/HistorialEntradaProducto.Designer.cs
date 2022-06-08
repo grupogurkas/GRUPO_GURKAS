@@ -56,6 +56,7 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             this.Name = "HistorialEntradaProducto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HistorialEntradaProducto";
+            this.Load += new System.EventHandler(this.HistorialEntradaProducto_Load);
             this.ResumeLayout(false);
 
         }
