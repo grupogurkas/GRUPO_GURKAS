@@ -166,8 +166,9 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             string SEDE = cboSede.GetItemText(cboSede.SelectedItem);
             string PERSONAL = cboempleadoActivo.GetItemText(cboempleadoActivo.SelectedItem);
             string entrega = txtUsuarioEntrega.Text;
-
+            string cod_empleado = cboempleadoActivo.SelectedValue.ToString();
             string informacion_adicional = txtInformacionAdicional.Text;
+
 
             Font tipoTexto = new Font("Arial", 10, FontStyle.Bold);
             Font desp = new Font("Arial", 8, FontStyle.Bold);
@@ -194,8 +195,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             e.Graphics.DrawString("DATOS DE PERSONAL QUE ENTREGA : ", tipoTexto, Brushes.Black, 50, 250);
             e.Graphics.DrawString(entrega, desp, Brushes.Black, 320, 252);
 
-            e.Graphics.DrawString("DNI : ", tipoTexto, Brushes.Black, 50, 280);
-            e.Graphics.DrawString(entrega, desp, Brushes.Black, 110, 282);
+            e.Graphics.DrawString("CODIGO DE PERSONAL QUE SOLICITA : ", tipoTexto, Brushes.Black, 50, 280);
+            e.Graphics.DrawString(cod_empleado, desp, Brushes.Black, 350, 282);
 
             e.Graphics.DrawImage(pie_pagina, 200, 1050);
 
@@ -269,7 +270,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
         private void btnCertificadoBasc_Click(object sender, EventArgs e)
         {
-          System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
+            /*System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
             PrintDialog1.AllowSomePages = true;
             PrintDialog1.ShowHelp = true;
             PrintDialog1.Document = printDocument1;
@@ -277,8 +278,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             if (result == DialogResult.OK)
             {
                 printDocument1.Print();
-            }
-         //  printPreviewDialog1.ShowDialog();
+            }*/
+           printPreviewDialog1.ShowDialog();
         }
 
         private void txtInformacionAdicional_TextChanged(object sender, EventArgs e)
