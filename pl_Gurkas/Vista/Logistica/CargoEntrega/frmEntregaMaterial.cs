@@ -29,25 +29,14 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
         public frmEntregaMaterial()
         {
-            ti = new Timer();
-            ti.Tick += new EventHandler(eventoTimer);
-            InitializeComponent();
-            ti.Enabled = true;
+           
         }
-
-
-        private void eventoTimer(object sender, EventArgs e)
-        {
-            DateTime hoy = DateTime.Now;
-            lblRelog.Text = hoy.ToString("hh:mm:ss tt");
-        }
-
         private void frmEntregaMaterial_Load(object sender, EventArgs e)
         {
             txtUsuarioEntrega.Enabled = false;
             string nombre_user = Datos.DatosUsuario._usuario;
             txtUsuarioEntrega.Text = nombre_user;
-
+            timer1.Enabled = true;
 
             Llenadocbo.ObtenerTipoPuesto(cboTipoPuesto);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoMaterial);
@@ -198,7 +187,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             e.Graphics.DrawString("CODIGO DE PERSONAL QUE SOLICITA : ", tipoTexto, Brushes.Black, 50, 280);
             e.Graphics.DrawString(cod_empleado, desp, Brushes.Black, 350, 282);
 
-            e.Graphics.DrawImage(pie_pagina, 200, 1050);
+            e.Graphics.DrawImage(pie_pagina, 180, 1050);
 
             string l1 = "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
             e.Graphics.DrawString(l1, new System.Drawing.Font("Book Antiqua", 9, FontStyle.Bold), Brushes.Black, 0, 300);//360
@@ -285,6 +274,12 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private void txtInformacionAdicional_TextChanged(object sender, EventArgs e)
         {
             txtInformacionAdicional.MaxLength = 264;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblHora.Text = DateTime.Now.ToString("hh:mm:ss tt");
+            lblFecha.Text = DateTime.Now.ToLongDateString();
         }
     }
 }

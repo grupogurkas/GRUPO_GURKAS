@@ -29,6 +29,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEntregaMaterial));
             this.btnNuevo = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -59,7 +60,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.label4 = new System.Windows.Forms.Label();
             this.dgvListaProducto = new System.Windows.Forms.DataGridView();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.lblRelog = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.dtpFechaAdquisicion = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
@@ -67,6 +67,9 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.btnCerrar = new System.Windows.Forms.Button();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.lblHora = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -126,10 +129,13 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.dgvListaProducto);
+            this.panel1.Controls.Add(this.btnCertificadoBasc);
             this.panel1.Controls.Add(this.pictureBox16);
-            this.panel1.Location = new System.Drawing.Point(12, 65);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.dtpFechaAdquisicion);
+            this.panel1.Location = new System.Drawing.Point(7, 91);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1327, 538);
+            this.panel1.Size = new System.Drawing.Size(1327, 509);
             this.panel1.TabIndex = 95;
             // 
             // groupBox2
@@ -137,14 +143,13 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.groupBox2.Controls.Add(this.cboProducto);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.cboEstadoMaterial);
-            this.groupBox2.Controls.Add(this.btnCertificadoBasc);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.btnAgregar);
             this.groupBox2.Controls.Add(this.txtCantidadTecno);
             this.groupBox2.Controls.Add(this.label142);
             this.groupBox2.Location = new System.Drawing.Point(699, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(621, 142);
+            this.groupBox2.Size = new System.Drawing.Size(621, 92);
             this.groupBox2.TabIndex = 212;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos Producto Entrega";
@@ -183,7 +188,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.btnCertificadoBasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCertificadoBasc.Image = global::pl_Gurkas.Properties.Resources.descarga_32;
             this.btnCertificadoBasc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCertificadoBasc.Location = new System.Drawing.Point(9, 85);
+            this.btnCertificadoBasc.Location = new System.Drawing.Point(1202, 101);
             this.btnCertificadoBasc.Name = "btnCertificadoBasc";
             this.btnCertificadoBasc.Size = new System.Drawing.Size(110, 46);
             this.btnCertificadoBasc.TabIndex = 226;
@@ -390,26 +395,18 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             // pictureBox16
             // 
             this.pictureBox16.Image = global::pl_Gurkas.Properties.Resources.png;
-            this.pictureBox16.Location = new System.Drawing.Point(1222, 430);
+            this.pictureBox16.Location = new System.Drawing.Point(509, 398);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(98, 93);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox16.TabIndex = 224;
             this.pictureBox16.TabStop = false;
             // 
-            // lblRelog
-            // 
-            this.lblRelog.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRelog.Location = new System.Drawing.Point(1195, 14);
-            this.lblRelog.Name = "lblRelog";
-            this.lblRelog.Size = new System.Drawing.Size(144, 31);
-            this.lblRelog.TabIndex = 225;
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(928, 22);
+            this.label12.Location = new System.Drawing.Point(705, 116);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(109, 15);
             this.label12.TabIndex = 194;
@@ -420,7 +417,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.dtpFechaAdquisicion.CalendarMonthBackground = System.Drawing.SystemColors.Highlight;
             this.dtpFechaAdquisicion.Enabled = false;
             this.dtpFechaAdquisicion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaAdquisicion.Location = new System.Drawing.Point(1066, 18);
+            this.dtpFechaAdquisicion.Location = new System.Drawing.Point(820, 116);
             this.dtpFechaAdquisicion.Name = "dtpFechaAdquisicion";
             this.dtpFechaAdquisicion.Size = new System.Drawing.Size(104, 20);
             this.dtpFechaAdquisicion.TabIndex = 193;
@@ -472,20 +469,41 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lblFecha
+            // 
+            this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.Location = new System.Drawing.Point(961, 56);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(368, 32);
+            this.lblFecha.TabIndex = 226;
+            this.lblFecha.Text = "22";
+            // 
+            // lblHora
+            // 
+            this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.Location = new System.Drawing.Point(966, 7);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(363, 35);
+            this.lblHora.TabIndex = 227;
+            this.lblHora.Text = "22";
+            // 
             // frmEntregaMaterial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1361, 651);
+            this.Controls.Add(this.lblHora);
+            this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.cboempleadoActivo);
-            this.Controls.Add(this.lblRelog);
             this.Controls.Add(this.label42);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnCerrar);
-            this.Controls.Add(this.dtpFechaAdquisicion);
-            this.Controls.Add(this.label12);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtUsuarioEntrega);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -494,6 +512,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.Text = "frmEntregaMaterial";
             this.Load += new System.EventHandler(this.frmEntregaMaterial_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -517,7 +536,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cboEstadoMaterial;
         private System.Windows.Forms.Button btnCertificadoBasc;
-        private System.Windows.Forms.Label lblRelog;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label1;
@@ -544,5 +562,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private System.Windows.Forms.ComboBox cboAreaLaboral;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lblFecha;
+        private System.Windows.Forms.Label lblHora;
     }
 }
