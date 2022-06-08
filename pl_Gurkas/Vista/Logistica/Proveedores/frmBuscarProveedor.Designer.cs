@@ -46,8 +46,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.btnBuscarCodigoProveedor = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.Editar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Eliminar = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBuscarProveedor)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -59,15 +57,11 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             // 
             this.dgvBuscarProveedor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvBuscarProveedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBuscarProveedor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Editar,
-            this.Eliminar});
             this.dgvBuscarProveedor.Location = new System.Drawing.Point(11, 125);
             this.dgvBuscarProveedor.Name = "dgvBuscarProveedor";
             this.dgvBuscarProveedor.RowHeadersWidth = 51;
             this.dgvBuscarProveedor.Size = new System.Drawing.Size(1337, 498);
             this.dgvBuscarProveedor.TabIndex = 10;
-            this.dgvBuscarProveedor.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBuscarProveedor_CellContentClick);
             // 
             // groupBox1
             // 
@@ -250,20 +244,6 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.progressBar1.Size = new System.Drawing.Size(1337, 10);
             this.progressBar1.TabIndex = 13;
             // 
-            // Editar
-            // 
-            this.Editar.HeaderText = "Editar";
-            this.Editar.Image = global::pl_Gurkas.Properties.Resources.edit_16;
-            this.Editar.Name = "Editar";
-            this.Editar.Width = 40;
-            // 
-            // Eliminar
-            // 
-            this.Eliminar.HeaderText = "Eliminar";
-            this.Eliminar.Image = global::pl_Gurkas.Properties.Resources.delete_16;
-            this.Eliminar.Name = "Eliminar";
-            this.Eliminar.Width = 49;
-            // 
             // frmBuscarProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -308,7 +288,5 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Button btnExcel;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.DataGridViewImageColumn Editar;
-        private System.Windows.Forms.DataGridViewImageColumn Eliminar;
     }
 }

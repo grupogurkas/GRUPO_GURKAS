@@ -331,6 +331,39 @@ namespace pl_Gurkas.Vista.Logistica.producto
             }
         }
 
+        public void BuscarProductoArmamento(string cod_armamento)
+        {
+            try
+            {
+                SqlCommand comando = new SqlCommand("SELECT * FROM v_producto_armamento WHERE COD_PRODUCTO_ARMAMENTO = '" + cod_armamento + "'", conexion.conexionBD());
+                SqlDataReader recorre = comando.ExecuteReader();
+                while (recorre.Read())
+                {
+                    txtCodSistema.Text = recorre["COD_PRODUCTO_SISTEMA"].ToString();
+                    txtCodEquipArmamento.Text = recorre["COD_PRODUCTO_ARMAMENTO"].ToString();
+                    txtNombreArmamento.Text = recorre["NOMBRE_ARMAMENTO"].ToString();
+                    txtMarcaArmamento.Text = recorre["MARCA_ARMAMENTO"].ToString();
+                    txtNumbSerialArmamento.Text = recorre["NUMB_SERIAL_ARMAMENTO"].ToString();
+                    txtNumbTarjetaArmamento.Text = recorre["NUMB_TARJETA_PROPIEDAD"].ToString();
+                    dtpFechaIniArmamento.Text = (recorre["FECHA_INICIO_ARMAMENTO"].ToString());
+                    dtpFechaVecArmamento.Text = (recorre["FECHA_VENCIMIENTO_ARMAMENTO"].ToString());
+                    cboEstadoArmamento.SelectedIndex = Convert.ToInt32(recorre["ID_ESTADO_MATERIAL_ARMAMENTO"].ToString());
+                    txtStockIniArmamento.Text = (recorre["STOCK_INICIAL_ARMAMENTO"].ToString());
+                    txtStockActualArmamento.Text = (recorre["STOCK_ACTUAL_ARMAMENTO"].ToString());
+                    txtStockMinArmamento.Text = (recorre["STOCK_MINIMO_ARMAMENTO"].ToString());
+                    cboTipoUnidadArmamento.SelectedIndex = Convert.ToInt32(recorre["idunidad_producto_armamento"].ToString());
+                    txtDespArmamento.Text = (recorre["DESCRP_ARMAMENTO"].ToString());
+                    dtpFechaAdArmamento.Text = (recorre["FECHA_ADQUISICION_ARMAMENTO"].ToString());
+                    dtpFechaRegisArmamento.Text = (recorre["FECHA_REGISTRO_ARMAMENTO"].ToString());
+                    txtObsArmamento.Text = (recorre["OBSERVACION_ARMAMENTO"].ToString());
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
+            }
+        }
+
 
         public void actualizarDatosCamisas()
         {
@@ -686,6 +719,42 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 MessageBox.Show("No se puede Regristrar el producto" + ex, "Error");
             }
         }
+      
+
+        public void ActualizarArmamento()
+        {
+            try
+            {
+                string cod_sistema = txtCodSistema.Text;
+                string cod_armamento = txtCodEquipArmamento.Text;
+                string nombre_armamento = txtNombreArmamento.Text;
+                string marca_armamento = txtMarcaArmamento.Text;
+                string num_serie_armamento = txtNumbSerialArmamento.Text;
+                string num_tarjeta_propiedad = txtNumbTarjetaArmamento.Text;
+                DateTime f_inicio_armamento = dtpFechaIniArmamento.Value;
+                DateTime f_vencimiento_armamento = dtpFechaVecArmamento.Value;
+                int estado_armamento = cboEstadoArmamento.SelectedIndex;
+                int stock_inicial_armamento = Convert.ToInt32(txtStockIniArmamento.Text);
+                int stock_actual_armamento = Convert.ToInt32(txtStockActualArmamento.Text);
+                int stock_minimo_armamento = Convert.ToInt32(txtStockMinArmamento.Text);
+                int tipo_unidad_armamento = Convert.ToInt32(cboTipoUnidadArmamento.SelectedIndex);
+                string desp_armamento = txtDespArmamento.Text;
+                DateTime f_adquision_armamento = dtpFechaAdArmamento.Value;
+                DateTime f_registro_armamento = dtpFechaRegisArmamento.Value;
+                string observacion_armamento = txtObsArmamento.Text;
+
+                logisticaActualizar.ActualizarArmamento(cod_sistema, cod_armamento, nombre_armamento, marca_armamento,
+                             num_serie_armamento, num_tarjeta_propiedad, f_inicio_armamento, f_vencimiento_armamento, estado_armamento, stock_inicial_armamento,
+                           stock_actual_armamento, stock_minimo_armamento, tipo_unidad_armamento, desp_armamento, f_adquision_armamento,
+                           f_registro_armamento, observacion_armamento);
+                MessageBox.Show("Datos registrado correctamente", "Correcto");
+                LimpiarDatosArmamento();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede Regristrar el producto" + ex, "Error");
+            }
+        }
 
         public void AgregarProductoAccesorio()
         {
@@ -931,6 +1000,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 string nombre_armamento = txtNombreArmamento.Text;
                 string marca_armamento = txtMarcaArmamento.Text;
                 string num_serie_armamento = txtNumbSerialArmamento.Text;
+                string num_tarjeta_propiedad = txtNumbTarjetaArmamento.Text;
                 DateTime f_inicio_armamento = dtpFechaIniArmamento.Value;
                 DateTime f_vencimiento_armamento = dtpFechaVecArmamento.Value;
                 int estado_armamento = cboEstadoArmamento.SelectedIndex;
@@ -944,11 +1014,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 string observacion_armamento = txtObsArmamento.Text;
 
                 logisticaInsertar.RegistrarArmamento(cod_sistema, cod_armamento, nombre_armamento, marca_armamento,
-                             num_serie_armamento, f_inicio_armamento, f_vencimiento_armamento, estado_armamento, stock_inicial_armamento,
+                             num_serie_armamento, num_tarjeta_propiedad, f_inicio_armamento, f_vencimiento_armamento, estado_armamento, stock_inicial_armamento,
                            stock_actual_armamento, stock_minimo_armamento, tipo_unidad_armamento, desp_armamento, f_adquision_armamento,
                            f_registro_armamento, observacion_armamento);
                 MessageBox.Show("Datos registrado correctamente", "Correcto");
-                LimpiarDatosAseo();
+                LimpiarDatosArmamento();
             }
             catch (Exception ex)
             {
@@ -1151,6 +1221,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             GenerarCodigoMobiliario();
             GenerarCodigoVehiculo();
             GenerarCodigoUtilesAseo();
+            GenerarCodigoArmamento();
         }
         public void LimpiarDatosCamisas()
         {
@@ -1252,7 +1323,17 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerUtilesAseo(cboUtilesAseoLogistico);
             btnAgregarUtilesAseo.Enabled = true;
         }
-        
+
+        public void LimpiarDatosArmamento()
+        {
+            LimpiarDatos.LimpiarGroupBox(groupBox23);
+            txtNombreArmamento.Focus();
+            LimpiarDatos.LimpiarGroupBox(groupBox24);
+            generarCodigos();
+            Llenadocbo.ObtenerArmamento(cboArmamento);
+            btnAgregarArmamento.Enabled = true;
+        }
+
         public void GenerarCodigoTecnologico()
         {
             string resultado = "";
@@ -1469,8 +1550,35 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 txtCodEquipMobi.Text = "MOB0" + (numero + 1);
             }
         }
+        
+            public void GenerarCodigoArmamento()
+        {
+            string resultado = "";
+            SqlCommand comando = new SqlCommand("select count(ID_PRODUCTO_ARMAMENTO) as 't' from T_MAE_ARMAMENTO ", conexion.conexionBD());
 
-             public void GenerarCodigoUtilesAseo()
+            SqlDataReader recorre = comando.ExecuteReader();
+            while (recorre.Read())
+            {
+                resultado = recorre["t"].ToString();
+            }
+            int numero = Convert.ToInt32(resultado);
+            if (numero < 10)
+            {
+                txtCodEquipArmamento.Text = "ARM000" + (numero + 1);
+            }
+            if (numero > 9 && numero < 100)
+            {
+                txtCodEquipArmamento.Text = "ARM00" + (numero + 1);
+            }
+            if (numero > 99 && numero < 1000)
+            {
+                txtCodEquipArmamento.Text = "ARM0" + (numero + 1);
+            }
+        }
+
+        
+
+        public void GenerarCodigoUtilesAseo()
              {
             string resultado = "";
             SqlCommand comando = new SqlCommand("select count(ID_PRODUCTO_UTI_ASEO) as 't' from T_MAE_UTI_ASEO ", conexion.conexionBD());
@@ -1593,6 +1701,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerEstadoProducto(cboEstadoAseo);
 
         }
+
+        private void llenadoDatosArmamento()
+        {
+            Llenadocbo.ObtenerArmamento(cboArmamento);
+            Llenadocbo.ObtenerTipoUnidadProducto(cboTipoUnidadArmamento);
+            Llenadocbo.ObtenerEstadoProducto(cboEstadoArmamento);
+
+        }
         private void bloqueodecodigo()
         {
             txtCodEquipoTecnologia.Enabled = false;
@@ -1623,6 +1739,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             llenadoDatosEquipoMobiliario();
             llenadoDatosVehiculo();
             llenadoDatosUtilesAseo();
+            llenadoDatosArmamento();
             generarCodigos();
         }
         private void tbpUniforme_Click(object sender, EventArgs e)
@@ -1874,6 +1991,23 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void btnAgregarArmamento_Click(object sender, EventArgs e)
         {
             AgregarArmamentos();
+        }
+
+        private void btnActualizarArmamento_Click(object sender, EventArgs e)
+        {
+            ActualizarArmamento();
+        }
+
+        private void btnNuevoArmamento_Click(object sender, EventArgs e)
+        {
+            LimpiarDatosArmamento();
+        }
+
+        private void btnBuscarArmamento_Click(object sender, EventArgs e)
+        {
+            string cod_armamento = cboArmamento.SelectedValue.ToString();
+            BuscarProductoArmamento(cod_armamento);
+            btnAgregarArmamento.Enabled = false;
         }
     }
 }

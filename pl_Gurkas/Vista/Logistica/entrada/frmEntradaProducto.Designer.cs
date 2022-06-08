@@ -31,9 +31,9 @@ namespace pl_Gurkas.Vista.Logistica.entrada
         {
             this.btnCerrar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblRelog = new System.Windows.Forms.Label();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cboempleadoActivo = new System.Windows.Forms.ComboBox();
             this.label42 = new System.Windows.Forms.Label();
             this.btnNuevo = new System.Windows.Forms.Button();
@@ -48,7 +48,7 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.Image = global::pl_Gurkas.Properties.Resources.cerrar_sesion_32;
             this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrar.Location = new System.Drawing.Point(809, 20);
+            this.btnCerrar.Location = new System.Drawing.Point(800, 9);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(99, 46);
             this.btnCerrar.TabIndex = 61;
@@ -61,29 +61,11 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Location = new System.Drawing.Point(12, 72);
+            this.panel1.Location = new System.Drawing.Point(12, 61);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1298, 538);
             this.panel1.TabIndex = 62;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // lblRelog
-            // 
-            this.lblRelog.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRelog.Location = new System.Drawing.Point(1161, 24);
-            this.lblRelog.Name = "lblRelog";
-            this.lblRelog.Size = new System.Drawing.Size(144, 31);
-            this.lblRelog.TabIndex = 225;
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Image = global::pl_Gurkas.Properties.Resources.png;
-            this.pictureBox16.Location = new System.Drawing.Point(1109, 12);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(46, 54);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox16.TabIndex = 224;
-            this.pictureBox16.TabStop = false;
             // 
             // groupBox1
             // 
@@ -95,12 +77,30 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Generales:";
             // 
+            // lblRelog
+            // 
+            this.lblRelog.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRelog.Location = new System.Drawing.Point(1166, 13);
+            this.lblRelog.Name = "lblRelog";
+            this.lblRelog.Size = new System.Drawing.Size(144, 31);
+            this.lblRelog.TabIndex = 225;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::pl_Gurkas.Properties.Resources.png;
+            this.pictureBox16.Location = new System.Drawing.Point(1108, 1);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(52, 54);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox16.TabIndex = 224;
+            this.pictureBox16.TabStop = false;
+            // 
             // cboempleadoActivo
             // 
             this.cboempleadoActivo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cboempleadoActivo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboempleadoActivo.FormattingEnabled = true;
-            this.cboempleadoActivo.Location = new System.Drawing.Point(131, 34);
+            this.cboempleadoActivo.Location = new System.Drawing.Point(122, 23);
             this.cboempleadoActivo.Name = "cboempleadoActivo";
             this.cboempleadoActivo.Size = new System.Drawing.Size(335, 21);
             this.cboempleadoActivo.TabIndex = 89;
@@ -109,7 +109,7 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             // 
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(22, 33);
+            this.label42.Location = new System.Drawing.Point(13, 22);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(97, 15);
             this.label42.TabIndex = 88;
@@ -121,7 +121,7 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.Image = global::pl_Gurkas.Properties.Resources.nuevo_emplado_32;
             this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevo.Location = new System.Drawing.Point(700, 20);
+            this.btnNuevo.Location = new System.Drawing.Point(691, 9);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(103, 46);
             this.btnNuevo.TabIndex = 93;
@@ -134,7 +134,7 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = global::pl_Gurkas.Properties.Resources.add_trabajador_32;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(590, 19);
+            this.button2.Location = new System.Drawing.Point(581, 8);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(104, 46);
             this.button2.TabIndex = 92;
@@ -147,7 +147,7 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(490, 19);
+            this.btnBuscar.Location = new System.Drawing.Point(481, 8);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(94, 46);
             this.btnBuscar.TabIndex = 90;

@@ -843,6 +843,52 @@ namespace pl_Gurkas.Datos
                 MessageBox.Show("No se puede obtener el listado del Utiles de Aseo \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        public void ObtenerArmamento(ComboBox cd)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("select COD_PRODUCTO_ARMAMENTO,NOMBRE_ARMAMENTO from T_MAE_ARMAMENTO ", conexiondbo.conexionBD());
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                DataRow fila = dt.NewRow();
+                fila["NOMBRE_ARMAMENTO"] = "---Seleccione un Producto---";
+                dt.Rows.InsertAt(fila, 0);
+                cd.ValueMember = "COD_PRODUCTO_ARMAMENTO";
+                cd.DisplayMember = "NOMBRE_ARMAMENTO";
+                cd.DataSource = dt;
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se puede obtener el listado del Utiles de Aseo \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+
+        public void ObtenerProductosGeneral(ComboBox cd)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("select COD_PRODUCTO_SISTEMA,NOMBRE_PRODUCTO from T_MAE_PRODUCTO ", conexiondbo.conexionBD());
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                DataRow fila = dt.NewRow();
+                fila["NOMBRE_PRODUCTO"] = "---Seleccione un Producto---";
+                dt.Rows.InsertAt(fila, 0);
+                cd.ValueMember = "COD_PRODUCTO_SISTEMA";
+                cd.DisplayMember = "NOMBRE_PRODUCTO";
+                cd.DataSource = dt;
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se puede obtener el listado del Utiles de Aseo \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
     }
     
 }
