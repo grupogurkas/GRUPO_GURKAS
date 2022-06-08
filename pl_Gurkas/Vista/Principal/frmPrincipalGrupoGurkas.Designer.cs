@@ -134,6 +134,9 @@ namespace pl_Gurkas.Vista.Principal
             this.buscarSalidaDeProductoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.historialDeSalidaDeProductoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.inventariadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kardexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registroOrdenesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordenDeServicioCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.planillaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personalToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.registroDeDatosLaboralesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -196,9 +199,7 @@ namespace pl_Gurkas.Vista.Principal
             this.reporteDeAsistenciaPorPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.activarModoAdministradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kardexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registroOrdenesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ordenDeServicioCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cargoDeEntregaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -887,7 +888,8 @@ namespace pl_Gurkas.Vista.Principal
             // 
             this.logisticaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.personalToolStripMenuItem3,
-            this.almacenToolStripMenuItem});
+            this.almacenToolStripMenuItem,
+            this.cargoDeEntregaToolStripMenuItem});
             this.logisticaToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.logistica_32;
             this.logisticaToolStripMenuItem.Name = "logisticaToolStripMenuItem";
             this.logisticaToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
@@ -931,7 +933,7 @@ namespace pl_Gurkas.Vista.Principal
             this.registrarProveedorToolStripMenuItem,
             this.listaDeProveedoresToolStripMenuItem});
             this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
-            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.proveedoresToolStripMenuItem.Text = "Proveedores";
             this.proveedoresToolStripMenuItem.Click += new System.EventHandler(this.proveedoresToolStripMenuItem_Click);
             // 
@@ -956,7 +958,7 @@ namespace pl_Gurkas.Vista.Principal
             this.listarProductoToolStripMenuItem,
             this.generarCodigoBarraToolStripMenuItem});
             this.productosEnAlmacenToolStripMenuItem.Name = "productosEnAlmacenToolStripMenuItem";
-            this.productosEnAlmacenToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.productosEnAlmacenToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.productosEnAlmacenToolStripMenuItem.Text = "Productos en Almacen";
             // 
             // nuevoProductoToolStripMenuItem
@@ -1010,7 +1012,7 @@ namespace pl_Gurkas.Vista.Principal
             this.buscarSalidaDeProductoToolStripMenuItem,
             this.historialDeSalidaDeProductoToolStripMenuItem});
             this.entradaDeProductoToolStripMenuItem.Name = "entradaDeProductoToolStripMenuItem";
-            this.entradaDeProductoToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.entradaDeProductoToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.entradaDeProductoToolStripMenuItem.Text = "Entrada de Producto";
             // 
             // nuevaEntradaDeProductoToolStripMenuItem
@@ -1041,7 +1043,7 @@ namespace pl_Gurkas.Vista.Principal
             this.buscarSalidaDeProductoToolStripMenuItem1,
             this.historialDeSalidaDeProductoToolStripMenuItem1});
             this.salidaDeProductoToolStripMenuItem.Name = "salidaDeProductoToolStripMenuItem";
-            this.salidaDeProductoToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.salidaDeProductoToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.salidaDeProductoToolStripMenuItem.Text = "Salida de Producto";
             // 
             // nuevaSalidaDeProductoToolStripMenuItem
@@ -1070,9 +1072,29 @@ namespace pl_Gurkas.Vista.Principal
             this.inventariadoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.kardexToolStripMenuItem});
             this.inventariadoToolStripMenuItem.Name = "inventariadoToolStripMenuItem";
-            this.inventariadoToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.inventariadoToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.inventariadoToolStripMenuItem.Text = "Inventariado";
             this.inventariadoToolStripMenuItem.Click += new System.EventHandler(this.inventariadoToolStripMenuItem_Click);
+            // 
+            // kardexToolStripMenuItem
+            // 
+            this.kardexToolStripMenuItem.Name = "kardexToolStripMenuItem";
+            this.kardexToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.kardexToolStripMenuItem.Text = "Kardex";
+            // 
+            // registroOrdenesToolStripMenuItem
+            // 
+            this.registroOrdenesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ordenDeServicioCompraToolStripMenuItem});
+            this.registroOrdenesToolStripMenuItem.Name = "registroOrdenesToolStripMenuItem";
+            this.registroOrdenesToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.registroOrdenesToolStripMenuItem.Text = "Registro Ordenes";
+            // 
+            // ordenDeServicioCompraToolStripMenuItem
+            // 
+            this.ordenDeServicioCompraToolStripMenuItem.Name = "ordenDeServicioCompraToolStripMenuItem";
+            this.ordenDeServicioCompraToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
+            this.ordenDeServicioCompraToolStripMenuItem.Text = "Orden de Servicio/Compra";
             // 
             // planillaToolStripMenuItem
             // 
@@ -1585,25 +1607,12 @@ namespace pl_Gurkas.Vista.Principal
             this.activarModoAdministradorToolStripMenuItem.Text = "Activar Modo Administrador";
             this.activarModoAdministradorToolStripMenuItem.Click += new System.EventHandler(this.activarModoAdministradorToolStripMenuItem_Click);
             // 
-            // kardexToolStripMenuItem
+            // cargoDeEntregaToolStripMenuItem
             // 
-            this.kardexToolStripMenuItem.Name = "kardexToolStripMenuItem";
-            this.kardexToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.kardexToolStripMenuItem.Text = "Kardex";
-            // 
-            // registroOrdenesToolStripMenuItem
-            // 
-            this.registroOrdenesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ordenDeServicioCompraToolStripMenuItem});
-            this.registroOrdenesToolStripMenuItem.Name = "registroOrdenesToolStripMenuItem";
-            this.registroOrdenesToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.registroOrdenesToolStripMenuItem.Text = "Registro Ordenes";
-            // 
-            // ordenDeServicioCompraToolStripMenuItem
-            // 
-            this.ordenDeServicioCompraToolStripMenuItem.Name = "ordenDeServicioCompraToolStripMenuItem";
-            this.ordenDeServicioCompraToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
-            this.ordenDeServicioCompraToolStripMenuItem.Text = "Orden de Servicio/Compra";
+            this.cargoDeEntregaToolStripMenuItem.Name = "cargoDeEntregaToolStripMenuItem";
+            this.cargoDeEntregaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cargoDeEntregaToolStripMenuItem.Text = "Cargo de Entrega";
+            this.cargoDeEntregaToolStripMenuItem.Click += new System.EventHandler(this.cargoDeEntregaToolStripMenuItem_Click);
             // 
             // frmPrincipalGrupoGurkas
             // 
@@ -1804,5 +1813,6 @@ namespace pl_Gurkas.Vista.Principal
         private System.Windows.Forms.ToolStripMenuItem kardexToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroOrdenesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ordenDeServicioCompraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cargoDeEntregaToolStripMenuItem;
     }
 }

@@ -45,8 +45,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             Llenadocbo.ObtenerProducto(cboProducto);
             Llenadocbo.ObtenerUnidadRRHH(cboUnidad);
             Llenadocbo.ObtenerEmpresaRRHH_2(cboEmpresa);
-            
 
+            MessageBox.Show("entroo","ss");
 
             dt = new DataTable();
             dt.Columns.Add("ID");

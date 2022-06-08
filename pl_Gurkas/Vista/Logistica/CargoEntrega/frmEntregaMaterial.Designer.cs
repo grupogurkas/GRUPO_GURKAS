@@ -40,7 +40,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.cboProducto = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.cboEstadoMaterial = new System.Windows.Forms.ComboBox();
-            this.btnCertificadoBasc = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.txtCantidadTecno = new System.Windows.Forms.TextBox();
@@ -59,6 +58,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dgvListaProducto = new System.Windows.Forms.DataGridView();
+            this.btnCertificadoBasc = new System.Windows.Forms.Button();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.dtpFechaAdquisicion = new System.Windows.Forms.DateTimePicker();
@@ -182,20 +182,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.cboEstadoMaterial.Name = "cboEstadoMaterial";
             this.cboEstadoMaterial.Size = new System.Drawing.Size(157, 21);
             this.cboEstadoMaterial.TabIndex = 228;
-            // 
-            // btnCertificadoBasc
-            // 
-            this.btnCertificadoBasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCertificadoBasc.Image = global::pl_Gurkas.Properties.Resources.descarga_32;
-            this.btnCertificadoBasc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCertificadoBasc.Location = new System.Drawing.Point(1202, 101);
-            this.btnCertificadoBasc.Name = "btnCertificadoBasc";
-            this.btnCertificadoBasc.Size = new System.Drawing.Size(110, 46);
-            this.btnCertificadoBasc.TabIndex = 226;
-            this.btnCertificadoBasc.Text = "Imprimir";
-            this.btnCertificadoBasc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCertificadoBasc.UseVisualStyleBackColor = true;
-            this.btnCertificadoBasc.Click += new System.EventHandler(this.btnCertificadoBasc_Click);
             // 
             // label1
             // 
@@ -392,6 +378,20 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.dgvListaProducto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListaProducto_CellContentClick);
             this.dgvListaProducto.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvListaProducto_CellPainting);
             // 
+            // btnCertificadoBasc
+            // 
+            this.btnCertificadoBasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCertificadoBasc.Image = global::pl_Gurkas.Properties.Resources.descarga_32;
+            this.btnCertificadoBasc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCertificadoBasc.Location = new System.Drawing.Point(1202, 101);
+            this.btnCertificadoBasc.Name = "btnCertificadoBasc";
+            this.btnCertificadoBasc.Size = new System.Drawing.Size(110, 46);
+            this.btnCertificadoBasc.TabIndex = 226;
+            this.btnCertificadoBasc.Text = "Imprimir";
+            this.btnCertificadoBasc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCertificadoBasc.UseVisualStyleBackColor = true;
+            this.btnCertificadoBasc.Click += new System.EventHandler(this.btnCertificadoBasc_Click);
+            // 
             // pictureBox16
             // 
             this.pictureBox16.Image = global::pl_Gurkas.Properties.Resources.png;
@@ -445,7 +445,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.Image = global::pl_Gurkas.Properties.Resources.cerrar_sesion_32;
             this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrar.Location = new System.Drawing.Point(681, 9);
+            this.btnCerrar.Location = new System.Drawing.Point(708, 12);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(99, 46);
             this.btnCerrar.TabIndex = 94;
@@ -485,7 +485,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             // lblHora
             // 
             this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.Location = new System.Drawing.Point(966, 7);
+            this.lblHora.Location = new System.Drawing.Point(966, 10);
             this.lblHora.Name = "lblHora";
             this.lblHora.Size = new System.Drawing.Size(363, 35);
             this.lblHora.TabIndex = 227;
@@ -495,7 +495,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1361, 651);
+            this.ClientSize = new System.Drawing.Size(1361, 542);
             this.Controls.Add(this.lblHora);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.btnNuevo);
