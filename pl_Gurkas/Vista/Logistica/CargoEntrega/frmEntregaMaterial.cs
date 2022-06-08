@@ -157,7 +157,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             string entrega = txtUsuarioEntrega.Text;
             string cod_empleado = cboempleadoActivo.SelectedValue.ToString();
             string informacion_adicional = txtInformacionAdicional.Text;
-
+            string fecha = lblFecha.Text;
 
             Font tipoTexto = new Font("Arial", 10, FontStyle.Bold);
             Font desp = new Font("Arial", 8, FontStyle.Bold);
@@ -165,6 +165,9 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
             e.Graphics.DrawString("PUESTO : ", tipoTexto, Brushes.Black, 50, 100);//160
             e.Graphics.DrawString(TIPO_PERSONAL, desp, Brushes.Black, 120, 102);
+
+            e.Graphics.DrawString("FECHA : ", desp, Brushes.Black, 320, 100);
+            e.Graphics.DrawString(fecha, desp, Brushes.Black, 390, 102);
 
             e.Graphics.DrawString("AREA DE ENTREGA : ", tipoTexto, Brushes.Black, 50, 130);
             e.Graphics.DrawString(AREA_ENTREGA, desp, Brushes.Black, 200, 132);
@@ -186,6 +189,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
             e.Graphics.DrawString("CODIGO DE PERSONAL QUE SOLICITA : ", tipoTexto, Brushes.Black, 50, 280);
             e.Graphics.DrawString(cod_empleado, desp, Brushes.Black, 350, 282);
+
+            
 
             e.Graphics.DrawImage(pie_pagina, 180, 1050);
 
@@ -259,7 +264,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
         private void btnCertificadoBasc_Click(object sender, EventArgs e)
         {
-            /*System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
+            System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
             PrintDialog1.AllowSomePages = true;
             PrintDialog1.ShowHelp = true;
             PrintDialog1.Document = printDocument1;
@@ -267,8 +272,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             if (result == DialogResult.OK)
             {
                 printDocument1.Print();
-            }*/
-           printPreviewDialog1.ShowDialog();
+            }
+           //printPreviewDialog1.ShowDialog();
         }
 
         private void txtInformacionAdicional_TextChanged(object sender, EventArgs e)

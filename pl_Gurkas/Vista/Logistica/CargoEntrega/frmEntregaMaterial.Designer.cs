@@ -130,12 +130,11 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.dgvListaProducto);
             this.panel1.Controls.Add(this.btnCertificadoBasc);
-            this.panel1.Controls.Add(this.pictureBox16);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.dtpFechaAdquisicion);
-            this.panel1.Location = new System.Drawing.Point(7, 91);
+            this.panel1.Location = new System.Drawing.Point(12, 65);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1327, 509);
+            this.panel1.Size = new System.Drawing.Size(1327, 574);
             this.panel1.TabIndex = 95;
             // 
             // groupBox2
@@ -373,7 +372,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.dgvListaProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListaProducto.Location = new System.Drawing.Point(11, 183);
             this.dgvListaProducto.Name = "dgvListaProducto";
-            this.dgvListaProducto.Size = new System.Drawing.Size(1309, 209);
+            this.dgvListaProducto.Size = new System.Drawing.Size(1309, 384);
             this.dgvListaProducto.TabIndex = 220;
             this.dgvListaProducto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListaProducto_CellContentClick);
             this.dgvListaProducto.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvListaProducto_CellPainting);
@@ -395,9 +394,9 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             // pictureBox16
             // 
             this.pictureBox16.Image = global::pl_Gurkas.Properties.Resources.png;
-            this.pictureBox16.Location = new System.Drawing.Point(708, 381);
+            this.pictureBox16.Location = new System.Drawing.Point(1256, 3);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(98, 93);
+            this.pictureBox16.Size = new System.Drawing.Size(78, 53);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox16.TabIndex = 224;
             this.pictureBox16.TabStop = false;
@@ -476,18 +475,18 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             // lblFecha
             // 
             this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(961, 56);
+            this.lblFecha.Location = new System.Drawing.Point(800, 6);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(368, 32);
+            this.lblFecha.Size = new System.Drawing.Size(368, 21);
             this.lblFecha.TabIndex = 226;
             this.lblFecha.Text = "22";
             // 
             // lblHora
             // 
             this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.Location = new System.Drawing.Point(966, 10);
+            this.lblHora.Location = new System.Drawing.Point(800, 32);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(363, 35);
+            this.lblHora.Size = new System.Drawing.Size(96, 24);
             this.lblHora.TabIndex = 227;
             this.lblHora.Text = "22";
             // 
@@ -500,6 +499,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.button2);
+            this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.cboempleadoActivo);
             this.Controls.Add(this.label42);
             this.Controls.Add(this.panel1);
