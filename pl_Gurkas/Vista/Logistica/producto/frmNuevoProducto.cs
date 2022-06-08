@@ -1725,9 +1725,26 @@ namespace pl_Gurkas.Vista.Logistica.producto
             txtCodEquipAseo.Enabled = false;
             txtCodEquipArmamento.Enabled = false;
         }
+        private void codigomanual()
+        {
+            txtCodEquipoTecnologia.Enabled = true;
+            txtcodcamisas.Enabled = true;
+           // txtCodSistema.Enabled = true;
+            txtCodCalzado.Enabled = true;
+            txtCodPantalon.Enabled = true;
+            txtCodAccesorio.Enabled = true;
+            txtCodigoUtiles.Enabled = true;
+            txtCodEquipoEquip.Enabled = true;
+            txtCodEquipProtec.Enabled = true;
+            txtCodEquipMobi.Enabled = true;
+            txtCodVehiculo.Enabled = true;
+            txtCodEquipAseo.Enabled = true;
+            txtCodEquipArmamento.Enabled = true;
+        }
+
         private void frmNuevoProducto_Load(object sender, EventArgs e)
         {
-            bloqueodecodigo();
+            rbtCodigoSistema.Checked = true;
             llenadoProductoTecnologico();
             llenadoDatosCamisas();
             llenadoDatosCalzado();
@@ -2008,6 +2025,22 @@ namespace pl_Gurkas.Vista.Logistica.producto
             string cod_armamento = cboArmamento.SelectedValue.ToString();
             BuscarProductoArmamento(cod_armamento);
             btnAgregarArmamento.Enabled = false;
+        }
+
+        private void rbtCodigoSistema_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbtCodigoSistema.Checked == true)
+            {
+                bloqueodecodigo();
+            }
+        }
+
+        private void rbCodigoManual_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbCodigoManual.Checked == true)
+            {
+                codigomanual();
+            }
         }
     }
 }

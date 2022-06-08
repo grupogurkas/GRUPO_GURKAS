@@ -37,6 +37,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btcPanel = new System.Windows.Forms.TabControl();
             this.tbpTecnologico = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnNuevoProductoTecnologico = new System.Windows.Forms.Button();
             this.btnBuscarProductoTecnologia = new System.Windows.Forms.Button();
@@ -519,10 +520,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label196 = new System.Windows.Forms.Label();
             this.dtpFechaAdArmamento = new System.Windows.Forms.DateTimePicker();
             this.label197 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.rbtCodigoSistema = new System.Windows.Forms.RadioButton();
+            this.rbCodigoManual = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.btcPanel.SuspendLayout();
             this.tbpTecnologico.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox13.SuspendLayout();
@@ -572,12 +579,17 @@ namespace pl_Gurkas.Vista.Logistica.producto
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.groupBox23.SuspendLayout();
             this.groupBox24.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.rbCodigoManual);
+            this.panel1.Controls.Add(this.rbtCodigoSistema);
             this.panel1.Controls.Add(this.txtCodSistema);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnCerrar);
@@ -686,6 +698,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tbpTecnologico.Text = "Tecnologico";
             this.tbpTecnologico.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(16, 299);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1281, 234);
+            this.dataGridView1.TabIndex = 157;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::pl_Gurkas.Properties.Resources.png;
@@ -790,6 +810,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.cboEstadoProducEquipoTecnologia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboEstadoProducEquipoTecnologia.FormattingEnabled = true;
+            this.cboEstadoProducEquipoTecnologia.ItemHeight = 13;
             this.cboEstadoProducEquipoTecnologia.Location = new System.Drawing.Point(476, 19);
             this.cboEstadoProducEquipoTecnologia.Name = "cboEstadoProducEquipoTecnologia";
             this.cboEstadoProducEquipoTecnologia.Size = new System.Drawing.Size(213, 21);
@@ -810,12 +831,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtStockMinEquipoTecnologia.Location = new System.Drawing.Point(476, 154);
             this.txtStockMinEquipoTecnologia.Name = "txtStockMinEquipoTecnologia";
             this.txtStockMinEquipoTecnologia.Size = new System.Drawing.Size(213, 20);
-            this.txtStockMinEquipoTecnologia.TabIndex = 182;
+            this.txtStockMinEquipoTecnologia.TabIndex = 12;
             // 
             // cboTipoUnidadEquipoTecnologia
             // 
             this.cboTipoUnidadEquipoTecnologia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipoUnidadEquipoTecnologia.FormattingEnabled = true;
+            this.cboTipoUnidadEquipoTecnologia.ItemHeight = 13;
             this.cboTipoUnidadEquipoTecnologia.Location = new System.Drawing.Point(476, 75);
             this.cboTipoUnidadEquipoTecnologia.Name = "cboTipoUnidadEquipoTecnologia";
             this.cboTipoUnidadEquipoTecnologia.Size = new System.Drawing.Size(213, 21);
@@ -846,7 +868,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtStockInicialEquipoTecnologia.Location = new System.Drawing.Point(476, 102);
             this.txtStockInicialEquipoTecnologia.Name = "txtStockInicialEquipoTecnologia";
             this.txtStockInicialEquipoTecnologia.Size = new System.Drawing.Size(213, 20);
-            this.txtStockInicialEquipoTecnologia.TabIndex = 157;
+            this.txtStockInicialEquipoTecnologia.TabIndex = 10;
             // 
             // label142
             // 
@@ -863,7 +885,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtStockActualEquipoTecnologia.Location = new System.Drawing.Point(476, 128);
             this.txtStockActualEquipoTecnologia.Name = "txtStockActualEquipoTecnologia";
             this.txtStockActualEquipoTecnologia.Size = new System.Drawing.Size(213, 20);
-            this.txtStockActualEquipoTecnologia.TabIndex = 180;
+            this.txtStockActualEquipoTecnologia.TabIndex = 11;
             // 
             // label192
             // 
@@ -880,7 +902,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtPrecioUnitarioEquipoTecnologia.Location = new System.Drawing.Point(476, 49);
             this.txtPrecioUnitarioEquipoTecnologia.Name = "txtPrecioUnitarioEquipoTecnologia";
             this.txtPrecioUnitarioEquipoTecnologia.Size = new System.Drawing.Size(213, 20);
-            this.txtPrecioUnitarioEquipoTecnologia.TabIndex = 80;
+            this.txtPrecioUnitarioEquipoTecnologia.TabIndex = 8;
             // 
             // label13
             // 
@@ -905,7 +927,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtCodEquipoTecnologia.Location = new System.Drawing.Point(135, 27);
             this.txtCodEquipoTecnologia.Name = "txtCodEquipoTecnologia";
             this.txtCodEquipoTecnologia.Size = new System.Drawing.Size(213, 20);
-            this.txtCodEquipoTecnologia.TabIndex = 78;
+            this.txtCodEquipoTecnologia.TabIndex = 1;
             // 
             // label14
             // 
@@ -922,7 +944,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtNumSerialEquipoTecnologia.Location = new System.Drawing.Point(135, 131);
             this.txtNumSerialEquipoTecnologia.Name = "txtNumSerialEquipoTecnologia";
             this.txtNumSerialEquipoTecnologia.Size = new System.Drawing.Size(213, 20);
-            this.txtNumSerialEquipoTecnologia.TabIndex = 67;
+            this.txtNumSerialEquipoTecnologia.TabIndex = 5;
             // 
             // label7
             // 
@@ -952,14 +974,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtDescripcionEquipoTecnologia.Multiline = true;
             this.txtDescripcionEquipoTecnologia.Name = "txtDescripcionEquipoTecnologia";
             this.txtDescripcionEquipoTecnologia.Size = new System.Drawing.Size(213, 66);
-            this.txtDescripcionEquipoTecnologia.TabIndex = 62;
+            this.txtDescripcionEquipoTecnologia.TabIndex = 6;
             // 
             // txtMarcaEquipoTecnologia
             // 
             this.txtMarcaEquipoTecnologia.Location = new System.Drawing.Point(135, 105);
             this.txtMarcaEquipoTecnologia.Name = "txtMarcaEquipoTecnologia";
             this.txtMarcaEquipoTecnologia.Size = new System.Drawing.Size(213, 20);
-            this.txtMarcaEquipoTecnologia.TabIndex = 61;
+            this.txtMarcaEquipoTecnologia.TabIndex = 4;
             // 
             // label4
             // 
@@ -986,14 +1008,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtModeloEquipoTecnologia.Location = new System.Drawing.Point(135, 79);
             this.txtModeloEquipoTecnologia.Name = "txtModeloEquipoTecnologia";
             this.txtModeloEquipoTecnologia.Size = new System.Drawing.Size(213, 20);
-            this.txtModeloEquipoTecnologia.TabIndex = 58;
+            this.txtModeloEquipoTecnologia.TabIndex = 3;
             // 
             // txtNombreEquipoTecnologia
             // 
             this.txtNombreEquipoTecnologia.Location = new System.Drawing.Point(135, 53);
             this.txtNombreEquipoTecnologia.Name = "txtNombreEquipoTecnologia";
             this.txtNombreEquipoTecnologia.Size = new System.Drawing.Size(213, 20);
-            this.txtNombreEquipoTecnologia.TabIndex = 57;
+            this.txtNombreEquipoTecnologia.TabIndex = 2;
             // 
             // label2
             // 
@@ -1026,7 +1048,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtObservacionEquipoTecnologia.Multiline = true;
             this.txtObservacionEquipoTecnologia.Name = "txtObservacionEquipoTecnologia";
             this.txtObservacionEquipoTecnologia.Size = new System.Drawing.Size(314, 106);
-            this.txtObservacionEquipoTecnologia.TabIndex = 158;
+            this.txtObservacionEquipoTecnologia.TabIndex = 15;
             // 
             // label6
             // 
@@ -1044,7 +1066,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.dtpFechaRegistroEquipoTecnologia.Location = new System.Drawing.Point(139, 64);
             this.dtpFechaRegistroEquipoTecnologia.Name = "dtpFechaRegistroEquipoTecnologia";
             this.dtpFechaRegistroEquipoTecnologia.Size = new System.Drawing.Size(109, 20);
-            this.dtpFechaRegistroEquipoTecnologia.TabIndex = 153;
+            this.dtpFechaRegistroEquipoTecnologia.TabIndex = 14;
             // 
             // label10
             // 
@@ -1062,7 +1084,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.dtpFechaAdquisicionEquipoTecnologia.Location = new System.Drawing.Point(139, 32);
             this.dtpFechaAdquisicionEquipoTecnologia.Name = "dtpFechaAdquisicionEquipoTecnologia";
             this.dtpFechaAdquisicionEquipoTecnologia.Size = new System.Drawing.Size(109, 20);
-            this.dtpFechaAdquisicionEquipoTecnologia.TabIndex = 151;
+            this.dtpFechaAdquisicionEquipoTecnologia.TabIndex = 13;
             // 
             // label12
             // 
@@ -1128,6 +1150,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.dataGridView2);
             this.tabPage1.Controls.Add(this.pictureBox2);
             this.tabPage1.Controls.Add(this.btnNuevoProductoCamisas);
             this.tabPage1.Controls.Add(this.btnBuscarProductoCamisas);
@@ -1286,7 +1309,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtStockMinimoCamisas.Location = new System.Drawing.Point(489, 139);
             this.txtStockMinimoCamisas.Name = "txtStockMinimoCamisas";
             this.txtStockMinimoCamisas.Size = new System.Drawing.Size(213, 20);
-            this.txtStockMinimoCamisas.TabIndex = 95;
+            this.txtStockMinimoCamisas.TabIndex = 25;
             // 
             // label83
             // 
@@ -1303,7 +1326,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtStockInicialCamisas.Location = new System.Drawing.Point(489, 80);
             this.txtStockInicialCamisas.Name = "txtStockInicialCamisas";
             this.txtStockInicialCamisas.Size = new System.Drawing.Size(213, 20);
-            this.txtStockInicialCamisas.TabIndex = 90;
+            this.txtStockInicialCamisas.TabIndex = 23;
             // 
             // label80
             // 
@@ -1320,7 +1343,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtColorCamisas.Location = new System.Drawing.Point(135, 113);
             this.txtColorCamisas.Name = "txtColorCamisas";
             this.txtColorCamisas.Size = new System.Drawing.Size(213, 20);
-            this.txtColorCamisas.TabIndex = 88;
+            this.txtColorCamisas.TabIndex = 19;
             // 
             // label79
             // 
@@ -1336,6 +1359,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.cboTallaPrendaCamisas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTallaPrendaCamisas.FormattingEnabled = true;
+            this.cboTallaPrendaCamisas.ItemHeight = 13;
             this.cboTallaPrendaCamisas.Location = new System.Drawing.Point(135, 80);
             this.cboTallaPrendaCamisas.Name = "cboTallaPrendaCamisas";
             this.cboTallaPrendaCamisas.Size = new System.Drawing.Size(213, 21);
@@ -1356,7 +1380,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtCostoUniCamisas.Location = new System.Drawing.Point(489, 46);
             this.txtCostoUniCamisas.Name = "txtCostoUniCamisas";
             this.txtCostoUniCamisas.Size = new System.Drawing.Size(213, 20);
-            this.txtCostoUniCamisas.TabIndex = 80;
+            this.txtCostoUniCamisas.TabIndex = 22;
             // 
             // label20
             // 
@@ -1371,7 +1395,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtcodcamisas.Location = new System.Drawing.Point(135, 28);
             this.txtcodcamisas.Name = "txtcodcamisas";
             this.txtcodcamisas.Size = new System.Drawing.Size(213, 20);
-            this.txtcodcamisas.TabIndex = 78;
+            this.txtcodcamisas.TabIndex = 16;
             // 
             // label22
             // 
@@ -1388,7 +1412,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtStockActualCamisas.Location = new System.Drawing.Point(489, 113);
             this.txtStockActualCamisas.Name = "txtStockActualCamisas";
             this.txtStockActualCamisas.Size = new System.Drawing.Size(213, 20);
-            this.txtStockActualCamisas.TabIndex = 67;
+            this.txtStockActualCamisas.TabIndex = 24;
             // 
             // label29
             // 
@@ -1406,14 +1430,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtDescripcionCamisas.Multiline = true;
             this.txtDescripcionCamisas.Name = "txtDescripcionCamisas";
             this.txtDescripcionCamisas.Size = new System.Drawing.Size(336, 79);
-            this.txtDescripcionCamisas.TabIndex = 62;
+            this.txtDescripcionCamisas.TabIndex = 20;
             // 
             // txtNombreCamisas
             // 
             this.txtNombreCamisas.Location = new System.Drawing.Point(135, 54);
             this.txtNombreCamisas.Name = "txtNombreCamisas";
             this.txtNombreCamisas.Size = new System.Drawing.Size(213, 20);
-            this.txtNombreCamisas.TabIndex = 57;
+            this.txtNombreCamisas.TabIndex = 17;
             // 
             // label35
             // 
@@ -1429,6 +1453,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.cboEstadoProduCamisas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboEstadoProduCamisas.FormattingEnabled = true;
+            this.cboEstadoProduCamisas.ItemHeight = 13;
             this.cboEstadoProduCamisas.Location = new System.Drawing.Point(489, 19);
             this.cboEstadoProduCamisas.Name = "cboEstadoProduCamisas";
             this.cboEstadoProduCamisas.Size = new System.Drawing.Size(213, 21);
@@ -1465,7 +1490,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtObservacionCamisas.Multiline = true;
             this.txtObservacionCamisas.Name = "txtObservacionCamisas";
             this.txtObservacionCamisas.Size = new System.Drawing.Size(318, 107);
-            this.txtObservacionCamisas.TabIndex = 152;
+            this.txtObservacionCamisas.TabIndex = 28;
             // 
             // label24
             // 
@@ -1483,7 +1508,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.dtpRegistroCamisas.Location = new System.Drawing.Point(139, 64);
             this.dtpRegistroCamisas.Name = "dtpRegistroCamisas";
             this.dtpRegistroCamisas.Size = new System.Drawing.Size(109, 20);
-            this.dtpRegistroCamisas.TabIndex = 153;
+            this.dtpRegistroCamisas.TabIndex = 27;
             // 
             // label23
             // 
@@ -1501,7 +1526,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.dtpAdquisicionCamisas.Location = new System.Drawing.Point(139, 32);
             this.dtpAdquisicionCamisas.Name = "dtpAdquisicionCamisas";
             this.dtpAdquisicionCamisas.Size = new System.Drawing.Size(109, 20);
-            this.dtpAdquisicionCamisas.TabIndex = 151;
+            this.dtpAdquisicionCamisas.TabIndex = 26;
             // 
             // label26
             // 
@@ -1515,6 +1540,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.dataGridView3);
             this.tabPage2.Controls.Add(this.pictureBox3);
             this.tabPage2.Controls.Add(this.btnNuevoCalzado);
             this.tabPage2.Controls.Add(this.btnBuscarCalzado);
@@ -1675,7 +1701,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtStockMinimoCalzado.Location = new System.Drawing.Point(494, 163);
             this.txtStockMinimoCalzado.Name = "txtStockMinimoCalzado";
             this.txtStockMinimoCalzado.Size = new System.Drawing.Size(213, 20);
-            this.txtStockMinimoCalzado.TabIndex = 95;
+            this.txtStockMinimoCalzado.TabIndex = 39;
             // 
             // label85
             // 
@@ -1702,7 +1728,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtStockInicialCalzado.Location = new System.Drawing.Point(494, 111);
             this.txtStockInicialCalzado.Name = "txtStockInicialCalzado";
             this.txtStockInicialCalzado.Size = new System.Drawing.Size(213, 20);
-            this.txtStockInicialCalzado.TabIndex = 90;
+            this.txtStockInicialCalzado.TabIndex = 37;
             // 
             // label87
             // 
@@ -1719,7 +1745,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtColorCalzado.Location = new System.Drawing.Point(130, 112);
             this.txtColorCalzado.Name = "txtColorCalzado";
             this.txtColorCalzado.Size = new System.Drawing.Size(213, 20);
-            this.txtColorCalzado.TabIndex = 88;
+            this.txtColorCalzado.TabIndex = 32;
             // 
             // cboTipoCalzado
             // 
@@ -1728,7 +1754,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.cboTipoCalzado.Location = new System.Drawing.Point(494, 26);
             this.cboTipoCalzado.Name = "cboTipoCalzado";
             this.cboTipoCalzado.Size = new System.Drawing.Size(213, 21);
-            this.cboTipoCalzado.TabIndex = 87;
+            this.cboTipoCalzado.TabIndex = 34;
             // 
             // label88
             // 
@@ -1747,7 +1773,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.cboTallaCalzado.Location = new System.Drawing.Point(130, 79);
             this.cboTallaCalzado.Name = "cboTallaCalzado";
             this.cboTallaCalzado.Size = new System.Drawing.Size(213, 21);
-            this.cboTallaCalzado.TabIndex = 85;
+            this.cboTallaCalzado.TabIndex = 31;
             // 
             // label89
             // 
@@ -1764,7 +1790,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtCostoUniCalzado.Location = new System.Drawing.Point(494, 80);
             this.txtCostoUniCalzado.Name = "txtCostoUniCalzado";
             this.txtCostoUniCalzado.Size = new System.Drawing.Size(213, 20);
-            this.txtCostoUniCalzado.TabIndex = 80;
+            this.txtCostoUniCalzado.TabIndex = 36;
             // 
             // label91
             // 
@@ -1779,7 +1805,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtCodCalzado.Location = new System.Drawing.Point(130, 27);
             this.txtCodCalzado.Name = "txtCodCalzado";
             this.txtCodCalzado.Size = new System.Drawing.Size(213, 20);
-            this.txtCodCalzado.TabIndex = 78;
+            this.txtCodCalzado.TabIndex = 29;
             // 
             // label93
             // 
@@ -1796,7 +1822,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtStockActualCalzado.Location = new System.Drawing.Point(494, 137);
             this.txtStockActualCalzado.Name = "txtStockActualCalzado";
             this.txtStockActualCalzado.Size = new System.Drawing.Size(213, 20);
-            this.txtStockActualCalzado.TabIndex = 67;
+            this.txtStockActualCalzado.TabIndex = 38;
             // 
             // label95
             // 
@@ -1814,14 +1840,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtDespCalzado.Multiline = true;
             this.txtDespCalzado.Name = "txtDespCalzado";
             this.txtDespCalzado.Size = new System.Drawing.Size(334, 56);
-            this.txtDespCalzado.TabIndex = 62;
+            this.txtDespCalzado.TabIndex = 33;
             // 
             // txtNombreCalzado
             // 
             this.txtNombreCalzado.Location = new System.Drawing.Point(130, 53);
             this.txtNombreCalzado.Name = "txtNombreCalzado";
             this.txtNombreCalzado.Size = new System.Drawing.Size(213, 20);
-            this.txtNombreCalzado.TabIndex = 57;
+            this.txtNombreCalzado.TabIndex = 30;
             // 
             // label96
             // 
@@ -1840,7 +1866,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.cboEstadoCalzado.Location = new System.Drawing.Point(494, 53);
             this.cboEstadoCalzado.Name = "cboEstadoCalzado";
             this.cboEstadoCalzado.Size = new System.Drawing.Size(213, 21);
-            this.cboEstadoCalzado.TabIndex = 26;
+            this.cboEstadoCalzado.TabIndex = 35;
             // 
             // label98
             // 
@@ -1873,7 +1899,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtObservacionCalzado.Multiline = true;
             this.txtObservacionCalzado.Name = "txtObservacionCalzado";
             this.txtObservacionCalzado.Size = new System.Drawing.Size(297, 98);
-            this.txtObservacionCalzado.TabIndex = 158;
+            this.txtObservacionCalzado.TabIndex = 42;
             // 
             // label8
             // 
@@ -1891,7 +1917,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.dtpRegistroCalzado.Location = new System.Drawing.Point(139, 68);
             this.dtpRegistroCalzado.Name = "dtpRegistroCalzado";
             this.dtpRegistroCalzado.Size = new System.Drawing.Size(109, 20);
-            this.dtpRegistroCalzado.TabIndex = 153;
+            this.dtpRegistroCalzado.TabIndex = 41;
             // 
             // label30
             // 
@@ -1909,7 +1935,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.dtpAdquiCalzado.Location = new System.Drawing.Point(139, 32);
             this.dtpAdquiCalzado.Name = "dtpAdquiCalzado";
             this.dtpAdquiCalzado.Size = new System.Drawing.Size(104, 20);
-            this.dtpAdquiCalzado.TabIndex = 151;
+            this.dtpAdquiCalzado.TabIndex = 40;
             // 
             // label31
             // 
@@ -1923,6 +1949,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.dataGridView4);
             this.tabPage3.Controls.Add(this.pictureBox4);
             this.tabPage3.Controls.Add(this.btnNuevoPantalon);
             this.tabPage3.Controls.Add(this.btnBuscarPantalon);
@@ -2083,7 +2110,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtStockMinPantalon.Location = new System.Drawing.Point(482, 160);
             this.txtStockMinPantalon.Name = "txtStockMinPantalon";
             this.txtStockMinPantalon.Size = new System.Drawing.Size(213, 20);
-            this.txtStockMinPantalon.TabIndex = 95;
+            this.txtStockMinPantalon.TabIndex = 53;
             // 
             // label104
             // 
@@ -2110,7 +2137,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtStockIniPantalon.Location = new System.Drawing.Point(482, 108);
             this.txtStockIniPantalon.Name = "txtStockIniPantalon";
             this.txtStockIniPantalon.Size = new System.Drawing.Size(213, 20);
-            this.txtStockIniPantalon.TabIndex = 90;
+            this.txtStockIniPantalon.TabIndex = 51;
             // 
             // label106
             // 
@@ -2127,7 +2154,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtColorPantalon.Location = new System.Drawing.Point(130, 108);
             this.txtColorPantalon.Name = "txtColorPantalon";
             this.txtColorPantalon.Size = new System.Drawing.Size(213, 20);
-            this.txtColorPantalon.TabIndex = 88;
+            this.txtColorPantalon.TabIndex = 46;
             // 
             // cboTipoTelaPantalon
             // 
@@ -2136,7 +2163,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.cboTipoTelaPantalon.Location = new System.Drawing.Point(482, 24);
             this.cboTipoTelaPantalon.Name = "cboTipoTelaPantalon";
             this.cboTipoTelaPantalon.Size = new System.Drawing.Size(213, 21);
-            this.cboTipoTelaPantalon.TabIndex = 87;
+            this.cboTipoTelaPantalon.TabIndex = 48;
             // 
             // label107
             // 
@@ -2155,7 +2182,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.cboTallaPantalon.Location = new System.Drawing.Point(130, 75);
             this.cboTallaPantalon.Name = "cboTallaPantalon";
             this.cboTallaPantalon.Size = new System.Drawing.Size(213, 21);
-            this.cboTallaPantalon.TabIndex = 85;
+            this.cboTallaPantalon.TabIndex = 45;
             // 
             // label108
             // 
@@ -2172,7 +2199,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtCostoUniPantalon.Location = new System.Drawing.Point(482, 78);
             this.txtCostoUniPantalon.Name = "txtCostoUniPantalon";
             this.txtCostoUniPantalon.Size = new System.Drawing.Size(213, 20);
-            this.txtCostoUniPantalon.TabIndex = 80;
+            this.txtCostoUniPantalon.TabIndex = 50;
             // 
             // label110
             // 
@@ -2187,7 +2214,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtCodPantalon.Location = new System.Drawing.Point(130, 23);
             this.txtCodPantalon.Name = "txtCodPantalon";
             this.txtCodPantalon.Size = new System.Drawing.Size(213, 20);
-            this.txtCodPantalon.TabIndex = 78;
+            this.txtCodPantalon.TabIndex = 43;
             // 
             // label112
             // 
@@ -2204,7 +2231,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtStockActuPantalon.Location = new System.Drawing.Point(482, 134);
             this.txtStockActuPantalon.Name = "txtStockActuPantalon";
             this.txtStockActuPantalon.Size = new System.Drawing.Size(213, 20);
-            this.txtStockActuPantalon.TabIndex = 67;
+            this.txtStockActuPantalon.TabIndex = 52;
             // 
             // label114
             // 
@@ -2222,14 +2249,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtDespPantalon.Multiline = true;
             this.txtDespPantalon.Name = "txtDespPantalon";
             this.txtDespPantalon.Size = new System.Drawing.Size(332, 56);
-            this.txtDespPantalon.TabIndex = 62;
+            this.txtDespPantalon.TabIndex = 47;
             // 
             // txtNombrePantalon
             // 
             this.txtNombrePantalon.Location = new System.Drawing.Point(130, 49);
             this.txtNombrePantalon.Name = "txtNombrePantalon";
             this.txtNombrePantalon.Size = new System.Drawing.Size(213, 20);
-            this.txtNombrePantalon.TabIndex = 57;
+            this.txtNombrePantalon.TabIndex = 44;
             // 
             // label115
             // 
@@ -2248,7 +2275,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.cboEstadoPantalon.Location = new System.Drawing.Point(482, 51);
             this.cboEstadoPantalon.Name = "cboEstadoPantalon";
             this.cboEstadoPantalon.Size = new System.Drawing.Size(213, 21);
-            this.cboEstadoPantalon.TabIndex = 26;
+            this.cboEstadoPantalon.TabIndex = 49;
             // 
             // label117
             // 
@@ -2281,7 +2308,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtObservacionPantalon.Multiline = true;
             this.txtObservacionPantalon.Name = "txtObservacionPantalon";
             this.txtObservacionPantalon.Size = new System.Drawing.Size(294, 68);
-            this.txtObservacionPantalon.TabIndex = 158;
+            this.txtObservacionPantalon.TabIndex = 56;
             // 
             // label47
             // 
@@ -2299,7 +2326,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.dtpRegistroPantalon.Location = new System.Drawing.Point(139, 75);
             this.dtpRegistroPantalon.Name = "dtpRegistroPantalon";
             this.dtpRegistroPantalon.Size = new System.Drawing.Size(109, 20);
-            this.dtpRegistroPantalon.TabIndex = 153;
+            this.dtpRegistroPantalon.TabIndex = 55;
             // 
             // label101
             // 
@@ -2317,7 +2344,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.dtpAdPantalon.Location = new System.Drawing.Point(139, 32);
             this.dtpAdPantalon.Name = "dtpAdPantalon";
             this.dtpAdPantalon.Size = new System.Drawing.Size(104, 20);
-            this.dtpAdPantalon.TabIndex = 151;
+            this.dtpAdPantalon.TabIndex = 54;
             // 
             // label102
             // 
@@ -2331,6 +2358,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.dataGridView5);
             this.tabPage4.Controls.Add(this.pictureBox5);
             this.tabPage4.Controls.Add(this.btnNuevoAccesorio);
             this.tabPage4.Controls.Add(this.btnBuscarAccesorio);
@@ -2491,7 +2519,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtStockMinimoAccesorio.Location = new System.Drawing.Point(481, 156);
             this.txtStockMinimoAccesorio.Name = "txtStockMinimoAccesorio";
             this.txtStockMinimoAccesorio.Size = new System.Drawing.Size(213, 20);
-            this.txtStockMinimoAccesorio.TabIndex = 95;
+            this.txtStockMinimoAccesorio.TabIndex = 67;
             // 
             // label123
             // 
@@ -2518,7 +2546,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtStockInicalAcessorio.Location = new System.Drawing.Point(481, 103);
             this.txtStockInicalAcessorio.Name = "txtStockInicalAcessorio";
             this.txtStockInicalAcessorio.Size = new System.Drawing.Size(213, 20);
-            this.txtStockInicalAcessorio.TabIndex = 90;
+            this.txtStockInicalAcessorio.TabIndex = 65;
             // 
             // label125
             // 
@@ -2535,7 +2563,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtColorAccesorio.Location = new System.Drawing.Point(130, 104);
             this.txtColorAccesorio.Name = "txtColorAccesorio";
             this.txtColorAccesorio.Size = new System.Drawing.Size(213, 20);
-            this.txtColorAccesorio.TabIndex = 88;
+            this.txtColorAccesorio.TabIndex = 60;
             // 
             // cboTipoTelaAccesorio
             // 
@@ -2544,7 +2572,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.cboTipoTelaAccesorio.Location = new System.Drawing.Point(481, 18);
             this.cboTipoTelaAccesorio.Name = "cboTipoTelaAccesorio";
             this.cboTipoTelaAccesorio.Size = new System.Drawing.Size(213, 21);
-            this.cboTipoTelaAccesorio.TabIndex = 87;
+            this.cboTipoTelaAccesorio.TabIndex = 62;
             // 
             // label126
             // 
@@ -2563,7 +2591,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.cboTallaAccesorio.Location = new System.Drawing.Point(130, 71);
             this.cboTallaAccesorio.Name = "cboTallaAccesorio";
             this.cboTallaAccesorio.Size = new System.Drawing.Size(213, 21);
-            this.cboTallaAccesorio.TabIndex = 85;
+            this.cboTallaAccesorio.TabIndex = 59;
             // 
             // label127
             // 
@@ -2580,7 +2608,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtCostoUnitarioAccesorio.Location = new System.Drawing.Point(481, 72);
             this.txtCostoUnitarioAccesorio.Name = "txtCostoUnitarioAccesorio";
             this.txtCostoUnitarioAccesorio.Size = new System.Drawing.Size(213, 20);
-            this.txtCostoUnitarioAccesorio.TabIndex = 80;
+            this.txtCostoUnitarioAccesorio.TabIndex = 64;
             // 
             // label129
             // 
@@ -2595,7 +2623,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtCodAccesorio.Location = new System.Drawing.Point(130, 19);
             this.txtCodAccesorio.Name = "txtCodAccesorio";
             this.txtCodAccesorio.Size = new System.Drawing.Size(213, 20);
-            this.txtCodAccesorio.TabIndex = 78;
+            this.txtCodAccesorio.TabIndex = 57;
             // 
             // label131
             // 
@@ -2612,7 +2640,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtStockActutalAccesorio.Location = new System.Drawing.Point(481, 130);
             this.txtStockActutalAccesorio.Name = "txtStockActutalAccesorio";
             this.txtStockActutalAccesorio.Size = new System.Drawing.Size(213, 20);
-            this.txtStockActutalAccesorio.TabIndex = 67;
+            this.txtStockActutalAccesorio.TabIndex = 66;
             // 
             // label133
             // 
@@ -2630,14 +2658,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtDespAccesorio.Multiline = true;
             this.txtDespAccesorio.Name = "txtDespAccesorio";
             this.txtDespAccesorio.Size = new System.Drawing.Size(336, 56);
-            this.txtDespAccesorio.TabIndex = 62;
+            this.txtDespAccesorio.TabIndex = 61;
             // 
             // txtNombreAccesorio
             // 
             this.txtNombreAccesorio.Location = new System.Drawing.Point(130, 45);
             this.txtNombreAccesorio.Name = "txtNombreAccesorio";
             this.txtNombreAccesorio.Size = new System.Drawing.Size(213, 20);
-            this.txtNombreAccesorio.TabIndex = 57;
+            this.txtNombreAccesorio.TabIndex = 58;
             // 
             // label134
             // 
@@ -2656,7 +2684,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.cboEstadoAccesorio.Location = new System.Drawing.Point(481, 45);
             this.cboEstadoAccesorio.Name = "cboEstadoAccesorio";
             this.cboEstadoAccesorio.Size = new System.Drawing.Size(213, 21);
-            this.cboEstadoAccesorio.TabIndex = 26;
+            this.cboEstadoAccesorio.TabIndex = 63;
             // 
             // label136
             // 
@@ -2689,7 +2717,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.txtObservacionAccesorio.Multiline = true;
             this.txtObservacionAccesorio.Name = "txtObservacionAccesorio";
             this.txtObservacionAccesorio.Size = new System.Drawing.Size(266, 65);
-            this.txtObservacionAccesorio.TabIndex = 163;
+            this.txtObservacionAccesorio.TabIndex = 70;
             // 
             // label63
             // 
@@ -2707,7 +2735,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.dtpRegistroAccesorio.Location = new System.Drawing.Point(139, 72);
             this.dtpRegistroAccesorio.Name = "dtpRegistroAccesorio";
             this.dtpRegistroAccesorio.Size = new System.Drawing.Size(109, 20);
-            this.dtpRegistroAccesorio.TabIndex = 153;
+            this.dtpRegistroAccesorio.TabIndex = 69;
             // 
             // label120
             // 
@@ -2725,7 +2753,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.dtpAdquAccesorio.Location = new System.Drawing.Point(139, 32);
             this.dtpAdquAccesorio.Name = "dtpAdquAccesorio";
             this.dtpAdquAccesorio.Size = new System.Drawing.Size(104, 20);
-            this.dtpAdquAccesorio.TabIndex = 151;
+            this.dtpAdquAccesorio.TabIndex = 68;
             // 
             // label121
             // 
@@ -5702,13 +5730,61 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label197.TabIndex = 152;
             this.label197.Text = "Fecha Adquisicion:";
             // 
-            // dataGridView1
+            // dataGridView2
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 299);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1281, 234);
-            this.dataGridView1.TabIndex = 157;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(9, 311);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(1268, 184);
+            this.dataGridView2.TabIndex = 159;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(11, 309);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(1266, 184);
+            this.dataGridView3.TabIndex = 170;
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(6, 291);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.Size = new System.Drawing.Size(1266, 204);
+            this.dataGridView4.TabIndex = 176;
+            // 
+            // dataGridView5
+            // 
+            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView5.Location = new System.Drawing.Point(6, 287);
+            this.dataGridView5.Name = "dataGridView5";
+            this.dataGridView5.Size = new System.Drawing.Size(1266, 204);
+            this.dataGridView5.TabIndex = 182;
+            // 
+            // rbtCodigoSistema
+            // 
+            this.rbtCodigoSistema.AutoSize = true;
+            this.rbtCodigoSistema.Location = new System.Drawing.Point(368, 16);
+            this.rbtCodigoSistema.Name = "rbtCodigoSistema";
+            this.rbtCodigoSistema.Size = new System.Drawing.Size(98, 17);
+            this.rbtCodigoSistema.TabIndex = 90;
+            this.rbtCodigoSistema.TabStop = true;
+            this.rbtCodigoSistema.Text = "Codigo Sistema";
+            this.rbtCodigoSistema.UseVisualStyleBackColor = true;
+            this.rbtCodigoSistema.CheckedChanged += new System.EventHandler(this.rbtCodigoSistema_CheckedChanged);
+            // 
+            // rbCodigoManual
+            // 
+            this.rbCodigoManual.AutoSize = true;
+            this.rbCodigoManual.Location = new System.Drawing.Point(520, 16);
+            this.rbCodigoManual.Name = "rbCodigoManual";
+            this.rbCodigoManual.Size = new System.Drawing.Size(96, 17);
+            this.rbCodigoManual.TabIndex = 91;
+            this.rbCodigoManual.TabStop = true;
+            this.rbCodigoManual.Text = "Codigo Manual";
+            this.rbCodigoManual.UseVisualStyleBackColor = true;
+            this.rbCodigoManual.CheckedChanged += new System.EventHandler(this.rbCodigoManual_CheckedChanged);
             // 
             // frmNuevoProducto
             // 
@@ -5726,6 +5802,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btcPanel.ResumeLayout(false);
             this.tbpTecnologico.ResumeLayout(false);
             this.tbpTecnologico.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -5810,7 +5887,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox23.PerformLayout();
             this.groupBox24.ResumeLayout(false);
             this.groupBox24.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -6307,5 +6387,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.TextBox txtNumbTarjetaArmamento;
         private System.Windows.Forms.Button btnNuevoArmamento;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.DataGridView dataGridView5;
+        private System.Windows.Forms.RadioButton rbCodigoManual;
+        private System.Windows.Forms.RadioButton rbtCodigoSistema;
     }
 }

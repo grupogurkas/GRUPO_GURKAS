@@ -63,6 +63,16 @@ namespace pl_Gurkas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1logogurkas {
+            get {
+                object obj = ResourceManager.GetObject("_1logogurkas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap activo_32 {
             get {
                 object obj = ResourceManager.GetObject("activo_32", resourceCulture);
@@ -343,6 +353,16 @@ namespace pl_Gurkas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cuerpo {
+            get {
+                object obj = ResourceManager.GetObject("Cuerpo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap date_32 {
             get {
                 object obj = ResourceManager.GetObject("date_32", resourceCulture);
@@ -506,26 +526,6 @@ namespace pl_Gurkas.Properties {
         internal static System.Drawing.Bitmap familia_32 {
             get {
                 object obj = ResourceManager.GetObject("familia_32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap fimar {
-            get {
-                object obj = ResourceManager.GetObject("fimar", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap fimar_1 {
-            get {
-                object obj = ResourceManager.GetObject("fimar_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

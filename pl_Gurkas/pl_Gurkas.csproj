@@ -1601,6 +1601,9 @@
   <ItemGroup>
     <Content Include="png %281%29.ico" />
     <Content Include="png iconb.ico" />
+    <None Include="Resources\1logogurkas.JPG" />
+    <None Include="Resources\logogurkas.JPG" />
+    <None Include="Resources\Cuerpo.JPG" />
     <None Include="Resources\fimar_1.JPG" />
     <None Include="Resources\ENTREGA_CABEZERA_1.JPG" />
     <None Include="Resources\fimar.JPG" />
