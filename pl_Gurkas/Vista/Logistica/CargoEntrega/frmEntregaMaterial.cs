@@ -31,13 +31,32 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         {
             InitializeComponent();
         }
+        private void obtenr_datos()
+        {
+            try
+            {
+                string nombre = Datos.DatosUsuario._usuario;
+
+                SqlCommand comando = new SqlCommand("SELECT * FROM T_MAE_PERSONAL WHERE NOMBRE_COMPLETO like '%" + nombre + "%'", conexion.conexionBD());
+                SqlDataReader recorre = comando.ExecuteReader();
+                while (recorre.Read())
+                {
+                    lblcodentre.Text = recorre["COD_EMPLEADO"].ToString();
+                    lbldnientr.Text = recorre["DOCT_IDENT"].ToString();
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
+            }
+        }
         private void frmEntregaMaterial_Load(object sender, EventArgs e)
         {
             txtUsuarioEntrega.Enabled = false;
             string nombre_user = Datos.DatosUsuario._usuario;
             txtUsuarioEntrega.Text = nombre_user;
             timer1.Enabled = true;
-
+            obtenr_datos();
             Llenadocbo.ObtenerTipoPuesto(cboTipoPuesto);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoMaterial);
             Llenadocbo.ObtenerPersonalRRHH(cboempleadoActivo);
@@ -46,7 +65,14 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             Llenadocbo.ObtenerUnidadRRHH(cboUnidad);
             Llenadocbo.ObtenerEmpresaRRHH_2(cboEmpresa);
 
-
+            lbldireccion.Visible = false;
+            lblemp.Visible = false;
+            lblnombrear.Visible = false;
+            lblruc.Visible = false;
+            lblver.Visible = false;
+            lbldni.Visible = false;
+            lblcodentre.Visible = false;
+            lbldnientr.Visible = false;
 
             dt = new DataTable();
             dt.Columns.Add("ID");
@@ -160,10 +186,20 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             string cod_empleado = cboempleadoActivo.SelectedValue.ToString();
             string informacion_adicional = txtInformacionAdicional.Text;
             string fecha = lblFecha.Text;
+            string emp = lblemp.Text;
+            string ruc = lblruc.Text;
+            string dir = lbldireccion.Text;
+            string nombre_arc = lblnombrear.Text;
+            string ver = lblver.Text;
+            string dni = lbldni.Text;
+
+            string dnien = lbldnientr.Text;
+            string cod = lblcodentre.Text;
 
             Font tipoTexto = new Font("Arial", 10, FontStyle.Bold);
             Font desp = new Font("Arial", 8, FontStyle.Bold);
             Font nombres = new Font("Arial", 7, FontStyle.Bold);
+            Font datos = new Font("Arial", 6, FontStyle.Bold);
             e.Graphics.DrawImage(cabezera, 40, 25);
 
             Pen blackPen = new Pen(Color.Black, 2);
@@ -179,6 +215,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             Rectangle N9 = new Rectangle(20, 20, 230, 60);
             Rectangle N10 = new Rectangle(250, 20, 320, 60);
             Rectangle N11 = new Rectangle(570, 20, 220, 60);
+            Rectangle N12 = new Rectangle(570, 20, 220, 30);
             Rectangle ITEM_ = new Rectangle(20, 310, 50, 715);
             Rectangle CODIGO_ = new Rectangle(70, 310, 60, 715);
             Rectangle PRODUCTO_ = new Rectangle(130, 310, 400, 715);
@@ -196,6 +233,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             e.Graphics.DrawRectangle(blackPen, N9);
             e.Graphics.DrawRectangle(blackPen, N10);
             e.Graphics.DrawRectangle(blackPen, N11);
+            e.Graphics.DrawRectangle(blackPen, N12);
             e.Graphics.DrawRectangle(blackPen, ITEM_);
             e.Graphics.DrawRectangle(blackPen, CODIGO_);
             e.Graphics.DrawRectangle(blackPen, PRODUCTO_);
@@ -203,7 +241,14 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             e.Graphics.DrawRectangle(blackPen, CONDICION_);
             e.Graphics.DrawRectangle(blackPen, CANT_);
 
-            e.Graphics.DrawString("CARGO DE ENTREGA", tipoTexto, Brushes.Black, 320, 40);
+            e.Graphics.DrawString("CARGO DE ENTREGA", tipoTexto, Brushes.Black, 310, 25);
+            e.Graphics.DrawString(emp, nombres, Brushes.Black, 290, 45);
+            e.Graphics.DrawString("  RUC " + ruc, nombres, Brushes.Black, 420, 45);
+            // e.Graphics.DrawString(dir, datos, Brushes.Black, 250, 60);
+            e.Graphics.DrawString(nombre_arc, datos, Brushes.Black, 580, 25);
+            e.Graphics.DrawString(ver, datos, Brushes.Black, 580, 35);
+
+            e.Graphics.DrawString(dir, datos, Brushes.Black, new RectangleF(260, 60, 300, 30));
 
             e.Graphics.DrawString("EMPRESA : ", tipoTexto, Brushes.Black, 30, 100);
             e.Graphics.DrawString(EMPRESA, desp, Brushes.Black, 120, 102);
@@ -229,11 +274,18 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             e.Graphics.DrawString("NOMBRE : ", tipoTexto, Brushes.Black, 30, 220);
             e.Graphics.DrawString(PERSONAL, nombres, Brushes.Black, 110, 223);
 
-            e.Graphics.DrawString("COD/DNI : ", tipoTexto, Brushes.Black, 30, 240);
+            e.Graphics.DrawString("CODIGO : ", tipoTexto, Brushes.Black, 30, 240);
             e.Graphics.DrawString(cod_empleado, desp, Brushes.Black, 110, 243);
+            e.Graphics.DrawString("DNI : ", tipoTexto, Brushes.Black, 200, 240);
+            e.Graphics.DrawString(dni, desp, Brushes.Black, 240, 243);
 
             e.Graphics.DrawString("NOMBRE : ", tipoTexto, Brushes.Black, 420, 220);
             e.Graphics.DrawString(entrega, nombres, Brushes.Black, 500, 223);
+
+            e.Graphics.DrawString("CODIGO : ", tipoTexto, Brushes.Black, 420, 240);
+            e.Graphics.DrawString(cod, desp, Brushes.Black, 500, 243);
+            e.Graphics.DrawString("DNI : ", tipoTexto, Brushes.Black, 600, 240);
+            e.Graphics.DrawString(dnien, desp, Brushes.Black, 650, 243); 
 
             e.Graphics.DrawString("FIRMA : _______________________________", tipoTexto, Brushes.Black, 30, 275);
             e.Graphics.DrawString("FIRMA : _______________________________", tipoTexto, Brushes.Black, 420, 275);
@@ -296,7 +348,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
         private void btnCertificadoBasc_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
+           /* System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
             PrintDialog1.AllowSomePages = true;
             PrintDialog1.ShowHelp = true;
             PrintDialog1.Document = printDocument1;
@@ -304,8 +356,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             if (result == DialogResult.OK)
             {
                 printDocument1.Print();
-            }
-         // printPreviewDialog1.ShowDialog();
+            }*/
+          printPreviewDialog1.ShowDialog();
         }
 
         private void txtInformacionAdicional_TextChanged(object sender, EventArgs e)
@@ -322,6 +374,52 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private void txtObservacion_TextChanged(object sender, EventArgs e)
         {
             txtObservacion.MaxLength = 18;
+        }
+
+        private void cboEmpresa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string cod_empresa = cboEmpresa.GetItemText(cboEmpresa.SelectedItem);
+
+                SqlCommand comando = new SqlCommand("SELECT * FROM T_EMPRESA WHERE NOMBRE_EMPRESA = '" + cod_empresa + "'", conexion.conexionBD());
+
+                SqlDataReader recorre = comando.ExecuteReader();
+                while (recorre.Read())
+                {
+                    lblemp.Text = recorre["NOMBRE_EMPRESA"].ToString();
+                    lblruc.Text = recorre["RUC"].ToString();
+                    lbldireccion.Text = recorre["direccion"].ToString();
+                    lblnombrear.Text = recorre["nombre_documento_sig"].ToString();
+                    lblver.Text = recorre["vercion_documento_sig"].ToString();
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
+            }
+        }
+
+        private void cboempleadoActivo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboempleadoActivo.SelectedValue.ToString() != null)
+            {
+                string COD_EMPLEADO = cboempleadoActivo.SelectedValue.ToString();
+                try
+                {
+                    SqlCommand comando = new SqlCommand("SELECT * FROM T_MAE_PERSONAL WHERE COD_EMPLEADO = '" + COD_EMPLEADO + "'", conexion.conexionBD());
+
+                    SqlDataReader recorre = comando.ExecuteReader();
+                    while (recorre.Read())
+                    {
+                        lbldni.Text = recorre["DOCT_IDENT"].ToString();
+                    }
+                }
+                catch (Exception err)
+                {
+                    MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
+                }
+            }
         }
     }
 }
