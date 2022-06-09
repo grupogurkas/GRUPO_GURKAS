@@ -32,7 +32,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEntregaMaterial));
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnEntrega = new System.Windows.Forms.Button();
             this.cboempleadoActivo = new System.Windows.Forms.ComboBox();
             this.label42 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -80,6 +80,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.lbldni = new System.Windows.Forms.Label();
             this.lbldnientr = new System.Windows.Forms.Label();
             this.lblcodentre = new System.Windows.Forms.Label();
+            this.txtNumVale = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -99,19 +101,21 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.btnNuevo.Text = "Nueva Entrega";
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // button2
+            // btnEntrega
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::pl_Gurkas.Properties.Resources.add_trabajador_32;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(462, 10);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 46);
-            this.button2.TabIndex = 99;
-            this.button2.Text = "Registrar Entrega";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnEntrega.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntrega.Image = global::pl_Gurkas.Properties.Resources.add_trabajador_32;
+            this.btnEntrega.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEntrega.Location = new System.Drawing.Point(462, 10);
+            this.btnEntrega.Name = "btnEntrega";
+            this.btnEntrega.Size = new System.Drawing.Size(104, 46);
+            this.btnEntrega.TabIndex = 99;
+            this.btnEntrega.Text = "Registrar Entrega";
+            this.btnEntrega.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEntrega.UseVisualStyleBackColor = true;
+            this.btnEntrega.Click += new System.EventHandler(this.btnEntrega_Click);
             // 
             // cboempleadoActivo
             // 
@@ -137,6 +141,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.txtNumVale);
+            this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.txtObservacion);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.groupBox2);
@@ -603,6 +609,23 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.lblcodentre.TabIndex = 239;
             this.lblcodentre.Text = "codentre";
             // 
+            // txtNumVale
+            // 
+            this.txtNumVale.Location = new System.Drawing.Point(1092, 144);
+            this.txtNumVale.Name = "txtNumVale";
+            this.txtNumVale.Size = new System.Drawing.Size(104, 20);
+            this.txtNumVale.TabIndex = 231;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(977, 143);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(67, 15);
+            this.label9.TabIndex = 230;
+            this.label9.Text = "Num Vale :";
+            // 
             // frmEntregaMaterial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -619,7 +642,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.Controls.Add(this.lblHora);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.btnNuevo);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnEntrega);
             this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.cboempleadoActivo);
             this.Controls.Add(this.label42);
@@ -648,7 +671,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         #endregion
 
         private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnEntrega;
         private System.Windows.Forms.ComboBox cboempleadoActivo;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Panel panel1;
@@ -696,5 +719,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private System.Windows.Forms.Label lbldni;
         private System.Windows.Forms.Label lbldnientr;
         private System.Windows.Forms.Label lblcodentre;
+        private System.Windows.Forms.TextBox txtNumVale;
+        private System.Windows.Forms.Label label9;
     }
 }

@@ -31,6 +31,22 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         {
             InitializeComponent();
         }
+        private void limpiardatos()
+        {
+            cboempleadoActivo.SelectedIndex = 0;
+            cboTipoPuesto.SelectedIndex = 0;
+            cboAreaLaboral.SelectedIndex = 0;
+            cboEmpresa.SelectedIndex = 0;
+            cboUnidad.SelectedIndex = 0;
+            cboSede.SelectedIndex = 0;
+            cboProducto.SelectedIndex = 0;
+            cboEstadoMaterial.SelectedIndex = 0;
+            GenerarNumVale();
+            txtInformacionAdicional.Text = "";
+            txtObservacion.Text = "";
+            txtCantidadTecno.Text = "";
+            dt.Clear();
+        }
         private void obtenr_datos()
         {
             try
@@ -50,20 +66,118 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                 MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
             }
         }
+        public void GenerarNumVale()
+        {
+            string resultado = "";
+            SqlCommand comando = new SqlCommand("SELECT ROW_NUMBER()OVER(ORDER BY NUM_ENTREGA)AS 't'  FROM t_entrega_producto_vale GROUP BY NUM_ENTREGA", conexion.conexionBD());
+
+            SqlDataReader recorre = comando.ExecuteReader();
+            while (recorre.Read())
+            {
+                resultado = recorre["t"].ToString();
+            }
+            if (resultado.Equals(""))
+            {
+                resultado = "0";
+            }
+            int numero = Convert.ToInt32(resultado);
+            if (numero < 10)
+            {
+                txtNumVale.Text = "LOG-000000" + (numero + 1);
+            }
+            if (numero > 9 && numero < 100)
+            {
+                txtNumVale.Text = "LOG-00000" + (numero + 1);
+            }
+            if (numero > 99 && numero < 1000)
+            {
+                txtNumVale.Text = "LOG-0000" + (numero + 1);
+            }
+            if (numero > 9999 && numero < 10000)
+            {
+                txtNumVale.Text = "LOG-000" + (numero + 1);
+            }
+        }
+        private void registarvale()
+        {
+            int cod_puesto = cboTipoPuesto.SelectedIndex;
+            int cod_area_entrega = cboAreaLaboral.SelectedIndex;
+            string cod = cboEmpresa.SelectedValue.ToString();
+            int c = Convert.ToInt32(cod);
+            string NUM_VALE = txtNumVale.Text;
+            string cod_unidad = cboUnidad.SelectedValue.ToString();
+            string cod_sede = cboSede.SelectedValue.ToString();
+            string imformacion_adicional = txtInformacionAdicional.Text;
+            string entregado_nombre = txtUsuarioEntrega.Text;
+            string cod_entregado = lblcodentre.Text;
+            string dni_entregado = lbldnientr.Text;
+            string solicitante_nombre = cboempleadoActivo.GetItemText(cboempleadoActivo.SelectedItem);
+            string cod_solicitante = cboempleadoActivo.SelectedValue.ToString();
+            string dni_solicitante = lbldni.Text;
+            string fecha_vale = lblFecha.Text;
+            string hora = lblHora.Text;
+            string nombre_user = Datos.DatosUsuario._usuario;
+            try
+            {
+                SqlCommand comando = new SqlCommand("sp_insertar_salida_producto @NUM_ENTREGA ,@COD_PUESTO ,@COD_AREA_ENTREGA ,@COD_EMPRESA  ,@COD_UNIDAD ,@COD_SEDE, @INFORMACION_ADICIONAL, @ENTREGADO_NOMBRE, @COD_ENTREGADO," +
+                    "@DNI_ENTREGADO, @SOLICITADO_NOMBRE, @COD_SOLICITADO, @DNI_SOLICITADO, @FECHA_VALE," +
+                    "@ITEM_VALE, @COD_PRODUCTO, @DESP_PRODUCTO,  @OBSERVACION_PRODUCTO , @CONDICION_PRODUCTO" +
+                    ", @CANTIDAD_SOLICITADA, @HORA, @USUARIO ", conexion.conexionBD());
+
+                foreach (DataGridViewRow row in dgvListaProducto.Rows)
+                {
+                    if (row.Cells["ID"].Value != null && row.Cells["CodProducto"].Value != null)
+                    {
+                        comando.Parameters.Clear();
+                        comando.Parameters.AddWithValue("@COD_PUESTO", SqlDbType.Int).Value = cod_puesto;
+                        comando.Parameters.AddWithValue("@COD_AREA_ENTREGA", SqlDbType.Int).Value = cod_area_entrega;
+                        comando.Parameters.AddWithValue("@NUM_ENTREGA", SqlDbType.VarChar).Value = NUM_VALE;
+                        comando.Parameters.AddWithValue("@COD_EMPRESA", SqlDbType.Int).Value = c;
+                        comando.Parameters.AddWithValue("@COD_UNIDAD", SqlDbType.VarChar).Value = cod_unidad;
+                        comando.Parameters.AddWithValue("@COD_SEDE", SqlDbType.VarChar).Value = cod_sede;
+                        comando.Parameters.AddWithValue("@INFORMACION_ADICIONAL", SqlDbType.VarChar).Value = imformacion_adicional;
+                        comando.Parameters.AddWithValue("@ENTREGADO_NOMBRE", SqlDbType.VarChar).Value = entregado_nombre;
+                        comando.Parameters.AddWithValue("@COD_ENTREGADO", SqlDbType.VarChar).Value = cod_entregado;
+                        comando.Parameters.AddWithValue("@DNI_ENTREGADO", SqlDbType.VarChar).Value = dni_entregado;
+                        comando.Parameters.AddWithValue("@SOLICITADO_NOMBRE", SqlDbType.VarChar).Value = solicitante_nombre;
+                        comando.Parameters.AddWithValue("@COD_SOLICITADO", SqlDbType.VarChar).Value = cod_solicitante;
+                        comando.Parameters.AddWithValue("@DNI_SOLICITADO", SqlDbType.VarChar).Value = dni_solicitante;
+                        comando.Parameters.AddWithValue("@FECHA_VALE", SqlDbType.VarChar).Value = fecha_vale;
+                        comando.Parameters.AddWithValue("@ITEM_VALE", Convert.ToInt32(row.Cells["ID"].Value));
+                        comando.Parameters.AddWithValue("@COD_PRODUCTO", Convert.ToString(row.Cells["CodProducto"].Value));
+                        comando.Parameters.AddWithValue("@DESP_PRODUCTO", Convert.ToString(row.Cells["Nombre"].Value));
+                        comando.Parameters.AddWithValue("@OBSERVACION_PRODUCTO", Convert.ToString(row.Cells["Observacion"].Value));
+                        comando.Parameters.AddWithValue("@CONDICION_PRODUCTO", Convert.ToString(row.Cells["CondicionEntrega"].Value));
+                        comando.Parameters.AddWithValue("@CANTIDAD_SOLICITADA", Convert.ToInt32(row.Cells["Cantidad"].Value));
+                        comando.Parameters.AddWithValue("@HORA", SqlDbType.VarChar).Value = hora;
+                        comando.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_user;
+                        comando.ExecuteNonQuery();
+                    }
+                }
+                MessageBox.Show("Datos registrado correptamente");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(" No se pudo realizar el guardado del la asistencia del personal \n\n Verifique su conexion al Servidor " + ex, "Error");
+                //showDialogs("ERROR", Color.FromArgb(255, 53, 71));
+            }
+        }
         private void frmEntregaMaterial_Load(object sender, EventArgs e)
         {
             txtUsuarioEntrega.Enabled = false;
+            txtNumVale.Enabled = false;
             string nombre_user = Datos.DatosUsuario._usuario;
             txtUsuarioEntrega.Text = nombre_user;
             timer1.Enabled = true;
             obtenr_datos();
+            GenerarNumVale();
             Llenadocbo.ObtenerTipoPuesto(cboTipoPuesto);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoMaterial);
             Llenadocbo.ObtenerPersonalRRHH(cboempleadoActivo);
             Llenadocbo.ObtenerArea(cboAreaLaboral);
             Llenadocbo.ObtenerProducto(cboProducto);
             Llenadocbo.ObtenerUnidadRRHH(cboUnidad);
-            Llenadocbo.ObtenerEmpresaRRHH_2(cboEmpresa);
+            Llenadocbo.ObtenerEmpresa(cboEmpresa);
 
             lbldireccion.Visible = false;
             lblemp.Visible = false;
@@ -195,6 +309,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
             string dnien = lbldnientr.Text;
             string cod = lblcodentre.Text;
+            string num = txtNumVale.Text;
 
             Font tipoTexto = new Font("Arial", 10, FontStyle.Bold);
             Font desp = new Font("Arial", 8, FontStyle.Bold);
@@ -247,6 +362,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             // e.Graphics.DrawString(dir, datos, Brushes.Black, 250, 60);
             e.Graphics.DrawString(nombre_arc, datos, Brushes.Black, 580, 25);
             e.Graphics.DrawString(ver, datos, Brushes.Black, 580, 35);
+            e.Graphics.DrawString(num, tipoTexto, Brushes.Black, 580, 55);
 
             e.Graphics.DrawString(dir, datos, Brushes.Black, new RectangleF(260, 60, 300, 30));
 
@@ -348,16 +464,18 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
         private void btnCertificadoBasc_Click(object sender, EventArgs e)
         {
-           /* System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
-            PrintDialog1.AllowSomePages = true;
-            PrintDialog1.ShowHelp = true;
-            PrintDialog1.Document = printDocument1;
-            DialogResult result = PrintDialog1.ShowDialog();
-            if (result == DialogResult.OK)
-            {
-                printDocument1.Print();
-            }*/
-          printPreviewDialog1.ShowDialog();
+            System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
+             PrintDialog1.AllowSomePages = true;
+             PrintDialog1.ShowHelp = true;
+             PrintDialog1.Document = printDocument1;
+             DialogResult result = PrintDialog1.ShowDialog();
+             if (result == DialogResult.OK)
+             {
+                    printDocument1.Print();
+                    registarvale();
+                    limpiardatos();
+             }
+           // printPreviewDialog1.ShowDialog();
         }
 
         private void txtInformacionAdicional_TextChanged(object sender, EventArgs e)
@@ -420,6 +538,16 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                     MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
                 }
             }
+        }
+
+        private void btnEntrega_Click(object sender, EventArgs e)
+        {
+            registarvale();
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            limpiardatos();
         }
     }
 }
