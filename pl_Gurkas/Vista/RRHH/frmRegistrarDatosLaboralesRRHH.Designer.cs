@@ -160,9 +160,9 @@ namespace pl_Gurkas.Vista.RRHH
             this.groupBox7.Controls.Add(this.btnActualizarDatos);
             this.groupBox7.Controls.Add(this.btnCerrar);
             this.groupBox7.Controls.Add(this.btnAgregarPlanillaDatos);
-            this.groupBox7.Location = new System.Drawing.Point(539, 10);
+            this.groupBox7.Location = new System.Drawing.Point(632, 10);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(534, 72);
+            this.groupBox7.Size = new System.Drawing.Size(547, 72);
             this.groupBox7.TabIndex = 66;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Opciones";
@@ -203,7 +203,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.btnCerrar.Location = new System.Drawing.Point(418, 20);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(109, 46);
-            this.btnCerrar.TabIndex = 52;
+            this.btnCerrar.TabIndex = 53;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrar.UseVisualStyleBackColor = true;
@@ -253,7 +253,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.cboempleadoActivo.Location = new System.Drawing.Point(66, 26);
             this.cboempleadoActivo.Name = "cboempleadoActivo";
             this.cboempleadoActivo.Size = new System.Drawing.Size(338, 21);
-            this.cboempleadoActivo.TabIndex = 48;
+            this.cboempleadoActivo.TabIndex = 54;
             // 
             // btnBuscar
             // 
@@ -263,7 +263,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.btnBuscar.Location = new System.Drawing.Point(410, 19);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(109, 46);
-            this.btnBuscar.TabIndex = 55;
+            this.btnBuscar.TabIndex = 52;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -1310,9 +1310,9 @@ namespace pl_Gurkas.Vista.RRHH
             // pictureBox1
             // 
             this.pictureBox1.Image = global::pl_Gurkas.Properties.Resources.png;
-            this.pictureBox1.Location = new System.Drawing.Point(1250, 14);
+            this.pictureBox1.Location = new System.Drawing.Point(1230, 14);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(88, 61);
+            this.pictureBox1.Size = new System.Drawing.Size(108, 68);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 64;
             this.pictureBox1.TabStop = false;

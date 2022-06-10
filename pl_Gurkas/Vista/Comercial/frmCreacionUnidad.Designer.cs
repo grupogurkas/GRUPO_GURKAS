@@ -56,8 +56,12 @@ namespace pl_Gurkas.Vista.Comercial
             this.txtDni = new System.Windows.Forms.TextBox();
             this.txtRepresentanteLegal = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label21 = new System.Windows.Forms.Label();
             this.dtpBaja = new System.Windows.Forms.DateTimePicker();
+            this.label22 = new System.Windows.Forms.Label();
             this.dtpActivacion = new System.Windows.Forms.DateTimePicker();
+            this.txtlongitud = new System.Windows.Forms.TextBox();
+            this.txtLatitud = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.cboEstadoUnidad = new System.Windows.Forms.ComboBox();
@@ -81,10 +85,6 @@ namespace pl_Gurkas.Vista.Comercial
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.cboUnidad = new System.Windows.Forms.ComboBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.txtlongitud = new System.Windows.Forms.TextBox();
-            this.txtLatitud = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistroUnidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -123,7 +123,7 @@ namespace pl_Gurkas.Vista.Comercial
             this.btnActualizar.Location = new System.Drawing.Point(704, 8);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(109, 46);
-            this.btnActualizar.TabIndex = 59;
+            this.btnActualizar.TabIndex = 22;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnActualizar.UseVisualStyleBackColor = true;
@@ -137,7 +137,7 @@ namespace pl_Gurkas.Vista.Comercial
             this.btnBuscar.Location = new System.Drawing.Point(474, 8);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(109, 46);
-            this.btnBuscar.TabIndex = 58;
+            this.btnBuscar.TabIndex = 25;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -151,7 +151,7 @@ namespace pl_Gurkas.Vista.Comercial
             this.btnCerrar.Location = new System.Drawing.Point(934, 8);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(109, 46);
-            this.btnCerrar.TabIndex = 57;
+            this.btnCerrar.TabIndex = 26;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrar.UseVisualStyleBackColor = true;
@@ -165,7 +165,7 @@ namespace pl_Gurkas.Vista.Comercial
             this.btnNuevo.Location = new System.Drawing.Point(819, 8);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(109, 46);
-            this.btnNuevo.TabIndex = 56;
+            this.btnNuevo.TabIndex = 23;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevo.UseVisualStyleBackColor = true;
@@ -179,7 +179,7 @@ namespace pl_Gurkas.Vista.Comercial
             this.btnAgregar.Location = new System.Drawing.Point(589, 8);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(109, 46);
-            this.btnAgregar.TabIndex = 55;
+            this.btnAgregar.TabIndex = 1;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -236,28 +236,28 @@ namespace pl_Gurkas.Vista.Comercial
             this.txtCentroCosto.Location = new System.Drawing.Point(159, 230);
             this.txtCentroCosto.Name = "txtCentroCosto";
             this.txtCentroCosto.Size = new System.Drawing.Size(164, 20);
-            this.txtCentroCosto.TabIndex = 56;
+            this.txtCentroCosto.TabIndex = 20;
             // 
             // txtCorreo
             // 
             this.txtCorreo.Location = new System.Drawing.Point(159, 200);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(164, 20);
-            this.txtCorreo.TabIndex = 55;
+            this.txtCorreo.TabIndex = 19;
             // 
             // txtCelular
             // 
             this.txtCelular.Location = new System.Drawing.Point(159, 170);
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Size = new System.Drawing.Size(164, 20);
-            this.txtCelular.TabIndex = 53;
+            this.txtCelular.TabIndex = 18;
             // 
             // txtTelefono
             // 
             this.txtTelefono.Location = new System.Drawing.Point(159, 140);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(164, 20);
-            this.txtTelefono.TabIndex = 54;
+            this.txtTelefono.TabIndex = 17;
             // 
             // label10
             // 
@@ -304,14 +304,14 @@ namespace pl_Gurkas.Vista.Comercial
             this.txtContacto.Location = new System.Drawing.Point(159, 110);
             this.txtContacto.Name = "txtContacto";
             this.txtContacto.Size = new System.Drawing.Size(164, 20);
-            this.txtContacto.TabIndex = 47;
+            this.txtContacto.TabIndex = 16;
             // 
             // txtCargo
             // 
             this.txtCargo.Location = new System.Drawing.Point(159, 80);
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(164, 20);
-            this.txtCargo.TabIndex = 46;
+            this.txtCargo.TabIndex = 15;
             // 
             // label5
             // 
@@ -365,7 +365,7 @@ namespace pl_Gurkas.Vista.Comercial
             this.txtRepresentanteLegal.Location = new System.Drawing.Point(159, 20);
             this.txtRepresentanteLegal.Name = "txtRepresentanteLegal";
             this.txtRepresentanteLegal.Size = new System.Drawing.Size(164, 20);
-            this.txtRepresentanteLegal.TabIndex = 20;
+            this.txtRepresentanteLegal.TabIndex = 13;
             // 
             // groupBox1
             // 
@@ -404,6 +404,16 @@ namespace pl_Gurkas.Vista.Comercial
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de la Unidad";
             // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(329, 131);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(50, 15);
+            this.label21.TabIndex = 59;
+            this.label21.Text = "Latitud :";
+            // 
             // dtpBaja
             // 
             this.dtpBaja.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -412,6 +422,16 @@ namespace pl_Gurkas.Vista.Comercial
             this.dtpBaja.Size = new System.Drawing.Size(138, 20);
             this.dtpBaja.TabIndex = 37;
             // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(329, 161);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(64, 15);
+            this.label22.TabIndex = 60;
+            this.label22.Text = "Longitud  :";
+            // 
             // dtpActivacion
             // 
             this.dtpActivacion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -419,6 +439,20 @@ namespace pl_Gurkas.Vista.Comercial
             this.dtpActivacion.Name = "dtpActivacion";
             this.dtpActivacion.Size = new System.Drawing.Size(138, 20);
             this.dtpActivacion.TabIndex = 36;
+            // 
+            // txtlongitud
+            // 
+            this.txtlongitud.Location = new System.Drawing.Point(444, 154);
+            this.txtlongitud.Name = "txtlongitud";
+            this.txtlongitud.Size = new System.Drawing.Size(169, 20);
+            this.txtlongitud.TabIndex = 12;
+            // 
+            // txtLatitud
+            // 
+            this.txtLatitud.Location = new System.Drawing.Point(444, 128);
+            this.txtLatitud.Name = "txtLatitud";
+            this.txtLatitud.Size = new System.Drawing.Size(169, 20);
+            this.txtLatitud.TabIndex = 11;
             // 
             // label14
             // 
@@ -447,7 +481,7 @@ namespace pl_Gurkas.Vista.Comercial
             this.cboEstadoUnidad.Location = new System.Drawing.Point(444, 51);
             this.cboEstadoUnidad.Name = "cboEstadoUnidad";
             this.cboEstadoUnidad.Size = new System.Drawing.Size(169, 21);
-            this.cboEstadoUnidad.TabIndex = 32;
+            this.cboEstadoUnidad.TabIndex = 10;
             // 
             // label13
             // 
@@ -466,7 +500,7 @@ namespace pl_Gurkas.Vista.Comercial
             this.cboEmpresa.Location = new System.Drawing.Point(444, 25);
             this.cboEmpresa.Name = "cboEmpresa";
             this.cboEmpresa.Size = new System.Drawing.Size(169, 21);
-            this.cboEmpresa.TabIndex = 30;
+            this.cboEmpresa.TabIndex = 9;
             // 
             // label12
             // 
@@ -485,7 +519,7 @@ namespace pl_Gurkas.Vista.Comercial
             this.cboDis.Location = new System.Drawing.Point(154, 189);
             this.cboDis.Name = "cboDis";
             this.cboDis.Size = new System.Drawing.Size(169, 21);
-            this.cboDis.TabIndex = 18;
+            this.cboDis.TabIndex = 7;
             // 
             // cboDepartamento
             // 
@@ -494,7 +528,7 @@ namespace pl_Gurkas.Vista.Comercial
             this.cboDepartamento.Location = new System.Drawing.Point(154, 133);
             this.cboDepartamento.Name = "cboDepartamento";
             this.cboDepartamento.Size = new System.Drawing.Size(169, 21);
-            this.cboDepartamento.TabIndex = 16;
+            this.cboDepartamento.TabIndex = 5;
             this.cboDepartamento.SelectedIndexChanged += new System.EventHandler(this.cboDepartamento_SelectedIndexChanged);
             // 
             // cboProvincia
@@ -504,7 +538,7 @@ namespace pl_Gurkas.Vista.Comercial
             this.cboProvincia.Location = new System.Drawing.Point(154, 161);
             this.cboProvincia.Name = "cboProvincia";
             this.cboProvincia.Size = new System.Drawing.Size(169, 21);
-            this.cboProvincia.TabIndex = 17;
+            this.cboProvincia.TabIndex = 6;
             this.cboProvincia.SelectedIndexChanged += new System.EventHandler(this.cboProvincia_SelectedIndexChanged);
             // 
             // txtRazonSocial
@@ -534,7 +568,7 @@ namespace pl_Gurkas.Vista.Comercial
             this.txtDireccion.Multiline = true;
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(169, 32);
-            this.txtDireccion.TabIndex = 19;
+            this.txtDireccion.TabIndex = 8;
             // 
             // label4
             // 
@@ -631,41 +665,7 @@ namespace pl_Gurkas.Vista.Comercial
             this.cboUnidad.Location = new System.Drawing.Point(106, 20);
             this.cboUnidad.Name = "cboUnidad";
             this.cboUnidad.Size = new System.Drawing.Size(350, 21);
-            this.cboUnidad.TabIndex = 62;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(329, 131);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(50, 15);
-            this.label21.TabIndex = 59;
-            this.label21.Text = "Latitud :";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(329, 161);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(64, 15);
-            this.label22.TabIndex = 60;
-            this.label22.Text = "Longitud  :";
-            // 
-            // txtlongitud
-            // 
-            this.txtlongitud.Location = new System.Drawing.Point(444, 154);
-            this.txtlongitud.Name = "txtlongitud";
-            this.txtlongitud.Size = new System.Drawing.Size(169, 20);
-            this.txtlongitud.TabIndex = 57;
-            // 
-            // txtLatitud
-            // 
-            this.txtLatitud.Location = new System.Drawing.Point(444, 128);
-            this.txtLatitud.Name = "txtLatitud";
-            this.txtLatitud.Size = new System.Drawing.Size(169, 20);
-            this.txtLatitud.TabIndex = 58;
+            this.cboUnidad.TabIndex = 24;
             // 
             // frmCreacionUnidad
             // 

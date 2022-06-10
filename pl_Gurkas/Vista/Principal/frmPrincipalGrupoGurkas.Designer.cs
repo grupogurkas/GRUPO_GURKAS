@@ -199,6 +199,7 @@ namespace pl_Gurkas.Vista.Principal
             this.reporteDeAsistenciaPorPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.activarModoAdministradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personalPorDNIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -412,7 +413,8 @@ namespace pl_Gurkas.Vista.Principal
             this.personalPorEmpresaToolStripMenuItem1,
             this.personalPorEstaturaToolStripMenuItem1,
             this.personalPorTurnoToolStripMenuItem1,
-            this.personalPorFechaInicioToolStripMenuItem});
+            this.personalPorFechaInicioToolStripMenuItem,
+            this.personalPorDNIToolStripMenuItem});
             this.personalToolStripMenuItem2.Name = "personalToolStripMenuItem2";
             this.personalToolStripMenuItem2.Size = new System.Drawing.Size(251, 22);
             this.personalToolStripMenuItem2.Text = "Reporte de Personal";
@@ -900,7 +902,7 @@ namespace pl_Gurkas.Vista.Principal
             this.codigoYEstadoPersonalToolStripMenuItem});
             this.personalToolStripMenuItem3.Image = global::pl_Gurkas.Properties.Resources.reportes_32;
             this.personalToolStripMenuItem3.Name = "personalToolStripMenuItem3";
-            this.personalToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.personalToolStripMenuItem3.Size = new System.Drawing.Size(121, 22);
             this.personalToolStripMenuItem3.Text = "Reporte";
             // 
             // codigoYEstadoPersonalToolStripMenuItem
@@ -922,7 +924,7 @@ namespace pl_Gurkas.Vista.Principal
             this.registroOrdenesToolStripMenuItem});
             this.almacenToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.almacen_32;
             this.almacenToolStripMenuItem.Name = "almacenToolStripMenuItem";
-            this.almacenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.almacenToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.almacenToolStripMenuItem.Text = "Almacen";
             // 
             // proveedoresToolStripMenuItem
@@ -1605,6 +1607,13 @@ namespace pl_Gurkas.Vista.Principal
             this.activarModoAdministradorToolStripMenuItem.Text = "Activar Modo Administrador";
             this.activarModoAdministradorToolStripMenuItem.Click += new System.EventHandler(this.activarModoAdministradorToolStripMenuItem_Click);
             // 
+            // personalPorDNIToolStripMenuItem
+            // 
+            this.personalPorDNIToolStripMenuItem.Name = "personalPorDNIToolStripMenuItem";
+            this.personalPorDNIToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.personalPorDNIToolStripMenuItem.Text = "Personal por DNI";
+            this.personalPorDNIToolStripMenuItem.Click += new System.EventHandler(this.personalPorDNIToolStripMenuItem_Click);
+            // 
             // frmPrincipalGrupoGurkas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1804,5 +1813,6 @@ namespace pl_Gurkas.Vista.Principal
         private System.Windows.Forms.ToolStripMenuItem kardexToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroOrdenesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ordenDeServicioCompraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem personalPorDNIToolStripMenuItem;
     }
 }

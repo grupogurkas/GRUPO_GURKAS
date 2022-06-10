@@ -54,8 +54,12 @@ namespace pl_Gurkas.Vista.Comercial
             this.txtContacto = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtlatitud = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.dtpBaja = new System.Windows.Forms.DateTimePicker();
+            this.txtlongitud = new System.Windows.Forms.TextBox();
             this.dtpActivacion = new System.Windows.Forms.DateTimePicker();
+            this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.cboEstadoSede = new System.Windows.Forms.ComboBox();
@@ -72,10 +76,6 @@ namespace pl_Gurkas.Vista.Comercial
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.txtlatitud = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txtlongitud = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistroSede)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -92,7 +92,7 @@ namespace pl_Gurkas.Vista.Comercial
             this.cboUnidadb.Location = new System.Drawing.Point(112, 9);
             this.cboUnidadb.Name = "cboUnidadb";
             this.cboUnidadb.Size = new System.Drawing.Size(279, 24);
-            this.cboUnidadb.TabIndex = 72;
+            this.cboUnidadb.TabIndex = 18;
             this.cboUnidadb.SelectedIndexChanged += new System.EventHandler(this.cboUnidadb_SelectedIndexChanged);
             // 
             // label4
@@ -113,7 +113,7 @@ namespace pl_Gurkas.Vista.Comercial
             this.cboSede.Location = new System.Drawing.Point(112, 39);
             this.cboSede.Name = "cboSede";
             this.cboSede.Size = new System.Drawing.Size(279, 24);
-            this.cboSede.TabIndex = 70;
+            this.cboSede.TabIndex = 19;
             // 
             // dgvRegistroSede
             // 
@@ -125,7 +125,7 @@ namespace pl_Gurkas.Vista.Comercial
             this.dgvRegistroSede.ReadOnly = true;
             this.dgvRegistroSede.RowHeadersVisible = false;
             this.dgvRegistroSede.RowHeadersWidth = 51;
-            this.dgvRegistroSede.Size = new System.Drawing.Size(1337, 227);
+            this.dgvRegistroSede.Size = new System.Drawing.Size(1337, 268);
             this.dgvRegistroSede.TabIndex = 69;
             // 
             // label11
@@ -143,10 +143,10 @@ namespace pl_Gurkas.Vista.Comercial
             this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.Image = global::pl_Gurkas.Properties.Resources.empleado_update_32;
             this.btnActualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnActualizar.Location = new System.Drawing.Point(753, 12);
+            this.btnActualizar.Location = new System.Drawing.Point(692, 12);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(109, 46);
-            this.btnActualizar.TabIndex = 68;
+            this.btnActualizar.TabIndex = 16;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnActualizar.UseVisualStyleBackColor = true;
@@ -157,10 +157,10 @@ namespace pl_Gurkas.Vista.Comercial
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(408, 11);
+            this.btnBuscar.Location = new System.Drawing.Point(462, 11);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(109, 46);
-            this.btnBuscar.TabIndex = 67;
+            this.btnBuscar.TabIndex = 20;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -171,10 +171,10 @@ namespace pl_Gurkas.Vista.Comercial
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.Image = global::pl_Gurkas.Properties.Resources.cerrar_sesion_32;
             this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrar.Location = new System.Drawing.Point(868, 12);
+            this.btnCerrar.Location = new System.Drawing.Point(922, 12);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(109, 46);
-            this.btnCerrar.TabIndex = 66;
+            this.btnCerrar.TabIndex = 21;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrar.UseVisualStyleBackColor = true;
@@ -185,10 +185,10 @@ namespace pl_Gurkas.Vista.Comercial
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.Image = global::pl_Gurkas.Properties.Resources.nuevo_emplado_32;
             this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevo.Location = new System.Drawing.Point(523, 11);
+            this.btnNuevo.Location = new System.Drawing.Point(807, 12);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(109, 46);
-            this.btnNuevo.TabIndex = 65;
+            this.btnNuevo.TabIndex = 17;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevo.UseVisualStyleBackColor = true;
@@ -199,10 +199,10 @@ namespace pl_Gurkas.Vista.Comercial
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.Image = global::pl_Gurkas.Properties.Resources.add_trabajador_32;
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.Location = new System.Drawing.Point(638, 11);
+            this.btnAgregar.Location = new System.Drawing.Point(577, 12);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(109, 46);
-            this.btnAgregar.TabIndex = 64;
+            this.btnAgregar.TabIndex = 15;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -211,9 +211,9 @@ namespace pl_Gurkas.Vista.Comercial
             // pictureBox1
             // 
             this.pictureBox1.Image = global::pl_Gurkas.Properties.Resources.png;
-            this.pictureBox1.Location = new System.Drawing.Point(1056, 11);
+            this.pictureBox1.Location = new System.Drawing.Point(1048, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(252, 246);
+            this.pictureBox1.Size = new System.Drawing.Size(233, 170);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 63;
             this.pictureBox1.TabStop = false;
@@ -247,7 +247,7 @@ namespace pl_Gurkas.Vista.Comercial
             this.cboUnidad.Location = new System.Drawing.Point(87, 37);
             this.cboUnidad.Name = "cboUnidad";
             this.cboUnidad.Size = new System.Drawing.Size(317, 21);
-            this.cboUnidad.TabIndex = 30;
+            this.cboUnidad.TabIndex = 14;
             // 
             // label3
             // 
@@ -281,21 +281,21 @@ namespace pl_Gurkas.Vista.Comercial
             this.txtCentroCosto.Location = new System.Drawing.Point(159, 108);
             this.txtCentroCosto.Name = "txtCentroCosto";
             this.txtCentroCosto.Size = new System.Drawing.Size(164, 20);
-            this.txtCentroCosto.TabIndex = 56;
+            this.txtCentroCosto.TabIndex = 13;
             // 
             // txtCorreo
             // 
             this.txtCorreo.Location = new System.Drawing.Point(159, 52);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(164, 20);
-            this.txtCorreo.TabIndex = 55;
+            this.txtCorreo.TabIndex = 11;
             // 
             // txtCelular
             // 
             this.txtCelular.Location = new System.Drawing.Point(159, 81);
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Size = new System.Drawing.Size(164, 20);
-            this.txtCelular.TabIndex = 53;
+            this.txtCelular.TabIndex = 12;
             // 
             // label10
             // 
@@ -332,7 +332,7 @@ namespace pl_Gurkas.Vista.Comercial
             this.txtContacto.Location = new System.Drawing.Point(159, 26);
             this.txtContacto.Name = "txtContacto";
             this.txtContacto.Size = new System.Drawing.Size(164, 20);
-            this.txtContacto.TabIndex = 47;
+            this.txtContacto.TabIndex = 10;
             // 
             // label5
             // 
@@ -375,6 +375,23 @@ namespace pl_Gurkas.Vista.Comercial
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de la Sede";
             // 
+            // txtlatitud
+            // 
+            this.txtlatitud.Location = new System.Drawing.Point(424, 110);
+            this.txtlatitud.Name = "txtlatitud";
+            this.txtlatitud.Size = new System.Drawing.Size(164, 20);
+            this.txtlatitud.TabIndex = 8;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(335, 112);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(49, 15);
+            this.label13.TabIndex = 59;
+            this.label13.Text = "latitud : ";
+            // 
             // dtpBaja
             // 
             this.dtpBaja.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -383,6 +400,13 @@ namespace pl_Gurkas.Vista.Comercial
             this.dtpBaja.Size = new System.Drawing.Size(146, 20);
             this.dtpBaja.TabIndex = 35;
             // 
+            // txtlongitud
+            // 
+            this.txtlongitud.Location = new System.Drawing.Point(424, 141);
+            this.txtlongitud.Name = "txtlongitud";
+            this.txtlongitud.Size = new System.Drawing.Size(164, 20);
+            this.txtlongitud.TabIndex = 9;
+            // 
             // dtpActivacion
             // 
             this.dtpActivacion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -390,6 +414,16 @@ namespace pl_Gurkas.Vista.Comercial
             this.dtpActivacion.Name = "dtpActivacion";
             this.dtpActivacion.Size = new System.Drawing.Size(146, 20);
             this.dtpActivacion.TabIndex = 34;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(335, 143);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(63, 15);
+            this.label14.TabIndex = 58;
+            this.label14.Text = "longitud  : ";
             // 
             // label12
             // 
@@ -418,7 +452,7 @@ namespace pl_Gurkas.Vista.Comercial
             this.cboEstadoSede.Location = new System.Drawing.Point(422, 24);
             this.cboEstadoSede.Name = "cboEstadoSede";
             this.cboEstadoSede.Size = new System.Drawing.Size(166, 21);
-            this.cboEstadoSede.TabIndex = 30;
+            this.cboEstadoSede.TabIndex = 7;
             // 
             // label6
             // 
@@ -437,7 +471,7 @@ namespace pl_Gurkas.Vista.Comercial
             this.cboDis.Location = new System.Drawing.Point(109, 143);
             this.cboDis.Name = "cboDis";
             this.cboDis.Size = new System.Drawing.Size(214, 21);
-            this.cboDis.TabIndex = 18;
+            this.cboDis.TabIndex = 5;
             // 
             // cboDepartamento
             // 
@@ -446,7 +480,7 @@ namespace pl_Gurkas.Vista.Comercial
             this.cboDepartamento.Location = new System.Drawing.Point(109, 83);
             this.cboDepartamento.Name = "cboDepartamento";
             this.cboDepartamento.Size = new System.Drawing.Size(214, 21);
-            this.cboDepartamento.TabIndex = 16;
+            this.cboDepartamento.TabIndex = 3;
             this.cboDepartamento.SelectedIndexChanged += new System.EventHandler(this.cboDepartamento_SelectedIndexChanged);
             // 
             // cboProvincia
@@ -456,7 +490,7 @@ namespace pl_Gurkas.Vista.Comercial
             this.cboProvincia.Location = new System.Drawing.Point(109, 113);
             this.cboProvincia.Name = "cboProvincia";
             this.cboProvincia.Size = new System.Drawing.Size(214, 21);
-            this.cboProvincia.TabIndex = 17;
+            this.cboProvincia.TabIndex = 4;
             this.cboProvincia.SelectedIndexChanged += new System.EventHandler(this.cboProvincia_SelectedIndexChanged);
             // 
             // txtNombreSede
@@ -479,7 +513,7 @@ namespace pl_Gurkas.Vista.Comercial
             this.txtDireccion.Multiline = true;
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(214, 53);
-            this.txtDireccion.TabIndex = 19;
+            this.txtDireccion.TabIndex = 6;
             // 
             // label2
             // 
@@ -540,40 +574,6 @@ namespace pl_Gurkas.Vista.Comercial
             this.label18.Size = new System.Drawing.Size(65, 15);
             this.label18.TabIndex = 29;
             this.label18.Text = "Direccion :";
-            // 
-            // txtlatitud
-            // 
-            this.txtlatitud.Location = new System.Drawing.Point(424, 110);
-            this.txtlatitud.Name = "txtlatitud";
-            this.txtlatitud.Size = new System.Drawing.Size(164, 20);
-            this.txtlatitud.TabIndex = 60;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(335, 112);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(49, 15);
-            this.label13.TabIndex = 59;
-            this.label13.Text = "latitud : ";
-            // 
-            // txtlongitud
-            // 
-            this.txtlongitud.Location = new System.Drawing.Point(424, 141);
-            this.txtlongitud.Name = "txtlongitud";
-            this.txtlongitud.Size = new System.Drawing.Size(164, 20);
-            this.txtlongitud.TabIndex = 57;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(335, 143);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(63, 15);
-            this.label14.TabIndex = 58;
-            this.label14.Text = "longitud  : ";
             // 
             // frmCreacionSedes
             // 

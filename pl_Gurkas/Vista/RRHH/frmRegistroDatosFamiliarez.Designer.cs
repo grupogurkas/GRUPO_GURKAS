@@ -86,7 +86,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.pictureBox1.Image = global::pl_Gurkas.Properties.Resources.png;
             this.pictureBox1.Location = new System.Drawing.Point(891, 7);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(296, 247);
+            this.pictureBox1.Size = new System.Drawing.Size(258, 169);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 50;
             this.pictureBox1.TabStop = false;
@@ -98,7 +98,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.dgvFamiliarPersonal.Location = new System.Drawing.Point(652, 279);
             this.dgvFamiliarPersonal.Name = "dgvFamiliarPersonal";
             this.dgvFamiliarPersonal.RowHeadersWidth = 51;
-            this.dgvFamiliarPersonal.Size = new System.Drawing.Size(358, 270);
+            this.dgvFamiliarPersonal.Size = new System.Drawing.Size(497, 270);
             this.dgvFamiliarPersonal.TabIndex = 49;
             // 
             // btnBuscarFamiliarPersonal
@@ -153,7 +153,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(21, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(625, 351);
+            this.panel1.Size = new System.Drawing.Size(625, 353);
             this.panel1.TabIndex = 44;
             // 
             // cboempleadoActivo
@@ -164,7 +164,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.cboempleadoActivo.Location = new System.Drawing.Point(122, 9);
             this.cboempleadoActivo.Name = "cboempleadoActivo";
             this.cboempleadoActivo.Size = new System.Drawing.Size(299, 21);
-            this.cboempleadoActivo.TabIndex = 48;
+            this.cboempleadoActivo.TabIndex = 1;
             // 
             // cboNumeroHijos
             // 
@@ -173,7 +173,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.cboNumeroHijos.Location = new System.Drawing.Point(500, 9);
             this.cboNumeroHijos.Name = "cboNumeroHijos";
             this.cboNumeroHijos.Size = new System.Drawing.Size(96, 21);
-            this.cboNumeroHijos.TabIndex = 44;
+            this.cboNumeroHijos.TabIndex = 2;
             this.cboNumeroHijos.SelectedIndexChanged += new System.EventHandler(this.cboNumeroHijos_SelectedIndexChanged);
             // 
             // label12
@@ -404,7 +404,7 @@ namespace pl_Gurkas.Vista.RRHH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1361, 651);
+            this.ClientSize = new System.Drawing.Size(1206, 648);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dgvFamiliarPersonal);

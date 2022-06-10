@@ -47,7 +47,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.cboempleadoActivo.Location = new System.Drawing.Point(171, 12);
             this.cboempleadoActivo.Name = "cboempleadoActivo";
             this.cboempleadoActivo.Size = new System.Drawing.Size(350, 21);
-            this.cboempleadoActivo.TabIndex = 61;
+            this.cboempleadoActivo.TabIndex = 1;
             this.cboempleadoActivo.SelectedIndexChanged += new System.EventHandler(this.cboempleadoActivo_SelectedIndexChanged);
             // 
             // label42
@@ -67,7 +67,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.cboEstadoEmp.Location = new System.Drawing.Point(171, 39);
             this.cboEstadoEmp.Name = "cboEstadoEmp";
             this.cboEstadoEmp.Size = new System.Drawing.Size(350, 21);
-            this.cboEstadoEmp.TabIndex = 63;
+            this.cboEstadoEmp.TabIndex = 2;
             // 
             // label25
             // 
@@ -86,7 +86,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.cboEstadoPersonalTareaje.Location = new System.Drawing.Point(171, 66);
             this.cboEstadoPersonalTareaje.Name = "cboEstadoPersonalTareaje";
             this.cboEstadoPersonalTareaje.Size = new System.Drawing.Size(350, 21);
-            this.cboEstadoPersonalTareaje.TabIndex = 65;
+            this.cboEstadoPersonalTareaje.TabIndex = 3;
             // 
             // label1
             // 
@@ -105,8 +105,8 @@ namespace pl_Gurkas.Vista.RRHH
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscar.Location = new System.Drawing.Point(546, 9);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(109, 46);
-            this.btnBuscar.TabIndex = 66;
+            this.btnBuscar.Size = new System.Drawing.Size(109, 51);
+            this.btnBuscar.TabIndex = 4;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -120,7 +120,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.btnActualizarDatos.Location = new System.Drawing.Point(661, 9);
             this.btnActualizarDatos.Name = "btnActualizarDatos";
             this.btnActualizarDatos.Size = new System.Drawing.Size(153, 51);
-            this.btnActualizarDatos.TabIndex = 67;
+            this.btnActualizarDatos.TabIndex = 5;
             this.btnActualizarDatos.Text = "Actualizar Datos\r\n";
             this.btnActualizarDatos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnActualizarDatos.UseVisualStyleBackColor = true;

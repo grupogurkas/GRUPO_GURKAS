@@ -24,7 +24,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <UpdateUrl>\\192.168.1.13\compartida\SISTEMA_GURKAS\</UpdateUrl>
-    <ApplicationRevision>36</ApplicationRevision>
+    <ApplicationRevision>37</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -488,11 +488,11 @@
     <Compile Include="Vista\Logistica\entrada\HistorialEntradaProducto.Designer.cs">
       <DependentUpon>HistorialEntradaProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Logistica\Ordenes\Form1.cs">
+    <Compile Include="Vista\Logistica\Ordenes\frmRegistrarOrden.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Logistica\Ordenes\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Vista\Logistica\Ordenes\frmRegistrarOrden.Designer.cs">
+      <DependentUpon>frmRegistrarOrden.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Logistica\producto\frmGenerarCodigoBarra.cs">
       <SubType>Form</SubType>
@@ -927,6 +927,12 @@
     <Compile Include="Vista\RRHH\Postulante\frmPostulante.Designer.cs">
       <DependentUpon>frmPostulante.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\RRHH\ReportesRRHH\frmPersonalPorDni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\RRHH\ReportesRRHH\frmPersonalPorDni.Designer.cs">
+      <DependentUpon>frmPersonalPorDni.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\RRHH\ReportesRRHH\frmBajaPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1127,8 +1133,8 @@
     <EmbeddedResource Include="Vista\Logistica\entrada\HistorialEntradaProducto.resx">
       <DependentUpon>HistorialEntradaProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Logistica\Ordenes\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\Logistica\Ordenes\frmRegistrarOrden.resx">
+      <DependentUpon>frmRegistrarOrden.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\producto\frmGenerarCodigoBarra.resx">
       <DependentUpon>frmGenerarCodigoBarra.cs</DependentUpon>
@@ -1363,6 +1369,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\RRHH\ReportesRRHH\frmEstaturaPersonal.resx">
       <DependentUpon>frmEstaturaPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\RRHH\ReportesRRHH\frmPersonalPorDni.resx">
+      <DependentUpon>frmPersonalPorDni.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\RRHH\ReportesRRHH\frmPersonalPorEdad.resx">
       <DependentUpon>frmPersonalPorEdad.cs</DependentUpon>

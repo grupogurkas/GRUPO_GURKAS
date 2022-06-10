@@ -76,6 +76,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Buscar Proveedor";
+            this.groupBox1.Enter += new System.EventHandler(this.s);
             // 
             // btnExcel
             // 
