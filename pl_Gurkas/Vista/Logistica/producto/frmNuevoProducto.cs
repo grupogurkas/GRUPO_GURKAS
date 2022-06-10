@@ -401,7 +401,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
             {
                 string cod_sistema = txtCodSistema.Text;
                 string cod_camisa = txtcodcamisas.Text;
-                string nombre_camisa = txtNombreCamisas.Text;
+                string Condicion = cboEstadoProduCamisas.GetItemText(cboEstadoProduCamisas.SelectedItem);
+                string ta = cboTallaPrendaCamisas.GetItemText(cboTallaPrendaCamisas.SelectedItem);
+                string nombre = txtNombreCamisas.Text;
                 int talla_c = cboTallaPrendaCamisas.SelectedIndex;
                 string color_c = txtColorCamisas.Text;
                 int stock_inicial_c = Convert.ToInt32(txtStockInicialCamisas.Text);
@@ -413,6 +415,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 DateTime f_adquision_c = dtpAdquisicionCamisas.Value;
                 DateTime f_registro_c = dtpRegistroCamisas.Value;
                 string observacion_c = txtObservacionCamisas.Text;
+                string nombre_camisa = nombre + "-"+ color_c+"-"+ ta + "-"+ Condicion ;
 
                 logisticaInsertar.RegistrarPrendaCamisas(cod_sistema, cod_camisa, nombre_camisa, talla_c, color_c,
                    stock_inicial_c, estado_c, precio_unitario_c, stock_actual_c, stock_minimo_c, desp_c, f_adquision_c,
@@ -760,9 +763,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
+                string Condicion = cboEstadoAccesorio.GetItemText(cboEstadoAccesorio.SelectedItem);
+                string t = cboTallaAccesorio.GetItemText(cboTallaAccesorio.SelectedItem);
                 string cod_sistema = txtCodSistema.Text;
                 string cod_accesorio = txtCodAccesorio.Text;
-                string nombre_accesorio = txtNombreAccesorio.Text;
+                string nombre = txtNombreAccesorio.Text;
                 int talla_acc = cboTallaAccesorio.SelectedIndex;
                 string color_acc = txtColorAccesorio.Text;
                 int stock_inicial_acc = Convert.ToInt32(txtStockInicalAcessorio.Text);
@@ -775,6 +780,8 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 DateTime f_adquision_acc = dtpAdquAccesorio.Value;
                 DateTime f_registro_acc = dtpRegistroAccesorio.Value;
                 string observacion_acc = txtObservacionAccesorio.Text;
+
+                string nombre_accesorio = nombre + "-" + t + "-" + color_acc + "-" + Condicion;
 
                 logisticaInsertar.RegistrarPrendaAccesorio(cod_sistema, cod_accesorio, nombre_accesorio, talla_acc,
                         color_acc, stock_inicial_acc, tipo_tela_acc, estado_acc, precio_unitario_acc, stock_actual_acc,
@@ -791,9 +798,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
+                string Condicion = cboEstadoUtilez.GetItemText(cboEstadoUtilez.SelectedItem);
                 string cod_sistema = txtCodSistema.Text;
                 string cod_utiles = txtCodigoUtiles.Text;
-                string nombre_utiles = txtNombreUtiles.Text;
+                string nombre = txtNombreUtiles.Text;
                 string marca_utiles = txtMarcaUtiles.Text;
                 string modelo_utiles = txtModeloUtiles.Text;
                 int tipo_unidad_utiles = cboTipoUnidadUtiles.SelectedIndex;
@@ -806,7 +814,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 DateTime f_adquision_utiles = dtpFechaAdUtiles.Value;
                 DateTime f_registro_utiles = dtpFechaRegisUtiles.Value;
                 string observacion_utiles = txtObservacionUti.Text;
-
+                string nombre_utiles = nombre + "-" + marca_utiles + "-" + modelo_utiles + "-"+ Condicion;
                 logisticaInsertar.RegistrarUtiles(cod_sistema, cod_utiles, nombre_utiles, marca_utiles,
                           modelo_utiles, tipo_unidad_utiles, stock_inicial_utiles, estado_utiles, precio_unitario_utiles,
                            stock_actual_utiles,
@@ -823,9 +831,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
+                string Condicion = cboEstadoEquipo.GetItemText(cboEstadoEquipo.SelectedItem);
                 string cod_sistema = txtCodSistema.Text;
                 string cod_logistico = txtCodEquipoEquip.Text;
-                string nombre_logistico = txtNombreEquip.Text;
+                string nombre = txtNombreEquip.Text;
                 string marca_logistico = txtMarcaEquip.Text;
                 string modelo_logistico = txtModeloEquip.Text;
                 int tipo_unidad_logistico = cboTipoUnidadEquipo.SelectedIndex;
@@ -838,7 +847,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 DateTime f_adquision_logistico = dtpFechaAdEquip.Value;
                 DateTime f_registro_logistico = dtpFechaRegisEquip.Value;
                 string observacion_logistico = txtObservacionEquip.Text;
-
+                string nombre_logistico = nombre + "-"+marca_logistico+"-"+modelo_logistico+"-"+estado_logistico;
                 logisticaInsertar.RegistrarEquipaminetoLogistico(cod_sistema, cod_logistico, nombre_logistico, marca_logistico,
                            modelo_logistico, tipo_unidad_logistico, stock_inicial_logistico, estado_logistico, precio_unitario_logistico,
                             stock_actual_logistico,
@@ -855,9 +864,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
+                string Condicion = cboEstadoEquipoPro.GetItemText(cboEstadoEquipoPro.SelectedItem);
                 string cod_sistema = txtCodSistema.Text;
                 string cod_epp = txtCodEquipProtec.Text;
-                string nombre_epp = txtNombreProtec.Text;
+                string nombre = txtNombreProtec.Text;
                 string marca_epp = txtMarcaProtec.Text;
                 string modelo_epp = txtModeloProtec.Text;
                 int tipo_unidad_epp = cboTipoEquipoPro.SelectedIndex;
@@ -870,7 +880,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 DateTime f_adquision_epp = dtpFechaAdProtec.Value;
                 DateTime f_registro_epp = dtpFechaRegisProtec.Value;
                 string observacion_epp = txtObservacionProtec.Text;
-
+                string nombre_epp = nombre +"-"+marca_epp+"-"+modelo_epp+"-"+ Condicion;
                 logisticaInsertar.RegistrarEpp(cod_sistema, cod_epp, nombre_epp, marca_epp,
                             modelo_epp, tipo_unidad_epp, stock_inicial_epp, estado_epp, precio_unitario_epp,
                              stock_actual_epp,
@@ -887,9 +897,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
+                string Condicion = cboEstadoMobi.GetItemText(cboEstadoMobi.SelectedItem);
                 string cod_sistema = txtCodSistema.Text;
                 string cod_mobi = txtCodEquipMobi.Text;
-                string nombre_mobi = txtNombreMobi.Text;
+                string nombre = txtNombreMobi.Text;
                 string marca_mobi = txtMarcaMobi.Text;
                 string modelo_mobi = txtModeloMobi.Text;
                 int tipo_unidad_mobi = cboTipoUnidadMobi.SelectedIndex;
@@ -903,7 +914,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 DateTime f_adquision_mobi = dtpFechaAdMobi.Value;
                 DateTime f_registro_mobi = dtpFechaRegisMobi.Value;
                 string observacion_mobi = txtObservacionMobi.Text;
-
+                string nombre_mobi = nombre + "-"+marca_mobi+"-"+modelo_mobi+"-"+Condicion;
                 logisticaInsertar.RegistrarMobiliario(cod_sistema, cod_mobi, nombre_mobi, marca_mobi,
                              modelo_mobi, tipo_unidad_mobi, categoria_mobi, estado_mobi, precio_unitario_mobi,
                               stock_inicial_mobi,
@@ -961,7 +972,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             {
                 string cod_sistema = txtCodSistema.Text;
                 string cod_aseo = txtCodEquipAseo.Text;
-                string nombre_aseo = txtNombreUtilesAseo.Text;
+                string nombre = txtNombreUtilesAseo.Text;
                 string marca_aseo = txtMarcaUtilesAseo.Text;
                 int tipo_unidad_aseo = Convert.ToInt32(cboTipoUnidadAseo.SelectedIndex);
                 DateTime f_fabricacion_aseo = dtpFechaFabAseo.Value;
@@ -975,6 +986,8 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 DateTime f_adquision_aseo = dtpFechaAdAseo.Value;
                 DateTime f_registro_aseo = dtpFechaRegisAseo.Value;
                 string observacion_aseo = txtObservacionAseo.Text;
+
+                string nombre_aseo = nombre+"-"+marca_aseo;
 
                 logisticaInsertar.RegistrarAseo(cod_sistema, cod_aseo, nombre_aseo, marca_aseo,
                              tipo_unidad_aseo, f_fabricacion_aseo, f_vencimiento_aseo, estado_aseo, precio_unitario_aseo,
@@ -1030,9 +1043,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
+                string Condicion = cboEstadoPantalon.GetItemText(cboEstadoPantalon.SelectedItem);
+                string t_tela = cboTipoTelaPantalon.GetItemText(cboTipoTelaPantalon.SelectedItem);
+                string t_ta = cboTallaPantalon.GetItemText(cboTallaPantalon.SelectedItem);
                 string cod_sistema = txtCodSistema.Text;
                 string cod_pantalon = txtCodPantalon.Text;
-                string nombre_pantalon = txtNombrePantalon.Text;
+                string nombre = txtNombrePantalon.Text;
                 int talla_pan = cboTallaPantalon.SelectedIndex;
                 string color_pan = txtColorPantalon.Text;
                 int stock_inicial_pan = Convert.ToInt32(txtStockIniPantalon.Text);
@@ -1045,6 +1061,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 DateTime f_adquision_pan = dtpAdPantalon.Value;
                 DateTime f_registro_pan = dtpRegistroPantalon.Value;
                 string observacion_pan = txtObservacionPantalon.Text;
+                string nombre_pantalon = nombre + "-" + color_pan + "-" + t_tela + "-"+ t_ta + "-" + Condicion;
 
                 logisticaInsertar.RegistrarPrendaPantalon(cod_sistema, cod_pantalon, nombre_pantalon, talla_pan,
                       color_pan, stock_inicial_pan, tipo_tela_pan, estado_pan, precio_unitario_pan, stock_actual_pan,
@@ -1061,9 +1078,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
+                string Condicion = cboEstadoCalzado.GetItemText(cboEstadoCalzado.SelectedItem);
+                string ta = cboTallaCalzado.GetItemText(cboTallaCalzado.SelectedItem);
                 string cod_sistema = txtCodSistema.Text;
                 string cod_calzado = txtCodCalzado.Text;
-                string nombre_calzado = txtNombreCalzado.Text;
+                string nombre = txtNombreCalzado.Text;
                 int talla_cal = cboTallaCalzado.SelectedIndex;
                 string color_cal = txtColorCalzado.Text;
                 int tipo_calzado = cboTipoCalzado.SelectedIndex;
@@ -1076,6 +1095,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 DateTime f_adquision_cal = dtpAdquiCalzado.Value;
                 DateTime f_registro_cal = dtpRegistroCalzado.Value;
                 string observacion_cal = txtObservacionCalzado.Text;
+                string nombre_calzado = nombre + "-" + color_cal + "-"+ ta + "-" + Condicion;
 
                 logisticaInsertar.RegistrarPrendaCalzado(cod_sistema, cod_calzado, nombre_calzado, talla_cal, color_cal,
                      tipo_calzado, stock_inicial_cal, estado_cal, precio_unitario_cal, stock_actual_cal, stock_minimo_cal, desp_cal,
