@@ -36,9 +36,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.cboempleadoActivo = new System.Windows.Forms.ComboBox();
             this.label42 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblemp = new System.Windows.Forms.Label();
-            this.lblruc = new System.Windows.Forms.Label();
-            this.lbldireccion = new System.Windows.Forms.Label();
+            this.txtNumVale = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.txtObservacion = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -66,6 +65,9 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.btnCertificadoBasc = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.dtpFechaAdquisicion = new System.Windows.Forms.DateTimePicker();
+            this.lblemp = new System.Windows.Forms.Label();
+            this.lblruc = new System.Windows.Forms.Label();
+            this.lbldireccion = new System.Windows.Forms.Label();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtUsuarioEntrega = new System.Windows.Forms.TextBox();
@@ -80,8 +82,9 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.lbldni = new System.Windows.Forms.Label();
             this.lbldnientr = new System.Windows.Forms.Label();
             this.lblcodentre = new System.Windows.Forms.Label();
-            this.txtNumVale = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.txtstock = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtstockminimo = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -141,6 +144,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.txtstockminimo);
             this.panel1.Controls.Add(this.txtNumVale);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.txtObservacion);
@@ -156,35 +160,22 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.panel1.Size = new System.Drawing.Size(1327, 574);
             this.panel1.TabIndex = 95;
             // 
-            // lblemp
+            // txtNumVale
             // 
-            this.lblemp.AutoSize = true;
-            this.lblemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblemp.Location = new System.Drawing.Point(1203, 41);
-            this.lblemp.Name = "lblemp";
-            this.lblemp.Size = new System.Drawing.Size(32, 15);
-            this.lblemp.TabIndex = 234;
-            this.lblemp.Text = "emp";
+            this.txtNumVale.Location = new System.Drawing.Point(1092, 144);
+            this.txtNumVale.Name = "txtNumVale";
+            this.txtNumVale.Size = new System.Drawing.Size(104, 20);
+            this.txtNumVale.TabIndex = 231;
             // 
-            // lblruc
+            // label9
             // 
-            this.lblruc.AutoSize = true;
-            this.lblruc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblruc.Location = new System.Drawing.Point(1223, 15);
-            this.lblruc.Name = "lblruc";
-            this.lblruc.Size = new System.Drawing.Size(24, 15);
-            this.lblruc.TabIndex = 233;
-            this.lblruc.Text = "ruc";
-            // 
-            // lbldireccion
-            // 
-            this.lbldireccion.AutoSize = true;
-            this.lbldireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldireccion.Location = new System.Drawing.Point(1145, 39);
-            this.lbldireccion.Name = "lbldireccion";
-            this.lbldireccion.Size = new System.Drawing.Size(23, 15);
-            this.lbldireccion.TabIndex = 232;
-            this.lbldireccion.Text = "dic";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(977, 143);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(67, 15);
+            this.label9.TabIndex = 230;
+            this.label9.Text = "Num Vale :";
             // 
             // txtObservacion
             // 
@@ -207,6 +198,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.txtstock);
+            this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.cboProducto);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.cboEstadoMaterial);
@@ -226,16 +219,17 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.cboProducto.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cboProducto.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboProducto.FormattingEnabled = true;
-            this.cboProducto.Location = new System.Drawing.Point(91, 26);
+            this.cboProducto.Location = new System.Drawing.Point(80, 27);
             this.cboProducto.Name = "cboProducto";
-            this.cboProducto.Size = new System.Drawing.Size(406, 21);
+            this.cboProducto.Size = new System.Drawing.Size(417, 21);
             this.cboProducto.TabIndex = 229;
+            this.cboProducto.SelectedIndexChanged += new System.EventHandler(this.cboProducto_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(255, 54);
+            this.label3.Location = new System.Drawing.Point(267, 53);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 30);
             this.label3.TabIndex = 227;
@@ -245,9 +239,9 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             // 
             this.cboEstadoMaterial.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboEstadoMaterial.FormattingEnabled = true;
-            this.cboEstadoMaterial.Location = new System.Drawing.Point(340, 58);
+            this.cboEstadoMaterial.Location = new System.Drawing.Point(352, 58);
             this.cboEstadoMaterial.Name = "cboEstadoMaterial";
-            this.cboEstadoMaterial.Size = new System.Drawing.Size(157, 21);
+            this.cboEstadoMaterial.Size = new System.Drawing.Size(145, 21);
             this.cboEstadoMaterial.TabIndex = 228;
             // 
             // label1
@@ -278,9 +272,9 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             // 
             // txtCantidadTecno
             // 
-            this.txtCantidadTecno.Location = new System.Drawing.Point(91, 59);
+            this.txtCantidadTecno.Location = new System.Drawing.Point(80, 58);
             this.txtCantidadTecno.Name = "txtCantidadTecno";
-            this.txtCantidadTecno.Size = new System.Drawing.Size(158, 20);
+            this.txtCantidadTecno.Size = new System.Drawing.Size(70, 20);
             this.txtCantidadTecno.TabIndex = 217;
             // 
             // label142
@@ -480,6 +474,36 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.dtpFechaAdquisicion.Size = new System.Drawing.Size(104, 20);
             this.dtpFechaAdquisicion.TabIndex = 193;
             // 
+            // lblemp
+            // 
+            this.lblemp.AutoSize = true;
+            this.lblemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblemp.Location = new System.Drawing.Point(1203, 41);
+            this.lblemp.Name = "lblemp";
+            this.lblemp.Size = new System.Drawing.Size(32, 15);
+            this.lblemp.TabIndex = 234;
+            this.lblemp.Text = "emp";
+            // 
+            // lblruc
+            // 
+            this.lblruc.AutoSize = true;
+            this.lblruc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblruc.Location = new System.Drawing.Point(1223, 15);
+            this.lblruc.Name = "lblruc";
+            this.lblruc.Size = new System.Drawing.Size(24, 15);
+            this.lblruc.TabIndex = 233;
+            this.lblruc.Text = "ruc";
+            // 
+            // lbldireccion
+            // 
+            this.lbldireccion.AutoSize = true;
+            this.lbldireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldireccion.Location = new System.Drawing.Point(1145, 39);
+            this.lbldireccion.Name = "lbldireccion";
+            this.lbldireccion.Size = new System.Drawing.Size(23, 15);
+            this.lbldireccion.TabIndex = 232;
+            this.lbldireccion.Text = "dic";
+            // 
             // pictureBox16
             // 
             this.pictureBox16.Image = global::pl_Gurkas.Properties.Resources.png;
@@ -609,22 +633,29 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.lblcodentre.TabIndex = 239;
             this.lblcodentre.Text = "codentre";
             // 
-            // txtNumVale
+            // txtstock
             // 
-            this.txtNumVale.Location = new System.Drawing.Point(1092, 144);
-            this.txtNumVale.Name = "txtNumVale";
-            this.txtNumVale.Size = new System.Drawing.Size(104, 20);
-            this.txtNumVale.TabIndex = 231;
+            this.txtstock.Location = new System.Drawing.Point(199, 58);
+            this.txtstock.Name = "txtstock";
+            this.txtstock.Size = new System.Drawing.Size(67, 20);
+            this.txtstock.TabIndex = 231;
             // 
-            // label9
+            // label10
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(977, 143);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(67, 15);
-            this.label9.TabIndex = 230;
-            this.label9.Text = "Num Vale :";
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(156, 61);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(40, 15);
+            this.label10.TabIndex = 230;
+            this.label10.Text = "Stock:";
+            // 
+            // txtstockminimo
+            // 
+            this.txtstockminimo.Location = new System.Drawing.Point(1222, 153);
+            this.txtstockminimo.Name = "txtstockminimo";
+            this.txtstockminimo.Size = new System.Drawing.Size(67, 20);
+            this.txtstockminimo.TabIndex = 232;
             // 
             // frmEntregaMaterial
             // 
@@ -721,5 +752,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private System.Windows.Forms.Label lblcodentre;
         private System.Windows.Forms.TextBox txtNumVale;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtstock;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtstockminimo;
     }
 }

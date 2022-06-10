@@ -166,6 +166,10 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         {
             txtUsuarioEntrega.Enabled = false;
             txtNumVale.Enabled = false;
+            txtstock.Enabled = false;
+            txtstock.Text = "0";
+            txtstockminimo.Text = "0";
+            txtstockminimo.Visible = false;
             string nombre_user = Datos.DatosUsuario._usuario;
             txtUsuarioEntrega.Text = nombre_user;
             timer1.Enabled = true;
@@ -261,9 +265,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             }
         }
 
-        private void btnAgregar_Click(object sender, EventArgs e)
+        private void agregardata()
         {
-
             string cod_producto = cboProducto.SelectedValue.ToString();
             string nombre_producto = cboProducto.GetItemText(cboProducto.SelectedItem);
             string cantidad = txtCantidadTecno.Text;
@@ -282,6 +285,25 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             if ((n + 1) == 26)
             {
                 btnAgregar.Enabled = false;
+            }
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+
+            int stock_a = Convert.ToInt32(txtstock.Text);
+            int cantidad = Convert.ToInt32(txtCantidadTecno.Text);
+
+            if(cantidad <= stock_a){
+                agregardata();
+                txtCantidadTecno.Text = "";
+                cboProducto.SelectedIndex = 0;
+                cboEstadoMaterial.SelectedIndex = 0;
+                txtstock.Text = "0";
+            }
+            else
+            {
+                MessageBox.Show("No se puede agregar el materia ya que supera el stock actual","error");
             }
 
         }
@@ -363,6 +385,10 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             e.Graphics.DrawString(nombre_arc, datos, Brushes.Black, 580, 25);
             e.Graphics.DrawString(ver, datos, Brushes.Black, 580, 35);
             e.Graphics.DrawString(num, tipoTexto, Brushes.Black, 580, 55);
+
+            string anio =  DateTime.Now.Year.ToString();
+
+            e.Graphics.DrawString(" - " + anio, tipoTexto, Brushes.Black, 720, 55);
 
             e.Graphics.DrawString(dir, datos, Brushes.Black, new RectangleF(260, 60, 300, 30));
 
@@ -464,7 +490,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
         private void btnCertificadoBasc_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
+           /* System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
              PrintDialog1.AllowSomePages = true;
              PrintDialog1.ShowHelp = true;
              PrintDialog1.Document = printDocument1;
@@ -474,8 +500,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                     printDocument1.Print();
                     registarvale();
                     limpiardatos();
-             }
-           // printPreviewDialog1.ShowDialog();
+             }*/
+            printPreviewDialog1.ShowDialog();
         }
 
         private void txtInformacionAdicional_TextChanged(object sender, EventArgs e)
@@ -548,6 +574,35 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             limpiardatos();
+        }
+
+        private void cboProducto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboProducto.SelectedValue.ToString() != null)
+            {
+                string cod_producto = cboProducto.SelectedValue.ToString();
+                SqlCommand comando = new SqlCommand("SELECT * FROM T_MAE_PRODUCTO WHERE COD_PRODUCTO_MATERIAL = '" + cod_producto + "'", conexion.conexionBD());
+                SqlDataReader recorre = comando.ExecuteReader();
+                while (recorre.Read())
+                {
+                    txtstock.Text = recorre["STOCK_ACTUAL"].ToString();
+                    txtstockminimo.Text = recorre["STOCK_MINIMO"].ToString();
+                }
+                int stock_a = Convert.ToInt32(txtstock.Text);
+                int stock_m = Convert.ToInt32(txtstockminimo.Text);
+                if (stock_a > stock_m)
+                {
+                    txtstock.BackColor = Color.FromArgb(195, 241, 202);
+                }
+                else if (stock_a < 10)
+                {
+                    txtstock.BackColor = Color.FromArgb(255, 200, 206);
+                }
+                else if (stock_a < stock_m)
+                {
+                    txtstock.BackColor = Color.FromArgb(254, 235, 156);
+                }
+            }
         }
     }
 }
