@@ -91,11 +91,12 @@ namespace pl_Gurkas.Vista.Operaciones.ReporteOperaciones
             // btnExcel
             // 
             this.btnExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcel.Image = global::pl_Gurkas.Properties.Resources.Excel_32;
             this.btnExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExcel.Location = new System.Drawing.Point(377, 123);
             this.btnExcel.Name = "btnExcel";
             this.btnExcel.Size = new System.Drawing.Size(109, 46);
-            this.btnExcel.TabIndex = 54;
+            this.btnExcel.TabIndex = 3;
             this.btnExcel.Text = "Excel";
             this.btnExcel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExcel.UseVisualStyleBackColor = true;
@@ -141,7 +142,7 @@ namespace pl_Gurkas.Vista.Operaciones.ReporteOperaciones
             this.cboempleadoActivo.Location = new System.Drawing.Point(69, 32);
             this.cboempleadoActivo.Name = "cboempleadoActivo";
             this.cboempleadoActivo.Size = new System.Drawing.Size(279, 21);
-            this.cboempleadoActivo.TabIndex = 49;
+            this.cboempleadoActivo.TabIndex = 1;
             // 
             // btnConsultar
             // 
@@ -151,7 +152,7 @@ namespace pl_Gurkas.Vista.Operaciones.ReporteOperaciones
             this.btnConsultar.Location = new System.Drawing.Point(365, 24);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(109, 46);
-            this.btnConsultar.TabIndex = 6;
+            this.btnConsultar.TabIndex = 2;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnConsultar.UseVisualStyleBackColor = true;

@@ -1,7 +1,7 @@
 ﻿
 namespace pl_Gurkas.Vista.Logistica.Ordenes
 {
-    partial class Form1
+    partial class frmRegistrarOrden
     {
         /// <summary>
         /// Required designer variable.
@@ -37,20 +37,20 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.label6 = new System.Windows.Forms.Label();
             this.txtCantidadTecno = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dtpFechaAdquisicion = new System.Windows.Forms.DateTimePicker();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtProveedor = new System.Windows.Forms.TextBox();
-            this.txtruc = new System.Windows.Forms.TextBox();
-            this.label34 = new System.Windows.Forms.Label();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
             this.txtNombreProveedor = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtCelular = new System.Windows.Forms.TextBox();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txtruc = new System.Windows.Forms.TextBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtProveedor = new System.Windows.Forms.TextBox();
+            this.dtpFechaAdquisicion = new System.Windows.Forms.DateTimePicker();
+            this.label12 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -60,9 +60,9 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 430);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 332);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1068, 235);
+            this.dataGridView1.Size = new System.Drawing.Size(1050, 333);
             this.dataGridView1.TabIndex = 0;
             // 
             // cboempleadoActivo
@@ -141,78 +141,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Proveedor";
             // 
-            // dtpFechaAdquisicion
-            // 
-            this.dtpFechaAdquisicion.CalendarMonthBackground = System.Drawing.SystemColors.Highlight;
-            this.dtpFechaAdquisicion.Enabled = false;
-            this.dtpFechaAdquisicion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaAdquisicion.Location = new System.Drawing.Point(627, 18);
-            this.dtpFechaAdquisicion.Name = "dtpFechaAdquisicion";
-            this.dtpFechaAdquisicion.Size = new System.Drawing.Size(104, 20);
-            this.dtpFechaAdquisicion.TabIndex = 233;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(489, 22);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(100, 15);
-            this.label12.TabIndex = 234;
-            this.label12.Text = "Fecha De Orden:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(11, 29);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(66, 15);
-            this.label8.TabIndex = 110;
-            this.label8.Text = "Proveedor:";
-            // 
-            // txtProveedor
-            // 
-            this.txtProveedor.Location = new System.Drawing.Point(92, 29);
-            this.txtProveedor.Name = "txtProveedor";
-            this.txtProveedor.Size = new System.Drawing.Size(236, 20);
-            this.txtProveedor.TabIndex = 109;
-            // 
-            // txtruc
-            // 
-            this.txtruc.Location = new System.Drawing.Point(92, 55);
-            this.txtruc.Name = "txtruc";
-            this.txtruc.Size = new System.Drawing.Size(236, 20);
-            this.txtruc.TabIndex = 112;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(16, 65);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(39, 15);
-            this.label34.TabIndex = 111;
-            this.label34.Text = "RUC :";
-            // 
-            // txtDireccion
-            // 
-            this.txtDireccion.Location = new System.Drawing.Point(92, 81);
-            this.txtDireccion.Multiline = true;
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(236, 32);
-            this.txtDireccion.TabIndex = 113;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(6, 104);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(65, 15);
-            this.label18.TabIndex = 114;
-            this.label18.Text = "Direccion :";
-            // 
             // txtNombreProveedor
             // 
             this.txtNombreProveedor.Location = new System.Drawing.Point(92, 119);
@@ -263,6 +191,78 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.label19.Size = new System.Drawing.Size(64, 15);
             this.label19.TabIndex = 117;
             this.label19.Text = "Telefono : ";
+            // 
+            // txtDireccion
+            // 
+            this.txtDireccion.Location = new System.Drawing.Point(92, 81);
+            this.txtDireccion.Multiline = true;
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(236, 32);
+            this.txtDireccion.TabIndex = 113;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(6, 104);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(65, 15);
+            this.label18.TabIndex = 114;
+            this.label18.Text = "Direccion :";
+            // 
+            // txtruc
+            // 
+            this.txtruc.Location = new System.Drawing.Point(92, 55);
+            this.txtruc.Name = "txtruc";
+            this.txtruc.Size = new System.Drawing.Size(236, 20);
+            this.txtruc.TabIndex = 112;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(16, 65);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(39, 15);
+            this.label34.TabIndex = 111;
+            this.label34.Text = "RUC :";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(11, 29);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(66, 15);
+            this.label8.TabIndex = 110;
+            this.label8.Text = "Proveedor:";
+            // 
+            // txtProveedor
+            // 
+            this.txtProveedor.Location = new System.Drawing.Point(92, 29);
+            this.txtProveedor.Name = "txtProveedor";
+            this.txtProveedor.Size = new System.Drawing.Size(236, 20);
+            this.txtProveedor.TabIndex = 109;
+            // 
+            // dtpFechaAdquisicion
+            // 
+            this.dtpFechaAdquisicion.CalendarMonthBackground = System.Drawing.SystemColors.Highlight;
+            this.dtpFechaAdquisicion.Enabled = false;
+            this.dtpFechaAdquisicion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaAdquisicion.Location = new System.Drawing.Point(627, 18);
+            this.dtpFechaAdquisicion.Name = "dtpFechaAdquisicion";
+            this.dtpFechaAdquisicion.Size = new System.Drawing.Size(104, 20);
+            this.dtpFechaAdquisicion.TabIndex = 233;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(489, 22);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(100, 15);
+            this.label12.TabIndex = 234;
+            this.label12.Text = "Fecha De Orden:";
             // 
             // groupBox2
             // 

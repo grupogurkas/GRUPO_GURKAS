@@ -39,11 +39,12 @@ namespace pl_Gurkas.Vista.Operaciones.Unidad
             // btnGuardadAsistencia
             // 
             this.btnGuardadAsistencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardadAsistencia.Image = global::pl_Gurkas.Properties.Resources.save_32_png_32;
             this.btnGuardadAsistencia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardadAsistencia.Location = new System.Drawing.Point(453, 30);
             this.btnGuardadAsistencia.Name = "btnGuardadAsistencia";
             this.btnGuardadAsistencia.Size = new System.Drawing.Size(106, 46);
-            this.btnGuardadAsistencia.TabIndex = 15;
+            this.btnGuardadAsistencia.TabIndex = 3;
             this.btnGuardadAsistencia.Text = "Guardar";
             this.btnGuardadAsistencia.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardadAsistencia.UseVisualStyleBackColor = true;
@@ -55,7 +56,7 @@ namespace pl_Gurkas.Vista.Operaciones.Unidad
             this.cboEstado.Location = new System.Drawing.Point(102, 60);
             this.cboEstado.Name = "cboEstado";
             this.cboEstado.Size = new System.Drawing.Size(325, 21);
-            this.cboEstado.TabIndex = 14;
+            this.cboEstado.TabIndex = 2;
             // 
             // cboUnidad
             // 
@@ -63,7 +64,7 @@ namespace pl_Gurkas.Vista.Operaciones.Unidad
             this.cboUnidad.Location = new System.Drawing.Point(102, 24);
             this.cboUnidad.Name = "cboUnidad";
             this.cboUnidad.Size = new System.Drawing.Size(325, 21);
-            this.cboUnidad.TabIndex = 13;
+            this.cboUnidad.TabIndex = 1;
             // 
             // label2
             // 

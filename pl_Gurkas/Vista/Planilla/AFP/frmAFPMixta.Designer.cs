@@ -61,7 +61,7 @@ namespace pl_Gurkas.Vista.Planilla.AFP
             this.btnGuardar.Location = new System.Drawing.Point(269, 280);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(93, 44);
-            this.btnGuardar.TabIndex = 14;
+            this.btnGuardar.TabIndex = 12;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = true;

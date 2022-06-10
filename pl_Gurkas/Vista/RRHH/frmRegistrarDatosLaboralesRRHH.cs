@@ -350,6 +350,8 @@ namespace pl_Gurkas.Vista.RRHH
                     cboMovimientoAFP.SelectedIndex = 1;
                     cboMovimientoAFP.Enabled = true;
                 }
+
+                //pendiente
                 else if (cod_afp.Equals("6"))
                 {
                     txtAFPCUSS.Enabled = false;
@@ -567,6 +569,11 @@ namespace pl_Gurkas.Vista.RRHH
                 Llenadocbo.ObtenerTipoComisionAFPRRHH(cboTipoComicion, id_regimenpensionario);
                 Llenadocbo.ObtenerMovimientoAFPRRHH(cboMovimientoAFP, id_regimenpensionario);
             }
+          
+            
+            
+
+            
         }
     }
 }

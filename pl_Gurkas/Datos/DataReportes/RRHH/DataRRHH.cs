@@ -64,28 +64,28 @@ namespace pl_Gurkas.Datos.DataReportes.RRHH
         }
         public DataTable ConsultarAsistenciaporPersona(string Cod_Trabajador, DateTime fechaInicio, DateTime FechaFin)
         {
-                SqlCommand comando = conexion.conexionBD().CreateCommand();
-                comando.CommandType = CommandType.Text;
-                comando.CommandText = "SP_PersonalAsistencia  @Cod_empleado,@fechainicio, @fechafin";
-                comando.Parameters.AddWithValue("Cod_empleado", Cod_Trabajador);
-                comando.Parameters.AddWithValue("fechainicio", fechaInicio);
-                comando.Parameters.AddWithValue("fechafin", FechaFin);
-                comando.ExecuteNonQuery();
-                DataTable dt = new DataTable();
-                SqlDataAdapter dta = new SqlDataAdapter(comando);
-                dta.Fill(dt);
-                dt.Columns[0].ColumnName = "Codigo Empleado";
-                dt.Columns[1].ColumnName = "Nombre Empleado";
-                dt.Columns[2].ColumnName = "Num Identidad";
-                dt.Columns[3].ColumnName = "Fecha Nacimineto";
-                dt.Columns[4].ColumnName = "Empresa";
-                dt.Columns[5].ColumnName = "Fecha Inicio";
-                dt.Columns[6].ColumnName = "Sede ";
-                dt.Columns[7].ColumnName = "Tipo Asistencia";
-                dt.Columns[8].ColumnName = "Fecha Asistencia";
-                dt.Columns[9].ColumnName = "Turno";
-                dt.Columns[10].ColumnName = "Puesto";
-                return dt;
+            SqlCommand comando = conexion.conexionBD().CreateCommand();
+            comando.CommandType = CommandType.Text;
+            comando.CommandText = "SP_PersonalAsistencia  @Cod_empleado,@fechainicio, @fechafin";
+            comando.Parameters.AddWithValue("Cod_empleado", Cod_Trabajador);
+            comando.Parameters.AddWithValue("fechainicio", fechaInicio);
+            comando.Parameters.AddWithValue("fechafin", FechaFin);
+            comando.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter dta = new SqlDataAdapter(comando);
+            dta.Fill(dt);
+            dt.Columns[0].ColumnName = "Codigo Empleado";
+            dt.Columns[1].ColumnName = "Nombre Empleado";
+            dt.Columns[2].ColumnName = "Num Identidad";
+            dt.Columns[3].ColumnName = "Fecha Nacimineto";
+            dt.Columns[4].ColumnName = "Empresa";
+            dt.Columns[5].ColumnName = "Fecha Inicio";
+            dt.Columns[6].ColumnName = "Sede ";
+            dt.Columns[7].ColumnName = "Tipo Asistencia";
+            dt.Columns[8].ColumnName = "Fecha Asistencia";
+            dt.Columns[9].ColumnName = "Turno";
+            dt.Columns[10].ColumnName = "Puesto";
+            return dt;
         }
         public DataTable ConsultarAsistenciaSede(DateTime fechaInicio, DateTime FechaFin, string unidad)
         {
@@ -288,5 +288,73 @@ namespace pl_Gurkas.Datos.DataReportes.RRHH
             dt.Columns[5].ColumnName = "Turno";
             return dt;
         }
+
+        public DataTable ConsultarPorDNI(string cod_personal)
+        {
+            SqlCommand comando = conexion.conexionBD().CreateCommand();
+            comando.CommandType = CommandType.Text;
+            comando.CommandText = "SP_RRHHDNI  @dni";
+            comando.Parameters.AddWithValue("dni", cod_personal);
+            comando.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter dta = new SqlDataAdapter(comando);
+            dta.Fill(dt);
+            dt.Columns[0].ColumnName = "Estado Empleado";
+            dt.Columns[1].ColumnName = "Cod Empleado";
+            dt.Columns[2].ColumnName = "Empleado";
+            dt.Columns[3].ColumnName = "Num Identidad";
+            dt.Columns[4].ColumnName = "Edad";
+            dt.Columns[5].ColumnName = "Empresa";
+            dt.Columns[6].ColumnName = "Fecha Nacimineto";
+            dt.Columns[7].ColumnName = "Fecha Emision";
+            dt.Columns[8].ColumnName = "Fecha Vencimiento";
+            dt.Columns[9].ColumnName = "Sexo";
+            dt.Columns[10].ColumnName = "Nacionalidad ";
+            dt.Columns[11].ColumnName = "Departamento ";
+            dt.Columns[12].ColumnName = "Provincia ";
+            dt.Columns[13].ColumnName = "Distrito ";
+            dt.Columns[14].ColumnName = "Direccion ";
+            dt.Columns[15].ColumnName = "Telefono";
+            dt.Columns[16].ColumnName = "Celular";
+            dt.Columns[17].ColumnName = "Correo";
+            dt.Columns[18].ColumnName = "Puesto";
+            return dt;
+        }
+
+        public DataTable ConsultarPorCodigo(string cod_personal_activo)
+        {
+            SqlCommand comando = conexion.conexionBD().CreateCommand();
+            comando.CommandType = CommandType.Text;
+            comando.CommandText = "SP_RRHHCODIGO  @cod_empleado";
+            comando.Parameters.AddWithValue("cod_empleado", cod_personal_activo);
+            comando.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter dta = new SqlDataAdapter(comando);
+            dta.Fill(dt);
+            dt.Columns[0].ColumnName = "Estado Empleado";
+            dt.Columns[1].ColumnName = "Cod Empleado";
+            dt.Columns[2].ColumnName = "Empleado";
+            dt.Columns[3].ColumnName = "Num Identidad";
+            dt.Columns[4].ColumnName = "Edad";
+            dt.Columns[5].ColumnName = "Empresa";
+            dt.Columns[6].ColumnName = "Fecha Nacimineto";
+            dt.Columns[7].ColumnName = "Fecha Emision";
+            dt.Columns[8].ColumnName = "Fecha Vencimiento";
+            dt.Columns[9].ColumnName = "Sexo";
+            dt.Columns[10].ColumnName = "Nacionalidad ";
+            dt.Columns[11].ColumnName = "Departamento ";
+            dt.Columns[12].ColumnName = "Provincia ";
+            dt.Columns[13].ColumnName = "Distrito ";
+            dt.Columns[14].ColumnName = "Direccion ";
+            dt.Columns[15].ColumnName = "Telefono";
+            dt.Columns[16].ColumnName = "Celular";
+            dt.Columns[17].ColumnName = "Correo";
+            dt.Columns[18].ColumnName = "Puesto";
+            return dt;
+        }
     }
+
+
+
+
 }

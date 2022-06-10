@@ -10,15 +10,16 @@ using System.Windows.Forms;
 
 namespace pl_Gurkas.Vista.Logistica.Ordenes
 {
-    public partial class Form1 : Form
+    public partial class frmRegistrarOrden : Form
     {
-        public Form1()
+        public frmRegistrarOrden()
         {
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
 
         }
     }

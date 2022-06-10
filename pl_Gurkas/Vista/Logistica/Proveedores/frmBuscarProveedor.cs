@@ -60,5 +60,10 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         {
             Excel.ExportarDatosExcelProveedores(dgvBuscarProveedor, progressBar1);
         }
+
+        private void s(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -85,21 +85,21 @@ namespace pl_Gurkas.Vista.Planilla.Bloqueos
             this.txtNombre.Location = new System.Drawing.Point(84, 9);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(254, 20);
-            this.txtNombre.TabIndex = 32;
+            this.txtNombre.TabIndex = 1;
             // 
             // txtMes
             // 
             this.txtMes.Location = new System.Drawing.Point(384, 9);
             this.txtMes.Name = "txtMes";
             this.txtMes.Size = new System.Drawing.Size(83, 20);
-            this.txtMes.TabIndex = 33;
+            this.txtMes.TabIndex = 2;
             // 
             // txtAnio
             // 
             this.txtAnio.Location = new System.Drawing.Point(510, 9);
             this.txtAnio.Name = "txtAnio";
             this.txtAnio.Size = new System.Drawing.Size(83, 20);
-            this.txtAnio.TabIndex = 34;
+            this.txtAnio.TabIndex = 3;
             // 
             // btnGuardar
             // 
@@ -109,7 +109,7 @@ namespace pl_Gurkas.Vista.Planilla.Bloqueos
             this.btnGuardar.Location = new System.Drawing.Point(840, 8);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(109, 49);
-            this.btnGuardar.TabIndex = 66;
+            this.btnGuardar.TabIndex = 5;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -123,7 +123,7 @@ namespace pl_Gurkas.Vista.Planilla.Bloqueos
             this.btnverificar.Location = new System.Drawing.Point(725, 8);
             this.btnverificar.Name = "btnverificar";
             this.btnverificar.Size = new System.Drawing.Size(109, 49);
-            this.btnverificar.TabIndex = 65;
+            this.btnverificar.TabIndex = 4;
             this.btnverificar.Text = "Verificar";
             this.btnverificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnverificar.UseVisualStyleBackColor = true;
@@ -137,7 +137,7 @@ namespace pl_Gurkas.Vista.Planilla.Bloqueos
             this.btnExcel.Location = new System.Drawing.Point(955, 9);
             this.btnExcel.Name = "btnExcel";
             this.btnExcel.Size = new System.Drawing.Size(41, 48);
-            this.btnExcel.TabIndex = 67;
+            this.btnExcel.TabIndex = 6;
             this.btnExcel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExcel.UseVisualStyleBackColor = true;
             // 

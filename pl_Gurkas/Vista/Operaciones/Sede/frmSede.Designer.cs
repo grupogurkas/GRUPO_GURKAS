@@ -46,7 +46,7 @@ namespace pl_Gurkas.Vista.Operaciones.Sede
             this.cboUnidad.Location = new System.Drawing.Point(101, 23);
             this.cboUnidad.Name = "cboUnidad";
             this.cboUnidad.Size = new System.Drawing.Size(325, 21);
-            this.cboUnidad.TabIndex = 24;
+            this.cboUnidad.TabIndex = 1;
             this.cboUnidad.SelectedIndexChanged += new System.EventHandler(this.cboUnidad_SelectedIndexChanged);
             // 
             // label3
@@ -61,11 +61,12 @@ namespace pl_Gurkas.Vista.Operaciones.Sede
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Image = global::pl_Gurkas.Properties.Resources.save_32_png_32;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardar.Location = new System.Drawing.Point(452, 46);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(106, 46);
-            this.btnGuardar.TabIndex = 22;
+            this.btnGuardar.TabIndex = 4;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -79,7 +80,7 @@ namespace pl_Gurkas.Vista.Operaciones.Sede
             this.cboEstado.Location = new System.Drawing.Point(101, 97);
             this.cboEstado.Name = "cboEstado";
             this.cboEstado.Size = new System.Drawing.Size(325, 21);
-            this.cboEstado.TabIndex = 21;
+            this.cboEstado.TabIndex = 3;
             // 
             // cboSede
             // 
@@ -89,7 +90,7 @@ namespace pl_Gurkas.Vista.Operaciones.Sede
             this.cboSede.Location = new System.Drawing.Point(101, 60);
             this.cboSede.Name = "cboSede";
             this.cboSede.Size = new System.Drawing.Size(325, 21);
-            this.cboSede.TabIndex = 20;
+            this.cboSede.TabIndex = 2;
             // 
             // label2
             // 

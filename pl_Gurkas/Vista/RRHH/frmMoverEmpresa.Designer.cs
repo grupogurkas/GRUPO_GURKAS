@@ -45,7 +45,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.cboempleadoActivo.Location = new System.Drawing.Point(148, 12);
             this.cboempleadoActivo.Name = "cboempleadoActivo";
             this.cboempleadoActivo.Size = new System.Drawing.Size(350, 21);
-            this.cboempleadoActivo.TabIndex = 61;
+            this.cboempleadoActivo.TabIndex = 1;
             // 
             // label42
             // 
@@ -64,7 +64,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.cboEmpresa.Location = new System.Drawing.Point(148, 39);
             this.cboEmpresa.Name = "cboEmpresa";
             this.cboEmpresa.Size = new System.Drawing.Size(224, 21);
-            this.cboEmpresa.TabIndex = 63;
+            this.cboEmpresa.TabIndex = 2;
             // 
             // label27
             // 
@@ -84,7 +84,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.btnActualizar.Location = new System.Drawing.Point(389, 66);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(109, 46);
-            this.btnActualizar.TabIndex = 65;
+            this.btnActualizar.TabIndex = 3;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnActualizar.UseVisualStyleBackColor = true;
@@ -98,7 +98,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.btnCerrar.Location = new System.Drawing.Point(28, 66);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(109, 46);
-            this.btnCerrar.TabIndex = 64;
+            this.btnCerrar.TabIndex = 4;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrar.UseVisualStyleBackColor = true;

@@ -30,6 +30,10 @@ namespace pl_Gurkas.Vista.Operaciones.ReporteOperaciones
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtdocumento = new System.Windows.Forms.TextBox();
+            this.txtunidad = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtTurno = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cboempleadoActivo = new System.Windows.Forms.ComboBox();
@@ -37,10 +41,6 @@ namespace pl_Gurkas.Vista.Operaciones.ReporteOperaciones
             this.txtcodavp = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtunidad = new System.Windows.Forms.TextBox();
-            this.txtdocumento = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,13 +64,49 @@ namespace pl_Gurkas.Vista.Operaciones.ReporteOperaciones
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Buscar Codigo AVP";
             // 
+            // txtdocumento
+            // 
+            this.txtdocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdocumento.Location = new System.Drawing.Point(206, 145);
+            this.txtdocumento.Name = "txtdocumento";
+            this.txtdocumento.Size = new System.Drawing.Size(149, 22);
+            this.txtdocumento.TabIndex = 5;
+            // 
+            // txtunidad
+            // 
+            this.txtunidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtunidad.Location = new System.Drawing.Point(84, 108);
+            this.txtunidad.Name = "txtunidad";
+            this.txtunidad.Size = new System.Drawing.Size(521, 22);
+            this.txtunidad.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 148);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(194, 16);
+            this.label3.TabIndex = 51;
+            this.label3.Text = "DOCUMENTO DE IDENTIDAD";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 111);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(66, 16);
+            this.label2.TabIndex = 50;
+            this.label2.Text = "UNIDAD :";
+            // 
             // txtTurno
             // 
             this.txtTurno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTurno.Location = new System.Drawing.Point(456, 71);
             this.txtTurno.Name = "txtTurno";
             this.txtTurno.Size = new System.Drawing.Size(149, 22);
-            this.txtTurno.TabIndex = 49;
+            this.txtTurno.TabIndex = 3;
             // 
             // label1
             // 
@@ -90,7 +126,7 @@ namespace pl_Gurkas.Vista.Operaciones.ReporteOperaciones
             this.cboempleadoActivo.Location = new System.Drawing.Point(84, 35);
             this.cboempleadoActivo.Name = "cboempleadoActivo";
             this.cboempleadoActivo.Size = new System.Drawing.Size(386, 21);
-            this.cboempleadoActivo.TabIndex = 47;
+            this.cboempleadoActivo.TabIndex = 1;
             // 
             // btnBuscarAVP
             // 
@@ -100,7 +136,7 @@ namespace pl_Gurkas.Vista.Operaciones.ReporteOperaciones
             this.btnBuscarAVP.Location = new System.Drawing.Point(476, 19);
             this.btnBuscarAVP.Name = "btnBuscarAVP";
             this.btnBuscarAVP.Size = new System.Drawing.Size(129, 46);
-            this.btnBuscarAVP.TabIndex = 46;
+            this.btnBuscarAVP.TabIndex = 6;
             this.btnBuscarAVP.Text = "Buscar AVP";
             this.btnBuscarAVP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscarAVP.UseVisualStyleBackColor = true;
@@ -112,7 +148,7 @@ namespace pl_Gurkas.Vista.Operaciones.ReporteOperaciones
             this.txtcodavp.Location = new System.Drawing.Point(142, 71);
             this.txtcodavp.Name = "txtcodavp";
             this.txtcodavp.Size = new System.Drawing.Size(149, 22);
-            this.txtcodavp.TabIndex = 5;
+            this.txtcodavp.TabIndex = 2;
             // 
             // label7
             // 
@@ -133,42 +169,6 @@ namespace pl_Gurkas.Vista.Operaciones.ReporteOperaciones
             this.label6.Size = new System.Drawing.Size(71, 16);
             this.label6.TabIndex = 1;
             this.label6.Text = "Empleado";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 111);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 16);
-            this.label2.TabIndex = 50;
-            this.label2.Text = "UNIDAD :";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 148);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(194, 16);
-            this.label3.TabIndex = 51;
-            this.label3.Text = "DOCUMENTO DE IDENTIDAD";
-            // 
-            // txtunidad
-            // 
-            this.txtunidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtunidad.Location = new System.Drawing.Point(84, 108);
-            this.txtunidad.Name = "txtunidad";
-            this.txtunidad.Size = new System.Drawing.Size(521, 22);
-            this.txtunidad.TabIndex = 52;
-            // 
-            // txtdocumento
-            // 
-            this.txtdocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdocumento.Location = new System.Drawing.Point(206, 145);
-            this.txtdocumento.Name = "txtdocumento";
-            this.txtdocumento.Size = new System.Drawing.Size(149, 22);
-            this.txtdocumento.TabIndex = 53;
             // 
             // frmEstadoPersonal
             // 
