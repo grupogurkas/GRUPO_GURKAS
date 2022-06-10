@@ -780,17 +780,20 @@ namespace pl_Gurkas.Datos
         }
 
 
-        public void ObtenerEmpresaRRHH_2(ComboBox cd)
+        public void ObtenerEmpresa(ComboBox cd)
         {
             try
             {
-                SqlCommand cmd = new SqlCommand("SELECT NOMBRE_EMPRESA FROM T_EMPRESA where ID_EMPRESA = " + id_empresa, conexiondbo.conexionBD());
-                SqlDataReader dr = cmd.ExecuteReader();
-                while (dr.Read())
-                {
-                    cd.Items.Add(dr[0].ToString());
-                }
-                cd.Items.Insert(0, "--- Seleccione Una Empresa ---");
+                SqlCommand cmd = new SqlCommand("SELECT ID_EMPRESA,NOMBRE_EMPRESA FROM T_EMPRESA where ID_EMPRESA = " + id_empresa, conexiondbo.conexionBD());
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                DataRow fila = dt.NewRow();
+                fila["NOMBRE_EMPRESA"] = "--- Seleccione una Empresa ---";
+                dt.Rows.InsertAt(fila, 0);
+                cd.ValueMember = "ID_EMPRESA";
+                cd.DisplayMember = "NOMBRE_EMPRESA";
+                cd.DataSource = dt;
                 cd.SelectedIndex = 0;
             }
             catch (Exception ex)
