@@ -34,7 +34,7 @@ namespace pl_Gurkas.Vista.RRHH.RRHHC4
         {
             try
             {
-                string codEmpleado = txtCodEmpleado.Text;
+                string codEmpleado = cboempleadoC4.SelectedValue.ToString();
                 decimal estaturac4 = Convert.ToDecimal(txtEstaturaC4.Text);
                 string Empresa1 = txtEmpresa1.Text;
                 string Empresa2 = txtEmpresa2.Text;
@@ -89,7 +89,7 @@ namespace pl_Gurkas.Vista.RRHH.RRHHC4
         {
             try
             {
-                string codEmpleado = txtCodEmpleado.Text;
+                string codEmpleado = cboempleadoC4.SelectedValue.ToString();
                 decimal estaturac4 = Convert.ToDecimal(txtEstaturaC4.Text);
                 string Empresa1 = txtEmpresa1.Text;
                 string Empresa2 = txtEmpresa2.Text;
