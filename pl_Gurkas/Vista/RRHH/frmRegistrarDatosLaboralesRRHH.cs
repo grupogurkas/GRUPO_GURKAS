@@ -380,9 +380,6 @@ namespace pl_Gurkas.Vista.RRHH
                     cboMovimientoAFP.Enabled = false;
                 }
             }
-              
-
-          
         }
 
         private void cboBrevete_SelectedIndexChanged(object sender, EventArgs e)
@@ -528,6 +525,22 @@ namespace pl_Gurkas.Vista.RRHH
 
         private void dgvRegistroPersonal_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            
+        }
+
+        private void cboRegimenPensionario_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboRegimenPensionario.SelectedIndex.ToString() != null)
+            {
+                int id_regimenpensionario = cboRegimenPensionario.SelectedIndex;
+                Llenadocbo.ObtenerAFPRRHH(cboAFP, id_regimenpensionario);
+                Llenadocbo.ObtenerTipoComisionAFPRRHH(cboTipoComicion, id_regimenpensionario);
+                Llenadocbo.ObtenerMovimientoAFPRRHH(cboMovimientoAFP, id_regimenpensionario);
+            }
+        }
+
+        private void dgvRegistroPersonal_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
             try
             {
                 string codEmpleado = txtCodEmpleado.Text;
@@ -541,16 +554,27 @@ namespace pl_Gurkas.Vista.RRHH
                     txtCtaBancaria.Text = recorre["CTA_SUELDO"].ToString();
                     cboTipoMoneda.SelectedIndex = Convert.ToInt32(recorre["id_moneda"].ToString());
                     cboRegimenPensionario.SelectedIndex = Convert.ToInt32(recorre["id_ReguimenPensionario"].ToString());
-                    cboAFP.SelectedIndex = Convert.ToInt32(recorre["id_afp"].ToString());
+
+                    string afp_ = recorre["DescripcionAfp"].ToString();
+                    cboAFP.SelectedIndex = cboAFP.FindStringExact(afp_);
+
+                    string comision_ = recorre["DescripcionTipoComisionAFP"].ToString();
+                    cboTipoComicion.SelectedIndex = cboTipoComicion.FindStringExact(comision_);
+
+                    string movimiento_ = recorre["DescripcionMoviminetoComisionAFP"].ToString();
+                    cboMovimientoAFP.SelectedIndex = cboMovimientoAFP.FindStringExact(movimiento_);
+
                     txtAFPCUSS.Text = recorre["AFP_CUPSS"].ToString();
-                    cboTipoComicion.SelectedIndex = Convert.ToInt32(recorre["ID_TipoComisionAFP"].ToString());
-                    cboMovimientoAFP.SelectedIndex = Convert.ToInt32(recorre["ID_MovimientoAFP"].ToString());
+                   
                     cboTipoTrabajador.SelectedIndex = Convert.ToInt32(recorre["ID_TipoTrabajador"].ToString());
                     txtSueldoBa.Text = recorre["SUELDO_BASICO"].ToString();
                     txtxSueldoBruto.Text = recorre["SUELDO_BRUTO"].ToString();
                     cboAsignacionFamiliar.SelectedIndex = Convert.ToInt32(recorre["ID_BonoFamiliar"].ToString());
                     cboTipoPago.SelectedIndex = Convert.ToInt32(recorre["ID_TipoRemuneracion"].ToString());
                     cboPeriodidadRemuneracion.SelectedIndex = Convert.ToInt32(recorre["ID_Periodo_remuneracion"].ToString());
+
+                   // string cobafp_ = recorre["id_afp"].ToString();
+                    //cboAFP.SelectedIndex = cboAFP.FindStringExact(cobafp_);
                 }
 
             }
@@ -558,22 +582,6 @@ namespace pl_Gurkas.Vista.RRHH
             {
                 MessageBox.Show("No se encontro ningun registro " + err, "ERROR");
             }
-        }
-
-        private void cboRegimenPensionario_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cboRegimenPensionario.SelectedIndex.ToString() != null)
-            {
-                int id_regimenpensionario = cboRegimenPensionario.SelectedIndex;
-                Llenadocbo.ObtenerAFPRRHH(cboAFP, id_regimenpensionario);
-                Llenadocbo.ObtenerTipoComisionAFPRRHH(cboTipoComicion, id_regimenpensionario);
-                Llenadocbo.ObtenerMovimientoAFPRRHH(cboMovimientoAFP, id_regimenpensionario);
-            }
-          
-            
-            
-
-            
         }
     }
 }
