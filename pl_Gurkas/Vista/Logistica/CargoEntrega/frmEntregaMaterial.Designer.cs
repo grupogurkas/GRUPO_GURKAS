@@ -36,11 +36,14 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.cboempleadoActivo = new System.Windows.Forms.ComboBox();
             this.label42 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtstockminimo = new System.Windows.Forms.TextBox();
             this.txtNumVale = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtObservacion = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtstock = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.cboProducto = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.cboEstadoMaterial = new System.Windows.Forms.ComboBox();
@@ -82,9 +85,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.lbldni = new System.Windows.Forms.Label();
             this.lbldnientr = new System.Windows.Forms.Label();
             this.lblcodentre = new System.Windows.Forms.Label();
-            this.txtstock = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtstockminimo = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -160,6 +160,13 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.panel1.Size = new System.Drawing.Size(1327, 574);
             this.panel1.TabIndex = 95;
             // 
+            // txtstockminimo
+            // 
+            this.txtstockminimo.Location = new System.Drawing.Point(1222, 153);
+            this.txtstockminimo.Name = "txtstockminimo";
+            this.txtstockminimo.Size = new System.Drawing.Size(67, 20);
+            this.txtstockminimo.TabIndex = 232;
+            // 
             // txtNumVale
             // 
             this.txtNumVale.Location = new System.Drawing.Point(1092, 144);
@@ -213,6 +220,23 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.groupBox2.TabIndex = 212;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos Producto Entrega";
+            // 
+            // txtstock
+            // 
+            this.txtstock.Location = new System.Drawing.Point(199, 58);
+            this.txtstock.Name = "txtstock";
+            this.txtstock.Size = new System.Drawing.Size(67, 20);
+            this.txtstock.TabIndex = 231;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(156, 61);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(40, 15);
+            this.label10.TabIndex = 230;
+            this.label10.Text = "Stock:";
             // 
             // cboProducto
             // 
@@ -632,30 +656,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.lblcodentre.Size = new System.Drawing.Size(55, 15);
             this.lblcodentre.TabIndex = 239;
             this.lblcodentre.Text = "codentre";
-            // 
-            // txtstock
-            // 
-            this.txtstock.Location = new System.Drawing.Point(199, 58);
-            this.txtstock.Name = "txtstock";
-            this.txtstock.Size = new System.Drawing.Size(67, 20);
-            this.txtstock.TabIndex = 231;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(156, 61);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(40, 15);
-            this.label10.TabIndex = 230;
-            this.label10.Text = "Stock:";
-            // 
-            // txtstockminimo
-            // 
-            this.txtstockminimo.Location = new System.Drawing.Point(1222, 153);
-            this.txtstockminimo.Name = "txtstockminimo";
-            this.txtstockminimo.Size = new System.Drawing.Size(67, 20);
-            this.txtstockminimo.TabIndex = 232;
             // 
             // frmEntregaMaterial
             // 

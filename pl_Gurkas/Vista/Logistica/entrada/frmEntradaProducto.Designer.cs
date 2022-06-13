@@ -39,7 +39,12 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             this.btnNuevo = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.dtpFechaAdquisicion = new System.Windows.Forms.DateTimePicker();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cboEstadoMaterial = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,13 +74,17 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.cboEstadoMaterial);
+            this.groupBox1.Controls.Add(this.dtpFechaAdquisicion);
+            this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox1.Location = new System.Drawing.Point(11, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(825, 371);
+            this.groupBox1.Size = new System.Drawing.Size(432, 211);
             this.groupBox1.TabIndex = 211;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Datos Generales:";
+            this.groupBox1.Text = "Entrada De Producto";
             // 
             // lblRelog
             // 
@@ -156,6 +165,45 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
+            // dtpFechaAdquisicion
+            // 
+            this.dtpFechaAdquisicion.CalendarMonthBackground = System.Drawing.SystemColors.Highlight;
+            this.dtpFechaAdquisicion.Enabled = false;
+            this.dtpFechaAdquisicion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaAdquisicion.Location = new System.Drawing.Point(155, 33);
+            this.dtpFechaAdquisicion.Name = "dtpFechaAdquisicion";
+            this.dtpFechaAdquisicion.Size = new System.Drawing.Size(104, 20);
+            this.dtpFechaAdquisicion.TabIndex = 235;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(6, 33);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(100, 15);
+            this.label12.TabIndex = 236;
+            this.label12.Text = "Fecha De Orden:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 61);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(79, 30);
+            this.label3.TabIndex = 237;
+            this.label3.Text = "Condicion de\r\nEntrega";
+            // 
+            // cboEstadoMaterial
+            // 
+            this.cboEstadoMaterial.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEstadoMaterial.FormattingEnabled = true;
+            this.cboEstadoMaterial.Location = new System.Drawing.Point(114, 70);
+            this.cboEstadoMaterial.Name = "cboEstadoMaterial";
+            this.cboEstadoMaterial.Size = new System.Drawing.Size(145, 21);
+            this.cboEstadoMaterial.TabIndex = 238;
+            // 
             // frmEntradaProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -176,6 +224,8 @@ namespace pl_Gurkas.Vista.Logistica.entrada
             this.Text = "**********";
             this.Load += new System.EventHandler(this.frmEntradaProducto_Load);
             this.panel1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -194,5 +244,9 @@ namespace pl_Gurkas.Vista.Logistica.entrada
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label lblRelog;
+        private System.Windows.Forms.DateTimePicker dtpFechaAdquisicion;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cboEstadoMaterial;
     }
 }
