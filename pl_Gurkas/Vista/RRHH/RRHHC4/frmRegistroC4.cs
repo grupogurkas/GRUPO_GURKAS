@@ -34,7 +34,7 @@ namespace pl_Gurkas.Vista.RRHH.RRHHC4
         {
             try
             {
-                string codEmpleado = txtCodEmpleado.Text;
+                string codEmpleado = cboempleadoC4.SelectedValue.ToString();
                 decimal estaturac4 = Convert.ToDecimal(txtEstaturaC4.Text);
                 string Empresa1 = txtEmpresa1.Text;
                 string Empresa2 = txtEmpresa2.Text;
@@ -64,8 +64,8 @@ namespace pl_Gurkas.Vista.RRHH.RRHHC4
 
                 LimpiarDatos.LimpiarGroupBox(groupBox1);
                 LimpiarDatos.LimpiarGroupBox(groupBox2);
-                LimpiarDatos.LimpiarGroupBox(groupBox3);
-                LimpiarDatos.LimpiarGroupBox(groupBox4);
+               // LimpiarDatos.LimpiarGroupBox(groupBox3);
+               // LimpiarDatos.LimpiarGroupBox(groupBox4);
                 LimpiarDatos.LimpiarGroupBox(groupBox5);
                 LimpiarDatos.LimpiarGroupBox(groupBox6);
                 showDialogs("Datos Actualizados", Color.FromArgb(0, 200, 81));
@@ -89,7 +89,7 @@ namespace pl_Gurkas.Vista.RRHH.RRHHC4
         {
             try
             {
-                string codEmpleado = txtCodEmpleado.Text;
+                string codEmpleado = cboempleadoC4.SelectedValue.ToString();
                 decimal estaturac4 = Convert.ToDecimal(txtEstaturaC4.Text);
                 string Empresa1 = txtEmpresa1.Text;
                 string Empresa2 = txtEmpresa2.Text;
@@ -119,8 +119,8 @@ namespace pl_Gurkas.Vista.RRHH.RRHHC4
 
                 LimpiarDatos.LimpiarGroupBox(groupBox1);
                 LimpiarDatos.LimpiarGroupBox(groupBox2);
-                LimpiarDatos.LimpiarGroupBox(groupBox3);
-                LimpiarDatos.LimpiarGroupBox(groupBox4);
+               // LimpiarDatos.LimpiarGroupBox(groupBox3);
+              //  LimpiarDatos.LimpiarGroupBox(groupBox4);
                 LimpiarDatos.LimpiarGroupBox(groupBox5);
                 LimpiarDatos.LimpiarGroupBox(groupBox6);
                 // LimpiarDatos.LimpiarCampo(this);
@@ -145,8 +145,8 @@ namespace pl_Gurkas.Vista.RRHH.RRHHC4
         {
             txtTelefono.MaxLength = 7;
             txtCelular.MaxLength = 9;
-            txtTallaPantalonEmp.MaxLength = 2;
-            txtTallaCalzadoEmp.MaxLength = 2;
+          //  txtTallaPantalonEmp.MaxLength = 2;
+         //   txtTallaCalzadoEmp.MaxLength = 2;
             txtEstaturaEmp.MaxLength = 4;
             txtEdadEmp.MaxLength = 2;
         }
@@ -164,11 +164,12 @@ namespace pl_Gurkas.Vista.RRHH.RRHHC4
             Llenadocbo.ObtenerPuestolRRHH(cboCargoLaboral);
             Llenadocbo.ObtenerTipoContratoRRHH(cboTipoContratoEmp);
             Llenadocbo.ObtenerTurnoRRHH(cboTurnoEmp);
-            Llenadocbo.ObtenerTallaRRHH(cboTallaPrenda);
+           // Llenadocbo.ObtenerTallaRRHH(cboTallaPrenda);
             Llenadocbo.ObtenerEstadoArmadoRRHH(cboArmado);
             Llenadocbo.ObtenerDepartamentoRRHH(cboDepartamento);
             //   Llenadocbo.ObtenerUnidadRRHH(cboUnidad);
             Llenadocbo.ObtenerPersonalRRHH(cboempleadoActivo);
+            Llenadocbo.ObtenerPersonalRRHH(cboempleadoC4);
             Llenadocbo.ObtenerExpRRHHC4(cboExperiencia1);
             Llenadocbo.ObtenerExpRRHHC4(cboExperiencia2);
             Llenadocbo.ObtenerExpRRHHC4(cboExperiencia3);
@@ -205,9 +206,9 @@ namespace pl_Gurkas.Vista.RRHH.RRHHC4
 
             cboEstadoEmp.Enabled = false;
             cboTurnoEmp.Enabled = false;
-            cboTallaPrenda.Enabled = false;
-            txtTallaPantalonEmp.Enabled = false;
-            txtTallaCalzadoEmp.Enabled = false;
+         //  cboTallaPrenda.Enabled = false;
+         //   txtTallaPantalonEmp.Enabled = false;
+      //      txtTallaCalzadoEmp.Enabled = false;
             txtEstaturaEmp.Enabled = false;
             cboHorasLaborales.Enabled = false;
             txtCodUbigeo.Enabled = false;
@@ -219,7 +220,7 @@ namespace pl_Gurkas.Vista.RRHH.RRHHC4
             dtpFinicioLaboral.Enabled = false;
             dtpFechaFinLaboral.Enabled = false;
             dtpFechaActivacion.Enabled = false;
-            dtpUltimoDestaque.Enabled = false;
+          //  dtpUltimoDestaque.Enabled = false;
             cboUnidad.Enabled = false;
             cboSede.Enabled = false;
         }
@@ -239,7 +240,7 @@ namespace pl_Gurkas.Vista.RRHH.RRHHC4
             try
             {
                 string codEmpleado = cboempleadoActivo.SelectedValue.ToString();
-                SqlCommand comando = new SqlCommand("SELECT * FROM V_DetallePersonalC4 WHERE Cod_empleado = '" + codEmpleado + "'", conexion.conexionBD());
+                SqlCommand comando = new SqlCommand("SELECT * FROM V_DetallePersonal WHERE Cod_empleado = '" + codEmpleado + "'", conexion.conexionBD());
 
                 SqlDataReader recorre = comando.ExecuteReader();
                 while (recorre.Read())
@@ -272,9 +273,7 @@ namespace pl_Gurkas.Vista.RRHH.RRHHC4
 
                     cboEstadoEmp.SelectedIndex = Convert.ToInt32(recorre["ID_ESTADO_PERSONAL"].ToString());
                     cboTurnoEmp.SelectedIndex = Convert.ToInt32(recorre["ID_TURNO_EMPLEADO"].ToString());
-                    cboTallaPrenda.SelectedIndex = Convert.ToInt32(recorre["ID_TALLA_PRENDA"].ToString());
-                    txtTallaPantalonEmp.Text = recorre["Talla_pantalon"].ToString();
-                    txtTallaCalzadoEmp.Text = recorre["Talla_zapato"].ToString();
+
                     txtEstaturaEmp.Text = recorre["ESTATURA_PERSONAL"].ToString();
                     cboHorasLaborales.SelectedIndex = Convert.ToInt32(recorre["ID_HORAS_LABORALES"].ToString());
                     txtCodUbigeo.Text = recorre["COD_UBIGEO"].ToString();
@@ -286,87 +285,14 @@ namespace pl_Gurkas.Vista.RRHH.RRHHC4
                     dtpFinicioLaboral.Text = (recorre["FECHA_INICIO_LABORAL"].ToString());
                     dtpFechaFinLaboral.Text = (recorre["FECHA_FIN_LABORAL"].ToString());
                     dtpFechaActivacion.Text = (recorre["FECHA_ACTIVACION_PERSONAL"].ToString());
-                    dtpUltimoDestaque.Text = (recorre["FECHA_DESTAQUE_PERSONAL"].ToString());
-
+                  //  dtpUltimoDestaque.Text = (recorre["FECHA_DESTAQUE_PERSONAL"].ToString());
 
                     string unidad = recorre["Razon_social"].ToString();
                     cboUnidad.SelectedIndex = cboUnidad.FindStringExact(unidad);
                     string sede = recorre["Nombre_sede"].ToString();
                     cboSede.SelectedIndex = cboSede.FindStringExact(sede);
-
-                    cboGradointruccionC4.SelectedIndex = Convert.ToInt32(recorre["c4"].ToString());
-                    txtEstaturaC4.Text = recorre["estatura"].ToString();
-                    dtpFechaEmisionC4.Text = (recorre["fecha_emision_c4"].ToString());
-                    dtpFCaducidadC4.Text = (recorre["fecha_caducacion_c4"].ToString());
-                    txtEmpresa1.Text = recorre["exp_empresa_nombre_1"].ToString();
-                    txtEmpresa2.Text = recorre["exp_empresa_nombre_2"].ToString();
-                    txtEmpresa3.Text = recorre["exp_empresa_nombre_3"].ToString();
-
-                    edtInicioExp1.Text = (recorre["f_inicio_empresa_1"].ToString());
-                    edtInicioExp2.Text = (recorre["f_inicio_empresa_2"].ToString());
-                    edtInicioExp3.Text = (recorre["f_inicio_empresa_3"].ToString());
-                    edtFinExp1.Text = (recorre["f_fin_empresa_1"].ToString());
-                    edtFinExp2.Text = (recorre["f_fin_empresa_2"].ToString());
-                    edtFinExp3.Text = (recorre["f_fin_empresa_3"].ToString());
-
-                    cboExperiencia1.SelectedIndex = Convert.ToInt32(recorre["id_experiencia_1"].ToString());
-                    cboExperiencia2.SelectedIndex = Convert.ToInt32(recorre["id_experiencia_2"].ToString());
-                    cboExperiencia3.SelectedIndex = Convert.ToInt32(recorre["id_experiencia_3"].ToString());
                 }
-                if(cboExperiencia1.SelectedIndex == 2)
-                {
-                    txtEmpresa1.Enabled = true;
-                    txtEmpresa2.Enabled = false;
-                    txtEmpresa3.Enabled = false;
-
-                    edtInicioExp1.Enabled = true;
-                    edtInicioExp2.Enabled = false;
-                    edtInicioExp3.Enabled = false;
-
-                    edtFinExp1.Enabled = true;
-                    edtFinExp2.Enabled = false;
-                    edtFinExp3.Enabled = false;
-
-                    cboExperiencia1.Enabled = true;
-                    cboExperiencia2.Enabled = false;
-                    cboExperiencia3.Enabled = false;
-                }
-                if(cboExperiencia2.SelectedIndex == 2)
-                {
-                    txtEmpresa1.Enabled = true;
-                    txtEmpresa2.Enabled = true;
-                    txtEmpresa3.Enabled = false;
-
-                    edtInicioExp1.Enabled = true;
-                    edtInicioExp2.Enabled = true;
-                    edtInicioExp3.Enabled = false;
-
-                    edtFinExp1.Enabled = true;
-                    edtFinExp2.Enabled = true;
-                    edtFinExp3.Enabled = false;
-
-                    cboExperiencia1.Enabled = true;
-                    cboExperiencia2.Enabled = true;
-                    cboExperiencia3.Enabled = false;
-                }
-                if(cboExperiencia3.SelectedIndex == 2)
-                {
-                    txtEmpresa1.Enabled = true;
-                    txtEmpresa2.Enabled = true;
-                    txtEmpresa3.Enabled = true;
-
-                    edtInicioExp1.Enabled = true;
-                    edtInicioExp2.Enabled = true;
-                    edtInicioExp3.Enabled = true;
-
-                    edtFinExp1.Enabled = true;
-                    edtFinExp2.Enabled = true;
-                    edtFinExp3.Enabled = true;
-
-                    cboExperiencia1.Enabled = true;
-                    cboExperiencia2.Enabled = true;
-                    cboExperiencia3.Enabled = true;
-                }
+                
             }
             catch (Exception err)
             {
@@ -547,12 +473,102 @@ namespace pl_Gurkas.Vista.RRHH.RRHHC4
         {
             LimpiarDatos.LimpiarGroupBox(groupBox1);
             LimpiarDatos.LimpiarGroupBox(groupBox2);
-            LimpiarDatos.LimpiarGroupBox(groupBox3);
-            LimpiarDatos.LimpiarGroupBox(groupBox4);
+           // LimpiarDatos.LimpiarGroupBox(groupBox3);
+          //  LimpiarDatos.LimpiarGroupBox(groupBox4);
             LimpiarDatos.LimpiarGroupBox(groupBox5);
             LimpiarDatos.LimpiarGroupBox(groupBox6);
             //LimpiarDatos.LimpiarCampo(this);
             cboempleadoActivo.Focus();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string codEmpleado = cboempleadoC4.SelectedValue.ToString();
+                SqlCommand comando = new SqlCommand("SELECT * FROM V_DetallePersonalC4 WHERE Cod_empleado = '" + codEmpleado + "'", conexion.conexionBD());
+
+                SqlDataReader recorre = comando.ExecuteReader();
+                while (recorre.Read())
+                {
+                    cboGradointruccionC4.SelectedIndex = Convert.ToInt32(recorre["c4"].ToString());
+                    txtEstaturaC4.Text = recorre["estatura"].ToString();
+                    dtpFechaEmisionC4.Text = (recorre["fecha_emision_c4"].ToString());
+                    dtpFCaducidadC4.Text = (recorre["fecha_caducacion_c4"].ToString());
+                    txtEmpresa1.Text = recorre["exp_empresa_nombre_1"].ToString();
+                    txtEmpresa2.Text = recorre["exp_empresa_nombre_2"].ToString();
+                    txtEmpresa3.Text = recorre["exp_empresa_nombre_3"].ToString();
+
+                    edtInicioExp1.Text = (recorre["f_inicio_empresa_1"].ToString());
+                    edtInicioExp2.Text = (recorre["f_inicio_empresa_2"].ToString());
+                    edtInicioExp3.Text = (recorre["f_inicio_empresa_3"].ToString());
+                    edtFinExp1.Text = (recorre["f_fin_empresa_1"].ToString());
+                    edtFinExp2.Text = (recorre["f_fin_empresa_2"].ToString());
+                    edtFinExp3.Text = (recorre["f_fin_empresa_3"].ToString());
+
+                    cboExperiencia1.SelectedIndex = Convert.ToInt32(recorre["id_experiencia_1"].ToString());
+                    cboExperiencia2.SelectedIndex = Convert.ToInt32(recorre["id_experiencia_2"].ToString());
+                    cboExperiencia3.SelectedIndex = Convert.ToInt32(recorre["id_experiencia_3"].ToString());
+                }
+                if (cboExperiencia1.SelectedIndex == 2)
+                {
+                    txtEmpresa1.Enabled = true;
+                    txtEmpresa2.Enabled = false;
+                    txtEmpresa3.Enabled = false;
+
+                    edtInicioExp1.Enabled = true;
+                    edtInicioExp2.Enabled = false;
+                    edtInicioExp3.Enabled = false;
+
+                    edtFinExp1.Enabled = true;
+                    edtFinExp2.Enabled = false;
+                    edtFinExp3.Enabled = false;
+
+                    cboExperiencia1.Enabled = true;
+                    cboExperiencia2.Enabled = false;
+                    cboExperiencia3.Enabled = false;
+                }
+                if (cboExperiencia2.SelectedIndex == 2)
+                {
+                    txtEmpresa1.Enabled = true;
+                    txtEmpresa2.Enabled = true;
+                    txtEmpresa3.Enabled = false;
+
+                    edtInicioExp1.Enabled = true;
+                    edtInicioExp2.Enabled = true;
+                    edtInicioExp3.Enabled = false;
+
+                    edtFinExp1.Enabled = true;
+                    edtFinExp2.Enabled = true;
+                    edtFinExp3.Enabled = false;
+
+                    cboExperiencia1.Enabled = true;
+                    cboExperiencia2.Enabled = true;
+                    cboExperiencia3.Enabled = false;
+                }
+                if (cboExperiencia3.SelectedIndex == 2)
+                {
+                    txtEmpresa1.Enabled = true;
+                    txtEmpresa2.Enabled = true;
+                    txtEmpresa3.Enabled = true;
+
+                    edtInicioExp1.Enabled = true;
+                    edtInicioExp2.Enabled = true;
+                    edtInicioExp3.Enabled = true;
+
+                    edtFinExp1.Enabled = true;
+                    edtFinExp2.Enabled = true;
+                    edtFinExp3.Enabled = true;
+
+                    cboExperiencia1.Enabled = true;
+                    cboExperiencia2.Enabled = true;
+                    cboExperiencia3.Enabled = true;
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
+            }
         }
     }
 }

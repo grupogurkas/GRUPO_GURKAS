@@ -597,7 +597,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.dgvRegistroPersonal.RowHeadersWidth = 51;
             this.dgvRegistroPersonal.Size = new System.Drawing.Size(1327, 160);
             this.dgvRegistroPersonal.TabIndex = 47;
-            this.dgvRegistroPersonal.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRegistroPersonal_CellContentDoubleClick);
+            this.dgvRegistroPersonal.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRegistroPersonal_CellContentClick);
             // 
             // groupBox2
             // 
