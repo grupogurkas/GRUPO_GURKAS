@@ -30,6 +30,8 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.rbCodigoManual = new System.Windows.Forms.RadioButton();
+            this.rbtCodigoSistema = new System.Windows.Forms.RadioButton();
             this.txtCodSistema = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.Button();
@@ -82,6 +84,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tbpUniforme = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnNuevoProductoCamisas = new System.Windows.Forms.Button();
             this.btnBuscarProductoCamisas = new System.Windows.Forms.Button();
@@ -119,6 +122,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.dtpAdquisicionCamisas = new System.Windows.Forms.DateTimePicker();
             this.label26 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnNuevoCalzado = new System.Windows.Forms.Button();
             this.btnBuscarCalzado = new System.Windows.Forms.Button();
@@ -158,6 +162,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.dtpAdquiCalzado = new System.Windows.Forms.DateTimePicker();
             this.label31 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnNuevoPantalon = new System.Windows.Forms.Button();
             this.btnBuscarPantalon = new System.Windows.Forms.Button();
@@ -197,6 +202,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.dtpAdPantalon = new System.Windows.Forms.DateTimePicker();
             this.label102 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btnNuevoAccesorio = new System.Windows.Forms.Button();
             this.btnBuscarAccesorio = new System.Windows.Forms.Button();
@@ -520,12 +526,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label196 = new System.Windows.Forms.Label();
             this.dtpFechaAdArmamento = new System.Windows.Forms.DateTimePicker();
             this.label197 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
-            this.rbtCodigoSistema = new System.Windows.Forms.RadioButton();
-            this.rbCodigoManual = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.btcPanel.SuspendLayout();
             this.tbpTecnologico.SuspendLayout();
@@ -536,18 +536,22 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tbpUniforme.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox7.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.groupBox9.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.groupBox11.SuspendLayout();
             this.groupBox12.SuspendLayout();
@@ -579,10 +583,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.groupBox23.SuspendLayout();
             this.groupBox24.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -600,6 +600,30 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1337, 641);
             this.panel1.TabIndex = 60;
+            // 
+            // rbCodigoManual
+            // 
+            this.rbCodigoManual.AutoSize = true;
+            this.rbCodigoManual.Location = new System.Drawing.Point(520, 16);
+            this.rbCodigoManual.Name = "rbCodigoManual";
+            this.rbCodigoManual.Size = new System.Drawing.Size(96, 17);
+            this.rbCodigoManual.TabIndex = 91;
+            this.rbCodigoManual.TabStop = true;
+            this.rbCodigoManual.Text = "Codigo Manual";
+            this.rbCodigoManual.UseVisualStyleBackColor = true;
+            this.rbCodigoManual.CheckedChanged += new System.EventHandler(this.rbCodigoManual_CheckedChanged);
+            // 
+            // rbtCodigoSistema
+            // 
+            this.rbtCodigoSistema.AutoSize = true;
+            this.rbtCodigoSistema.Location = new System.Drawing.Point(368, 16);
+            this.rbtCodigoSistema.Name = "rbtCodigoSistema";
+            this.rbtCodigoSistema.Size = new System.Drawing.Size(98, 17);
+            this.rbtCodigoSistema.TabIndex = 90;
+            this.rbtCodigoSistema.TabStop = true;
+            this.rbtCodigoSistema.Text = "Codigo Sistema";
+            this.rbtCodigoSistema.UseVisualStyleBackColor = true;
+            this.rbtCodigoSistema.CheckedChanged += new System.EventHandler(this.rbtCodigoSistema_CheckedChanged);
             // 
             // txtCodSistema
             // 
@@ -1168,6 +1192,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tabPage1.Text = "Camisas";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(9, 311);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(1268, 184);
+            this.dataGridView2.TabIndex = 159;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::pl_Gurkas.Properties.Resources.png;
@@ -1558,6 +1590,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tabPage2.Text = "Calzado";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(11, 309);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(1266, 184);
+            this.dataGridView3.TabIndex = 170;
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::pl_Gurkas.Properties.Resources.png;
@@ -1916,7 +1956,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.dtpRegistroCalzado.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpRegistroCalzado.Location = new System.Drawing.Point(139, 68);
             this.dtpRegistroCalzado.Name = "dtpRegistroCalzado";
-            this.dtpRegistroCalzado.Size = new System.Drawing.Size(109, 20);
+            this.dtpRegistroCalzado.Size = new System.Drawing.Size(104, 20);
             this.dtpRegistroCalzado.TabIndex = 41;
             // 
             // label30
@@ -1966,6 +2006,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Pantalon";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(6, 291);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.Size = new System.Drawing.Size(1266, 204);
+            this.dataGridView4.TabIndex = 176;
             // 
             // pictureBox4
             // 
@@ -2375,6 +2423,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Accesorios";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView5
+            // 
+            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView5.Location = new System.Drawing.Point(6, 287);
+            this.dataGridView5.Name = "dataGridView5";
+            this.dataGridView5.Size = new System.Drawing.Size(1266, 204);
+            this.dataGridView5.TabIndex = 182;
             // 
             // pictureBox5
             // 
@@ -5730,62 +5786,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label197.TabIndex = 152;
             this.label197.Text = "Fecha Adquisicion:";
             // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(9, 311);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(1268, 184);
-            this.dataGridView2.TabIndex = 159;
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(11, 309);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(1266, 184);
-            this.dataGridView3.TabIndex = 170;
-            // 
-            // dataGridView4
-            // 
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(6, 291);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(1266, 204);
-            this.dataGridView4.TabIndex = 176;
-            // 
-            // dataGridView5
-            // 
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Location = new System.Drawing.Point(6, 287);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.Size = new System.Drawing.Size(1266, 204);
-            this.dataGridView5.TabIndex = 182;
-            // 
-            // rbtCodigoSistema
-            // 
-            this.rbtCodigoSistema.AutoSize = true;
-            this.rbtCodigoSistema.Location = new System.Drawing.Point(368, 16);
-            this.rbtCodigoSistema.Name = "rbtCodigoSistema";
-            this.rbtCodigoSistema.Size = new System.Drawing.Size(98, 17);
-            this.rbtCodigoSistema.TabIndex = 90;
-            this.rbtCodigoSistema.TabStop = true;
-            this.rbtCodigoSistema.Text = "Codigo Sistema";
-            this.rbtCodigoSistema.UseVisualStyleBackColor = true;
-            this.rbtCodigoSistema.CheckedChanged += new System.EventHandler(this.rbtCodigoSistema_CheckedChanged);
-            // 
-            // rbCodigoManual
-            // 
-            this.rbCodigoManual.AutoSize = true;
-            this.rbCodigoManual.Location = new System.Drawing.Point(520, 16);
-            this.rbCodigoManual.Name = "rbCodigoManual";
-            this.rbCodigoManual.Size = new System.Drawing.Size(96, 17);
-            this.rbCodigoManual.TabIndex = 91;
-            this.rbCodigoManual.TabStop = true;
-            this.rbCodigoManual.Text = "Codigo Manual";
-            this.rbCodigoManual.UseVisualStyleBackColor = true;
-            this.rbCodigoManual.CheckedChanged += new System.EventHandler(this.rbCodigoManual_CheckedChanged);
-            // 
             // frmNuevoProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -5812,6 +5812,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -5819,6 +5820,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox5.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
@@ -5826,6 +5828,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox8.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
@@ -5833,6 +5836,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox10.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
@@ -5887,10 +5891,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox23.PerformLayout();
             this.groupBox24.ResumeLayout(false);
             this.groupBox24.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             this.ResumeLayout(false);
 
         }
