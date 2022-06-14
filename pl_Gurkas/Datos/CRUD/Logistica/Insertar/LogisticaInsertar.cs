@@ -84,6 +84,8 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Insertar
             cmd.Parameters.AddWithValue("@FECHA_REGISTRO_CALZADO", SqlDbType.VarChar).Value = f_registro_cal;
             cmd.Parameters.AddWithValue("@OBSERVACION_CALZADO", SqlDbType.VarChar).Value = observacion_cal;
             cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
+            cmd.Parameters.AddWithValue("@id_cuotas", SqlDbType.VarChar).Value = cantidad_cuotas;
+            cmd.Parameters.AddWithValue("@descuento_por_cuota", SqlDbType.VarChar).Value = descuento_cuota;
             cmd.ExecuteNonQuery();
         }
         public void RegistrarPrendaPantalon(string cod_sistema, string cod_pantalon, string nombre_pantalon, int talla_pan,
