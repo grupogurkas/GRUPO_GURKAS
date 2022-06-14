@@ -64,7 +64,7 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Insertar
         public void RegistrarPrendaCalzado(string cod_sistema, string cod_calzado, string nombre_calzado, int talla_cal, string color_cal,
                   int tipo_calzado, int stock_inicial_cal, int estado_cal, decimal precio_unitario_cal, int stock_actual_cal,
                   int stock_minimo_cal, string desp_cal,
-                  DateTime f_adquision_cal, DateTime f_registro_cal, string observacion_cal)
+                  DateTime f_adquision_cal, DateTime f_registro_cal, string observacion_cal, int cantidad_cuotas, decimal descuento_cuota)
         {
             SqlCommand cmd = new SqlCommand("sp_registrar_producto_calzado ", conexion.conexionBD());
             cmd.CommandType = CommandType.StoredProcedure;
