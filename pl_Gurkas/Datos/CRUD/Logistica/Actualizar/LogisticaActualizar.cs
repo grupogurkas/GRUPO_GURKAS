@@ -64,7 +64,7 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Actualizar
         public void ActualizarPrendaCalzado(string cod_sistema, string cod_calzado, string nombre_calzado, int talla_cal, string color_cal,
                  int tipo_calzado, int stock_inicial_cal, int estado_cal, decimal precio_unitario_cal, int stock_actual_cal,
                  int stock_minimo_cal, string desp_cal,
-                 DateTime f_adquision_cal, DateTime f_registro_cal, string observacion_cal)
+                 DateTime f_adquision_cal, DateTime f_registro_cal, string observacion_cal, int cantidad_cuotas,decimal descuento_cuota)
         {
             SqlCommand cmd = new SqlCommand("sp_actualizar_producto_calzado", conexion.conexionBD());
             cmd.CommandType = CommandType.StoredProcedure;
@@ -84,6 +84,8 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Actualizar
             cmd.Parameters.AddWithValue("@FECHA_REGISTRO_CALZADO", SqlDbType.VarChar).Value = f_registro_cal;
             cmd.Parameters.AddWithValue("@OBSERVACION_CALZADO", SqlDbType.VarChar).Value = observacion_cal;
             cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
+            cmd.Parameters.AddWithValue("@id_cuotas", SqlDbType.VarChar).Value = cantidad_cuotas;
+            cmd.Parameters.AddWithValue("@descuento_por_cuota", SqlDbType.VarChar).Value = descuento_cuota;
             cmd.ExecuteNonQuery();
         }
         public void ActualizarPrendaPantalon(string cod_sistema, string cod_pantalon, string nombre_pantalon, int talla_pan,

@@ -478,10 +478,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 DateTime f_adquision_cal = dtpAdquiCalzado.Value;
                 DateTime f_registro_cal = dtpRegistroCalzado.Value;
                 string observacion_cal = txtObservacionCalzado.Text;
+                int cantidad_cuotas = cboNcuota.SelectedIndex;
+                decimal descuento_cuota = Convert.ToDecimal(txtDescuento.Text);
 
                 logisticaActualizar.ActualizarPrendaCalzado(cod_sistema, cod_calzado, nombre_calzado, talla_cal, color_cal,
                      tipo_calzado, stock_inicial_cal, estado_cal, precio_unitario_cal, stock_actual_cal, stock_minimo_cal, desp_cal,
-                     f_adquision_cal, f_registro_cal, observacion_cal);
+                     f_adquision_cal, f_registro_cal, observacion_cal, cantidad_cuotas, descuento_cuota);
                 MessageBox.Show("Datos registrado correptamente", "Correpto");
                 LimpiarDatosCalzado();
             }
@@ -1097,9 +1099,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 string observacion_cal = txtObservacionCalzado.Text;
                 string nombre_calzado = nombre + "-" + color_cal + "-"+ ta + "-" + Condicion;
 
+                int cantidad_cuotas = cboNcuota.SelectedIndex;
+                decimal descuento_cuota = Convert.ToDecimal(txtDescuento.Text);
+
                 logisticaInsertar.RegistrarPrendaCalzado(cod_sistema, cod_calzado, nombre_calzado, talla_cal, color_cal,
                      tipo_calzado, stock_inicial_cal, estado_cal, precio_unitario_cal, stock_actual_cal, stock_minimo_cal, desp_cal,
-                     f_adquision_cal, f_registro_cal, observacion_cal);
+                     f_adquision_cal, f_registro_cal, observacion_cal, cantidad_cuotas, descuento_cuota);
                 MessageBox.Show("Datos registrado correptamente", "Correpto");
                 LimpiarDatosCalzado();
             }
@@ -1686,6 +1691,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerTallaCalzadoProducto(cboTallaCalzado);
             Llenadocbo.ObtenerTipoCalzadoProducto(cboTipoCalzado);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoCalzado);
+            Llenadocbo.ObtenerCuotaProducto(cboNcuota);
         }
         private void llenadoDatosEquipamientoLogistico()
         {

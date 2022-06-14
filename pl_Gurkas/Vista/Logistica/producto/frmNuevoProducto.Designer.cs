@@ -526,6 +526,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label196 = new System.Windows.Forms.Label();
             this.dtpFechaAdArmamento = new System.Windows.Forms.DateTimePicker();
             this.label197 = new System.Windows.Forms.Label();
+            this.cboNcuota = new System.Windows.Forms.ComboBox();
+            this.label166 = new System.Windows.Forms.Label();
+            this.txtDescuento = new System.Windows.Forms.TextBox();
+            this.label199 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.btcPanel.SuspendLayout();
             this.tbpTecnologico.SuspendLayout();
@@ -1686,6 +1690,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // groupBox7
             // 
+            this.groupBox7.Controls.Add(this.txtDescuento);
+            this.groupBox7.Controls.Add(this.label199);
+            this.groupBox7.Controls.Add(this.cboNcuota);
+            this.groupBox7.Controls.Add(this.label166);
             this.groupBox7.Controls.Add(this.label27);
             this.groupBox7.Controls.Add(this.label36);
             this.groupBox7.Controls.Add(this.txtStockMinimoCalzado);
@@ -5786,6 +5794,42 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label197.TabIndex = 152;
             this.label197.Text = "Fecha Adquisicion:";
             // 
+            // cboNcuota
+            // 
+            this.cboNcuota.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboNcuota.FormattingEnabled = true;
+            this.cboNcuota.Location = new System.Drawing.Point(494, 189);
+            this.cboNcuota.Name = "cboNcuota";
+            this.cboNcuota.Size = new System.Drawing.Size(213, 21);
+            this.cboNcuota.TabIndex = 185;
+            // 
+            // label166
+            // 
+            this.label166.AutoSize = true;
+            this.label166.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label166.Location = new System.Drawing.Point(370, 190);
+            this.label166.Name = "label166";
+            this.label166.Size = new System.Drawing.Size(62, 15);
+            this.label166.TabIndex = 184;
+            this.label166.Text = "N° Cuota :";
+            // 
+            // txtDescuento
+            // 
+            this.txtDescuento.Location = new System.Drawing.Point(494, 217);
+            this.txtDescuento.Name = "txtDescuento";
+            this.txtDescuento.Size = new System.Drawing.Size(213, 20);
+            this.txtDescuento.TabIndex = 186;
+            // 
+            // label199
+            // 
+            this.label199.AutoSize = true;
+            this.label199.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label199.Location = new System.Drawing.Point(367, 218);
+            this.label199.Name = "label199";
+            this.label199.Size = new System.Drawing.Size(113, 15);
+            this.label199.TabIndex = 187;
+            this.label199.Text = "Descuento x Cuota:";
+            // 
             // frmNuevoProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -6393,5 +6437,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.DataGridView dataGridView5;
         private System.Windows.Forms.RadioButton rbCodigoManual;
         private System.Windows.Forms.RadioButton rbtCodigoSistema;
+        private System.Windows.Forms.ComboBox cboNcuota;
+        private System.Windows.Forms.Label label166;
+        private System.Windows.Forms.TextBox txtDescuento;
+        private System.Windows.Forms.Label label199;
     }
 }
