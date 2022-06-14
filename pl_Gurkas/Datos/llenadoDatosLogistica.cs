@@ -312,7 +312,7 @@ namespace pl_Gurkas.Datos
         {
             try
             {
-                SqlCommand cmd = new SqlCommand("SELECT desp_estado_material FROM t_estado_material  ", conexiondbo.conexionBD());
+                SqlCommand cmd = new SqlCommand("SELECT desp_estado_material FROM t_estado_material  where id_estado_material in (1,2) ", conexiondbo.conexionBD());
                 SqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
@@ -327,6 +327,24 @@ namespace pl_Gurkas.Datos
             }
         }
 
+        public void ObtenerCuotaProducto(ComboBox cd)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("select detalle_cuotas from t_cuotas_descuento_calzado", conexiondbo.conexionBD());
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    cd.Items.Add(dr[0].ToString());
+                }
+                cd.Items.Insert(0, "-- Seleccione N° Cuotas --");
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede obtener la imformacion de cuotas \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         public void ObtenerTallaPrendaProducto(ComboBox cd)
         {
             try

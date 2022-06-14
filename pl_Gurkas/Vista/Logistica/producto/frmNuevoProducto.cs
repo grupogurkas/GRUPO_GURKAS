@@ -1686,6 +1686,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             Llenadocbo.ObtenerTallaCalzadoProducto(cboTallaCalzado);
             Llenadocbo.ObtenerTipoCalzadoProducto(cboTipoCalzado);
             Llenadocbo.ObtenerEstadoProducto(cboEstadoCalzado);
+            Llenadocbo.ObtenerCuotaProducto(cboNcuota);
         }
         private void llenadoDatosEquipamientoLogistico()
         {
