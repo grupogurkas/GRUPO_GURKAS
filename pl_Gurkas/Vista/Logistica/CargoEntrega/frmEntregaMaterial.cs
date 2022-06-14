@@ -98,6 +98,9 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                 txtNumVale.Text = "LOG-000" + (numero + 1);
             }
         }
+
+
+
         private void registarvale()
         {
             int cod_puesto = cboTipoPuesto.SelectedIndex;

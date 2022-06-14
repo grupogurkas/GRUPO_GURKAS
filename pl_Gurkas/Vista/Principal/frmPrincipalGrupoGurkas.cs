@@ -939,5 +939,12 @@ namespace pl_Gurkas.Vista.Principal
             modulo.auditoria("Recursos Humanos", "Modulo de Reporte", "Reporte de Personal", "Personal Por DNI");
 
         }
+
+
+        private void ordenDeServicioCompraToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.Ordenes.frmRegistrarOrden());
+            modulo.auditoria("Logistica","Almacen", "Registro Ordenes", "Orden de Servicio/Compra");
+        }
     }
 }

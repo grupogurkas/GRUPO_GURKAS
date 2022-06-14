@@ -60,6 +60,7 @@ namespace pl_Gurkas.Vista.Principal
             this.personalPorEstaturaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.personalPorTurnoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.personalPorFechaInicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personalPorDNIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteDeAsistenciaDePersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.asistenciaDePersonalToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.asistenciaGeneralDePersoanalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -199,7 +200,6 @@ namespace pl_Gurkas.Vista.Principal
             this.reporteDeAsistenciaPorPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.activarModoAdministradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.personalPorDNIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -467,6 +467,13 @@ namespace pl_Gurkas.Vista.Principal
             this.personalPorFechaInicioToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.personalPorFechaInicioToolStripMenuItem.Text = "Personal por Fecha Ingreso";
             this.personalPorFechaInicioToolStripMenuItem.Click += new System.EventHandler(this.personalPorFechaInicioToolStripMenuItem_Click);
+            // 
+            // personalPorDNIToolStripMenuItem
+            // 
+            this.personalPorDNIToolStripMenuItem.Name = "personalPorDNIToolStripMenuItem";
+            this.personalPorDNIToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.personalPorDNIToolStripMenuItem.Text = "Personal por DNI";
+            this.personalPorDNIToolStripMenuItem.Click += new System.EventHandler(this.personalPorDNIToolStripMenuItem_Click);
             // 
             // reporteDeAsistenciaDePersonalToolStripMenuItem
             // 
@@ -902,7 +909,7 @@ namespace pl_Gurkas.Vista.Principal
             this.codigoYEstadoPersonalToolStripMenuItem});
             this.personalToolStripMenuItem3.Image = global::pl_Gurkas.Properties.Resources.reportes_32;
             this.personalToolStripMenuItem3.Name = "personalToolStripMenuItem3";
-            this.personalToolStripMenuItem3.Size = new System.Drawing.Size(121, 22);
+            this.personalToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.personalToolStripMenuItem3.Text = "Reporte";
             // 
             // codigoYEstadoPersonalToolStripMenuItem
@@ -924,7 +931,7 @@ namespace pl_Gurkas.Vista.Principal
             this.registroOrdenesToolStripMenuItem});
             this.almacenToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.almacen_32;
             this.almacenToolStripMenuItem.Name = "almacenToolStripMenuItem";
-            this.almacenToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.almacenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.almacenToolStripMenuItem.Text = "Almacen";
             // 
             // proveedoresToolStripMenuItem
@@ -1095,6 +1102,7 @@ namespace pl_Gurkas.Vista.Principal
             this.ordenDeServicioCompraToolStripMenuItem.Name = "ordenDeServicioCompraToolStripMenuItem";
             this.ordenDeServicioCompraToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
             this.ordenDeServicioCompraToolStripMenuItem.Text = "Orden de Servicio/Compra";
+            this.ordenDeServicioCompraToolStripMenuItem.Click += new System.EventHandler(this.ordenDeServicioCompraToolStripMenuItem_Click_1);
             // 
             // planillaToolStripMenuItem
             // 
@@ -1606,13 +1614,6 @@ namespace pl_Gurkas.Vista.Principal
             this.activarModoAdministradorToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
             this.activarModoAdministradorToolStripMenuItem.Text = "Activar Modo Administrador";
             this.activarModoAdministradorToolStripMenuItem.Click += new System.EventHandler(this.activarModoAdministradorToolStripMenuItem_Click);
-            // 
-            // personalPorDNIToolStripMenuItem
-            // 
-            this.personalPorDNIToolStripMenuItem.Name = "personalPorDNIToolStripMenuItem";
-            this.personalPorDNIToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
-            this.personalPorDNIToolStripMenuItem.Text = "Personal por DNI";
-            this.personalPorDNIToolStripMenuItem.Click += new System.EventHandler(this.personalPorDNIToolStripMenuItem_Click);
             // 
             // frmPrincipalGrupoGurkas
             // 
