@@ -493,7 +493,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
         private void btnCertificadoBasc_Click(object sender, EventArgs e)
         {
-           /* System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
+           System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
              PrintDialog1.AllowSomePages = true;
              PrintDialog1.ShowHelp = true;
              PrintDialog1.Document = printDocument1;
@@ -503,8 +503,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                     printDocument1.Print();
                     registarvale();
                     limpiardatos();
-             }*/
-            printPreviewDialog1.ShowDialog();
+             }
+            //printPreviewDialog1.ShowDialog();
         }
 
         private void txtInformacionAdicional_TextChanged(object sender, EventArgs e)
@@ -606,6 +606,11 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                     txtstock.BackColor = Color.FromArgb(254, 235, 156);
                 }
             }
+        }
+
+        private void printPreviewDialog1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
