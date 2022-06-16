@@ -31,6 +31,30 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         {
             InitializeComponent();
         }
+        private void validar_campos()
+        {
+            if (cboTipoPuesto.SelectedIndex == 0)
+            {
+                MessageBox.Show("Debe Seleccionar un Puesto", "Advertencia");
+            }
+            if (cboAreaLaboral.SelectedIndex == 0)
+            {
+                MessageBox.Show("Debe Seleccionar una Area de Entrega", "Advertencia");
+            }
+            if (cboEmpresa.SelectedIndex == 0)
+            {
+                MessageBox.Show("Debe Seleccionar una Empresa", "Advertencia");
+            }
+            if (cboUnidad.SelectedIndex == 0)
+            {
+                MessageBox.Show("Debe Seleccionar una Unidad", "Advertencia");
+            }
+            if (cboSede.SelectedIndex == 0)
+            {
+                MessageBox.Show("Debe Seleccionar una Sede", "Advertencia");
+            }
+
+        }
         private void limpiardatos()
         {
             cboempleadoActivo.SelectedIndex = 0;
@@ -297,18 +321,31 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             int stock_a = Convert.ToInt32(txtstock.Text);
             int cantidad = Convert.ToInt32(txtCantidadTecno.Text);
 
-            if(cantidad <= stock_a){
-                agregardata();
-                txtCantidadTecno.Text = "";
-                cboProducto.SelectedIndex = 0;
-                cboEstadoMaterial.SelectedIndex = 0;
-                txtstock.Text = "0";
+            if (cboEstadoMaterial.SelectedIndex == 0)
+            {
+                MessageBox.Show("Debe Seleccionar la condicion del material", "Advertencia");
+                cboEstadoMaterial.Focus();
+            }
+            else if (txtCantidadTecno.Equals(""))
+            {
+                MessageBox.Show("Ingresar Una cantidad", "Advertencia");
+                txtCantidadTecno.Focus();
             }
             else
             {
-                MessageBox.Show("No se puede agregar el materia ya que supera el stock actual","error");
+                if (cantidad <= stock_a)
+                {
+                    agregardata();
+                    txtCantidadTecno.Text = "";
+                    cboProducto.SelectedIndex = 0;
+                    cboEstadoMaterial.SelectedIndex = 0;
+                    txtstock.Text = "0";
+                }
+                else
+                {
+                    MessageBox.Show("No se puede agregar el materia ya que supera el stock actual", "error");
+                }
             }
-
         }
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
@@ -490,21 +527,25 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                 }
             }
         }
-
+        private void imprimir()
+        {
+            System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
+            PrintDialog1.AllowSomePages = true;
+            PrintDialog1.ShowHelp = true;
+            PrintDialog1.Document = printDocument1;
+            DialogResult result = PrintDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                printDocument1.Print();
+                registarvale();
+                limpiardatos();
+            }
+            //printPreviewDialog1.ShowDialog();
+        }
         private void btnCertificadoBasc_Click(object sender, EventArgs e)
         {
-           System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
-             PrintDialog1.AllowSomePages = true;
-             PrintDialog1.ShowHelp = true;
-             PrintDialog1.Document = printDocument1;
-             DialogResult result = PrintDialog1.ShowDialog();
-             if (result == DialogResult.OK)
-             {
-                    printDocument1.Print();
-                    registarvale();
-                    limpiardatos();
-             }
-            //printPreviewDialog1.ShowDialog();
+            validar_campos();
+            imprimir();
         }
 
         private void txtInformacionAdicional_TextChanged(object sender, EventArgs e)
@@ -591,6 +632,18 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                     txtstock.Text = recorre["STOCK_ACTUAL"].ToString();
                     txtstockminimo.Text = recorre["STOCK_MINIMO"].ToString();
                 }
+
+                SqlCommand comando_2 = new SqlCommand("SELECT * FROM v_cuotas_calzado WHERE COD_PRODUCTO_UNI_CALZADO = '" + cod_producto + "'", conexion.conexionBD());
+                SqlDataReader recorre_2 = comando_2.ExecuteReader();
+                while (recorre_2.Read())
+                {
+                    string cuo = recorre_2["detalle_cuotas"].ToString();
+                    string des = recorre_2["descuento_por_cuota"].ToString();
+                  
+
+                    txtObservacion.Text ="S/"+ des + " ("+cuo+")";
+                }
+
                 int stock_a = Convert.ToInt32(txtstock.Text);
                 int stock_m = Convert.ToInt32(txtstockminimo.Text);
                 if (stock_a > stock_m)

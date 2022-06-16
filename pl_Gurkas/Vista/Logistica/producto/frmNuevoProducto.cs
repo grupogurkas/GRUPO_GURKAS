@@ -77,6 +77,8 @@ namespace pl_Gurkas.Vista.Logistica.producto
                     dtpAdquiCalzado.Text = (recorre["FECHA_ADQUISICION_CALZADO"].ToString());
                     dtpRegistroCalzado.Text = (recorre["FECHA_REGISTRO_CALZADO"].ToString());
                     txtObservacionCalzado.Text = (recorre["OBSERVACION_CALZADO"].ToString());
+                    cboNcuota.SelectedIndex = Convert.ToInt32(recorre["id_cuotas"].ToString());
+                    txtDescuento.Text = (recorre["descuento_por_cuota"].ToString());
                 }
             }
             catch (Exception err)
