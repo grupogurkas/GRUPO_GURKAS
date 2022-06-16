@@ -18,7 +18,7 @@ namespace pl_Gurkas.Vista.RRHH
         Datos.LLenadoDatosRRHH Llenadocbo = new Datos.LLenadoDatosRRHH();
         Datos.registrar registrar = new Datos.registrar();
         Datos.Actualizar actualizar = new Datos.Actualizar();
-        Datos.ExportarExcel Excel = new Datos.ExportarExcel();
+        ExportacionExcel.RRHH.ExportarDataExcelRRHH Excel = new ExportacionExcel.RRHH.ExportarDataExcelRRHH();
         public frmReporteRRHHPersonalActivo()
         {
             InitializeComponent();
@@ -64,7 +64,8 @@ namespace pl_Gurkas.Vista.RRHH
 
         private void btnExcel_Click(object sender, EventArgs e)
         {
-            Excel.ExportarDatosBarra(dgvRegistroPersonal, progressBar1);
+            string empresa = cboEmpresa.GetItemText(cboEmpresa.SelectedItem);
+            Excel.ExportarDatosPersonalActivo(dgvRegistroPersonal, progressBar1,empresa);
         }
     }
 }

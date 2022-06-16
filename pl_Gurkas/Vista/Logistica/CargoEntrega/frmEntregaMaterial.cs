@@ -591,6 +591,18 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                     txtstock.Text = recorre["STOCK_ACTUAL"].ToString();
                     txtstockminimo.Text = recorre["STOCK_MINIMO"].ToString();
                 }
+
+                SqlCommand comando_2 = new SqlCommand("SELECT * FROM v_cuotas_calzado WHERE COD_PRODUCTO_UNI_CALZADO = '" + cod_producto + "'", conexion.conexionBD());
+                SqlDataReader recorre_2 = comando_2.ExecuteReader();
+                while (recorre_2.Read())
+                {
+                    string cuo = recorre_2["detalle_cuotas"].ToString();
+                    string des = recorre_2["descuento_por_cuota"].ToString();
+                  
+
+                    txtObservacion.Text ="S/"+ des + " ("+cuo+")";
+                }
+
                 int stock_a = Convert.ToInt32(txtstock.Text);
                 int stock_m = Convert.ToInt32(txtstockminimo.Text);
                 if (stock_a > stock_m)
