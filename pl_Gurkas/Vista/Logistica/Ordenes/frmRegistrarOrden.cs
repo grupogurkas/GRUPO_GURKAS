@@ -126,19 +126,19 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             int numero = Convert.ToInt32(resultado);
             if (numero < 10)
             {
-                txtNumOrden.Text = "LOG-2022-000000" + (numero + 1);
+                txtNumOrden.Text = "LOG-000000" + (numero + 1);
             }
             if (numero > 9 && numero < 100)
             {
-                txtNumOrden.Text = "LOG-2022-00000" + (numero + 1);
+                txtNumOrden.Text = "LOG-00000" + (numero + 1);
             }
             if (numero > 99 && numero < 1000)
             {
-                txtNumOrden.Text = "LOG-2022-0000" + (numero + 1);
+                txtNumOrden.Text = "LOG-0000" + (numero + 1);
             }
             if (numero > 9999 && numero < 10000)
             {
-                txtNumOrden.Text = "LOG-2022-000" + (numero + 1);
+                txtNumOrden.Text = "LOG-000" + (numero + 1);
             }
         }
 
@@ -505,9 +505,9 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             string telefono = txtTelefono.Text;
             string celular = txtCelular.Text;
             string NUM_ORDEN = txtNumOrden.Text;
-            int cantidad = Convert.ToInt32(txtCantidadProducto.Text);
-            double costo_unitario = Convert.ToDouble(txtCostoUnitario.Text);
-            double costo_total = Convert.ToDouble(txtCostoTotal.Text);
+            //int cantidad = Convert.ToInt32(txtCantidadProducto.Text);
+            //double costo_unitario = Convert.ToDouble(txtCostoUnitario.Text);
+            //double costo_total = Convert.ToDouble(txtCostoTotal.Text);
             string observacion = txtObservacion.Text;
             string fecha_vale = lblFecha.Text;
             string hora = lblHora.Text;
@@ -525,33 +525,28 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
                     if (row.Cells["ID"].Value != null && row.Cells["CodProducto"].Value != null)
                     {  
                         comando.Parameters.Clear();
-                         /* 
-                        comando.Parameters.AddWithValue("@COD_PUESTO", SqlDbType.Int).Value = cod_proveedor;
-                        comando.Parameters.AddWithValue("@COD_AREA_ENTREGA", SqlDbType.Int).Value = cod_area_entrega;
-                        comando.Parameters.AddWithValue("@NUM_ENTREGA", SqlDbType.VarChar).Value = NUM_VALE;
-                        comando.Parameters.AddWithValue("@COD_EMPRESA", SqlDbType.Int).Value = c;
-                        comando.Parameters.AddWithValue("@COD_UNIDAD", SqlDbType.VarChar).Value = cod_unidad;
-                        comando.Parameters.AddWithValue("@COD_SEDE", SqlDbType.VarChar).Value = cod_sede;
-                        comando.Parameters.AddWithValue("@INFORMACION_ADICIONAL", SqlDbType.VarChar).Value = imformacion_adicional;
-                        comando.Parameters.AddWithValue("@ENTREGADO_NOMBRE", SqlDbType.VarChar).Value = entregado_nombre;
-                        comando.Parameters.AddWithValue("@COD_ENTREGADO", SqlDbType.VarChar).Value = cod_entregado;
-                        comando.Parameters.AddWithValue("@DNI_ENTREGADO", SqlDbType.VarChar).Value = dni_entregado;
-                        comando.Parameters.AddWithValue("@SOLICITADO_NOMBRE", SqlDbType.VarChar).Value = solicitante_nombre;
-                        comando.Parameters.AddWithValue("@COD_SOLICITADO", SqlDbType.VarChar).Value = cod_solicis["CodProducto"].Value != null)
-                    {tante;
-                        comando.Parameters.AddWithValue("@DNI_SOLICITADO", SqlDbType.VarChar).Value = dni_solicitante;
-                        comando.Parameters.AddWithValue("@FECHA_VALE", SqlDbType.VarChar).Value = fecha_vale;
+                        comando.Parameters.AddWithValue("@num_orden", SqlDbType.VarChar).Value = NUM_ORDEN;
+                        comando.Parameters.AddWithValue("@cod_proveedor", SqlDbType.Int).Value = cod_proveedor;
+                        comando.Parameters.AddWithValue("@nombre_contacto", SqlDbType.VarChar).Value = contacto;
+                        comando.Parameters.AddWithValue("@ruc", SqlDbType.VarChar).Value = ruc;
+                        comando.Parameters.AddWithValue("@direccion", SqlDbType.VarChar).Value = direccion;
+                        comando.Parameters.AddWithValue("@correo", SqlDbType.VarChar).Value = correo;
+                        comando.Parameters.AddWithValue("@telefono", SqlDbType.VarChar).Value = telefono;
+                        comando.Parameters.AddWithValue("@celular", SqlDbType.VarChar).Value = celular;
+                        comando.Parameters.AddWithValue("@fecha_orden", SqlDbType.VarChar).Value = fecha_vale;
                         comando.Parameters.AddWithValue("@ITEM_VALE", Convert.ToInt32(row.Cells["ID"].Value));
                         comando.Parameters.AddWithValue("@COD_PRODUCTO", Convert.ToString(row.Cells["CodProducto"].Value));
                         comando.Parameters.AddWithValue("@DESP_PRODUCTO", Convert.ToString(row.Cells["Nombre"].Value));
-                        comando.Parameters.AddWithValue("@OBSERVACION_PRODUCTO", Convert.ToString(row.Cells["Observacion"].Value));
-                        comando.Parameters.AddWithValue("@CONDICION_PRODUCTO", Convert.ToString(row.Cells["CondicionEntrega"].Value));
-                        comando.Parameters.AddWithValue("@CANTIDAD_SOLICITADA", Convert.ToInt32(row.Cells["Cantidad"].Value));
+                        comando.Parameters.AddWithValue("@OBSERVACION_PRODUCTO", Convert.ToString(row.Cells["Cantidad"].Value));
+                        comando.Parameters.AddWithValue("@CONDICION_PRODUCTO", Convert.ToString(row.Cells["CostoUnitario"].Value));
+                        comando.Parameters.AddWithValue("@CANTIDAD_SOLICITADA", Convert.ToInt32(row.Cells["CostoTotal"].Value));
+                        comando.Parameters.AddWithValue("@observacion_producto", SqlDbType.VarChar).Value = observacion;
                         comando.Parameters.AddWithValue("@HORA", SqlDbType.VarChar).Value = hora;
                         comando.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_user;
-                        comando.ExecuteNonQuery();*/
+
                     }
                 }
+
                 MessageBox.Show("Datos registrado correptamente");
             }
             catch (Exception ex)
