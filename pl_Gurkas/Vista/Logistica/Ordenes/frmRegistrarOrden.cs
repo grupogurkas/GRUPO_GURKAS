@@ -295,29 +295,25 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
         {
             Image cabezera = Properties.Resources._1logogurkas;
 
-            /*string TIPO_PERSONAL = cboTipoPuesto.GetItemText(cboTipoPuesto.SelectedItem);
-            string AREA_ENTREGA = cboAreaLaboral.GetItemText(cboAreaLaboral.SelectedItem);
-            string EMPRESA = cboEmpresa.GetItemText(cboEmpresa.SelectedItem);
-            string UNIDAD = cboUnidad.GetItemText(cboUnidad.SelectedItem);
-            string SEDE = cboSede.GetItemText(cboSede.SelectedItem);
-            string PERSONAL = cboempleadoActivo.GetItemText(cboempleadoActivo.SelectedItem);
-            string entrega = txtUsuarioEntrega.Text;
-            string cod_empleado = cboempleadoActivo.SelectedValue.ToString();
-            string informacion_adicional = txtInformacionAdicional.Text;
-            string fecha = lblFecha.Text;
-            string emp = lblemp.Text;
-            string ruc = lblruc.Text;
-            string dir = lbldireccion.Text;
-            string nombre_arc = lblnombrear.Text;
-            string ver = lblver.Text;
-            string dni = lbldni.Text;
+            string TIPO_PERSONAL = cboProveedorActivo.GetItemText(txtProveedor.Text);
+            //string PERSONAL = cboempleadoActivo.GetItemText(cboempleadoActivo.SelectedItem);
+            //string entrega = txtUsuarioEntrega.Text;
+            //string cod_empleado = cboempleadoActivo.SelectedValue.ToString();
+            string RUC = txtruc.Text;
+            string CONTACTO_PROVEEDOR = txtNombreProveedor.Text;
+            string DIRECCION = txtDireccion.Text;
+            string CORREO = txtCorreo.Text;
+            string TELEFONO = txtTelefono.Text;
+            string CELULAR = txtCelular.Text;
+            string OBSERVACION = txtObservacion.Text;
 
-            string dnien = lbldnientr.Text;
-            string cod = lblcodentre.Text;
-            string num = txtNumVale.Text;
+
+            string num = txtNumOrden.Text;
+            string fecha = lblFecha.Text;
+
 
             Font tipoTexto = new Font("Arial", 10, FontStyle.Bold);
-            Font desp = new Font("Arial", 8, FontStyle.Bold);
+            Font desp = new Font("Arial", 8, FontStyle.Bold); 
             Font nombres = new Font("Arial", 7, FontStyle.Bold);
             Font datos = new Font("Arial", 6, FontStyle.Bold);
             e.Graphics.DrawImage(cabezera, 40, 25);
@@ -361,45 +357,51 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             e.Graphics.DrawRectangle(blackPen, CONDICION_);
             e.Graphics.DrawRectangle(blackPen, CANT_);
 
-            e.Graphics.DrawString("CARGO DE ENTREGA", tipoTexto, Brushes.Black, 310, 25);
-            e.Graphics.DrawString(emp, nombres, Brushes.Black, 290, 45);
-            e.Graphics.DrawString("  RUC " + ruc, nombres, Brushes.Black, 420, 45);
+            e.Graphics.DrawString("ORDEN DE COMPRA/SERVICIO", tipoTexto, Brushes.Black, 310, 25);
+            //e.Graphics.DrawString(emp, nombres, Brushes.Black, 290, 45);
+            //e.Graphics.DrawString("  RUC " + ruc, nombres, Brushes.Black, 420, 45);
             // e.Graphics.DrawString(dir, datos, Brushes.Black, 250, 60);
-            e.Graphics.DrawString(nombre_arc, datos, Brushes.Black, 580, 25);
-            e.Graphics.DrawString(ver, datos, Brushes.Black, 580, 35);
+            //e.Graphics.DrawString(nombre_arc, datos, Brushes.Black, 580, 25);
+            //e.Graphics.DrawString(ver, datos, Brushes.Black, 580, 35);
             e.Graphics.DrawString(num, tipoTexto, Brushes.Black, 580, 55);
 
             string anio = DateTime.Now.Year.ToString();
 
             e.Graphics.DrawString(" - " + anio, tipoTexto, Brushes.Black, 720, 55);
 
-            e.Graphics.DrawString(dir, datos, Brushes.Black, new RectangleF(260, 60, 300, 30));
+            //e.Graphics.DrawString(dir, datos, Brushes.Black, new RectangleF(260, 60, 300, 30));
 
-            e.Graphics.DrawString("EMPRESA : ", tipoTexto, Brushes.Black, 30, 100);
-            e.Graphics.DrawString(EMPRESA, desp, Brushes.Black, 120, 102);
+            e.Graphics.DrawString("NOMBRE : ", tipoTexto, Brushes.Black, 30, 100);
+            e.Graphics.DrawString(TIPO_PERSONAL, desp, Brushes.Black, 120, 102);
+
+           // e.Graphics.DrawString("RUC : ", tipoTexto, Brushes.Black, 30, 100);
+            //e.Graphics.DrawString(RUC, desp, Brushes.Black, 120, 102);
 
             e.Graphics.DrawString("FECHA   : ", tipoTexto, Brushes.Black, 30, 120);
             e.Graphics.DrawString(fecha, desp, Brushes.Black, 120, 122);
 
-            e.Graphics.DrawString("AREA DE ENTREGA : ", tipoTexto, Brushes.Black, 320, 100);
-            e.Graphics.DrawString(AREA_ENTREGA, desp, Brushes.Black, 470, 102);
+            e.Graphics.DrawString("CONTACTO : ", tipoTexto, Brushes.Black, 320, 100);
+            e.Graphics.DrawString(CONTACTO_PROVEEDOR, nombres, Brushes.Black, 200, 102);
 
-            e.Graphics.DrawString("PUESTO : ", tipoTexto, Brushes.Black, 320, 120);//160
-            e.Graphics.DrawString(TIPO_PERSONAL, desp, Brushes.Black, 470, 122);
+            //e.Graphics.DrawString("CONTACTO PROVEEDOR : ", tipoTexto, Brushes.Black, 320, 100);
+            //e.Graphics.DrawString(CONTACTO_PROVEEDOR, desp, Brushes.Black, 470, 102);
 
-            e.Graphics.DrawString("UNIDAD : ", tipoTexto, Brushes.Black, 30, 140);
-            e.Graphics.DrawString(UNIDAD, desp, Brushes.Black, 120, 142);
+            e.Graphics.DrawString("RUC : ", tipoTexto, Brushes.Black, 320, 120);//160
+            e.Graphics.DrawString(RUC, desp, Brushes.Black, 470, 122);
 
-            e.Graphics.DrawString("SEDE : ", tipoTexto, Brushes.Black, 30, 160);
-            e.Graphics.DrawString(SEDE, desp, Brushes.Black, 120, 162);
+            e.Graphics.DrawString("DIRECCION : ", tipoTexto, Brushes.Black, 30, 140);
+            e.Graphics.DrawString(DIRECCION, desp, Brushes.Black, 120, 142);
 
-            e.Graphics.DrawString("SOLICITANTE", tipoTexto, Brushes.Black, 150, 190);
-            e.Graphics.DrawString("DESPACHO", tipoTexto, Brushes.Black, 550, 190);
+            e.Graphics.DrawString("CORREO : ", tipoTexto, Brushes.Black, 30, 160);
+            e.Graphics.DrawString(CORREO, desp, Brushes.Black, 120, 162);
 
-            e.Graphics.DrawString("NOMBRE : ", tipoTexto, Brushes.Black, 30, 220);
-            e.Graphics.DrawString(PERSONAL, nombres, Brushes.Black, 110, 223);
+            e.Graphics.DrawString("TELEFONO", tipoTexto, Brushes.Black, 320, 140);
+            e.Graphics.DrawString(TELEFONO, desp, Brushes.Black, 470, 142);
 
-            e.Graphics.DrawString("CODIGO : ", tipoTexto, Brushes.Black, 30, 240);
+            e.Graphics.DrawString("CELULAR : ", tipoTexto, Brushes.Black, 320, 160);
+            e.Graphics.DrawString(CELULAR, desp, Brushes.Black, 470, 162);
+
+            /*e.Graphics.DrawString("CODIGO : ", tipoTexto, Brushes.Black, 30, 240);
             e.Graphics.DrawString(cod_empleado, desp, Brushes.Black, 110, 243);
             e.Graphics.DrawString("DNI : ", tipoTexto, Brushes.Black, 200, 240);
             e.Graphics.DrawString(dni, desp, Brushes.Black, 240, 243);
@@ -410,7 +412,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             e.Graphics.DrawString("CODIGO : ", tipoTexto, Brushes.Black, 420, 240);
             e.Graphics.DrawString(cod, desp, Brushes.Black, 500, 243);
             e.Graphics.DrawString("DNI : ", tipoTexto, Brushes.Black, 600, 240);
-            e.Graphics.DrawString(dnien, desp, Brushes.Black, 650, 243);
+            e.Graphics.DrawString(dnien, desp, Brushes.Black, 650, 243);*/
 
             e.Graphics.DrawString("FIRMA : _______________________________", tipoTexto, Brushes.Black, 30, 275);
             e.Graphics.DrawString("FIRMA : _______________________________", tipoTexto, Brushes.Black, 420, 275);
@@ -425,19 +427,19 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             e.Graphics.DrawString(g2, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 72, 315);
 
             string g3 = "DESCRIPCION";
-            e.Graphics.DrawString(g3, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 200, 315);
+            e.Graphics.DrawString(g3, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 180, 315);
 
-            string g6 = "OBSERVACION";
-            e.Graphics.DrawString(g6, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 538, 315);
+            string g6 = "CANTIDAD";
+            e.Graphics.DrawString(g6, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 645, 315);
 
-            string g4 = "CONDICION";
-            e.Graphics.DrawString(g4, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 645, 315);
+            string g4 = "COST.UNIT";
+            e.Graphics.DrawString(g4, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 800, 315);
 
-            string g5 = "CANT.";
-            e.Graphics.DrawString(g5, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 735, 315);
+            string g5 = "COST.TOTAL";
+            e.Graphics.DrawString(g5, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 538, 315);
 
             e.Graphics.DrawString("INFORMACIÓN ADICIONAL : ", tipoTexto, Brushes.Black, 50, 1050);
-            e.Graphics.DrawString(informacion_adicional, tipoTexto, Brushes.Black, new RectangleF(50, 1070, 700, 50));
+            e.Graphics.DrawString(OBSERVACION, tipoTexto, Brushes.Black, new RectangleF(50, 1070, 700, 50));
 
             int height = 320;
             for (int l = numberOfItemsPrintedSoFar; l < dgvListaProducto.Rows.Count; l++)
@@ -468,7 +470,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
                     e.HasMorePages = true;
                     return;
                 }
-            }*/
+            }
 
 
         }
@@ -505,9 +507,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             string telefono = txtTelefono.Text;
             string celular = txtCelular.Text;
             string NUM_ORDEN = txtNumOrden.Text;
-            //int cantidad = Convert.ToInt32(txtCantidadProducto.Text);
-            //double costo_unitario = Convert.ToDouble(txtCostoUnitario.Text);
-            //double costo_total = Convert.ToDouble(txtCostoTotal.Text);
             string observacion = txtObservacion.Text;
             string fecha_vale = lblFecha.Text;
             string hora = lblHora.Text;
