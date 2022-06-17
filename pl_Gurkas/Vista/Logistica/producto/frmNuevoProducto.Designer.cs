@@ -1162,7 +1162,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tbpUniforme.TabIndex = 1;
             this.tbpUniforme.Text = "Uniforme";
             this.tbpUniforme.UseVisualStyleBackColor = true;
-            this.tbpUniforme.Click += new System.EventHandler(this.tbpUniforme_Click);
             // 
             // tabControl1
             // 
