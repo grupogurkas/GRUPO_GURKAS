@@ -956,7 +956,7 @@ namespace pl_Gurkas.ExportacionExcel.RRHH
                         {
                             iCol++;
                             hoja_trabajo.Cells[iFil + 1, iCol] = fila.Cells[columna.Name].Value;
-                            formatRange = hoja_trabajo.get_Range("i" + (iFil + 1), "i" + (iFil + 1));
+                            formatRange = hoja_trabajo.get_Range("k" + (iFil + 1), "k" + (iFil + 1));
                             formatRange.NumberFormat = "@";
                         }
                         pBar.Value += 1;
