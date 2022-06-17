@@ -75,12 +75,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             lblHora.Text = DateTime.Now.ToString("hh:mm:ss tt");
             lblFecha.Text = DateTime.Now.ToLongDateString();
         }
-
-        private void txtObservacion_TextChanged(object sender, EventArgs e)
-        {
-            txtObservacion.MaxLength = 18;
-        }
-
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             try
@@ -105,8 +99,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             {
                 MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
             }
-
-
         }
 
         public void GenerarNumOrden()
@@ -142,8 +134,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             }
         }
 
-      
-
         private void agregardataProducto()
         {
            
@@ -167,8 +157,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
                 {
                     btnAgregar.Enabled = false;
                 }
-
-            
         }
 
         private void agregardataServicio()
