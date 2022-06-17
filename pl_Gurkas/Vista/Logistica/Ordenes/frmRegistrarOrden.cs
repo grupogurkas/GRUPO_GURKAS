@@ -142,7 +142,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
                 string cantidad = txtCantidadProducto.Text;
                 string costo_unitario = txtCostoUnitario.Text;
                 string costo_total = txtCostoTotal.Text;
-                //string observacion = txtObservacion.Text;
                 int n = dgvListaProducto.Rows.Count;
                 string c = Convert.ToString(n + 1);
                 DataRow row = dt.NewRow();
@@ -322,7 +321,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             Rectangle N12 = new Rectangle(570, 20, 220, 30);
             Rectangle ITEM_ = new Rectangle(20, 310, 50, 715);
             Rectangle CODIGO_ = new Rectangle(70, 310, 60, 715);
-            Rectangle PRODUCTO_ = new Rectangle(130, 310, 400, 715);
+            Rectangle PRODUCTO_ = new Rectangle(130, 310, 380, 715);
             Rectangle OBSERVACION_ = new Rectangle(530, 310, 100, 715);
             Rectangle CONDICION_ = new Rectangle(630, 310, 100, 715);
             Rectangle CANT_ = new Rectangle(730, 310, 60, 715);
@@ -368,8 +367,8 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             e.Graphics.DrawString("FECHA   : ", tipoTexto, Brushes.Black, 30, 120);
             e.Graphics.DrawString(fecha, desp, Brushes.Black, 120, 122);
 
-            e.Graphics.DrawString("CONTACTO : ", tipoTexto, Brushes.Black, 320, 100);
-            e.Graphics.DrawString(CONTACTO_PROVEEDOR, nombres, Brushes.Black, 200, 102);
+            e.Graphics.DrawString("CONTACTO : ", tipoTexto, Brushes.Black, 320, 120);
+            e.Graphics.DrawString(CONTACTO_PROVEEDOR, nombres, Brushes.Black, 500, 102);
 
             //e.Graphics.DrawString("CONTACTO PROVEEDOR : ", tipoTexto, Brushes.Black, 320, 100);
             //e.Graphics.DrawString(CONTACTO_PROVEEDOR, desp, Brushes.Black, 470, 102);
@@ -421,7 +420,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             e.Graphics.DrawString(g6, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 645, 315);
 
             string g4 = "COST.UNIT";
-            e.Graphics.DrawString(g4, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 800, 315);
+            e.Graphics.DrawString(g4, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 735, 315);
 
             string g5 = "COST.TOTAL";
             e.Graphics.DrawString(g5, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 538, 315);
@@ -570,11 +569,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             txtIgv.Text = "";
             txtTotal.Text = "";
             dt.Clear();
-        }
-
-        private void txtIgv_TextChanged(object sender, EventArgs e)
-        {
-           
         }
     }
 }

@@ -32,7 +32,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             llenadoDatosProducto();
             
-
         }
 
         private void button43_Click(object sender, EventArgs e)
@@ -75,19 +74,24 @@ namespace pl_Gurkas.Vista.Logistica.producto
             imgFinal.Dispose();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void llenadoDatosProducto()
         {
             Llenadocbo.ObtenerProductosGeneral(cboProducto);
+            
 
         }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
+
+
+        private void cboProducto_SelectedIndexChanged(object sender, EventArgs e)
         {
+            string cod_producto = cboProducto.GetItemText(cboProducto.SelectedItem);
+            //Llenadocbo.ObtenerSedeLogistica(cboSede, cod_unidad);
+
+
+        }
+
+
 
         }
     }

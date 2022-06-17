@@ -892,14 +892,14 @@ namespace pl_Gurkas.Datos
         {
             try
             {
-                SqlCommand cmd = new SqlCommand("select COD_PRODUCTO_SISTEMA,NOMBRE_PRODUCTO from T_MAE_PRODUCTO ", conexiondbo.conexionBD());
+                SqlCommand cmd = new SqlCommand("select COD_PRODUCTO_MATERIAL,NOMBRE_PRODUCTO from T_MAE_PRODUCTO ", conexiondbo.conexionBD());
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 DataRow fila = dt.NewRow();
                 fila["NOMBRE_PRODUCTO"] = "---Seleccione un Producto---";
                 dt.Rows.InsertAt(fila, 0);
-                cd.ValueMember = "COD_PRODUCTO_SISTEMA";
+                cd.ValueMember = "COD_PRODUCTO_MATERIAL";
                 cd.DisplayMember = "NOMBRE_PRODUCTO";
                 cd.DataSource = dt;
                 cd.SelectedIndex = 0;

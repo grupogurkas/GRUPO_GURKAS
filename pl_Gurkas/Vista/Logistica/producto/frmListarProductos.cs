@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
 {
     public partial class frmListarProductos : Form
     {
+        Datos.DataReportes.Logistica.DataLogistica datosLogistica = new Datos.DataReportes.Logistica.DataLogistica();
         Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
         Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
@@ -55,5 +57,21 @@ namespace pl_Gurkas.Vista.Logistica.producto
 
         }
 
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            const string titulo = "Cerrar Registro de Personal";
+            const string mensaje = "Estas seguro que deseas cerra el Registro de Personal";
+            var resutlado = MessageBox.Show(mensaje, titulo, MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (resutlado == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void btnBuscarCodigoProveedor_Click(object sender, EventArgs e)
+        {
+            string cod_producto = cboProducto.SelectedValue.ToString();
+            dgvBuscarProducto.DataSource = datosLogistica.BuscarProducto(cod_producto);
+        }
     }
 }

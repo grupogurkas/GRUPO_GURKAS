@@ -293,7 +293,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.txtIgv.Name = "txtIgv";
             this.txtIgv.Size = new System.Drawing.Size(114, 20);
             this.txtIgv.TabIndex = 251;
-            this.txtIgv.TextChanged += new System.EventHandler(this.txtIgv_TextChanged);
             // 
             // txtTotal
             // 
