@@ -29,6 +29,23 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
         {
             InitializeComponent();
         }
+        private void empresa()
+        {
+            int cod_empresa =Datos.EmpresaID._empresaid;
+
+            SqlCommand comando = new SqlCommand("SELECT * FROM T_EMPRESA WHERE ID_EMPRESA = " + cod_empresa + "", conexion.conexionBD());
+
+            SqlDataReader recorre = comando.ExecuteReader();
+            while (recorre.Read())
+            {
+                lblemp.Text = recorre["NOMBRE_EMPRESA"].ToString();
+                lblruc.Text = recorre["RUC"].ToString();
+                lbldireccion.Text = recorre["direccion"].ToString();
+                lblnombrear.Text = recorre["nombre_documento_sig"].ToString();
+                lblver.Text = recorre["vercion_documento_sig"].ToString();
+            }
+        }
+
         public void calculo()
         {
             double total = 0;
@@ -70,6 +87,14 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             dt.Columns.Add("CostoUnitario");
             dt.Columns.Add("CostoTotal");
             dgvListaProducto.DataSource = dt;
+
+            empresa();
+
+            lbldireccion.Visible = false;
+            lblemp.Visible = false;
+            lblnombrear.Visible = false;
+            lblruc.Visible = false;
+            lblver.Visible = false;
 
             DataGridViewButtonColumn btnclm = new DataGridViewButtonColumn();
             btnclm.Name = "Eliminar";
@@ -222,10 +247,18 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             string CELULAR = txtCelular.Text;
             string OBSERVACION = txtObservacion.Text;
 
+            string SUBTOAL = txtSubTotal.Text;
+            string IGV = txtIgv.Text;
+            string TOTAL = txtTotal.Text;
 
             string num = txtNumOrden.Text;
             string fecha = lblFecha.Text;
-
+            string empreas = lblemp.Text;
+            
+            string ruc = lblruc.Text;
+            string dir = lbldireccion.Text;
+            string nombre_arc = lblnombrear.Text;
+            string ver = lblver.Text;
 
             Font tipoTexto = new Font("Arial", 10, FontStyle.Bold);
             Font desp = new Font("Arial", 8, FontStyle.Bold); 
@@ -243,11 +276,14 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             //  Rectangle N6 = new Rectangle(20, 260, 390, 40);
             // Rectangle N7 = new Rectangle(410, 260, 380, 40);
             //Rectangle N2 = new Rectangle(20, 190, 390, 20);
-            Rectangle observaciones = new Rectangle(20, 930, 770, 100);
+            Rectangle observaciones = new Rectangle(20, 925, 560, 100);
             Rectangle N9 = new Rectangle(20, 20, 230, 60);
-           Rectangle N10 = new Rectangle(250, 20, 320, 60);
-           Rectangle N11 = new Rectangle(570, 20, 220, 60);
+            Rectangle N10 = new Rectangle(250, 20, 320, 60);
+            Rectangle N11 = new Rectangle(570, 20, 220, 60);
             Rectangle N12 = new Rectangle(570, 20, 220, 30);
+
+            Rectangle subtotal = new Rectangle(580, 925, 210, 32);
+            Rectangle igv = new Rectangle(580, 957, 210, 34);
 
             Rectangle ITEM_ = new Rectangle(20, 210, 50, 715);
             Rectangle CODIGO_ = new Rectangle(70, 210, 60, 715);
@@ -255,6 +291,11 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             Rectangle OBSERVACION_ = new Rectangle(530, 210, 100, 715);
             Rectangle CONDICION_ = new Rectangle(630, 210, 100, 715);
             Rectangle CANT_ = new Rectangle(730, 210, 60, 715);
+            Rectangle RESUMEN_ = new Rectangle(580, 925, 210, 100);
+
+            e.Graphics.DrawRectangle(blackPen, subtotal);
+            e.Graphics.DrawRectangle(blackPen, igv);
+
             e.Graphics.DrawRectangle(blackPen, N1);
             e.Graphics.DrawRectangle(blackPen, N2);
             e.Graphics.DrawRectangle(blackPen, N3);
@@ -274,20 +315,21 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             e.Graphics.DrawRectangle(blackPen, OBSERVACION_);
             e.Graphics.DrawRectangle(blackPen, CONDICION_);
             e.Graphics.DrawRectangle(blackPen, CANT_);
+            e.Graphics.DrawRectangle(blackPen, RESUMEN_);
 
-            e.Graphics.DrawString("ORDEN DE COMPRA/SERVICIO", tipoTexto, Brushes.Black, 310, 25);
-            //e.Graphics.DrawString(emp, nombres, Brushes.Black, 290, 45);
-            //e.Graphics.DrawString("  RUC " + ruc, nombres, Brushes.Black, 420, 45);
-            // e.Graphics.DrawString(dir, datos, Brushes.Black, 250, 60);
-            //e.Graphics.DrawString(nombre_arc, datos, Brushes.Black, 580, 25);
-            //e.Graphics.DrawString(ver, datos, Brushes.Black, 580, 35);
+            e.Graphics.DrawString("ORDEN DE COMPRA", tipoTexto, Brushes.Black, 310, 25);
+            e.Graphics.DrawString(empreas, nombres, Brushes.Black, 290, 45);
+            e.Graphics.DrawString("  RUC " + ruc, nombres, Brushes.Black, 420, 45);
+           // e.Graphics.DrawString(dir, datos, Brushes.Black, 250, 60);
+            e.Graphics.DrawString(nombre_arc, datos, Brushes.Black, 580, 25);
+            e.Graphics.DrawString(ver, datos, Brushes.Black, 580, 35);
             e.Graphics.DrawString(num, tipoTexto, Brushes.Black, 580, 55);
 
             string anio = DateTime.Now.Year.ToString();
 
             e.Graphics.DrawString(" - " + anio, tipoTexto, Brushes.Black, 720, 55);
 
-            //e.Graphics.DrawString(dir, datos, Brushes.Black, new RectangleF(260, 60, 300, 30));
+            e.Graphics.DrawString(dir, datos, Brushes.Black, new RectangleF(260, 60, 300, 30));
 
             e.Graphics.DrawString("R.S. : ", tipoTexto, Brushes.Black, 30, 100);
             e.Graphics.DrawString(TIPO_PERSONAL, desp, Brushes.Black, 120, 102);
@@ -313,7 +355,19 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             e.Graphics.DrawString("CELULAR : ", tipoTexto, Brushes.Black, 610, 170);
             e.Graphics.DrawString(CELULAR, desp, Brushes.Black, 700, 172);
 
-           
+            e.Graphics.DrawString("SUBTOTAL : ", tipoTexto, Brushes.Black, 580, 935);
+            e.Graphics.DrawString("S/ " +SUBTOAL, tipoTexto, Brushes.Black, 690, 935);
+
+            e.Graphics.DrawString("IGV : ", tipoTexto, Brushes.Black, 580, 970);
+            e.Graphics.DrawString("S/ " + IGV, tipoTexto, Brushes.Black, 690, 970);
+
+            e.Graphics.DrawString("TOTAL : ", tipoTexto, Brushes.Black, 580, 1000);
+            e.Graphics.DrawString("S/ " + TOTAL, tipoTexto, Brushes.Black, 690, 1000);
+
+
+            e.Graphics.DrawString("_______________________", tipoTexto, Brushes.Black, 50, 1080);
+            e.Graphics.DrawString("V°B° JEFE DE LOGISTICA", tipoTexto, Brushes.Black, 50, 1100);
+            e.Graphics.DrawString("'Se debe anexar captura de pantalla del correo donde aprueba la GERENCIA GENERAL para que tenga validez dicha orden'", nombres, Brushes.Black, 50, 1130);
 
             string l1 = "--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
             e.Graphics.DrawString(l1, new System.Drawing.Font("Book Antiqua", 9, FontStyle.Bold), Brushes.Black, 20, 220);//360
@@ -338,7 +392,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
 
 
             e.Graphics.DrawString("OBSEVACIONES : ", tipoTexto, Brushes.Black, 40, 935);
-            e.Graphics.DrawString(OBSERVACION, tipoTexto, Brushes.Black, new RectangleF(40, 955, 700, 50));
+            e.Graphics.DrawString(OBSERVACION, tipoTexto, Brushes.Black, new RectangleF(40, 955, 500, 50));
 
             int height = 220;
             for (int l = numberOfItemsPrintedSoFar; l < dgvListaProducto.Rows.Count; l++)
@@ -388,7 +442,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
                 //registarvale();
                 //limpiardatos();
             }*/
-            printPreviewDialog1.ShowDialog();
+           printPreviewDialog1.ShowDialog();
         }
 
         private void btnEntrega_Click(object sender, EventArgs e)

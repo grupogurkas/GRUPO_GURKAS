@@ -91,6 +91,11 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.lbldireccion = new System.Windows.Forms.Label();
+            this.lblruc = new System.Windows.Forms.Label();
+            this.lblemp = new System.Windows.Forms.Label();
+            this.lblnombrear = new System.Windows.Forms.Label();
+            this.lblver = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaProducto)).BeginInit();
@@ -714,11 +719,66 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             // 
+            // lbldireccion
+            // 
+            this.lbldireccion.AutoSize = true;
+            this.lbldireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldireccion.Location = new System.Drawing.Point(1160, 44);
+            this.lbldireccion.Name = "lbldireccion";
+            this.lbldireccion.Size = new System.Drawing.Size(23, 15);
+            this.lbldireccion.TabIndex = 244;
+            this.lbldireccion.Text = "dic";
+            // 
+            // lblruc
+            // 
+            this.lblruc.AutoSize = true;
+            this.lblruc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblruc.Location = new System.Drawing.Point(1238, 20);
+            this.lblruc.Name = "lblruc";
+            this.lblruc.Size = new System.Drawing.Size(24, 15);
+            this.lblruc.TabIndex = 245;
+            this.lblruc.Text = "ruc";
+            // 
+            // lblemp
+            // 
+            this.lblemp.AutoSize = true;
+            this.lblemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblemp.Location = new System.Drawing.Point(1218, 46);
+            this.lblemp.Name = "lblemp";
+            this.lblemp.Size = new System.Drawing.Size(32, 15);
+            this.lblemp.TabIndex = 246;
+            this.lblemp.Text = "emp";
+            // 
+            // lblnombrear
+            // 
+            this.lblnombrear.AutoSize = true;
+            this.lblnombrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnombrear.Location = new System.Drawing.Point(1189, 17);
+            this.lblnombrear.Name = "lblnombrear";
+            this.lblnombrear.Size = new System.Drawing.Size(43, 15);
+            this.lblnombrear.TabIndex = 247;
+            this.lblnombrear.Text = "nomar";
+            // 
+            // lblver
+            // 
+            this.lblver.AutoSize = true;
+            this.lblver.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblver.Location = new System.Drawing.Point(1189, 44);
+            this.lblver.Name = "lblver";
+            this.lblver.Size = new System.Drawing.Size(23, 15);
+            this.lblver.TabIndex = 248;
+            this.lblver.Text = "ver";
+            // 
             // frmRegistrarOrden
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1361, 651);
+            this.Controls.Add(this.lbldireccion);
+            this.Controls.Add(this.lblruc);
+            this.Controls.Add(this.lblemp);
+            this.Controls.Add(this.lblnombrear);
+            this.Controls.Add(this.lblver);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblHora);
@@ -813,5 +873,10 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Windows.Forms.Label lbldireccion;
+        private System.Windows.Forms.Label lblruc;
+        private System.Windows.Forms.Label lblemp;
+        private System.Windows.Forms.Label lblnombrear;
+        private System.Windows.Forms.Label lblver;
     }
 }
