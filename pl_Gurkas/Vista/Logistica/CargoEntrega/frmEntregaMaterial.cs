@@ -243,12 +243,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             var resutlado = MessageBox.Show(mensaje, titulo, MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (resutlado == DialogResult.Yes)
             {
-                //  DateTime fecha = DateTime.Now;
-                //  obtenerip_nombre();
-                // string username = Code.nivelUser._nombre;
-                // string detalle = "Cerrar Registro de Personal";
-                // string cod_buscado = "Cerro el registro de Personal";
-                // registrar.RegistrarRRHH(fecha, nombrepc, username, ipuser, cod_buscado, detalle);
                 this.Close();
             }
         }
@@ -544,8 +538,9 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         }
         private void btnCertificadoBasc_Click(object sender, EventArgs e)
         {
-            validar_campos();
-            imprimir();
+                validar_campos();
+                imprimir();
+
         }
 
         private void txtInformacionAdicional_TextChanged(object sender, EventArgs e)
@@ -662,6 +657,16 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         }
 
         private void printPreviewDialog1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboSede_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtstockminimo_TextChanged(object sender, EventArgs e)
         {
 
         }

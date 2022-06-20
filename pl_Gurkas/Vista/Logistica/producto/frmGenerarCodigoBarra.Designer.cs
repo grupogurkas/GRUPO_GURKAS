@@ -95,6 +95,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // cboProducto
             // 
@@ -155,10 +156,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             // txtCodigoBarra
             // 
-            this.txtCodigoBarra.Location = new System.Drawing.Point(172, 82);
+            this.txtCodigoBarra.Location = new System.Drawing.Point(174, 85);
             this.txtCodigoBarra.Name = "txtCodigoBarra";
-            this.txtCodigoBarra.Size = new System.Drawing.Size(229, 20);
-            this.txtCodigoBarra.TabIndex = 165;
+            this.txtCodigoBarra.Size = new System.Drawing.Size(227, 20);
+            this.txtCodigoBarra.TabIndex = 172;
             // 
             // frmGenerarCodigoBarra
             // 
@@ -184,10 +185,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.Button btnGuardarCodigo;
         private System.Windows.Forms.Panel PanelCodigo;
         private System.Windows.Forms.Button btnGenerar;
-        private System.Windows.Forms.TextBox txtCodigoBarra;
         private System.Windows.Forms.ComboBox cboProducto;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.TextBox txtCodigoBarra;
     }
 }

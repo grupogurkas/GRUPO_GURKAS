@@ -327,6 +327,25 @@ namespace pl_Gurkas.Datos
             }
         }
 
+        public void ObtenerEstadoProductoCompleto(ComboBox cd)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SELECT desp_estado_material FROM t_estado_material  where id_estado_material in (3) ", conexiondbo.conexionBD());
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    cd.Items.Add(dr[0].ToString());
+                }
+                cd.Items.Insert(0, "-- Seleccione Un Estado --");
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede obtener la imformacion de tipo de proveedor \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         public void ObtenerCuotaProducto(ComboBox cd)
         {
             try
@@ -796,7 +815,27 @@ namespace pl_Gurkas.Datos
                 MessageBox.Show("No se puede obtener el listado de las sedes \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-
+        public void ObtenerCodigoBarra(ComboBox cd, string cod_producto)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("select COD_PRODUCTO_MATERIAL from T_MAE_PRODUCTO where NOMBRE_PRODUCTO = @NOMBRE_PRODUCTO ", conexiondbo.conexionBD());
+                cmd.Parameters.AddWithValue("NOMBRE_PRODUCTO", cod_producto);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                DataRow fila = dt.NewRow();
+                //fila["NOMBRE_SEDE"] = "--- Seleccione una sede ---";
+                dt.Rows.InsertAt(fila, 1);
+                cd.ValueMember = "COD_PRODUCTO_MATERIAL";
+                cd.DisplayMember = "COD_PRODUCTO_MATERIAL";
+                cd.DataSource = dt;
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se puede obtener el listado de las sedes \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
 
         public void ObtenerEmpresa(ComboBox cd)
         {
@@ -886,8 +925,6 @@ namespace pl_Gurkas.Datos
                 MessageBox.Show("No se puede obtener el listado del Utiles de Aseo \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-
-
         public void ObtenerProductosGeneral(ComboBox cd)
         {
             try
@@ -909,9 +946,30 @@ namespace pl_Gurkas.Datos
                 MessageBox.Show("No se puede obtener el listado del Utiles de Aseo \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-
+        public void ObtenerCodigoProducto(ComboBox cd)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("select  COD_PRODUCTO_MATERIAL , COD_PRODUCTO_SISTEMA from T_MAE_PRODUCTO ", conexiondbo.conexionBD());
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                DataRow fila = dt.NewRow();
+                fila["COD_PRODUCTO_SISTEMA"] = "---Seleccione un Codigo---";
+                dt.Rows.InsertAt(fila, 0);
+                cd.ValueMember = "COD_PRODUCTO_MATERIAL";
+                cd.DisplayMember = "COD_PRODUCTO_SISTEMA";
+                cd.DataSource = dt;
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se puede obtener el listado del Utiles de Aseo \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
     
+
 }
 
 

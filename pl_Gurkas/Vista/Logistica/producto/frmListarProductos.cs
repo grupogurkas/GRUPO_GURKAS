@@ -14,6 +14,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
     public partial class frmListarProductos : Form
     {
         Datos.DataReportes.Logistica.DataLogistica datosLogistica = new Datos.DataReportes.Logistica.DataLogistica();
+        ExportacionExcel.Logistica.ExportarDataExcelLogistica Excel = new ExportacionExcel.Logistica.ExportarDataExcelLogistica();
         Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
         Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
@@ -54,6 +55,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void llenadoDatosProducto()
         {
             Llenadocbo.ObtenerProductosGeneral(cboProducto);
+            Llenadocbo.ObtenerCodigoProducto(cboCodigoSistema);
 
         }
 
@@ -70,8 +72,34 @@ namespace pl_Gurkas.Vista.Logistica.producto
 
         private void btnBuscarCodigoProveedor_Click(object sender, EventArgs e)
         {
-            string cod_producto = cboProducto.SelectedValue.ToString();
-            dgvBuscarProducto.DataSource = datosLogistica.BuscarProducto(cod_producto);
+            if(cboProducto.SelectedItem != "")
+            {
+                string cod_producto = cboProducto.SelectedValue.ToString();
+                dgvBuscarProducto.DataSource = datosLogistica.BuscarProducto(cod_producto);
+            }
+            else
+            {
+                MessageBox.Show("Debe Seleccionar un Producto");
+            }
+            
+        }
+
+        private void btnBuscarProductoCodigo_Click(object sender, EventArgs e)
+        {
+            string cod_producto = txtCodProducto.Text;
+            dgvBuscarProducto.DataSource = datosLogistica.BuscarProductoPorCodigo(cod_producto);
+        }
+
+        private void btnBuscarProductoSistema_Click(object sender, EventArgs e)
+        {
+            string cod_producto = cboCodigoSistema.SelectedValue.ToString();
+            dgvBuscarProducto.DataSource = datosLogistica.BuscarProductoPorCodigoSistema(cod_producto);
+
+        }
+
+        private void btnExcel_Click(object sender, EventArgs e)
+        {
+            Excel.ExportarDatosExcelProveedores(dgvBuscarProducto, progressBar1);
         }
     }
 }

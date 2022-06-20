@@ -126,14 +126,7 @@ namespace pl_Gurkas.Vista.Principal
             this.cargoEntregaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.internamientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.entregaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.entradaDeProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nuevaEntradaDeProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.buscarSalidaDeProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.historialDeSalidaDeProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salidaDeProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nuevaSalidaDeProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.buscarSalidaDeProductoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.historialDeSalidaDeProductoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.destruccionLogisticoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inventariadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kardexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroOrdenesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -925,8 +918,6 @@ namespace pl_Gurkas.Vista.Principal
             this.proveedoresToolStripMenuItem,
             this.productosEnAlmacenToolStripMenuItem,
             this.cargoEntregaToolStripMenuItem,
-            this.entradaDeProductoToolStripMenuItem,
-            this.salidaDeProductoToolStripMenuItem,
             this.inventariadoToolStripMenuItem,
             this.registroOrdenesToolStripMenuItem});
             this.almacenToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.almacen_32;
@@ -993,7 +984,8 @@ namespace pl_Gurkas.Vista.Principal
             // 
             this.cargoEntregaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.internamientoToolStripMenuItem,
-            this.entregaToolStripMenuItem});
+            this.entregaToolStripMenuItem,
+            this.destruccionLogisticoToolStripMenuItem});
             this.cargoEntregaToolStripMenuItem.Name = "cargoEntregaToolStripMenuItem";
             this.cargoEntregaToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.cargoEntregaToolStripMenuItem.Text = "Cargo Entrega Productos";
@@ -1001,78 +993,23 @@ namespace pl_Gurkas.Vista.Principal
             // internamientoToolStripMenuItem
             // 
             this.internamientoToolStripMenuItem.Name = "internamientoToolStripMenuItem";
-            this.internamientoToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.internamientoToolStripMenuItem.Text = "Internamiento Productos";
+            this.internamientoToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.internamientoToolStripMenuItem.Text = "Internamiento Logistico";
             this.internamientoToolStripMenuItem.Click += new System.EventHandler(this.internamientoToolStripMenuItem_Click);
             // 
             // entregaToolStripMenuItem
             // 
             this.entregaToolStripMenuItem.Name = "entregaToolStripMenuItem";
-            this.entregaToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.entregaToolStripMenuItem.Text = "Entrega Productos";
+            this.entregaToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.entregaToolStripMenuItem.Text = "Entrega Logistico";
             this.entregaToolStripMenuItem.Click += new System.EventHandler(this.entregaToolStripMenuItem_Click);
             // 
-            // entradaDeProductoToolStripMenuItem
+            // destruccionLogisticoToolStripMenuItem
             // 
-            this.entradaDeProductoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nuevaEntradaDeProductoToolStripMenuItem,
-            this.buscarSalidaDeProductoToolStripMenuItem,
-            this.historialDeSalidaDeProductoToolStripMenuItem});
-            this.entradaDeProductoToolStripMenuItem.Name = "entradaDeProductoToolStripMenuItem";
-            this.entradaDeProductoToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.entradaDeProductoToolStripMenuItem.Text = "Entrada de Producto";
-            // 
-            // nuevaEntradaDeProductoToolStripMenuItem
-            // 
-            this.nuevaEntradaDeProductoToolStripMenuItem.Name = "nuevaEntradaDeProductoToolStripMenuItem";
-            this.nuevaEntradaDeProductoToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
-            this.nuevaEntradaDeProductoToolStripMenuItem.Text = "Nueva Entrada de Producto";
-            this.nuevaEntradaDeProductoToolStripMenuItem.Click += new System.EventHandler(this.nuevaEntradaDeProductoToolStripMenuItem_Click);
-            // 
-            // buscarSalidaDeProductoToolStripMenuItem
-            // 
-            this.buscarSalidaDeProductoToolStripMenuItem.Name = "buscarSalidaDeProductoToolStripMenuItem";
-            this.buscarSalidaDeProductoToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
-            this.buscarSalidaDeProductoToolStripMenuItem.Text = "Buscar Entrada de Producto";
-            this.buscarSalidaDeProductoToolStripMenuItem.Click += new System.EventHandler(this.buscarSalidaDeProductoToolStripMenuItem_Click);
-            // 
-            // historialDeSalidaDeProductoToolStripMenuItem
-            // 
-            this.historialDeSalidaDeProductoToolStripMenuItem.Name = "historialDeSalidaDeProductoToolStripMenuItem";
-            this.historialDeSalidaDeProductoToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
-            this.historialDeSalidaDeProductoToolStripMenuItem.Text = "Historial de Entrada de Producto";
-            this.historialDeSalidaDeProductoToolStripMenuItem.Click += new System.EventHandler(this.historialDeSalidaDeProductoToolStripMenuItem_Click);
-            // 
-            // salidaDeProductoToolStripMenuItem
-            // 
-            this.salidaDeProductoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nuevaSalidaDeProductoToolStripMenuItem,
-            this.buscarSalidaDeProductoToolStripMenuItem1,
-            this.historialDeSalidaDeProductoToolStripMenuItem1});
-            this.salidaDeProductoToolStripMenuItem.Name = "salidaDeProductoToolStripMenuItem";
-            this.salidaDeProductoToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.salidaDeProductoToolStripMenuItem.Text = "Salida de Producto";
-            // 
-            // nuevaSalidaDeProductoToolStripMenuItem
-            // 
-            this.nuevaSalidaDeProductoToolStripMenuItem.Name = "nuevaSalidaDeProductoToolStripMenuItem";
-            this.nuevaSalidaDeProductoToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
-            this.nuevaSalidaDeProductoToolStripMenuItem.Text = "Nueva Salida de Producto";
-            this.nuevaSalidaDeProductoToolStripMenuItem.Click += new System.EventHandler(this.nuevaSalidaDeProductoToolStripMenuItem_Click);
-            // 
-            // buscarSalidaDeProductoToolStripMenuItem1
-            // 
-            this.buscarSalidaDeProductoToolStripMenuItem1.Name = "buscarSalidaDeProductoToolStripMenuItem1";
-            this.buscarSalidaDeProductoToolStripMenuItem1.Size = new System.Drawing.Size(236, 22);
-            this.buscarSalidaDeProductoToolStripMenuItem1.Text = "Buscar Salida de Producto";
-            this.buscarSalidaDeProductoToolStripMenuItem1.Click += new System.EventHandler(this.buscarSalidaDeProductoToolStripMenuItem1_Click);
-            // 
-            // historialDeSalidaDeProductoToolStripMenuItem1
-            // 
-            this.historialDeSalidaDeProductoToolStripMenuItem1.Name = "historialDeSalidaDeProductoToolStripMenuItem1";
-            this.historialDeSalidaDeProductoToolStripMenuItem1.Size = new System.Drawing.Size(236, 22);
-            this.historialDeSalidaDeProductoToolStripMenuItem1.Text = "Historial de Salida de Producto";
-            this.historialDeSalidaDeProductoToolStripMenuItem1.Click += new System.EventHandler(this.historialDeSalidaDeProductoToolStripMenuItem1_Click);
+            this.destruccionLogisticoToolStripMenuItem.Name = "destruccionLogisticoToolStripMenuItem";
+            this.destruccionLogisticoToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.destruccionLogisticoToolStripMenuItem.Text = "Destruccion Logistico";
+            this.destruccionLogisticoToolStripMenuItem.Click += new System.EventHandler(this.destruccionLogisticoToolStripMenuItem_Click);
             // 
             // inventariadoToolStripMenuItem
             // 
@@ -1777,14 +1714,6 @@ namespace pl_Gurkas.Vista.Principal
         private System.Windows.Forms.ToolStripMenuItem cargaMasivaDeDatosLaboralesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cargaDeDatosCTSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem almacenToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem entradaDeProductoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem nuevaEntradaDeProductoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem buscarSalidaDeProductoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem historialDeSalidaDeProductoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salidaDeProductoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem nuevaSalidaDeProductoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem buscarSalidaDeProductoToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem historialDeSalidaDeProductoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem productosEnAlmacenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nuevoProductoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem proveedoresToolStripMenuItem;
@@ -1815,5 +1744,6 @@ namespace pl_Gurkas.Vista.Principal
         private System.Windows.Forms.ToolStripMenuItem registroOrdenesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ordenDeServicioCompraToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem personalPorDNIToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem destruccionLogisticoToolStripMenuItem;
     }
 }

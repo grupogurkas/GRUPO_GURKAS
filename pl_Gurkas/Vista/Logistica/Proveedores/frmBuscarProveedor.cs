@@ -63,7 +63,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
 
         private void s(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

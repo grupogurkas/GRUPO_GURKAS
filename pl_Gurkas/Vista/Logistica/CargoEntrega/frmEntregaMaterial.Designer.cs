@@ -373,6 +373,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.cboSede.Name = "cboSede";
             this.cboSede.Size = new System.Drawing.Size(246, 21);
             this.cboSede.TabIndex = 226;
+            this.cboSede.SelectedIndexChanged += new System.EventHandler(this.cboSede_SelectedIndexChanged);
             // 
             // cboEmpresa
             // 

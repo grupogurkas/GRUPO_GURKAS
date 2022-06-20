@@ -458,6 +458,12 @@
     <Compile Include="Vista\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Logistica\CargoEntrega\frmDestruccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Logistica\CargoEntrega\frmDestruccion.Designer.cs">
+      <DependentUpon>frmDestruccion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Logistica\CargoEntrega\frmDevolucionMaterial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -487,6 +493,12 @@
     </Compile>
     <Compile Include="Vista\Logistica\entrada\HistorialEntradaProducto.Designer.cs">
       <DependentUpon>HistorialEntradaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Logistica\Inventario\frmKardex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Logistica\Inventario\frmKardex.Designer.cs">
+      <DependentUpon>frmKardex.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Logistica\Ordenes\frmRegistrarOrden.cs">
       <SubType>Form</SubType>
@@ -1118,6 +1130,9 @@
     <EmbeddedResource Include="Vista\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Logistica\CargoEntrega\frmDestruccion.resx">
+      <DependentUpon>frmDestruccion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\CargoEntrega\frmDevolucionMaterial.resx">
       <DependentUpon>frmDevolucionMaterial.cs</DependentUpon>
     </EmbeddedResource>
@@ -1132,6 +1147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\entrada\HistorialEntradaProducto.resx">
       <DependentUpon>HistorialEntradaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Logistica\Inventario\frmKardex.resx">
+      <DependentUpon>frmKardex.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\Ordenes\frmRegistrarOrden.resx">
       <DependentUpon>frmRegistrarOrden.cs</DependentUpon>
@@ -1672,9 +1690,7 @@
     <None Include="Resources\SALIDA_64.png" />
     <None Include="Resources\SALIDA_32.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Vista\Logistica\Inventariado\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
