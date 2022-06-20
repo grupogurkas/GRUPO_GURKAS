@@ -583,5 +583,10 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
         {
             txtObservacion.MaxLength = 264;
         }
+
+        private void printPreviewDialog1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
