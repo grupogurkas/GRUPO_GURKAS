@@ -30,6 +30,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistrarOrden));
             this.label42 = new System.Windows.Forms.Label();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnEntrega = new System.Windows.Forms.Button();
@@ -53,9 +54,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.rdtServicioProducto = new System.Windows.Forms.RadioButton();
-            this.rdtCompraProducto = new System.Windows.Forms.RadioButton();
-            this.txtProductoServicio = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtCantidadProducto = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -73,7 +71,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.txtNombreProveedor = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtCelular = new System.Windows.Forms.TextBox();
@@ -90,12 +87,23 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.cboProveedorActivo = new System.Windows.Forms.ComboBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.lbldireccion = new System.Windows.Forms.Label();
+            this.lblruc = new System.Windows.Forms.Label();
+            this.lblemp = new System.Windows.Forms.Label();
+            this.lblnombrear = new System.Windows.Forms.Label();
+            this.lblver = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaProducto)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label42
@@ -175,26 +183,25 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.groupBox3);
             this.panel1.Controls.Add(this.dgvListaProducto);
-            this.panel1.Controls.Add(this.groupBox2);
-            this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Location = new System.Drawing.Point(15, 64);
+            this.panel1.Location = new System.Drawing.Point(12, 276);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1314, 571);
+            this.panel1.Size = new System.Drawing.Size(1337, 363);
             this.panel1.TabIndex = 242;
             // 
             // txtObservacion
             // 
-            this.txtObservacion.Location = new System.Drawing.Point(10, 491);
+            this.txtObservacion.Location = new System.Drawing.Point(9, 276);
             this.txtObservacion.Multiline = true;
             this.txtObservacion.Name = "txtObservacion";
-            this.txtObservacion.Size = new System.Drawing.Size(1059, 57);
+            this.txtObservacion.Size = new System.Drawing.Size(1059, 64);
             this.txtObservacion.TabIndex = 255;
+            this.txtObservacion.TextChanged += new System.EventHandler(this.txtObservacion_TextChanged);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(7, 465);
+            this.label11.Location = new System.Drawing.Point(5, 254);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(81, 15);
             this.label11.TabIndex = 256;
@@ -211,9 +218,9 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.txtIgv);
             this.groupBox3.Controls.Add(this.txtTotal);
-            this.groupBox3.Location = new System.Drawing.Point(1084, 464);
+            this.groupBox3.Location = new System.Drawing.Point(1096, 254);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(229, 104);
+            this.groupBox3.Size = new System.Drawing.Size(229, 99);
             this.groupBox3.TabIndex = 254;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Costos Totales:";
@@ -304,10 +311,11 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             // 
             // dgvListaProducto
             // 
+            this.dgvListaProducto.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvListaProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListaProducto.Location = new System.Drawing.Point(10, 173);
+            this.dgvListaProducto.Location = new System.Drawing.Point(11, 12);
             this.dgvListaProducto.Name = "dgvListaProducto";
-            this.dgvListaProducto.Size = new System.Drawing.Size(1293, 286);
+            this.dgvListaProducto.Size = new System.Drawing.Size(1314, 236);
             this.dgvListaProducto.TabIndex = 238;
             this.dgvListaProducto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListaProducto_CellContentClick);
             this.dgvListaProducto.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvListaProducto_CellPainting);
@@ -316,9 +324,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             // 
             this.groupBox2.Controls.Add(this.label21);
             this.groupBox2.Controls.Add(this.label17);
-            this.groupBox2.Controls.Add(this.rdtServicioProducto);
-            this.groupBox2.Controls.Add(this.rdtCompraProducto);
-            this.groupBox2.Controls.Add(this.txtProductoServicio);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.txtCantidadProducto);
             this.groupBox2.Controls.Add(this.label3);
@@ -333,12 +338,12 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.groupBox2.Controls.Add(this.txtNumOrden);
             this.groupBox2.Controls.Add(this.dtpFechaAdquisicion);
             this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Location = new System.Drawing.Point(620, 3);
+            this.groupBox2.Location = new System.Drawing.Point(8, 6);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(683, 164);
+            this.groupBox2.Size = new System.Drawing.Size(688, 160);
             this.groupBox2.TabIndex = 236;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Detalle del Orden:";
+            this.groupBox2.Text = "Detalle de la Orden de Compra:";
             // 
             // label21
             // 
@@ -360,37 +365,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.label17.TabIndex = 255;
             this.label17.Text = "S/.";
             // 
-            // rdtServicioProducto
-            // 
-            this.rdtServicioProducto.AutoSize = true;
-            this.rdtServicioProducto.Location = new System.Drawing.Point(560, 61);
-            this.rdtServicioProducto.Name = "rdtServicioProducto";
-            this.rdtServicioProducto.Size = new System.Drawing.Size(63, 17);
-            this.rdtServicioProducto.TabIndex = 251;
-            this.rdtServicioProducto.TabStop = true;
-            this.rdtServicioProducto.Text = "Servicio";
-            this.rdtServicioProducto.UseVisualStyleBackColor = true;
-            this.rdtServicioProducto.CheckedChanged += new System.EventHandler(this.rdtServicioProducto_CheckedChanged);
-            // 
-            // rdtCompraProducto
-            // 
-            this.rdtCompraProducto.AutoSize = true;
-            this.rdtCompraProducto.Location = new System.Drawing.Point(464, 62);
-            this.rdtCompraProducto.Name = "rdtCompraProducto";
-            this.rdtCompraProducto.Size = new System.Drawing.Size(61, 17);
-            this.rdtCompraProducto.TabIndex = 250;
-            this.rdtCompraProducto.TabStop = true;
-            this.rdtCompraProducto.Text = "Compra";
-            this.rdtCompraProducto.UseVisualStyleBackColor = true;
-            this.rdtCompraProducto.CheckedChanged += new System.EventHandler(this.rdtCompraProducto_CheckedChanged);
-            // 
-            // txtProductoServicio
-            // 
-            this.txtProductoServicio.Location = new System.Drawing.Point(115, 29);
-            this.txtProductoServicio.Name = "txtProductoServicio";
-            this.txtProductoServicio.Size = new System.Drawing.Size(407, 20);
-            this.txtProductoServicio.TabIndex = 249;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -407,6 +381,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.txtCantidadProducto.Name = "txtCantidadProducto";
             this.txtCantidadProducto.Size = new System.Drawing.Size(114, 20);
             this.txtCantidadProducto.TabIndex = 247;
+            this.txtCantidadProducto.TextChanged += new System.EventHandler(this.txtCantidadProducto_TextChanged);
             // 
             // label3
             // 
@@ -515,7 +490,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.dtpFechaAdquisicion.CalendarMonthBackground = System.Drawing.SystemColors.Highlight;
             this.dtpFechaAdquisicion.Enabled = false;
             this.dtpFechaAdquisicion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaAdquisicion.Location = new System.Drawing.Point(324, 67);
+            this.dtpFechaAdquisicion.Location = new System.Drawing.Point(323, 64);
             this.dtpFechaAdquisicion.Name = "dtpFechaAdquisicion";
             this.dtpFechaAdquisicion.Size = new System.Drawing.Size(104, 20);
             this.dtpFechaAdquisicion.TabIndex = 233;
@@ -534,7 +509,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             // 
             this.groupBox1.Controls.Add(this.txtCorreo);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.btnBuscar);
             this.groupBox1.Controls.Add(this.txtNombreProveedor);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txtCelular);
@@ -547,9 +521,9 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.groupBox1.Controls.Add(this.label34);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.txtProveedor);
-            this.groupBox1.Location = new System.Drawing.Point(6, 3);
+            this.groupBox1.Location = new System.Drawing.Point(15, 64);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(608, 164);
+            this.groupBox1.Size = new System.Drawing.Size(608, 169);
             this.groupBox1.TabIndex = 233;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Proveedor";
@@ -570,20 +544,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.label5.Size = new System.Drawing.Size(53, 15);
             this.label5.TabIndex = 241;
             this.label5.Text = "Correo : ";
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
-            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(507, 107);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(94, 46);
-            this.btnBuscar.TabIndex = 239;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtNombreProveedor
             // 
@@ -638,10 +598,10 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(90, 104);
+            this.txtDireccion.Location = new System.Drawing.Point(90, 116);
             this.txtDireccion.Multiline = true;
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(236, 32);
+            this.txtDireccion.Size = new System.Drawing.Size(236, 47);
             this.txtDireccion.TabIndex = 113;
             // 
             // label18
@@ -691,9 +651,9 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             // pictureBox16
             // 
             this.pictureBox16.Image = global::pl_Gurkas.Properties.Resources.png;
-            this.pictureBox16.Location = new System.Drawing.Point(1248, -1);
+            this.pictureBox16.Location = new System.Drawing.Point(1264, 8);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(81, 64);
+            this.pictureBox16.Size = new System.Drawing.Size(81, 46);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox16.TabIndex = 237;
             this.pictureBox16.TabStop = false;
@@ -707,6 +667,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.cboProveedorActivo.Name = "cboProveedorActivo";
             this.cboProveedorActivo.Size = new System.Drawing.Size(335, 21);
             this.cboProveedorActivo.TabIndex = 99;
+            this.cboProveedorActivo.SelectedIndexChanged += new System.EventHandler(this.cboProveedorActivo_SelectedIndexChanged);
             // 
             // timer1
             // 
@@ -716,15 +677,114 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(629, 64);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(720, 206);
+            this.tabControl1.TabIndex = 243;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.groupBox2);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(712, 180);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Compra";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(712, 180);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Servicio";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Document = this.printDocument1;
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
+            // lbldireccion
+            // 
+            this.lbldireccion.AutoSize = true;
+            this.lbldireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldireccion.Location = new System.Drawing.Point(1160, 44);
+            this.lbldireccion.Name = "lbldireccion";
+            this.lbldireccion.Size = new System.Drawing.Size(23, 15);
+            this.lbldireccion.TabIndex = 244;
+            this.lbldireccion.Text = "dic";
+            // 
+            // lblruc
+            // 
+            this.lblruc.AutoSize = true;
+            this.lblruc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblruc.Location = new System.Drawing.Point(1238, 20);
+            this.lblruc.Name = "lblruc";
+            this.lblruc.Size = new System.Drawing.Size(24, 15);
+            this.lblruc.TabIndex = 245;
+            this.lblruc.Text = "ruc";
+            // 
+            // lblemp
+            // 
+            this.lblemp.AutoSize = true;
+            this.lblemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblemp.Location = new System.Drawing.Point(1218, 46);
+            this.lblemp.Name = "lblemp";
+            this.lblemp.Size = new System.Drawing.Size(32, 15);
+            this.lblemp.TabIndex = 246;
+            this.lblemp.Text = "emp";
+            // 
+            // lblnombrear
+            // 
+            this.lblnombrear.AutoSize = true;
+            this.lblnombrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnombrear.Location = new System.Drawing.Point(1189, 17);
+            this.lblnombrear.Name = "lblnombrear";
+            this.lblnombrear.Size = new System.Drawing.Size(43, 15);
+            this.lblnombrear.TabIndex = 247;
+            this.lblnombrear.Text = "nomar";
+            // 
+            // lblver
+            // 
+            this.lblver.AutoSize = true;
+            this.lblver.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblver.Location = new System.Drawing.Point(1189, 44);
+            this.lblver.Name = "lblver";
+            this.lblver.Size = new System.Drawing.Size(23, 15);
+            this.lblver.TabIndex = 248;
+            this.lblver.Text = "ver";
+            // 
             // frmRegistrarOrden
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1338, 644);
+            this.ClientSize = new System.Drawing.Size(1361, 651);
+            this.Controls.Add(this.lbldireccion);
+            this.Controls.Add(this.lblruc);
+            this.Controls.Add(this.lblemp);
+            this.Controls.Add(this.lblnombrear);
+            this.Controls.Add(this.lblver);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblHora);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.btnNuevo);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnEntrega);
             this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.btnCerrar);
@@ -745,6 +805,8 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -786,7 +848,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
         private System.Windows.Forms.TextBox txtCantidadProducto;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtCostoUnitario;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label9;
@@ -798,11 +859,8 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ComboBox cboProveedorActivo;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.TextBox txtProductoServicio;
         private System.Windows.Forms.ComboBox cboProducto;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton rdtServicioProducto;
-        private System.Windows.Forms.RadioButton rdtCompraProducto;
         private System.Windows.Forms.TextBox txtObservacion;
         private System.Windows.Forms.Label label11;
         private System.Drawing.Printing.PrintDocument printDocument1;
@@ -811,5 +869,14 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Windows.Forms.Label lbldireccion;
+        private System.Windows.Forms.Label lblruc;
+        private System.Windows.Forms.Label lblemp;
+        private System.Windows.Forms.Label lblnombrear;
+        private System.Windows.Forms.Label lblver;
     }
 }
