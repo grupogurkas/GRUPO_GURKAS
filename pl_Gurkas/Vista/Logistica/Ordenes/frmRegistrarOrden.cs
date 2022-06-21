@@ -383,17 +383,16 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             string nombre_user = Datos.DatosUsuario._usuario;
             try
             {
-                SqlCommand comando = new SqlCommand("sp_registrar_orden @num_orden ,@cod_proveedor , @ruc,@nombre_contacto  ,@direccion ,@correo, @telefono, @celular, @ENTREGADO_NOMBRE," +
-                    "@COD_ENTREGADO, @DNI_ENTREGADO, @COD_PRODUCT, @cantidad_producto, , @costo_unitario ,@costo_total ,@observacion_producto,   @FECHA_VALE," +
-                    "@fecha_orden, @item_vale, @fecha_registro , @fecha_sistema" +
-                    ", @hora, @usuario ", conexion.conexionBD());
+                SqlCommand comando = new SqlCommand("sp_registrar_orden @num_orden_compra,@cod_proveedor ,@nombre_proveedor ,@nombre_contacto  , @ruc ,   @direccion ,"+
+                                                    "@correo, @telefono, @celular, @fecha_orden_compra, @item_vale, @COD_PRODUCT, @DESP_PRODUCTO, @cantidad_producto,"+
+                                                    "@costo_unitario, @costo_total, @observacion, @hora, @usuario, @fecha_registro", conexion.conexionBD());
 
                 foreach (DataGridViewRow row in dgvListaProducto.Rows)
                 {
                     if (row.Cells["ID"].Value != null && row.Cells["CodProducto"].Value != null)
                     {
                         comando.Parameters.Clear();
-                        comando.Parameters.AddWithValue("@num_orden", SqlDbType.VarChar).Value = NUM_ORDEN;
+                        comando.Parameters.AddWithValue("@num_orden_compra", SqlDbType.VarChar).Value = NUM_ORDEN;
                         comando.Parameters.AddWithValue("@cod_proveedor", SqlDbType.Int).Value = cod_proveedor;
                         comando.Parameters.AddWithValue("@nombre_proveedor", SqlDbType.Int).Value = nomb_proveedor;
                         comando.Parameters.AddWithValue("@nombre_contacto", SqlDbType.VarChar).Value = contacto;
@@ -402,9 +401,9 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
                         comando.Parameters.AddWithValue("@correo", SqlDbType.VarChar).Value = correo;
                         comando.Parameters.AddWithValue("@telefono", SqlDbType.VarChar).Value = telefono;
                         comando.Parameters.AddWithValue("@celular", SqlDbType.VarChar).Value = celular;
-                        comando.Parameters.AddWithValue("@fecha_orden", SqlDbType.VarChar).Value = fecha_vale;
+                        comando.Parameters.AddWithValue("@fecha_orden_compra", SqlDbType.VarChar).Value = fecha_vale;
                         comando.Parameters.AddWithValue("@ITEM_VALE", Convert.ToInt32(row.Cells["ID"].Value));
-                        comando.Parameters.AddWithValue("@COD_PRODUCTO", Convert.ToString(row.Cells["CodProducto"].Value));
+                        comando.Parameters.AddWithValue("@COD_PRODUCT", Convert.ToString(row.Cells["CodProducto"].Value));
                         comando.Parameters.AddWithValue("@DESP_PRODUCTO", Convert.ToString(row.Cells["Nombre"].Value));
                         comando.Parameters.AddWithValue("@cantidad_producto", Convert.ToString(row.Cells["Cantidad"].Value));
                         comando.Parameters.AddWithValue("@costo_unitario", Convert.ToString(row.Cells["CostoUnitario"].Value));
