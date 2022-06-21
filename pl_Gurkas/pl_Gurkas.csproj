@@ -494,6 +494,18 @@
     <Compile Include="Vista\Logistica\entrada\HistorialEntradaProducto.Designer.cs">
       <DependentUpon>HistorialEntradaProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Logistica\Historial\frmBuscarVale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Logistica\Historial\frmBuscarVale.Designer.cs">
+      <DependentUpon>frmBuscarVale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Logistica\Historial\frmHistorialOrdenCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Logistica\Historial\frmHistorialOrdenCompra.Designer.cs">
+      <DependentUpon>frmHistorialOrdenCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Logistica\Inventario\frmKardex.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1154,6 +1166,12 @@
     <EmbeddedResource Include="Vista\Logistica\entrada\HistorialEntradaProducto.resx">
       <DependentUpon>HistorialEntradaProducto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Logistica\Historial\frmBuscarVale.resx">
+      <DependentUpon>frmBuscarVale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Logistica\Historial\frmHistorialOrdenCompra.resx">
+      <DependentUpon>frmHistorialOrdenCompra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\Inventario\frmKardex.resx">
       <DependentUpon>frmKardex.cs</DependentUpon>
     </EmbeddedResource>
@@ -1637,6 +1655,7 @@
   <ItemGroup>
     <Content Include="png %281%29.ico" />
     <Content Include="png iconb.ico" />
+    <None Include="Resources\pdf_32.png" />
     <None Include="Resources\1logogurkas.JPG" />
     <None Include="Resources\logogurkas.JPG" />
     <None Include="Resources\Cuerpo.JPG" />
