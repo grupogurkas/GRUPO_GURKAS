@@ -45,11 +45,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
 
         private void button43_Click(object sender, EventArgs e)
         {
-            printDocument1.Print();
-           //BarcodeLib.Barcode Codigo = new BarcodeLib.Barcode();
-          //Codigo.IncludeLabel = true;
+
+           // BarcodeLib.Barcode Codigo = new BarcodeLib.Barcode();
+          //  Codigo.IncludeLabel = true;
           //PanelCodigo.BackgroundImage = Codigo.Encode(BarcodeLib.TYPE.CODE128, cboCodigoBarra.Text, Color.Black, Color.White, 350, 100);
-          //btnGuardarCodigo.Enabled = true;
+          //  btnGuardarCodigo.Enabled = true;
         }
 
         private void btnGuardarCodigo_Click(object sender, EventArgs e)
@@ -92,11 +92,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             {
                 this.Close();
             }
-        }
-
-        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
-        {
-            e.Graphics.DrawImage(PanelCodigo.BackgroundImage, 50, 20);
         }
     }
 }

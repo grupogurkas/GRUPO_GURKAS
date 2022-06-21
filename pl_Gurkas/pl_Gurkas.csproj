@@ -24,7 +24,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <UpdateUrl>\\192.168.1.13\compartida\SISTEMA_GURKAS\</UpdateUrl>
-    <ApplicationRevision>38</ApplicationRevision>
+    <ApplicationRevision>39</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -476,47 +476,35 @@
     <Compile Include="Vista\Logistica\CargoEntrega\frmEntregaMaterial.Designer.cs">
       <DependentUpon>frmEntregaMaterial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Logistica\Historial\fmrHistorialOrdenCompra.cs">
+    <Compile Include="Vista\Logistica\entrada\frmBuscarEntradaProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Logistica\Historial\fmrHistorialOrdenCompra.Designer.cs">
-      <DependentUpon>fmrHistorialOrdenCompra.cs</DependentUpon>
+    <Compile Include="Vista\Logistica\entrada\frmBuscarEntradaProducto.Designer.cs">
+      <DependentUpon>frmBuscarEntradaProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Logistica\Historial\frmBuscarVale.cs">
+    <Compile Include="Vista\Logistica\entrada\frmEntradaProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Logistica\Historial\frmBuscarVale.Designer.cs">
-      <DependentUpon>frmBuscarVale.cs</DependentUpon>
+    <Compile Include="Vista\Logistica\entrada\frmEntradaProducto.Designer.cs">
+      <DependentUpon>frmEntradaProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Logistica\Historial\frmHistorialCargoDestruccion.cs">
+    <Compile Include="Vista\Logistica\entrada\HistorialEntradaProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Logistica\Historial\frmHistorialCargoDestruccion.Designer.cs">
-      <DependentUpon>frmHistorialCargoDestruccion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\Logistica\Historial\frmHistorialCargoEntrega.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\Logistica\Historial\frmHistorialCargoEntrega.Designer.cs">
-      <DependentUpon>frmHistorialCargoEntrega.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\Logistica\Historial\frmHistorialCargoInternamiento.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\Logistica\Historial\frmHistorialCargoInternamiento.Designer.cs">
-      <DependentUpon>frmHistorialCargoInternamiento.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\Logistica\Historial\frmHistorialOrdenServicio.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\Logistica\Historial\frmHistorialOrdenServicio.Designer.cs">
-      <DependentUpon>frmHistorialOrdenServicio.cs</DependentUpon>
+    <Compile Include="Vista\Logistica\entrada\HistorialEntradaProducto.Designer.cs">
+      <DependentUpon>HistorialEntradaProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Logistica\Inventario\frmKardex.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vista\Logistica\Inventario\frmKardex.Designer.cs">
       <DependentUpon>frmKardex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Logistica\Ordenes\frmOrdenServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Logistica\Ordenes\frmOrdenServicio.Designer.cs">
+      <DependentUpon>frmOrdenServicio.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Logistica\Ordenes\frmRegistrarOrden.cs">
       <SubType>Form</SubType>
@@ -559,6 +547,24 @@
     </Compile>
     <Compile Include="Vista\Logistica\Reporte\frmReportePersonal.Designer.cs">
       <DependentUpon>frmReportePersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Logistica\salida\frmBuscarSalidaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Logistica\salida\frmBuscarSalidaProducto.Designer.cs">
+      <DependentUpon>frmBuscarSalidaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Logistica\salida\frmHistorialSalidaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Logistica\salida\frmHistorialSalidaProducto.Designer.cs">
+      <DependentUpon>frmHistorialSalidaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Logistica\salida\frmSalidaDeProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Logistica\salida\frmSalidaDeProducto.Designer.cs">
+      <DependentUpon>frmSalidaDeProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\MensajeEmergente\DialogForm.cs">
       <SubType>Form</SubType>
@@ -1139,14 +1145,20 @@
     <EmbeddedResource Include="Vista\Logistica\CargoEntrega\frmEntregaMaterial.resx">
       <DependentUpon>frmEntregaMaterial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Logistica\Historial\fmrHistorialOrdenCompra.resx">
-      <DependentUpon>fmrHistorialOrdenCompra.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\Logistica\entrada\frmBuscarEntradaProducto.resx">
+      <DependentUpon>frmBuscarEntradaProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Logistica\Historial\frmBuscarVale.resx">
-      <DependentUpon>frmBuscarVale.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\Logistica\entrada\frmEntradaProducto.resx">
+      <DependentUpon>frmEntradaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Logistica\entrada\HistorialEntradaProducto.resx">
+      <DependentUpon>HistorialEntradaProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\Inventario\frmKardex.resx">
       <DependentUpon>frmKardex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Logistica\Ordenes\frmOrdenServicio.resx">
+      <DependentUpon>frmOrdenServicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\Ordenes\frmRegistrarOrden.resx">
       <DependentUpon>frmRegistrarOrden.cs</DependentUpon>
@@ -1168,6 +1180,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\Reporte\frmReportePersonal.resx">
       <DependentUpon>frmReportePersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Logistica\salida\frmBuscarSalidaProducto.resx">
+      <DependentUpon>frmBuscarSalidaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Logistica\salida\frmHistorialSalidaProducto.resx">
+      <DependentUpon>frmHistorialSalidaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Logistica\salida\frmSalidaDeProducto.resx">
+      <DependentUpon>frmSalidaDeProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\MensajeEmergente\DialogForm.resx">
       <DependentUpon>DialogForm.cs</DependentUpon>
@@ -1616,7 +1637,6 @@
   <ItemGroup>
     <Content Include="png %281%29.ico" />
     <Content Include="png iconb.ico" />
-    <None Include="Resources\pdf_32.png" />
     <None Include="Resources\1logogurkas.JPG" />
     <None Include="Resources\logogurkas.JPG" />
     <None Include="Resources\Cuerpo.JPG" />

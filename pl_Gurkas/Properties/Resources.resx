@@ -118,275 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="familia_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\familia_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ENTREGA_CABEZERA_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ENTREGA_CABEZERA_1.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="admin__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\admin (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="apoyo_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\apoyo_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_validare_300__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon-validare-300 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="operaciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\operaciones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="version_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\version_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cerrarsesion_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cerrarsesion_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mover_personal_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mover_personal_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="delete_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\delete_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Excel_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Excel_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ENTREGA_CABEZERA_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ENTREGA_CABEZERA_3.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="save_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\save_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="planillas_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\planillas_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="historialplanilla_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\historialplanilla_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_csv_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_csv_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cuerpo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cuerpo.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="boleta_PAGO_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boleta_PAGO_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="plataformaplanilla_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plataformaplanilla_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="salir_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\salir_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="png__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png (1).ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_1logogurkas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1logogurkas.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="turno_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\turno_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="asistenciapersonal1_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\asistenciapersonal1_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="png_iconb" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\png iconb.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="edit_USer_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\edit_USer_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="paswprdGurkas_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\paswprdGurkas_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="asistencias_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\asistencias_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="reportepersonal_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reportepersonal_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="conexion_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\conexion_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Minimize_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Minimize_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Planilla_conta_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Planilla_conta_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Unidad_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Unidad_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="edit_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\edit_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="armamento_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\armamento_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SALIDA_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SALIDA_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="vercion_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\vercion_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="update_password_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\update_password_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_archive_folder_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_archive_folder_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="asistecnia_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\asistecnia_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sucamec_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sucamec_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sede_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sede_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="consultarPersonal_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\consultarPersonal_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="plame_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plame_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="time_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\time_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="codigobarra" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\codigobarra.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="reportes_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reportes_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MiniaturaYoutube" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MiniaturaYoutube.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="seleccion_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\seleccion_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="reporte_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reporte_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="almacen_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\almacen_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="reclamo_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reclamo_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="trabajador_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\trabajador_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="save_32_png_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\save_32.png_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="postulante_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\postulante_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LoginUser_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LoginUser_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="empleado_update_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\empleado_update_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eliminar_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eliminar_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="administrador_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\administrador_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="activo_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\activo_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="nuevo_emplado_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nuevo_emplado_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gurkas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gurkas.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="reclutamiento_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reclutamiento_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="planillas_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\planillas_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="print_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\print_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GGPrincipal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GGPrincipal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="RecursosHumanos_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RecursosHumanos_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="estado_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\estado_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="contabilidad_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\contabilidad_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AFP_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AFP_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icono_Sucamec_1__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icono-Sucamec-1 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="boletapago_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boletapago_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="subir_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\subir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logistica_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logistica_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="descarga_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\descarga_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="RENGANCHYE_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RENGANCHYE_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="personalrrhh_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\personalrrhh_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icono_Sucamec_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icono-Sucamec-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="buscar_afp_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\buscar_afp_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="png" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="migrar_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\migrar_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="buscar_empleado_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\buscar_empleado_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GurkasInicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GurkasInicio.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="planilla_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\planilla_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="add_trabajador_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add_trabajador_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="historia_user_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\historia_user_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="estatura_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\estatura_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gurkas_triangle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gurkas-triangle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="operaciones_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\operaciones_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="his_user_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\his_user_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="comercial" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\comercial.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -394,73 +133,331 @@
   <data name="date_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\date_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icono_gurkas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_gurkas.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cerrar_sesion_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cerrar_sesion_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="licitaciones_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\licitaciones_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="plataformaplanilla_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plataformaplanilla_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="carnetsucamec_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carnetsucamec_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ENTREGA_CABEZERA" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ENTREGA_CABEZERA.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="salir_empleado_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\salir_empleado_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="money_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\money_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="imagen_codigo__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imagen_codigo (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="png_iconb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\png iconb.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Close_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Close_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="vercion_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vercion_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="imagen_codigo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imagen_codigo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="contabilidad_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\contabilidad_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="edit_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\edit_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="planilla_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\planilla_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cargamasiva_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cargamasiva_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="save_32_png_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save_32.png_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Planilla_conta_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Planilla_conta_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="buscar_empleado_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buscar_empleado_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="comercial_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\comercial_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="historia_user_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\historia_user_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Centro_Control_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Centro_Control_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="reportes_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reportes_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boleta_PAGO_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boleta_PAGO_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Minimize_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Minimize_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SALIDA_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SALIDA_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_USer_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_USer_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GurkasInicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GurkasInicio.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_archive_folder_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_archive_folder_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trabajador_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trabajador_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_validare_300__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-validare-300 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Excel_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Excel_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="admin__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\admin (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icono_Sucamec_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono-Sucamec-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icono_Sucamec_1__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono-Sucamec-1 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="consultarPersonal_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\consultarPersonal_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="operaciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\operaciones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="delete_docuemnt_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delete_docuemnt_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="his_user_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\his_user_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MiniaturaYoutube" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MiniaturaYoutube.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buscar_afp_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buscar_afp_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="empleado_update_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\empleado_update_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add_trabajador_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_trabajador_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asistencias_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\asistencias_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="update_password_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\update_password_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gurkas_triangle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gurkas-triangle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paswprdGurkas_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paswprdGurkas_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asistecnia_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\asistecnia_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gurkas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gurkas.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="familia_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\familia_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="time_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\time_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="salir_empleado_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salir_empleado_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LoginUser_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LoginUser_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RENGANCHYE_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RENGANCHYE_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="seleccion_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seleccion_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_csv_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_csv_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nuevo_emplado_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nuevo_emplado_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="apoyo_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\apoyo_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="turno_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\turno_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GGPrincipal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GGPrincipal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boletapago_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boletapago_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="personal_baja_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\personal_baja_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="delete_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\delete_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="salir_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salir_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="subir_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\subir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="codigobarra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\codigobarra.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imagen_codigo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imagen_codigo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imagen_codigo__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imagen_codigo (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="descarga_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\descarga_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="print_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\print_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="activo_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\activo_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="administrador_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\administrador_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="armamento_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\armamento_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asistenciapersonal1_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\asistenciapersonal1_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bloqueo_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bloqueo_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="subirdatos_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\subirdatos_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cargamasiva_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cargamasiva_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Centro_Control_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Centro_Control_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cerrarsesion_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cerrarsesion_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="comercial_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\comercial_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="conexion_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\conexion_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="estado_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\estado_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Folders_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Folders_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icono_gurkas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icono_gurkas.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="licitaciones_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\licitaciones_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pdf_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pdf_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logistica_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logistica_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="migrar_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\migrar_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mover_personal_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mover_personal_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="operaciones_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\operaciones_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="personalrrhh_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personalrrhh_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="planillas_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\planillas_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="postulante_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\postulante_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reclamo_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reclamo_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RecursosHumanos_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RecursosHumanos_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reportepersonal_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reportepersonal_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reporte_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reporte_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sede_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sede_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sucamec_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sucamec_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Unidad_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Unidad_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="version_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\version_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AFP_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AFP_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="almacen_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\almacen_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carnetsucamec_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carnetsucamec_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="historialplanilla_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\historialplanilla_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plame_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plame_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="planillas_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\planillas_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Planilla_conta_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Planilla_conta_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Planilla_conta_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Planilla_conta_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plataformaplanilla_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plataformaplanilla_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plataformaplanilla_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plataformaplanilla_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="subirdatos_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\subirdatos_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eliminar_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eliminar_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ENTREGA_CABEZERA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ENTREGA_CABEZERA.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ENTREGA_CABEZERA_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ENTREGA_CABEZERA_3.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ENTREGA_CABEZERA_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ENTREGA_CABEZERA_1.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cuerpo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cuerpo.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1logogurkas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1logogurkas.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

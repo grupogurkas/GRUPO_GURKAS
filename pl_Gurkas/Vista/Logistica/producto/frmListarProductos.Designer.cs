@@ -73,7 +73,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.btnCerrar);
-            this.groupBox1.Location = new System.Drawing.Point(10, 12);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1299, 124);
             this.groupBox1.TabIndex = 12;
