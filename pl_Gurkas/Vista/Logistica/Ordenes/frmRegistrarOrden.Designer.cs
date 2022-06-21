@@ -455,7 +455,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(257, 98);
+            this.label6.Location = new System.Drawing.Point(256, 103);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 30);
             this.label6.TabIndex = 230;
@@ -475,7 +475,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             // 
             // txtNumOrden
             // 
-            this.txtNumOrden.Location = new System.Drawing.Point(324, 102);
+            this.txtNumOrden.Location = new System.Drawing.Point(323, 107);
             this.txtNumOrden.Name = "txtNumOrden";
             this.txtNumOrden.Size = new System.Drawing.Size(104, 20);
             this.txtNumOrden.TabIndex = 231;
