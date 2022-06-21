@@ -665,10 +665,5 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         {
 
         }
-
-        private void txtstockminimo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
