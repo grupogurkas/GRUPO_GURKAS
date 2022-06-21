@@ -113,7 +113,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
         public void GenerarNumOrden()
         {
             string resultado = "";
-            SqlCommand comando = new SqlCommand("SELECT ROW_NUMBER()OVER(ORDER BY num_orden)AS 't'  FROM t_orden_producto_numb GROUP BY num_orden", conexion.conexionBD());
+            SqlCommand comando = new SqlCommand("SELECT ROW_NUMBER()OVER(ORDER BY num_orden_compra)AS 't'  FROM t_orden_compra GROUP BY num_orden_compra", conexion.conexionBD());
             SqlDataReader recorre = comando.ExecuteReader();
             while (recorre.Read())
             {
@@ -367,7 +367,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
 
         public void registarvaleordencompar()
         {
-            int cod_proveedor = cboProveedorActivo.SelectedIndex;
+            string cod_proveedor = cboProveedorActivo.SelectedValue.ToString();
             string nomb_proveedor = txtProveedor.Text;
             string ruc = txtruc.Text;
             string contacto = txtNombreProveedor.Text;
@@ -383,9 +383,9 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             string nombre_user = Datos.DatosUsuario._usuario;
             try
             {
-                SqlCommand comando = new SqlCommand("sp_registrar_orden @num_orden_compra,@cod_proveedor ,@nombre_proveedor ,@nombre_contacto  , @ruc ,   @direccion ,"+
-                                                    "@correo, @telefono, @celular, @fecha_orden_compra, @item_vale, @COD_PRODUCT, @DESP_PRODUCTO, @cantidad_producto,"+
-                                                    "@costo_unitario, @costo_total, @observacion, @hora, @usuario, @fecha_registro", conexion.conexionBD());
+                SqlCommand comando = new SqlCommand("sp_registrar_orden @num_orden_compra,@cod_proveedor,@nombre_proveedor,@nombre_contacto,@ruc," +
+                    "@direccion,@correo,@telefono,@celular,@fecha_orden_compra,@item_vale,@COD_PRODUCT,@DESP_PRODUCTO,@cantidad_producto,@costo_unitario," +
+                    "@costo_total,@observacion,@hora,@usuario,@fecha_registro", conexion.conexionBD());
 
                 foreach (DataGridViewRow row in dgvListaProducto.Rows)
                 {
@@ -393,8 +393,8 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
                     {
                         comando.Parameters.Clear();
                         comando.Parameters.AddWithValue("@num_orden_compra", SqlDbType.VarChar).Value = NUM_ORDEN;
-                        comando.Parameters.AddWithValue("@cod_proveedor", SqlDbType.Int).Value = cod_proveedor;
-                        comando.Parameters.AddWithValue("@nombre_proveedor", SqlDbType.Int).Value = nomb_proveedor;
+                        comando.Parameters.AddWithValue("@cod_proveedor", SqlDbType.VarChar).Value = cod_proveedor;
+                        comando.Parameters.AddWithValue("@nombre_proveedor", SqlDbType.VarChar).Value = nomb_proveedor;
                         comando.Parameters.AddWithValue("@nombre_contacto", SqlDbType.VarChar).Value = contacto;
                         comando.Parameters.AddWithValue("@ruc", SqlDbType.VarChar).Value = ruc;
                         comando.Parameters.AddWithValue("@direccion", SqlDbType.VarChar).Value = direccion;
@@ -402,19 +402,19 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
                         comando.Parameters.AddWithValue("@telefono", SqlDbType.VarChar).Value = telefono;
                         comando.Parameters.AddWithValue("@celular", SqlDbType.VarChar).Value = celular;
                         comando.Parameters.AddWithValue("@fecha_orden_compra", SqlDbType.VarChar).Value = fecha_vale;
-                        comando.Parameters.AddWithValue("@ITEM_VALE", Convert.ToInt32(row.Cells["ID"].Value));
+                        comando.Parameters.AddWithValue("@item_vale", Convert.ToInt32(row.Cells["ID"].Value));
                         comando.Parameters.AddWithValue("@COD_PRODUCT", Convert.ToString(row.Cells["CodProducto"].Value));
                         comando.Parameters.AddWithValue("@DESP_PRODUCTO", Convert.ToString(row.Cells["Nombre"].Value));
-                        comando.Parameters.AddWithValue("@cantidad_producto", Convert.ToString(row.Cells["Cantidad"].Value));
-                        comando.Parameters.AddWithValue("@costo_unitario", Convert.ToString(row.Cells["CostoUnitario"].Value));
-                        comando.Parameters.AddWithValue("@costo_total", Convert.ToInt32(row.Cells["CostoTotal"].Value));
+                        comando.Parameters.AddWithValue("@cantidad_producto", Convert.ToDouble(row.Cells["Cantidad"].Value));
+                        comando.Parameters.AddWithValue("@costo_unitario", Convert.ToDouble(row.Cells["CostoUnitario"].Value));
+                        comando.Parameters.AddWithValue("@costo_total", Convert.ToDouble(row.Cells["CostoTotal"].Value));
                         comando.Parameters.AddWithValue("@observacion", SqlDbType.VarChar).Value = observacion;
-                        comando.Parameters.AddWithValue("@HORA", SqlDbType.VarChar).Value = hora;
-                        comando.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_user;
-                        comando.Parameters.AddWithValue("@fecha_registro", SqlDbType.VarChar).Value = fecha_;
+                        comando.Parameters.AddWithValue("@hora", SqlDbType.VarChar).Value = hora;
+                        comando.Parameters.AddWithValue("@usuario", SqlDbType.VarChar).Value = nombre_user;
+                        comando.Parameters.AddWithValue("@fecha_registro", SqlDbType.DateTime).Value = fecha_;
                     }
                 }
-
+                txtObservacion.Text = comando.ToString();
                 MessageBox.Show("Datos registrado correptamente");
             }
             catch (Exception ex)
@@ -431,9 +431,9 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             DialogResult result = PrintDialog1.ShowDialog();
             if (result == DialogResult.OK)
             {
-                printDocument1.Print();
+               // printDocument1.Print();
                 registarvaleordencompar();
-                //limpiardatos();
+                limpiardatos();
             }
            //printPreviewDialog1.ShowDialog();
         }

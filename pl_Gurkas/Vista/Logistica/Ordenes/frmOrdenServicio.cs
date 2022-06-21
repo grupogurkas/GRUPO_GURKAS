@@ -83,7 +83,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
         public void GenerarNumOrden()
         {
             string resultado = "";
-            SqlCommand comando = new SqlCommand("SELECT ROW_NUMBER()OVER(ORDER BY num_orden)AS 't'  FROM t_orden_producto_numb GROUP BY num_orden", conexion.conexionBD());
+            SqlCommand comando = new SqlCommand("SELECT ROW_NUMBER()OVER(ORDER BY num_orden_compra)AS 't'  FROM t_orden_compra GROUP BY num_orden_compra", conexion.conexionBD());
             SqlDataReader recorre = comando.ExecuteReader();
             while (recorre.Read())
             {
