@@ -85,11 +85,13 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.lbldni = new System.Windows.Forms.Label();
             this.lbldnientr = new System.Windows.Forms.Label();
             this.lblcodentre = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaProducto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnNuevo
@@ -659,6 +661,10 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.lblcodentre.TabIndex = 239;
             this.lblcodentre.Text = "codentre";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // frmEntregaMaterial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -696,6 +702,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaProducto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -757,5 +764,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private System.Windows.Forms.TextBox txtstock;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtstockminimo;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
