@@ -18,6 +18,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
         Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
         private Timer ti;
         private DataTable dt;
+
         int i = 0;
         private int numberOfItemsPerPage = 0;
         private int numberOfItemsPrintedSoFar = 0;
