@@ -365,26 +365,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             }
         }
 
-        private void btnImprimir_Click_1(object sender, EventArgs e)
-        {
-            /*System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
-            PrintDialog1.AllowSomePages = true;
-            PrintDialog1.ShowHelp = true;
-            PrintDialog1.Document = printDocument1;
-            DialogResult result = PrintDialog1.ShowDialog();
-            if (result == DialogResult.OK)
-            {
-                printDocument1.Print();
-                //registarvale();
-                //limpiardatos();
-            }*/
-           printPreviewDialog1.ShowDialog();
-        }
-        private void btnEntrega_Click(object sender, EventArgs e)
-        {
-            registrarOrden();
-        }
-        private void registrarOrden()
+        public void registarvaleordencompar()
         {
             int cod_proveedor = cboProveedorActivo.SelectedIndex;
             string nomb_proveedor = txtProveedor.Text;
@@ -396,10 +377,10 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             string celular = txtCelular.Text;
             string NUM_ORDEN = txtNumOrden.Text;
             string observacion = txtObservacion.Text;
+            string fecha_ = dtpFechaAdquisicion.Text;
             string fecha_vale = lblFecha.Text;
             string hora = lblHora.Text;
             string nombre_user = Datos.DatosUsuario._usuario;
-           
             try
             {
                 SqlCommand comando = new SqlCommand("sp_registrar_orden @num_orden ,@cod_proveedor , @ruc,@nombre_contacto  ,@direccion ,@correo, @telefono, @celular, @ENTREGADO_NOMBRE," +
@@ -410,10 +391,11 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
                 foreach (DataGridViewRow row in dgvListaProducto.Rows)
                 {
                     if (row.Cells["ID"].Value != null && row.Cells["CodProducto"].Value != null)
-                    {  
+                    {
                         comando.Parameters.Clear();
                         comando.Parameters.AddWithValue("@num_orden", SqlDbType.VarChar).Value = NUM_ORDEN;
                         comando.Parameters.AddWithValue("@cod_proveedor", SqlDbType.Int).Value = cod_proveedor;
+                        comando.Parameters.AddWithValue("@nombre_proveedor", SqlDbType.Int).Value = nomb_proveedor;
                         comando.Parameters.AddWithValue("@nombre_contacto", SqlDbType.VarChar).Value = contacto;
                         comando.Parameters.AddWithValue("@ruc", SqlDbType.VarChar).Value = ruc;
                         comando.Parameters.AddWithValue("@direccion", SqlDbType.VarChar).Value = direccion;
@@ -424,13 +406,13 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
                         comando.Parameters.AddWithValue("@ITEM_VALE", Convert.ToInt32(row.Cells["ID"].Value));
                         comando.Parameters.AddWithValue("@COD_PRODUCTO", Convert.ToString(row.Cells["CodProducto"].Value));
                         comando.Parameters.AddWithValue("@DESP_PRODUCTO", Convert.ToString(row.Cells["Nombre"].Value));
-                        comando.Parameters.AddWithValue("@OBSERVACION_PRODUCTO", Convert.ToString(row.Cells["Cantidad"].Value));
-                        comando.Parameters.AddWithValue("@CONDICION_PRODUCTO", Convert.ToString(row.Cells["CostoUnitario"].Value));
-                        comando.Parameters.AddWithValue("@CANTIDAD_SOLICITADA", Convert.ToInt32(row.Cells["CostoTotal"].Value));
-                        comando.Parameters.AddWithValue("@observacion_producto", SqlDbType.VarChar).Value = observacion;
+                        comando.Parameters.AddWithValue("@cantidad_producto", Convert.ToString(row.Cells["Cantidad"].Value));
+                        comando.Parameters.AddWithValue("@costo_unitario", Convert.ToString(row.Cells["CostoUnitario"].Value));
+                        comando.Parameters.AddWithValue("@costo_total", Convert.ToInt32(row.Cells["CostoTotal"].Value));
+                        comando.Parameters.AddWithValue("@observacion", SqlDbType.VarChar).Value = observacion;
                         comando.Parameters.AddWithValue("@HORA", SqlDbType.VarChar).Value = hora;
                         comando.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_user;
-
+                        comando.Parameters.AddWithValue("@fecha_registro", SqlDbType.VarChar).Value = fecha_;
                     }
                 }
 
@@ -440,6 +422,25 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             {
                 MessageBox.Show(" No se pudo realizar el guardado del la asistencia del personal \n\n Verifique su conexion al Servidor " + ex, "Error");
             }
+        }
+        private void btnImprimir_Click_1(object sender, EventArgs e)
+        {
+            System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
+            PrintDialog1.AllowSomePages = true;
+            PrintDialog1.ShowHelp = true;
+            PrintDialog1.Document = printDocument1;
+            DialogResult result = PrintDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                printDocument1.Print();
+                registarvaleordencompar();
+                //limpiardatos();
+            }
+           //printPreviewDialog1.ShowDialog();
+        }
+        private void btnEntrega_Click(object sender, EventArgs e)
+        {
+           
         }
         private void btnNuevo_Click(object sender, EventArgs e)
         {
