@@ -131,12 +131,7 @@ namespace pl_Gurkas.Vista.Principal
             this.kardexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroOrdenesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordenDeServicioCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.historialLogisticoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.historialOrdenDeCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.historialOrdenDeServicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.historialCargoEntregaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.historialCargoInternamientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.historialDestruccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordenDeServicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.planillaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personalToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.registroDeDatosLaboralesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -925,8 +920,7 @@ namespace pl_Gurkas.Vista.Principal
             this.productosEnAlmacenToolStripMenuItem,
             this.cargoEntregaToolStripMenuItem,
             this.inventariadoToolStripMenuItem,
-            this.registroOrdenesToolStripMenuItem,
-            this.historialLogisticoToolStripMenuItem});
+            this.registroOrdenesToolStripMenuItem});
             this.almacenToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.almacen_32;
             this.almacenToolStripMenuItem.Name = "almacenToolStripMenuItem";
             this.almacenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
@@ -1030,13 +1024,14 @@ namespace pl_Gurkas.Vista.Principal
             // kardexToolStripMenuItem
             // 
             this.kardexToolStripMenuItem.Name = "kardexToolStripMenuItem";
-            this.kardexToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.kardexToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.kardexToolStripMenuItem.Text = "Kardex";
             // 
             // registroOrdenesToolStripMenuItem
             // 
             this.registroOrdenesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ordenDeServicioCompraToolStripMenuItem});
+            this.ordenDeServicioCompraToolStripMenuItem,
+            this.ordenDeServicioToolStripMenuItem});
             this.registroOrdenesToolStripMenuItem.Name = "registroOrdenesToolStripMenuItem";
             this.registroOrdenesToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.registroOrdenesToolStripMenuItem.Text = "Registro Ordenes";
@@ -1044,52 +1039,16 @@ namespace pl_Gurkas.Vista.Principal
             // ordenDeServicioCompraToolStripMenuItem
             // 
             this.ordenDeServicioCompraToolStripMenuItem.Name = "ordenDeServicioCompraToolStripMenuItem";
-            this.ordenDeServicioCompraToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
-            this.ordenDeServicioCompraToolStripMenuItem.Text = "Orden de Servicio/Compra";
+            this.ordenDeServicioCompraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ordenDeServicioCompraToolStripMenuItem.Text = "Orden de Compra";
             this.ordenDeServicioCompraToolStripMenuItem.Click += new System.EventHandler(this.ordenDeServicioCompraToolStripMenuItem_Click_1);
             // 
-            // historialLogisticoToolStripMenuItem
+            // ordenDeServicioToolStripMenuItem
             // 
-            this.historialLogisticoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.historialOrdenDeCompraToolStripMenuItem,
-            this.historialOrdenDeServicioToolStripMenuItem,
-            this.historialCargoEntregaToolStripMenuItem,
-            this.historialCargoInternamientoToolStripMenuItem,
-            this.historialDestruccionToolStripMenuItem});
-            this.historialLogisticoToolStripMenuItem.Name = "historialLogisticoToolStripMenuItem";
-            this.historialLogisticoToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.historialLogisticoToolStripMenuItem.Text = "Historial Logistico";
-            // 
-            // historialOrdenDeCompraToolStripMenuItem
-            // 
-            this.historialOrdenDeCompraToolStripMenuItem.Name = "historialOrdenDeCompraToolStripMenuItem";
-            this.historialOrdenDeCompraToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
-            this.historialOrdenDeCompraToolStripMenuItem.Text = "Historial Orden de Compra";
-            this.historialOrdenDeCompraToolStripMenuItem.Click += new System.EventHandler(this.historialOrdenDeCompraToolStripMenuItem_Click);
-            // 
-            // historialOrdenDeServicioToolStripMenuItem
-            // 
-            this.historialOrdenDeServicioToolStripMenuItem.Name = "historialOrdenDeServicioToolStripMenuItem";
-            this.historialOrdenDeServicioToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
-            this.historialOrdenDeServicioToolStripMenuItem.Text = "Historial Orden de Servicio";
-            // 
-            // historialCargoEntregaToolStripMenuItem
-            // 
-            this.historialCargoEntregaToolStripMenuItem.Name = "historialCargoEntregaToolStripMenuItem";
-            this.historialCargoEntregaToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
-            this.historialCargoEntregaToolStripMenuItem.Text = "Historial Cargo Entrega";
-            // 
-            // historialCargoInternamientoToolStripMenuItem
-            // 
-            this.historialCargoInternamientoToolStripMenuItem.Name = "historialCargoInternamientoToolStripMenuItem";
-            this.historialCargoInternamientoToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
-            this.historialCargoInternamientoToolStripMenuItem.Text = "Historial Cargo Internamiento";
-            // 
-            // historialDestruccionToolStripMenuItem
-            // 
-            this.historialDestruccionToolStripMenuItem.Name = "historialDestruccionToolStripMenuItem";
-            this.historialDestruccionToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
-            this.historialDestruccionToolStripMenuItem.Text = "Historial Destruccion";
+            this.ordenDeServicioToolStripMenuItem.Name = "ordenDeServicioToolStripMenuItem";
+            this.ordenDeServicioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ordenDeServicioToolStripMenuItem.Text = "Orden de Servicio";
+            this.ordenDeServicioToolStripMenuItem.Click += new System.EventHandler(this.ordenDeServicioToolStripMenuItem_Click);
             // 
             // planillaToolStripMenuItem
             // 
@@ -1795,11 +1754,6 @@ namespace pl_Gurkas.Vista.Principal
         private System.Windows.Forms.ToolStripMenuItem ordenDeServicioCompraToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem personalPorDNIToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem destruccionLogisticoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem historialLogisticoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem historialOrdenDeCompraToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem historialOrdenDeServicioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem historialCargoEntregaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem historialCargoInternamientoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem historialDestruccionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ordenDeServicioToolStripMenuItem;
     }
 }

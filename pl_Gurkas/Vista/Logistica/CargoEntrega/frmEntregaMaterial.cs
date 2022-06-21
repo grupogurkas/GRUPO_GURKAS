@@ -538,19 +538,10 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         }
         private void btnCertificadoBasc_Click(object sender, EventArgs e)
         {
-            try
-            {
                 validar_campos();
                 imprimir();
-            }
-            catch (Exception E)
-            {
-                MessageBox.Show("Debe llenar todos los campos");
-            }
-
 
         }
-
 
         private void txtInformacionAdicional_TextChanged(object sender, EventArgs e)
         {

@@ -101,25 +101,6 @@ namespace pl_Gurkas.Datos.DataReportes.Logistica
             return dt;
         }
 
-        public DataTable BuscarVale(string cod_producto)
-        {
-            SqlCommand comando = conexion.conexionBD().CreateCommand();
-            comando.CommandType = CommandType.Text;
-            comando.CommandText = "sp_buscar_producto  @COD_PRODUCTO_MATERIAL";
-            comando.Parameters.AddWithValue("COD_PRODUCTO_MATERIAL", cod_producto);
-            comando.ExecuteNonQuery();
-            DataTable dt = new DataTable();
-            SqlDataAdapter dta = new SqlDataAdapter(comando);
-            dta.Fill(dt);
-            dt.Columns[0].ColumnName = "CODIGO DE PRODUCTO";
-            dt.Columns[1].ColumnName = "NOMBRE DE PRODUCTO";
-            dt.Columns[2].ColumnName = "STOCK INICIAL";
-            dt.Columns[3].ColumnName = "STOCK ACTUAL";
-            dt.Columns[4].ColumnName = "STOCK MINIMO";
-            dt.Columns[5].ColumnName = "FECHA DE REGISTRO";
-            return dt;
-        }
-
 
         public DataTable BuscarProductoPorCodigo(string cod_producto)
         {

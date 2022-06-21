@@ -32,15 +32,14 @@ namespace pl_Gurkas.Vista.Logistica.producto
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGenerarCodigoBarra));
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtCodigoBarra = new System.Windows.Forms.TextBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.cboProducto = new System.Windows.Forms.ComboBox();
             this.label42 = new System.Windows.Forms.Label();
             this.btnGuardarCodigo = new System.Windows.Forms.Button();
             this.PanelCodigo = new System.Windows.Forms.Panel();
-            this.btnImprimir = new System.Windows.Forms.Button();
-            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.btnGenerar = new System.Windows.Forms.Button();
+            this.txtCodigoBarra = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.SuspendLayout();
@@ -66,20 +65,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.panel1.Controls.Add(this.label42);
             this.panel1.Controls.Add(this.btnGuardarCodigo);
             this.panel1.Controls.Add(this.PanelCodigo);
-            this.panel1.Controls.Add(this.btnImprimir);
+            this.panel1.Controls.Add(this.btnGenerar);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(538, 296);
             this.panel1.TabIndex = 164;
-            // 
-            // txtCodigoBarra
-            // 
-            this.txtCodigoBarra.Location = new System.Drawing.Point(174, 85);
-            this.txtCodigoBarra.Name = "txtCodigoBarra";
-            this.txtCodigoBarra.Size = new System.Drawing.Size(227, 20);
-            this.txtCodigoBarra.TabIndex = 172;
             // 
             // pictureBox16
             // 
@@ -148,23 +140,26 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.PanelCodigo.Size = new System.Drawing.Size(362, 113);
             this.PanelCodigo.TabIndex = 164;
             // 
-            // btnImprimir
+            // btnGenerar
             // 
-            this.btnImprimir.BackColor = System.Drawing.SystemColors.Control;
-            this.btnImprimir.Image = global::pl_Gurkas.Properties.Resources.imagen_codigo__1_;
-            this.btnImprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnImprimir.Location = new System.Drawing.Point(39, 233);
-            this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(109, 40);
-            this.btnImprimir.TabIndex = 166;
-            this.btnImprimir.Text = "Imprimir";
-            this.btnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnImprimir.UseVisualStyleBackColor = false;
-            this.btnImprimir.Click += new System.EventHandler(this.button43_Click);
+            this.btnGenerar.BackColor = System.Drawing.SystemColors.Control;
+            this.btnGenerar.Image = global::pl_Gurkas.Properties.Resources.imagen_codigo__1_;
+            this.btnGenerar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenerar.Location = new System.Drawing.Point(39, 233);
+            this.btnGenerar.Name = "btnGenerar";
+            this.btnGenerar.Size = new System.Drawing.Size(109, 40);
+            this.btnGenerar.TabIndex = 166;
+            this.btnGenerar.Text = "Generar";
+            this.btnGenerar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGenerar.UseVisualStyleBackColor = false;
+            this.btnGenerar.Click += new System.EventHandler(this.button43_Click);
             // 
-            // printDocument1
+            // txtCodigoBarra
             // 
-            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            this.txtCodigoBarra.Location = new System.Drawing.Point(174, 85);
+            this.txtCodigoBarra.Name = "txtCodigoBarra";
+            this.txtCodigoBarra.Size = new System.Drawing.Size(227, 20);
+            this.txtCodigoBarra.TabIndex = 172;
             // 
             // frmGenerarCodigoBarra
             // 
@@ -175,7 +170,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmGenerarCodigoBarra";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Generar Codigo Barra";
             this.Load += new System.EventHandler(this.frmGenerarCodigoBarra_Load);
             this.panel1.ResumeLayout(false);
@@ -190,12 +184,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnGuardarCodigo;
         private System.Windows.Forms.Panel PanelCodigo;
-        private System.Windows.Forms.Button btnImprimir;
+        private System.Windows.Forms.Button btnGenerar;
         private System.Windows.Forms.ComboBox cboProducto;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.TextBox txtCodigoBarra;
-        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }

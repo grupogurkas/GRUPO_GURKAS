@@ -813,16 +813,6 @@ namespace pl_Gurkas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pdf_32 {
-            get {
-                object obj = ResourceManager.GetObject("pdf_32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap personal_baja_32 {
             get {
                 object obj = ResourceManager.GetObject("personal_baja_32", resourceCulture);
