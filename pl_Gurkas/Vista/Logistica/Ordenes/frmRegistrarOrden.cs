@@ -126,19 +126,19 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             int numero = Convert.ToInt32(resultado);
             if (numero < 10)
             {
-                txtNumOrden.Text = "LOG-000000" + (numero + 1);
+                txtNumOrden.Text = "LOG-C-000000" + (numero + 1);
             }
             if (numero > 9 && numero < 100)
             {
-                txtNumOrden.Text = "LOG-00000" + (numero + 1);
+                txtNumOrden.Text = "LOG-C-00000" + (numero + 1);
             }
             if (numero > 99 && numero < 1000)
             {
-                txtNumOrden.Text = "LOG-0000" + (numero + 1);
+                txtNumOrden.Text = "LOG-C-0000" + (numero + 1);
             }
             if (numero > 9999 && numero < 10000)
             {
-                txtNumOrden.Text = "LOG-000" + (numero + 1);
+                txtNumOrden.Text = "LOG-C-000" + (numero + 1);
             }
         }
         private void agregardataProducto()
