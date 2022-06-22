@@ -272,6 +272,28 @@ namespace pl_Gurkas.Datos
                 MessageBox.Show("No se puede obtener la imformacion de tipo de proveedor \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        public void ObtenerEstadoProductoEntrega(DataGridViewComboBoxColumn cbo)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SELECT ID_CONDICION_PRODUCTO,DESP_CONDICION_PRODUCTO FROM T_CONDICION_PRODUCTO", conexiondbo.conexionBD());
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                DataRow fila = dt.NewRow();
+                fila["DESP_CONDICION_PRODUCTO"] = "------";
+                dt.Rows.InsertAt(fila, 0);
+                cbo.ValueMember = "ID_CONDICION_PRODUCTO";
+                cbo.DisplayMember = "DESP_CONDICION_PRODUCTO";
+                cbo.DataSource = dt;
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se puede obtener el listado del brevete \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
         public void ObtenerCategoriaVehiculo(ComboBox cd)
         {
             try

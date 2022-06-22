@@ -41,7 +41,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         {
             Vista.Logistica.CargoEntrega.frmDevolucionMaterial objDevolucionMaterial = new Vista.Logistica.CargoEntrega.frmDevolucionMaterial();
             objDevolucionMaterial._numvale = dgvListarVale.CurrentRow.Cells[1].Value.ToString();
-            objDevolucionMaterial.ShowDialog();
+            objDevolucionMaterial._entregad = txtNombreEmpleado.Text;
+            objDevolucionMaterial.Show();
         }
     }
 }
