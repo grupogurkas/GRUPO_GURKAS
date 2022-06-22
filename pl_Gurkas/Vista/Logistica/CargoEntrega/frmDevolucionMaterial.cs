@@ -13,7 +13,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 {
     public partial class frmDevolucionMaterial : Form
     {
-
+        public string _numvale;
 
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.ConexionMysql conexionmysql = new Datos.ConexionMysql();
@@ -32,14 +32,14 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
         private void frmDevolucionMaterial_Load(object sender, EventArgs e)
         {
-            txtUsuarioEntrega.Enabled = false;
+            txtResivido.Enabled = false;
             txtNumVale.Enabled = false;
             txtstock.Enabled = false;
             txtstock.Text = "0";
             txtstockminimo.Text = "0";
             txtstockminimo.Visible = false;
             string nombre_user = Datos.DatosUsuario._usuario;
-            txtUsuarioEntrega.Text = nombre_user;
+            txtResivido.Text = nombre_user;
             timer1.Enabled = true;
             obtener_datos();
             GenerarNumVale();

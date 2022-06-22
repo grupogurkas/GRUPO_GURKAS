@@ -39,7 +39,9 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
         private void dgvListarVale_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            Vista.Logistica.CargoEntrega.frmDevolucionMaterial objDevolucionMaterial = new Vista.Logistica.CargoEntrega.frmDevolucionMaterial();
+            objDevolucionMaterial._numvale = dgvListarVale.CurrentRow.Cells[1].Value.ToString();
+            objDevolucionMaterial.ShowDialog();
         }
     }
 }
