@@ -158,7 +158,20 @@ namespace pl_Gurkas.Datos.DataReportes.Logistica
             dt.Columns[5].ColumnName = "FECHA DE REGISTRO";
             return dt;
         }
-
+        public DataTable BuscarValesSalidaMateria(string cod_empleado)
+        {
+            SqlCommand comando = conexion.conexionBD().CreateCommand();
+            comando.CommandType = CommandType.Text;
+            comando.CommandText = "sp_buscar_salida_producto  @COD_SOLICITADO";
+            comando.Parameters.AddWithValue("COD_PRODUCTO_MATERIAL", cod_empleado);
+            comando.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter dta = new SqlDataAdapter(comando);
+            dta.Fill(dt);
+            dt.Columns[0].ColumnName = "NUMERO";
+            dt.Columns[1].ColumnName = "NUMERO CARGO ENTREGA";
+            return dt;
+        }
 
         public DataTable BuscarProveeedorPorEmpresa(int IdEmpresa)
         {
