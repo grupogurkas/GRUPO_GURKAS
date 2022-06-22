@@ -377,7 +377,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             string celular = txtCelular.Text;
             string NUM_ORDEN = txtNumOrden.Text;
             string observacion = txtObservacion.Text;
-            string fecha_ = dtpFechaAdquisicion.Text;
+            DateTime fecha_ = dtpFechaAdquisicion.Value;
             string fecha_vale = lblFecha.Text;
             string hora = lblHora.Text;
             string nombre_user = Datos.DatosUsuario._usuario;
@@ -412,9 +412,9 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
                         comando.Parameters.AddWithValue("@hora", SqlDbType.VarChar).Value = hora;
                         comando.Parameters.AddWithValue("@usuario", SqlDbType.VarChar).Value = nombre_user;
                         comando.Parameters.AddWithValue("@fecha_registro", SqlDbType.DateTime).Value = fecha_;
+                        comando.ExecuteNonQuery();
                     }
                 }
-                txtObservacion.Text = comando.ToString();
                 MessageBox.Show("Datos registrado correptamente");
             }
             catch (Exception ex)
@@ -431,15 +431,11 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             DialogResult result = PrintDialog1.ShowDialog();
             if (result == DialogResult.OK)
             {
-               // printDocument1.Print();
+                printDocument1.Print();
                 registarvaleordencompar();
                 limpiardatos();
             }
            //printPreviewDialog1.ShowDialog();
-        }
-        private void btnEntrega_Click(object sender, EventArgs e)
-        {
-           
         }
         private void btnNuevo_Click(object sender, EventArgs e)
         {

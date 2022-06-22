@@ -83,7 +83,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
         public void GenerarNumOrden()
         {
             string resultado = "";
-            SqlCommand comando = new SqlCommand("SELECT ROW_NUMBER()OVER(ORDER BY num_orden_compra)AS 't'  FROM t_orden_compra GROUP BY num_orden_compra", conexion.conexionBD());
+            SqlCommand comando = new SqlCommand("SELECT ROW_NUMBER()OVER(ORDER BY num_orden_servicio)AS 't'  FROM t_orden_servicio GROUP BY num_orden_servicio", conexion.conexionBD());
             SqlDataReader recorre = comando.ExecuteReader();
             while (recorre.Read())
             {
@@ -377,7 +377,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
 
         private void btnImprimir_Click(object sender, EventArgs e)
         {
-            /*System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
+            System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
             PrintDialog1.AllowSomePages = true;
             PrintDialog1.ShowHelp = true;
             PrintDialog1.Document = printDocument1;
@@ -385,14 +385,14 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             if (result == DialogResult.OK)
             {
                 printDocument1.Print();
-                //registarvale();
-                //limpiardatos();
-            }*/
-            printPreviewDialog1.ShowDialog();
+                registrarOrden();
+                limpiardatos();
+            }
+           // printPreviewDialog1.ShowDialog();
         }
         private void registrarOrden()
         {
-            int cod_proveedor = cboProveedorActivo.SelectedIndex;
+            string cod_proveedor = cboProveedorActivo.SelectedValue.ToString();
             string nomb_proveedor = txtProveedor.Text;
             string ruc = txtruc.Text;
             string contacto = txtNombreProveedor.Text;
@@ -402,55 +402,49 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             string celular = txtCelular.Text;
             string NUM_ORDEN = txtNumOrden.Text;
             string observacion = txtObservacion.Text;
+            DateTime fecha_ = dtpFechaAdquisicion.Value;
             string fecha_vale = lblFecha.Text;
             string hora = lblHora.Text;
             string nombre_user = Datos.DatosUsuario._usuario;
-
             try
             {
-                SqlCommand comando = new SqlCommand("sp_registrar_orden @num_orden ,@cod_proveedor , @ruc,@nombre_contacto  ,@direccion ,@correo, @telefono, @celular, @ENTREGADO_NOMBRE," +
-                    "@COD_ENTREGADO, @DNI_ENTREGADO, @COD_PRODUCT, @cantidad_producto, , @costo_unitario ,@costo_total ,@observacion_producto,   @FECHA_VALE," +
-                    "@fecha_orden, @item_vale, @fecha_registro , @fecha_sistema" +
-                    ", @hora, @usuario ", conexion.conexionBD());
+                SqlCommand comando = new SqlCommand("sp_registrar_orden_servicio @num_orden_servicio,@cod_proveedor,@nombre_proveedor,@nombre_contacto,@ruc," +
+                    "@direccion,@correo,@telefono,@celular,@fecha_orden_compra,@item_vale,@DESP_PRODUCTO,@cantidad_producto,@costo_unitario," +
+                    "@costo_total,@observacion,@hora,@usuario,@fecha_registro", conexion.conexionBD());
 
                 foreach (DataGridViewRow row in dgvListaProducto.Rows)
                 {
-                    if (row.Cells["ID"].Value != null && row.Cells["CodProducto"].Value != null)
+                    if (row.Cells["ID"].Value != null)
                     {
                         comando.Parameters.Clear();
-                        comando.Parameters.AddWithValue("@num_orden", SqlDbType.VarChar).Value = NUM_ORDEN;
-                        comando.Parameters.AddWithValue("@cod_proveedor", SqlDbType.Int).Value = cod_proveedor;
+                        comando.Parameters.AddWithValue("@num_orden_servicio", SqlDbType.VarChar).Value = NUM_ORDEN;
+                        comando.Parameters.AddWithValue("@cod_proveedor", SqlDbType.VarChar).Value = cod_proveedor;
+                        comando.Parameters.AddWithValue("@nombre_proveedor", SqlDbType.VarChar).Value = nomb_proveedor;
                         comando.Parameters.AddWithValue("@nombre_contacto", SqlDbType.VarChar).Value = contacto;
                         comando.Parameters.AddWithValue("@ruc", SqlDbType.VarChar).Value = ruc;
                         comando.Parameters.AddWithValue("@direccion", SqlDbType.VarChar).Value = direccion;
                         comando.Parameters.AddWithValue("@correo", SqlDbType.VarChar).Value = correo;
                         comando.Parameters.AddWithValue("@telefono", SqlDbType.VarChar).Value = telefono;
                         comando.Parameters.AddWithValue("@celular", SqlDbType.VarChar).Value = celular;
-                        comando.Parameters.AddWithValue("@fecha_orden", SqlDbType.VarChar).Value = fecha_vale;
-                        comando.Parameters.AddWithValue("@ITEM_VALE", Convert.ToInt32(row.Cells["ID"].Value));
-                        comando.Parameters.AddWithValue("@COD_PRODUCTO", Convert.ToString(row.Cells["CodProducto"].Value));
+                        comando.Parameters.AddWithValue("@fecha_orden_compra", SqlDbType.VarChar).Value = fecha_vale;
+                        comando.Parameters.AddWithValue("@item_vale", Convert.ToInt32(row.Cells["ID"].Value));
                         comando.Parameters.AddWithValue("@DESP_PRODUCTO", Convert.ToString(row.Cells["Nombre"].Value));
-                        comando.Parameters.AddWithValue("@OBSERVACION_PRODUCTO", Convert.ToString(row.Cells["Cantidad"].Value));
-                        comando.Parameters.AddWithValue("@CONDICION_PRODUCTO", Convert.ToString(row.Cells["CostoUnitario"].Value));
-                        comando.Parameters.AddWithValue("@CANTIDAD_SOLICITADA", Convert.ToInt32(row.Cells["CostoTotal"].Value));
-                        comando.Parameters.AddWithValue("@observacion_producto", SqlDbType.VarChar).Value = observacion;
-                        comando.Parameters.AddWithValue("@HORA", SqlDbType.VarChar).Value = hora;
-                        comando.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_user;
-
+                        comando.Parameters.AddWithValue("@cantidad_producto", Convert.ToDouble(row.Cells["Cantidad"].Value));
+                        comando.Parameters.AddWithValue("@costo_unitario", Convert.ToDouble(row.Cells["CostoUnitario"].Value));
+                        comando.Parameters.AddWithValue("@costo_total", Convert.ToDouble(row.Cells["CostoTotal"].Value));
+                        comando.Parameters.AddWithValue("@observacion", SqlDbType.VarChar).Value = observacion;
+                        comando.Parameters.AddWithValue("@hora", SqlDbType.VarChar).Value = hora;
+                        comando.Parameters.AddWithValue("@usuario", SqlDbType.VarChar).Value = nombre_user;
+                        comando.Parameters.AddWithValue("@fecha_registro", SqlDbType.DateTime).Value = fecha_;
+                        comando.ExecuteNonQuery();
                     }
                 }
-
                 MessageBox.Show("Datos registrado correptamente");
             }
             catch (Exception ex)
             {
                 MessageBox.Show(" No se pudo realizar el guardado del la asistencia del personal \n\n Verifique su conexion al Servidor " + ex, "Error");
             }
-        }
-
-        private void btnEntrega_Click(object sender, EventArgs e)
-        {
-            registrarOrden();
         }
         private void limpiardatos()
         {

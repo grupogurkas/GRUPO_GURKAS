@@ -187,6 +187,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             {
                 MessageBox.Show(" No se pudo realizar el guardado del la asistencia del personal \n\n Verifique su conexion al Servidor " + ex, "Error");
                 //showDialogs("ERROR", Color.FromArgb(255, 53, 71));
+
             }
         }
         private void frmEntregaMaterial_Load(object sender, EventArgs e)

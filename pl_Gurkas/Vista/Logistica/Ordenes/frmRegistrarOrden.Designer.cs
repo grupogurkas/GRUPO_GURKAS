@@ -33,7 +33,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistrarOrden));
             this.label42 = new System.Windows.Forms.Label();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.btnEntrega = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.lblHora = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
@@ -124,20 +123,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
-            // 
-            // btnEntrega
-            // 
-            this.btnEntrega.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEntrega.Image = global::pl_Gurkas.Properties.Resources.add_trabajador_32;
-            this.btnEntrega.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEntrega.Location = new System.Drawing.Point(459, 12);
-            this.btnEntrega.Name = "btnEntrega";
-            this.btnEntrega.Size = new System.Drawing.Size(104, 46);
-            this.btnEntrega.TabIndex = 238;
-            this.btnEntrega.Text = "Registrar Entrega";
-            this.btnEntrega.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEntrega.UseVisualStyleBackColor = true;
-            this.btnEntrega.Click += new System.EventHandler(this.btnEntrega_Click);
             // 
             // btnCerrar
             // 
@@ -749,7 +734,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnEntrega);
             this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.cboProveedorActivo);
@@ -777,7 +761,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
         #endregion
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.Button btnEntrega;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Label lblFecha;
