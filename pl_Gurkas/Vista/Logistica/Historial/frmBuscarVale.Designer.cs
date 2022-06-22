@@ -30,12 +30,12 @@ namespace pl_Gurkas.Vista.Logistica.Historial
         private void InitializeComponent()
         {
             this.label11 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvListarVale = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListarVale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,13 +49,13 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             this.label11.TabIndex = 67;
             this.label11.Text = "Buscar \r\nPersonal :";
             // 
-            // dataGridView1
+            // dgvListarVale
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 110);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(669, 311);
-            this.dataGridView1.TabIndex = 106;
+            this.dgvListarVale.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListarVale.Location = new System.Drawing.Point(15, 110);
+            this.dgvListarVale.Name = "dgvListarVale";
+            this.dgvListarVale.Size = new System.Drawing.Size(669, 311);
+            this.dgvListarVale.TabIndex = 106;
             // 
             // label1
             // 
@@ -100,12 +100,12 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvListarVale);
             this.Controls.Add(this.label11);
             this.Name = "frmBuscarVale";
             this.Text = "frmBuscarVale";
             this.Load += new System.EventHandler(this.frmBuscarVale_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListarVale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -114,7 +114,7 @@ namespace pl_Gurkas.Vista.Logistica.Historial
 
         #endregion
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvListarVale;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;

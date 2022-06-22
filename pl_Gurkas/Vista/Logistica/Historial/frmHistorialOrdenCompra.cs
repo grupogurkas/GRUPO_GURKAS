@@ -30,12 +30,17 @@ namespace pl_Gurkas.Vista.Logistica.Historial
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             Vista.Logistica.Historial.frmBuscarVale frmBuscarVale = new frmBuscarVale();
-            //frmBuscarVale.nomb_personal = cboPersonalActivo.SelectedValue.ToString();
-
+            frmBuscarVale.cod_personal = cboPersonalActivo.SelectedValue.ToString();
+            frmBuscarVale.nomb_personal = cboPersonalActivo.GetItemText(cboPersonalActivo.SelectedItem);
 
             frmBuscarVale.ShowDialog();
 
             
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

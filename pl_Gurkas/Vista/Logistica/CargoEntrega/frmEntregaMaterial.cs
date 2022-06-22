@@ -538,8 +538,21 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         }
         private void btnCertificadoBasc_Click(object sender, EventArgs e)
         {
+
+            if (i > 0)
+            {
+                cboTipoPuesto.SelectedIndex = i++;
+                cboEmpresa.SelectedIndex = i++;
+                cboAreaLaboral.SelectedIndex = i++;
+                cboUnidad.SelectedIndex = i++;
+                cboSede.SelectedIndex = i++;
                 validar_campos();
+
+            }
+            else if (i <= 0);
+            {
                 imprimir();
+            }
 
         }
 

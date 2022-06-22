@@ -30,12 +30,12 @@ namespace pl_Gurkas.Vista.Logistica.Historial
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnPdf = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
             this.cboPersonalActivo = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnPdf = new System.Windows.Forms.Button();
-            this.btnCerrar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -55,6 +55,33 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             this.groupBox2.TabIndex = 104;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Buscar Historial Orden Compra";
+            // 
+            // btnPdf
+            // 
+            this.btnPdf.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPdf.Image = global::pl_Gurkas.Properties.Resources.pdf_32;
+            this.btnPdf.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPdf.Location = new System.Drawing.Point(579, 19);
+            this.btnPdf.Name = "btnPdf";
+            this.btnPdf.Size = new System.Drawing.Size(115, 46);
+            this.btnPdf.TabIndex = 99;
+            this.btnPdf.Text = "PDF";
+            this.btnPdf.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPdf.UseVisualStyleBackColor = true;
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar.Image = global::pl_Gurkas.Properties.Resources.cerrar_sesion_32;
+            this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCerrar.Location = new System.Drawing.Point(458, 17);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(115, 46);
+            this.btnCerrar.TabIndex = 100;
+            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // cboPersonalActivo
             // 
@@ -97,32 +124,6 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(824, 335);
             this.dataGridView1.TabIndex = 105;
-            // 
-            // btnPdf
-            // 
-            this.btnPdf.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPdf.Image = global::pl_Gurkas.Properties.Resources.pdf_32;
-            this.btnPdf.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPdf.Location = new System.Drawing.Point(579, 19);
-            this.btnPdf.Name = "btnPdf";
-            this.btnPdf.Size = new System.Drawing.Size(115, 46);
-            this.btnPdf.TabIndex = 99;
-            this.btnPdf.Text = "PDF";
-            this.btnPdf.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPdf.UseVisualStyleBackColor = true;
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrar.Image = global::pl_Gurkas.Properties.Resources.cerrar_sesion_32;
-            this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrar.Location = new System.Drawing.Point(458, 17);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(115, 46);
-            this.btnCerrar.TabIndex = 100;
-            this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCerrar.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
