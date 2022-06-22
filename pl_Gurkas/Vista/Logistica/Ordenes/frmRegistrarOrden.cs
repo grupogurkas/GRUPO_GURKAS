@@ -412,9 +412,9 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
                         comando.Parameters.AddWithValue("@hora", SqlDbType.VarChar).Value = hora;
                         comando.Parameters.AddWithValue("@usuario", SqlDbType.VarChar).Value = nombre_user;
                         comando.Parameters.AddWithValue("@fecha_registro", SqlDbType.DateTime).Value = fecha_;
+                        comando.ExecuteNonQuery();
                     }
                 }
-                txtObservacion.Text = comando.ToString();
                 MessageBox.Show("Datos registrado correptamente");
             }
             catch (Exception ex)
