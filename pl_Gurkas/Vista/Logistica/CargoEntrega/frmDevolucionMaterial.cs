@@ -13,12 +13,11 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 {
     public partial class frmDevolucionMaterial : Form
     {
-
-
+        public string _numvale;
+        public string _entregad;
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.ConexionMysql conexionmysql = new Datos.ConexionMysql();
-        Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
         Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
+        Datos.DataReportes.Logistica.DataLogistica reportelogistica = new Datos.DataReportes.Logistica.DataLogistica();
         private Timer ti;
         private DataTable dt;
         int i = 0;
@@ -29,28 +28,39 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         {
             InitializeComponent();
         }
-
-        private void frmDevolucionMaterial_Load(object sender, EventArgs e)
+        private void buscar_Datos()
         {
-            txtUsuarioEntrega.Enabled = false;
-            txtNumVale.Enabled = false;
-            txtstock.Enabled = false;
-            txtstock.Text = "0";
-            txtstockminimo.Text = "0";
-            txtstockminimo.Visible = false;
-            string nombre_user = Datos.DatosUsuario._usuario;
-            txtUsuarioEntrega.Text = nombre_user;
-            timer1.Enabled = true;
-            obtener_datos();
-            GenerarNumVale();
-            Llenadocbo.ObtenerTipoPuesto(cboTipoPuesto);
-            Llenadocbo.ObtenerEstadoProductoCompleto(cboEstadoMaterial);
-            Llenadocbo.ObtenerPersonalRRHH(cboempleadoActivo);
-            Llenadocbo.ObtenerArea(cboAreaLaboral);
-            Llenadocbo.ObtenerProducto(cboProducto);
-            Llenadocbo.ObtenerUnidadRRHH(cboUnidad);
-            Llenadocbo.ObtenerEmpresa(cboEmpresa);
+           string num_vale_salida = txtNumValeSalida.Text;
+            try
+            {
+                SqlCommand comando = new SqlCommand("SELECT * FROM v_datos_salida_material WHERE NUM_ENTREGA = '" + num_vale_salida + "'", conexion.conexionBD());
 
+                SqlDataReader recorre = comando.ExecuteReader();
+                while (recorre.Read())
+                {
+                    cboTipoPuesto.SelectedIndex = Convert.ToInt32((recorre["COD_PUESTO"].ToString()));
+                    cboAreaLaboral.SelectedIndex = Convert.ToInt32((recorre["COD_AREA_ENTREGA"].ToString()));
+                    cboEmpresa.SelectedIndex = Convert.ToInt32((recorre["COD_EMPRESA"].ToString()));
+                    string unidad = recorre["Razon_social"].ToString();
+                    cboUnidad.SelectedIndex = cboUnidad.FindStringExact(unidad);
+                    string sede = recorre["Nombre_sede"].ToString();
+                    cboSede.SelectedIndex = cboSede.FindStringExact(sede);
+                    txtInformacionAdicional.Text = recorre["INFORMACION_ADICIONAL"].ToString();
+                    dtpFechaAdquisicion.Text = recorre["FECHA_SISTEMA"].ToString();
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
+            }
+        }
+        private void buscar_Datos_producto()
+        {
+            string num_vale_salida = txtNumValeSalida.Text;
+            dgvListaProducto.DataSource = reportelogistica.BuscarMaterialSalida(num_vale_salida);
+        }
+        private void ocultar_datos()
+        {
             lbldireccion.Visible = false;
             lblemp.Visible = false;
             lblnombrear.Visible = false;
@@ -59,6 +69,37 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             lbldni.Visible = false;
             lblcodentre.Visible = false;
             lbldnientr.Visible = false;
+        }
+        private void bloqueo_datos()
+        {
+            txtResivido.Enabled = false;
+            txtNumVale.Enabled = false;
+            txtNumValeSalida.Enabled = false;
+            txtEntregado.Enabled = false;
+            cboTipoPuesto.Enabled = false;
+            cboAreaLaboral.Enabled = false;
+            cboEmpresa.Enabled = false;
+            cboUnidad.Enabled = false;
+            cboSede.Enabled = false;
+            txtInformacionAdicional.Enabled = false;
+
+        }
+        private void frmDevolucionMaterial_Load(object sender, EventArgs e)
+        {
+            txtEntregado.Text = _entregad;
+            txtNumValeSalida.Text = _numvale;
+            timer1.Enabled = true;
+            string nombre_user = Datos.DatosUsuario._usuario;
+
+           
+            txtResivido.Text = nombre_user;
+           
+            obtener_datos();
+            GenerarNumVale();
+            Llenadocbo.ObtenerTipoPuesto(cboTipoPuesto);
+            Llenadocbo.ObtenerArea(cboAreaLaboral);
+            Llenadocbo.ObtenerUnidadRRHH(cboUnidad);
+            Llenadocbo.ObtenerEmpresa(cboEmpresa);
 
             dt = new DataTable();
             dt.Columns.Add("ID");
@@ -69,12 +110,19 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             dt.Columns.Add("Observacion");
             dgvListaProducto.DataSource = dt;
 
-            DataGridViewButtonColumn btnclm = new DataGridViewButtonColumn();
-            btnclm.Name = "Eliminar";
-            dgvListaProducto.Columns.Add(btnclm);
+            //llenado del combo del dgv
+            DataGridViewComboBoxColumn dgvCmb = new DataGridViewComboBoxColumn();
+            dgvCmb.HeaderText = "Estado";
+            Llenadocbo.ObtenerEstadoProductoEntrega(dgvCmb);
+            dgvCmb.Name = "Estado";
+            dgvListaProducto.Columns.Add(dgvCmb);
 
             dgvListaProducto.RowHeadersVisible = false;
             dgvListaProducto.AllowUserToAddRows = false;
+            bloqueo_datos();
+            ocultar_datos();
+            buscar_Datos();
+            buscar_Datos_producto();
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -184,74 +232,29 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
         private void limpiardatos()
         {
-            cboempleadoActivo.SelectedIndex = 0;
             cboTipoPuesto.SelectedIndex = 0;
             cboAreaLaboral.SelectedIndex = 0;
             cboEmpresa.SelectedIndex = 0;
             cboUnidad.SelectedIndex = 0;
             cboSede.SelectedIndex = 0;
-            cboProducto.SelectedIndex = 0;
-            cboEstadoMaterial.SelectedIndex = 0;
             GenerarNumVale();
             txtInformacionAdicional.Text = "";
-            txtObservacion.Text = "";
-            txtCantidadTecno.Text = "";
             dt.Clear();
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            int stock_a = Convert.ToInt32(txtstock.Text);
-            int cantidad = Convert.ToInt32(txtCantidadTecno.Text);
-
-            if (cboEstadoMaterial.SelectedIndex == 0)
-            {
-                MessageBox.Show("Debe Seleccionar la condicion del material", "Advertencia");
-                cboEstadoMaterial.Focus();
-            }
-            else if (txtCantidadTecno.Equals(""))
-            {
-                MessageBox.Show("Ingresar Una cantidad", "Advertencia");
-                txtCantidadTecno.Focus();
-            }
-            else
-            {
-                if (cantidad <= stock_a)
-                {
-                    agregardata();
-                    txtCantidadTecno.Text = "";
-                    cboProducto.SelectedIndex = 0;
-                    cboEstadoMaterial.SelectedIndex = 0;
-                    txtstock.Text = "0";
-                }
-                else
-                {
-                    MessageBox.Show("No se puede agregar el materia ya que supera el stock actual", "error");
-                }
-            }
+          
         }
 
-        private void agregardata()
+        private void txtNumVale_TextChanged(object sender, EventArgs e)
         {
-            string cod_producto = cboProducto.SelectedValue.ToString();
-            string nombre_producto = cboProducto.GetItemText(cboProducto.SelectedItem);
-            string cantidad = txtCantidadTecno.Text;
-            string observacion = txtObservacion.Text;
-            string Condicion_Entrega = cboEstadoMaterial.GetItemText(cboEstadoMaterial.SelectedItem);
-            int n = dgvListaProducto.Rows.Count;
-            string c = Convert.ToString(n + 1);
-            DataRow row = dt.NewRow();
-            row["ID"] = c;
-            row["CodProducto"] = cod_producto;
-            row["Nombre"] = nombre_producto;
-            row["CondicionEntrega"] = Condicion_Entrega;
-            row["Cantidad"] = cantidad;
-            row["Observacion"] = observacion;
-            dt.Rows.Add(row);
-            if ((n + 1) == 26)
-            {
-                btnAgregar.Enabled = false;
-            }
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

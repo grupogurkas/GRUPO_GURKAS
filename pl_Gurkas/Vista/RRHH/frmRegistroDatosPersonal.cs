@@ -583,10 +583,5 @@ namespace pl_Gurkas.Vista.RRHH
         {
 
         }
-
-        private void dgvRegistroPersonal_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }

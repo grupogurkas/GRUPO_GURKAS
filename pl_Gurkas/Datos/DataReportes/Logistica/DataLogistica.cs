@@ -158,7 +158,37 @@ namespace pl_Gurkas.Datos.DataReportes.Logistica
             dt.Columns[5].ColumnName = "FECHA DE REGISTRO";
             return dt;
         }
+        public DataTable BuscarValesSalidaMateria(string cod_empleado)
+        {
+            SqlCommand comando = conexion.conexionBD().CreateCommand();
+            comando.CommandType = CommandType.Text;
+            comando.CommandText = "sp_buscar_salida_producto  @COD_SOLICITADO";
+            comando.Parameters.AddWithValue("COD_SOLICITADO", cod_empleado);
+            comando.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter dta = new SqlDataAdapter(comando);
+            dta.Fill(dt);
+            dt.Columns[0].ColumnName = "NUMERO";
+            dt.Columns[1].ColumnName = "NUMERO CARGO ENTREGA";
+            return dt;
+        }
 
+        public DataTable BuscarMaterialSalida(string COD_VALE)
+        {
+            SqlCommand comando = conexion.conexionBD().CreateCommand();
+            comando.CommandType = CommandType.Text;
+            comando.CommandText = "SP_BUSCAR_PRODUCTOS  @NUM_ENTREGA";
+            comando.Parameters.AddWithValue("NUM_ENTREGA", COD_VALE);
+            comando.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter dta = new SqlDataAdapter(comando);
+            dta.Fill(dt);
+            dt.Columns[0].ColumnName = "ITEM";
+            dt.Columns[1].ColumnName = "COD_PRODUCTO";
+            dt.Columns[1].ColumnName = "DESCRIPCION_PRODUCTO";
+            dt.Columns[1].ColumnName = "CANTIDAD_ENTREGADO";
+            return dt;
+        }
 
         public DataTable BuscarProveeedorPorEmpresa(int IdEmpresa)
         {
