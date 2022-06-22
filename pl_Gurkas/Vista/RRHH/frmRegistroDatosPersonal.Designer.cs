@@ -1174,7 +1174,6 @@ namespace pl_Gurkas.Vista.RRHH
             this.dgvRegistroPersonal.RowHeadersWidth = 51;
             this.dgvRegistroPersonal.Size = new System.Drawing.Size(1306, 181);
             this.dgvRegistroPersonal.TabIndex = 61;
-            this.dgvRegistroPersonal.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRegistroPersonal_CellContentClick);
             // 
             // frmRegistroDatosPersonal
             // 
