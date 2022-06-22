@@ -437,10 +437,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             }
            //printPreviewDialog1.ShowDialog();
         }
-        private void btnEntrega_Click(object sender, EventArgs e)
-        {
-           
-        }
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             limpiardatos();

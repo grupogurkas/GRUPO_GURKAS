@@ -384,7 +384,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             DialogResult result = PrintDialog1.ShowDialog();
             if (result == DialogResult.OK)
             {
-                //printDocument1.Print();
+                printDocument1.Print();
                 registrarOrden();
                 limpiardatos();
             }
@@ -445,11 +445,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             {
                 MessageBox.Show(" No se pudo realizar el guardado del la asistencia del personal \n\n Verifique su conexion al Servidor " + ex, "Error");
             }
-        }
-
-        private void btnEntrega_Click(object sender, EventArgs e)
-        {
-            registrarOrden();
         }
         private void limpiardatos()
         {
