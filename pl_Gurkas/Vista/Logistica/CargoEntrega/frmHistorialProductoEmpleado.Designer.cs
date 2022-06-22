@@ -80,6 +80,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.dgvListarVale.Name = "dgvListarVale";
             this.dgvListarVale.Size = new System.Drawing.Size(669, 338);
             this.dgvListarVale.TabIndex = 160;
+            this.dgvListarVale.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListarVale_CellContentDoubleClick);
             // 
             // label11
             // 

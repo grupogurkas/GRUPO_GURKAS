@@ -163,7 +163,7 @@ namespace pl_Gurkas.Datos.DataReportes.Logistica
             SqlCommand comando = conexion.conexionBD().CreateCommand();
             comando.CommandType = CommandType.Text;
             comando.CommandText = "sp_buscar_salida_producto  @COD_SOLICITADO";
-            comando.Parameters.AddWithValue("COD_PRODUCTO_MATERIAL", cod_empleado);
+            comando.Parameters.AddWithValue("COD_SOLICITADO", cod_empleado);
             comando.ExecuteNonQuery();
             DataTable dt = new DataTable();
             SqlDataAdapter dta = new SqlDataAdapter(comando);

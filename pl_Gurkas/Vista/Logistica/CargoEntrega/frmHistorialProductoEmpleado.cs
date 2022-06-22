@@ -32,7 +32,14 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         {
             txtCodPersonal.Enabled = false;
             txtNombreEmpleado.Enabled = false;
+            txtCodPersonal.Text = cod_personal;
+            txtNombreEmpleado.Text = nomb_personal;
             buscar_vale_salida();
+        }
+
+        private void dgvListarVale_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
