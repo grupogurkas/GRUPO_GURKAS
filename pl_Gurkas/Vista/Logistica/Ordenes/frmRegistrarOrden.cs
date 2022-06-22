@@ -377,7 +377,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             string celular = txtCelular.Text;
             string NUM_ORDEN = txtNumOrden.Text;
             string observacion = txtObservacion.Text;
-            string fecha_ = dtpFechaAdquisicion.Text;
+            DateTime fecha_ = dtpFechaAdquisicion.Value;
             string fecha_vale = lblFecha.Text;
             string hora = lblHora.Text;
             string nombre_user = Datos.DatosUsuario._usuario;
