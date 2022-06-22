@@ -45,7 +45,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             GenerarNumVale();
             Llenadocbo.ObtenerTipoPuesto(cboTipoPuesto);
             Llenadocbo.ObtenerEstadoProductoCompleto(cboEstadoMaterial);
-            Llenadocbo.ObtenerPersonalRRHH(cboempleadoActivo);
+            //Llenadocbo.ObtenerPersonalRRHH(cboempleadoActivo);
             Llenadocbo.ObtenerArea(cboAreaLaboral);
             Llenadocbo.ObtenerProducto(cboProducto);
             Llenadocbo.ObtenerUnidadRRHH(cboUnidad);
@@ -184,7 +184,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
         private void limpiardatos()
         {
-            cboempleadoActivo.SelectedIndex = 0;
+           // cboempleadoActivo.SelectedIndex = 0;
             cboTipoPuesto.SelectedIndex = 0;
             cboAreaLaboral.SelectedIndex = 0;
             cboEmpresa.SelectedIndex = 0;
