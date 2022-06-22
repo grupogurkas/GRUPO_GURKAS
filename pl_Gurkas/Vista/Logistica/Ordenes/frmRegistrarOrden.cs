@@ -431,7 +431,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             DialogResult result = PrintDialog1.ShowDialog();
             if (result == DialogResult.OK)
             {
-               // printDocument1.Print();
+                printDocument1.Print();
                 registarvaleordencompar();
                 limpiardatos();
             }

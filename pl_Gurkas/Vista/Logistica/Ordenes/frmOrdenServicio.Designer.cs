@@ -46,6 +46,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.dgvListaProducto = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtServicio = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -79,7 +80,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.lblHora = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.btnEntrega = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.cboProveedorActivo = new System.Windows.Forms.ComboBox();
             this.label42 = new System.Windows.Forms.Label();
@@ -92,7 +92,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.txtServicio = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaProducto)).BeginInit();
@@ -269,6 +268,14 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.groupBox2.TabIndex = 244;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Detalle de la Orden de Compra:";
+            // 
+            // txtServicio
+            // 
+            this.txtServicio.Location = new System.Drawing.Point(115, 19);
+            this.txtServicio.Multiline = true;
+            this.txtServicio.Name = "txtServicio";
+            this.txtServicio.Size = new System.Drawing.Size(415, 34);
+            this.txtServicio.TabIndex = 257;
             // 
             // label21
             // 
@@ -595,20 +602,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // btnEntrega
-            // 
-            this.btnEntrega.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEntrega.Image = global::pl_Gurkas.Properties.Resources.add_trabajador_32;
-            this.btnEntrega.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEntrega.Location = new System.Drawing.Point(467, 13);
-            this.btnEntrega.Name = "btnEntrega";
-            this.btnEntrega.Size = new System.Drawing.Size(104, 46);
-            this.btnEntrega.TabIndex = 249;
-            this.btnEntrega.Text = "Registrar Entrega";
-            this.btnEntrega.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEntrega.UseVisualStyleBackColor = true;
-            this.btnEntrega.Click += new System.EventHandler(this.btnEntrega_Click);
-            // 
             // btnCerrar
             // 
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -723,14 +716,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // txtServicio
-            // 
-            this.txtServicio.Location = new System.Drawing.Point(115, 19);
-            this.txtServicio.Multiline = true;
-            this.txtServicio.Name = "txtServicio";
-            this.txtServicio.Size = new System.Drawing.Size(415, 34);
-            this.txtServicio.TabIndex = 257;
-            // 
             // frmOrdenServicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -745,7 +730,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.Controls.Add(this.lblHora);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.btnNuevo);
-            this.Controls.Add(this.btnEntrega);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.cboProveedorActivo);
             this.Controls.Add(this.label42);
@@ -822,7 +806,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.Button btnEntrega;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.ComboBox cboProveedorActivo;
         private System.Windows.Forms.Label label42;
