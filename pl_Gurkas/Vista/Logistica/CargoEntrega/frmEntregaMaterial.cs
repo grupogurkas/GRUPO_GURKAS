@@ -524,6 +524,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         }
         private void imprimir()
         {
+            /*
             System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
             PrintDialog1.AllowSomePages = true;
             PrintDialog1.ShowHelp = true;
@@ -534,20 +535,21 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                 printDocument1.Print();
                 registarvale();
                 limpiardatos();
-            }
-            //printPreviewDialog1.ShowDialog();
+            }*/
+            printPreviewDialog1.ShowDialog();
         }
         private void btnCertificadoBasc_Click(object sender, EventArgs e)
         {
 
+            cboTipoPuesto.SelectedIndex = i + 1;
+            cboEmpresa.SelectedIndex = i + 1;
+            cboAreaLaboral.SelectedIndex = i + 1;
+            cboUnidad.SelectedIndex = i + 1;
+            cboSede.SelectedIndex = i + 1;
             if (i > 0)
             {
-                cboTipoPuesto.SelectedIndex = i++;
-                cboEmpresa.SelectedIndex = i++;
-                cboAreaLaboral.SelectedIndex = i++;
-                cboUnidad.SelectedIndex = i++;
-                cboSede.SelectedIndex = i++;
-                validar_campos();
+                
+                validar_campos() ;
 
             }
             else if (i <= 0);
@@ -557,7 +559,11 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
         }
 
-        private void txtInformacionAdicional_TextChanged(object sender, EventArgs e)
+
+     
+
+
+private void txtInformacionAdicional_TextChanged(object sender, EventArgs e)
         {
             txtInformacionAdicional.MaxLength = 264;
         }
