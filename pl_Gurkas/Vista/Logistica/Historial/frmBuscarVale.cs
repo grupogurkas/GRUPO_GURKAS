@@ -33,7 +33,7 @@ namespace pl_Gurkas.Vista.Logistica.Historial
 
             dt = new DataTable();
             dt.Columns.Add("ID");
-            dt.Columns.Add("CodProducto");
+            dt.Columns.Add("Nombre Personal");
             dt.Columns.Add("Nombre");
             dt.Columns.Add("CondicionEntrega");
             dt.Columns.Add("Cantidad");

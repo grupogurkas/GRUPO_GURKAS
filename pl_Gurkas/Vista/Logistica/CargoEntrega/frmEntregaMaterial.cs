@@ -31,7 +31,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         {
             InitializeComponent();
         }
-        private void validar_campos()
+       /* private void validar_campos()
         {
             if (cboTipoPuesto.SelectedIndex == 0)
             {
@@ -54,7 +54,19 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                 MessageBox.Show("Debe Seleccionar una Sede", "Advertencia");
             }
 
+        }*/
+
+
+        private Boolean validar_campos()
+        {
+            if (cboTipoPuesto.SelectedIndex == 0 || cboAreaLaboral.SelectedIndex == 0 || cboEmpresa.SelectedIndex == 0 || cboUnidad.SelectedIndex == 0 || cboSede.SelectedIndex == 0)
+            {
+                MessageBox.Show("Debe Seleccionar Todos los campos", "Advertencia");
+                return false;
+            }
+            return true;
         }
+
         private void limpiardatos()
         {
             cboempleadoActivo.SelectedIndex = 0;
@@ -541,18 +553,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private void btnCertificadoBasc_Click(object sender, EventArgs e)
         {
 
-            cboTipoPuesto.SelectedIndex = i + 1;
-            cboEmpresa.SelectedIndex = i + 1;
-            cboAreaLaboral.SelectedIndex = i + 1;
-            cboUnidad.SelectedIndex = i + 1;
-            cboSede.SelectedIndex = i + 1;
-            if (i > 0)
-            {
-                
-                validar_campos() ;
-
-            }
-            else if (i <= 0);
+            //validar_campos();
+            if (validar_campos() == true)
             {
                 imprimir();
             }
