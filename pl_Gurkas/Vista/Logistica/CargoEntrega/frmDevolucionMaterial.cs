@@ -82,34 +82,37 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             cboUnidad.Enabled = false;
             cboSede.Enabled = false;
             txtInformacionAdicional.Enabled = false;
-
+            dgvListaProducto.RowHeadersVisible = false;
+            dgvListaProducto.AllowUserToAddRows = false;
         }
-        private void frmDevolucionMaterial_Load(object sender, EventArgs e)
+        private void llenado_datos()
         {
-            txtEntregado.Text = _entregad;
-            txtNumValeSalida.Text = _numvale;
-            timer1.Enabled = true;
-            string nombre_user = Datos.DatosUsuario._usuario;
-
-           
-            txtResivido.Text = nombre_user;
-           
-            obtener_datos();
-            GenerarNumVale();
             Llenadocbo.ObtenerTipoPuesto(cboTipoPuesto);
             Llenadocbo.ObtenerArea(cboAreaLaboral);
             Llenadocbo.ObtenerUnidadRRHH(cboUnidad);
             Llenadocbo.ObtenerEmpresa(cboEmpresa);
+        }
+        private void seleccionar_primer_valor()
+        {
+            int n = dgvListaProducto.Rows.Count;
+            int a = n + 1;
+            int i = 0;
+            try
+            {
+                while (i < a)
+                {
+                    dgvListaProducto.Rows[i].Cells["Estado"].Value = 1;
+                    i++;
+                }
+            }
+            catch(Exception ex)
+            {
 
-            dt = new DataTable();
-            dt.Columns.Add("ID");
-            dt.Columns.Add("CodProducto");
-            dt.Columns.Add("Nombre");
-            dt.Columns.Add("CondicionEntrega");
-            dt.Columns.Add("Cantidad");
-            dt.Columns.Add("Observacion");
-            dgvListaProducto.DataSource = dt;
+            }
+        }
 
+        private void frmDevolucionMaterial_Load(object sender, EventArgs e)
+        {
             //llenado del combo del dgv
             DataGridViewComboBoxColumn dgvCmb = new DataGridViewComboBoxColumn();
             dgvCmb.HeaderText = "Estado";
@@ -117,18 +120,20 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             dgvCmb.Name = "Estado";
             dgvListaProducto.Columns.Add(dgvCmb);
 
-
-            dgvListaProducto.RowHeadersVisible = false;
-            dgvListaProducto.AllowUserToAddRows = false;
+            txtEntregado.Text = _entregad;
+            txtNumValeSalida.Text = _numvale;
+            timer1.Enabled = true;
+            string nombre_user = Datos.DatosUsuario._usuario;
+            txtResivido.Text = nombre_user;
+           
+            obtener_datos();
+            GenerarNumVale();
+            llenado_datos();
             bloqueo_datos();
             ocultar_datos();
             buscar_Datos();
             buscar_Datos_producto();
-
-
-            dgvListaProducto.Rows[0].Cells["Estado"].Value = 1;
-
-
+            seleccionar_primer_valor();
         }
         private void btnImprimir_Click(object sender, EventArgs e)
         {
