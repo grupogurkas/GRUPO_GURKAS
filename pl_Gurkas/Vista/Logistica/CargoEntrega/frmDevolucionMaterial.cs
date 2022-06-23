@@ -135,6 +135,10 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             buscar_Datos();
             buscar_Datos_producto();
             seleccionar_primer_valor();
+
+            DataGridViewButtonColumn btnclm = new DataGridViewButtonColumn();
+            btnclm.Name = "Eliminar";
+            dgvListaProducto.Columns.Add(btnclm);
         }
         private void imprimir()
         {
@@ -273,6 +277,74 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             txtInformacionAdicional.Text = "";
             dt.Clear();
         }
+        private void agregar_Datos()
+        {
+            int cod_puesto = cboTipoPuesto.SelectedIndex;
+            int cod_area_entrega = cboAreaLaboral.SelectedIndex;
+            string cod = cboEmpresa.SelectedValue.ToString();
+            int c = Convert.ToInt32(cod);
+            string NUM_VALE = txtNumVale.Text;
+            string cod_unidad = cboUnidad.SelectedValue.ToString();
+            string cod_sede = cboSede.SelectedValue.ToString();
+            string imformacion_adicional = txtInformacionAdicional.Text;
+
+            string entregado_nombre = txtEntregado.Text;
+            string cod_entregado = txtcod_entrega.Text;
+            string dni_entregado = txtdni_entrega.Text;
+
+            string nombre_revisa = txtResivido.Text;
+            string cod_revisa = txtcod_resive.Text;
+            string dni_revisa = txtdni_resive.Text;
+
+            string fecha_vale = lblFecha.Text;
+            string hora = lblHora.Text;
+            string nombre_user = Datos.DatosUsuario._usuario;
+            try
+            {
+                SqlCommand comando = new SqlCommand("sp_insertar_salida_producto @NUM_ENTREGA ,@COD_PUESTO ,@COD_AREA_ENTREGA ,@COD_EMPRESA  ,@COD_UNIDAD ,@COD_SEDE, @INFORMACION_ADICIONAL, @ENTREGADO_NOMBRE, @COD_ENTREGADO," +
+                    "@DNI_ENTREGADO, @SOLICITADO_NOMBRE, @COD_SOLICITADO, @DNI_SOLICITADO, @FECHA_VALE," +
+                    "@ITEM_VALE, @COD_PRODUCTO, @DESP_PRODUCTO,  @OBSERVACION_PRODUCTO , @CONDICION_PRODUCTO" +
+                    ", @CANTIDAD_SOLICITADA, @HORA, @USUARIO ", conexion.conexionBD());
+
+                foreach (DataGridViewRow row in dgvListaProducto.Rows)
+                {
+                    if (row.Cells["ID"].Value != null && row.Cells["CodProducto"].Value != null)
+                    {
+                        comando.Parameters.Clear();
+                        comando.Parameters.AddWithValue("@COD_PUESTO", SqlDbType.Int).Value = cod_puesto;
+                        comando.Parameters.AddWithValue("@COD_AREA_ENTREGA", SqlDbType.Int).Value = cod_area_entrega;
+                        comando.Parameters.AddWithValue("@NUM_ENTREGA", SqlDbType.VarChar).Value = NUM_VALE;
+                        comando.Parameters.AddWithValue("@COD_EMPRESA", SqlDbType.Int).Value = c;
+                        comando.Parameters.AddWithValue("@COD_UNIDAD", SqlDbType.VarChar).Value = cod_unidad;
+                        comando.Parameters.AddWithValue("@COD_SEDE", SqlDbType.VarChar).Value = cod_sede;
+                        comando.Parameters.AddWithValue("@INFORMACION_ADICIONAL", SqlDbType.VarChar).Value = imformacion_adicional;
+                        comando.Parameters.AddWithValue("@ENTREGADO_NOMBRE", SqlDbType.VarChar).Value = entregado_nombre;
+                        comando.Parameters.AddWithValue("@COD_ENTREGADO", SqlDbType.VarChar).Value = cod_entregado;
+                        comando.Parameters.AddWithValue("@DNI_ENTREGADO", SqlDbType.VarChar).Value = dni_entregado;
+                        comando.Parameters.AddWithValue("@SOLICITADO_NOMBRE", SqlDbType.VarChar).Value = nombre_revisa;
+                        comando.Parameters.AddWithValue("@COD_SOLICITADO", SqlDbType.VarChar).Value = cod_revisa;
+                        comando.Parameters.AddWithValue("@DNI_SOLICITADO", SqlDbType.VarChar).Value = dni_revisa;
+                        comando.Parameters.AddWithValue("@FECHA_VALE", SqlDbType.VarChar).Value = fecha_vale;
+                        comando.Parameters.AddWithValue("@ITEM_VALE", Convert.ToInt32(row.Cells["ID"].Value));
+                        comando.Parameters.AddWithValue("@COD_PRODUCTO", Convert.ToString(row.Cells["CodProducto"].Value));
+                        comando.Parameters.AddWithValue("@DESP_PRODUCTO", Convert.ToString(row.Cells["Nombre"].Value));
+                        comando.Parameters.AddWithValue("@OBSERVACION_PRODUCTO", Convert.ToString(row.Cells["Observacion"].Value));
+                        comando.Parameters.AddWithValue("@CONDICION_PRODUCTO", Convert.ToString(row.Cells["CondicionEntrega"].Value));
+                        comando.Parameters.AddWithValue("@CANTIDAD_SOLICITADA", Convert.ToInt32(row.Cells["Cantidad"].Value));
+                        comando.Parameters.AddWithValue("@HORA", SqlDbType.VarChar).Value = hora;
+                        comando.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_user;
+                        comando.ExecuteNonQuery();
+                    }
+                }
+                MessageBox.Show("Datos registrado correptamente");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(" No se pudo realizar el guardado del la asistencia del personal \n\n Verifique su conexion al Servidor " + ex, "Error");
+                //showDialogs("ERROR", Color.FromArgb(255, 53, 71));
+
+            }
+        }
 
         private void printDocument1_PrintPage_1(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
@@ -320,8 +392,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             Rectangle N10 = new Rectangle(250, 20, 320, 60);
             Rectangle N11 = new Rectangle(570, 20, 220, 60);
             Rectangle N12 = new Rectangle(570, 20, 220, 30);
-            Rectangle ITEM_ = new Rectangle(20, 310, 50, 715);
-            Rectangle CODIGO_ = new Rectangle(70, 310, 60, 715);
+            Rectangle CODIGO_ = new Rectangle(20, 310, 110, 715);
+           // Rectangle CODIGO_ = new Rectangle(70, 310, 60, 715);
             Rectangle PRODUCTO_ = new Rectangle(130, 310, 400, 715);
             Rectangle OBSERVACION_ = new Rectangle(530, 310, 100, 715);
             Rectangle CONDICION_ = new Rectangle(630, 310, 100, 715);
@@ -338,8 +410,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             e.Graphics.DrawRectangle(blackPen, N10);
             e.Graphics.DrawRectangle(blackPen, N11);
             e.Graphics.DrawRectangle(blackPen, N12);
-            e.Graphics.DrawRectangle(blackPen, ITEM_);
             e.Graphics.DrawRectangle(blackPen, CODIGO_);
+           // e.Graphics.DrawRectangle(blackPen, CODIGO_);
             e.Graphics.DrawRectangle(blackPen, PRODUCTO_);
             e.Graphics.DrawRectangle(blackPen, OBSERVACION_);
             e.Graphics.DrawRectangle(blackPen, CONDICION_);
@@ -402,11 +474,11 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             string l1 = "--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
             e.Graphics.DrawString(l1, new System.Drawing.Font("Book Antiqua", 9, FontStyle.Bold), Brushes.Black, 20, 320);//360
 
-            string g1 = "ITEM";
-            e.Graphics.DrawString(g1, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 30, 315);
+            string g1 = "CODIGO";
+            e.Graphics.DrawString(g1, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 45, 315);
 
-            string g2 = "CODIGO";
-            e.Graphics.DrawString(g2, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 72, 315);
+           /* string g2 = "CODIGO";
+            e.Graphics.DrawString(g2, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 72, 315);*/
 
             string g3 = "DESCRIPCION";
             e.Graphics.DrawString(g3, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 200, 315);
@@ -434,8 +506,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                     {
                         height += dgvListaProducto.Rows[0].Height;
                         //e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[0].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(30, height, 10, 10));
-                        e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[1].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(30, height, 30, 20));
-                        e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[2].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(77, height, 100, 100));
+                      //  e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[1].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(30, height, 30, 20));
+                        e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[2].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(50, height, 100, 100));
                         e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[3].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(135, height, 300, 40));
                         e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[4].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(750, height, 30, 20));
                         //  e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[5].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(750, height, 30, 20));
@@ -477,6 +549,31 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             catch (Exception err)
             {
                 MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
+            }
+        }
+
+        private void dgvListaProducto_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+        {
+            Image someImage = Properties.Resources.delete_16;
+
+            if (e.ColumnIndex >= 0 && this.dgvListaProducto.Columns[e.ColumnIndex].Name == "Eliminar" && e.RowIndex >= 0)
+            {
+                e.Paint(e.CellBounds, DataGridViewPaintParts.All);
+
+                DataGridViewButtonCell celboton = this.dgvListaProducto.Rows[e.RowIndex].Cells["Eliminar"] as DataGridViewButtonCell;
+                e.Graphics.DrawImage(someImage, e.CellBounds.Left + 15, e.CellBounds.Top + 3);
+                this.dgvListaProducto.Rows[e.RowIndex].Height = someImage.Height + 10;
+                this.dgvListaProducto.Columns[e.ColumnIndex].Width = someImage.Width + 31;
+
+                e.Handled = true;
+            }
+        }
+
+        private void dgvListaProducto_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (this.dgvListaProducto.Columns[e.ColumnIndex].DisplayIndex == 5)
+            {
+                dgvListaProducto.Rows.Remove(dgvListaProducto.CurrentRow);
             }
         }
     }

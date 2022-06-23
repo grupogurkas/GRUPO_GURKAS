@@ -481,6 +481,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.dgvListaProducto.Name = "dgvListaProducto";
             this.dgvListaProducto.Size = new System.Drawing.Size(1322, 364);
             this.dgvListaProducto.TabIndex = 220;
+            this.dgvListaProducto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListaProducto_CellContentClick);
+            this.dgvListaProducto.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvListaProducto_CellPainting);
             // 
             // txtNumVale
             // 
