@@ -117,30 +117,19 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             dgvCmb.Name = "Estado";
             dgvListaProducto.Columns.Add(dgvCmb);
 
+
             dgvListaProducto.RowHeadersVisible = false;
             dgvListaProducto.AllowUserToAddRows = false;
             bloqueo_datos();
             ocultar_datos();
             buscar_Datos();
             buscar_Datos_producto();
-        }
 
-        private void btnCerrar_Click(object sender, EventArgs e)
-        {
-            const string titulo = "Cerrar Registro de Personal";
-            const string mensaje = "Estas seguro que deseas cerra el Registro de Personal";
-            var resutlado = MessageBox.Show(mensaje, titulo, MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-            if (resutlado == DialogResult.Yes)
-            {
-                this.Close();
-            }
-        }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
+            dgvListaProducto.Rows[0].Cells["Estado"].Value = 1;
+
 
         }
-
         private void btnImprimir_Click(object sender, EventArgs e)
         {
 
@@ -183,19 +172,19 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             int numero = Convert.ToInt32(resultado);
             if (numero < 10)
             {
-                txtNumVale.Text = "LOG-000000" + (numero + 1);
+                txtNumVale.Text = "LOG-D-000000" + (numero + 1);
             }
             if (numero > 9 && numero < 100)
             {
-                txtNumVale.Text = "LOG-00000" + (numero + 1);
+                txtNumVale.Text = "LOG-D-00000" + (numero + 1);
             }
             if (numero > 99 && numero < 1000)
             {
-                txtNumVale.Text = "LOG-0000" + (numero + 1);
+                txtNumVale.Text = "LOG-D-0000" + (numero + 1);
             }
             if (numero > 9999 && numero < 10000)
             {
-                txtNumVale.Text = "LOG-000" + (numero + 1);
+                txtNumVale.Text = "LOG-D-000" + (numero + 1);
             }
         }
 
@@ -240,21 +229,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             GenerarNumVale();
             txtInformacionAdicional.Text = "";
             dt.Clear();
-        }
-
-        private void btnAgregar_Click(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void txtNumVale_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
