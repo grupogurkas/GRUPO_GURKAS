@@ -557,6 +557,47 @@ namespace pl_Gurkas.Vista.Principal
 
         }
 
+        private void nuevaEntradaDeProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           // controlvistaformulario.ControlVista(this, new Vista.Logistica.entrada.frmEntradaProducto());
+            modulo.auditoria("Logistica", "Almacen", "Entrada de Producto", "Nueva entrada de Producto");
+
+        }
+
+        private void buscarSalidaDeProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           // controlvistaformulario.ControlVista(this, new Vista.Logistica.entrada.frmBuscarEntradaProducto());
+            modulo.auditoria("Logistica", "Almacen", "Entrada de Producto", "Buscar entrada de Producto");
+
+        }
+
+        private void historialDeSalidaDeProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           // controlvistaformulario.ControlVista(this, new Vista.Logistica.entrada.HistorialEntradaProducto());
+            modulo.auditoria("Logistica", "Almacen", "Entrada de Producto", "Historial de Entrada de Producto");
+
+        }
+
+        private void nuevaSalidaDeProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          //  controlvistaformulario.ControlVista(this, new Vista.Logistica.salida.frmSalidaDeProducto());
+            modulo.auditoria("Logistica", "Almacen", "Salida de Producto", "Nueva Salida de Producto");
+
+        }
+
+        private void buscarSalidaDeProductoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+           // controlvistaformulario.ControlVista(this, new Vista.Logistica.salida.frmBuscarSalidaProducto());
+            modulo.auditoria("Logistica", "Almacen", "Salida de Producto", "Buscar Salida de Producto");
+
+        }
+
+        private void historialDeSalidaDeProductoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+          //  controlvistaformulario.ControlVista(this, new Vista.Logistica.salida.frmHistorialSalidaProducto());
+            modulo.auditoria("Logistica", "Almacen", "Salida de Producto", "Historial de Salida de Producto");
+
+        }
 
         private void nuevoProductoToolStripMenuItem_Click(object sender, EventArgs e)
         {

@@ -185,8 +185,10 @@ namespace pl_Gurkas.Datos.DataReportes.Logistica
             dta.Fill(dt);
             dt.Columns[0].ColumnName = "ITEM";
             dt.Columns[1].ColumnName = "COD_PRODUCTO";
-            dt.Columns[1].ColumnName = "DESCRIPCION_PRODUCTO";
-            dt.Columns[1].ColumnName = "CANTIDAD_ENTREGADO";
+            dt.Columns[2].ColumnName = "DESCRIPCION_PRODUCTO";
+            dt.Columns[3].ColumnName = "CANTIDAD_ENTREGADA";
+            dt.Columns[4].ColumnName = "CANTIDAD_DEVUELTA";
+            dt.Columns[5].ColumnName = "CANTIDAD_PENDIENTE";
             return dt;
         }
 
