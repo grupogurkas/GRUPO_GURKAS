@@ -71,6 +71,7 @@ namespace pl_Gurkas.Vista.Principal
             this.cargaMasivaDeDatosLaboralesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.postulanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroPersonalC4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personalActivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.centroDeControlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.asistenciaDePersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -111,14 +112,6 @@ namespace pl_Gurkas.Vista.Principal
             this.personalToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.codigoYEstadoPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.almacenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.entradaDeProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nuevaEntradaDeProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.buscarSalidaDeProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.historialDeSalidaDeProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salidaDeProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nuevaSalidaDeProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.buscarSalidaDeProductoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.historialDeSalidaDeProductoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.productosEnAlmacenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.proveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -187,7 +180,6 @@ namespace pl_Gurkas.Vista.Principal
             this.reporteDeAsistenciaPorPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.activarModoAdministradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.personalActivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -535,6 +527,13 @@ namespace pl_Gurkas.Vista.Principal
             this.registroPersonalC4ToolStripMenuItem.Text = "Registro Personal C4";
             this.registroPersonalC4ToolStripMenuItem.Click += new System.EventHandler(this.registroPersonalC4ToolStripMenuItem_Click);
             // 
+            // personalActivoToolStripMenuItem
+            // 
+            this.personalActivoToolStripMenuItem.Name = "personalActivoToolStripMenuItem";
+            this.personalActivoToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.personalActivoToolStripMenuItem.Text = "Personal Activo";
+            this.personalActivoToolStripMenuItem.Click += new System.EventHandler(this.personalActivoToolStripMenuItem_Click);
+            // 
             // centroDeControlToolStripMenuItem
             // 
             this.centroDeControlToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -834,7 +833,7 @@ namespace pl_Gurkas.Vista.Principal
             this.personalToolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.codigoYEstadoPersonalToolStripMenuItem});
             this.personalToolStripMenuItem3.Name = "personalToolStripMenuItem3";
-            this.personalToolStripMenuItem3.Size = new System.Drawing.Size(121, 22);
+            this.personalToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.personalToolStripMenuItem3.Text = "Reporte";
             // 
             // codigoYEstadoPersonalToolStripMenuItem
@@ -847,76 +846,12 @@ namespace pl_Gurkas.Vista.Principal
             // almacenToolStripMenuItem
             // 
             this.almacenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.entradaDeProductoToolStripMenuItem,
-            this.salidaDeProductoToolStripMenuItem,
             this.productosEnAlmacenToolStripMenuItem,
             this.proveedoresToolStripMenuItem,
             this.inventariadoToolStripMenuItem});
             this.almacenToolStripMenuItem.Name = "almacenToolStripMenuItem";
-            this.almacenToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.almacenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.almacenToolStripMenuItem.Text = "Almacen";
-            // 
-            // entradaDeProductoToolStripMenuItem
-            // 
-            this.entradaDeProductoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nuevaEntradaDeProductoToolStripMenuItem,
-            this.buscarSalidaDeProductoToolStripMenuItem,
-            this.historialDeSalidaDeProductoToolStripMenuItem});
-            this.entradaDeProductoToolStripMenuItem.Name = "entradaDeProductoToolStripMenuItem";
-            this.entradaDeProductoToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
-            this.entradaDeProductoToolStripMenuItem.Text = "Entrada de Producto";
-            // 
-            // nuevaEntradaDeProductoToolStripMenuItem
-            // 
-            this.nuevaEntradaDeProductoToolStripMenuItem.Name = "nuevaEntradaDeProductoToolStripMenuItem";
-            this.nuevaEntradaDeProductoToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
-            this.nuevaEntradaDeProductoToolStripMenuItem.Text = "Nueva Entrada de Producto";
-            this.nuevaEntradaDeProductoToolStripMenuItem.Click += new System.EventHandler(this.nuevaEntradaDeProductoToolStripMenuItem_Click);
-            // 
-            // buscarSalidaDeProductoToolStripMenuItem
-            // 
-            this.buscarSalidaDeProductoToolStripMenuItem.Name = "buscarSalidaDeProductoToolStripMenuItem";
-            this.buscarSalidaDeProductoToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
-            this.buscarSalidaDeProductoToolStripMenuItem.Text = "Buscar Entrada de Producto";
-            this.buscarSalidaDeProductoToolStripMenuItem.Click += new System.EventHandler(this.buscarSalidaDeProductoToolStripMenuItem_Click);
-            // 
-            // historialDeSalidaDeProductoToolStripMenuItem
-            // 
-            this.historialDeSalidaDeProductoToolStripMenuItem.Name = "historialDeSalidaDeProductoToolStripMenuItem";
-            this.historialDeSalidaDeProductoToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
-            this.historialDeSalidaDeProductoToolStripMenuItem.Text = "Historial de Entrada de Producto";
-            this.historialDeSalidaDeProductoToolStripMenuItem.Click += new System.EventHandler(this.historialDeSalidaDeProductoToolStripMenuItem_Click);
-            // 
-            // salidaDeProductoToolStripMenuItem
-            // 
-            this.salidaDeProductoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nuevaSalidaDeProductoToolStripMenuItem,
-            this.buscarSalidaDeProductoToolStripMenuItem1,
-            this.historialDeSalidaDeProductoToolStripMenuItem1});
-            this.salidaDeProductoToolStripMenuItem.Name = "salidaDeProductoToolStripMenuItem";
-            this.salidaDeProductoToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
-            this.salidaDeProductoToolStripMenuItem.Text = "Salida de Producto";
-            // 
-            // nuevaSalidaDeProductoToolStripMenuItem
-            // 
-            this.nuevaSalidaDeProductoToolStripMenuItem.Name = "nuevaSalidaDeProductoToolStripMenuItem";
-            this.nuevaSalidaDeProductoToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
-            this.nuevaSalidaDeProductoToolStripMenuItem.Text = "Nueva Salida de Producto";
-            this.nuevaSalidaDeProductoToolStripMenuItem.Click += new System.EventHandler(this.nuevaSalidaDeProductoToolStripMenuItem_Click);
-            // 
-            // buscarSalidaDeProductoToolStripMenuItem1
-            // 
-            this.buscarSalidaDeProductoToolStripMenuItem1.Name = "buscarSalidaDeProductoToolStripMenuItem1";
-            this.buscarSalidaDeProductoToolStripMenuItem1.Size = new System.Drawing.Size(236, 22);
-            this.buscarSalidaDeProductoToolStripMenuItem1.Text = "Buscar Salida de Producto";
-            this.buscarSalidaDeProductoToolStripMenuItem1.Click += new System.EventHandler(this.buscarSalidaDeProductoToolStripMenuItem1_Click);
-            // 
-            // historialDeSalidaDeProductoToolStripMenuItem1
-            // 
-            this.historialDeSalidaDeProductoToolStripMenuItem1.Name = "historialDeSalidaDeProductoToolStripMenuItem1";
-            this.historialDeSalidaDeProductoToolStripMenuItem1.Size = new System.Drawing.Size(236, 22);
-            this.historialDeSalidaDeProductoToolStripMenuItem1.Text = "Historial de Salida de Producto";
-            this.historialDeSalidaDeProductoToolStripMenuItem1.Click += new System.EventHandler(this.historialDeSalidaDeProductoToolStripMenuItem1_Click);
             // 
             // productosEnAlmacenToolStripMenuItem
             // 
@@ -929,7 +864,7 @@ namespace pl_Gurkas.Vista.Principal
             // nuevoProductoToolStripMenuItem
             // 
             this.nuevoProductoToolStripMenuItem.Name = "nuevoProductoToolStripMenuItem";
-            this.nuevoProductoToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.nuevoProductoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.nuevoProductoToolStripMenuItem.Text = "Nuevo Producto";
             this.nuevoProductoToolStripMenuItem.Click += new System.EventHandler(this.nuevoProductoToolStripMenuItem_Click);
             // 
@@ -1456,13 +1391,6 @@ namespace pl_Gurkas.Vista.Principal
             this.activarModoAdministradorToolStripMenuItem.Text = "Activar Modo Administrador";
             this.activarModoAdministradorToolStripMenuItem.Click += new System.EventHandler(this.activarModoAdministradorToolStripMenuItem_Click);
             // 
-            // personalActivoToolStripMenuItem
-            // 
-            this.personalActivoToolStripMenuItem.Name = "personalActivoToolStripMenuItem";
-            this.personalActivoToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
-            this.personalActivoToolStripMenuItem.Text = "Personal Activo";
-            this.personalActivoToolStripMenuItem.Click += new System.EventHandler(this.personalActivoToolStripMenuItem_Click);
-            // 
             // frmPrincipalConsorcioGurkas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1565,14 +1493,6 @@ namespace pl_Gurkas.Vista.Principal
         private System.Windows.Forms.ToolStripMenuItem personalToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem codigoYEstadoPersonalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem almacenToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem entradaDeProductoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem nuevaEntradaDeProductoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem buscarSalidaDeProductoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem historialDeSalidaDeProductoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salidaDeProductoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem nuevaSalidaDeProductoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem buscarSalidaDeProductoToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem historialDeSalidaDeProductoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem productosEnAlmacenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nuevoProductoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem proveedoresToolStripMenuItem;

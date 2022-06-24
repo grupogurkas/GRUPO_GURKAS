@@ -141,28 +141,47 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
                 txtNumOrden.Text = "LOG-C-000" + (numero + 1);
             }
         }
+        private bool ValidateGrid(DataGridView dgvListaProducto)
+        {
+            for (int i = 0; i < dgvListaProducto.RowCount - 1; i++)
+            {
+                for (int j = 0; j < dgvListaProducto.ColumnCount; j++)
+                {
+                    if (string.IsNullOrEmpty((string)dgvListaProducto.Rows[i].Cells[j].Value))
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
         private void agregardataProducto()
         {
-                string cod_producto = cboProducto.SelectedValue.ToString();
-                string nombre_producto = cboProducto.GetItemText(cboProducto.SelectedItem);
-                string cantidad = txtCantidadProducto.Text;
-                string costo_unitario = txtCostoUnitario.Text;
-                string costo_total = txtCostoTotal.Text;
-                int n = dgvListaProducto.Rows.Count;
-                string c = Convert.ToString(n + 1);
-                DataRow row = dt.NewRow();
-                row["ID"] = c;
-                row["CodProducto"] = cod_producto;
-                row["Nombre"] = nombre_producto;
-                row["Cantidad"] = cantidad;
-                row["CostoUnitario"] = costo_unitario;
-                row["CostoTotal"] = costo_total;
-                dt.Rows.Add(row);
-                if ((n + 1) == 26)
-                {
-                    btnAgregar.Enabled = false;
-                }
+
+            string cod_producto = cboProducto.SelectedValue.ToString();
+            string nombre_producto = cboProducto.GetItemText(cboProducto.SelectedItem);
+            string cantidad = txtCantidadProducto.Text;
+            string costo_unitario = txtCostoUnitario.Text;
+            string costo_total = txtCostoTotal.Text;
+            int n = dgvListaProducto.Rows.Count;
+            string c = Convert.ToString(n + 1);
+            DataRow row = dt.NewRow();
+            row["ID"] = c;
+            row["CodProducto"] = cod_producto;
+            row["Nombre"] = nombre_producto;
+            row["Cantidad"] = cantidad;
+            row["CostoUnitario"] = costo_unitario;
+            row["CostoTotal"] = costo_total;
+            dt.Rows.Add(row);
+            if ((n + 1) == 26)
+            {
+                btnAgregar.Enabled = false;
+            }
         }
+
+
+
+
         private void txtCostoUnitario_TextChanged(object sender, EventArgs e)
         {
             if (txtCantidadProducto.Text != "" && txtCostoUnitario.Text != "")
@@ -202,12 +221,38 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             {
                 btnAgregar.Enabled = true;
             }
+        
         }
-
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            agregardataProducto();
-            calculo();
+            //decimal costo_uni = Convert.ToInt32(txtCostoUnitario.Text);
+            //decimal cantidad = Convert.ToInt32(txtCantidadProducto.Text);
+
+            if (cboProducto.SelectedIndex == 0)
+            {
+                MessageBox.Show("Debe Seleccionar Un Producto", "Advertencia");
+                cboProducto.Focus();
+            }
+            else if (txtCantidadProducto.Equals(""))
+            {
+                MessageBox.Show("Ingresar Una cantidad", "Advertencia");
+                txtCantidadProducto.Focus();
+            }
+            else if (txtCostoUnitario.Equals(""))
+            {
+                MessageBox.Show("Ingresar Una cantidad", "Advertencia");
+                txtCostoUnitario.Focus();
+            }
+            else
+            {
+                agregardataProducto();
+                calculo();
+                //txtCantidadTecno.Text = "";
+                cboProducto.SelectedIndex = 0;
+                //txtstock.Text = "0";
+            }
+               
+            
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
@@ -424,6 +469,15 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
         }
         private void btnImprimir_Click_1(object sender, EventArgs e)
         {
+            if (validar_campos() == true)
+            {
+                imprimir();
+            }
+        }
+
+
+        private void imprimir()
+        {
             System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
             PrintDialog1.AllowSomePages = true;
             PrintDialog1.ShowHelp = true;
@@ -435,8 +489,18 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
                 registarvaleordencompar();
                 limpiardatos();
             }
-           //printPreviewDialog1.ShowDialog();
+            //printPreviewDialog1.ShowDialog();
         }
+        private Boolean validar_campos()
+        {
+            if (cboProveedorActivo.SelectedIndex == 0 || cboProducto.SelectedIndex == 0 || txtCantidadProducto.Text == "" || txtCostoUnitario.Text == "")
+            {
+                MessageBox.Show("Debe Seleccionar Todos los campos", "Advertencia");
+                return false;
+            }
+            return true;
+        }
+
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             limpiardatos();
