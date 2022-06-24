@@ -285,11 +285,11 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             int COD_AREA_ENTREGA = cboAreaLaboral.SelectedIndex;
             string cod = cboEmpresa.SelectedValue.ToString();
             int COD_EMPRESA = Convert.ToInt32(cod);
+            string COD_UNIDAD = cboUnidad.SelectedValue.ToString();
+            string COD_SEDE = cboSede.SelectedValue.ToString();
+            string INFORMACION_ADICIONAL_SALIDA = txtInformacionAdicional.Text;
 
 
-            string cod_unidad = cboUnidad.SelectedValue.ToString();
-            string cod_sede = cboSede.SelectedValue.ToString();
-            string imformacion_adicional = txtInformacionAdicional.Text;
 
             string entregado_nombre = txtEntregado.Text;
             string cod_entregado = txtcod_entrega.Text;
@@ -299,7 +299,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             string cod_revisa = txtcod_resive.Text;
             string dni_revisa = txtdni_resive.Text;
 
-            string fecha_vale = lblFecha.Text;
+            string FECHA_VALE_DEVOLUCION = lblFecha.Text;
             string hora = lblHora.Text;
             string nombre_user = Datos.DatosUsuario._usuario;
             try
@@ -320,18 +320,20 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                         comando.Parameters.AddWithValue("@COD_PUESTO", SqlDbType.VarChar).Value = COD_PUESTO;
                         comando.Parameters.AddWithValue("@COD_AREA_ENTREGA", SqlDbType.Int).Value = COD_AREA_ENTREGA;
                         comando.Parameters.AddWithValue("@COD_EMPRESA", SqlDbType.Int).Value = COD_EMPRESA;
+                        comando.Parameters.AddWithValue("@COD_UNIDAD", SqlDbType.VarChar).Value = COD_UNIDAD;
+                        comando.Parameters.AddWithValue("@COD_SEDE", SqlDbType.VarChar).Value = COD_SEDE;
+                        comando.Parameters.AddWithValue("@INFORMACION_ADICIONAL_SALIDA", SqlDbType.VarChar).Value = INFORMACION_ADICIONAL_SALIDA;
+                        comando.Parameters.AddWithValue("@ENTREGADO_NOMBRE", SqlDbType.VarChar).Value = entregado_nombre;
+                        comando.Parameters.AddWithValue("@COD_ENTREGADO", SqlDbType.VarChar).Value = cod_entregado;
+                        comando.Parameters.AddWithValue("@DNI_ENTREGADO", SqlDbType.VarChar).Value = dni_entregado;
+                        comando.Parameters.AddWithValue("@RESIVE_NOMBRE", SqlDbType.VarChar).Value = nombre_revisa;
+                        comando.Parameters.AddWithValue("@COD_RESIVE", SqlDbType.VarChar).Value = cod_revisa;
+                        comando.Parameters.AddWithValue("@DNI_RESIVE", SqlDbType.VarChar).Value = dni_revisa;
+                        comando.Parameters.AddWithValue("@FECHA_VALE_DEVOLUCION", SqlDbType.VarChar).Value = FECHA_VALE_DEVOLUCION;
+                        comando.Parameters.AddWithValue("@ID_CONDICION_PRODUCTO", Convert.ToInt32(row.Cells["Estado"].Value));
 
-                        comando.Parameters.AddWithValue("COD_UNIDAD", SqlDbType.VarChar).Value = cod_unidad;
-                        comando.Parameters.AddWithValue("COD_SEDE", SqlDbType.VarChar).Value = cod_sede;
-                        comando.Parameters.AddWithValue("INFORMACION_ADICIONAL", SqlDbType.VarChar).Value = imformacion_adicional;
-                        comando.Parameters.AddWithValue("ENTREGADO_NOMBRE", SqlDbType.VarChar).Value = entregado_nombre;
-                        comando.Parameters.AddWithValue("COD_ENTREGADO", SqlDbType.VarChar).Value = cod_entregado;
-                        comando.Parameters.AddWithValue("DNI_ENTREGADO", SqlDbType.VarChar).Value = dni_entregado;
-                        comando.Parameters.AddWithValue("SOLICITADO_NOMBRE", SqlDbType.VarChar).Value = nombre_revisa;
-                        comando.Parameters.AddWithValue("COD_SOLICITADO", SqlDbType.VarChar).Value = cod_revisa;
-                        comando.Parameters.AddWithValue("DNI_SOLICITADO", SqlDbType.VarChar).Value = dni_revisa;
-                        comando.Parameters.AddWithValue("FECHA_VALE", SqlDbType.VarChar).Value = fecha_vale;
-                        comando.Parameters.AddWithValue("ITEM_VALE", Convert.ToInt32(row.Cells["ID"].Value));
+
+
                         comando.Parameters.AddWithValue("COD_PRODUCTO", Convert.ToString(row.Cells["CodProducto"].Value));
                         comando.Parameters.AddWithValue("DESP_PRODUCTO", Convert.ToString(row.Cells["Nombre"].Value));
                         comando.Parameters.AddWithValue("OBSERVACION_PRODUCTO", Convert.ToString(row.Cells["Observacion"].Value));
