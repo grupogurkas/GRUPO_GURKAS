@@ -410,11 +410,13 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             Rectangle N11 = new Rectangle(570, 20, 220, 60);
             Rectangle N12 = new Rectangle(570, 20, 220, 30);
             Rectangle CODIGO_ = new Rectangle(20, 310, 70, 715);
-           // Rectangle CODIGO_ = new Rectangle(70, 310, 60, 715);110
+            // Rectangle CODIGO_ = new Rectangle(70, 310, 60, 715);110
             Rectangle PRODUCTO_ = new Rectangle(90, 310, 400, 715);
             Rectangle CANT_ENTREGADO_ = new Rectangle(490, 310, 100, 715);
-            Rectangle CONDICION_ = new Rectangle(630, 310, 100, 715);
-            Rectangle CANT_ = new Rectangle(730, 310, 60, 715);
+            Rectangle CANT_DEVUELTA_ = new Rectangle(590, 310, 100, 715);
+            Rectangle FECHA_1_ = new Rectangle(590, 325, 50, 700);
+            Rectangle FECHA_2_ = new Rectangle(640, 325, 50, 700);
+            Rectangle CANT_PENDIENTE_ = new Rectangle(690, 310, 100, 715);
             e.Graphics.DrawRectangle(blackPen, N1);
             e.Graphics.DrawRectangle(blackPen, N2);
             e.Graphics.DrawRectangle(blackPen, N3);
@@ -428,11 +430,13 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             e.Graphics.DrawRectangle(blackPen, N11);
             e.Graphics.DrawRectangle(blackPen, N12);
             e.Graphics.DrawRectangle(blackPen, CODIGO_);
-           // e.Graphics.DrawRectangle(blackPen, CODIGO_);
+            // e.Graphics.DrawRectangle(blackPen, CODIGO_);
             e.Graphics.DrawRectangle(blackPen, PRODUCTO_);
             e.Graphics.DrawRectangle(blackPen, CANT_ENTREGADO_);
-            e.Graphics.DrawRectangle(blackPen, CONDICION_);
-            e.Graphics.DrawRectangle(blackPen, CANT_);
+            e.Graphics.DrawRectangle(blackPen, CANT_DEVUELTA_);
+            e.Graphics.DrawRectangle(blackPen, FECHA_1_);
+            e.Graphics.DrawRectangle(blackPen, FECHA_2_);
+            e.Graphics.DrawRectangle(blackPen, CANT_PENDIENTE_);
 
             e.Graphics.DrawString("CARGO DE DEVOLUCION", tipoTexto, Brushes.Black, 310, 25);
             e.Graphics.DrawString(emp, nombres, Brushes.Black, 290, 45);
@@ -489,25 +493,25 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             e.Graphics.DrawString("FIRMA : _______________________________", tipoTexto, Brushes.Black, 420, 275);
 
             string l1 = "--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
-            e.Graphics.DrawString(l1, new System.Drawing.Font("Book Antiqua", 9, FontStyle.Bold), Brushes.Black, 20, 320);//360
+            e.Graphics.DrawString(l1, new System.Drawing.Font("Book Antiqua", 9, FontStyle.Bold), Brushes.Black, 20, 330);//360
 
             string g1 = "CODIGO";
             e.Graphics.DrawString(g1, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 30, 315);
 
-           /* string g2 = "CODIGO";
-            e.Graphics.DrawString(g2, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 72, 315);*/
+            /* string g2 = "CODIGO";
+             e.Graphics.DrawString(g2, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 72, 315);*/
 
             string g3 = "DESCRIPCION";
             e.Graphics.DrawString(g3, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 180, 315);
 
             string g6 = "CANT. ENTREGADO";
-            e.Graphics.DrawString(g6, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 538, 315);
+            e.Graphics.DrawString(g6, new System.Drawing.Font("Book Antiqua", 6, FontStyle.Bold), Brushes.Black, 495, 315);
 
-            string g4 = "CONDICION";
-            e.Graphics.DrawString(g4, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 645, 315);
+            string g4 = "CANT. DEVUELTA";
+            e.Graphics.DrawString(g4, new System.Drawing.Font("Book Antiqua", 6, FontStyle.Bold), Brushes.Black, 595, 313);
 
-            string g5 = "CANT.";
-            e.Graphics.DrawString(g5, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 735, 315);
+            string g5 = "CANT. PENDIENTE";
+            e.Graphics.DrawString(g5, new System.Drawing.Font("Book Antiqua", 6, FontStyle.Bold), Brushes.Black, 695, 315);
 
             e.Graphics.DrawString("INFORMACIÓN ADICIONAL : ", tipoTexto, Brushes.Black, 50, 1050);
             e.Graphics.DrawString(informacion_adicional, tipoTexto, Brushes.Black, new RectangleF(50, 1070, 700, 50));
@@ -526,7 +530,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                       //  e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[1].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(30, height, 30, 20));
                         e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[2].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(30, height, 100, 100));
                         e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[3].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(105, height, 300, 40));
-                        e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[4].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(750, height, 30, 20));
+                        e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[4].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(540, height, 30, 20));
                         //  e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[5].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(750, height, 30, 20));
                         //  e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[6].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(540, height, 90, 40));//(640, height, 100, 100));
                     }
