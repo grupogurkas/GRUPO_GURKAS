@@ -68,7 +68,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dgvListaProducto = new System.Windows.Forms.DataGridView();
-            this.txtNumVale = new System.Windows.Forms.TextBox();
+            this.txtNumDevolucion = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.lblcodentre = new System.Windows.Forms.Label();
@@ -484,12 +484,12 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.dgvListaProducto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListaProducto_CellContentClick);
             this.dgvListaProducto.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvListaProducto_CellPainting);
             // 
-            // txtNumVale
+            // txtNumDevolucion
             // 
-            this.txtNumVale.Location = new System.Drawing.Point(597, 60);
-            this.txtNumVale.Name = "txtNumVale";
-            this.txtNumVale.Size = new System.Drawing.Size(104, 20);
-            this.txtNumVale.TabIndex = 231;
+            this.txtNumDevolucion.Location = new System.Drawing.Point(597, 60);
+            this.txtNumDevolucion.Name = "txtNumDevolucion";
+            this.txtNumDevolucion.Size = new System.Drawing.Size(104, 20);
+            this.txtNumDevolucion.TabIndex = 231;
             // 
             // label9
             // 
@@ -640,7 +640,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1361, 651);
-            this.Controls.Add(this.txtNumVale);
+            this.Controls.Add(this.txtNumDevolucion);
             this.Controls.Add(this.txtNumValeSalida);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label9);
@@ -692,7 +692,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtResivido;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtNumVale;
+        private System.Windows.Forms.TextBox txtNumDevolucion;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox cboTipoPuesto;

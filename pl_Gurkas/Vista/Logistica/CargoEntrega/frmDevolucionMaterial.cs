@@ -73,7 +73,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private void bloqueo_datos()
         {
             txtResivido.Enabled = false;
-            txtNumVale.Enabled = false;
+            txtNumDevolucion.Enabled = false;
             txtNumValeSalida.Enabled = false;
             txtEntregado.Enabled = false;
             cboTipoPuesto.Enabled = false;
@@ -219,19 +219,19 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             int numero = Convert.ToInt32(resultado);
             if (numero < 10)
             {
-                txtNumVale.Text = "LOG-D-000000" + (numero + 1);
+                txtNumDevolucion.Text = "LOG-D-000000" + (numero + 1);
             }
             if (numero > 9 && numero < 100)
             {
-                txtNumVale.Text = "LOG-D-00000" + (numero + 1);
+                txtNumDevolucion.Text = "LOG-D-00000" + (numero + 1);
             }
             if (numero > 99 && numero < 1000)
             {
-                txtNumVale.Text = "LOG-D-0000" + (numero + 1);
+                txtNumDevolucion.Text = "LOG-D-0000" + (numero + 1);
             }
             if (numero > 9999 && numero < 10000)
             {
-                txtNumVale.Text = "LOG-D-000" + (numero + 1);
+                txtNumDevolucion.Text = "LOG-D-000" + (numero + 1);
             }
         }
 
@@ -279,11 +279,14 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         }
         private void agregar_Datos()
         {
-            int cod_puesto = cboTipoPuesto.SelectedIndex;
-            int cod_area_entrega = cboAreaLaboral.SelectedIndex;
+            string NUM_DEVOLUCION = txtNumDevolucion.Text;
+            string NUM_SALIDA = txtNumValeSalida.Text;
+            int COD_PUESTO = cboTipoPuesto.SelectedIndex;
+            int COD_AREA_ENTREGA = cboAreaLaboral.SelectedIndex;
             string cod = cboEmpresa.SelectedValue.ToString();
-            int c = Convert.ToInt32(cod);
-            string NUM_VALE = txtNumVale.Text;
+            int COD_EMPRESA = Convert.ToInt32(cod);
+
+
             string cod_unidad = cboUnidad.SelectedValue.ToString();
             string cod_sede = cboSede.SelectedValue.ToString();
             string imformacion_adicional = txtInformacionAdicional.Text;
@@ -310,29 +313,32 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                 {
                     if (row.Cells["ID"].Value != null && row.Cells["CodProducto"].Value != null)
                     {
+
                         comando.Parameters.Clear();
-                        comando.Parameters.AddWithValue("@COD_PUESTO", SqlDbType.Int).Value = cod_puesto;
-                        comando.Parameters.AddWithValue("@COD_AREA_ENTREGA", SqlDbType.Int).Value = cod_area_entrega;
-                        comando.Parameters.AddWithValue("@NUM_ENTREGA", SqlDbType.VarChar).Value = NUM_VALE;
-                        comando.Parameters.AddWithValue("@COD_EMPRESA", SqlDbType.Int).Value = c;
-                        comando.Parameters.AddWithValue("@COD_UNIDAD", SqlDbType.VarChar).Value = cod_unidad;
-                        comando.Parameters.AddWithValue("@COD_SEDE", SqlDbType.VarChar).Value = cod_sede;
-                        comando.Parameters.AddWithValue("@INFORMACION_ADICIONAL", SqlDbType.VarChar).Value = imformacion_adicional;
-                        comando.Parameters.AddWithValue("@ENTREGADO_NOMBRE", SqlDbType.VarChar).Value = entregado_nombre;
-                        comando.Parameters.AddWithValue("@COD_ENTREGADO", SqlDbType.VarChar).Value = cod_entregado;
-                        comando.Parameters.AddWithValue("@DNI_ENTREGADO", SqlDbType.VarChar).Value = dni_entregado;
-                        comando.Parameters.AddWithValue("@SOLICITADO_NOMBRE", SqlDbType.VarChar).Value = nombre_revisa;
-                        comando.Parameters.AddWithValue("@COD_SOLICITADO", SqlDbType.VarChar).Value = cod_revisa;
-                        comando.Parameters.AddWithValue("@DNI_SOLICITADO", SqlDbType.VarChar).Value = dni_revisa;
-                        comando.Parameters.AddWithValue("@FECHA_VALE", SqlDbType.VarChar).Value = fecha_vale;
-                        comando.Parameters.AddWithValue("@ITEM_VALE", Convert.ToInt32(row.Cells["ID"].Value));
-                        comando.Parameters.AddWithValue("@COD_PRODUCTO", Convert.ToString(row.Cells["CodProducto"].Value));
-                        comando.Parameters.AddWithValue("@DESP_PRODUCTO", Convert.ToString(row.Cells["Nombre"].Value));
-                        comando.Parameters.AddWithValue("@OBSERVACION_PRODUCTO", Convert.ToString(row.Cells["Observacion"].Value));
-                        comando.Parameters.AddWithValue("@CONDICION_PRODUCTO", Convert.ToString(row.Cells["CondicionEntrega"].Value));
-                        comando.Parameters.AddWithValue("@CANTIDAD_SOLICITADA", Convert.ToInt32(row.Cells["Cantidad"].Value));
-                        comando.Parameters.AddWithValue("@HORA", SqlDbType.VarChar).Value = hora;
-                        comando.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_user;
+                        comando.Parameters.AddWithValue("@NUM_DEVOLUCION", SqlDbType.Int).Value = NUM_DEVOLUCION;
+                        comando.Parameters.AddWithValue("@NUM_SALIDA", SqlDbType.Int).Value = NUM_SALIDA;
+                        comando.Parameters.AddWithValue("@COD_PUESTO", SqlDbType.VarChar).Value = COD_PUESTO;
+                        comando.Parameters.AddWithValue("@COD_AREA_ENTREGA", SqlDbType.Int).Value = COD_AREA_ENTREGA;
+                        comando.Parameters.AddWithValue("@COD_EMPRESA", SqlDbType.Int).Value = COD_EMPRESA;
+
+                        comando.Parameters.AddWithValue("COD_UNIDAD", SqlDbType.VarChar).Value = cod_unidad;
+                        comando.Parameters.AddWithValue("COD_SEDE", SqlDbType.VarChar).Value = cod_sede;
+                        comando.Parameters.AddWithValue("INFORMACION_ADICIONAL", SqlDbType.VarChar).Value = imformacion_adicional;
+                        comando.Parameters.AddWithValue("ENTREGADO_NOMBRE", SqlDbType.VarChar).Value = entregado_nombre;
+                        comando.Parameters.AddWithValue("COD_ENTREGADO", SqlDbType.VarChar).Value = cod_entregado;
+                        comando.Parameters.AddWithValue("DNI_ENTREGADO", SqlDbType.VarChar).Value = dni_entregado;
+                        comando.Parameters.AddWithValue("SOLICITADO_NOMBRE", SqlDbType.VarChar).Value = nombre_revisa;
+                        comando.Parameters.AddWithValue("COD_SOLICITADO", SqlDbType.VarChar).Value = cod_revisa;
+                        comando.Parameters.AddWithValue("DNI_SOLICITADO", SqlDbType.VarChar).Value = dni_revisa;
+                        comando.Parameters.AddWithValue("FECHA_VALE", SqlDbType.VarChar).Value = fecha_vale;
+                        comando.Parameters.AddWithValue("ITEM_VALE", Convert.ToInt32(row.Cells["ID"].Value));
+                        comando.Parameters.AddWithValue("COD_PRODUCTO", Convert.ToString(row.Cells["CodProducto"].Value));
+                        comando.Parameters.AddWithValue("DESP_PRODUCTO", Convert.ToString(row.Cells["Nombre"].Value));
+                        comando.Parameters.AddWithValue("OBSERVACION_PRODUCTO", Convert.ToString(row.Cells["Observacion"].Value));
+                        comando.Parameters.AddWithValue("CONDICION_PRODUCTO", Convert.ToString(row.Cells["CondicionEntrega"].Value));
+                        comando.Parameters.AddWithValue("CANTIDAD_SOLICITADA", Convert.ToInt32(row.Cells["Cantidad"].Value));
+                        comando.Parameters.AddWithValue("HORA", SqlDbType.VarChar).Value = hora;
+                        comando.Parameters.AddWithValue("USUARIO", SqlDbType.VarChar).Value = nombre_user;
                         comando.ExecuteNonQuery();
                     }
                 }
@@ -370,7 +376,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
             string dni_ENTREGA = txtdni_entrega.Text;
             string cod_ENTREGA = txtcod_entrega.Text;
-            string num = txtNumVale.Text;
+            string num = txtNumDevolucion.Text;
 
             Font tipoTexto = new Font("Arial", 10, FontStyle.Bold);
             Font desp = new Font("Arial", 8, FontStyle.Bold);
