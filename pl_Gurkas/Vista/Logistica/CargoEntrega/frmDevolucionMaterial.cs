@@ -412,7 +412,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             Rectangle CODIGO_ = new Rectangle(20, 310, 70, 715);
            // Rectangle CODIGO_ = new Rectangle(70, 310, 60, 715);110
             Rectangle PRODUCTO_ = new Rectangle(90, 310, 400, 715);
-            Rectangle OBSERVACION_ = new Rectangle(530, 310, 100, 715);
+            Rectangle CANT_ENTREGADO_ = new Rectangle(490, 310, 100, 715);
             Rectangle CONDICION_ = new Rectangle(630, 310, 100, 715);
             Rectangle CANT_ = new Rectangle(730, 310, 60, 715);
             e.Graphics.DrawRectangle(blackPen, N1);
@@ -430,7 +430,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             e.Graphics.DrawRectangle(blackPen, CODIGO_);
            // e.Graphics.DrawRectangle(blackPen, CODIGO_);
             e.Graphics.DrawRectangle(blackPen, PRODUCTO_);
-            e.Graphics.DrawRectangle(blackPen, OBSERVACION_);
+            e.Graphics.DrawRectangle(blackPen, CANT_ENTREGADO_);
             e.Graphics.DrawRectangle(blackPen, CONDICION_);
             e.Graphics.DrawRectangle(blackPen, CANT_);
 
@@ -500,7 +500,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             string g3 = "DESCRIPCION";
             e.Graphics.DrawString(g3, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 180, 315);
 
-            string g6 = "OBSERVACION";
+            string g6 = "CANT. ENTREGADO";
             e.Graphics.DrawString(g6, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 538, 315);
 
             string g4 = "CONDICION";
