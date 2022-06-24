@@ -377,6 +377,18 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
 
         private void btnImprimir_Click(object sender, EventArgs e)
         {
+
+            if (validar_campos() == true)
+            {
+                imprimir();
+            }
+
+
+            
+        }
+
+        private void imprimir()
+        {
             System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
             PrintDialog1.AllowSomePages = true;
             PrintDialog1.ShowHelp = true;
@@ -388,7 +400,16 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
                 registrarOrden();
                 limpiardatos();
             }
-           // printPreviewDialog1.ShowDialog();
+            // printPreviewDialog1.ShowDialog();
+        }
+        private Boolean validar_campos()
+        {
+            if (cboProveedorActivo.SelectedIndex == 0 || txtServicio.Text == "" || txtCantidadProducto.Text == "" || txtCostoUnitario.Text == "" )
+            {
+                MessageBox.Show("Debe Seleccionar Todos los campos", "Advertencia");
+                return false;
+            }
+            return true;
         }
         private void registrarOrden()
         {

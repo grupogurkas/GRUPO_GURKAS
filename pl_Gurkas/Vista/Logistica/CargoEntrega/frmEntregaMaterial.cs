@@ -27,6 +27,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private int numberOfItemsPerPage = 0;
         private int numberOfItemsPrintedSoFar = 0;
 
+
         public frmEntregaMaterial()
         {
             InitializeComponent();
@@ -325,9 +326,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private void btnAgregar_Click(object sender, EventArgs e)
         {
 
-            int stock_a = Convert.ToInt32(txtstock.Text);
-            int cantidad = Convert.ToInt32(txtCantidadTecno.Text);
-
             if (cboEstadoMaterial.SelectedIndex == 0)
             {
                 MessageBox.Show("Debe Seleccionar la condicion del material", "Advertencia");
@@ -340,8 +338,11 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             }
             else
             {
+                int stock_a = Convert.ToInt32(txtstock.Text);
+                int cantidad = Convert.ToInt32(txtCantidadTecno.Text);
                 if (cantidad <= stock_a)
                 {
+
                     agregardata();
                     txtCantidadTecno.Text = "";
                     cboProducto.SelectedIndex = 0;
