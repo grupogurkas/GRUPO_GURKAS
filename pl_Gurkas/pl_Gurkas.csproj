@@ -488,24 +488,6 @@
     <Compile Include="Vista\Logistica\CargoEntrega\frmHistorialProductoEmpleado.Designer.cs">
       <DependentUpon>frmHistorialProductoEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Logistica\entrada\frmBuscarEntradaProducto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\Logistica\entrada\frmBuscarEntradaProducto.Designer.cs">
-      <DependentUpon>frmBuscarEntradaProducto.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\Logistica\entrada\frmEntradaProducto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\Logistica\entrada\frmEntradaProducto.Designer.cs">
-      <DependentUpon>frmEntradaProducto.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\Logistica\entrada\HistorialEntradaProducto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\Logistica\entrada\HistorialEntradaProducto.Designer.cs">
-      <DependentUpon>HistorialEntradaProducto.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vista\Logistica\Historial\frmBuscarVale.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -571,24 +553,6 @@
     </Compile>
     <Compile Include="Vista\Logistica\Reporte\frmReportePersonal.Designer.cs">
       <DependentUpon>frmReportePersonal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\Logistica\salida\frmBuscarSalidaProducto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\Logistica\salida\frmBuscarSalidaProducto.Designer.cs">
-      <DependentUpon>frmBuscarSalidaProducto.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\Logistica\salida\frmHistorialSalidaProducto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\Logistica\salida\frmHistorialSalidaProducto.Designer.cs">
-      <DependentUpon>frmHistorialSalidaProducto.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\Logistica\salida\frmSalidaDeProducto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\Logistica\salida\frmSalidaDeProducto.Designer.cs">
-      <DependentUpon>frmSalidaDeProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\MensajeEmergente\DialogForm.cs">
       <SubType>Form</SubType>
@@ -1175,15 +1139,6 @@
     <EmbeddedResource Include="Vista\Logistica\CargoEntrega\frmHistorialProductoEmpleado.resx">
       <DependentUpon>frmHistorialProductoEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Logistica\entrada\frmBuscarEntradaProducto.resx">
-      <DependentUpon>frmBuscarEntradaProducto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Logistica\entrada\frmEntradaProducto.resx">
-      <DependentUpon>frmEntradaProducto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Logistica\entrada\HistorialEntradaProducto.resx">
-      <DependentUpon>HistorialEntradaProducto.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\Historial\frmBuscarVale.resx">
       <DependentUpon>frmBuscarVale.cs</DependentUpon>
     </EmbeddedResource>
@@ -1216,15 +1171,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\Reporte\frmReportePersonal.resx">
       <DependentUpon>frmReportePersonal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Logistica\salida\frmBuscarSalidaProducto.resx">
-      <DependentUpon>frmBuscarSalidaProducto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Logistica\salida\frmHistorialSalidaProducto.resx">
-      <DependentUpon>frmHistorialSalidaProducto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Logistica\salida\frmSalidaDeProducto.resx">
-      <DependentUpon>frmSalidaDeProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\MensajeEmergente\DialogForm.resx">
       <DependentUpon>DialogForm.cs</DependentUpon>
