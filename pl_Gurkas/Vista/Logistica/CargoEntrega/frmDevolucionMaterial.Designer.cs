@@ -136,6 +136,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.btnEntrega.Text = "Registrar Entrega";
             this.btnEntrega.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEntrega.UseVisualStyleBackColor = true;
+            this.btnEntrega.Click += new System.EventHandler(this.btnEntrega_Click);
             // 
             // label42
             // 
@@ -185,6 +186,9 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.dgvListaProducto);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.btnImprimir);
+            this.panel1.Controls.Add(this.label13);
             this.panel1.Location = new System.Drawing.Point(17, 85);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1332, 554);
@@ -196,16 +200,13 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.groupBox2.Controls.Add(this.txtdni_entrega);
             this.groupBox2.Controls.Add(this.txtcod_resive);
             this.groupBox2.Controls.Add(this.txtcod_entrega);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.btnImprimir);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Location = new System.Drawing.Point(673, 3);
+            this.groupBox2.Location = new System.Drawing.Point(1099, 17);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(652, 174);
+            this.groupBox2.Size = new System.Drawing.Size(202, 147);
             this.groupBox2.TabIndex = 221;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos Adicionales";
@@ -240,7 +241,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(358, 30);
+            this.textBox1.Location = new System.Drawing.Point(673, 56);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(288, 85);
@@ -250,7 +251,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(358, 8);
+            this.label13.Location = new System.Drawing.Point(673, 29);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(131, 15);
             this.label13.TabIndex = 231;
@@ -271,7 +272,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.btnImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnImprimir.Image = global::pl_Gurkas.Properties.Resources.descarga_32;
             this.btnImprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnImprimir.Location = new System.Drawing.Point(361, 125);
+            this.btnImprimir.Location = new System.Drawing.Point(967, 56);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(110, 46);
             this.btnImprimir.TabIndex = 226;
@@ -670,6 +671,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmDevolucionMaterial_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);

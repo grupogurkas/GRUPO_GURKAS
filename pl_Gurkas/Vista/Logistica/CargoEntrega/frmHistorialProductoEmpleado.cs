@@ -35,6 +35,10 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             txtCodPersonal.Text = cod_personal;
             txtNombreEmpleado.Text = nomb_personal;
             buscar_vale_salida();
+            dgvListarVale.Columns[0].ReadOnly = true;
+            dgvListarVale.Columns[1].ReadOnly = true;
+            dgvListarVale.RowHeadersVisible = false;
+            dgvListarVale.AllowUserToAddRows = false;
         }
 
         private void dgvListarVale_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
