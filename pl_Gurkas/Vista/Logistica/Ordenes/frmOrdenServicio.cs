@@ -158,8 +158,16 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            agregardataProducto();
-            calculo();
+            if(txtServicio.Text == "" || txtCantidadProducto.Text == "" || txtCostoUnitario.Text == "")
+            {
+                MessageBox.Show("Verificar todos los campos","Advertencia");
+            }
+            else
+            {
+                agregardataProducto();
+                calculo();
+            }
+            
         }
 
         private void txtCostoUnitario_TextChanged(object sender, EventArgs e)

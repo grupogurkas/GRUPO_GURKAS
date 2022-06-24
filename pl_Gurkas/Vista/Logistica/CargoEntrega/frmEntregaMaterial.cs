@@ -326,7 +326,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private void btnAgregar_Click(object sender, EventArgs e)
         {
 
-            if (cboEstadoMaterial.SelectedIndex == 0)
+            if (cboEstadoMaterial.SelectedIndex == 0 )
             {
                 MessageBox.Show("Debe Seleccionar la condicion del material", "Advertencia");
                 cboEstadoMaterial.Focus();
