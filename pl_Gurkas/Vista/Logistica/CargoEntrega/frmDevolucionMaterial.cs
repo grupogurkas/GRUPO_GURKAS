@@ -127,6 +127,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             txtResivido.Text = nombre_user;
            
             obtener_datos();
+            obtener_datos_devuelve();
             GenerarNumVale();
             llenado_datos();
             bloqueo_datos();
@@ -134,10 +135,31 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             buscar_Datos();
             buscar_Datos_producto();
             seleccionar_primer_valor();
+
+            DataGridViewButtonColumn btnclm = new DataGridViewButtonColumn();
+            btnclm.Name = "Eliminar";
+            dgvListaProducto.Columns.Add(btnclm);
+        }
+        private void imprimir()
+        {
+
+            /*System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
+            PrintDialog1.AllowSomePages = true;
+            PrintDialog1.ShowHelp = true;
+            PrintDialog1.Document = printDocument1;
+            DialogResult result = PrintDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                printPreviewDialog1.ShowDialog();
+                //printDocument1.Print();
+               // registarvale();
+               // limpiardatos();
+            }*/
+            printPreviewDialog1.ShowDialog();
         }
         private void btnImprimir_Click(object sender, EventArgs e)
         {
-
+            imprimir();
         }
 
         private void obtener_datos()
@@ -151,7 +173,9 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                 while (recorre.Read())
                 {
                     lblcodentre.Text = recorre["COD_EMPLEADO"].ToString();
+                    txtcod_resive.Text= recorre["COD_EMPLEADO"].ToString();
                     lbldnientr.Text = recorre["DOCT_IDENT"].ToString();
+                    txtdni_resive.Text = recorre["DOCT_IDENT"].ToString();
                 }
             }
             catch (Exception err)
@@ -159,7 +183,25 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                 MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
             }
         }
+        private void obtener_datos_devuelve()
+        {
+            try
+            {
+                string nombre = txtEntregado.Text;
 
+                SqlCommand comando = new SqlCommand("SELECT * FROM T_MAE_PERSONAL WHERE NOMBRE_COMPLETO like '%" + nombre + "%'", conexion.conexionBD());
+                SqlDataReader recorre = comando.ExecuteReader();
+                while (recorre.Read())
+                {
+                    txtcod_entrega.Text = recorre["COD_EMPLEADO"].ToString();
+                    txtdni_entrega.Text = recorre["DOCT_IDENT"].ToString();
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
+            }
+        }
         public void GenerarNumVale()
         {
             string resultado = "";
@@ -234,6 +276,305 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             GenerarNumVale();
             txtInformacionAdicional.Text = "";
             dt.Clear();
+        }
+        private void agregar_Datos()
+        {
+            int cod_puesto = cboTipoPuesto.SelectedIndex;
+            int cod_area_entrega = cboAreaLaboral.SelectedIndex;
+            string cod = cboEmpresa.SelectedValue.ToString();
+            int c = Convert.ToInt32(cod);
+            string NUM_VALE = txtNumVale.Text;
+            string cod_unidad = cboUnidad.SelectedValue.ToString();
+            string cod_sede = cboSede.SelectedValue.ToString();
+            string imformacion_adicional = txtInformacionAdicional.Text;
+
+            string entregado_nombre = txtEntregado.Text;
+            string cod_entregado = txtcod_entrega.Text;
+            string dni_entregado = txtdni_entrega.Text;
+
+            string nombre_revisa = txtResivido.Text;
+            string cod_revisa = txtcod_resive.Text;
+            string dni_revisa = txtdni_resive.Text;
+
+            string fecha_vale = lblFecha.Text;
+            string hora = lblHora.Text;
+            string nombre_user = Datos.DatosUsuario._usuario;
+            try
+            {
+                SqlCommand comando = new SqlCommand("sp_insertar_salida_producto @NUM_ENTREGA ,@COD_PUESTO ,@COD_AREA_ENTREGA ,@COD_EMPRESA  ,@COD_UNIDAD ,@COD_SEDE, @INFORMACION_ADICIONAL, @ENTREGADO_NOMBRE, @COD_ENTREGADO," +
+                    "@DNI_ENTREGADO, @SOLICITADO_NOMBRE, @COD_SOLICITADO, @DNI_SOLICITADO, @FECHA_VALE," +
+                    "@ITEM_VALE, @COD_PRODUCTO, @DESP_PRODUCTO,  @OBSERVACION_PRODUCTO , @CONDICION_PRODUCTO" +
+                    ", @CANTIDAD_SOLICITADA, @HORA, @USUARIO ", conexion.conexionBD());
+
+                foreach (DataGridViewRow row in dgvListaProducto.Rows)
+                {
+                    if (row.Cells["ID"].Value != null && row.Cells["CodProducto"].Value != null)
+                    {
+                        comando.Parameters.Clear();
+                        comando.Parameters.AddWithValue("@COD_PUESTO", SqlDbType.Int).Value = cod_puesto;
+                        comando.Parameters.AddWithValue("@COD_AREA_ENTREGA", SqlDbType.Int).Value = cod_area_entrega;
+                        comando.Parameters.AddWithValue("@NUM_ENTREGA", SqlDbType.VarChar).Value = NUM_VALE;
+                        comando.Parameters.AddWithValue("@COD_EMPRESA", SqlDbType.Int).Value = c;
+                        comando.Parameters.AddWithValue("@COD_UNIDAD", SqlDbType.VarChar).Value = cod_unidad;
+                        comando.Parameters.AddWithValue("@COD_SEDE", SqlDbType.VarChar).Value = cod_sede;
+                        comando.Parameters.AddWithValue("@INFORMACION_ADICIONAL", SqlDbType.VarChar).Value = imformacion_adicional;
+                        comando.Parameters.AddWithValue("@ENTREGADO_NOMBRE", SqlDbType.VarChar).Value = entregado_nombre;
+                        comando.Parameters.AddWithValue("@COD_ENTREGADO", SqlDbType.VarChar).Value = cod_entregado;
+                        comando.Parameters.AddWithValue("@DNI_ENTREGADO", SqlDbType.VarChar).Value = dni_entregado;
+                        comando.Parameters.AddWithValue("@SOLICITADO_NOMBRE", SqlDbType.VarChar).Value = nombre_revisa;
+                        comando.Parameters.AddWithValue("@COD_SOLICITADO", SqlDbType.VarChar).Value = cod_revisa;
+                        comando.Parameters.AddWithValue("@DNI_SOLICITADO", SqlDbType.VarChar).Value = dni_revisa;
+                        comando.Parameters.AddWithValue("@FECHA_VALE", SqlDbType.VarChar).Value = fecha_vale;
+                        comando.Parameters.AddWithValue("@ITEM_VALE", Convert.ToInt32(row.Cells["ID"].Value));
+                        comando.Parameters.AddWithValue("@COD_PRODUCTO", Convert.ToString(row.Cells["CodProducto"].Value));
+                        comando.Parameters.AddWithValue("@DESP_PRODUCTO", Convert.ToString(row.Cells["Nombre"].Value));
+                        comando.Parameters.AddWithValue("@OBSERVACION_PRODUCTO", Convert.ToString(row.Cells["Observacion"].Value));
+                        comando.Parameters.AddWithValue("@CONDICION_PRODUCTO", Convert.ToString(row.Cells["CondicionEntrega"].Value));
+                        comando.Parameters.AddWithValue("@CANTIDAD_SOLICITADA", Convert.ToInt32(row.Cells["Cantidad"].Value));
+                        comando.Parameters.AddWithValue("@HORA", SqlDbType.VarChar).Value = hora;
+                        comando.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_user;
+                        comando.ExecuteNonQuery();
+                    }
+                }
+                MessageBox.Show("Datos registrado correptamente");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(" No se pudo realizar el guardado del la asistencia del personal \n\n Verifique su conexion al Servidor " + ex, "Error");
+                //showDialogs("ERROR", Color.FromArgb(255, 53, 71));
+
+            }
+        }
+
+        private void printDocument1_PrintPage_1(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            Image cabezera = Properties.Resources._1logogurkas;
+
+
+            string TIPO_PERSONAL = cboTipoPuesto.GetItemText(cboTipoPuesto.SelectedItem);
+            string AREA_ENTREGA = cboAreaLaboral.GetItemText(cboAreaLaboral.SelectedItem);
+            string EMPRESA = cboEmpresa.GetItemText(cboEmpresa.SelectedItem);
+            string UNIDAD = cboUnidad.GetItemText(cboUnidad.SelectedItem);
+            string SEDE = cboSede.GetItemText(cboSede.SelectedItem);
+            string PERSONAL_RESIVE = txtResivido.Text;
+            string PERSONAL_entrega = txtEntregado.Text;
+            string cod_empleado_RESIVE = txtcod_resive.Text;
+            string informacion_adicional = txtInformacionAdicional.Text;
+            string fecha = lblFecha.Text;
+            string emp = lblemp.Text;
+            string ruc = lblruc.Text;
+            string dir = lbldireccion.Text;
+            string nombre_arc = lblnombrear.Text;
+            string ver = lblver.Text;
+            string dni_RESIVE = txtdni_resive.Text;
+
+            string dni_ENTREGA = txtdni_entrega.Text;
+            string cod_ENTREGA = txtcod_entrega.Text;
+            string num = txtNumVale.Text;
+
+            Font tipoTexto = new Font("Arial", 10, FontStyle.Bold);
+            Font desp = new Font("Arial", 8, FontStyle.Bold);
+            Font nombres = new Font("Arial", 7, FontStyle.Bold);
+            Font datos = new Font("Arial", 6, FontStyle.Bold);
+            e.Graphics.DrawImage(cabezera, 40, 25);
+
+            Pen blackPen = new Pen(Color.Black, 2);
+
+            Rectangle N1 = new Rectangle(20, 90, 770, 100);
+            Rectangle N2 = new Rectangle(20, 190, 390, 20);
+            Rectangle N3 = new Rectangle(410, 190, 380, 20);
+            Rectangle N4 = new Rectangle(20, 210, 390, 50);
+            Rectangle N5 = new Rectangle(410, 210, 380, 50);
+            Rectangle N6 = new Rectangle(20, 260, 390, 40);
+            Rectangle N7 = new Rectangle(410, 260, 380, 40);
+            Rectangle N8 = new Rectangle(20, 1030, 770, 100);
+            Rectangle N9 = new Rectangle(20, 20, 230, 60);
+            Rectangle N10 = new Rectangle(250, 20, 320, 60);
+            Rectangle N11 = new Rectangle(570, 20, 220, 60);
+            Rectangle N12 = new Rectangle(570, 20, 220, 30);
+            Rectangle CODIGO_ = new Rectangle(20, 310, 110, 715);
+           // Rectangle CODIGO_ = new Rectangle(70, 310, 60, 715);
+            Rectangle PRODUCTO_ = new Rectangle(130, 310, 400, 715);
+            Rectangle OBSERVACION_ = new Rectangle(530, 310, 100, 715);
+            Rectangle CONDICION_ = new Rectangle(630, 310, 100, 715);
+            Rectangle CANT_ = new Rectangle(730, 310, 60, 715);
+            e.Graphics.DrawRectangle(blackPen, N1);
+            e.Graphics.DrawRectangle(blackPen, N2);
+            e.Graphics.DrawRectangle(blackPen, N3);
+            e.Graphics.DrawRectangle(blackPen, N4);
+            e.Graphics.DrawRectangle(blackPen, N5);
+            e.Graphics.DrawRectangle(blackPen, N6);
+            e.Graphics.DrawRectangle(blackPen, N7);
+            e.Graphics.DrawRectangle(blackPen, N8);
+            e.Graphics.DrawRectangle(blackPen, N9);
+            e.Graphics.DrawRectangle(blackPen, N10);
+            e.Graphics.DrawRectangle(blackPen, N11);
+            e.Graphics.DrawRectangle(blackPen, N12);
+            e.Graphics.DrawRectangle(blackPen, CODIGO_);
+           // e.Graphics.DrawRectangle(blackPen, CODIGO_);
+            e.Graphics.DrawRectangle(blackPen, PRODUCTO_);
+            e.Graphics.DrawRectangle(blackPen, OBSERVACION_);
+            e.Graphics.DrawRectangle(blackPen, CONDICION_);
+            e.Graphics.DrawRectangle(blackPen, CANT_);
+
+            e.Graphics.DrawString("CARGO DE DEVOLUCION", tipoTexto, Brushes.Black, 310, 25);
+            e.Graphics.DrawString(emp, nombres, Brushes.Black, 290, 45);
+            e.Graphics.DrawString("  RUC " + ruc, nombres, Brushes.Black, 420, 45);
+            // e.Graphics.DrawString(dir, datos, Brushes.Black, 250, 60);
+            e.Graphics.DrawString(nombre_arc, datos, Brushes.Black, 580, 25);
+            e.Graphics.DrawString(ver, datos, Brushes.Black, 580, 35);
+            e.Graphics.DrawString(num, tipoTexto, Brushes.Black, 580, 55);
+
+            string anio = DateTime.Now.Year.ToString();
+
+            e.Graphics.DrawString(" - " + anio, tipoTexto, Brushes.Black, 720, 55);
+
+            e.Graphics.DrawString(dir, datos, Brushes.Black, new RectangleF(260, 60, 300, 30));
+
+            e.Graphics.DrawString("EMPRESA : ", tipoTexto, Brushes.Black, 30, 100);
+            e.Graphics.DrawString(EMPRESA, desp, Brushes.Black, 120, 102);
+
+            e.Graphics.DrawString("FECHA   : ", tipoTexto, Brushes.Black, 30, 120);
+            e.Graphics.DrawString(fecha, desp, Brushes.Black, 120, 122);
+
+            e.Graphics.DrawString("AREA DE ENTREGA : ", tipoTexto, Brushes.Black, 320, 100);
+            e.Graphics.DrawString(AREA_ENTREGA, desp, Brushes.Black, 470, 102);
+
+            e.Graphics.DrawString("PUESTO : ", tipoTexto, Brushes.Black, 320, 120);//160
+            e.Graphics.DrawString(TIPO_PERSONAL, desp, Brushes.Black, 470, 122);
+
+            e.Graphics.DrawString("UNIDAD : ", tipoTexto, Brushes.Black, 30, 140);
+            e.Graphics.DrawString(UNIDAD, desp, Brushes.Black, 120, 142);
+
+            e.Graphics.DrawString("SEDE : ", tipoTexto, Brushes.Black, 30, 160);
+            e.Graphics.DrawString(SEDE, desp, Brushes.Black, 120, 162);
+
+            e.Graphics.DrawString("PERSONAL QUE RECIBE", tipoTexto, Brushes.Black, 150, 190);
+            e.Graphics.DrawString("PERSONAL QUE ENTREGA", tipoTexto, Brushes.Black, 550, 190);
+
+            e.Graphics.DrawString("NOMBRE : ", tipoTexto, Brushes.Black, 30, 220);
+            e.Graphics.DrawString(PERSONAL_RESIVE, nombres, Brushes.Black, 110, 223);
+
+            e.Graphics.DrawString("CODIGO : ", tipoTexto, Brushes.Black, 30, 240);
+            e.Graphics.DrawString(cod_empleado_RESIVE, desp, Brushes.Black, 110, 243);
+            e.Graphics.DrawString("DNI : ", tipoTexto, Brushes.Black, 200, 240);
+            e.Graphics.DrawString(dni_RESIVE, desp, Brushes.Black, 240, 243);
+
+            e.Graphics.DrawString("NOMBRE : ", tipoTexto, Brushes.Black, 420, 220);
+            e.Graphics.DrawString(PERSONAL_entrega, nombres, Brushes.Black, 500, 223);
+
+            e.Graphics.DrawString("CODIGO : ", tipoTexto, Brushes.Black, 420, 240);
+            e.Graphics.DrawString(cod_ENTREGA, desp, Brushes.Black, 500, 243);
+            e.Graphics.DrawString("DNI : ", tipoTexto, Brushes.Black, 600, 240);
+            e.Graphics.DrawString(dni_ENTREGA, desp, Brushes.Black, 650, 243);
+
+            e.Graphics.DrawString("FIRMA : _______________________________", tipoTexto, Brushes.Black, 30, 275);
+            e.Graphics.DrawString("FIRMA : _______________________________", tipoTexto, Brushes.Black, 420, 275);
+
+            string l1 = "--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
+            e.Graphics.DrawString(l1, new System.Drawing.Font("Book Antiqua", 9, FontStyle.Bold), Brushes.Black, 20, 320);//360
+
+            string g1 = "CODIGO";
+            e.Graphics.DrawString(g1, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 45, 315);
+
+           /* string g2 = "CODIGO";
+            e.Graphics.DrawString(g2, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 72, 315);*/
+
+            string g3 = "DESCRIPCION";
+            e.Graphics.DrawString(g3, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 200, 315);
+
+            string g6 = "OBSERVACION";
+            e.Graphics.DrawString(g6, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 538, 315);
+
+            string g4 = "CONDICION";
+            e.Graphics.DrawString(g4, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 645, 315);
+
+            string g5 = "CANT.";
+            e.Graphics.DrawString(g5, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 735, 315);
+
+            e.Graphics.DrawString("INFORMACIÓN ADICIONAL : ", tipoTexto, Brushes.Black, 50, 1050);
+            e.Graphics.DrawString(informacion_adicional, tipoTexto, Brushes.Black, new RectangleF(50, 1070, 700, 50));
+
+            int height = 320;
+            for (int l = numberOfItemsPrintedSoFar; l < dgvListaProducto.Rows.Count; l++)
+            {
+                numberOfItemsPerPage = numberOfItemsPerPage + 1;
+                if (numberOfItemsPerPage <= 50)
+                {
+                    numberOfItemsPrintedSoFar++;
+                    if (numberOfItemsPrintedSoFar <= dgvListaProducto.Rows.Count)
+                    {
+                        height += dgvListaProducto.Rows[0].Height;
+                        //e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[0].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(30, height, 10, 10));
+                      //  e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[1].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(30, height, 30, 20));
+                        e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[2].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(50, height, 100, 100));
+                        e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[3].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(135, height, 300, 40));
+                        e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[4].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(750, height, 30, 20));
+                        //  e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[5].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(750, height, 30, 20));
+                        //  e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[6].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(540, height, 90, 40));//(640, height, 100, 100));
+                    }
+                    else
+                    {
+                        e.HasMorePages = false;
+                    }
+
+                }
+                else
+                {
+                    numberOfItemsPerPage = 0;
+                    e.HasMorePages = true;
+                    return;
+                }
+            }
+        }
+
+        private void cboEmpresa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string cod_empresa = cboEmpresa.GetItemText(cboEmpresa.SelectedItem);
+
+                SqlCommand comando = new SqlCommand("SELECT * FROM T_EMPRESA WHERE NOMBRE_EMPRESA = '" + cod_empresa + "'", conexion.conexionBD());
+
+                SqlDataReader recorre = comando.ExecuteReader();
+                while (recorre.Read())
+                {
+                    lblemp.Text = recorre["NOMBRE_EMPRESA"].ToString();
+                    lblruc.Text = recorre["RUC"].ToString();
+                    lbldireccion.Text = recorre["direccion"].ToString();
+                    lblnombrear.Text = recorre["nombre_documento_sig"].ToString();
+                    lblver.Text = recorre["vercion_documento_sig"].ToString();
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
+            }
+        }
+
+        private void dgvListaProducto_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+        {
+            Image someImage = Properties.Resources.delete_16;
+
+            if (e.ColumnIndex >= 0 && this.dgvListaProducto.Columns[e.ColumnIndex].Name == "Eliminar" && e.RowIndex >= 0)
+            {
+                e.Paint(e.CellBounds, DataGridViewPaintParts.All);
+
+                DataGridViewButtonCell celboton = this.dgvListaProducto.Rows[e.RowIndex].Cells["Eliminar"] as DataGridViewButtonCell;
+                e.Graphics.DrawImage(someImage, e.CellBounds.Left + 15, e.CellBounds.Top + 3);
+                this.dgvListaProducto.Rows[e.RowIndex].Height = someImage.Height + 10;
+                this.dgvListaProducto.Columns[e.ColumnIndex].Width = someImage.Width + 31;
+
+                e.Handled = true;
+            }
+        }
+
+        private void dgvListaProducto_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (this.dgvListaProducto.Columns[e.ColumnIndex].DisplayIndex == 5)
+            {
+                dgvListaProducto.Rows.Remove(dgvListaProducto.CurrentRow);
+            }
         }
     }
 }
