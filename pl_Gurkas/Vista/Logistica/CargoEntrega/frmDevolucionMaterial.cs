@@ -159,7 +159,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private void imprimir()
         {
 
-            /*System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
+           /* System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
             PrintDialog1.AllowSomePages = true;
             PrintDialog1.ShowHelp = true;
             PrintDialog1.Document = printDocument1;
@@ -295,17 +295,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         }
         private void agregar_Datos()
         {
-            string NUM_DEVOLUCION = "";
-            string v = cboEstado.SelectedValue.ToString();
-            if (v.Equals("1") )
-            {
-                NUM_DEVOLUCION = "PENDIENTE DE ENTREGA";
-            }
-            else
-            {
-                 NUM_DEVOLUCION = txtNumDevolucion.Text;
-            }
-
+            string NUM_DEVOLUCION = txtNumDevolucion.Text;
             string NUM_SALIDA = txtNumValeSalida.Text;
             int COD_PUESTO = cboTipoPuesto.SelectedIndex;
             int COD_AREA_ENTREGA = cboAreaLaboral.SelectedIndex;
@@ -386,6 +376,18 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         {
             Image cabezera = Properties.Resources._1logogurkas;
 
+            string num;
+           // string num = txtNumDevolucion.Text;
+            int estado = Convert.ToInt32(cboEstado.SelectedValue.ToString());
+            if (estado == 1)
+            {
+                num = "PENDIENTE";
+            }
+            else
+            {
+                num = txtNumDevolucion.Text;
+            }
+
 
             string TIPO_PERSONAL = cboTipoPuesto.GetItemText(cboTipoPuesto.SelectedItem);
             string AREA_ENTREGA = cboAreaLaboral.GetItemText(cboAreaLaboral.SelectedItem);
@@ -406,7 +408,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
             string dni_ENTREGA = txtdni_entrega.Text;
             string cod_ENTREGA = txtcod_entrega.Text;
-            string num = txtNumDevolucion.Text;
+           
 
             Font tipoTexto = new Font("Arial", 10, FontStyle.Bold);
             Font desp = new Font("Arial", 8, FontStyle.Bold);
