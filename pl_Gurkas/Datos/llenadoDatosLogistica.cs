@@ -272,28 +272,6 @@ namespace pl_Gurkas.Datos
                 MessageBox.Show("No se puede obtener la imformacion de tipo de proveedor \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        public void ObtenerEstadoProductoEntrega(DataGridViewComboBoxColumn cbo)
-        {
-            try
-            {
-                SqlCommand cmd = new SqlCommand("SELECT ID_CONDICION_PRODUCTO,DESP_CONDICION_PRODUCTO FROM T_CONDICION_PRODUCTO", conexiondbo.conexionBD());
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                DataRow fila = dt.NewRow();
-                fila["DESP_CONDICION_PRODUCTO"] = "------";
-                dt.Rows.InsertAt(fila, 0);
-                cbo.ValueMember = "ID_CONDICION_PRODUCTO";
-                cbo.DisplayMember = "DESP_CONDICION_PRODUCTO";
-                cbo.DataSource = dt;
-            }
-            catch (Exception err)
-            {
-                MessageBox.Show("No se puede obtener el listado del brevete \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
-
         public void ObtenerCategoriaVehiculo(ComboBox cd)
         {
             try
@@ -872,6 +850,27 @@ namespace pl_Gurkas.Datos
                 dt.Rows.InsertAt(fila, 0);
                 cd.ValueMember = "ID_EMPRESA";
                 cd.DisplayMember = "NOMBRE_EMPRESA";
+                cd.DataSource = dt;
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede obtener la imformacion de la Empresa \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public void ObtenerEstadoProductoEntrega(ComboBox cd)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SELECT ID_CONDICION_PRODUCTO,DESP_CONDICION_PRODUCTO FROM T_CONDICION_PRODUCTO ", conexiondbo.conexionBD());
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                DataRow fila = dt.NewRow();
+                fila["DESP_CONDICION_PRODUCTO"] = "--- Seleccione un Estado ---";
+                dt.Rows.InsertAt(fila, 0);
+                cd.ValueMember = "ID_CONDICION_PRODUCTO";
+                cd.DisplayMember = "DESP_CONDICION_PRODUCTO";
                 cd.DataSource = dt;
                 cd.SelectedIndex = 0;
             }
