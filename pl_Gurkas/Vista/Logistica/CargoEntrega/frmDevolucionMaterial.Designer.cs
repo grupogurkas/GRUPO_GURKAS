@@ -45,10 +45,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.txtdni_entrega = new System.Windows.Forms.TextBox();
             this.txtcod_resive = new System.Windows.Forms.TextBox();
             this.txtcod_entrega = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.btnImprimir = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -68,6 +65,9 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dgvListaProducto = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnImprimir = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
             this.txtNumDevolucion = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
@@ -239,24 +239,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.txtcod_entrega.Size = new System.Drawing.Size(207, 20);
             this.txtcod_entrega.TabIndex = 249;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(673, 56);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(288, 85);
-            this.textBox1.TabIndex = 230;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(673, 29);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(131, 15);
-            this.label13.TabIndex = 231;
-            this.label13.Text = "Informacion  Adicional:";
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -266,20 +248,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.label10.Size = new System.Drawing.Size(131, 15);
             this.label10.TabIndex = 252;
             this.label10.Text = "DNI Empleado Resive:";
-            // 
-            // btnImprimir
-            // 
-            this.btnImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImprimir.Image = global::pl_Gurkas.Properties.Resources.descarga_32;
-            this.btnImprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnImprimir.Location = new System.Drawing.Point(967, 56);
-            this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(110, 46);
-            this.btnImprimir.TabIndex = 226;
-            this.btnImprimir.Text = "Imprimir";
-            this.btnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnImprimir.UseVisualStyleBackColor = true;
-            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // label11
             // 
@@ -482,8 +450,41 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.dgvListaProducto.Name = "dgvListaProducto";
             this.dgvListaProducto.Size = new System.Drawing.Size(1322, 364);
             this.dgvListaProducto.TabIndex = 220;
-            this.dgvListaProducto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListaProducto_CellContentClick);
+            this.dgvListaProducto.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListaProducto_CellDoubleClick);
+            this.dgvListaProducto.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListaProducto_CellEndEdit);
             this.dgvListaProducto.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvListaProducto_CellPainting);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(673, 56);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(288, 85);
+            this.textBox1.TabIndex = 230;
+            // 
+            // btnImprimir
+            // 
+            this.btnImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImprimir.Image = global::pl_Gurkas.Properties.Resources.descarga_32;
+            this.btnImprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnImprimir.Location = new System.Drawing.Point(967, 56);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(110, 46);
+            this.btnImprimir.TabIndex = 226;
+            this.btnImprimir.Text = "Imprimir";
+            this.btnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(673, 29);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(131, 15);
+            this.label13.TabIndex = 231;
+            this.label13.Text = "Informacion  Adicional:";
             // 
             // txtNumDevolucion
             // 

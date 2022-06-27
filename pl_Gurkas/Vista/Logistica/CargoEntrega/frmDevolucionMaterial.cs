@@ -151,6 +151,9 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             {
                 column.SortMode = DataGridViewColumnSortMode.NotSortable;
             }
+
+
+
         }
         private void imprimir()
         {
@@ -470,8 +473,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             e.Graphics.DrawString("SEDE : ", tipoTexto, Brushes.Black, 30, 160);
             e.Graphics.DrawString(SEDE, desp, Brushes.Black, 120, 162);
 
-            e.Graphics.DrawString("PERSONAL QUE RECIBE", tipoTexto, Brushes.Black, 150, 190);
-            e.Graphics.DrawString("PERSONAL QUE ENTREGA", tipoTexto, Brushes.Black, 550, 190);
+            e.Graphics.DrawString("PERSONAL QUE RECIBE", tipoTexto, Brushes.Black, 140, 190);
+            e.Graphics.DrawString("PERSONAL QUE ENTREGA", tipoTexto, Brushes.Black, 540, 190);
 
             e.Graphics.DrawString("NOMBRE : ", tipoTexto, Brushes.Black, 30, 220);
             e.Graphics.DrawString(PERSONAL_RESIVE, nombres, Brushes.Black, 110, 223);
@@ -509,6 +512,12 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
             string g4 = "CANT. DEVUELTA";
             e.Graphics.DrawString(g4, new System.Drawing.Font("Book Antiqua", 6, FontStyle.Bold), Brushes.Black, 595, 313);
+
+            string g7 = "FECHA 1";
+            e.Graphics.DrawString(g7, new System.Drawing.Font("Book Antiqua", 5, FontStyle.Bold), Brushes.Black, 593, 329);
+
+            string g8 = "FECHA 2";
+            e.Graphics.DrawString(g8, new System.Drawing.Font("Book Antiqua", 5, FontStyle.Bold), Brushes.Black, 645, 329);
 
             string g5 = "CANT. PENDIENTE";
             e.Graphics.DrawString(g5, new System.Drawing.Font("Book Antiqua", 6, FontStyle.Bold), Brushes.Black, 695, 315);
@@ -592,7 +601,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
         private void dgvListaProducto_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (this.dgvListaProducto.Columns[e.ColumnIndex].DisplayIndex == 7)
+            if (this.dgvListaProducto.Columns[e.ColumnIndex].DisplayIndex == 8)
             {
                 dgvListaProducto.Rows.Remove(dgvListaProducto.CurrentRow);
             }
@@ -601,6 +610,19 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private void btnEntrega_Click(object sender, EventArgs e)
         {
             agregar_Datos();
+        }
+
+        private void dgvListaProducto_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void dgvListaProducto_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            int res = Convert.ToInt32(dgvListaProducto.CurrentRow.Cells[4].Value.ToString())
+                - (Convert.ToInt32(dgvListaProducto.CurrentRow.Cells[5].Value.ToString()) +
+                Convert.ToInt32(dgvListaProducto.CurrentRow.Cells[6].Value.ToString()));
+            dgvListaProducto.CurrentRow.Cells[7].Value = res;
         }
     }
 }
