@@ -196,6 +196,7 @@ namespace pl_Gurkas.Vista.Principal
             this.reporteDeAsistenciaPorPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.activarModoAdministradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.recuperarMaterialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -990,7 +991,8 @@ namespace pl_Gurkas.Vista.Principal
             this.cargoEntregaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.internamientoToolStripMenuItem,
             this.entregaToolStripMenuItem,
-            this.destruccionLogisticoToolStripMenuItem});
+            this.destruccionLogisticoToolStripMenuItem,
+            this.recuperarMaterialToolStripMenuItem});
             this.cargoEntregaToolStripMenuItem.Name = "cargoEntregaToolStripMenuItem";
             this.cargoEntregaToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.cargoEntregaToolStripMenuItem.Text = "Cargo Entrega Productos";
@@ -1580,6 +1582,13 @@ namespace pl_Gurkas.Vista.Principal
             this.activarModoAdministradorToolStripMenuItem.Text = "Activar Modo Administrador";
             this.activarModoAdministradorToolStripMenuItem.Click += new System.EventHandler(this.activarModoAdministradorToolStripMenuItem_Click);
             // 
+            // recuperarMaterialToolStripMenuItem
+            // 
+            this.recuperarMaterialToolStripMenuItem.Name = "recuperarMaterialToolStripMenuItem";
+            this.recuperarMaterialToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.recuperarMaterialToolStripMenuItem.Text = "Recuperar Material";
+            this.recuperarMaterialToolStripMenuItem.Click += new System.EventHandler(this.recuperarMaterialToolStripMenuItem_Click);
+            // 
             // frmPrincipalGrupoGurkas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1776,5 +1785,6 @@ namespace pl_Gurkas.Vista.Principal
         private System.Windows.Forms.ToolStripMenuItem ordenDeServicioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem historialLogisticoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem historialOrdenCompraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem recuperarMaterialToolStripMenuItem;
     }
 }

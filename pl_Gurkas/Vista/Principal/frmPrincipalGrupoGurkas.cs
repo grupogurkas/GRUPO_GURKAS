@@ -898,21 +898,17 @@ namespace pl_Gurkas.Vista.Principal
         {
             controlvistaformulario.ControlVista(this, new Vista.Logistica.CargoEntrega.frmEntregaMaterial());
         }
-
         private void personalPorDNIToolStripMenuItem_Click(object sender, EventArgs e)
         {
             controlvistaformulario.ControlVista(this, new Vista.RRHH.ReportesRRHH.frmPersonalPorDni());
             modulo.auditoria("Recursos Humanos", "Modulo de Reporte", "Reporte de Personal", "Personal Por DNI");
 
         }
-
-
         private void ordenDeServicioCompraToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             controlvistaformulario.ControlVista(this, new Vista.Logistica.Ordenes.frmRegistrarOrden());
             modulo.auditoria("Logistica","Almacen", "Registro Ordenes", "Orden de Servicio/Compra");
         }
-
         private void destruccionLogisticoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             controlvistaformulario.ControlVista(this, new Vista.Logistica.CargoEntrega.frmDestruccion());
@@ -934,6 +930,12 @@ namespace pl_Gurkas.Vista.Principal
         private void productosEnAlmacenToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void recuperarMaterialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.CargoEntrega.frmRecuperarMaterial());
+            modulo.auditoria("Logistica", "Almacen", "Cargo de entreha", "Recuperar Material");
         }
     }
 }
