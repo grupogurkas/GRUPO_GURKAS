@@ -346,6 +346,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                     cboProducto.SelectedIndex = 0;
                     cboEstadoMaterial.SelectedIndex = 0;
                     txtstock.Text = "0";
+                    txtObservacion.Text = "";
                 }
                 else
                 {
