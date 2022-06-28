@@ -45,7 +45,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(770, 85);
+            this.groupBox1.Size = new System.Drawing.Size(535, 85);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del Producto";
@@ -55,9 +55,9 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(6, 57);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 13);
+            this.label2.Size = new System.Drawing.Size(104, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Nombre del Material";
+            this.label2.Text = "STOCK DEVUELTO";
             // 
             // label1
             // 
@@ -90,7 +90,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 358);
+            this.ClientSize = new System.Drawing.Size(794, 234);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmRecuperarMaterial";
             this.Text = "frmRecuperarMaterial";

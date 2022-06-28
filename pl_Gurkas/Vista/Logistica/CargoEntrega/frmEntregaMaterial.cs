@@ -340,7 +340,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                 int cantidad = Convert.ToInt32(txtCantidadTecno.Text);
                 if (cantidad <= stock_a)
                 {
-
                     agregardata();
                     txtCantidadTecno.Text = "";
                     cboProducto.SelectedIndex = 0;
