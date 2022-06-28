@@ -115,11 +115,14 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private void frmDevolucionMaterial_Load(object sender, EventArgs e)
         {
             //llenado del combo del dgv
-           /* DataGridViewComboBoxColumn dgvCmb = new DataGridViewComboBoxColumn();
-            dgvCmb.HeaderText = "Estado";
-            Llenadocbo.ObtenerEstadoProductoEntrega(dgvCmb);
-            dgvCmb.Name = "Estado";
-            dgvListaProducto.Columns.Add(dgvCmb);*/
+            /* DataGridViewComboBoxColumn dgvCmb = new DataGridViewComboBoxColumn();
+             dgvCmb.HeaderText = "Estado";
+             Llenadocbo.ObtenerEstadoProductoEntrega(dgvCmb);
+             dgvCmb.Name = "Estado";
+             dgvListaProducto.Columns.Add(dgvCmb);*/
+
+            this.dgvListaProducto.DefaultCellStyle.Font = new Font("Tahoma", 15);
+            
 
             txtEntregado.Text = _entregad;
             txtNumValeSalida.Text = _numvale;
@@ -151,15 +154,12 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             foreach (DataGridViewColumn column in dgvListaProducto.Columns)
             {
                 column.SortMode = DataGridViewColumnSortMode.NotSortable;
+
             }
-
-
-
         }
         private void imprimir()
         {
-
-           /* System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
+           /*System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
             PrintDialog1.AllowSomePages = true;
             PrintDialog1.ShowHelp = true;
             PrintDialog1.Document = printDocument1;

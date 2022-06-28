@@ -170,6 +170,7 @@ namespace pl_Gurkas.Datos.DataReportes.Logistica
             dta.Fill(dt);
             dt.Columns[0].ColumnName = "NUMERO";
             dt.Columns[1].ColumnName = "NUMERO CARGO ENTREGA";
+            dt.Columns[2].ColumnName = "ESTADO";
             return dt;
         }
 
