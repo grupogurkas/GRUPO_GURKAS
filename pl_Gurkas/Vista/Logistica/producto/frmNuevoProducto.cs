@@ -371,20 +371,20 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                string cod_sistema = txtCodSistema.Text;
-                string cod_camisa = txtcodcamisas.Text;
-                string nombre_camisa = txtNombreCamisas.Text;
+                string cod_sistema = txtCodSistema.Text.ToUpper();
+                string cod_camisa = txtcodcamisas.Text.ToUpper();
+                string nombre_camisa = txtNombreCamisas.Text.ToUpper();
                 int talla_c = cboTallaPrendaCamisas.SelectedIndex;
-                string color_c = txtColorCamisas.Text;
+                string color_c = txtColorCamisas.Text.ToUpper();
                 int stock_inicial_c = Convert.ToInt32(txtStockInicialCamisas.Text);
                 int estado_c = cboEstadoProduCamisas.SelectedIndex;
                 decimal precio_unitario_c = Convert.ToDecimal(txtCostoUniCamisas.Text);
                 int stock_actual_c = Convert.ToInt32(txtStockActualCamisas.Text);
                 int stock_minimo_c = Convert.ToInt32(txtStockMinimoCamisas.Text);
-                string desp_c = txtDescripcionCamisas.Text;
+                string desp_c = txtDescripcionCamisas.Text.ToUpper();
                 DateTime f_adquision_c = dtpAdquisicionCamisas.Value;
                 DateTime f_registro_c = dtpRegistroCamisas.Value;
-                string observacion_c = txtObservacionCamisas.Text;
+                string observacion_c = txtObservacionCamisas.Text.ToUpper();
 
                 logisticaActualizar.ActualizarPrendaCamisas(cod_sistema, cod_camisa, nombre_camisa, talla_c, color_c,
                    stock_inicial_c, estado_c, precio_unitario_c, stock_actual_c, stock_minimo_c, desp_c, f_adquision_c,
@@ -401,23 +401,23 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                string cod_sistema = txtCodSistema.Text;
-                string cod_camisa = txtcodcamisas.Text;
-                string Condicion = cboEstadoProduCamisas.GetItemText(cboEstadoProduCamisas.SelectedItem);
-                string ta = cboTallaPrendaCamisas.GetItemText(cboTallaPrendaCamisas.SelectedItem);
-                string nombre = txtNombreCamisas.Text;
+                string cod_sistema = txtCodSistema.Text.ToUpper();
+                string cod_camisa = txtcodcamisas.Text.ToUpper();
+                string Condicion = cboEstadoProduCamisas.GetItemText(cboEstadoProduCamisas.SelectedItem).ToUpper();
+                string ta = cboTallaPrendaCamisas.GetItemText(cboTallaPrendaCamisas.SelectedItem).ToUpper();
+                string nombre = txtNombreCamisas.Text.ToUpper();
                 int talla_c = cboTallaPrendaCamisas.SelectedIndex;
-                string color_c = txtColorCamisas.Text;
+                string color_c = txtColorCamisas.Text.ToUpper();
                 int stock_inicial_c = Convert.ToInt32(txtStockInicialCamisas.Text);
                 int estado_c = cboEstadoProduCamisas.SelectedIndex;
                 decimal precio_unitario_c = Convert.ToDecimal(txtCostoUniCamisas.Text);
                 int stock_actual_c = Convert.ToInt32(txtStockActualCamisas.Text);
                 int stock_minimo_c = Convert.ToInt32(txtStockMinimoCamisas.Text);
-                string desp_c = txtDescripcionCamisas.Text;
+                string desp_c = txtDescripcionCamisas.Text.ToUpper();
                 DateTime f_adquision_c = dtpAdquisicionCamisas.Value;
                 DateTime f_registro_c = dtpRegistroCamisas.Value;
-                string observacion_c = txtObservacionCamisas.Text;
-                string nombre_camisa = nombre + "-"+ color_c+"-"+ ta + "-"+ Condicion ;
+                string observacion_c = txtObservacionCamisas.Text.ToUpper();
+                string nombre_camisa = (nombre + "-"+ color_c+"-"+ ta + "-"+ Condicion ).ToUpper();
 
                 logisticaInsertar.RegistrarPrendaCamisas(cod_sistema, cod_camisa, nombre_camisa, talla_c, color_c,
                    stock_inicial_c, estado_c, precio_unitario_c, stock_actual_c, stock_minimo_c, desp_c, f_adquision_c,
@@ -434,21 +434,21 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                string cod_sistema = txtCodSistema.Text;
-                string cod_pantalon = txtCodPantalon.Text;
-                string nombre_pantalon = txtNombrePantalon.Text;
+                string cod_sistema = txtCodSistema.Text.ToUpper();
+                string cod_pantalon = txtCodPantalon.Text.ToUpper();
+                string nombre_pantalon = txtNombrePantalon.Text.ToUpper();
                 int talla_pan = cboTallaPantalon.SelectedIndex;
-                string color_pan = txtColorPantalon.Text;
+                string color_pan = txtColorPantalon.Text.ToUpper();
                 int stock_inicial_pan = Convert.ToInt32(txtStockIniPantalon.Text);
                 int tipo_tela_pan = cboTipoTelaPantalon.SelectedIndex;
                 int estado_pan = cboEstadoPantalon.SelectedIndex;
                 decimal precio_unitario_pan = Convert.ToDecimal(txtCostoUniPantalon.Text);
                 int stock_actual_pan = Convert.ToInt32(txtStockActuPantalon.Text);
                 int stock_minimo_pan = Convert.ToInt32(txtStockMinPantalon.Text);
-                string desp_pan = txtDespPantalon.Text;
+                string desp_pan = txtDespPantalon.Text.ToUpper();
                 DateTime f_adquision_pan = dtpAdPantalon.Value;
                 DateTime f_registro_pan = dtpRegistroPantalon.Value;
-                string observacion_pan = txtObservacionPantalon.Text;
+                string observacion_pan = txtObservacionPantalon.Text.ToUpper();
 
                 logisticaActualizar.ActualizarPrendaPantalon(cod_sistema, cod_pantalon, nombre_pantalon, talla_pan,
                       color_pan, stock_inicial_pan, tipo_tela_pan, estado_pan, precio_unitario_pan, stock_actual_pan,
@@ -465,21 +465,21 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                string cod_sistema = txtCodSistema.Text;
-                string cod_calzado = txtCodCalzado.Text;
-                string nombre_calzado = txtNombreCalzado.Text;
+                string cod_sistema = txtCodSistema.Text.ToUpper();
+                string cod_calzado = txtCodCalzado.Text.ToUpper();
+                string nombre_calzado = txtNombreCalzado.Text.ToUpper();
                 int talla_cal = cboTallaCalzado.SelectedIndex;
-                string color_cal = txtColorCalzado.Text;
+                string color_cal = txtColorCalzado.Text.ToUpper();
                 int tipo_calzado = cboTipoCalzado.SelectedIndex;
                 int stock_inicial_cal = Convert.ToInt32(txtStockInicialCalzado.Text);
                 int estado_cal = cboEstadoCalzado.SelectedIndex;
                 decimal precio_unitario_cal = Convert.ToDecimal(txtCostoUniCalzado.Text);
                 int stock_actual_cal = Convert.ToInt32(txtStockActualCalzado.Text);
                 int stock_minimo_cal = Convert.ToInt32(txtStockMinimoCalzado.Text);
-                string desp_cal = txtDespCalzado.Text;
+                string desp_cal = txtDespCalzado.Text.ToUpper();
                 DateTime f_adquision_cal = dtpAdquiCalzado.Value;
                 DateTime f_registro_cal = dtpRegistroCalzado.Value;
-                string observacion_cal = txtObservacionCalzado.Text;
+                string observacion_cal = txtObservacionCalzado.Text.ToUpper();
                 int cantidad_cuotas = cboNcuota.SelectedIndex;
                 decimal descuento_cuota = Convert.ToDecimal(txtDescuento.Text);
 
@@ -498,21 +498,21 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                string cod_sistema = txtCodSistema.Text;
-                string cod_accesorio = txtCodAccesorio.Text;
-                string nombre_accesorio = txtNombreAccesorio.Text;
+                string cod_sistema = txtCodSistema.Text.ToUpper();
+                string cod_accesorio = txtCodAccesorio.Text.ToUpper();
+                string nombre_accesorio = txtNombreAccesorio.Text.ToUpper();
                 int talla_acc = cboTallaAccesorio.SelectedIndex;
-                string color_acc = txtColorAccesorio.Text;
+                string color_acc = txtColorAccesorio.Text.ToUpper();
                 int stock_inicial_acc = Convert.ToInt32(txtStockInicalAcessorio.Text);
                 int tipo_tela_acc = cboTipoTelaAccesorio.SelectedIndex;
                 int estado_acc = cboEstadoAccesorio.SelectedIndex;
                 decimal precio_unitario_acc = Convert.ToDecimal(txtCostoUnitarioAccesorio.Text);
                 int stock_actual_acc = Convert.ToInt32(txtStockActutalAccesorio.Text);
                 int stock_minimo_acc = Convert.ToInt32(txtStockMinimoAccesorio.Text);
-                string desp_acc = txtDespAccesorio.Text;
+                string desp_acc = txtDespAccesorio.Text.ToUpper();
                 DateTime f_adquision_acc = dtpAdquAccesorio.Value;
                 DateTime f_registro_acc = dtpRegistroAccesorio.Value;
-                string observacion_acc = txtObservacionAccesorio.Text;
+                string observacion_acc = txtObservacionAccesorio.Text.ToUpper();
 
                 logisticaActualizar.ActualizarPrendaAccesorio(cod_sistema, cod_accesorio, nombre_accesorio, talla_acc,
                         color_acc, stock_inicial_acc, tipo_tela_acc, estado_acc, precio_unitario_acc, stock_actual_acc,
@@ -529,21 +529,21 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                string cod_sistema = txtCodSistema.Text;
-                string cod_utiles = txtCodigoUtiles.Text;
-                string nombre_utiles = txtNombreUtiles.Text;
-                string marca_utiles = txtMarcaUtiles.Text;
-                string modelo_utiles = txtModeloUtiles.Text;
+                string cod_sistema = txtCodSistema.Text.ToUpper();
+                string cod_utiles = txtCodigoUtiles.Text.ToUpper();
+                string nombre_utiles = txtNombreUtiles.Text.ToUpper();
+                string marca_utiles = txtMarcaUtiles.Text.ToUpper();
+                string modelo_utiles = txtModeloUtiles.Text.ToUpper();
                 int tipo_unidad_utiles = cboTipoUnidadUtiles.SelectedIndex;
                 int stock_inicial_utiles = Convert.ToInt32(txtCantidadUtiles.Text);
                 int estado_utiles = cboEstadoUtilez.SelectedIndex;
                 decimal precio_unitario_utiles = Convert.ToDecimal(txtPrecioUnitarioUtiles.Text);
                 int stock_actual_utiles = Convert.ToInt32(txtStockIniUtiles.Text);
                 int stock_minimo_utiles = Convert.ToInt32(txtStockMinUtiles.Text);
-                string desp_utiles = txtDescripcionUti.Text;
+                string desp_utiles = txtDescripcionUti.Text.ToUpper();
                 DateTime f_adquision_utiles = dtpFechaAdUtiles.Value;
                 DateTime f_registro_utiles = dtpFechaRegisUtiles.Value;
-                string observacion_utiles = txtObservacionUti.Text;
+                string observacion_utiles = txtObservacionUti.Text.ToUpper();
 
                 logisticaActualizar.ActualizarUtiles(cod_sistema, cod_utiles, nombre_utiles, marca_utiles,
                           modelo_utiles, tipo_unidad_utiles, stock_inicial_utiles, estado_utiles, precio_unitario_utiles,
@@ -561,21 +561,21 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                string cod_sistema = txtCodSistema.Text;
-                string cod_logistico = txtCodEquipoEquip.Text;
-                string nombre_logistico = txtNombreEquip.Text;
-                string marca_logistico = txtMarcaEquip.Text;
-                string modelo_logistico = txtModeloEquip.Text;
+                string cod_sistema = txtCodSistema.Text.ToUpper();
+                string cod_logistico = txtCodEquipoEquip.Text.ToUpper();
+                string nombre_logistico = txtNombreEquip.Text.ToUpper();
+                string marca_logistico = txtMarcaEquip.Text.ToUpper();
+                string modelo_logistico = txtModeloEquip.Text.ToUpper();
                 int tipo_unidad_logistico = cboTipoUnidadEquipo.SelectedIndex;
                 int stock_inicial_logistico = Convert.ToInt32(txtCantidadEquip.Text);
                 int estado_logistico = cboEstadoEquipo.SelectedIndex;
                 decimal precio_unitario_logistico = Convert.ToDecimal(txtPrecioUniEquip.Text);
                 int stock_actual_logistico = Convert.ToInt32(txtStockIniEquip.Text);
                 int stock_minimo_logistico = Convert.ToInt32(txtStockMinEquip.Text);
-                string desp_logistico = txtDescripcionEquip.Text;
+                string desp_logistico = txtDescripcionEquip.Text.ToUpper();
                 DateTime f_adquision_logistico = dtpFechaAdEquip.Value;
                 DateTime f_registro_logistico = dtpFechaRegisEquip.Value;
-                string observacion_logistico = txtObservacionEquip.Text;
+                string observacion_logistico = txtObservacionEquip.Text.ToUpper();
 
                 logisticaActualizar.ActualizarEquipoLogistico(cod_sistema, cod_logistico, nombre_logistico, marca_logistico,
                            modelo_logistico, tipo_unidad_logistico, stock_inicial_logistico, estado_logistico, precio_unitario_logistico,
@@ -593,21 +593,21 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                string cod_sistema = txtCodSistema.Text;
-                string cod_epp = txtCodEquipProtec.Text;
-                string nombre_epp = txtNombreProtec.Text;
-                string marca_epp = txtMarcaProtec.Text;
-                string modelo_epp = txtModeloProtec.Text;
+                string cod_sistema = txtCodSistema.Text.ToUpper();
+                string cod_epp = txtCodEquipProtec.Text.ToUpper();
+                string nombre_epp = txtNombreProtec.Text.ToUpper();
+                string marca_epp = txtMarcaProtec.Text.ToUpper();
+                string modelo_epp = txtModeloProtec.Text.ToUpper();
                 int tipo_unidad_epp = cboTipoEquipoPro.SelectedIndex;
                 int stock_inicial_epp = Convert.ToInt32(txtCantidadProtec.Text);
                 int estado_epp = cboEstadoEquipoPro.SelectedIndex;
                 decimal precio_unitario_epp = Convert.ToDecimal(txtPrecioUniProtec.Text);
                 int stock_actual_epp = Convert.ToInt32(txtStockIniProtec.Text);
                 int stock_minimo_epp = Convert.ToInt32(txtStockMinProtec.Text);
-                string desp_epp = txtDescripcionProtec.Text;
+                string desp_epp = txtDescripcionProtec.Text.ToUpper();
                 DateTime f_adquision_epp = dtpFechaAdProtec.Value;
                 DateTime f_registro_epp = dtpFechaRegisProtec.Value;
-                string observacion_epp = txtObservacionProtec.Text;
+                string observacion_epp = txtObservacionProtec.Text.ToUpper();
 
                 logisticaActualizar.ActualizarEpp(cod_sistema, cod_epp, nombre_epp, marca_epp,
                             modelo_epp, tipo_unidad_epp, stock_inicial_epp, estado_epp, precio_unitario_epp,
@@ -625,22 +625,22 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                string cod_sistema = txtCodSistema.Text;
-                string cod_mobi = txtCodEquipMobi.Text;
-                string nombre_mobi = txtNombreMobi.Text;
-                string marca_mobi = txtMarcaMobi.Text;
-                string modelo_mobi = txtModeloMobi.Text;
+                string cod_sistema = txtCodSistema.Text.ToUpper();
+                string cod_mobi = txtCodEquipMobi.Text.ToUpper();
+                string nombre_mobi = txtNombreMobi.Text.ToUpper();
+                string marca_mobi = txtMarcaMobi.Text.ToUpper();
+                string modelo_mobi = txtModeloMobi.Text.ToUpper();
                 int tipo_unidad_mobi = cboTipoUnidadMobi.SelectedIndex;
-                string categoria_mobi = txtCantidadMobi.Text;
+                string categoria_mobi = txtCantidadMobi.Text.ToUpper();
                 int estado_mobi = cboEstadoMobi.SelectedIndex;
                 decimal precio_unitario_mobi = Convert.ToDecimal(txtPrecioUniMobi.Text);
                 int stock_inicial_mobi = Convert.ToInt32(txtStockIniMobil.Text);
                 int stock_actual_mobi = Convert.ToInt32(txtStockactualMobi.Text);
                 int stock_minimo_mobi = Convert.ToInt32(txtStockMinMobi.Text);
-                string desp_mobi = txtDescripcionMobi.Text;
+                string desp_mobi = txtDescripcionMobi.Text.ToUpper();
                 DateTime f_adquision_mobi = dtpFechaAdMobi.Value;
                 DateTime f_registro_mobi = dtpFechaRegisMobi.Value;
-                string observacion_mobi = txtObservacionMobi.Text;
+                string observacion_mobi = txtObservacionMobi.Text.ToUpper();
 
                 logisticaActualizar.ActualizarMobiliario(cod_sistema, cod_mobi, nombre_mobi, marca_mobi,
                              modelo_mobi, tipo_unidad_mobi, categoria_mobi, estado_mobi, precio_unitario_mobi,
@@ -659,24 +659,24 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                string cod_sistema = txtCodSistema.Text;
-                string cod_vehi = txtCodVehiculo.Text;
-                string nombre_vehi = txtNombreVehiculo.Text;
-                string marca_vehi = txtMarcaVehiculo.Text;
-                string modelo_vehi = txtModeloVehiculo.Text;
+                string cod_sistema = txtCodSistema.Text.ToUpper();
+                string cod_vehi = txtCodVehiculo.Text.ToUpper();
+                string nombre_vehi = txtNombreVehiculo.Text.ToUpper();
+                string marca_vehi = txtMarcaVehiculo.Text.ToUpper();
+                string modelo_vehi = txtModeloVehiculo.Text.ToUpper();
                 int tipo_unidad_vehi = cboTipoUnidadVehiculo.SelectedIndex;
                 int categoria_vehi = cboCategoriaVehiculo.SelectedIndex;
-                string color_vehi = txtcolorVehiculo.Text;
+                string color_vehi = txtcolorVehiculo.Text.ToUpper();
                 int combustible_vehi = cboCombustibleVehiculo.SelectedIndex;
-                string serial_vehi = txtserialVehiculo.Text;
-                string anio_vehi = txtaniovehiculo.Text;
-                string placa_vehi = txtPlacaVehiculo.Text;
-                string tarejta_vehi = txtNTarjetaVehiculo.Text;
+                string serial_vehi = txtserialVehiculo.Text.ToUpper();
+                string anio_vehi = txtaniovehiculo.Text.ToUpper();
+                string placa_vehi = txtPlacaVehiculo.Text.ToUpper();
+                string tarejta_vehi = txtNTarjetaVehiculo.Text.ToUpper();
                 int estado_vehi = cboEstadoVehiculo.SelectedIndex;
-                string desp_vehi = txtDescripcionVehiculo.Text;
+                string desp_vehi = txtDescripcionVehiculo.Text.ToUpper();
                 DateTime f_adquision_vehi = dtpFechaAdVehiculo.Value;
                 DateTime f_registro_vehi = dtpFechaRegisVehi.Value;
-                string observacion_vehi = txtObservacionVehi.Text;
+                string observacion_vehi = txtObservacionVehi.Text.ToUpper();
 
                 logisticaActualizar.ActualizarVehiculo(cod_sistema, cod_vehi, nombre_vehi, marca_vehi,
                               modelo_vehi, tipo_unidad_vehi, categoria_vehi, color_vehi, combustible_vehi,
@@ -696,10 +696,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                string cod_sistema = txtCodSistema.Text;
-                string cod_aseo = txtCodEquipAseo.Text;
-                string nombre_aseo = txtNombreUtilesAseo.Text;
-                string marca_aseo = txtMarcaUtilesAseo.Text;
+                string cod_sistema = txtCodSistema.Text.ToUpper();
+                string cod_aseo = txtCodEquipAseo.Text.ToUpper();
+                string nombre_aseo = txtNombreUtilesAseo.Text.ToUpper();
+                string marca_aseo = txtMarcaUtilesAseo.Text.ToUpper();
                 int tipo_unidad_aseo = Convert.ToInt32(cboTipoUnidadAseo.SelectedIndex);
                 DateTime f_fabricacion_aseo = dtpFechaFabAseo.Value;
                 DateTime f_vencimiento_aseo = dtpFechaVecAseo.Value;
@@ -708,10 +708,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 int stock_inicial_aseo = Convert.ToInt32(txtStockIniAseo.Text);
                 int stock_actual_aseo = Convert.ToInt32(txtStockActualAseo.Text);
                 int stock_minimo_aseo = Convert.ToInt32(txtStockMinAseo.Text);
-                string desp_aseo = txtDescripcionAseo.Text;
+                string desp_aseo = txtDescripcionAseo.Text.ToUpper();
                 DateTime f_adquision_aseo = dtpFechaAdAseo.Value;
                 DateTime f_registro_aseo = dtpFechaRegisAseo.Value;
-                string observacion_aseo = txtObservacionAseo.Text;
+                string observacion_aseo = txtObservacionAseo.Text.ToUpper();
 
                 logisticaActualizar.ActualizarUtilesAseo(cod_sistema, cod_aseo, nombre_aseo, marca_aseo,
                              tipo_unidad_aseo, f_fabricacion_aseo, f_vencimiento_aseo, estado_aseo, precio_unitario_aseo,
@@ -732,12 +732,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                string cod_sistema = txtCodSistema.Text;
-                string cod_armamento = txtCodEquipArmamento.Text;
-                string nombre_armamento = txtNombreArmamento.Text;
-                string marca_armamento = txtMarcaArmamento.Text;
-                string num_serie_armamento = txtNumbSerialArmamento.Text;
-                string num_tarjeta_propiedad = txtNumbTarjetaArmamento.Text;
+                string cod_sistema = txtCodSistema.Text.ToUpper();
+                string cod_armamento = txtCodEquipArmamento.Text.ToUpper();
+                string nombre_armamento = txtNombreArmamento.Text.ToUpper();
+                string marca_armamento = txtMarcaArmamento.Text.ToUpper();
+                string num_serie_armamento = txtNumbSerialArmamento.Text.ToUpper();
+                string num_tarjeta_propiedad = txtNumbTarjetaArmamento.Text.ToUpper();
                 DateTime f_inicio_armamento = dtpFechaIniArmamento.Value;
                 DateTime f_vencimiento_armamento = dtpFechaVecArmamento.Value;
                 int estado_armamento = cboEstadoArmamento.SelectedIndex;
@@ -745,10 +745,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 int stock_actual_armamento = Convert.ToInt32(txtStockActualArmamento.Text);
                 int stock_minimo_armamento = Convert.ToInt32(txtStockMinArmamento.Text);
                 int tipo_unidad_armamento = Convert.ToInt32(cboTipoUnidadArmamento.SelectedIndex);
-                string desp_armamento = txtDespArmamento.Text;
+                string desp_armamento = txtDespArmamento.Text.ToUpper();
                 DateTime f_adquision_armamento = dtpFechaAdArmamento.Value;
                 DateTime f_registro_armamento = dtpFechaRegisArmamento.Value;
-                string observacion_armamento = txtObsArmamento.Text;
+                string observacion_armamento = txtObsArmamento.Text.ToUpper();
 
                 logisticaActualizar.ActualizarArmamento(cod_sistema, cod_armamento, nombre_armamento, marca_armamento,
                              num_serie_armamento, num_tarjeta_propiedad, f_inicio_armamento, f_vencimiento_armamento, estado_armamento, stock_inicial_armamento,
@@ -767,25 +767,25 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                string Condicion = cboEstadoAccesorio.GetItemText(cboEstadoAccesorio.SelectedItem);
-                string t = cboTallaAccesorio.GetItemText(cboTallaAccesorio.SelectedItem);
-                string cod_sistema = txtCodSistema.Text;
-                string cod_accesorio = txtCodAccesorio.Text;
-                string nombre = txtNombreAccesorio.Text;
+                string Condicion = cboEstadoAccesorio.GetItemText(cboEstadoAccesorio.SelectedItem).ToUpper();
+                string t = cboTallaAccesorio.GetItemText(cboTallaAccesorio.SelectedItem).ToUpper();
+                string cod_sistema = txtCodSistema.Text.ToUpper();
+                string cod_accesorio = txtCodAccesorio.Text.ToUpper();
+                string nombre = txtNombreAccesorio.Text.ToUpper();
                 int talla_acc = cboTallaAccesorio.SelectedIndex;
-                string color_acc = txtColorAccesorio.Text;
+                string color_acc = txtColorAccesorio.Text.ToUpper();
                 int stock_inicial_acc = Convert.ToInt32(txtStockInicalAcessorio.Text);
                 int tipo_tela_acc = cboTipoTelaAccesorio.SelectedIndex;
                 int estado_acc = cboEstadoAccesorio.SelectedIndex;
                 decimal precio_unitario_acc = Convert.ToDecimal(txtCostoUnitarioAccesorio.Text);
                 int stock_actual_acc = Convert.ToInt32(txtStockActutalAccesorio.Text);
                 int stock_minimo_acc = Convert.ToInt32(txtStockMinimoAccesorio.Text);
-                string desp_acc = txtDespAccesorio.Text;
+                string desp_acc = txtDespAccesorio.Text.ToUpper();
                 DateTime f_adquision_acc = dtpAdquAccesorio.Value;
                 DateTime f_registro_acc = dtpRegistroAccesorio.Value;
-                string observacion_acc = txtObservacionAccesorio.Text;
+                string observacion_acc = txtObservacionAccesorio.Text.ToUpper();
 
-                string nombre_accesorio = nombre + "-" + t + "-" + color_acc + "-" + Condicion;
+                string nombre_accesorio = (nombre + "-" + t + "-" + color_acc + "-" + Condicion).ToUpper();
 
                 logisticaInsertar.RegistrarPrendaAccesorio(cod_sistema, cod_accesorio, nombre_accesorio, talla_acc,
                         color_acc, stock_inicial_acc, tipo_tela_acc, estado_acc, precio_unitario_acc, stock_actual_acc,
@@ -802,23 +802,23 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                string Condicion = cboEstadoUtilez.GetItemText(cboEstadoUtilez.SelectedItem);
-                string cod_sistema = txtCodSistema.Text;
-                string cod_utiles = txtCodigoUtiles.Text;
-                string nombre = txtNombreUtiles.Text;
-                string marca_utiles = txtMarcaUtiles.Text;
-                string modelo_utiles = txtModeloUtiles.Text;
+                string Condicion = cboEstadoUtilez.GetItemText(cboEstadoUtilez.SelectedItem).ToUpper();
+                string cod_sistema = txtCodSistema.Text.ToUpper();
+                string cod_utiles = txtCodigoUtiles.Text.ToUpper();
+                string nombre = txtNombreUtiles.Text.ToUpper();
+                string marca_utiles = txtMarcaUtiles.Text.ToUpper();
+                string modelo_utiles = txtModeloUtiles.Text.ToUpper();
                 int tipo_unidad_utiles = cboTipoUnidadUtiles.SelectedIndex;
                 int stock_inicial_utiles = Convert.ToInt32(txtCantidadUtiles.Text);
                 int estado_utiles = cboEstadoUtilez.SelectedIndex;
                 decimal precio_unitario_utiles = Convert.ToDecimal(txtPrecioUnitarioUtiles.Text);
                 int stock_actual_utiles = Convert.ToInt32(txtStockIniUtiles.Text);
                 int stock_minimo_utiles = Convert.ToInt32(txtStockMinUtiles.Text);
-                string desp_utiles = txtDescripcionUti.Text;
+                string desp_utiles = txtDescripcionUti.Text.ToUpper();
                 DateTime f_adquision_utiles = dtpFechaAdUtiles.Value;
                 DateTime f_registro_utiles = dtpFechaRegisUtiles.Value;
-                string observacion_utiles = txtObservacionUti.Text;
-                string nombre_utiles = nombre + "-" + marca_utiles + "-" + modelo_utiles + "-"+ Condicion;
+                string observacion_utiles = txtObservacionUti.Text.ToUpper();
+                string nombre_utiles = (nombre + "-" + marca_utiles + "-" + modelo_utiles + "-"+ Condicion).ToUpper();
                 logisticaInsertar.RegistrarUtiles(cod_sistema, cod_utiles, nombre_utiles, marca_utiles,
                           modelo_utiles, tipo_unidad_utiles, stock_inicial_utiles, estado_utiles, precio_unitario_utiles,
                            stock_actual_utiles,
@@ -835,23 +835,23 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                string Condicion = cboEstadoEquipo.GetItemText(cboEstadoEquipo.SelectedItem);
-                string cod_sistema = txtCodSistema.Text;
-                string cod_logistico = txtCodEquipoEquip.Text;
-                string nombre = txtNombreEquip.Text;
-                string marca_logistico = txtMarcaEquip.Text;
-                string modelo_logistico = txtModeloEquip.Text;
+                string Condicion = cboEstadoEquipo.GetItemText(cboEstadoEquipo.SelectedItem).ToUpper();
+                string cod_sistema = txtCodSistema.Text.ToUpper();
+                string cod_logistico = txtCodEquipoEquip.Text.ToUpper();
+                string nombre = txtNombreEquip.Text.ToUpper();
+                string marca_logistico = txtMarcaEquip.Text.ToUpper();
+                string modelo_logistico = txtModeloEquip.Text.ToUpper();
                 int tipo_unidad_logistico = cboTipoUnidadEquipo.SelectedIndex;
                 int stock_inicial_logistico = Convert.ToInt32(txtCantidadEquip.Text);
                 int estado_logistico = cboEstadoEquipo.SelectedIndex;
                 decimal precio_unitario_logistico = Convert.ToDecimal(txtPrecioUniEquip.Text);
                 int stock_actual_logistico = Convert.ToInt32(txtStockIniEquip.Text);
                 int stock_minimo_logistico = Convert.ToInt32(txtStockMinEquip.Text);
-                string desp_logistico = txtDescripcionEquip.Text;
+                string desp_logistico = txtDescripcionEquip.Text.ToUpper();
                 DateTime f_adquision_logistico = dtpFechaAdEquip.Value;
                 DateTime f_registro_logistico = dtpFechaRegisEquip.Value;
-                string observacion_logistico = txtObservacionEquip.Text;
-                string nombre_logistico = nombre + "-"+marca_logistico+"-"+modelo_logistico+"-"+estado_logistico;
+                string observacion_logistico = txtObservacionEquip.Text.ToUpper();
+                string nombre_logistico = (nombre + "-"+marca_logistico+"-"+modelo_logistico+"-"+estado_logistico).ToUpper();
                 logisticaInsertar.RegistrarEquipaminetoLogistico(cod_sistema, cod_logistico, nombre_logistico, marca_logistico,
                            modelo_logistico, tipo_unidad_logistico, stock_inicial_logistico, estado_logistico, precio_unitario_logistico,
                             stock_actual_logistico,
@@ -868,23 +868,23 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                string Condicion = cboEstadoEquipoPro.GetItemText(cboEstadoEquipoPro.SelectedItem);
-                string cod_sistema = txtCodSistema.Text;
-                string cod_epp = txtCodEquipProtec.Text;
-                string nombre = txtNombreProtec.Text;
-                string marca_epp = txtMarcaProtec.Text;
-                string modelo_epp = txtModeloProtec.Text;
+                string Condicion = cboEstadoEquipoPro.GetItemText(cboEstadoEquipoPro.SelectedItem).ToUpper();
+                string cod_sistema = txtCodSistema.Text.ToUpper();
+                string cod_epp = txtCodEquipProtec.Text.ToUpper();
+                string nombre = txtNombreProtec.Text.ToUpper();
+                string marca_epp = txtMarcaProtec.Text.ToUpper();
+                string modelo_epp = txtModeloProtec.Text.ToUpper();
                 int tipo_unidad_epp = cboTipoEquipoPro.SelectedIndex;
                 int stock_inicial_epp = Convert.ToInt32(txtCantidadProtec.Text);
                 int estado_epp = cboEstadoEquipoPro.SelectedIndex;
                 decimal precio_unitario_epp = Convert.ToDecimal(txtPrecioUniProtec.Text);
                 int stock_actual_epp = Convert.ToInt32(txtStockIniProtec.Text);
                 int stock_minimo_epp = Convert.ToInt32(txtStockMinProtec.Text);
-                string desp_epp = txtDescripcionProtec.Text;
+                string desp_epp = txtDescripcionProtec.Text.ToUpper();
                 DateTime f_adquision_epp = dtpFechaAdProtec.Value;
                 DateTime f_registro_epp = dtpFechaRegisProtec.Value;
-                string observacion_epp = txtObservacionProtec.Text;
-                string nombre_epp = nombre +"-"+marca_epp+"-"+modelo_epp+"-"+ Condicion;
+                string observacion_epp = txtObservacionProtec.Text.ToUpper();
+                string nombre_epp = (nombre +"-"+marca_epp+"-"+modelo_epp+"-"+ Condicion).ToUpper();
                 logisticaInsertar.RegistrarEpp(cod_sistema, cod_epp, nombre_epp, marca_epp,
                             modelo_epp, tipo_unidad_epp, stock_inicial_epp, estado_epp, precio_unitario_epp,
                              stock_actual_epp,
@@ -901,24 +901,24 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                string Condicion = cboEstadoMobi.GetItemText(cboEstadoMobi.SelectedItem);
-                string cod_sistema = txtCodSistema.Text;
-                string cod_mobi = txtCodEquipMobi.Text;
-                string nombre = txtNombreMobi.Text;
-                string marca_mobi = txtMarcaMobi.Text;
-                string modelo_mobi = txtModeloMobi.Text;
+                string Condicion = cboEstadoMobi.GetItemText(cboEstadoMobi.SelectedItem).ToUpper();
+                string cod_sistema = txtCodSistema.Text.ToUpper();
+                string cod_mobi = txtCodEquipMobi.Text.ToUpper();
+                string nombre = txtNombreMobi.Text.ToUpper();
+                string marca_mobi = txtMarcaMobi.Text.ToUpper();
+                string modelo_mobi = txtModeloMobi.Text.ToUpper();
                 int tipo_unidad_mobi = cboTipoUnidadMobi.SelectedIndex;
-                string categoria_mobi = txtCantidadMobi.Text;
+                string categoria_mobi = txtCantidadMobi.Text.ToUpper();
                 int estado_mobi = cboEstadoMobi.SelectedIndex;
                 decimal precio_unitario_mobi = Convert.ToDecimal(txtPrecioUniMobi.Text);
                 int stock_inicial_mobi = Convert.ToInt32(txtStockIniMobil.Text);
                 int stock_actual_mobi = Convert.ToInt32(txtStockactualMobi.Text);
                 int stock_minimo_mobi = Convert.ToInt32(txtStockMinMobi.Text);
-                string desp_mobi = txtDescripcionMobi.Text;
+                string desp_mobi = txtDescripcionMobi.Text.ToUpper();
                 DateTime f_adquision_mobi = dtpFechaAdMobi.Value;
                 DateTime f_registro_mobi = dtpFechaRegisMobi.Value;
-                string observacion_mobi = txtObservacionMobi.Text;
-                string nombre_mobi = nombre + "-"+marca_mobi+"-"+modelo_mobi+"-"+Condicion;
+                string observacion_mobi = txtObservacionMobi.Text.ToUpper();
+                string nombre_mobi = (nombre + "-"+marca_mobi+"-"+modelo_mobi+"-"+Condicion).ToUpper();
                 logisticaInsertar.RegistrarMobiliario(cod_sistema, cod_mobi, nombre_mobi, marca_mobi,
                              modelo_mobi, tipo_unidad_mobi, categoria_mobi, estado_mobi, precio_unitario_mobi,
                               stock_inicial_mobi,
@@ -936,24 +936,24 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                string cod_sistema = txtCodSistema.Text;
-                string cod_vehi = txtCodVehiculo.Text;
-                string nombre_vehi = txtNombreVehiculo.Text;
-                string marca_vehi = txtMarcaVehiculo.Text;
-                string modelo_vehi = txtModeloVehiculo.Text;
+                string cod_sistema = txtCodSistema.Text.ToUpper();
+                string cod_vehi = txtCodVehiculo.Text.ToUpper();
+                string nombre_vehi = txtNombreVehiculo.Text.ToUpper();
+                string marca_vehi = txtMarcaVehiculo.Text.ToUpper();
+                string modelo_vehi = txtModeloVehiculo.Text.ToUpper();
                 int tipo_unidad_vehi = cboTipoUnidadVehiculo.SelectedIndex;
                 int categoria_vehi = cboCategoriaVehiculo.SelectedIndex;
-                string color_vehi = txtcolorVehiculo.Text;
+                string color_vehi = txtcolorVehiculo.Text.ToUpper();
                 int combustible_vehi = cboCombustibleVehiculo.SelectedIndex;
-                string serial_vehi = txtserialVehiculo.Text;
-                string anio_vehi = txtaniovehiculo.Text;
-                string placa_vehi = txtPlacaVehiculo.Text;
-                string tarejta_vehi = txtNTarjetaVehiculo.Text;
+                string serial_vehi = txtserialVehiculo.Text.ToUpper();
+                string anio_vehi = txtaniovehiculo.Text.ToUpper();
+                string placa_vehi = txtPlacaVehiculo.Text.ToUpper();
+                string tarejta_vehi = txtNTarjetaVehiculo.Text.ToUpper();
                 int estado_vehi = cboEstadoVehiculo.SelectedIndex;
-                string desp_vehi = txtDescripcionVehiculo.Text;
+                string desp_vehi = txtDescripcionVehiculo.Text.ToUpper();
                 DateTime f_adquision_vehi = dtpFechaAdVehiculo.Value;
                 DateTime f_registro_vehi = dtpFechaRegisVehi.Value;
-                string observacion_vehi = txtObservacionVehi.Text;
+                string observacion_vehi = txtObservacionVehi.Text.ToUpper();
 
                 logisticaInsertar.RegistrarVehiculo( cod_sistema,  cod_vehi,  nombre_vehi,  marca_vehi,
                               modelo_vehi,  tipo_unidad_vehi,  categoria_vehi,  color_vehi,  combustible_vehi,
@@ -974,10 +974,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                string cod_sistema = txtCodSistema.Text;
-                string cod_aseo = txtCodEquipAseo.Text;
-                string nombre = txtNombreUtilesAseo.Text;
-                string marca_aseo = txtMarcaUtilesAseo.Text;
+                string cod_sistema = txtCodSistema.Text.ToUpper();
+                string cod_aseo = txtCodEquipAseo.Text.ToUpper();
+                string nombre = txtNombreUtilesAseo.Text.ToUpper();
+                string marca_aseo = txtMarcaUtilesAseo.Text.ToUpper();
                 int tipo_unidad_aseo = Convert.ToInt32(cboTipoUnidadAseo.SelectedIndex);
                 DateTime f_fabricacion_aseo = dtpFechaFabAseo.Value;
                 DateTime f_vencimiento_aseo = dtpFechaVecAseo.Value;
@@ -986,12 +986,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 int stock_inicial_aseo = Convert.ToInt32(txtStockIniAseo.Text);
                 int stock_actual_aseo = Convert.ToInt32(txtStockActualAseo.Text);
                 int stock_minimo_aseo = Convert.ToInt32(txtStockMinAseo.Text);
-                string desp_aseo = txtDescripcionAseo.Text;
+                string desp_aseo = txtDescripcionAseo.Text.ToUpper();
                 DateTime f_adquision_aseo = dtpFechaAdAseo.Value;
                 DateTime f_registro_aseo = dtpFechaRegisAseo.Value;
-                string observacion_aseo = txtObservacionAseo.Text;
+                string observacion_aseo = txtObservacionAseo.Text.ToUpper();
 
-                string nombre_aseo = nombre+"-"+marca_aseo;
+                string nombre_aseo = (nombre+"-"+marca_aseo).ToUpper();
 
                 logisticaInsertar.RegistrarAseo(cod_sistema, cod_aseo, nombre_aseo, marca_aseo,
                              tipo_unidad_aseo, f_fabricacion_aseo, f_vencimiento_aseo, estado_aseo, precio_unitario_aseo,
@@ -1012,12 +1012,12 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                string cod_sistema = txtCodSistema.Text;
-                string cod_armamento = txtCodEquipArmamento.Text;
-                string nombre_armamento = txtNombreArmamento.Text;
-                string marca_armamento = txtMarcaArmamento.Text;
-                string num_serie_armamento = txtNumbSerialArmamento.Text;
-                string num_tarjeta_propiedad = txtNumbTarjetaArmamento.Text;
+                string cod_sistema = txtCodSistema.Text.ToUpper();
+                string cod_armamento = txtCodEquipArmamento.Text.ToUpper();
+                string nombre_armamento = txtNombreArmamento.Text.ToUpper();
+                string marca_armamento = txtMarcaArmamento.Text.ToUpper();
+                string num_serie_armamento = txtNumbSerialArmamento.Text.ToUpper();
+                string num_tarjeta_propiedad = txtNumbTarjetaArmamento.Text.ToUpper();
                 DateTime f_inicio_armamento = dtpFechaIniArmamento.Value;
                 DateTime f_vencimiento_armamento = dtpFechaVecArmamento.Value;
                 int estado_armamento = cboEstadoArmamento.SelectedIndex;
@@ -1025,10 +1025,10 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 int stock_actual_armamento = Convert.ToInt32(txtStockActualArmamento.Text);
                 int stock_minimo_armamento = Convert.ToInt32(txtStockMinArmamento.Text);
                 int tipo_unidad_armamento = Convert.ToInt32(cboTipoUnidadArmamento.SelectedIndex);
-                string desp_armamento = txtDespArmamento.Text;
+                string desp_armamento = txtDespArmamento.Text.ToUpper();
                 DateTime f_adquision_armamento = dtpFechaAdArmamento.Value;
                 DateTime f_registro_armamento = dtpFechaRegisArmamento.Value;
-                string observacion_armamento = txtObsArmamento.Text;
+                string observacion_armamento = txtObsArmamento.Text.ToUpper();
 
                 logisticaInsertar.RegistrarArmamento(cod_sistema, cod_armamento, nombre_armamento, marca_armamento,
                              num_serie_armamento, num_tarjeta_propiedad, f_inicio_armamento, f_vencimiento_armamento, estado_armamento, stock_inicial_armamento,
@@ -1047,25 +1047,25 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                string Condicion = cboEstadoPantalon.GetItemText(cboEstadoPantalon.SelectedItem);
-                string t_tela = cboTipoTelaPantalon.GetItemText(cboTipoTelaPantalon.SelectedItem);
-                string t_ta = cboTallaPantalon.GetItemText(cboTallaPantalon.SelectedItem);
-                string cod_sistema = txtCodSistema.Text;
-                string cod_pantalon = txtCodPantalon.Text;
+                string Condicion = cboEstadoPantalon.GetItemText(cboEstadoPantalon.SelectedItem).ToUpper();
+                string t_tela = cboTipoTelaPantalon.GetItemText(cboTipoTelaPantalon.SelectedItem).ToUpper();
+                string t_ta = cboTallaPantalon.GetItemText(cboTallaPantalon.SelectedItem).ToUpper();
+                string cod_sistema = txtCodSistema.Text.ToUpper();
+                string cod_pantalon = txtCodPantalon.Text.ToUpper();
                 string nombre = txtNombrePantalon.Text;
                 int talla_pan = cboTallaPantalon.SelectedIndex;
-                string color_pan = txtColorPantalon.Text;
+                string color_pan = txtColorPantalon.Text.ToUpper();
                 int stock_inicial_pan = Convert.ToInt32(txtStockIniPantalon.Text);
                 int tipo_tela_pan = cboTipoTelaPantalon.SelectedIndex;
                 int estado_pan = cboEstadoPantalon.SelectedIndex;
                 decimal precio_unitario_pan = Convert.ToDecimal(txtCostoUniPantalon.Text);
                 int stock_actual_pan = Convert.ToInt32(txtStockActuPantalon.Text);
                 int stock_minimo_pan = Convert.ToInt32(txtStockMinPantalon.Text);
-                string desp_pan = txtDespPantalon.Text;
+                string desp_pan = txtDespPantalon.Text.ToUpper();
                 DateTime f_adquision_pan = dtpAdPantalon.Value;
                 DateTime f_registro_pan = dtpRegistroPantalon.Value;
-                string observacion_pan = txtObservacionPantalon.Text;
-                string nombre_pantalon = nombre + "-" + color_pan + "-" + t_tela + "-"+ t_ta + "-" + Condicion;
+                string observacion_pan = txtObservacionPantalon.Text.ToUpper();
+                string nombre_pantalon = (nombre + "-" + color_pan + "-" + t_tela + "-"+ t_ta + "-" + Condicion).ToUpper();
 
                 logisticaInsertar.RegistrarPrendaPantalon(cod_sistema, cod_pantalon, nombre_pantalon, talla_pan,
                       color_pan, stock_inicial_pan, tipo_tela_pan, estado_pan, precio_unitario_pan, stock_actual_pan,
@@ -1082,24 +1082,24 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                string Condicion = cboEstadoCalzado.GetItemText(cboEstadoCalzado.SelectedItem);
-                string ta = cboTallaCalzado.GetItemText(cboTallaCalzado.SelectedItem);
-                string cod_sistema = txtCodSistema.Text;
-                string cod_calzado = txtCodCalzado.Text;
-                string nombre = txtNombreCalzado.Text;
+                string Condicion = cboEstadoCalzado.GetItemText(cboEstadoCalzado.SelectedItem).ToUpper();
+                string ta = cboTallaCalzado.GetItemText(cboTallaCalzado.SelectedItem).ToUpper();
+                string cod_sistema = txtCodSistema.Text.ToUpper();
+                string cod_calzado = txtCodCalzado.Text.ToUpper();
+                string nombre = txtNombreCalzado.Text.ToUpper();
                 int talla_cal = cboTallaCalzado.SelectedIndex;
-                string color_cal = txtColorCalzado.Text;
+                string color_cal = txtColorCalzado.Text.ToUpper();
                 int tipo_calzado = cboTipoCalzado.SelectedIndex;
                 int stock_inicial_cal = Convert.ToInt32(txtStockInicialCalzado.Text);
                 int estado_cal = cboEstadoCalzado.SelectedIndex;
                 decimal precio_unitario_cal = Convert.ToDecimal(txtCostoUniCalzado.Text);
                 int stock_actual_cal = Convert.ToInt32(txtStockActualCalzado.Text);
                 int stock_minimo_cal = Convert.ToInt32(txtStockMinimoCalzado.Text);
-                string desp_cal = txtDespCalzado.Text;
+                string desp_cal = txtDespCalzado.Text.ToUpper();
                 DateTime f_adquision_cal = dtpAdquiCalzado.Value;
                 DateTime f_registro_cal = dtpRegistroCalzado.Value;
-                string observacion_cal = txtObservacionCalzado.Text;
-                string nombre_calzado = nombre + "-" + color_cal + "-"+ ta + "-" + Condicion;
+                string observacion_cal = txtObservacionCalzado.Text.ToUpper();
+                string nombre_calzado = (nombre + "-" + color_cal + "-"+ ta + "-" + Condicion).ToUpper();
 
                 int cantidad_cuotas = cboNcuota.SelectedIndex;
                 decimal descuento_cuota = Convert.ToDecimal(txtDescuento.Text);
@@ -1119,13 +1119,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                string cod_sistema = txtCodSistema.Text;
-                string cod_producto = txtCodEquipoTecnologia.Text;
-                string nombre_producto = txtNombreEquipoTecnologia.Text;
-                string modelo = txtModeloEquipoTecnologia.Text;
-                string marca = txtMarcaEquipoTecnologia.Text;
-                string num_serie = txtNumSerialEquipoTecnologia.Text;
-                string desp_equipo = txtDescripcionEquipoTecnologia.Text;
+                string cod_sistema = txtCodSistema.Text.ToUpper();
+                string cod_producto = txtCodEquipoTecnologia.Text.ToUpper();
+                string nombre_producto = txtNombreEquipoTecnologia.Text.ToUpper();
+                string modelo = txtModeloEquipoTecnologia.Text.ToUpper();
+                string marca = txtMarcaEquipoTecnologia.Text.ToUpper();
+                string num_serie = txtNumSerialEquipoTecnologia.Text.ToUpper();
+                string desp_equipo = txtDescripcionEquipoTecnologia.Text.ToUpper();
                 int estado = cboEstadoProducEquipoTecnologia.SelectedIndex;
                 decimal precio_unitario = Convert.ToDecimal(txtPrecioUnitarioEquipoTecnologia.Text);
                 int tipo_unidad = cboTipoUnidadEquipoTecnologia.SelectedIndex;
@@ -1134,7 +1134,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 int stock_minimo = Convert.ToInt32(txtStockMinEquipoTecnologia.Text);
                 DateTime f_adquision = dtpFechaAdquisicionEquipoTecnologia.Value;
                 DateTime f_registro = dtpFechaRegistroEquipoTecnologia.Value;
-                string observacion = txtObservacionEquipoTecnologia.Text;
+                string observacion = txtObservacionEquipoTecnologia.Text.ToUpper();
 
                 logisticaInsertar.RegistrarEquipoTecnologico(cod_sistema, cod_producto, nombre_producto, modelo,
                     marca, num_serie, desp_equipo, estado, precio_unitario, tipo_unidad, stock_inicial,
@@ -1151,13 +1151,13 @@ namespace pl_Gurkas.Vista.Logistica.producto
         {
             try
             {
-                string cod_sistema = txtCodSistema.Text;
-                string cod_producto = txtCodEquipoTecnologia.Text;
-                string nombre_producto = txtNombreEquipoTecnologia.Text;
-                string modelo = txtModeloEquipoTecnologia.Text;
-                string marca = txtMarcaEquipoTecnologia.Text;
-                string num_serie = txtNumSerialEquipoTecnologia.Text;
-                string desp_equipo = txtDescripcionEquipoTecnologia.Text;
+                string cod_sistema = txtCodSistema.Text.ToUpper();
+                string cod_producto = txtCodEquipoTecnologia.Text.ToUpper();
+                string nombre_producto = txtNombreEquipoTecnologia.Text.ToUpper();
+                string modelo = txtModeloEquipoTecnologia.Text.ToUpper();
+                string marca = txtMarcaEquipoTecnologia.Text.ToUpper();
+                string num_serie = txtNumSerialEquipoTecnologia.Text.ToUpper();
+                string desp_equipo = txtDescripcionEquipoTecnologia.Text.ToUpper();
                 int estado = cboEstadoProducEquipoTecnologia.SelectedIndex;
                 decimal precio_unitario = Convert.ToDecimal(txtPrecioUnitarioEquipoTecnologia.Text);
                 int tipo_unidad = cboTipoUnidadEquipoTecnologia.SelectedIndex;
@@ -1166,7 +1166,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
                 int stock_minimo = Convert.ToInt32(txtStockMinEquipoTecnologia.Text);
                 DateTime f_adquision = dtpFechaAdquisicionEquipoTecnologia.Value;
                 DateTime f_registro = dtpFechaRegistroEquipoTecnologia.Value;
-                string observacion = txtObservacionEquipoTecnologia.Text;
+                string observacion = txtObservacionEquipoTecnologia.Text.ToUpper();
 
                 logisticaActualizar.ActualizarEquipoTecnologico(cod_sistema, cod_producto, nombre_producto, modelo,
                     marca, num_serie, desp_equipo, estado, precio_unitario, tipo_unidad, stock_inicial,
