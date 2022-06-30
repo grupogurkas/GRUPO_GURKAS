@@ -138,6 +138,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             ocultar_datos();
             buscar_Datos();
             buscar_Datos_producto();
+            cboEstado.SelectedIndex = 2;
           //  seleccionar_primer_valor();
 
            /*DataGridViewButtonColumn btnclm = new DataGridViewButtonColumn();
@@ -148,6 +149,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             dgvListaProducto.Columns[1].ReadOnly = true;
             dgvListaProducto.Columns[2].ReadOnly = true;
             dgvListaProducto.Columns[3].ReadOnly = true;
+            dgvListaProducto.Columns[5].ReadOnly = true;
             dgvListaProducto.Columns[6].ReadOnly = true;
 
 
