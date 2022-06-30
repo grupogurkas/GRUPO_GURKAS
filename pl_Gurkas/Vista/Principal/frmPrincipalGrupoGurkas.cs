@@ -937,5 +937,10 @@ namespace pl_Gurkas.Vista.Principal
             controlvistaformulario.ControlVista(this, new Vista.Logistica.CargoEntrega.frmRecuperarMaterial());
             modulo.auditoria("Logistica", "Almacen", "Cargo de entreha", "Recuperar Material");
         }
+
+        private void kardexToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
