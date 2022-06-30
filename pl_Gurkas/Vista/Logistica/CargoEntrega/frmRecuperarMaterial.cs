@@ -25,7 +25,9 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         {
             Llenadocbo.ObtenerProducto(cboProducto);
             txtstock.Enabled = false;
+            txtcodigo.Enabled = false;
             txtstock.Text = "0";
+            txtcodigo.Text = "S/C";
         }
 
         private void cboProducto_SelectedIndexChanged(object sender, EventArgs e)
@@ -38,6 +40,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                 while (recorre.Read())
                 {
                     txtstock.Text = recorre["CANTIDA_DEVUELTA"].ToString();
+                    txtcodigo.Text = cod_producto;
                 }
             }
         }
