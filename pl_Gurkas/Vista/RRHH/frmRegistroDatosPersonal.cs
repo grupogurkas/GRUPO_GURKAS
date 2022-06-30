@@ -161,34 +161,34 @@ namespace pl_Gurkas.Vista.RRHH
         {
             try
             {
-                string codEmpleado = txtCodEmpleado.Text;
-                string Nombre = txtNombreEmp.Text;
-                string ApPaterno = txtApPaternoEmp.Text;
-                string ApMaterno = txtApMateEmp.Text;
-                string NombreCompleto = txtApPaternoEmp.Text + " " + txtApMateEmp.Text + " " + txtNombreEmp.Text;
+                string codEmpleado = txtCodEmpleado.Text.ToUpper();
+                string Nombre = txtNombreEmp.Text.ToUpper();
+                string ApPaterno = txtApPaternoEmp.Text.ToUpper();
+                string ApMaterno = txtApMateEmp.Text.ToUpper();
+                string NombreCompleto = (txtApPaternoEmp.Text + " " + txtApMateEmp.Text + " " + txtNombreEmp.Text).ToUpper();
                 int edad = (int)Convert.ToInt64(txtEdadEmp.Text);
                 int tipoDoc = cboTipoDocIdentEmp.SelectedIndex;
-                string NumDOc = txtNumDocIdentEmpl.Text;
+                string NumDOc = txtNumDocIdentEmpl.Text.ToUpper();
                 int sexo = cboSexoEmp.SelectedIndex;
                 DateTime Femision = dtpEmicion.Value;
                 DateTime Fcaducacion = dtpCaducacion.Value;
                 DateTime Fnacimineto = dtpNacimiento.Value;
                 int brevete = cboBrevete.SelectedIndex;
-                string nbrevete = txtNumBrevete.Text;
+                string nbrevete = txtNumBrevete.Text.ToUpper();
                 int Nacionalidad = cboNacionalidad.SelectedIndex;
-                string Departamento = cboDepartamento.SelectedValue.ToString();
+                string Departamento = cboDepartamento.SelectedValue.ToString().ToUpper();
                 int codDep = (int)Convert.ToInt64(Departamento);
-                string Provincia = cboProvincia.SelectedValue.ToString();
+                string Provincia = cboProvincia.SelectedValue.ToString().ToUpper();
                 int codPro = (int)Convert.ToInt64(Provincia);
-                string Distrito = cboDis.SelectedValue.ToString();
+                string Distrito = cboDis.SelectedValue.ToString().ToUpper();
                 int codDist = (int)Convert.ToInt64(Distrito);
-                string Domicilio = txtDomicilio.Text;
+                string Domicilio = txtDomicilio.Text.ToUpper();
                 int Telefono = (int)Convert.ToInt64(txtTelefono.Text);
                 int Celular = (int)Convert.ToInt64(txtCelular.Text);
-                string Correo = txtCorreo.Text;
+                string Correo = txtCorreo.Text.ToUpper();
                 int GradoInstruccion = cboGradoInstruccionEmp.SelectedIndex;
                 int EstadoCivil = cboEstadoCivilEmp.SelectedIndex;
-                string codUbigeo = txtCodUbigeo.Text;
+                string codUbigeo = txtCodUbigeo.Text.ToUpper();
 
                 int EstadoPersonal = cboEstadoEmp.SelectedIndex;
                 int CargoLaboral = cboCargoLaboral.SelectedIndex;
@@ -196,8 +196,8 @@ namespace pl_Gurkas.Vista.RRHH
                 int TipoContrato = cboTipoContratoEmp.SelectedIndex;
                 DateTime fechaInicio = dtpFechaInicio.Value;
                 DateTime fechaFin = dtpFechaFin.Value;
-                string Sede = cboSede.SelectedValue.ToString();
-                string unidad = cboUnidad.SelectedValue.ToString();
+                string Sede = cboSede.SelectedValue.ToString().ToUpper();
+                string unidad = cboUnidad.SelectedValue.ToString().ToUpper();
                 int turno = cboTurnoEmp.SelectedIndex;
                 int hora = cboHorasLaborales.SelectedIndex;
                 int tallacamisa = cboTallaPrenda.SelectedIndex;
@@ -268,44 +268,44 @@ namespace pl_Gurkas.Vista.RRHH
         {
             try
             {
-                string codEmpleado = txtCodEmpleado.Text;
-                string Nombre = txtNombreEmp.Text;
-                string ApPaterno = txtApPaternoEmp.Text;
-                string ApMaterno = txtApMateEmp.Text;
-                string NombreCompleto = txtApPaternoEmp.Text + " " + txtApMateEmp.Text + " " + txtNombreEmp.Text;
+                string codEmpleado = txtCodEmpleado.Text.ToUpper();
+                string Nombre = txtNombreEmp.Text.ToUpper();
+                string ApPaterno = txtApPaternoEmp.Text.ToUpper();
+                string ApMaterno = txtApMateEmp.Text.ToUpper();
+                string NombreCompleto = (txtApPaternoEmp.Text + " " + txtApMateEmp.Text + " " + txtNombreEmp.Text).ToUpper();
                 int edad = (int)Convert.ToInt64(txtEdadEmp.Text);
                 int tipoDoc = cboTipoDocIdentEmp.SelectedIndex;
-                string NumDOc = txtNumDocIdentEmpl.Text;
+                string NumDOc = txtNumDocIdentEmpl.Text.ToUpper();
                 int sexo = cboSexoEmp.SelectedIndex;
                 DateTime Femision = dtpEmicion.Value;
                 DateTime Fcaducacion = dtpCaducacion.Value;
                 DateTime Fnacimineto = dtpNacimiento.Value;
                 int brevete = cboBrevete.SelectedIndex;
-                string nbrevete = txtNumBrevete.Text;
+                string nbrevete = txtNumBrevete.Text.ToUpper();
                 int Nacionalidad = cboNacionalidad.SelectedIndex;
-                string Departamento = cboDepartamento.SelectedValue.ToString();
+                string Departamento = cboDepartamento.SelectedValue.ToString().ToUpper();
                 int codDep = (int)Convert.ToInt64(Departamento);
                 string Provincia = cboProvincia.SelectedValue.ToString();
                 int codPro = (int)Convert.ToInt64(Provincia);
                 string Distrito = cboDis.SelectedValue.ToString();
                 int codDist = (int)Convert.ToInt64(Distrito);
-                string Domicilio = txtDomicilio.Text;
+                string Domicilio = txtDomicilio.Text.ToUpper();
                 int Telefono = (int)Convert.ToInt64(txtTelefono.Text);
                 int Celular = (int)Convert.ToInt64(txtCelular.Text);
-                string Correo = txtCorreo.Text;
+                string Correo = txtCorreo.Text.ToUpper();
                 int GradoInstruccion = cboGradoInstruccionEmp.SelectedIndex;
                 int EstadoCivil = cboEstadoCivilEmp.SelectedIndex;
-                string codUbigeo = txtCodUbigeo.Text;
+                string codUbigeo = txtCodUbigeo.Text.ToUpper();
 
                 int EstadoPersonal = cboEstadoEmp.SelectedIndex;
                 int CargoLaboral = cboCargoLaboral.SelectedIndex;
-                string Empresa = cboEmpresa.SelectedIndex.ToString();
+                string Empresa = cboEmpresa.SelectedIndex.ToString().ToUpper();
                 int emp = (int)Convert.ToInt64(Empresa);
                 int TipoContrato = cboTipoContratoEmp.SelectedIndex;
                 DateTime fechaInicio = dtpFechaInicio.Value;
                 DateTime fechaFin = dtpFechaFin.Value;
-                string Sede = cboSede.SelectedValue.ToString();
-                string unidad = cboUnidad.SelectedValue.ToString();
+                string Sede = cboSede.SelectedValue.ToString().ToUpper();
+                string unidad = cboUnidad.SelectedValue.ToString().ToUpper();
                 int turno = cboTurnoEmp.SelectedIndex;
                 int hora = cboHorasLaborales.SelectedIndex;
                 int tallacamisa = cboTallaPrenda.SelectedIndex;

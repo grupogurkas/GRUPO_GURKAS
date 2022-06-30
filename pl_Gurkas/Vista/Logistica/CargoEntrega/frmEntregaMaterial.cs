@@ -18,6 +18,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
     {
 
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
+        Datos.AuditoriaModulos modulo = new Datos.AuditoriaModulos();
+        Vista.ControlVistaFormulario controlvistaformulario = new Vista.ControlVistaFormulario();
         Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
         private Timer ti;
         private DataTable dt;
@@ -192,7 +194,22 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                         comando.ExecuteNonQuery();
                     }
                 }
-                MessageBox.Show("Datos registrado correptamente");
+                const string titulo = "Cerrar Registro de Material";
+                const string mensaje = "Desea volver a Registrar un Material";
+                var resutlado = MessageBox.Show(mensaje, titulo, MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                if (resutlado == DialogResult.No)
+                {
+                    this.Close();
+                    MessageBox.Show("Cerrado Correctamente");
+                }
+                if (resutlado == DialogResult.Yes)
+                {
+                    this.Close();
+                    Vista.Logistica.CargoEntrega.frmEntregaMaterial frmEntregaMaterial = new Vista.Logistica.CargoEntrega.frmEntregaMaterial();
+                    frmEntregaMaterial.StartPosition = FormStartPosition.CenterParent;
+                    frmEntregaMaterial.ShowDialog();
+                }
+
             }
             catch (Exception ex)
             {
@@ -200,6 +217,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                 //showDialogs("ERROR", Color.FromArgb(255, 53, 71));
 
             }
+
         }
         private void frmEntregaMaterial_Load(object sender, EventArgs e)
         {
@@ -545,7 +563,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             {
                 printDocument1.Print();
                 registarvale();
-                limpiardatos();
+                //limpiardatos();
             }
            // printPreviewDialog1.ShowDialog();
         }

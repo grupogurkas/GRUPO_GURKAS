@@ -446,7 +446,7 @@ namespace pl_Gurkas.Vista.RRHH
 
         private void btnAgregarPlanillaDatos_Click(object sender, EventArgs e)
         {
-            string codEmpleado = txtCodEmpleado.Text;
+            string codEmpleado = txtCodEmpleado.Text.ToUpper();
             int TipoTrabajador = cboTipoTrabajador.SelectedIndex;
             decimal SueldoBasico = Convert.ToDecimal(txtSueldoBa.Text);
             decimal SueldoBruto = Convert.ToDecimal(txtxSueldoBruto.Text);
@@ -454,11 +454,11 @@ namespace pl_Gurkas.Vista.RRHH
             int TipoPago = cboTipoPago.SelectedIndex;
             int PeriodoRemuneracion = cboPeriodidadRemuneracion.SelectedIndex;
             int bancosueldo = cboBanco.SelectedIndex;
-            string cuentaBancaria = txtCtaBancaria.Text;
+            string cuentaBancaria = txtCtaBancaria.Text.ToUpper();
             int SueldoMoneda = cboTipoMoneda.SelectedIndex;
             int RegimenPensionario = cboRegimenPensionario.SelectedIndex;
             int afp = Convert.ToInt32(cboAFP.SelectedValue.ToString());
-            string afpcuss = txtAFPCUSS.Text;
+            string afpcuss = txtAFPCUSS.Text.ToUpper();
             int tipocomicion = Convert.ToInt32(cboTipoComicion.SelectedValue.ToString());
             int movimientoAFp = Convert.ToInt32(cboMovimientoAFP.SelectedValue.ToString());
             DateTime fechaInicio = dtpFechaInicio.Value;
@@ -485,7 +485,7 @@ namespace pl_Gurkas.Vista.RRHH
 
         private void btnActualizarDatos_Click(object sender, EventArgs e)
         {
-            string codEmpleado = txtCodEmpleado.Text;
+            string codEmpleado = txtCodEmpleado.Text.ToUpper();
             int TipoTrabajador = cboTipoTrabajador.SelectedIndex;
             decimal SueldoBasico = Convert.ToDecimal(txtSueldoBa.Text);
             decimal SueldoBruto = Convert.ToDecimal(txtxSueldoBruto.Text);
@@ -493,11 +493,11 @@ namespace pl_Gurkas.Vista.RRHH
             int TipoPago = cboTipoPago.SelectedIndex;
             int PeriodoRemuneracion = cboPeriodidadRemuneracion.SelectedIndex;
             int bancosueldo = cboBanco.SelectedIndex;
-            string cuentaBancaria = txtCtaBancaria.Text;
+            string cuentaBancaria = txtCtaBancaria.Text.ToUpper();
             int SueldoMoneda = cboTipoMoneda.SelectedIndex;
             int RegimenPensionario = cboRegimenPensionario.SelectedIndex;
             int afp = Convert.ToInt32(cboAFP.SelectedValue.ToString());
-            string afpcuss = txtAFPCUSS.Text;
+            string afpcuss = txtAFPCUSS.Text.ToUpper();
             int tipocomicion =  Convert.ToInt32(cboTipoComicion.SelectedValue.ToString());
             int movimientoAFp = Convert.ToInt32(cboMovimientoAFP.SelectedValue.ToString());  
             DateTime fechaInicio = dtpFechaInicio.Value;

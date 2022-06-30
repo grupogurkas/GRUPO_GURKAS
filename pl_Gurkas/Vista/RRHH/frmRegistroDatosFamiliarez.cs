@@ -28,16 +28,16 @@ namespace pl_Gurkas.Vista.RRHH
             try
             {
                 string codEmpleado = cboempleadoActivo.SelectedValue.ToString();
-                string Esposo = txtEsposo.Text;
-                string dniespo = txtdniEsposa.Text;
-                string hijo1 = txtHijo1.Text;
-                string dni1 = txtdni1.Text;
-                string hijo2 = txtHijo2.Text;
-                string dni2 = txtdni2.Text;
-                string hijo3 = txtHijo3.Text;
-                string dni3 = txtdni3.Text;
-                string hijo4 = txtHijo4.Text;
-                string dni4 = txtdni4.Text;
+                string Esposo = txtEsposo.Text.ToUpper();
+                string dniespo = txtdniEsposa.Text.ToUpper();
+                string hijo1 = txtHijo1.Text.ToUpper();
+                string dni1 = txtdni1.Text.ToUpper();
+                string hijo2 = txtHijo2.Text.ToUpper();
+                string dni2 = txtdni2.Text.ToUpper();
+                string hijo3 = txtHijo3.Text.ToUpper();
+                string dni3 = txtdni3.Text.ToUpper();
+                string hijo4 = txtHijo4.Text.ToUpper();
+                string dni4 = txtdni4.Text.ToUpper();
                 int cantidad_hijos = cboNumeroHijos.SelectedIndex;
                registrar.InsertarFamiliarColaborador(codEmpleado, Esposo, dniespo, hijo1, dni1, hijo2, dni2, hijo3, dni3, hijo4, dni4,cantidad_hijos);
                 MessageBox.Show("Datos registrado correptamente", "Correpto");

@@ -940,7 +940,8 @@ namespace pl_Gurkas.Vista.Principal
 
         private void kardexToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.Inventario.frmKardex());
+            modulo.auditoria("Logistica", "Almacen", "Reporte", "kardex");
         }
     }
 }
