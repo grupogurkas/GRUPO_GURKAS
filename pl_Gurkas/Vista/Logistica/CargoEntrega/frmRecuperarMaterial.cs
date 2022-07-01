@@ -15,7 +15,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
-
+        Datos.CRUD.Logistica.Actualizar.LogisticaActualizar logisticaActualizar = new Datos.CRUD.Logistica.Actualizar.LogisticaActualizar();
         public frmRecuperarMaterial()
         {
             InitializeComponent();
@@ -58,7 +58,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         {
             if (cboProducto.SelectedValue.ToString() != null)
             {
-                string cod_producto = cboProducto.SelectedValue.ToString();
+                string cod_producto = cboMterialRecuperado.SelectedValue.ToString();
                 txtCodigoRecuperable.Text = cod_producto;
             }
         }
@@ -79,6 +79,29 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             catch(Exception ex)
             {
 
+            }
+        }
+
+        private void btnRecuperar_Click(object sender, EventArgs e)
+        {
+            int stock_disponible = Convert.ToInt32(txtresumend.Text);
+            int stock_recuperable = Convert.ToInt32(txtrecuperabler.Text);
+            int stock_restante = Convert.ToInt32(txtrestanter.Text);
+            string cod_producto_n = cboProducto.SelectedValue.ToString();
+            string cod_producto_r = cboMterialRecuperado.SelectedValue.ToString();
+
+            string producto = cboProducto.GetItemText(cboProducto.SelectedItem).ToUpper();
+            string producto_re = cboMterialRecuperado.GetItemText(cboMterialRecuperado.SelectedItem).ToUpper();
+
+            const string titulo = "Recuperar Material";
+            string mensaje = "Estas seguro que deseas recuperar la cantidad de " + stock_recuperable.ToString() + " de " + stock_disponible.ToString()
+            +" Disponible, del producto : "    + producto;
+            var resutlado = MessageBox.Show(mensaje, titulo, MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (resutlado == DialogResult.Yes)
+            {
+                logisticaActualizar.actualizarstockmaterialrecuperable( stock_disponible,  stock_recuperable,  stock_restante,
+             cod_producto_n,  cod_producto_r);
+                MessageBox.Show("Stock actualizado correptamente", "Correpto");
             }
         }
     }
