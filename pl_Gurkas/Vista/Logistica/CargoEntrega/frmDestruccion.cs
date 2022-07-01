@@ -80,6 +80,31 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         {
             OpenFileDialog Imagen = new OpenFileDialog();
 
+            if(Imagen.ShowDialog()== DialogResult.OK)
+            {
+                pictureBox2.ImageLocation = Imagen.FileName;
+                pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            const string titulo = "Cerrar Registro de Personal";
+            const string mensaje = "Estas seguro que deseas cerra el Registro Destruccion";
+            var resutlado = MessageBox.Show(mensaje, titulo, MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (resutlado == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
+            PrintDialog1.AllowSomePages = true;
+            PrintDialog1.ShowHelp = true;
+            //PrintDialog1.Document = printDocument1;
         }
     }
 }

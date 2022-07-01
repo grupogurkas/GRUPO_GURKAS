@@ -62,7 +62,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.label14 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dgvListaProducto = new System.Windows.Forms.DataGridView();
-            this.btnCertificadoBasc = new System.Windows.Forms.Button();
+            this.btnImprimir = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.dtpFechaAdquisicion = new System.Windows.Forms.DateTimePicker();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
@@ -139,6 +139,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // label5
             // 
@@ -171,7 +172,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.dgvListaProducto);
-            this.panel1.Controls.Add(this.btnCertificadoBasc);
+            this.panel1.Controls.Add(this.btnImprimir);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.dtpFechaAdquisicion);
             this.panel1.Location = new System.Drawing.Point(15, 76);
@@ -428,18 +429,19 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.dgvListaProducto.Size = new System.Drawing.Size(934, 307);
             this.dgvListaProducto.TabIndex = 220;
             // 
-            // btnCertificadoBasc
+            // btnImprimir
             // 
-            this.btnCertificadoBasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCertificadoBasc.Image = global::pl_Gurkas.Properties.Resources.descarga_32;
-            this.btnCertificadoBasc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCertificadoBasc.Location = new System.Drawing.Point(1182, 102);
-            this.btnCertificadoBasc.Name = "btnCertificadoBasc";
-            this.btnCertificadoBasc.Size = new System.Drawing.Size(110, 46);
-            this.btnCertificadoBasc.TabIndex = 226;
-            this.btnCertificadoBasc.Text = "Imprimir";
-            this.btnCertificadoBasc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCertificadoBasc.UseVisualStyleBackColor = true;
+            this.btnImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImprimir.Image = global::pl_Gurkas.Properties.Resources.descarga_32;
+            this.btnImprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnImprimir.Location = new System.Drawing.Point(1182, 102);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(110, 46);
+            this.btnImprimir.TabIndex = 226;
+            this.btnImprimir.Text = "Imprimir";
+            this.btnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // label12
             // 
@@ -625,7 +627,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dgvListaProducto;
-        private System.Windows.Forms.Button btnCertificadoBasc;
+        private System.Windows.Forms.Button btnImprimir;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DateTimePicker dtpFechaAdquisicion;
         private System.Windows.Forms.PictureBox pictureBox16;
