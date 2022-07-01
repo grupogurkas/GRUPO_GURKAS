@@ -88,6 +88,18 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Actualizar
             cmd.Parameters.AddWithValue("@descuento_por_cuota", SqlDbType.VarChar).Value = descuento_cuota;
             cmd.ExecuteNonQuery();
         }
+        public void actualizarstockmaterialrecuperable(int stock_disponible, int stock_recuperable, int stock_restante,
+            string cod_producto_n, string cod_producto_r)
+        {
+            SqlCommand cmd = new SqlCommand("sp_actualizar_stock_recuperable ", conexion.conexionBD());
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@stock_disponible", SqlDbType.Int).Value = stock_disponible;
+            cmd.Parameters.AddWithValue("@stock_recuperable", SqlDbType.Int).Value = stock_recuperable;
+            cmd.Parameters.AddWithValue("@stock_restante", SqlDbType.Int).Value = stock_restante;
+            cmd.Parameters.AddWithValue("@cod_producto_n", SqlDbType.VarChar).Value = cod_producto_n;
+            cmd.Parameters.AddWithValue("@cod_producto_r", SqlDbType.VarChar).Value = cod_producto_r;
+            cmd.ExecuteNonQuery();
+        }
         public void ActualizarPrendaPantalon(string cod_sistema, string cod_pantalon, string nombre_pantalon, int talla_pan,
                    string color_pan, int stock_inicial_pan, int tipo_tela_pan, int estado_pan, decimal precio_unitario_pan,
                    int stock_actual_pan, int stock_minimo_pan, string desp_pan,

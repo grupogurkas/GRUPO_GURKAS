@@ -30,12 +30,12 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtcodigo = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtstock = new System.Windows.Forms.TextBox();
             this.cboProducto = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtcodigo = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtCodigoRecuperable = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -44,13 +44,13 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txtresumend = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtrecuperabler = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.btnRecuperar = new System.Windows.Forms.Button();
             this.txtrestanter = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.btnRecuperar = new System.Windows.Forms.Button();
+            this.txtrecuperabler = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtresumend = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -70,6 +70,22 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del Producto Devuelto";
+            // 
+            // txtcodigo
+            // 
+            this.txtcodigo.Location = new System.Drawing.Point(113, 54);
+            this.txtcodigo.Name = "txtcodigo";
+            this.txtcodigo.Size = new System.Drawing.Size(125, 20);
+            this.txtcodigo.TabIndex = 234;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 60);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(106, 13);
+            this.label3.TabIndex = 233;
+            this.label3.Text = "CODIGO MATERIAL";
             // 
             // txtstock
             // 
@@ -106,22 +122,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.label1.Size = new System.Drawing.Size(101, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Nombre del Material";
-            // 
-            // txtcodigo
-            // 
-            this.txtcodigo.Location = new System.Drawing.Point(113, 54);
-            this.txtcodigo.Name = "txtcodigo";
-            this.txtcodigo.Size = new System.Drawing.Size(125, 20);
-            this.txtcodigo.TabIndex = 234;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 60);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 13);
-            this.label3.TabIndex = 233;
-            this.label3.Text = "CODIGO MATERIAL";
             // 
             // groupBox2
             // 
@@ -207,37 +207,19 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Resumen";
             // 
-            // txtresumend
+            // btnRecuperar
             // 
-            this.txtresumend.Location = new System.Drawing.Point(137, 19);
-            this.txtresumend.Name = "txtresumend";
-            this.txtresumend.Size = new System.Drawing.Size(116, 20);
-            this.txtresumend.TabIndex = 236;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(10, 22);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(110, 13);
-            this.label7.TabIndex = 235;
-            this.label7.Text = "STOCK DISPONIBLE";
-            // 
-            // txtrecuperabler
-            // 
-            this.txtrecuperabler.Location = new System.Drawing.Point(137, 45);
-            this.txtrecuperabler.Name = "txtrecuperabler";
-            this.txtrecuperabler.Size = new System.Drawing.Size(116, 20);
-            this.txtrecuperabler.TabIndex = 236;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(10, 51);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(121, 13);
-            this.label8.TabIndex = 235;
-            this.label8.Text = "STOCK RECUPERADO";
+            this.btnRecuperar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecuperar.Image = global::pl_Gurkas.Properties.Resources.add_trabajador_32;
+            this.btnRecuperar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRecuperar.Location = new System.Drawing.Point(350, 31);
+            this.btnRecuperar.Name = "btnRecuperar";
+            this.btnRecuperar.Size = new System.Drawing.Size(169, 46);
+            this.btnRecuperar.TabIndex = 239;
+            this.btnRecuperar.Text = "Recuperar Material";
+            this.btnRecuperar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRecuperar.UseVisualStyleBackColor = true;
+            this.btnRecuperar.Click += new System.EventHandler(this.btnRecuperar_Click);
             // 
             // txtrestanter
             // 
@@ -255,18 +237,37 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.label9.TabIndex = 237;
             this.label9.Text = "STOCK RESTANTE";
             // 
-            // btnRecuperar
+            // txtrecuperabler
             // 
-            this.btnRecuperar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRecuperar.Image = global::pl_Gurkas.Properties.Resources.add_trabajador_32;
-            this.btnRecuperar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRecuperar.Location = new System.Drawing.Point(350, 31);
-            this.btnRecuperar.Name = "btnRecuperar";
-            this.btnRecuperar.Size = new System.Drawing.Size(169, 46);
-            this.btnRecuperar.TabIndex = 239;
-            this.btnRecuperar.Text = "Recuperar Material";
-            this.btnRecuperar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRecuperar.UseVisualStyleBackColor = true;
+            this.txtrecuperabler.Location = new System.Drawing.Point(137, 45);
+            this.txtrecuperabler.Name = "txtrecuperabler";
+            this.txtrecuperabler.Size = new System.Drawing.Size(116, 20);
+            this.txtrecuperabler.TabIndex = 236;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(10, 51);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(121, 13);
+            this.label8.TabIndex = 235;
+            this.label8.Text = "STOCK RECUPERADO";
+            // 
+            // txtresumend
+            // 
+            this.txtresumend.Location = new System.Drawing.Point(137, 19);
+            this.txtresumend.Name = "txtresumend";
+            this.txtresumend.Size = new System.Drawing.Size(116, 20);
+            this.txtresumend.TabIndex = 236;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(10, 22);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(110, 13);
+            this.label7.TabIndex = 235;
+            this.label7.Text = "STOCK DISPONIBLE";
             // 
             // frmRecuperarMaterial
             // 
