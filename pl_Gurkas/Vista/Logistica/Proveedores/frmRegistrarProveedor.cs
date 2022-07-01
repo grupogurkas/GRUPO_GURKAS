@@ -141,53 +141,53 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         {
             try
             {
-                string cod_proveedor_cbo = cboProveedor.SelectedValue.ToString();
-                string Nombre = txtProveedor.Text;
-                string ruc = txtruc.Text;
-                string rubro = txtRubro.Text;
-                string NombreContacto = txtNombreProveedor.Text;
-                string Telefono = txtTelefono.Text;
-                string Celular = txtCelular.Text;
-                string Correo = txtCorreo.Text;
-                string Correo2 = txtCorreo2.Text;
-                string direccion = txtDireccion.Text;
+                string cod_proveedor_cbo = cboProveedor.SelectedValue.ToString().ToUpper();
+                string Nombre = txtProveedor.Text.ToUpper();
+                string ruc = txtruc.Text.ToUpper();
+                string rubro = txtRubro.Text.ToUpper();
+                string NombreContacto = txtNombreProveedor.Text.ToUpper();
+                string Telefono = txtTelefono.Text.ToUpper();
+                string Celular = txtCelular.Text.ToUpper();
+                string Correo = txtCorreo.Text.ToUpper();
+                string Correo2 = txtCorreo2.Text.ToUpper();
+                string direccion = txtDireccion.Text.ToUpper();
                 string Departamento = cboDepartamento.SelectedValue.ToString();
                 int codDep = (int)Convert.ToInt64(Departamento);
-                string Provincia = cboProvincia.SelectedValue.ToString();
+                string Provincia = (cboProvincia.SelectedValue.ToString()).ToUpper();
                 int codPro = (int)Convert.ToInt64(Provincia);
-                string Distrito = cboDis.SelectedValue.ToString();
+                string Distrito = (cboDis.SelectedValue.ToString()).ToUpper();
                 int codDist = (int)Convert.ToInt64(Distrito);
-                string paginaweb = txtpaginaweb.Text;
+                string paginaweb = txtpaginaweb.Text.ToUpper();
                 int Tipoproveedor = cboTipoProveedor.SelectedIndex;
                 //string TipoProveedor = cboTipoProveedor.SelectedValue.ToString();
                 //int codTipoProveedor = (int)Convert.ToInt64(TipoProveedor);
                 DateTime fregistro = dtpFechaRegistro.Value;
-                string observacion = txtObservacion.Text;
+                string observacion = txtObservacion.Text.ToUpper();
                 //Modulo Representante
 
-                string Representante = txtRepresentante.Text;
+                string Representante = txtRepresentante.Text.ToUpper();
                 int tipoDoc = cboTipoDocIdentEmp.SelectedIndex;
-                string numDoc = txtNumDocIdentEmpl.Text;
-                string cargo = txtCargo.Text;
-                string empresa = txtEmpresa.Text;
+                string numDoc = txtNumDocIdentEmpl.Text.ToUpper();
+                string cargo = txtCargo.Text.ToUpper();
+                string empresa = txtEmpresa.Text.ToUpper();
                 int tipoEmpresa = cboTipoEmpresa.SelectedIndex;
                 int Estado = cboEstadoProveedor.SelectedIndex;
                 //Modulo Datos Certificacion
 
                 int basc = cboCertificadoBasc.SelectedIndex;
                 int no_basc = cboOtroCertificado.SelectedIndex;
-                string autenticidad = txtAutenticidad.Text;
-                string numero_certificado = txtNumCertificacion.Text;
+                string autenticidad = txtAutenticidad.Text.ToUpper();
+                string numero_certificado = txtNumCertificacion.Text.ToUpper();
                 DateTime fechaOtorgamiento = dtpFechaInicio.Value;
                 DateTime fechaCaducidad = dtpFechaCaducidad.Value;
 
-                  string pdfFilePath = lblRutaBasc.Text;
+                    string pdfFilePath = lblRutaBasc.Text.ToUpper();
                     byte[] certificado_basc = System.IO.File.ReadAllBytes(pdfFilePath);
-                    string file = Convert.ToBase64String(certificado_basc, 0, certificado_basc.Length);
+                    string file = (Convert.ToBase64String(certificado_basc, 0, certificado_basc.Length)).ToUpper();
 
-                    string pdfFilePath_2 = lblOtroCert.Text;
+                    string pdfFilePath_2 = lblOtroCert.Text.ToUpper();
                     byte[] otro_certificado = System.IO.File.ReadAllBytes(pdfFilePath_2);
-                    string file_certificado = Convert.ToBase64String(otro_certificado, 0, otro_certificado.Length);
+                    string file_certificado = (Convert.ToBase64String(otro_certificado, 0, otro_certificado.Length)).ToUpper();
 
                 actualizar.actualizarProveedor(cod_proveedor_cbo, Nombre, ruc, observacion, codDep, codPro,
                                          codDist, direccion, Telefono, Celular, Correo, Correo2, fregistro,
@@ -212,52 +212,52 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
         {
             try
             {
-                string codProveedor = txtcodproveedor.Text;
-                string Nombre = txtProveedor.Text;
-                string ruc = txtruc.Text;
-                string rubro = txtRubro.Text;
-                string NombreContacto = txtNombreProveedor.Text;
-                string Telefono = txtTelefono.Text;
-                string Celular = txtCelular.Text;
-                string Correo = txtCorreo.Text;
-                string Correo2 = txtCorreo2.Text;
-                string direccion = txtDireccion.Text;
-                string Departamento = cboDepartamento.SelectedValue.ToString();
+                string codProveedor = txtcodproveedor.Text.ToUpper();
+                string Nombre = txtProveedor.Text.ToUpper();
+                string ruc = txtruc.Text.ToUpper();
+                string rubro = txtRubro.Text.ToUpper();
+                string NombreContacto = txtNombreProveedor.Text.ToUpper();
+                string Telefono = txtTelefono.Text.ToUpper();
+                string Celular = txtCelular.Text.ToUpper();
+                string Correo = txtCorreo.Text.ToUpper();
+                string Correo2 = txtCorreo2.Text.ToUpper();
+                string direccion = txtDireccion.Text.ToUpper();
+                string Departamento = (cboDepartamento.SelectedValue.ToString()).ToUpper();
                 int codDep = (int)Convert.ToInt64(Departamento);
-                string Provincia = cboProvincia.SelectedValue.ToString();
+                string Provincia = (cboProvincia.SelectedValue.ToString()).ToUpper();
                 int codPro = (int)Convert.ToInt64(Provincia);
-                string Distrito = cboDis.SelectedValue.ToString();
+                string Distrito = (cboDis.SelectedValue.ToString()).ToUpper();
                 int codDist = (int)Convert.ToInt64(Distrito);
-                string paginaweb = txtpaginaweb.Text;
+                string paginaweb = txtpaginaweb.Text.ToUpper();
 
                 int Tipoproveedor = cboTipoProveedor.SelectedIndex;
                 DateTime fregistro = dtpFechaRegistro.Value;
-                string observacion = txtObservacion.Text;
+                string observacion = txtObservacion.Text.ToUpper();
                 //Modulo Representante
 
                 string Representante = txtRepresentante.Text;
                 int tipoDoc = cboTipoDocIdentEmp.SelectedIndex;
-                string numDoc = txtNumDocIdentEmpl.Text;
-                string cargo = txtCargo.Text;
-                string empresa = txtEmpresa.Text;
+                string numDoc = txtNumDocIdentEmpl.Text.ToUpper();
+                string cargo = txtCargo.Text.ToUpper();
+                string empresa = txtEmpresa.Text.ToUpper();
                 int tipoEmpresa = cboTipoEmpresa.SelectedIndex;
                 int Estado = cboEstadoProveedor.SelectedIndex;
                 //Modulo Datos Certificacion
 
                 int basc = cboCertificadoBasc.SelectedIndex;
                 int no_basc = cboOtroCertificado.SelectedIndex;
-                string autenticidad = txtAutenticidad.Text;
-                string numero_certificado = txtNumCertificacion.Text;
+                string autenticidad = txtAutenticidad.Text.ToUpper();
+                string numero_certificado = txtNumCertificacion.Text.ToUpper();
                 DateTime fechaOtorgamiento = dtpFechaInicio.Value;
                 DateTime fechaCaducidad = dtpFechaCaducidad.Value;
 
-                string pdfFilePath = lblRutaBasc.Text;
+                string pdfFilePath = lblRutaBasc.Text.ToUpper();
                 byte[] certificado_basc = System.IO.File.ReadAllBytes(pdfFilePath);
-                string file = Convert.ToBase64String(certificado_basc, 0, certificado_basc.Length);
+                string file = (Convert.ToBase64String(certificado_basc, 0, certificado_basc.Length)).ToUpper();
 
                 string pdfFilePath_2 = lblOtroCert.Text;
                 byte[] otro_certificado = System.IO.File.ReadAllBytes(pdfFilePath_2);
-                string file_certificado = Convert.ToBase64String(otro_certificado, 0, otro_certificado.Length);
+                string file_certificado = (Convert.ToBase64String(otro_certificado, 0, otro_certificado.Length)).ToUpper();
 
                 registrar.registrarProveedor(codProveedor, Nombre, ruc, observacion, codDep, codPro,
                                          codDist, direccion, Telefono, Celular, Correo, Correo2, fregistro,

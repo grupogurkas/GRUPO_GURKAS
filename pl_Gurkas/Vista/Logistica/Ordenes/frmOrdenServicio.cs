@@ -421,20 +421,20 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
         }
         private void registrarOrden()
         {
-            string cod_proveedor = cboProveedorActivo.SelectedValue.ToString();
-            string nomb_proveedor = txtProveedor.Text;
-            string ruc = txtruc.Text;
-            string contacto = txtNombreProveedor.Text;
-            string direccion = txtDireccion.Text;
-            string correo = txtCorreo.Text;
-            string telefono = txtTelefono.Text;
-            string celular = txtCelular.Text;
-            string NUM_ORDEN = txtNumOrden.Text;
-            string observacion = txtObservacion.Text;
+            string cod_proveedor = (cboProveedorActivo.SelectedValue.ToString()).ToUpper();
+            string nomb_proveedor = txtProveedor.Text.ToUpper();
+            string ruc = txtruc.Text.ToUpper();
+            string contacto = txtNombreProveedor.Text.ToUpper();
+            string direccion = txtDireccion.Text.ToUpper();
+            string correo = txtCorreo.Text.ToUpper();
+            string telefono = txtTelefono.Text.ToUpper();
+            string celular = txtCelular.Text.ToUpper();
+            string NUM_ORDEN = txtNumOrden.Text.ToUpper();
+            string observacion = txtObservacion.Text.ToUpper();
             DateTime fecha_ = dtpFechaAdquisicion.Value;
-            string fecha_vale = lblFecha.Text;
-            string hora = lblHora.Text;
-            string nombre_user = Datos.DatosUsuario._usuario;
+            string fecha_vale = lblFecha.Text.ToUpper();
+            string hora = lblHora.Text.ToUpper();
+            string nombre_user = Datos.DatosUsuario._usuario.ToUpper();
             try
             {
                 SqlCommand comando = new SqlCommand("sp_registrar_orden_servicio @num_orden_servicio,@cod_proveedor,@nombre_proveedor,@nombre_contacto,@ruc," +

@@ -197,6 +197,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.pictureBox2.Size = new System.Drawing.Size(246, 186);
             this.pictureBox2.TabIndex = 234;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // txtstockminimo
             // 

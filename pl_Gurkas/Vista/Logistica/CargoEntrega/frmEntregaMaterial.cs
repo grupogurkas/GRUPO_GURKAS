@@ -142,21 +142,21 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         {
             int cod_puesto = cboTipoPuesto.SelectedIndex;
             int cod_area_entrega = cboAreaLaboral.SelectedIndex;
-            string cod = cboEmpresa.SelectedValue.ToString();
+            string cod = cboEmpresa.SelectedValue.ToString().ToUpper();
             int c = Convert.ToInt32(cod);
-            string NUM_VALE = txtNumVale.Text;
-            string cod_unidad = cboUnidad.SelectedValue.ToString();
-            string cod_sede = cboSede.SelectedValue.ToString();
-            string imformacion_adicional = txtInformacionAdicional.Text;
-            string entregado_nombre = txtUsuarioEntrega.Text;
-            string cod_entregado = lblcodentre.Text;
-            string dni_entregado = lbldnientr.Text;
-            string solicitante_nombre = cboempleadoActivo.GetItemText(cboempleadoActivo.SelectedItem);
-            string cod_solicitante = cboempleadoActivo.SelectedValue.ToString();
-            string dni_solicitante = lbldni.Text;
-            string fecha_vale = lblFecha.Text;
-            string hora = lblHora.Text;
-            string nombre_user = Datos.DatosUsuario._usuario;
+            string NUM_VALE = txtNumVale.Text.ToUpper();
+            string cod_unidad = (cboUnidad.SelectedValue.ToString()).ToUpper();
+            string cod_sede = ((cboSede.SelectedValue.ToString()).ToUpper());
+            string imformacion_adicional = txtInformacionAdicional.Text.ToUpper();
+            string entregado_nombre = txtUsuarioEntrega.Text.ToUpper();
+            string cod_entregado = lblcodentre.Text.ToUpper();
+            string dni_entregado = lbldnientr.Text.ToUpper();
+            string solicitante_nombre = (cboempleadoActivo.GetItemText(cboempleadoActivo.SelectedItem)).ToUpper();
+            string cod_solicitante = (cboempleadoActivo.SelectedValue.ToString()).ToUpper();
+            string dni_solicitante = lbldni.Text.ToUpper();
+            string fecha_vale = lblFecha.Text.ToUpper();
+            string hora = lblHora.Text.ToUpper();
+            string nombre_user = Datos.DatosUsuario._usuario.ToUpper();
             try
             {
                 SqlCommand comando = new SqlCommand("sp_insertar_salida_producto @NUM_ENTREGA ,@COD_PUESTO ,@COD_AREA_ENTREGA ,@COD_EMPRESA  ,@COD_UNIDAD ,@COD_SEDE, @INFORMACION_ADICIONAL, @ENTREGADO_NOMBRE, @COD_ENTREGADO," +
