@@ -104,7 +104,16 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
             PrintDialog1.AllowSomePages = true;
             PrintDialog1.ShowHelp = true;
-            //PrintDialog1.Document = printDocument1;
+            //PrintDialog1.Document = printDocument1;}
+            printPreviewDialog1.Show();
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            Font tipotexto = new Font("Arial", 10, FontStyle.Bold);
+
+            e.Graphics.DrawImage(pictureBox2.Image, 50, 20);
+           // e.Graphics.DrawString()
         }
     }
 }
