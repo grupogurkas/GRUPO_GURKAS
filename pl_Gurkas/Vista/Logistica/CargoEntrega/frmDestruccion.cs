@@ -75,5 +75,11 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog Imagen = new OpenFileDialog();
+
+        }
     }
 }
