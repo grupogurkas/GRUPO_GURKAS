@@ -27,10 +27,6 @@ namespace pl_Gurkas.Vista.Logistica.Historial
         {
             textBox1.Text = cod_personal;
             textBox2.Text = nomb_personal;
-
-
-
-
             dt = new DataTable();
             dt.Columns.Add("ID");
             dt.Columns.Add("Nombre Personal");

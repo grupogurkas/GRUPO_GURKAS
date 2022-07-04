@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private Timer ti;
         private DataTable dt;
 
+
         public frmDestruccion()
         {
             InitializeComponent();
@@ -31,17 +33,19 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
         private void Destruccion_Load(object sender, EventArgs e)
         {
+            //txtRestante.Text = cantidadrest;
             txtUsuarioEntrega.Enabled = false;
-            txtNumVale.Enabled = false;
+            //txtNumVale.Enabled = false;
             txtstock.Enabled = false;
             txtstock.Text = "0";
-            txtstockminimo.Text = "0";
-            txtstockminimo.Visible = false;
+            txtRestante.Text = "0";
+            txtRestante.Visible = true;
             string nombre_user = Datos.DatosUsuario._usuario;
             txtUsuarioEntrega.Text = nombre_user;
             //timer1.Enabled = true;
             //obtener_datos();
             //GenerarNumVale();
+            Llenadocbo.ObtenerPersonalAdmi(cboPersonalAdm);
             Llenadocbo.ObtenerEstadoProductoCompleto(cboEstadoMaterial);
             Llenadocbo.ObtenerArea(cboAreaLaboral);
             Llenadocbo.ObtenerProducto(cboProducto);
@@ -78,13 +82,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            OpenFileDialog Imagen = new OpenFileDialog();
-
-            if(Imagen.ShowDialog()== DialogResult.OK)
-            {
-                pictureBox2.ImageLocation = Imagen.FileName;
-                pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            }
+          
 
         }
 
@@ -114,6 +112,26 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
             e.Graphics.DrawImage(pictureBox2.Image, 50, 20);
            // e.Graphics.DrawString()
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void btnImagen_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog Imagen = new OpenFileDialog();
+
+            if (Imagen.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox2.ImageLocation = Imagen.FileName;
+                pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+        }
+
+        private void cboProducto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }

@@ -107,7 +107,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.groupBox2.Size = new System.Drawing.Size(423, 84);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "s";
+            this.groupBox2.Text = "Busqueda por Codigo";
             // 
             // txtBuscarCodigoPer
             // 

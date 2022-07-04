@@ -707,6 +707,25 @@ namespace pl_Gurkas.Datos
             }
         }
 
+        public void ObtenerPersonalAdmi(ComboBox cd)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("select NOMBRE_COMPLETO from T_MAE_PERSONAL where COD_EMPLEADO like 'ADM%' and ID_ESTADO_PERSONAL = 2", conexiondbo.conexionBD());
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    cd.Items.Add(dr[0].ToString());
+                }
+                cd.Items.Insert(0, "-- Seleccione Personal Administrativo --");
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede obtener la imformacion de tipo de proveedor \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         public void ObtenerPersonalRRHH(ComboBox cd)
         {
             try

@@ -605,7 +605,7 @@ private void txtInformacionAdicional_TextChanged(object sender, EventArgs e)
                 string cod_empresa = cboEmpresa.GetItemText(cboEmpresa.SelectedItem);
 
                 SqlCommand comando = new SqlCommand("SELECT * FROM T_EMPRESA WHERE NOMBRE_EMPRESA = '" + cod_empresa + "'", conexion.conexionBD());
-
+        
                 SqlDataReader recorre = comando.ExecuteReader();
                 while (recorre.Read())
                 {

@@ -36,6 +36,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             txtresumend.Enabled = false;
             txtrecuperabler.Enabled = false;
             txtrestanter.Enabled = false;
+
         }
 
         private void cboProducto_SelectedIndexChanged(object sender, EventArgs e)
@@ -78,7 +79,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             }
             catch(Exception ex)
             {
-
+                MessageBox.Show("GAAA");
             }
         }
 
@@ -103,6 +104,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
              cod_producto_n,  cod_producto_r);
                 MessageBox.Show("Stock actualizado correptamente", "Correpto");
             }
+            Vista.Logistica.CargoEntrega.frmDestruccion frmDestruccion = new frmDestruccion();
+            //frmDestruccion.cantidadrest = txtRestante.ToString();
         }
     }
 }
