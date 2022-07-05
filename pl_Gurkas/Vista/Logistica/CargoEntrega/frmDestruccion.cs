@@ -85,9 +85,15 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             PrintDialog1.AllowSomePages = true;
             PrintDialog1.ShowHelp = true;
             PrintDialog1.Document = printDocument1;
-            //printDocument1.Print();
+            DialogResult result = PrintDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                printDocument1.Print();
+                //registarvaleordencompar();
+                //limpiardatos();
+                //printPreviewDialog1.ShowDialog();
 
-            printPreviewDialog1.Show();
+            }
         }
 
         private void generarnumero()
@@ -129,14 +135,10 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             Image cabezera = Properties.Resources._1logogurkas;
 
 
-            //string TIPO_PERSONAL = cboTipoPuesto.GetItemText(cboTipoPuesto.SelectedItem);
             string AREA_ENTREGA = cboAreaLaboral.GetItemText(cboAreaLaboral.SelectedItem);
-            //string EMPRESA = cboEmpresa.GetItemText(cboEmpresa.SelectedItem);
-            //string UNIDAD = cboUnidad.GetItemText(cboUnidad.SelectedItem);
-            //string SEDE = cboSede.GetItemText(cboSede.SelectedItem);
             string PERSONAL = cboPersonalAdm.GetItemText(cboPersonalAdm.SelectedItem);
             string entrega = txtUsuarioEntrega.Text;
-            //string cod_empleado = cboempleadoActivo.SelectedValue.ToString();
+            string DIRECCION = txtDireccion.Text;
             string informacion_adicional = txtInformacionAdicional.Text;
             string fecha = lblFecha.Text;
             string emp = lblemp.Text;
@@ -145,7 +147,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             string nombre_arc = lblnombrear.Text;
             string ver = lblver.Text;
             string dni = lbldni.Text;
-
             string dnien = lbldnientr.Text;
             string cod = lblcodentre.Text;
             string num = txtvale.Text;
@@ -159,31 +160,26 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             Pen blackPen = new Pen(Color.Black, 2);
 
             Rectangle N1 = new Rectangle(20, 90, 770, 100);
-            Rectangle N2 = new Rectangle(20, 190, 390, 20);
-            Rectangle N3 = new Rectangle(410, 190, 380, 20);
-            Rectangle N4 = new Rectangle(20, 210, 390, 50);
-            Rectangle N5 = new Rectangle(410, 210, 380, 50);
-            Rectangle N6 = new Rectangle(20, 260, 390, 40);
-            Rectangle N7 = new Rectangle(410, 260, 380, 40);
-            Rectangle N8 = new Rectangle(20, 1030, 770, 100);
+            Rectangle N2 = new Rectangle(20, 90, 300, 50);
+            Rectangle N3 = new Rectangle(20, 140, 300, 50);
+            Rectangle N4 = new Rectangle(320, 140, 470, 50);
+            Rectangle observaciones = new Rectangle(30, 700, 400, 200);
             Rectangle N9 = new Rectangle(20, 20, 230, 60);
             Rectangle N10 = new Rectangle(250, 20, 320, 60);
             Rectangle N11 = new Rectangle(570, 20, 220, 60);
             Rectangle N12 = new Rectangle(570, 20, 220, 30);
-            Rectangle ITEM_ = new Rectangle(20, 310, 50, 715);
-            Rectangle CODIGO_ = new Rectangle(70, 310, 60, 715);
-            Rectangle PRODUCTO_ = new Rectangle(130, 310, 400, 715);
-            Rectangle OBSERVACION_ = new Rectangle(530, 310, 100, 715);
-            Rectangle CONDICION_ = new Rectangle(630, 310, 100, 715);
-            Rectangle CANT_ = new Rectangle(730, 310, 60, 715);
+            Rectangle ITEM_ = new Rectangle(20, 210, 50, 450);
+            Rectangle CODIGO_ = new Rectangle(70, 210, 60, 450);
+            Rectangle PRODUCTO_ = new Rectangle(130, 210, 400, 450);
+            Rectangle OBSERVACION_ = new Rectangle(530, 210, 100, 450);
+            Rectangle CONDICION_ = new Rectangle(630, 210, 100, 450);
+            Rectangle CANT_ = new Rectangle(730, 210, 60, 450);
+            Rectangle IMAGE_ = new Rectangle(580, 925, 210, 100);
             e.Graphics.DrawRectangle(blackPen, N1);
             e.Graphics.DrawRectangle(blackPen, N2);
             e.Graphics.DrawRectangle(blackPen, N3);
             e.Graphics.DrawRectangle(blackPen, N4);
-            e.Graphics.DrawRectangle(blackPen, N5);
-            e.Graphics.DrawRectangle(blackPen, N6);
-            e.Graphics.DrawRectangle(blackPen, N7);
-            e.Graphics.DrawRectangle(blackPen, N8);
+            e.Graphics.DrawRectangle(blackPen, observaciones);
             e.Graphics.DrawRectangle(blackPen, N9);
             e.Graphics.DrawRectangle(blackPen, N10);
             e.Graphics.DrawRectangle(blackPen, N11);
@@ -194,86 +190,63 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             e.Graphics.DrawRectangle(blackPen, OBSERVACION_);
             e.Graphics.DrawRectangle(blackPen, CONDICION_);
             e.Graphics.DrawRectangle(blackPen, CANT_);
-
-            e.Graphics.DrawString("CARGO DE ENTREGA", tipoTexto, Brushes.Black, 310, 25);
-            e.Graphics.DrawString(emp, nombres, Brushes.Black, 290, 45);
-            e.Graphics.DrawString("  RUC " + ruc, nombres, Brushes.Black, 420, 45);
-            // e.Graphics.DrawString(dir, datos, Brushes.Black, 250, 60);
+            //e.Graphics.DrawRectangle(blackPen, RESUMEN_);
+            e.Graphics.DrawString("ACTA DE DESTRUCCION", tipoTexto, Brushes.Black, 310, 25);
+            //e.Graphics.DrawString(empreas, nombres, Brushes.Black, 290, 45);
+            //e.Graphics.DrawString("  RUC " + ruc, nombres, Brushes.Black, 420, 45);
             e.Graphics.DrawString(nombre_arc, datos, Brushes.Black, 580, 25);
             e.Graphics.DrawString(ver, datos, Brushes.Black, 580, 35);
             e.Graphics.DrawString(num, tipoTexto, Brushes.Black, 580, 55);
 
             string anio = DateTime.Now.Year.ToString();
 
-            e.Graphics.DrawString(" - " + anio, tipoTexto, Brushes.Black, 720, 55);
+            e.Graphics.DrawString("-" + anio, tipoTexto, Brushes.Black, 720, 55);
 
             e.Graphics.DrawString(dir, datos, Brushes.Black, new RectangleF(260, 60, 300, 30));
 
-            //e.Graphics.DrawString("EMPRESA : ", tipoTexto, Brushes.Black, 30, 100);
-            //e.Graphics.DrawString(EMPRESA, desp, Brushes.Black, 120, 102);
-
-            e.Graphics.DrawString("FECHA   : ", tipoTexto, Brushes.Black, 30, 120);
-            e.Graphics.DrawString(fecha, desp, Brushes.Black, 120, 122);
-
-            e.Graphics.DrawString("AREA DE ENTREGA : ", tipoTexto, Brushes.Black, 320, 100);
-            e.Graphics.DrawString(AREA_ENTREGA, desp, Brushes.Black, 470, 102);
-
-            //e.Graphics.DrawString("PUESTO : ", tipoTexto, Brushes.Black, 320, 120);//160
-            //e.Graphics.DrawString(TIPO_PERSONAL, desp, Brushes.Black, 470, 122);
-
-            //e.Graphics.DrawString("UNIDAD : ", tipoTexto, Brushes.Black, 30, 140);
-            //e.Graphics.DrawString(UNIDAD, desp, Brushes.Black, 120, 142);
-
-            //e.Graphics.DrawString("SEDE : ", tipoTexto, Brushes.Black, 30, 160);
-            //e.Graphics.DrawString(SEDE, desp, Brushes.Black, 120, 162);
-
-            e.Graphics.DrawString("SOLICITANTE", tipoTexto, Brushes.Black, 150, 190);
-            e.Graphics.DrawString("DESPACHO", tipoTexto, Brushes.Black, 550, 190);
-
-            e.Graphics.DrawString("NOMBRE : ", tipoTexto, Brushes.Black, 30, 220);
-            e.Graphics.DrawString(PERSONAL, nombres, Brushes.Black, 110, 223);
-
-            //e.Graphics.DrawString("CODIGO : ", tipoTexto, Brushes.Black, 30, 240);
-            //e.Graphics.DrawString(cod_empleado, desp, Brushes.Black, 110, 243);
-            e.Graphics.DrawString("DNI : ", tipoTexto, Brushes.Black, 200, 240);
-            e.Graphics.DrawString(dni, desp, Brushes.Black, 240, 243);
-
-            e.Graphics.DrawString("NOMBRE : ", tipoTexto, Brushes.Black, 420, 220);
-            e.Graphics.DrawString(entrega, nombres, Brushes.Black, 500, 223);
-
-            e.Graphics.DrawString("CODIGO : ", tipoTexto, Brushes.Black, 420, 240);
-            e.Graphics.DrawString(cod, desp, Brushes.Black, 500, 243);
-            e.Graphics.DrawString("DNI : ", tipoTexto, Brushes.Black, 600, 240);
-            e.Graphics.DrawString(dnien, desp, Brushes.Black, 650, 243);
-
-            e.Graphics.DrawString("FIRMA : _______________________________", tipoTexto, Brushes.Black, 30, 275);
-            e.Graphics.DrawString("FIRMA : _______________________________", tipoTexto, Brushes.Black, 420, 275);
+            e.Graphics.DrawString(dir, datos, Brushes.Black, new RectangleF(260, 60, 300, 30));
+            e.Graphics.DrawString("Area : ", tipoTexto, Brushes.Black, 30, 100);
+            e.Graphics.DrawString(AREA_ENTREGA, desp, Brushes.Black, 120, 102);
+            //e.Graphics.DrawString("Personal: ", tipoTexto, Brushes.Black, 30, 150);
+            //e.Graphics.DrawString(PERSONAL, desp, Brushes.Black, 120, 152);
+            e.Graphics.DrawString("FECHA   : ", tipoTexto, Brushes.Black, 30, 158);
+            e.Graphics.DrawString(fecha, desp, Brushes.Black, 120, 160);
+            e.Graphics.DrawString("DIRECCION : ", tipoTexto, Brushes.Black, 330, 100);
+            e.Graphics.DrawString(DIRECCION, desp, Brushes.Black, 430, 102);
+            e.Graphics.DrawString("Encargado : ", tipoTexto, Brushes.Black, 330, 150);
+            e.Graphics.DrawString(entrega, nombres, Brushes.Black, 430, 152);
+            e.Graphics.DrawString("Personal : ", tipoTexto, Brushes.Black, 330, 170);
+            e.Graphics.DrawString(PERSONAL, desp, Brushes.Black, 430, 172);
+            //e.Graphics.DrawString("TELEFONO :", tipoTexto, Brushes.Black, 610, 150);
+            //e.Graphics.DrawString(TELEFONO, desp, Brushes.Black, 700, 152);
+            //e.Graphics.DrawString("CELULAR : ", tipoTexto, Brushes.Black, 610, 170);*/
 
             string l1 = "--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
-            e.Graphics.DrawString(l1, new System.Drawing.Font("Book Antiqua", 9, FontStyle.Bold), Brushes.Black, 20, 320);//360
+            e.Graphics.DrawString(l1, new System.Drawing.Font("Book Antiqua", 9, FontStyle.Bold), Brushes.Black, 20, 220);//360
 
             string g1 = "ITEM";
-            e.Graphics.DrawString(g1, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 30, 315);
+            e.Graphics.DrawString(g1, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 30, 215);
 
             string g2 = "CODIGO";
-            e.Graphics.DrawString(g2, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 72, 315);
+            e.Graphics.DrawString(g2, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 72, 215);
 
             string g3 = "DESCRIPCION";
-            e.Graphics.DrawString(g3, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 200, 315);
+            e.Graphics.DrawString(g3, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 200, 215);
 
             string g6 = "OBSERVACION";
-            e.Graphics.DrawString(g6, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 538, 315);
+            e.Graphics.DrawString(g6, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 538, 215);
 
             string g4 = "CONDICION";
-            e.Graphics.DrawString(g4, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 645, 315);
+            e.Graphics.DrawString(g4, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 645, 215);
 
             string g5 = "CANT.";
-            e.Graphics.DrawString(g5, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 735, 315);
+            e.Graphics.DrawString(g5, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 735, 215);
 
-            e.Graphics.DrawString("INFORMACIÓN ADICIONAL : ", tipoTexto, Brushes.Black, 50, 1050);
-            e.Graphics.DrawString(informacion_adicional, tipoTexto, Brushes.Black, new RectangleF(50, 1070, 700, 50));
+            e.Graphics.DrawString("Informacion : ", tipoTexto, Brushes.Black, 40, 935);
+            e.Graphics.DrawString(informacion_adicional, tipoTexto, Brushes.Black, new RectangleF(40, 955, 500, 50));
 
-            int height = 320;
+
+            int height = 220;
             for (int l = numberOfItemsPrintedSoFar; l < dgvListaProducto.Rows.Count; l++)
             {
                 numberOfItemsPerPage = numberOfItemsPerPage + 1;

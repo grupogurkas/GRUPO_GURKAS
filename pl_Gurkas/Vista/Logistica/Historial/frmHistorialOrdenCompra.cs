@@ -40,7 +40,13 @@ namespace pl_Gurkas.Vista.Logistica.Historial
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-
+            const string titulo = "Cerrar Registro de Personal";
+            const string mensaje = "Estas seguro que deseas cerra el Registro Destruccion";
+            var resutlado = MessageBox.Show(mensaje, titulo, MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (resutlado == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
     }
 }
