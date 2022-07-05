@@ -694,15 +694,5 @@ private void txtInformacionAdicional_TextChanged(object sender, EventArgs e)
                 }
             }
         }
-
-        private void printPreviewDialog1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cboSede_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

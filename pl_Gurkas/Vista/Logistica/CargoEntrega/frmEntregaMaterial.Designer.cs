@@ -373,7 +373,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.cboSede.Name = "cboSede";
             this.cboSede.Size = new System.Drawing.Size(246, 21);
             this.cboSede.TabIndex = 226;
-            this.cboSede.SelectedIndexChanged += new System.EventHandler(this.cboSede_SelectedIndexChanged);
             // 
             // cboEmpresa
             // 
@@ -585,7 +584,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
-            this.printPreviewDialog1.Load += new System.EventHandler(this.printPreviewDialog1_Load);
             // 
             // timer1
             // 

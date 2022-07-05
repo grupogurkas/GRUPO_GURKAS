@@ -104,8 +104,9 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
              cod_producto_n,  cod_producto_r);
                 MessageBox.Show("Stock actualizado correptamente", "Correpto");
             }
+
             Vista.Logistica.CargoEntrega.frmDestruccion frmDestruccion = new frmDestruccion();
-            //frmDestruccion.cantidadrest = txtRestante.ToString();
+            frmDestruccion.cantidadrest = txtrestanter.Text;
         }
     }
 }
