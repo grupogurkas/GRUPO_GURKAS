@@ -34,12 +34,14 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.lblHora = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.btnEntrega = new System.Windows.Forms.Button();
+            this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.txtUsuarioEntrega = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.btnImagen = new System.Windows.Forms.Button();
+            this.txtvale = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txtRestante = new System.Windows.Forms.TextBox();
@@ -80,8 +82,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtvale = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -122,18 +123,19 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // btnEntrega
+            // btnRegistrar
             // 
-            this.btnEntrega.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEntrega.Image = global::pl_Gurkas.Properties.Resources.add_trabajador_32;
-            this.btnEntrega.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEntrega.Location = new System.Drawing.Point(459, 12);
-            this.btnEntrega.Name = "btnEntrega";
-            this.btnEntrega.Size = new System.Drawing.Size(104, 46);
-            this.btnEntrega.TabIndex = 231;
-            this.btnEntrega.Text = "Registrar Formato";
-            this.btnEntrega.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEntrega.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrar.Image = global::pl_Gurkas.Properties.Resources.add_trabajador_32;
+            this.btnRegistrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegistrar.Location = new System.Drawing.Point(459, 12);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(104, 46);
+            this.btnRegistrar.TabIndex = 231;
+            this.btnRegistrar.Text = "Registrar Formato";
+            this.btnRegistrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // btnCerrar
             // 
@@ -170,6 +172,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.btnImagen);
             this.panel1.Controls.Add(this.txtvale);
@@ -189,6 +192,16 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.panel1.Size = new System.Drawing.Size(1314, 565);
             this.panel1.TabIndex = 238;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(1811, 185);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(75, 30);
+            this.label9.TabIndex = 232;
+            this.label9.Text = "Fecha De\r\nDestruccion:";
+            // 
             // btnImagen
             // 
             this.btnImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -202,6 +215,13 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.btnImagen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnImagen.UseVisualStyleBackColor = true;
             this.btnImagen.Click += new System.EventHandler(this.btnImagen_Click);
+            // 
+            // txtvale
+            // 
+            this.txtvale.Location = new System.Drawing.Point(1061, 139);
+            this.txtvale.Name = "txtvale";
+            this.txtvale.Size = new System.Drawing.Size(104, 20);
+            this.txtvale.TabIndex = 233;
             // 
             // label2
             // 
@@ -600,22 +620,15 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // label9
+            // label11
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(1811, 185);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(75, 30);
-            this.label9.TabIndex = 232;
-            this.label9.Text = "Fecha De\r\nDestruccion:";
-            // 
-            // txtvale
-            // 
-            this.txtvale.Location = new System.Drawing.Point(1061, 139);
-            this.txtvale.Name = "txtvale";
-            this.txtvale.Size = new System.Drawing.Size(104, 20);
-            this.txtvale.TabIndex = 233;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(949, 144);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(82, 15);
+            this.label11.TabIndex = 237;
+            this.label11.Text = "Numero Vale:";
             // 
             // frmDestruccion
             // 
@@ -635,7 +648,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.Controls.Add(this.lblHora);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.btnNuevo);
-            this.Controls.Add(this.btnEntrega);
+            this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtUsuarioEntrega);
@@ -663,7 +676,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.Button btnEntrega;
+        private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtUsuarioEntrega;
@@ -711,5 +724,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtvale;
+        private System.Windows.Forms.Label label11;
     }
 }

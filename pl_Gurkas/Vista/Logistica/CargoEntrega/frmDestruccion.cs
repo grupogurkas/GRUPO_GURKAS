@@ -38,6 +38,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             txtRestante.Text = "0";
             txtRestante.Visible = true;
             txtvale.Enabled = false;
+            txtDireccion.Text = "Calle Maximiliano Carranza N°886, San Juan de Miraflores";
             txtObservacion.Text = "EN BASE";
             string nombre_user = Datos.DatosUsuario._usuario;
             txtUsuarioEntrega.Text = nombre_user;
@@ -53,6 +54,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             lbldni.Visible = false;
             lblcodentre.Visible = false;
             lbldnientr.Visible = false;
+            empresa();
             txtstock.Text = cantidadrest;
             dt = new DataTable();
             dt.Columns.Add("ID");
@@ -79,7 +81,22 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                 this.Close();
             }
         }
+        private void empresa()
+        {
+            int cod_empresa = Datos.EmpresaID._empresaid;
 
+            SqlCommand comando = new SqlCommand("SELECT * FROM T_EMPRESA WHERE ID_EMPRESA = " + cod_empresa + "", conexion.conexionBD());
+
+            SqlDataReader recorre = comando.ExecuteReader();
+            while (recorre.Read())
+            {
+                lblemp.Text = recorre["NOMBRE_EMPRESA"].ToString();
+                lblruc.Text = recorre["RUC"].ToString();
+                lbldireccion.Text = recorre["direccion"].ToString();
+                lblnombrear.Text = recorre["nombre_documento_sig"].ToString();
+                lblver.Text = recorre["vercion_documento_sig"].ToString();
+            }
+        }
         private void btnImprimir_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
@@ -166,18 +183,18 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             Rectangle N2 = new Rectangle(20, 90, 300, 50);
             Rectangle N3 = new Rectangle(20, 140, 300, 50);
             Rectangle N4 = new Rectangle(320, 140, 470, 50);
-            Rectangle observaciones = new Rectangle(20, 650, 380, 220);
+            Rectangle observaciones = new Rectangle(20, 685, 410, 230);
             Rectangle N9 = new Rectangle(20, 20, 230, 60);
             Rectangle N10 = new Rectangle(250, 20, 320, 60);
             Rectangle N11 = new Rectangle(570, 20, 220, 60);
             Rectangle N12 = new Rectangle(570, 20, 220, 30);
-            Rectangle ITEM_ = new Rectangle(20, 180, 50, 480);
-            Rectangle CODIGO_ = new Rectangle(70, 180, 60, 480);
-            Rectangle PRODUCTO_ = new Rectangle(130, 180, 400, 480);
-            Rectangle OBSERVACION_ = new Rectangle(530, 180, 100, 480);
-            Rectangle CONDICION_ = new Rectangle(630, 180, 100, 480);
-            Rectangle CANT_ = new Rectangle(730, 180, 60, 480);
-            Rectangle IMAGE_ = new Rectangle(450, 700, 340, 340);
+            Rectangle ITEM_ = new Rectangle(20, 180, 50, 500);
+            Rectangle CODIGO_ = new Rectangle(70, 180, 60, 500);
+            Rectangle PRODUCTO_ = new Rectangle(130, 180, 400, 500);
+            Rectangle OBSERVACION_ = new Rectangle(530, 180, 100, 500);
+            Rectangle CONDICION_ = new Rectangle(630, 180, 100, 500);
+            Rectangle CANT_ = new Rectangle(730, 180, 60, 500);
+            Rectangle IMAGE_ = new Rectangle(450, 685, 340, 340);
             e.Graphics.DrawRectangle(blackPen, N1);
             //e.Graphics.DrawRectangle(blackPen, N2);
             //e.Graphics.DrawRectangle(blackPen, N3);
@@ -195,6 +212,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             e.Graphics.DrawRectangle(blackPen, CANT_);
             e.Graphics.DrawRectangle(blackPen, IMAGE_);
             e.Graphics.DrawString("ACTA DE DESTRUCCION", tipoTexto, Brushes.Black, 310, 25);
+            e.Graphics.DrawString(emp, nombres, Brushes.Black, 290, 45);
+            e.Graphics.DrawString("  RUC " + ruc, nombres, Brushes.Black, 420, 45);
             e.Graphics.DrawString(nombre_arc, datos, Brushes.Black, 580, 25);
             e.Graphics.DrawString(ver, datos, Brushes.Black, 580, 35);
             e.Graphics.DrawString(num, tipoTexto, Brushes.Black, 580, 55);
@@ -206,7 +225,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             e.Graphics.DrawString(dir, datos, Brushes.Black, new RectangleF(260, 60, 300, 30));
 
             e.Graphics.DrawString(dir, datos, Brushes.Black, new RectangleF(260, 60, 300, 30));
-            e.Graphics.DrawString("Area : ", tipoTexto, Brushes.Black, 30, 100);
+            e.Graphics.DrawString("AREA : ", tipoTexto, Brushes.Black, 30, 100);
             e.Graphics.DrawString(AREA_ENTREGA, desp, Brushes.Black, 120, 102);
             e.Graphics.DrawString("FECHA  : ", tipoTexto, Brushes.Black, 30, 120);
             e.Graphics.DrawString(fecha, desp, Brushes.Black, 120, 122);
@@ -215,7 +234,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             e.Graphics.DrawString("DIRECCION : ", tipoTexto, Brushes.Black, 330, 100);
             e.Graphics.DrawString(DIRECCION, desp, Brushes.Black, 430, 102);
             e.Graphics.DrawString("Encargado Destruccion : ", tipoTexto, Brushes.Black, 330, 120);
-            e.Graphics.DrawString(entrega, nombres, Brushes.Black, 500, 122);
+            e.Graphics.DrawString(entrega, desp, Brushes.Black, 500, 122);
             e.Graphics.DrawString("Personal Que Evidencia : ", tipoTexto, Brushes.Black, 330, 145);
             e.Graphics.DrawString(PERSONAL, desp, Brushes.Black, 500, 147);
 
@@ -229,7 +248,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             e.Graphics.DrawString(g2, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 72, 190);
 
             string g3 = "DESCRIPCION";
-            e.Graphics.DrawString(g3, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 200, 190);
+            e.Graphics.DrawString(g3, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 290, 190);
 
             string g6 = "OBSERVACION";
             e.Graphics.DrawString(g6, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 538, 190);
@@ -241,9 +260,9 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             e.Graphics.DrawString(g5, new System.Drawing.Font("Book Antiqua", 8, FontStyle.Bold), Brushes.Black, 735, 190);
             //int y = 20;
             //e.Graphics.DrawString("Informacion : ", tipoTexto, Brushes.Black, 40, 935);
-            e.Graphics.DrawImage(pictureBox2.Image, new Rectangle(450, 700, 340, 340));
-            e.Graphics.DrawString("Informacion : ", tipoTexto, Brushes.Black, 40, 710);
-            e.Graphics.DrawString(informacion_adicional, tipoTexto, Brushes.Black, new RectangleF(40, 725, 500, 50));
+            e.Graphics.DrawImage(pictureBox2.Image, new Rectangle(450, 685, 400, 340));
+            e.Graphics.DrawString("Informacion : ", tipoTexto, Brushes.Black, 25, 690);
+            e.Graphics.DrawString(informacion_adicional, tipoTexto, Brushes.Black, new RectangleF(25, 715, 500, 50));
             e.Graphics.DrawString("_______________________", tipoTexto, Brushes.Black, 40, 1000);
             e.Graphics.DrawString("V°B° JEFE DE LOGISTICA", tipoTexto, Brushes.Black, 40, 1020);
             e.Graphics.DrawString("_______________________", tipoTexto, Brushes.Black, 240, 1000);
@@ -369,5 +388,67 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                 e.Handled = true;
             }
         }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            registarvale();
+        }
+
+        private void registarvale()
+        {
+            string persona_entrega = txtUsuarioEntrega.Text.ToUpper();
+            int cod_area_entrega = cboAreaLaboral.SelectedIndex;
+            string cod_entregado = lblcodentre.Text.ToUpper();
+            string dni_entregado = lbldnientr.Text.ToUpper();
+            //int c = Convert.ToInt32(persona_entrega);
+            string NUM_VALE = txtvale.Text.ToUpper();
+            string imformacion_adicional = txtInformacionAdicional.Text.ToUpper();
+            string personal_admin = (cboPersonalAdm.GetItemText(cboPersonalAdm.SelectedItem)).ToUpper();
+            string cod_admin = (cboPersonalAdm.SelectedValue.ToString()).ToUpper();
+            string dni_admin = lbldni.Text.ToUpper();
+            string fecha_vale = lblFecha.Text.ToUpper();
+            string hora = lblHora.Text.ToUpper();
+            string nombre_user = Datos.DatosUsuario._usuario.ToUpper();
+            try
+            {
+                SqlCommand comando = new SqlCommand("sp_insertar_destruccion_producto @NUM_ENTREGA ,@COD_PUESTO ,@COD_AREA_ENTREGA ,@COD_EMPRESA  ,@COD_UNIDAD ,@COD_SEDE, @INFORMACION_ADICIONAL, @ENTREGADO_NOMBRE, @COD_ENTREGADO," +
+                    "@DNI_ENTREGADO, @SOLICITADO_NOMBRE, @COD_SOLICITADO, @DNI_SOLICITADO, @FECHA_VALE," +
+                    "@ITEM_VALE, @COD_PRODUCTO, @DESP_PRODUCTO,  @OBSERVACION_PRODUCTO , @CONDICION_PRODUCTO" +
+                    ", @CANTIDAD_SOLICITADA, @HORA, @USUARIO ", conexion.conexionBD());
+
+                foreach (DataGridViewRow row in dgvListaProducto.Rows)
+                {
+                    if (row.Cells["ID"].Value != null && row.Cells["CodProducto"].Value != null)
+                    {
+                        comando.Parameters.Clear();
+                        comando.Parameters.AddWithValue("@COD_PUESTO", SqlDbType.Int).Value = persona_entrega;
+                        comando.Parameters.AddWithValue("@COD_AREA_ENTREGA", SqlDbType.Int).Value = cod_area_entrega;
+                        comando.Parameters.AddWithValue("@NUM_ENTREGA", SqlDbType.VarChar).Value = NUM_VALE;
+                        comando.Parameters.AddWithValue("@INFORMACION_ADICIONAL", SqlDbType.VarChar).Value = imformacion_adicional;
+                        comando.Parameters.AddWithValue("@COD_ENTREGADO", SqlDbType.VarChar).Value = cod_entregado;
+                        comando.Parameters.AddWithValue("@DNI_ENTREGADO", SqlDbType.VarChar).Value = dni_entregado;
+                        comando.Parameters.AddWithValue("@SOLICITADO_NOMBRE", SqlDbType.VarChar).Value = personal_admin;
+                        comando.Parameters.AddWithValue("@COD_SOLICITADO", SqlDbType.VarChar).Value = cod_admin;
+                        comando.Parameters.AddWithValue("@DNI_SOLICITADO", SqlDbType.VarChar).Value = dni_admin;
+                        comando.Parameters.AddWithValue("@FECHA_VALE", SqlDbType.VarChar).Value = fecha_vale;
+                        comando.Parameters.AddWithValue("@ITEM_VALE", Convert.ToInt32(row.Cells["ID"].Value));
+                        comando.Parameters.AddWithValue("@COD_PRODUCTO", Convert.ToString(row.Cells["CodProducto"].Value));
+                        comando.Parameters.AddWithValue("@DESP_PRODUCTO", Convert.ToString(row.Cells["Nombre"].Value));
+                        comando.Parameters.AddWithValue("@OBSERVACION_PRODUCTO", Convert.ToString(row.Cells["Observacion"].Value));
+                        comando.Parameters.AddWithValue("@CONDICION_PRODUCTO", Convert.ToString(row.Cells["CondicionEntrega"].Value));
+                        comando.Parameters.AddWithValue("@CANTIDAD_SOLICITADA", Convert.ToInt32(row.Cells["Cantidad"].Value));
+                        comando.Parameters.AddWithValue("@HORA", SqlDbType.VarChar).Value = hora;
+                        comando.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_user;
+                        comando.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(" No se pudo realizar el guardado del la asistencia del personal \n\n Verifique su conexion al Servidor " + ex, "Error");
+                //showDialogs("ERROR", Color.FromArgb(255, 53, 71));
+
+            }
+        }
     }
-}
+    } 

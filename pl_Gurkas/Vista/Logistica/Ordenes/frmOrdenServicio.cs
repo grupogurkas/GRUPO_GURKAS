@@ -404,11 +404,11 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             DialogResult result = PrintDialog1.ShowDialog();
             if (result == DialogResult.OK)
             {
-                printDocument1.Print();
+                //printDocument1.Print();
                 registrarOrden();
                 limpiardatos();
             }
-            // printPreviewDialog1.ShowDialog();
+            printPreviewDialog1.ShowDialog();
         }
         private Boolean validar_campos()
         {

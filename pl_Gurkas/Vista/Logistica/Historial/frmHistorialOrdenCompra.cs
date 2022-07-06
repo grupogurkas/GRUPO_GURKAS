@@ -37,7 +37,7 @@ namespace pl_Gurkas.Vista.Logistica.Historial
 
             
         }
-
+        
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             const string titulo = "Cerrar Registro de Personal";
