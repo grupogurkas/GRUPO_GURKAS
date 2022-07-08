@@ -21,6 +21,18 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             InitializeComponent();
         }
 
+        private void limpiar()
+        {
+            cboProducto.SelectedIndex = 0;
+            txtstock.Text = "0";
+            txtcodigo.Text = "S/C";
+            cboMterialRecuperado.SelectedIndex = 0;
+            txtCodigoRecuperable.Text = "S/C";
+            txtstock_recuperable.Text = "0";
+            txtresumend.Text = "0";
+            txtrecuperabler.Text = "0";
+            txtrestanter.Text = "0";
+        }
         private void frmRecuperarMaterial_Load(object sender, EventArgs e)
         {
             Llenadocbo.ObtenerProducto(cboProducto);
@@ -101,12 +113,10 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             if (resutlado == DialogResult.Yes)
             {
                 logisticaActualizar.actualizarstockmaterialrecuperable( stock_disponible,  stock_recuperable,  stock_restante,
-             cod_producto_n,  cod_producto_r);
+                cod_producto_n,  cod_producto_r);
                 MessageBox.Show("Stock actualizado correptamente", "Correpto");
+                limpiar();
             }
-
-            Vista.Logistica.CargoEntrega.frmDestruccion frmDestruccion = new frmDestruccion();
-            frmDestruccion.cantidadrest = txtrestanter.Text;
         }
     }
 }

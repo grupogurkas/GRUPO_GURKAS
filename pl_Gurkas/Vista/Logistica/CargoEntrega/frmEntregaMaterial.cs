@@ -694,5 +694,10 @@ private void txtInformacionAdicional_TextChanged(object sender, EventArgs e)
                 }
             }
         }
+
+        private void txtUsuarioEntrega_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
