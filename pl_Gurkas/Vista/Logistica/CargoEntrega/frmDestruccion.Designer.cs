@@ -39,6 +39,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.label5 = new System.Windows.Forms.Label();
             this.txtUsuarioEntrega = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btnImagen = new System.Windows.Forms.Button();
             this.txtvale = new System.Windows.Forms.TextBox();
@@ -82,7 +83,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -191,6 +191,16 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1314, 565);
             this.panel1.TabIndex = 238;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(949, 144);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(82, 15);
+            this.label11.TabIndex = 237;
+            this.label11.Text = "Numero Vale:";
             // 
             // label9
             // 
@@ -311,6 +321,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.cboProducto.Name = "cboProducto";
             this.cboProducto.Size = new System.Drawing.Size(417, 21);
             this.cboProducto.TabIndex = 229;
+            this.cboProducto.SelectedIndexChanged += new System.EventHandler(this.cboProducto_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -397,7 +408,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.cboPersonalAdm.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cboPersonalAdm.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboPersonalAdm.FormattingEnabled = true;
-            this.cboPersonalAdm.Location = new System.Drawing.Point(90, 40);
+            this.cboPersonalAdm.Location = new System.Drawing.Point(90, 60);
             this.cboPersonalAdm.Name = "cboPersonalAdm";
             this.cboPersonalAdm.Size = new System.Drawing.Size(246, 21);
             this.cboPersonalAdm.TabIndex = 234;
@@ -406,11 +417,11 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(6, 42);
+            this.label7.Location = new System.Drawing.Point(6, 57);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(59, 15);
+            this.label7.Size = new System.Drawing.Size(69, 30);
             this.label7.TabIndex = 233;
-            this.label7.Text = "Personal:";
+            this.label7.Text = "Personal\r\nAcompaña:";
             // 
             // label6
             // 
@@ -435,7 +446,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.cboAreaLaboral.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cboAreaLaboral.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboAreaLaboral.FormattingEnabled = true;
-            this.cboAreaLaboral.Location = new System.Drawing.Point(90, 67);
+            this.cboAreaLaboral.Location = new System.Drawing.Point(90, 32);
             this.cboAreaLaboral.Name = "cboAreaLaboral";
             this.cboAreaLaboral.Size = new System.Drawing.Size(246, 21);
             this.cboAreaLaboral.TabIndex = 228;
@@ -462,7 +473,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 73);
+            this.label4.Location = new System.Drawing.Point(6, 32);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 15);
             this.label4.TabIndex = 191;
@@ -619,16 +630,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(949, 144);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(82, 15);
-            this.label11.TabIndex = 237;
-            this.label11.Text = "Numero Vale:";
             // 
             // frmDestruccion
             // 

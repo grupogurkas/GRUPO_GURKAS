@@ -711,13 +711,16 @@ namespace pl_Gurkas.Datos
         {
             try
             {
-                SqlCommand cmd = new SqlCommand("select NOMBRE_COMPLETO from T_MAE_PERSONAL where COD_EMPLEADO like 'ADM%' and ID_ESTADO_PERSONAL = 2", conexiondbo.conexionBD());
-                SqlDataReader dr = cmd.ExecuteReader();
-                while (dr.Read())
-                {
-                    cd.Items.Add(dr[0].ToString());
-                }
-                cd.Items.Insert(0, "-- Seleccione Personal Administrativo --");
+                SqlCommand cmd = new SqlCommand("select COD_EMPLEADO, NOMBRE_COMPLETO from T_MAE_PERSONAL where COD_EMPLEADO like 'ADM%' and ID_ESTADO_PERSONAL = 2", conexiondbo.conexionBD());
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                DataRow fila = dt.NewRow();
+                fila["NOMBRE_COMPLETO"] = "---Seleccione un Empleado---";
+                dt.Rows.InsertAt(fila, 0);
+                cd.ValueMember = "COD_EMPLEADO";
+                cd.DisplayMember = "NOMBRE_COMPLETO";
+                cd.DataSource = dt;
                 cd.SelectedIndex = 0;
             }
             catch (Exception ex)

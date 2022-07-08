@@ -401,42 +401,45 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             string cod_entregado = lblcodentre.Text.ToUpper();
             string dni_entregado = lbldnientr.Text.ToUpper();
             //int c = Convert.ToInt32(persona_entrega);
+            string direccion = txtDireccion.Text;
             string NUM_VALE = txtvale.Text.ToUpper();
             string imformacion_adicional = txtInformacionAdicional.Text.ToUpper();
-            string personal_admin = (cboPersonalAdm.GetItemText(cboPersonalAdm.SelectedItem)).ToUpper();
-            string cod_admin = (cboPersonalAdm.SelectedValue.ToString()).ToUpper();
-            string dni_admin = lbldni.Text.ToUpper();
+            string personal_acompaña = (cboPersonalAdm.GetItemText(cboPersonalAdm.SelectedItem)).ToUpper();
+            string cod_acompaña = (cboPersonalAdm.SelectedValue.ToString()).ToUpper();
+            string dni_acompaña = lbldni.Text.ToUpper();
             string fecha_vale = lblFecha.Text.ToUpper();
             string hora = lblHora.Text.ToUpper();
             string nombre_user = Datos.DatosUsuario._usuario.ToUpper();
             try
             {
-                SqlCommand comando = new SqlCommand("sp_insertar_destruccion_producto @NUM_ENTREGA ,@COD_PUESTO ,@COD_AREA_ENTREGA ,@COD_EMPRESA  ,@COD_UNIDAD ,@COD_SEDE, @INFORMACION_ADICIONAL, @ENTREGADO_NOMBRE, @COD_ENTREGADO," +
-                    "@DNI_ENTREGADO, @SOLICITADO_NOMBRE, @COD_SOLICITADO, @DNI_SOLICITADO, @FECHA_VALE," +
-                    "@ITEM_VALE, @COD_PRODUCTO, @DESP_PRODUCTO,  @OBSERVACION_PRODUCTO , @CONDICION_PRODUCTO" +
-                    ", @CANTIDAD_SOLICITADA, @HORA, @USUARIO ", conexion.conexionBD());
+                SqlCommand comando = new SqlCommand("sp_insertar_destruccion_producto @NUM_ENTREGA ,@ENTREGADO_NOMBRE ,@COD_ENTREGADO ,@DNI_ENTREGADO  ,@COD_AREA_ENTREGA ,@PERSONAL_ACOMPAÑA, @COD_PERSONAL, @DNI_PERSONAL, @INFORMACION_ADICIONAL," +
+                    "@DIRECCION, @FECHA_VALE, @ITEM_VALE, @COD_PRODUCTO, @DESP_PRODUCTO," +
+                    "@CANTIDAD_DESTRUIDA, @OBSERVACION_PRODUCTO, @CONDICION_PRODUCTO " +
+                    " @HORA, @USUARIO ", conexion.conexionBD());
 
                 foreach (DataGridViewRow row in dgvListaProducto.Rows)
                 {
                     if (row.Cells["ID"].Value != null && row.Cells["CodProducto"].Value != null)
                     {
+                        
                         comando.Parameters.Clear();
-                        comando.Parameters.AddWithValue("@COD_PUESTO", SqlDbType.Int).Value = persona_entrega;
-                        comando.Parameters.AddWithValue("@COD_AREA_ENTREGA", SqlDbType.Int).Value = cod_area_entrega;
-                        comando.Parameters.AddWithValue("@NUM_ENTREGA", SqlDbType.VarChar).Value = NUM_VALE;
-                        comando.Parameters.AddWithValue("@INFORMACION_ADICIONAL", SqlDbType.VarChar).Value = imformacion_adicional;
+                        comando.Parameters.AddWithValue("@ENTREGADO_NOMBRE", SqlDbType.Int).Value = persona_entrega;
                         comando.Parameters.AddWithValue("@COD_ENTREGADO", SqlDbType.VarChar).Value = cod_entregado;
                         comando.Parameters.AddWithValue("@DNI_ENTREGADO", SqlDbType.VarChar).Value = dni_entregado;
-                        comando.Parameters.AddWithValue("@SOLICITADO_NOMBRE", SqlDbType.VarChar).Value = personal_admin;
-                        comando.Parameters.AddWithValue("@COD_SOLICITADO", SqlDbType.VarChar).Value = cod_admin;
-                        comando.Parameters.AddWithValue("@DNI_SOLICITADO", SqlDbType.VarChar).Value = dni_admin;
+                        comando.Parameters.AddWithValue("@NUM_ENTREGA", SqlDbType.VarChar).Value = NUM_VALE;
+                        comando.Parameters.AddWithValue("@COD_AREA_ENTREGA", SqlDbType.Int).Value = cod_area_entrega;
+                        comando.Parameters.AddWithValue("@PERSONAL_ACOMPAÑA", SqlDbType.VarChar).Value = personal_acompaña;
+                        comando.Parameters.AddWithValue("@COD_PERSONAL", SqlDbType.VarChar).Value = cod_acompaña;
+                        comando.Parameters.AddWithValue("@DNI_PERSONAL", SqlDbType.VarChar).Value = dni_acompaña;
+                        comando.Parameters.AddWithValue("@INFORMACION_ADICIONAL", SqlDbType.VarChar).Value = imformacion_adicional;
+                        comando.Parameters.AddWithValue("@DIRECCION", SqlDbType.VarChar).Value = direccion;
                         comando.Parameters.AddWithValue("@FECHA_VALE", SqlDbType.VarChar).Value = fecha_vale;
                         comando.Parameters.AddWithValue("@ITEM_VALE", Convert.ToInt32(row.Cells["ID"].Value));
                         comando.Parameters.AddWithValue("@COD_PRODUCTO", Convert.ToString(row.Cells["CodProducto"].Value));
                         comando.Parameters.AddWithValue("@DESP_PRODUCTO", Convert.ToString(row.Cells["Nombre"].Value));
+                        comando.Parameters.AddWithValue("@CANTIDAD_DESTRUIDA", Convert.ToInt32(row.Cells["Cantidad"].Value));
                         comando.Parameters.AddWithValue("@OBSERVACION_PRODUCTO", Convert.ToString(row.Cells["Observacion"].Value));
                         comando.Parameters.AddWithValue("@CONDICION_PRODUCTO", Convert.ToString(row.Cells["CondicionEntrega"].Value));
-                        comando.Parameters.AddWithValue("@CANTIDAD_SOLICITADA", Convert.ToInt32(row.Cells["Cantidad"].Value));
                         comando.Parameters.AddWithValue("@HORA", SqlDbType.VarChar).Value = hora;
                         comando.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_user;
                         comando.ExecuteNonQuery();
@@ -445,9 +448,24 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             }
             catch (Exception ex)
             {
-                MessageBox.Show(" No se pudo realizar el guardado del la asistencia del personal \n\n Verifique su conexion al Servidor " + ex, "Error");
+                MessageBox.Show(" No se pudo realizar la destruccion conforme \n\n Verifique su conexion al Servidor " + ex, "Error");
                 //showDialogs("ERROR", Color.FromArgb(255, 53, 71));
 
+            }
+        }
+
+        private void cboProducto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboProducto.SelectedValue.ToString() != null)
+            {
+                string cod_producto = cboProducto.SelectedValue.ToString();
+                SqlCommand comando = new SqlCommand("SELECT * FROM T_STOCK_DEVUELTO WHERE COD_PRODUCTO_MATERIAL = '" + cod_producto + "'", conexion.conexionBD());
+                SqlDataReader recorre = comando.ExecuteReader();
+                while (recorre.Read())
+                {
+                    txtstock.Text = recorre["CANTIDA_DEVUELTA"].ToString();
+                    //txtstockminimo.Text = recorre["STOCK_MINIMO"].ToString();
+                }
             }
         }
     }
