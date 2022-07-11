@@ -147,9 +147,14 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 string rubro = txtRubro.Text.ToUpper();
                 string NombreContacto = txtNombreProveedor.Text.ToUpper();
                 string Telefono = txtTelefono.Text.ToUpper();
+                string Telefono2 = txttelefono2.Text.ToUpper();
+                string Telefono3 = txttelefono3.Text.ToUpper();
                 string Celular = txtCelular.Text.ToUpper();
+                string Celular2 = txtcelular2.Text.ToUpper();
+                string Celular3 = txtcelular3.Text.ToUpper();
                 string Correo = txtCorreo.Text.ToUpper();
                 string Correo2 = txtCorreo2.Text.ToUpper();
+                string Correo3 = txtcorreo3.Text.ToUpper();
                 string direccion = txtDireccion.Text.ToUpper();
                 string Departamento = cboDepartamento.SelectedValue.ToString();
                 int codDep = (int)Convert.ToInt64(Departamento);
@@ -181,19 +186,19 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 DateTime fechaOtorgamiento = dtpFechaInicio.Value;
                 DateTime fechaCaducidad = dtpFechaCaducidad.Value;
 
-                    string pdfFilePath = lblRutaBasc.Text.ToUpper();
-                    byte[] certificado_basc = System.IO.File.ReadAllBytes(pdfFilePath);
-                    string file = (Convert.ToBase64String(certificado_basc, 0, certificado_basc.Length)).ToUpper();
+               /* string pdfFilePath = lblRutaBasc.Text.ToUpper();
+                byte[] certificado_basc = System.IO.File.ReadAllBytes(pdfFilePath);
+                string file = (Convert.ToBase64String(certificado_basc, 0, certificado_basc.Length)).ToUpper();
 
-                    string pdfFilePath_2 = lblOtroCert.Text.ToUpper();
-                    byte[] otro_certificado = System.IO.File.ReadAllBytes(pdfFilePath_2);
-                    string file_certificado = (Convert.ToBase64String(otro_certificado, 0, otro_certificado.Length)).ToUpper();
+                string pdfFilePath_2 = lblOtroCert.Text.ToUpper();
+                byte[] otro_certificado = System.IO.File.ReadAllBytes(pdfFilePath_2);
+                string file_certificado = (Convert.ToBase64String(otro_certificado, 0, otro_certificado.Length)).ToUpper();*/
 
                 actualizar.actualizarProveedor(cod_proveedor_cbo, Nombre, ruc, observacion, codDep, codPro,
                                          codDist, direccion, Telefono, Celular, Correo, Correo2, fregistro,
                                          paginaweb, rubro, NombreContacto, Tipoproveedor, Representante, tipoDoc,
                                          numDoc, cargo, empresa, tipoEmpresa, Estado, basc, no_basc, autenticidad,
-                                         numero_certificado, fechaOtorgamiento, fechaCaducidad, file, file_certificado);
+                                         numero_certificado, fechaOtorgamiento, fechaCaducidad,  Correo3,  Celular2,  Celular3,  Telefono2,  Telefono3);
                 MessageBox.Show("Datos actualizado correptamente", "Correpto");
 
                 limpiardatos();
@@ -201,6 +206,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
 
                 showDialogs("Datos Actualizados", Color.FromArgb(0, 200, 81));
                 GenerarCodigo();
+                Llenadocbo.ObtenerProveedoresLogistico(cboProveedor);
             }
             catch (Exception ex)
             {
@@ -218,9 +224,14 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 string rubro = txtRubro.Text.ToUpper();
                 string NombreContacto = txtNombreProveedor.Text.ToUpper();
                 string Telefono = txtTelefono.Text.ToUpper();
+                string Telefono2 = txttelefono2.Text.ToUpper();
+                string Telefono3 = txttelefono3.Text.ToUpper();
                 string Celular = txtCelular.Text.ToUpper();
+                string Celular2 = txtcelular2.Text.ToUpper();
+                string Celular3 = txtcelular3.Text.ToUpper();
                 string Correo = txtCorreo.Text.ToUpper();
                 string Correo2 = txtCorreo2.Text.ToUpper();
+                string Correo3 = txtcorreo3.Text.ToUpper();
                 string direccion = txtDireccion.Text.ToUpper();
                 string Departamento = (cboDepartamento.SelectedValue.ToString()).ToUpper();
                 int codDep = (int)Convert.ToInt64(Departamento);
@@ -251,25 +262,27 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                 DateTime fechaOtorgamiento = dtpFechaInicio.Value;
                 DateTime fechaCaducidad = dtpFechaCaducidad.Value;
 
-                string pdfFilePath = lblRutaBasc.Text.ToUpper();
-                byte[] certificado_basc = System.IO.File.ReadAllBytes(pdfFilePath);
-                string file = (Convert.ToBase64String(certificado_basc, 0, certificado_basc.Length)).ToUpper();
+                /* string pdfFilePath = lblRutaBasc.Text.ToUpper();
+                 byte[] certificado_basc = System.IO.File.ReadAllBytes(pdfFilePath);
+                 string file = (Convert.ToBase64String(certificado_basc, 0, certificado_basc.Length)).ToUpper();
 
-                string pdfFilePath_2 = lblOtroCert.Text;
-                byte[] otro_certificado = System.IO.File.ReadAllBytes(pdfFilePath_2);
-                string file_certificado = (Convert.ToBase64String(otro_certificado, 0, otro_certificado.Length)).ToUpper();
+                 string pdfFilePath_2 = lblOtroCert.Text;
+                 byte[] otro_certificado = System.IO.File.ReadAllBytes(pdfFilePath_2);
+                 string file_certificado = (Convert.ToBase64String(otro_certificado, 0, otro_certificado.Length)).ToUpper();*/
 
                 registrar.registrarProveedor(codProveedor, Nombre, ruc, observacion, codDep, codPro,
                                          codDist, direccion, Telefono, Celular, Correo, Correo2, fregistro,
                                          paginaweb, rubro, NombreContacto, Tipoproveedor, Representante, tipoDoc,
                                          numDoc, cargo, empresa, tipoEmpresa, Estado, basc, no_basc, autenticidad,
-                                         numero_certificado, fechaOtorgamiento, fechaCaducidad, file, file_certificado);
+                                         numero_certificado, fechaOtorgamiento, fechaCaducidad,Correo3,Celular2,Celular3,Telefono2,Telefono3);
+                                      //   , file, file_certificado);
                 MessageBox.Show("Datos registrado correctamente", "Correcto");
 
                 limpiardatos();
 
                 showDialogs("Datos Registrados", Color.FromArgb(0, 200, 81));
                 GenerarCodigo();
+                Llenadocbo.ObtenerProveedoresLogistico(cboProveedor);
             }
             catch (Exception ex)
             {
@@ -389,9 +402,15 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                     dtpFechaInicio.Text = (recorre["fecha_otorgamiento"].ToString());
                     dtpFechaCaducidad.Text = (recorre["fecha_caducidad"].ToString());
 
+                    txtcorreo3.Text = recorre["Correo3"].ToString();
+                    txttelefono2.Text = recorre["Telefono2"].ToString();
+                    txttelefono3.Text = recorre["Telefono3"].ToString();
+                    txtcelular2.Text = recorre["Celular2"].ToString();
+                    txtcelular3.Text = recorre["Celular3"].ToString();
+
                     string user = Environment.UserName;
 
-                    string img1 = (recorre["certificado_basc"].ToString());
+                  /*  string img1 = (recorre["certificado_basc"].ToString());
                     byte[] bytes = Convert.FromBase64String(img1);
                     string filePath = "C:\\Users\\"+user+"\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\GRUPO GURKAS\\provedor1.pdf";
                     System.IO.File.WriteAllBytes(filePath, bytes);
@@ -405,7 +424,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
                     System.IO.File.WriteAllBytes(filePath2, bytes2);
                     axAcroPDF2.src = filePath2;
 
-                    lblOtroCert.Text = filePath2;
+                    lblOtroCert.Text = filePath2;*/
 
                 }
             }

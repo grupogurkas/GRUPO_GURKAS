@@ -213,7 +213,9 @@ namespace pl_Gurkas.Datos
                                         int codDist, string direccion, string Telefono, string Celular, string Correo, string Correo2, DateTime fregistro,
                                         string paginaweb, string rubro, string NombreContacto, int Tipoproveedor, string Representante, int tipoDoc,
                                         string numDoc, string cargo, string empresa, int tipoEmpresa, int Estado, int basc, int no_basc, string autenticidad,
-                                        string numero_certificado, DateTime fechaOtorgamiento, DateTime fechaCaducidad, string pdfbasc, string pdfotro)
+                                        string numero_certificado, DateTime fechaOtorgamiento, DateTime fechaCaducidad,
+                                        string Correo3, string Celular2, string Celular3, string Telefono2, string Telefono3)
+           // , string pdfbasc, string pdfotro)
         {
             SqlCommand cmd = new SqlCommand("sp_actualizar_proveedores ", conexion.conexionBD());
             cmd.CommandType = CommandType.StoredProcedure;
@@ -247,8 +249,11 @@ namespace pl_Gurkas.Datos
             cmd.Parameters.AddWithValue("@numero_certificado", SqlDbType.VarChar).Value = numero_certificado;
             cmd.Parameters.AddWithValue("@fecha_otorgamiento", SqlDbType.VarChar).Value = fechaOtorgamiento;
             cmd.Parameters.AddWithValue("@fecha_caducidad", SqlDbType.VarChar).Value = fechaCaducidad;
-            cmd.Parameters.AddWithValue("@certificado_basc", SqlDbType.VarChar).Value = pdfbasc;
-            cmd.Parameters.AddWithValue("@certificado_otro", SqlDbType.VarChar).Value = pdfotro;
+            cmd.Parameters.AddWithValue("@Correo3", SqlDbType.VarChar).Value = Correo3;
+            cmd.Parameters.AddWithValue("@Telefono2", SqlDbType.VarChar).Value = Telefono2;
+            cmd.Parameters.AddWithValue("@Telefono3", SqlDbType.VarChar).Value = Telefono3;
+            cmd.Parameters.AddWithValue("@Celular2", SqlDbType.VarChar).Value = Celular2;
+            cmd.Parameters.AddWithValue("@Celular3", SqlDbType.VarChar).Value = Celular3;
             cmd.ExecuteNonQuery();
         }
         public void ActualizarAsistenciaPersonal(string ip_pc, string nombre_pc, int turno_correcto, string unidad_correcta, string sede_correcta, string personal_correcta,
