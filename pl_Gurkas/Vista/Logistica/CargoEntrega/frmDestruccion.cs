@@ -145,20 +145,20 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         }
         private void btnImprimir_Click(object sender, EventArgs e)
         {
-           /* System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
+           System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
             PrintDialog1.AllowSomePages = true;
             PrintDialog1.ShowHelp = true;
             PrintDialog1.Document = printDocument1;
             DialogResult result = PrintDialog1.ShowDialog();
             if (result == DialogResult.OK)
             {
-                //printDocument1.Print();
-                //registarvaleordencompar();
-                //limpiardatos();
+                printDocument1.Print();
+                registarvale();
+                limpiardatos();
                
 
-            }*/
-            printPreviewDialog1.ShowDialog();
+            }
+//            printPreviewDialog1.ShowDialog();
         }
 
         private void generarnumero()
