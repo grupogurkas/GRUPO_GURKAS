@@ -32,6 +32,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGenerarCodigoBarra));
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtCodigoBarra = new System.Windows.Forms.TextBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.cboProducto = new System.Windows.Forms.ComboBox();
@@ -39,7 +40,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnGuardarCodigo = new System.Windows.Forms.Button();
             this.PanelCodigo = new System.Windows.Forms.Panel();
             this.btnGenerar = new System.Windows.Forms.Button();
-            this.txtCodigoBarra = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.SuspendLayout();
@@ -48,11 +48,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(36, 86);
+            this.label6.Location = new System.Drawing.Point(42, 75);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(130, 15);
+            this.label6.Size = new System.Drawing.Size(97, 30);
             this.label6.TabIndex = 160;
-            this.label6.Text = "Generar Codigo Barra:";
+            this.label6.Text = "Generar Codigo \r\nBarra:";
             // 
             // panel1
             // 
@@ -73,12 +73,19 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.panel1.Size = new System.Drawing.Size(538, 296);
             this.panel1.TabIndex = 164;
             // 
+            // txtCodigoBarra
+            // 
+            this.txtCodigoBarra.Location = new System.Drawing.Point(151, 85);
+            this.txtCodigoBarra.Name = "txtCodigoBarra";
+            this.txtCodigoBarra.Size = new System.Drawing.Size(227, 20);
+            this.txtCodigoBarra.TabIndex = 172;
+            // 
             // pictureBox16
             // 
             this.pictureBox16.Image = global::pl_Gurkas.Properties.Resources.png;
-            this.pictureBox16.Location = new System.Drawing.Point(426, 12);
+            this.pictureBox16.Location = new System.Drawing.Point(407, 114);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(100, 77);
+            this.pictureBox16.Size = new System.Drawing.Size(119, 113);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox16.TabIndex = 171;
             this.pictureBox16.TabStop = false;
@@ -102,9 +109,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.cboProducto.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cboProducto.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboProducto.FormattingEnabled = true;
-            this.cboProducto.Location = new System.Drawing.Point(145, 55);
+            this.cboProducto.Location = new System.Drawing.Point(151, 55);
             this.cboProducto.Name = "cboProducto";
-            this.cboProducto.Size = new System.Drawing.Size(256, 21);
+            this.cboProducto.Size = new System.Drawing.Size(352, 21);
             this.cboProducto.TabIndex = 169;
             this.cboProducto.SelectedIndexChanged += new System.EventHandler(this.cboProducto_SelectedIndexChanged);
             // 
@@ -112,7 +119,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // 
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(36, 55);
+            this.label42.Location = new System.Drawing.Point(42, 56);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(103, 15);
             this.label42.TabIndex = 168;
@@ -153,13 +160,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnGenerar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGenerar.UseVisualStyleBackColor = false;
             this.btnGenerar.Click += new System.EventHandler(this.button43_Click);
-            // 
-            // txtCodigoBarra
-            // 
-            this.txtCodigoBarra.Location = new System.Drawing.Point(174, 85);
-            this.txtCodigoBarra.Name = "txtCodigoBarra";
-            this.txtCodigoBarra.Size = new System.Drawing.Size(227, 20);
-            this.txtCodigoBarra.TabIndex = 172;
             // 
             // frmGenerarCodigoBarra
             // 

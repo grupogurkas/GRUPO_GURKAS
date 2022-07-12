@@ -258,6 +258,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.txtRestante.Name = "txtRestante";
             this.txtRestante.Size = new System.Drawing.Size(67, 20);
             this.txtRestante.TabIndex = 232;
+            this.txtRestante.Visible = false;
             // 
             // txtObservacion
             // 
@@ -317,9 +318,9 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.cboProducto.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cboProducto.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboProducto.FormattingEnabled = true;
-            this.cboProducto.Location = new System.Drawing.Point(80, 26);
+            this.cboProducto.Location = new System.Drawing.Point(72, 26);
             this.cboProducto.Name = "cboProducto";
-            this.cboProducto.Size = new System.Drawing.Size(417, 21);
+            this.cboProducto.Size = new System.Drawing.Size(425, 21);
             this.cboProducto.TabIndex = 229;
             this.cboProducto.SelectedIndexChanged += new System.EventHandler(this.cboProducto_SelectedIndexChanged);
             // 
@@ -370,7 +371,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             // 
             // txtCantidadTecno
             // 
-            this.txtCantidadTecno.Location = new System.Drawing.Point(80, 58);
+            this.txtCantidadTecno.Location = new System.Drawing.Point(71, 57);
             this.txtCantidadTecno.Name = "txtCantidadTecno";
             this.txtCantidadTecno.Size = new System.Drawing.Size(70, 20);
             this.txtCantidadTecno.TabIndex = 217;

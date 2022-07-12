@@ -737,9 +737,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
             // pictureBox1
             // 
             this.pictureBox1.Image = global::pl_Gurkas.Properties.Resources.png;
-            this.pictureBox1.Location = new System.Drawing.Point(1099, 67);
+            this.pictureBox1.Location = new System.Drawing.Point(1136, 69);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 191);
+            this.pictureBox1.Size = new System.Drawing.Size(161, 168);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 156;
             this.pictureBox1.TabStop = false;
@@ -749,7 +749,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnNuevoProductoTecnologico.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevoProductoTecnologico.Image = global::pl_Gurkas.Properties.Resources.nuevo_emplado_32;
             this.btnNuevoProductoTecnologico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevoProductoTecnologico.Location = new System.Drawing.Point(963, 6);
+            this.btnNuevoProductoTecnologico.Location = new System.Drawing.Point(1038, 6);
             this.btnNuevoProductoTecnologico.Name = "btnNuevoProductoTecnologico";
             this.btnNuevoProductoTecnologico.Size = new System.Drawing.Size(119, 51);
             this.btnNuevoProductoTecnologico.TabIndex = 90;
@@ -763,7 +763,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnBuscarProductoTecnologia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarProductoTecnologia.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
             this.btnBuscarProductoTecnologia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarProductoTecnologia.Location = new System.Drawing.Point(474, 6);
+            this.btnBuscarProductoTecnologia.Location = new System.Drawing.Point(549, 6);
             this.btnBuscarProductoTecnologia.Name = "btnBuscarProductoTecnologia";
             this.btnBuscarProductoTecnologia.Size = new System.Drawing.Size(119, 51);
             this.btnBuscarProductoTecnologia.TabIndex = 90;
@@ -779,7 +779,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.cboNombreProductoTecnologico.FormattingEnabled = true;
             this.cboNombreProductoTecnologico.Location = new System.Drawing.Point(145, 17);
             this.cboNombreProductoTecnologico.Name = "cboNombreProductoTecnologico";
-            this.cboNombreProductoTecnologico.Size = new System.Drawing.Size(323, 21);
+            this.cboNombreProductoTecnologico.Size = new System.Drawing.Size(398, 21);
             this.cboNombreProductoTecnologico.TabIndex = 91;
             // 
             // label81
@@ -822,7 +822,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Location = new System.Drawing.Point(27, 63);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(719, 230);
+            this.groupBox2.Size = new System.Drawing.Size(751, 230);
             this.groupBox2.TabIndex = 55;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos del Equipo";
@@ -1063,9 +1063,9 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox13.Controls.Add(this.label10);
             this.groupBox13.Controls.Add(this.dtpFechaAdquisicionEquipoTecnologia);
             this.groupBox13.Controls.Add(this.label12);
-            this.groupBox13.Location = new System.Drawing.Point(752, 63);
+            this.groupBox13.Location = new System.Drawing.Point(784, 63);
             this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(341, 230);
+            this.groupBox13.Size = new System.Drawing.Size(346, 230);
             this.groupBox13.TabIndex = 155;
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Datos Adicionales";
@@ -1129,7 +1129,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnAgregarProductoTecnologico.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarProductoTecnologico.Image = global::pl_Gurkas.Properties.Resources.add_trabajador_32;
             this.btnAgregarProductoTecnologico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarProductoTecnologico.Location = new System.Drawing.Point(599, 6);
+            this.btnAgregarProductoTecnologico.Location = new System.Drawing.Point(674, 6);
             this.btnAgregarProductoTecnologico.Name = "btnAgregarProductoTecnologico";
             this.btnAgregarProductoTecnologico.Size = new System.Drawing.Size(176, 51);
             this.btnAgregarProductoTecnologico.TabIndex = 83;
@@ -1143,7 +1143,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnActualizarProductoTecnologico.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizarProductoTecnologico.Image = global::pl_Gurkas.Properties.Resources.empleado_update_32;
             this.btnActualizarProductoTecnologico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnActualizarProductoTecnologico.Location = new System.Drawing.Point(781, 6);
+            this.btnActualizarProductoTecnologico.Location = new System.Drawing.Point(856, 6);
             this.btnActualizarProductoTecnologico.Name = "btnActualizarProductoTecnologico";
             this.btnActualizarProductoTecnologico.Size = new System.Drawing.Size(176, 51);
             this.btnActualizarProductoTecnologico.TabIndex = 83;
