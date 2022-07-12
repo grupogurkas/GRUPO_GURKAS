@@ -61,8 +61,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cboPersonalAdm = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
             this.cboAreaLaboral = new System.Windows.Forms.ComboBox();
             this.txtInformacionAdicional = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -390,8 +388,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             // 
             this.groupBox1.Controls.Add(this.cboPersonalAdm);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.txtDireccion);
             this.groupBox1.Controls.Add(this.cboAreaLaboral);
             this.groupBox1.Controls.Add(this.txtInformacionAdicional);
             this.groupBox1.Controls.Add(this.label14);
@@ -423,24 +419,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.label7.Size = new System.Drawing.Size(69, 30);
             this.label7.TabIndex = 233;
             this.label7.Text = "Personal\r\nAcompaña:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(6, 99);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 15);
-            this.label6.TabIndex = 231;
-            this.label6.Text = "Direccion:";
-            // 
-            // txtDireccion
-            // 
-            this.txtDireccion.Location = new System.Drawing.Point(90, 94);
-            this.txtDireccion.Multiline = true;
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(246, 48);
-            this.txtDireccion.TabIndex = 230;
             // 
             // cboAreaLaboral
             // 
@@ -623,6 +601,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
             this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
             this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Document = this.printDocument1;
             this.printPreviewDialog1.Enabled = true;
             this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
             this.printPreviewDialog1.Name = "printPreviewDialog1";
@@ -708,8 +687,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DateTimePicker dtpFechaAdquisicion;
         private System.Windows.Forms.PictureBox pictureBox16;
-        private System.Windows.Forms.TextBox txtDireccion;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblcodentre;
         private System.Windows.Forms.Label lbldnientr;
         private System.Windows.Forms.Label lbldni;

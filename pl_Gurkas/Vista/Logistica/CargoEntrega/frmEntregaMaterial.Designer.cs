@@ -555,6 +555,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.txtUsuarioEntrega.Name = "txtUsuarioEntrega";
             this.txtUsuarioEntrega.Size = new System.Drawing.Size(335, 20);
             this.txtUsuarioEntrega.TabIndex = 195;
+            this.txtUsuarioEntrega.TextChanged += new System.EventHandler(this.txtUsuarioEntrega_TextChanged);
             // 
             // btnCerrar
             // 

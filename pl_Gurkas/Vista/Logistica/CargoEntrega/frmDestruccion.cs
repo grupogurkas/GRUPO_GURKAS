@@ -23,22 +23,68 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private int numberOfItemsPerPage = 0;
         private int numberOfItemsPrintedSoFar = 0;
 
-
+       
         public frmDestruccion()
         {
             InitializeComponent();
+        }
+        private void obtenr_datos()
+        {
+            try
+            {
+                string nombre = Datos.DatosUsuario._usuario;
+
+                SqlCommand comando = new SqlCommand("SELECT * FROM T_MAE_PERSONAL WHERE NOMBRE_COMPLETO like '%" + nombre + "%'", conexion.conexionBD());
+                SqlDataReader recorre = comando.ExecuteReader();
+                while (recorre.Read())
+                {
+                    lblcodentre.Text = recorre["COD_EMPLEADO"].ToString();
+                    lbldnientr.Text = recorre["DOCT_IDENT"].ToString();
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
+            }
+        }
+
+        private void obtener_empresa()
+        {
+            int id_empresa = Datos.EmpresaID._empresaid;
+            try
+            {
+                string cod_empresa = Convert.ToString(id_empresa);
+
+                SqlCommand comando = new SqlCommand("SELECT * FROM T_EMPRESA WHERE NOMBRE_EMPRESA = '" + cod_empresa + "'", conexion.conexionBD());
+
+                SqlDataReader recorre = comando.ExecuteReader();
+                while (recorre.Read())
+                {
+                    lblemp.Text = recorre["NOMBRE_EMPRESA"].ToString();
+                    lblruc.Text = recorre["RUC"].ToString();
+                    lbldireccion.Text = recorre["direccion"].ToString();
+                    lblnombrear.Text = recorre["nombre_documento_sig"].ToString();
+                    lblver.Text = recorre["vercion_documento_sig"].ToString();
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
+            }
         }
 
         private void Destruccion_Load(object sender, EventArgs e)
         {
             generarnumero();
+            obtener_empresa();
+            obtenr_datos();
             txtUsuarioEntrega.Enabled = false;
             txtstock.Enabled = false;
             txtstock.Text = "0";
             txtRestante.Text = "0";
             txtRestante.Visible = true;
             txtvale.Enabled = false;
-            txtDireccion.Text = "Calle Maximiliano Carranza N°886, San Juan de Miraflores";
+            //txtDireccion.Text = "Calle Maximiliano Carranza N°886, San Juan de Miraflores";
             txtObservacion.Text = "EN BASE";
             string nombre_user = Datos.DatosUsuario._usuario;
             txtUsuarioEntrega.Text = nombre_user;
@@ -99,7 +145,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         }
         private void btnImprimir_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
+           System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
             PrintDialog1.AllowSomePages = true;
             PrintDialog1.ShowHelp = true;
             PrintDialog1.Document = printDocument1;
@@ -107,11 +153,12 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             if (result == DialogResult.OK)
             {
                 printDocument1.Print();
-                //registarvaleordencompar();
-                //limpiardatos();
-                //printPreviewDialog1.ShowDialog();
+                registarvale();
+                limpiardatos();
+               
 
             }
+//            printPreviewDialog1.ShowDialog();
         }
 
         private void generarnumero()
@@ -156,7 +203,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             string AREA_ENTREGA = cboAreaLaboral.GetItemText(cboAreaLaboral.SelectedItem);
             string PERSONAL = cboPersonalAdm.GetItemText(cboPersonalAdm.SelectedItem);
             string entrega = txtUsuarioEntrega.Text;
-            string DIRECCION = txtDireccion.Text;
+           // string DIRECCION = lbldireccion.Text;
             string informacion_adicional = txtInformacionAdicional.Text;
             string fecha = lblFecha.Text;
             string emp = lblemp.Text;
@@ -232,7 +279,10 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             e.Graphics.DrawString("HORA   : ", tipoTexto, Brushes.Black, 30, 145);
             e.Graphics.DrawString(hora, desp, Brushes.Black, 120, 147);
             e.Graphics.DrawString("DIRECCION : ", tipoTexto, Brushes.Black, 330, 100);
-            e.Graphics.DrawString(DIRECCION, desp, Brushes.Black, 430, 102);
+            //e.Graphics.DrawString(dir, desp, Brushes.Black, 430, 102);
+
+            e.Graphics.DrawString(dir, desp, Brushes.Black, new RectangleF(430, 92, 300, 30));
+
             e.Graphics.DrawString("Encargado Destruccion : ", tipoTexto, Brushes.Black, 330, 120);
             e.Graphics.DrawString(entrega, desp, Brushes.Black, 500, 122);
             e.Graphics.DrawString("Personal Que Evidencia : ", tipoTexto, Brushes.Black, 330, 145);
@@ -318,7 +368,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private void limpiardatos()
         {
             cboAreaLaboral.SelectedIndex = 0;
-            txtDireccion.Text = "";
+           // txtDireccion.Text = "";
             cboAreaLaboral.SelectedIndex = 0;
             cboProducto.SelectedIndex = 0;
             cboEstadoMaterial.SelectedIndex = 0;
@@ -396,15 +446,19 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 
         private void registarvale()
         {
-            string persona_entrega = txtUsuarioEntrega.Text.ToUpper();
+            string persona_destruye = txtUsuarioEntrega.Text.ToUpper();
+
+            string cod_destruye = lblcodentre.Text.ToUpper();
+            string dni_destruye = lbldnientr.Text.ToUpper();
+
+
             int cod_area_entrega = cboAreaLaboral.SelectedIndex;
-            string cod_entregado = lblcodentre.Text.ToUpper();
-            string dni_entregado = lbldnientr.Text.ToUpper();
             //int c = Convert.ToInt32(persona_entrega);
-            string direccion = txtDireccion.Text;
+            string direccion = lbldireccion.Text;
             string NUM_VALE = txtvale.Text.ToUpper();
             string imformacion_adicional = txtInformacionAdicional.Text.ToUpper();
             string personal_acompaña = (cboPersonalAdm.GetItemText(cboPersonalAdm.SelectedItem)).ToUpper();
+
             string cod_acompaña = (cboPersonalAdm.SelectedValue.ToString()).ToUpper();
             string dni_acompaña = lbldni.Text.ToUpper();
             string fecha_vale = lblFecha.Text.ToUpper();
@@ -412,9 +466,11 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             string nombre_user = Datos.DatosUsuario._usuario.ToUpper();
             try
             {
-                SqlCommand comando = new SqlCommand("sp_insertar_destruccion_producto @NUM_ENTREGA ,@ENTREGADO_NOMBRE ,@COD_ENTREGADO ,@DNI_ENTREGADO  ,@COD_AREA_ENTREGA ,@PERSONAL_ACOMPAÑA, @COD_PERSONAL, @DNI_PERSONAL, @INFORMACION_ADICIONAL," +
-                    "@DIRECCION, @FECHA_VALE, @ITEM_VALE, @COD_PRODUCTO, @DESP_PRODUCTO," +
-                    "@CANTIDAD_DESTRUIDA, @OBSERVACION_PRODUCTO, @CONDICION_PRODUCTO " +
+                SqlCommand comando = new SqlCommand("sp_insertar_destruccion_producto @NUM_ENTREGA ,@DESTRUYE_NOMBRE ,@COD_DESTRUYE " +
+                    ",@DNI_DESTRUYE  ,@COD_AREA_ENTREGA ,@PERSONAL_ACOMPAÑA, @COD_PERSONAL_EVIDENCIA, @DNI_PERSONAL_EVIDENCIA, " +
+                    "@INFORMACION_ADICIONAL," +
+                    "@DIRECCION, @FECHA_VALE, @ITEM_VALE, @COD_PRODUCTO, @DESP_PRODUCTO,@CONDICION_PRODUCTO," +
+                    "@CANTIDAD_DESTRUIDA, @OBSERVACION_PRODUCTO,  " +
                     " @HORA, @USUARIO ", conexion.conexionBD());
 
                 foreach (DataGridViewRow row in dgvListaProducto.Rows)
@@ -423,32 +479,33 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                     {
                         
                         comando.Parameters.Clear();
-                        comando.Parameters.AddWithValue("@ENTREGADO_NOMBRE", SqlDbType.Int).Value = persona_entrega;
-                        comando.Parameters.AddWithValue("@COD_ENTREGADO", SqlDbType.VarChar).Value = cod_entregado;
-                        comando.Parameters.AddWithValue("@DNI_ENTREGADO", SqlDbType.VarChar).Value = dni_entregado;
                         comando.Parameters.AddWithValue("@NUM_ENTREGA", SqlDbType.VarChar).Value = NUM_VALE;
+                        comando.Parameters.AddWithValue("@DESTRUYE_NOMBRE", SqlDbType.VarChar).Value = persona_destruye;
+                        comando.Parameters.AddWithValue("@COD_DESTRUYE", SqlDbType.VarChar).Value = cod_destruye;
+                        comando.Parameters.AddWithValue("@DNI_DESTRUYE", SqlDbType.VarChar).Value = dni_destruye;
                         comando.Parameters.AddWithValue("@COD_AREA_ENTREGA", SqlDbType.Int).Value = cod_area_entrega;
                         comando.Parameters.AddWithValue("@PERSONAL_ACOMPAÑA", SqlDbType.VarChar).Value = personal_acompaña;
-                        comando.Parameters.AddWithValue("@COD_PERSONAL", SqlDbType.VarChar).Value = cod_acompaña;
-                        comando.Parameters.AddWithValue("@DNI_PERSONAL", SqlDbType.VarChar).Value = dni_acompaña;
+                        comando.Parameters.AddWithValue("@COD_PERSONAL_EVIDENCIA", SqlDbType.VarChar).Value = cod_acompaña;
+                        comando.Parameters.AddWithValue("@DNI_PERSONAL_EVIDENCIA", SqlDbType.VarChar).Value = dni_acompaña;
                         comando.Parameters.AddWithValue("@INFORMACION_ADICIONAL", SqlDbType.VarChar).Value = imformacion_adicional;
                         comando.Parameters.AddWithValue("@DIRECCION", SqlDbType.VarChar).Value = direccion;
                         comando.Parameters.AddWithValue("@FECHA_VALE", SqlDbType.VarChar).Value = fecha_vale;
                         comando.Parameters.AddWithValue("@ITEM_VALE", Convert.ToInt32(row.Cells["ID"].Value));
                         comando.Parameters.AddWithValue("@COD_PRODUCTO", Convert.ToString(row.Cells["CodProducto"].Value));
                         comando.Parameters.AddWithValue("@DESP_PRODUCTO", Convert.ToString(row.Cells["Nombre"].Value));
+                        comando.Parameters.AddWithValue("@CONDICION_PRODUCTO", Convert.ToString(row.Cells["CondicionEntrega"].Value));
                         comando.Parameters.AddWithValue("@CANTIDAD_DESTRUIDA", Convert.ToInt32(row.Cells["Cantidad"].Value));
                         comando.Parameters.AddWithValue("@OBSERVACION_PRODUCTO", Convert.ToString(row.Cells["Observacion"].Value));
-                        comando.Parameters.AddWithValue("@CONDICION_PRODUCTO", Convert.ToString(row.Cells["CondicionEntrega"].Value));
                         comando.Parameters.AddWithValue("@HORA", SqlDbType.VarChar).Value = hora;
                         comando.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_user;
                         comando.ExecuteNonQuery();
                     }
                 }
+                MessageBox.Show("Producto destruido del stock", "Correcto");
             }
             catch (Exception ex)
             {
-                MessageBox.Show(" No se pudo realizar la destruccion conforme \n\n Verifique su conexion al Servidor " + ex, "Error");
+                MessageBox.Show( ""+ex, "Error");
                 //showDialogs("ERROR", Color.FromArgb(255, 53, 71));
 
             }
