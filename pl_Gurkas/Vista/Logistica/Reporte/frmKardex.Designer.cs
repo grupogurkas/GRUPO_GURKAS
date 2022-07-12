@@ -29,7 +29,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
         /// </summary>
         private void InitializeComponent()
         {
-            this.cboempleadoActivo = new System.Windows.Forms.ComboBox();
+            this.cboProductos = new System.Windows.Forms.ComboBox();
             this.label42 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtUsuarioEntrega = new System.Windows.Forms.TextBox();
@@ -37,6 +37,17 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.btnEntrega = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label21 = new System.Windows.Forms.Label();
@@ -58,47 +69,36 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.dtpFechaAdquisicion = new System.Windows.Forms.DateTimePicker();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.txtProveedor = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label24 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label14 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.label15 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.txtProveedor = new System.Windows.Forms.TextBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // cboempleadoActivo
+            // cboProductos
             // 
-            this.cboempleadoActivo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cboempleadoActivo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cboempleadoActivo.FormattingEnabled = true;
-            this.cboempleadoActivo.Location = new System.Drawing.Point(118, 10);
-            this.cboempleadoActivo.Name = "cboempleadoActivo";
-            this.cboempleadoActivo.Size = new System.Drawing.Size(335, 21);
-            this.cboempleadoActivo.TabIndex = 236;
+            this.cboProductos.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboProductos.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboProductos.FormattingEnabled = true;
+            this.cboProductos.Location = new System.Drawing.Point(118, 10);
+            this.cboProductos.Name = "cboProductos";
+            this.cboProductos.Size = new System.Drawing.Size(335, 21);
+            this.cboProductos.TabIndex = 236;
             // 
             // label42
             // 
@@ -140,6 +140,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.btnNuevo.Text = "Nueva Entrega";
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnEntrega
             // 
@@ -166,6 +167,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // panel1
             // 
@@ -178,6 +180,113 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1316, 571);
             this.panel1.TabIndex = 243;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.textBox9);
+            this.groupBox3.Controls.Add(this.textBox8);
+            this.groupBox3.Controls.Add(this.textBox7);
+            this.groupBox3.Controls.Add(this.textBox6);
+            this.groupBox3.Controls.Add(this.label24);
+            this.groupBox3.Controls.Add(this.dateTimePicker3);
+            this.groupBox3.Controls.Add(this.dateTimePicker1);
+            this.groupBox3.Controls.Add(this.label15);
+            this.groupBox3.Controls.Add(this.label14);
+            this.groupBox3.Controls.Add(this.dateTimePicker2);
+            this.groupBox3.Location = new System.Drawing.Point(539, 3);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(770, 164);
+            this.groupBox3.TabIndex = 257;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "groupBox3";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(479, 105);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(104, 20);
+            this.textBox9.TabIndex = 242;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(293, 105);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(104, 20);
+            this.textBox8.TabIndex = 241;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(479, 74);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(104, 20);
+            this.textBox7.TabIndex = 240;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(293, 74);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(104, 20);
+            this.textBox6.TabIndex = 239;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(6, 27);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(75, 30);
+            this.label24.TabIndex = 234;
+            this.label24.Text = "Fecha \r\nDe Registro:";
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.CalendarMonthBackground = System.Drawing.SystemColors.Highlight;
+            this.dateTimePicker3.Enabled = false;
+            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker3.Location = new System.Drawing.Point(479, 32);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(104, 20);
+            this.dateTimePicker3.TabIndex = 237;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.Highlight;
+            this.dateTimePicker1.Enabled = false;
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(87, 37);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(104, 20);
+            this.dateTimePicker1.TabIndex = 233;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(422, 36);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(51, 15);
+            this.label15.TabIndex = 238;
+            this.label15.Text = "Salidas:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(216, 37);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(59, 15);
+            this.label14.TabIndex = 236;
+            this.label14.Text = "Entradas:";
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.CalendarMonthBackground = System.Drawing.SystemColors.Highlight;
+            this.dateTimePicker2.Enabled = false;
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker2.Location = new System.Drawing.Point(293, 33);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(104, 20);
+            this.dateTimePicker2.TabIndex = 235;
             // 
             // label11
             // 
@@ -417,6 +526,23 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Producto:";
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(405, 104);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(104, 20);
+            this.textBox2.TabIndex = 243;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(9, 105);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(52, 15);
+            this.label13.TabIndex = 116;
+            this.label13.Text = "Metodo:";
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -426,77 +552,6 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.label7.Size = new System.Drawing.Size(73, 15);
             this.label7.TabIndex = 241;
             this.label7.Text = "Stock Actual";
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
-            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(475, 12);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(104, 46);
-            this.btnBuscar.TabIndex = 239;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(317, 79);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(82, 15);
-            this.label8.TabIndex = 119;
-            this.label8.Text = "Stock Minimo";
-            // 
-            // txtTelefono
-            // 
-            this.txtTelefono.Location = new System.Drawing.Point(405, 52);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(104, 20);
-            this.txtTelefono.TabIndex = 115;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(340, 52);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(59, 15);
-            this.label34.TabIndex = 111;
-            this.label34.Text = "Cantidad:";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(9, 27);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(59, 15);
-            this.label22.TabIndex = 110;
-            this.label22.Text = "Producto:";
-            // 
-            // txtProveedor
-            // 
-            this.txtProveedor.Location = new System.Drawing.Point(90, 26);
-            this.txtProveedor.Name = "txtProveedor";
-            this.txtProveedor.Size = new System.Drawing.Size(419, 20);
-            this.txtProveedor.TabIndex = 109;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(405, 78);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(104, 20);
-            this.textBox1.TabIndex = 242;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(405, 104);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(104, 20);
-            this.textBox2.TabIndex = 243;
             // 
             // label9
             // 
@@ -508,12 +563,39 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.label9.TabIndex = 112;
             this.label9.Text = "Referencia:";
             // 
-            // textBox3
+            // textBox5
             // 
-            this.textBox3.Location = new System.Drawing.Point(90, 52);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(218, 20);
-            this.textBox3.TabIndex = 111;
+            this.textBox5.Location = new System.Drawing.Point(90, 104);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(218, 20);
+            this.textBox5.TabIndex = 115;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(405, 78);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(104, 20);
+            this.textBox1.TabIndex = 242;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(317, 79);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(82, 15);
+            this.label8.TabIndex = 119;
+            this.label8.Text = "Stock Minimo";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(340, 52);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(59, 15);
+            this.label34.TabIndex = 111;
+            this.label34.Text = "Cantidad:";
             // 
             // label10
             // 
@@ -532,129 +614,49 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.textBox4.Size = new System.Drawing.Size(218, 20);
             this.textBox4.TabIndex = 113;
             // 
-            // label13
+            // textBox3
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(9, 105);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(52, 15);
-            this.label13.TabIndex = 116;
-            this.label13.Text = "Metodo:";
+            this.textBox3.Location = new System.Drawing.Point(90, 52);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(218, 20);
+            this.textBox3.TabIndex = 111;
             // 
-            // textBox5
+            // label22
             // 
-            this.textBox5.Location = new System.Drawing.Point(90, 104);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(218, 20);
-            this.textBox5.TabIndex = 115;
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(9, 27);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(59, 15);
+            this.label22.TabIndex = 110;
+            this.label22.Text = "Producto:";
             // 
-            // dateTimePicker1
+            // txtTelefono
             // 
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.Highlight;
-            this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(87, 37);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(104, 20);
-            this.dateTimePicker1.TabIndex = 233;
+            this.txtTelefono.Location = new System.Drawing.Point(405, 52);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(104, 20);
+            this.txtTelefono.TabIndex = 115;
             // 
-            // label24
+            // txtProveedor
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(6, 27);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(75, 30);
-            this.label24.TabIndex = 234;
-            this.label24.Text = "Fecha \r\nDe Registro:";
+            this.txtProveedor.Location = new System.Drawing.Point(90, 26);
+            this.txtProveedor.Name = "txtProveedor";
+            this.txtProveedor.Size = new System.Drawing.Size(419, 20);
+            this.txtProveedor.TabIndex = 109;
             // 
-            // dateTimePicker2
+            // btnBuscar
             // 
-            this.dateTimePicker2.CalendarMonthBackground = System.Drawing.SystemColors.Highlight;
-            this.dateTimePicker2.Enabled = false;
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(293, 33);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(104, 20);
-            this.dateTimePicker2.TabIndex = 235;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(216, 37);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(59, 15);
-            this.label14.TabIndex = 236;
-            this.label14.Text = "Entradas:";
-            // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.CalendarMonthBackground = System.Drawing.SystemColors.Highlight;
-            this.dateTimePicker3.Enabled = false;
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker3.Location = new System.Drawing.Point(479, 32);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(104, 20);
-            this.dateTimePicker3.TabIndex = 237;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(422, 36);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(51, 15);
-            this.label15.TabIndex = 238;
-            this.label15.Text = "Salidas:";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.textBox9);
-            this.groupBox3.Controls.Add(this.textBox8);
-            this.groupBox3.Controls.Add(this.textBox7);
-            this.groupBox3.Controls.Add(this.textBox6);
-            this.groupBox3.Controls.Add(this.label24);
-            this.groupBox3.Controls.Add(this.dateTimePicker3);
-            this.groupBox3.Controls.Add(this.dateTimePicker1);
-            this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.label14);
-            this.groupBox3.Controls.Add(this.dateTimePicker2);
-            this.groupBox3.Location = new System.Drawing.Point(539, 3);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(770, 164);
-            this.groupBox3.TabIndex = 257;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "groupBox3";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(293, 74);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(104, 20);
-            this.textBox6.TabIndex = 239;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(479, 74);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(104, 20);
-            this.textBox7.TabIndex = 240;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(293, 105);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(104, 20);
-            this.textBox8.TabIndex = 241;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(479, 105);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(104, 20);
-            this.textBox9.TabIndex = 242;
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.Location = new System.Drawing.Point(475, 12);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(104, 46);
+            this.btnBuscar.TabIndex = 239;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscar.UseVisualStyleBackColor = true;
             // 
             // frmKardex
             // 
@@ -666,7 +668,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.Controls.Add(this.btnEntrega);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnCerrar);
-            this.Controls.Add(this.cboempleadoActivo);
+            this.Controls.Add(this.cboProductos);
             this.Controls.Add(this.label42);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtUsuarioEntrega);
@@ -674,14 +676,15 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.Name = "frmKardex";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmKardex";
+            this.Load += new System.EventHandler(this.frmKardex_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -689,7 +692,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
 
         #endregion
 
-        private System.Windows.Forms.ComboBox cboempleadoActivo;
+        private System.Windows.Forms.ComboBox cboProductos;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtUsuarioEntrega;

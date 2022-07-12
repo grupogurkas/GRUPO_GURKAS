@@ -506,10 +506,10 @@
     <Compile Include="Vista\Logistica\Historial\frmHistorialOrdenCompra.Designer.cs">
       <DependentUpon>frmHistorialOrdenCompra.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Logistica\Inventario\frmKardex.cs">
+    <Compile Include="Vista\Logistica\Reporte\frmKardex.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Logistica\Inventario\frmKardex.Designer.cs">
+    <Compile Include="Vista\Logistica\Reporte\frmKardex.Designer.cs">
       <DependentUpon>frmKardex.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Logistica\Ordenes\frmOrdenServicio.cs">
@@ -1154,7 +1154,7 @@
     <EmbeddedResource Include="Vista\Logistica\Historial\frmHistorialOrdenCompra.resx">
       <DependentUpon>frmHistorialOrdenCompra.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Logistica\Inventario\frmKardex.resx">
+    <EmbeddedResource Include="Vista\Logistica\Reporte\frmKardex.resx">
       <DependentUpon>frmKardex.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\Ordenes\frmOrdenServicio.resx">
@@ -1691,7 +1691,9 @@
     <None Include="Resources\SALIDA_64.png" />
     <None Include="Resources\SALIDA_32.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Vista\Logistica\Inventario\" />
+  </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>

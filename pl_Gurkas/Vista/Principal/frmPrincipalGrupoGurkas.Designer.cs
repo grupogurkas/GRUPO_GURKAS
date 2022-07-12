@@ -115,6 +115,7 @@ namespace pl_Gurkas.Vista.Principal
             this.logisticaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personalToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.codigoYEstadoPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kardexToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.almacenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.proveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarProveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -129,7 +130,6 @@ namespace pl_Gurkas.Vista.Principal
             this.destruccionLogisticoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recuperarMaterialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inventariadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kardexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroOrdenesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordenDeServicioCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordenDeServicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -197,7 +197,6 @@ namespace pl_Gurkas.Vista.Principal
             this.reporteDeAsistenciaPorPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.activarModoAdministradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kardexToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -918,6 +917,13 @@ namespace pl_Gurkas.Vista.Principal
             this.codigoYEstadoPersonalToolStripMenuItem.Text = "Codigo y Estado Personal";
             this.codigoYEstadoPersonalToolStripMenuItem.Click += new System.EventHandler(this.codigoYEstadoPersonalToolStripMenuItem_Click);
             // 
+            // kardexToolStripMenuItem1
+            // 
+            this.kardexToolStripMenuItem1.Name = "kardexToolStripMenuItem1";
+            this.kardexToolStripMenuItem1.Size = new System.Drawing.Size(208, 22);
+            this.kardexToolStripMenuItem1.Text = "Kardex";
+            this.kardexToolStripMenuItem1.Click += new System.EventHandler(this.kardexToolStripMenuItem1_Click);
+            // 
             // almacenToolStripMenuItem
             // 
             this.almacenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -1029,18 +1035,10 @@ namespace pl_Gurkas.Vista.Principal
             // 
             // inventariadoToolStripMenuItem
             // 
-            this.inventariadoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.kardexToolStripMenuItem});
             this.inventariadoToolStripMenuItem.Name = "inventariadoToolStripMenuItem";
             this.inventariadoToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.inventariadoToolStripMenuItem.Text = "Inventariado";
             this.inventariadoToolStripMenuItem.Click += new System.EventHandler(this.inventariadoToolStripMenuItem_Click);
-            // 
-            // kardexToolStripMenuItem
-            // 
-            this.kardexToolStripMenuItem.Name = "kardexToolStripMenuItem";
-            this.kardexToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.kardexToolStripMenuItem.Text = "Kardex";
             // 
             // registroOrdenesToolStripMenuItem
             // 
@@ -1054,14 +1052,14 @@ namespace pl_Gurkas.Vista.Principal
             // ordenDeServicioCompraToolStripMenuItem
             // 
             this.ordenDeServicioCompraToolStripMenuItem.Name = "ordenDeServicioCompraToolStripMenuItem";
-            this.ordenDeServicioCompraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ordenDeServicioCompraToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.ordenDeServicioCompraToolStripMenuItem.Text = "Orden de Compra";
             this.ordenDeServicioCompraToolStripMenuItem.Click += new System.EventHandler(this.ordenDeServicioCompraToolStripMenuItem_Click_1);
             // 
             // ordenDeServicioToolStripMenuItem
             // 
             this.ordenDeServicioToolStripMenuItem.Name = "ordenDeServicioToolStripMenuItem";
-            this.ordenDeServicioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ordenDeServicioToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.ordenDeServicioToolStripMenuItem.Text = "Orden de Servicio";
             this.ordenDeServicioToolStripMenuItem.Click += new System.EventHandler(this.ordenDeServicioToolStripMenuItem_Click);
             // 
@@ -1591,13 +1589,6 @@ namespace pl_Gurkas.Vista.Principal
             this.activarModoAdministradorToolStripMenuItem.Text = "Activar Modo Administrador";
             this.activarModoAdministradorToolStripMenuItem.Click += new System.EventHandler(this.activarModoAdministradorToolStripMenuItem_Click);
             // 
-            // kardexToolStripMenuItem1
-            // 
-            this.kardexToolStripMenuItem1.Name = "kardexToolStripMenuItem1";
-            this.kardexToolStripMenuItem1.Size = new System.Drawing.Size(208, 22);
-            this.kardexToolStripMenuItem1.Text = "Kardex";
-            this.kardexToolStripMenuItem1.Click += new System.EventHandler(this.kardexToolStripMenuItem1_Click);
-            // 
             // frmPrincipalGrupoGurkas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1786,7 +1777,6 @@ namespace pl_Gurkas.Vista.Principal
         private System.Windows.Forms.ToolStripMenuItem cargoEntregaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem internamientoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem entregaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem kardexToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroOrdenesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ordenDeServicioCompraToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem personalPorDNIToolStripMenuItem;
