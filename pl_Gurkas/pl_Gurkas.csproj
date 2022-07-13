@@ -1628,6 +1628,7 @@
   <ItemGroup>
     <Content Include="png %281%29.ico" />
     <Content Include="png iconb.ico" />
+    <None Include="Resources\WhatsApp Image 2022-07-13 at 11.32.35 AM.jpeg" />
     <None Include="Resources\pdf_32.png" />
     <None Include="Resources\1logogurkas.JPG" />
     <None Include="Resources\logogurkas.JPG" />

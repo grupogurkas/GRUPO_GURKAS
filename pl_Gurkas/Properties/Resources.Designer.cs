@@ -1209,5 +1209,15 @@ namespace pl_Gurkas.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2022_07_13_at_11_32_35_AM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2022-07-13 at 11.32.35 AM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
