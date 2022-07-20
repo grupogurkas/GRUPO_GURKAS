@@ -59,6 +59,12 @@ namespace pl_Gurkas.Vista.Planilla
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cboempleadoActivo = new System.Windows.Forms.ComboBox();
+            this.cboPago = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtmes = new System.Windows.Forms.TextBox();
+            this.txtanio = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlataformaPlanilla)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -69,12 +75,12 @@ namespace pl_Gurkas.Vista.Planilla
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.cboEmpleadoV);
-            this.groupBox1.Location = new System.Drawing.Point(791, 12);
+            this.groupBox1.Location = new System.Drawing.Point(790, 29);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(558, 78);
             this.groupBox1.TabIndex = 72;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Eliminar Vacaciones";
+            this.groupBox1.Text = "Eliminar Calculo de Vacaciones";
             // 
             // button1
             // 
@@ -122,40 +128,45 @@ namespace pl_Gurkas.Vista.Planilla
             this.dgvPlataformaPlanilla.AllowUserToDeleteRows = false;
             this.dgvPlataformaPlanilla.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvPlataformaPlanilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPlataformaPlanilla.Location = new System.Drawing.Point(12, 192);
+            this.dgvPlataformaPlanilla.Location = new System.Drawing.Point(12, 247);
             this.dgvPlataformaPlanilla.Name = "dgvPlataformaPlanilla";
             this.dgvPlataformaPlanilla.ReadOnly = true;
-            this.dgvPlataformaPlanilla.Size = new System.Drawing.Size(1337, 431);
+            this.dgvPlataformaPlanilla.Size = new System.Drawing.Size(1337, 376);
             this.dgvPlataformaPlanilla.TabIndex = 70;
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.txtanio);
+            this.groupBox3.Controls.Add(this.txtmes);
+            this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Controls.Add(this.label11);
+            this.groupBox3.Controls.Add(this.label10);
+            this.groupBox3.Controls.Add(this.cboPago);
             this.groupBox3.Controls.Add(this.button2);
             this.groupBox3.Controls.Add(this.textBox1);
-            this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.btnExcel);
-            this.groupBox3.Controls.Add(this.btnCerrar);
-            this.groupBox3.Controls.Add(this.txtDiasVendidos);
-            this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.txtdiasdisfrutados);
-            this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.txtperiodofin);
+            this.groupBox3.Controls.Add(this.btnGuardar);
+            this.groupBox3.Controls.Add(this.btnExcel);
             this.groupBox3.Controls.Add(this.txtpinicio);
             this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.dateTimePicker2);
-            this.groupBox3.Controls.Add(this.dtpinicio);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.dtpfin);
-            this.groupBox3.Controls.Add(this.btnPlantilla);
-            this.groupBox3.Controls.Add(this.btnGuardar);
-            this.groupBox3.Controls.Add(this.txtdiasacumulados);
+            this.groupBox3.Controls.Add(this.txtDiasVendidos);
             this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.label1);
+            this.groupBox3.Controls.Add(this.btnPlantilla);
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.cboempleadoActivo);
+            this.groupBox3.Controls.Add(this.dtpinicio);
+            this.groupBox3.Controls.Add(this.txtdiasdisfrutados);
+            this.groupBox3.Controls.Add(this.label7);
+            this.groupBox3.Controls.Add(this.dtpfin);
+            this.groupBox3.Controls.Add(this.dateTimePicker2);
+            this.groupBox3.Controls.Add(this.txtdiasacumulados);
+            this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Location = new System.Drawing.Point(12, 10);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(621, 176);
+            this.groupBox3.Size = new System.Drawing.Size(747, 231);
             this.groupBox3.TabIndex = 69;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Empleado Gurkas";
@@ -165,7 +176,7 @@ namespace pl_Gurkas.Vista.Planilla
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = global::pl_Gurkas.Properties.Resources.icon_validare_300__1_;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(456, 120);
+            this.button2.Location = new System.Drawing.Point(601, 127);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(140, 47);
             this.button2.TabIndex = 69;
@@ -176,29 +187,31 @@ namespace pl_Gurkas.Vista.Planilla
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(323, 136);
+            this.textBox1.Location = new System.Drawing.Point(342, 143);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(87, 20);
-            this.textBox1.TabIndex = 68;
+            this.textBox1.Size = new System.Drawing.Size(180, 20);
+            this.textBox1.TabIndex = 9;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(219, 140);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(237, 145);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 13);
+            this.label9.Size = new System.Drawing.Size(85, 32);
             this.label9.TabIndex = 67;
-            this.label9.Text = "Sueldo :";
+            this.label9.Text = "Sueldo para \r\nCalculo:";
             // 
             // btnExcel
             // 
-            this.btnExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcel.Image = global::pl_Gurkas.Properties.Resources.Excel_32;
             this.btnExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExcel.Location = new System.Drawing.Point(502, 67);
+            this.btnExcel.Location = new System.Drawing.Point(601, 73);
             this.btnExcel.Name = "btnExcel";
-            this.btnExcel.Size = new System.Drawing.Size(41, 48);
+            this.btnExcel.Size = new System.Drawing.Size(140, 48);
             this.btnExcel.TabIndex = 47;
+            this.btnExcel.Text = "Exportar Excel";
             this.btnExcel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExcel.UseVisualStyleBackColor = true;
             this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
@@ -208,65 +221,69 @@ namespace pl_Gurkas.Vista.Planilla
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.Image = global::pl_Gurkas.Properties.Resources.salir_empleado_32;
             this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrar.Location = new System.Drawing.Point(549, 67);
+            this.btnCerrar.Location = new System.Drawing.Point(1208, 189);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(47, 48);
+            this.btnCerrar.Size = new System.Drawing.Size(140, 48);
             this.btnCerrar.TabIndex = 47;
+            this.btnCerrar.Text = "Salir";
             this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // txtDiasVendidos
             // 
-            this.txtDiasVendidos.Location = new System.Drawing.Point(323, 107);
+            this.txtDiasVendidos.Location = new System.Drawing.Point(132, 194);
             this.txtDiasVendidos.Name = "txtDiasVendidos";
-            this.txtDiasVendidos.Size = new System.Drawing.Size(50, 20);
-            this.txtDiasVendidos.TabIndex = 66;
+            this.txtDiasVendidos.Size = new System.Drawing.Size(82, 20);
+            this.txtDiasVendidos.TabIndex = 8;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(219, 110);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 194);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 13);
+            this.label2.Size = new System.Drawing.Size(103, 16);
             this.label2.TabIndex = 65;
             this.label2.Text = "Dias Vendidos :";
             // 
             // txtdiasdisfrutados
             // 
-            this.txtdiasdisfrutados.Location = new System.Drawing.Point(110, 136);
+            this.txtdiasdisfrutados.Location = new System.Drawing.Point(132, 170);
             this.txtdiasdisfrutados.Name = "txtdiasdisfrutados";
-            this.txtdiasdisfrutados.Size = new System.Drawing.Size(50, 20);
-            this.txtdiasdisfrutados.TabIndex = 64;
+            this.txtdiasdisfrutados.Size = new System.Drawing.Size(82, 20);
+            this.txtdiasdisfrutados.TabIndex = 7;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(9, 140);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(6, 170);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 13);
+            this.label7.Size = new System.Drawing.Size(113, 16);
             this.label7.TabIndex = 63;
             this.label7.Text = "Dias Disfrutados :";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 80);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(253, 58);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 13);
+            this.label6.Size = new System.Drawing.Size(83, 16);
             this.label6.TabIndex = 62;
             this.label6.Text = "Periodo Fin :";
             // 
             // txtperiodofin
             // 
-            this.txtperiodofin.Location = new System.Drawing.Point(89, 77);
+            this.txtperiodofin.Location = new System.Drawing.Point(342, 57);
             this.txtperiodofin.Name = "txtperiodofin";
-            this.txtperiodofin.Size = new System.Drawing.Size(124, 20);
-            this.txtperiodofin.TabIndex = 61;
+            this.txtperiodofin.Size = new System.Drawing.Size(180, 20);
+            this.txtperiodofin.TabIndex = 3;
             // 
             // txtpinicio
             // 
-            this.txtpinicio.Location = new System.Drawing.Point(89, 51);
+            this.txtpinicio.Location = new System.Drawing.Point(108, 54);
             this.txtpinicio.Name = "txtpinicio";
             this.txtpinicio.Size = new System.Drawing.Size(124, 20);
             this.txtpinicio.TabIndex = 60;
@@ -274,53 +291,56 @@ namespace pl_Gurkas.Vista.Planilla
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(6, 58);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 13);
+            this.label5.Size = new System.Drawing.Size(96, 16);
             this.label5.TabIndex = 59;
             this.label5.Text = "Periodo Inicio :";
             // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(323, 77);
+            this.dateTimePicker2.Location = new System.Drawing.Point(206, 116);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(87, 20);
-            this.dateTimePicker2.TabIndex = 58;
+            this.dateTimePicker2.Size = new System.Drawing.Size(130, 20);
+            this.dateTimePicker2.TabIndex = 5;
             this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // dtpinicio
             // 
             this.dtpinicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpinicio.Location = new System.Drawing.Point(323, 52);
+            this.dtpinicio.Location = new System.Drawing.Point(206, 90);
             this.dtpinicio.Name = "dtpinicio";
-            this.dtpinicio.Size = new System.Drawing.Size(87, 20);
-            this.dtpinicio.TabIndex = 57;
+            this.dtpinicio.Size = new System.Drawing.Size(130, 20);
+            this.dtpinicio.TabIndex = 4;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(219, 54);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(6, 90);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 13);
+            this.label4.Size = new System.Drawing.Size(188, 16);
             this.label4.TabIndex = 56;
-            this.label4.Text = "Fecha Inicio :";
+            this.label4.Text = "Fecha Salida de Vacaciones :";
             // 
             // dtpfin
             // 
             this.dtpfin.AutoSize = true;
-            this.dtpfin.Location = new System.Drawing.Point(219, 80);
+            this.dtpfin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpfin.Location = new System.Drawing.Point(6, 120);
             this.dtpfin.Name = "dtpfin";
-            this.dtpfin.Size = new System.Drawing.Size(60, 13);
+            this.dtpfin.Size = new System.Drawing.Size(194, 16);
             this.dtpfin.TabIndex = 55;
-            this.dtpfin.Text = "Fecha Fin :";
+            this.dtpfin.Text = "Fecha Retorno de Vacaciones:";
             // 
             // btnPlantilla
             // 
             this.btnPlantilla.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlantilla.Image = global::pl_Gurkas.Properties.Resources.planilla_32;
             this.btnPlantilla.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPlantilla.Location = new System.Drawing.Point(456, 17);
+            this.btnPlantilla.Location = new System.Drawing.Point(601, 20);
             this.btnPlantilla.Name = "btnPlantilla";
             this.btnPlantilla.Size = new System.Drawing.Size(140, 47);
             this.btnPlantilla.TabIndex = 54;
@@ -334,36 +354,39 @@ namespace pl_Gurkas.Vista.Planilla
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.Image = global::pl_Gurkas.Properties.Resources.save_32_png_32;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(456, 67);
+            this.btnGuardar.Location = new System.Drawing.Point(601, 179);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(40, 47);
+            this.btnGuardar.Size = new System.Drawing.Size(140, 47);
             this.btnGuardar.TabIndex = 9;
+            this.btnGuardar.Text = "Guardar Datos";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // txtdiasacumulados
             // 
-            this.txtdiasacumulados.Location = new System.Drawing.Point(110, 107);
+            this.txtdiasacumulados.Location = new System.Drawing.Point(132, 144);
             this.txtdiasacumulados.Name = "txtdiasacumulados";
-            this.txtdiasacumulados.Size = new System.Drawing.Size(50, 20);
-            this.txtdiasacumulados.TabIndex = 48;
+            this.txtdiasacumulados.Size = new System.Drawing.Size(82, 20);
+            this.txtdiasacumulados.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(6, 27);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 13);
+            this.label3.Size = new System.Drawing.Size(80, 16);
             this.label3.TabIndex = 52;
             this.label3.Text = "Empleado : ";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 111);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 144);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 13);
+            this.label1.Size = new System.Drawing.Size(120, 16);
             this.label1.TabIndex = 46;
             this.label1.Text = "Dias Acumulados :";
             // 
@@ -372,11 +395,64 @@ namespace pl_Gurkas.Vista.Planilla
             this.cboempleadoActivo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cboempleadoActivo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboempleadoActivo.FormattingEnabled = true;
-            this.cboempleadoActivo.Location = new System.Drawing.Point(89, 24);
+            this.cboempleadoActivo.Location = new System.Drawing.Point(108, 24);
             this.cboempleadoActivo.Name = "cboempleadoActivo";
-            this.cboempleadoActivo.Size = new System.Drawing.Size(321, 21);
-            this.cboempleadoActivo.TabIndex = 53;
+            this.cboempleadoActivo.Size = new System.Drawing.Size(414, 21);
+            this.cboempleadoActivo.TabIndex = 1;
             this.cboempleadoActivo.SelectedIndexChanged += new System.EventHandler(this.cboempleadoActivo_SelectedIndexChanged);
+            // 
+            // cboPago
+            // 
+            this.cboPago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboPago.FormattingEnabled = true;
+            this.cboPago.Location = new System.Drawing.Point(342, 180);
+            this.cboPago.Name = "cboPago";
+            this.cboPago.Size = new System.Drawing.Size(180, 21);
+            this.cboPago.TabIndex = 10;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(237, 179);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(81, 32);
+            this.label10.TabIndex = 230;
+            this.label10.Text = "Periodo de  \r\npago :";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(342, 90);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(40, 16);
+            this.label11.TabIndex = 231;
+            this.label11.Text = "Mes :";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(342, 116);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(38, 16);
+            this.label12.TabIndex = 232;
+            this.label12.Text = "Año :";
+            // 
+            // txtmes
+            // 
+            this.txtmes.Location = new System.Drawing.Point(418, 88);
+            this.txtmes.Name = "txtmes";
+            this.txtmes.Size = new System.Drawing.Size(104, 20);
+            this.txtmes.TabIndex = 233;
+            // 
+            // txtanio
+            // 
+            this.txtanio.Location = new System.Drawing.Point(418, 115);
+            this.txtanio.Name = "txtanio";
+            this.txtanio.Size = new System.Drawing.Size(104, 20);
+            this.txtanio.TabIndex = 234;
             // 
             // frmCalculoDeVacaciones
             // 
@@ -386,11 +462,12 @@ namespace pl_Gurkas.Vista.Planilla
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.dgvPlataformaPlanilla);
+            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.groupBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCalculoDeVacaciones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmCalculoDeVacaciones";
+            this.Text = "frmCalculoPlanilla";
             this.Load += new System.EventHandler(this.frmCalculoDeVacaciones_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -433,5 +510,11 @@ namespace pl_Gurkas.Vista.Planilla
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cboempleadoActivo;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox cboPago;
+        private System.Windows.Forms.TextBox txtanio;
+        private System.Windows.Forms.TextBox txtmes;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
     }
 }

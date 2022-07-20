@@ -238,10 +238,11 @@ namespace pl_Gurkas.Datos
             cmd.ExecuteNonQuery();
         }
 
-        public void RegistrarAsistenciasVacacionesDescansoM(string cod_empleado, int priodo_inicio, int periodo_fin,
-          int dias_acumulados, int dias_vendidos, int dias_disfrutados, DateTime finicio, DateTime ffin, decimal sueldo)
+        public void RegistrarAsistenciasVacaciones(string cod_empleado, int priodo_inicio, int periodo_fin,
+          int dias_acumulados, int dias_vendidos, int dias_disfrutados, DateTime finicio, DateTime ffin, decimal sueldo
+             , int periodo_pago, int mes, int anio)
         {
-            SqlCommand cmd = new SqlCommand("sp_registrar_vacaciones_descansoM_Planilla ", conexion.conexionBD());
+            SqlCommand cmd = new SqlCommand("sp_registrar_datos_para_Calculo_vacaciones ", conexion.conexionBD());
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@cod_empleado", SqlDbType.VarChar).Value = cod_empleado;
             cmd.Parameters.AddWithValue("@periodo_inicio", SqlDbType.Int).Value = priodo_inicio;
@@ -252,6 +253,9 @@ namespace pl_Gurkas.Datos
             cmd.Parameters.AddWithValue("@dias_vendidos", SqlDbType.Int).Value = dias_vendidos;
             cmd.Parameters.AddWithValue("@dias_disfrutados", SqlDbType.Int).Value = dias_disfrutados;
             cmd.Parameters.AddWithValue("@sueldo", SqlDbType.Decimal).Value = sueldo;
+            cmd.Parameters.AddWithValue("@id_periodo_pago", SqlDbType.Int).Value = periodo_pago;
+            cmd.Parameters.AddWithValue("@mes", SqlDbType.Int).Value = mes;
+            cmd.Parameters.AddWithValue("@anio", SqlDbType.Int).Value = anio;
             cmd.ExecuteNonQuery();
         }
         public void Registrarotraslicencias(string cod_empleado, int dias, DateTime finicio, DateTime fin,

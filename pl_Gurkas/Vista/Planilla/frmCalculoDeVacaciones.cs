@@ -28,7 +28,7 @@ namespace pl_Gurkas.Vista.Planilla
             {
                 SqlCommand comando = conexion.conexionBD().CreateCommand();
                 comando.CommandType = CommandType.Text;
-                comando.CommandText = "sp_buscar_vacaciones_descanso_medico_planilla ";
+                comando.CommandText = "sp_buscar_vacaciones_descanso_medico_planilla_v2 ";
                 comando.ExecuteNonQuery();
                 DataTable dt = new DataTable();
                 SqlDataAdapter dta = new SqlDataAdapter(comando);
@@ -71,12 +71,13 @@ namespace pl_Gurkas.Vista.Planilla
             }
         }
         private void registrar_detalles(string cod_empleado, int priodo_inicio, int periodo_fin,
-          int dias_acumulados, int dias_vendidos, int dias_disfrutados, DateTime finicio, DateTime ffin, decimal sueldo)
+          int dias_acumulados, int dias_vendidos, int dias_disfrutados, DateTime finicio, DateTime ffin, decimal sueldo
+            , int periodo_pago, int mes, int anio)
         {
             try
             {
-                registrar.RegistrarAsistenciasVacacionesDescansoM(cod_empleado, priodo_inicio, periodo_fin, dias_acumulados, dias_vendidos, dias_disfrutados
-                    , finicio, ffin, sueldo);
+                registrar.RegistrarAsistenciasVacaciones(cod_empleado, priodo_inicio, periodo_fin, dias_acumulados, dias_vendidos, dias_disfrutados
+                    , finicio, ffin, sueldo,  periodo_pago,  mes,  anio);
                 MessageBox.Show("Dato Registrado", "Correpto");
                 BuscaDatos();
             }
@@ -89,10 +90,20 @@ namespace pl_Gurkas.Vista.Planilla
         {
             Llenadocbo.ObtenerPersonalPLANILLA(cboempleadoActivo);
             Llenadocbo.ObtenerPersonalPLANILLA(cboEmpleadoV);
+            Llenadocbo.ObtenerPeridoPagoVacacionesPLANILLA(cboPago);
             txtdiasdisfrutados.Text = "0";
             txtDiasVendidos.Text = "0";
+            textBox1.Text = "0";
             dgvPlataformaPlanilla.RowHeadersVisible = false;
             dgvPlataformaPlanilla.AllowUserToAddRows = false;
+
+
+            DateTime fecha_actual = DateTime.Now;
+            string dia = Convert.ToString(fecha_actual.Day);
+            string mes = Convert.ToString(fecha_actual.Month);
+            string año = Convert.ToString(fecha_actual.Year);
+            txtanio.Text = año;
+            txtmes.Text = mes;
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -115,7 +126,7 @@ namespace pl_Gurkas.Vista.Planilla
             {
                 SqlCommand comando = conexion.conexionBD().CreateCommand();
                 comando.CommandType = CommandType.Text;
-                comando.CommandText = "sp_guardar_vacaciones ";
+                comando.CommandText = "sp_guardar_vacaciones_v2 ";
                 comando.ExecuteNonQuery();
                 MessageBox.Show("Guardado Exitosamente", "Exito");
             }
@@ -139,7 +150,12 @@ namespace pl_Gurkas.Vista.Planilla
 
             decimal sueldo = Convert.ToDecimal(textBox1.Text);
 
-            registrar_detalles(cod_empleado, periodo_inicio, periodo_fin, dias_acumulados, dias_vendidos, dias_disfrutados, inicio, fin, sueldo);
+            int periodo_pago = cboPago.SelectedIndex;
+            int mes = Convert.ToInt32(txtmes.Text);
+            int anio = Convert.ToInt32(txtanio.Text);
+
+            registrar_detalles(cod_empleado, periodo_inicio, periodo_fin, dias_acumulados, dias_vendidos, dias_disfrutados, inicio, fin, sueldo
+                , periodo_pago, mes, anio);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -152,7 +168,7 @@ namespace pl_Gurkas.Vista.Planilla
             {
                 SqlCommand comando = conexion.conexionBD().CreateCommand();
                 comando.CommandType = CommandType.Text;
-                comando.CommandText = "sp_eliminar_vacaciones @cod_empleado";
+                comando.CommandText = "sp_eliminar_vacaciones_v2 @cod_empleado";
                 comando.Parameters.AddWithValue("cod_empleado", cod_empleado);
                 comando.ExecuteNonQuery();
                 MessageBox.Show("Se Elimino correctamente ", "Correcto");
