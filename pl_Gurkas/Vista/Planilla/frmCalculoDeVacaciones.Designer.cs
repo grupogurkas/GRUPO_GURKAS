@@ -221,7 +221,7 @@ namespace pl_Gurkas.Vista.Planilla
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.Image = global::pl_Gurkas.Properties.Resources.salir_empleado_32;
             this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrar.Location = new System.Drawing.Point(1083, 122);
+            this.btnCerrar.Location = new System.Drawing.Point(1208, 189);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(140, 48);
             this.btnCerrar.TabIndex = 47;
