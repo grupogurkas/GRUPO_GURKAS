@@ -69,7 +69,7 @@ namespace pl_Gurkas.Vista.Planilla
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.cboEmpleadoV);
-            this.groupBox1.Location = new System.Drawing.Point(620, 10);
+            this.groupBox1.Location = new System.Drawing.Point(791, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(558, 78);
             this.groupBox1.TabIndex = 72;
@@ -155,7 +155,7 @@ namespace pl_Gurkas.Vista.Planilla
             this.groupBox3.Controls.Add(this.cboempleadoActivo);
             this.groupBox3.Location = new System.Drawing.Point(12, 10);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(602, 176);
+            this.groupBox3.Size = new System.Drawing.Size(772, 176);
             this.groupBox3.TabIndex = 69;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Empleado Gurkas";
