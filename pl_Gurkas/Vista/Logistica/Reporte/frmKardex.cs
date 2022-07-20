@@ -63,13 +63,13 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
                     SqlDataReader recorre = comando.ExecuteReader();
                     while (recorre.Read())
                     {
-                        txtProveedor.Text = recorre["nomb_proveedor"].ToString();
-                        txtruc.Text = recorre["ruc"].ToString();
-                        txtNombreProveedor.Text = recorre["nomb_contacto"].ToString();
-                        txtDireccion.Text = recorre["direccion"].ToString();
-                        txtCorreo.Text = recorre["correo"].ToString();
-                        txtTelefono.Text = recorre["telefono"].ToString();
-                        txtCelular.Text = recorre["celular"].ToString();
+                       // txtProveedor.Text = recorre["nomb_proveedor"].ToString();
+                     ///   txtruc.Text = recorre["ruc"].ToString();
+                     //   txtNombreProveedor.Text = recorre["nomb_contacto"].ToString();
+                    //    txtDireccion.Text = recorre["direccion"].ToString();
+                    //    txtCorreo.Text = recorre["correo"].ToString();
+                    //    txtTelefono.Text = recorre["telefono"].ToString();
+                     //   txtCelular.Text = recorre["celular"].ToString();
                     }
                 }
                 catch (Exception err)

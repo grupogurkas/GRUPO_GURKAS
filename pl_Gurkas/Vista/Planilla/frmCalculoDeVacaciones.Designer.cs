@@ -155,7 +155,7 @@ namespace pl_Gurkas.Vista.Planilla
             this.groupBox3.Controls.Add(this.cboempleadoActivo);
             this.groupBox3.Location = new System.Drawing.Point(12, 10);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(772, 176);
+            this.groupBox3.Size = new System.Drawing.Size(621, 176);
             this.groupBox3.TabIndex = 69;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Empleado Gurkas";
