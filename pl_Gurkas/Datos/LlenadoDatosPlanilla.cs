@@ -307,6 +307,24 @@ namespace pl_Gurkas.Datos
                 MessageBox.Show("No se puede obtener la imformacion de la Empresa \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        public void ObtenerPeridoPagoVacacionesPLANILLA(ComboBox cd)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SELECT desp_periodo_pago FROM t_periodo_de_pago_vacaciones  ", conexiondbo.conexionBD());
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    cd.Items.Add(dr[0].ToString());
+                }
+                cd.Items.Insert(0, "--- Seleccione Una Periodo ---");
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede obtener la imformacion de la Periodo \n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         public void ObtenerPersonalPLANILLA(ComboBox cd)
         {
             try
