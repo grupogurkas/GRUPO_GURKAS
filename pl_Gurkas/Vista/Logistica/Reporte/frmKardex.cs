@@ -54,7 +54,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
         {
             if(cboProductos.SelectedValue.ToString() != null)
             {
-                try
+               /* try
                 {
                     string cod_producto = cboProductos.SelectedValue.ToString();
 
@@ -75,7 +75,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
                 catch (Exception err)
                 {
                     MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
-                }
+                }*/
             }
         }
     }
