@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -47,6 +48,35 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
         private void btnNuevo_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cboProductos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(cboProductos.SelectedValue.ToString() != null)
+            {
+                try
+                {
+                    string cod_producto = cboProductos.SelectedValue.ToString();
+
+                    SqlCommand comando = new SqlCommand("select *from t_proveedor where cod_proveedor = '" + cod_provedor + "'", conexion.conexionBD());
+
+                    SqlDataReader recorre = comando.ExecuteReader();
+                    while (recorre.Read())
+                    {
+                        txtProveedor.Text = recorre["nomb_proveedor"].ToString();
+                        txtruc.Text = recorre["ruc"].ToString();
+                        txtNombreProveedor.Text = recorre["nomb_contacto"].ToString();
+                        txtDireccion.Text = recorre["direccion"].ToString();
+                        txtCorreo.Text = recorre["correo"].ToString();
+                        txtTelefono.Text = recorre["telefono"].ToString();
+                        txtCelular.Text = recorre["celular"].ToString();
+                    }
+                }
+                catch (Exception err)
+                {
+                    MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
+                }
+            }
         }
     }
 }
