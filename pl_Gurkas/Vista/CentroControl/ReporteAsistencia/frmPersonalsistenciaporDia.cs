@@ -15,7 +15,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.frmLlenadoDeDatosCentroControl Llenadocbo = new Datos.frmLlenadoDeDatosCentroControl();
-        Vista.CentroControl.ExportacionExcelCC.ExcelCC Excel = new Vista.CentroControl.ExportacionExcelCC.ExcelCC();
+        ExportacionExcel.CentroControl.ExportarDatosExcelCentroControl Excel = new ExportacionExcel.CentroControl.ExportarDatosExcelCentroControl();
 
         public frmPersonalsistenciaporDia()
         {
@@ -68,6 +68,13 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
         private void btnConsultar_Click(object sender, EventArgs e)
         {
             ConsultarPersonalregistradoSede( dtpFecha.Value);
+        }
+
+        private void btnExcel_Click(object sender, EventArgs e)
+        {
+            string nombre_unidad = cboUnidad.GetItemText(cboUnidad.SelectedItem);
+            string fi = dtpFecha.Value.Date.ToString("dd-MM-yyyy");
+            Excel.ExportarDatosExcelPersonalAsistencaPorDia(dgvRegistrarPorSede, progressBar1, nombre_unidad, fi);
         }
     }
 }

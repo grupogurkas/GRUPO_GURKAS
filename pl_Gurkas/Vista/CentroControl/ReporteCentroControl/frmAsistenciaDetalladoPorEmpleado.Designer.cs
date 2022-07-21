@@ -49,12 +49,13 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteCentroControl
             // 
             this.progressBar1.Location = new System.Drawing.Point(12, 457);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(776, 23);
+            this.progressBar1.Size = new System.Drawing.Size(1070, 23);
             this.progressBar1.TabIndex = 14;
             // 
             // btnExcel
             // 
             this.btnExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcel.Image = global::pl_Gurkas.Properties.Resources.Excel_32;
             this.btnExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExcel.Location = new System.Drawing.Point(563, 43);
             this.btnExcel.Name = "btnExcel";
@@ -63,6 +64,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteCentroControl
             this.btnExcel.Text = "Excel";
             this.btnExcel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExcel.UseVisualStyleBackColor = true;
+            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
             // 
             // dgvAsistenciaDetalladoEmpleado
             // 
@@ -70,9 +72,8 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteCentroControl
             this.dgvAsistenciaDetalladoEmpleado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAsistenciaDetalladoEmpleado.Location = new System.Drawing.Point(12, 131);
             this.dgvAsistenciaDetalladoEmpleado.Name = "dgvAsistenciaDetalladoEmpleado";
-            this.dgvAsistenciaDetalladoEmpleado.Size = new System.Drawing.Size(776, 320);
+            this.dgvAsistenciaDetalladoEmpleado.Size = new System.Drawing.Size(1070, 320);
             this.dgvAsistenciaDetalladoEmpleado.TabIndex = 12;
-            this.dgvAsistenciaDetalladoEmpleado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAsistenciaDetalladoEmpleado_CellContentClick);
             // 
             // groupBox1
             // 
@@ -162,7 +163,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteCentroControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 492);
+            this.ClientSize = new System.Drawing.Size(1094, 492);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.btnExcel);
             this.Controls.Add(this.dgvAsistenciaDetalladoEmpleado);

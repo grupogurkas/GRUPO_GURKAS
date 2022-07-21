@@ -15,7 +15,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.frmLlenadoDeDatosCentroControl Llenadocbo = new Datos.frmLlenadoDeDatosCentroControl();
-        Vista.CentroControl.ExportacionExcelCC.ExcelCC Excel = new Vista.CentroControl.ExportacionExcelCC.ExcelCC();
+        ExportacionExcel.CentroControl.ExportarDatosExcelCentroControl Excel = new ExportacionExcel.CentroControl.ExportarDatosExcelCentroControl();
         public frmAsistenciaDePersonalDetallado()
         {
             InitializeComponent();
@@ -64,6 +64,14 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
         {
             string cod_unidad = cboUnidad.SelectedValue.ToString();
             ConsultarPersonalDetallado(dtpFechaInicio.Value, dtpFechaFin.Value, cod_unidad);
+        }
+
+        private void btnExcel_Click(object sender, EventArgs e)
+        {
+            string nombre_unidad = cboUnidad.GetItemText(cboUnidad.SelectedItem);
+            string fi = dtpFechaInicio.Value.Date.ToString("dd-MM-yyyy");
+            string ff = dtpFechaInicio.Value.Date.ToString("dd-MM-yyyy");
+            Excel.ExportarDatosExcelAsistenciaPersonalDetallado(dgvAsistenciaPersonalDetallado, progressBar1, nombre_unidad, fi, ff);
         }
     }
 }

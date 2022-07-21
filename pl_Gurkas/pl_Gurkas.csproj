@@ -267,7 +267,10 @@
     <Compile Include="Datos\Producto.cs" />
     <Compile Include="Datos\Proveedor.cs" />
     <Compile Include="Datos\registrar.cs" />
+    <Compile Include="ExportacionExcel\CentroControl\ExportarDatosExcelCentroControl.cs" />
+    <Compile Include="ExportacionExcel\Comercial\ExportarDatosExcelComercial.cs" />
     <Compile Include="ExportacionExcel\Logistica\ExportarDataExcelLogistica.cs" />
+    <Compile Include="ExportacionExcel\Operaciones\ExportarDataExcelOperaciones.cs" />
     <Compile Include="ExportacionExcel\RRHH\ExportarDataExcelRRHH.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -336,7 +339,6 @@
     <Compile Include="Vista\CentroControl\CargaDeDatos\frmBloqueosPersonal.Designer.cs">
       <DependentUpon>frmBloqueosPersonal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\CentroControl\ExportacionExcelCC\ExcelCC.cs" />
     <Compile Include="Vista\CentroControl\frmAsistenciaPersonal.cs">
       <SubType>Form</SubType>
     </Compile>

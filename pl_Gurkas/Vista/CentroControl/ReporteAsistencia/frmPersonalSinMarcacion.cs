@@ -16,7 +16,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.frmLlenadoDeDatosCentroControl Llenadocbo = new Datos.frmLlenadoDeDatosCentroControl();
         Datos.LlenadoDeDatosOperaciones Llenadocboope = new Datos.LlenadoDeDatosOperaciones();
-        Vista.CentroControl.ExportacionExcelCC.ExcelCC Excel = new Vista.CentroControl.ExportacionExcelCC.ExcelCC();
+        ExportacionExcel.CentroControl.ExportarDatosExcelCentroControl Excel = new ExportacionExcel.CentroControl.ExportarDatosExcelCentroControl();
 
         public frmPersonalSinMarcacion()
         {
@@ -58,6 +58,13 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
                 MessageBox.Show("No se encontro ningun resultado \n\n " + ex, "ERROR");
 
             }
+        }
+
+        private void cboTurno_Click(object sender, EventArgs e)
+        {
+            string nombre_unidad = cboUnidad.GetItemText(cboUnidad.SelectedItem);
+            string fi = dtpFecha.Value.Date.ToString("dd-MM-yyyy");
+            Excel.ExportarDatosExcelPersonalSinMarcacion(dgvPersonalSinMarcacion, progressBar1, nombre_unidad, fi);
         }
     }
 }

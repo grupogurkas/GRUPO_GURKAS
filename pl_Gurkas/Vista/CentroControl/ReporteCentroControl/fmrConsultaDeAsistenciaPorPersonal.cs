@@ -15,7 +15,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteCentroControl
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.frmLlenadoDeDatosCentroControl Llenadocbo = new Datos.frmLlenadoDeDatosCentroControl();
-        Vista.CentroControl.ExportacionExcelCC.ExcelCC Excel = new Vista.CentroControl.ExportacionExcelCC.ExcelCC();
+        ExportacionExcel.Operaciones.ExportarDataExcelOperaciones Excel = new ExportacionExcel.Operaciones.ExportarDataExcelOperaciones();
 
         public fmrConsultaDeAsistenciaPorPersonal()
         {
@@ -115,6 +115,15 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteCentroControl
             ConsultarAsistenciaPersonal(cod_empleado, dtpFechaInicio.Value, dtpFechaFin.Value);
             ConsultarAsistenciaPersonalResumen(cod_empleado, dtpFechaInicio.Value, dtpFechaFin.Value);
             ConsultarAsistenciaPersonalTotal(cod_empleado, dtpFechaInicio.Value, dtpFechaFin.Value);
+        }
+
+        private void btnExcel_Click(object sender, EventArgs e)
+        {
+            string cod_empleado = cboempleadoActivo.SelectedValue.ToString();
+            string nombre_empleado = cboempleadoActivo.GetItemText(cboempleadoActivo.SelectedItem);
+            string fi = dtpFechaInicio.Value.Date.ToString("dd-MM-yyyy");
+            string ff = dtpFechaFin.Value.Date.ToString("dd-MM-yyyy");
+            Excel.ExportarDatosExcelAsistencia(dgvConsultarAsistenciaPersonal, progressBar1, nombre_empleado, fi, ff);
         }
     }
 }
