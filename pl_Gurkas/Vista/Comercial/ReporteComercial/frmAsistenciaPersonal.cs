@@ -19,6 +19,7 @@ namespace pl_Gurkas.Vista.Comercial.ReporteComercial
         Datos.registrar registrar = new Datos.registrar();
         Datos.Actualizar actualizar = new Datos.Actualizar();
         Datos.AuditoriaModulos modulo = new Datos.AuditoriaModulos();
+        ExportacionExcel.Comercial.ExportarDatosExcelComercial Excel = new ExportacionExcel.Comercial.ExportarDatosExcelComercial();
 
         public frmAsistenciaPersonal()
         {
@@ -79,6 +80,10 @@ namespace pl_Gurkas.Vista.Comercial.ReporteComercial
         private void cboTurno_Click(object sender, EventArgs e)
         {
             string cod_unidad = cboUnidad.SelectedValue.ToString();
+            string nombre_unidad = cboUnidad.GetItemText(cboUnidad.SelectedItem);
+            string fi = dtpFechaInicio.Value.Date.ToString("dd-MM-yyyy");
+            string ff = dtpFechaFin.Value.Date.ToString("dd-MM-yyyy");
+            Excel.ExportarDatosExcelAsistenciaPersonalComercial(dgvAsistenciaPersonal, progressBar1, nombre_unidad, fi, ff);
             modulo.auditoriaFunciones("Comercial", "Excel", "Generar excel de la Asistencia de personal de la unidad  : " + cod_unidad);
         }
     }

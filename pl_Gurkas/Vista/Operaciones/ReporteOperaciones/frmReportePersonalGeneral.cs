@@ -15,7 +15,7 @@ namespace pl_Gurkas.Vista.Operaciones.ReporteOperaciones
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.LlenadoDeDatos Llenadocbo = new Datos.LlenadoDeDatos();
-        Vista.CentroControl.ExportacionExcelCC.ExcelCC Excel = new Vista.CentroControl.ExportacionExcelCC.ExcelCC();
+        ExportacionExcel.Operaciones.ExportarDataExcelOperaciones Excel = new ExportacionExcel.Operaciones.ExportarDataExcelOperaciones();
         Datos.AuditoriaModulos modulo = new Datos.AuditoriaModulos();
 
         public frmReportePersonalGeneral()
@@ -115,6 +115,10 @@ namespace pl_Gurkas.Vista.Operaciones.ReporteOperaciones
         private void btnExcel_Click(object sender, EventArgs e)
         {
             string cod_empleado = cboempleadoActivo.SelectedValue.ToString();
+            string nombre_empleado = cboempleadoActivo.GetItemText(cboempleadoActivo.SelectedItem);
+            string fi = dtpFechaInicio.Value.Date.ToString("dd-MM-yyyy");
+            string ff = dtpFechaFin.Value.Date.ToString("dd-MM-yyyy");
+            Excel.ExportarDatosExcelAsistencia(dgvConsultarAsistenciaPersonal, progressBar1, nombre_empleado, fi, ff);
             modulo.auditoriaFunciones("Operaciones", "Excel", "Excel de asistencia de personal Completo: " + cod_empleado);
         }
     }

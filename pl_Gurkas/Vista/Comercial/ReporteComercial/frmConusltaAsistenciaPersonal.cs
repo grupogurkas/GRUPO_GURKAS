@@ -121,6 +121,7 @@ namespace pl_Gurkas.Vista.Comercial.ReporteComercial
         private void btnExcel_Click(object sender, EventArgs e)
         {
             string cod_empleado = cboempleadoActivo.SelectedValue.ToString();
+
             modulo.auditoriaFunciones("Comercial", "Excel", "Excel de Asistencia del personal  : " + cod_empleado);
         }
     }

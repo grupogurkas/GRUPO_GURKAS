@@ -62,6 +62,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
             this.btnExcel.Text = "Excel";
             this.btnExcel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExcel.UseVisualStyleBackColor = true;
+            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
             // 
             // dgvRegistrarPorSede
             // 

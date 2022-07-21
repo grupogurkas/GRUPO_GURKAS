@@ -14,8 +14,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteCentroControl
     public partial class frmBloqueosPersonal : Form
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.frmLlenadoDeDatosCentroControl Llenadocbo = new Datos.frmLlenadoDeDatosCentroControl();
-        Vista.CentroControl.ExportacionExcelCC.ExcelCC Excel = new Vista.CentroControl.ExportacionExcelCC.ExcelCC();
+        ExportacionExcel.CentroControl.ExportarDatosExcelCentroControl Excel = new ExportacionExcel.CentroControl.ExportarDatosExcelCentroControl();
         public frmBloqueosPersonal()
         {
             InitializeComponent();
@@ -66,5 +65,6 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteCentroControl
         {
             Excel.ExportarDatosBajasCentroControl(dgvMarcacionFechaTurno, progressBar1);
         }
+
     }
 }

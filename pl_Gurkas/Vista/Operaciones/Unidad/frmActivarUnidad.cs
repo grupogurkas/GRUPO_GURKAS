@@ -14,7 +14,6 @@ namespace pl_Gurkas.Vista.Operaciones.Unidad
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.LlenadoDeDatosOperaciones Llenadocbo = new Datos.LlenadoDeDatosOperaciones();
-        Vista.CentroControl.ExportacionExcelCC.ExcelCC Excel = new Vista.CentroControl.ExportacionExcelCC.ExcelCC();
         Datos.Actualizar Actualizar = new Datos.Actualizar();
         Datos.AuditoriaModulos modulo = new Datos.AuditoriaModulos();
         public frmActivarUnidad()

@@ -62,6 +62,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
             this.cboTurno.Text = "Excel";
             this.cboTurno.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.cboTurno.UseVisualStyleBackColor = true;
+            this.cboTurno.Click += new System.EventHandler(this.cboTurno_Click);
             // 
             // dgvPersonalSinMarcacion
             // 
