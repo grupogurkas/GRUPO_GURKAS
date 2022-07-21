@@ -115,6 +115,8 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.txtmes = new System.Windows.Forms.TextBox();
             this.cboUnidad = new System.Windows.Forms.ComboBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -142,8 +144,6 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.txtCostoTotal = new System.Windows.Forms.TextBox();
             this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -1056,6 +1056,25 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Ingreso Producto";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(7, 100);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(61, 30);
+            this.label13.TabIndex = 276;
+            this.label13.Text = "Fecha de \r\nIngreso:";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.Highlight;
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(108, 110);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(114, 20);
+            this.dateTimePicker1.TabIndex = 275;
+            // 
             // txtmes
             // 
             this.txtmes.Location = new System.Drawing.Point(478, 62);
@@ -1311,25 +1330,6 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = true;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(7, 100);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(61, 30);
-            this.label13.TabIndex = 276;
-            this.label13.Text = "Fecha de \r\nIngreso:";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.Highlight;
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(108, 110);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(114, 20);
-            this.dateTimePicker1.TabIndex = 275;
             // 
             // frmKardex
             // 
