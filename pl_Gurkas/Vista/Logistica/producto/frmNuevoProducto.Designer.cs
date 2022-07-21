@@ -122,6 +122,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.dtpAdquisicionCamisas = new System.Windows.Forms.DateTimePicker();
             this.label26 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.btnNuevoCalzado = new System.Windows.Forms.Button();
             this.btnBuscarCalzado = new System.Windows.Forms.Button();
@@ -529,7 +530,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label196 = new System.Windows.Forms.Label();
             this.dtpFechaAdArmamento = new System.Windows.Forms.DateTimePicker();
             this.label197 = new System.Windows.Forms.Label();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.btcPanel.SuspendLayout();
             this.tbpTecnologico.SuspendLayout();
@@ -545,6 +545,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.groupBox7.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -586,7 +587,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.groupBox23.SuspendLayout();
             this.groupBox24.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -700,7 +700,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btcPanel.Controls.Add(this.tabPage6);
             this.btcPanel.Controls.Add(this.tabPage8);
             this.btcPanel.Controls.Add(this.tabPage9);
-            this.btcPanel.Location = new System.Drawing.Point(19, 60);
+            this.btcPanel.Location = new System.Drawing.Point(27, 60);
             this.btcPanel.Name = "btcPanel";
             this.btcPanel.SelectedIndex = 0;
             this.btcPanel.Size = new System.Drawing.Size(1311, 565);
@@ -1592,6 +1592,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Calzado";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::pl_Gurkas.Properties.Resources.png;
+            this.pictureBox16.Location = new System.Drawing.Point(1110, 60);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(167, 196);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox16.TabIndex = 172;
+            this.pictureBox16.TabStop = false;
             // 
             // dataGridView3
             // 
@@ -5819,16 +5829,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label197.TabIndex = 152;
             this.label197.Text = "Fecha Adquisicion:";
             // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Image = global::pl_Gurkas.Properties.Resources.png;
-            this.pictureBox16.Location = new System.Drawing.Point(1110, 60);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(167, 196);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox16.TabIndex = 172;
-            this.pictureBox16.TabStop = false;
-            // 
             // frmNuevoProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -5863,6 +5863,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox5.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
@@ -5933,7 +5934,6 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox23.PerformLayout();
             this.groupBox24.ResumeLayout(false);
             this.groupBox24.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.ResumeLayout(false);
 
         }
