@@ -14,11 +14,8 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
     public partial class frmReporteGenrenalPersonal : Form
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
         Datos.LLenadoDatosRRHH Llenadocbo = new Datos.LLenadoDatosRRHH();
-        Datos.registrar registrar = new Datos.registrar();
-        Datos.Actualizar actualizar = new Datos.Actualizar();
-        Datos.ExportarExcel Excel = new Datos.ExportarExcel();
+        ExportacionExcel.RRHH.ExportarDataExcelRRHH Excel = new ExportacionExcel.RRHH.ExportarDataExcelRRHH();
 
         public frmReporteGenrenalPersonal()
         {
@@ -540,7 +537,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
 
         private void btnExcel_Click(object sender, EventArgs e)
         {
-            Excel.ExportarDatosBarra(dgvReporteGeneral, progressBar1);
+            Excel.ExportarDatosBarraGeneral(dgvReporteGeneral, progressBar1);
         }
 
         private void button1_Click(object sender, EventArgs e)

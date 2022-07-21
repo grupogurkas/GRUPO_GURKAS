@@ -14,11 +14,8 @@ namespace pl_Gurkas.Vista.Planilla.ReportePlanilla
     public partial class frmHistorialDatosEmpleado : Form
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
         Datos.LlenadoDatosPlanilla Llenadocbo = new Datos.LlenadoDatosPlanilla();
-        Datos.registrar registrar = new Datos.registrar();
-        Datos.Actualizar actualizar = new Datos.Actualizar();
-        Vista.Planilla.ExportacionExcelPlanilla.ExcelPlanilla ExcelPlanilla = new ExportacionExcelPlanilla.ExcelPlanilla();
+       
         public frmHistorialDatosEmpleado()
         {
             InitializeComponent();

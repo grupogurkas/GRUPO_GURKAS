@@ -14,11 +14,8 @@ namespace pl_Gurkas.Vista.Planilla.ReportePlanilla
     public partial class frmBajasPersonal : Form
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
         Datos.LlenadoDatosPlanilla Llenadocbo = new Datos.LlenadoDatosPlanilla();
-        Datos.registrar registrar = new Datos.registrar();
-        Datos.Actualizar actualizar = new Datos.Actualizar();
-        Vista.Planilla.ExportacionExcelPlanilla.ExcelPlanilla ExcelPlanilla = new ExportacionExcelPlanilla.ExcelPlanilla();
+        ExportacionExcel.Planillas.ExportacionDeDatosPlanillas Excel = new ExportacionExcel.Planillas.ExportacionDeDatosPlanillas();
         public frmBajasPersonal()
         {
             InitializeComponent();
@@ -103,7 +100,18 @@ namespace pl_Gurkas.Vista.Planilla.ReportePlanilla
 
         private void btnExcel_Click(object sender, EventArgs e)
         {
-            ExcelPlanilla.ExportarDatosBarra(dgvFaltasJustificadas, progressBar1);
+            string nombre_unidad = cboEmpresa.GetItemText(cboEmpresa.SelectedItem);
+            string fi = dtpFechaInicio.Value.Date.ToString("dd-MM-yyyy");
+            string ff = dtpFehcaFin.Value.Date.ToString("dd-MM-yyyy");
+            Excel.ExportarDatosBajasPlanillasExcel(dgvFaltasJustificadas, progressBar1, nombre_unidad, fi, ff);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string nombre_unidad = cbounidadplanilla.GetItemText(cbounidadplanilla.SelectedItem);
+            string fi = fechainicio.Value.Date.ToString("dd-MM-yyyy");
+            string ff = fechafin.Value.Date.ToString("dd-MM-yyyy");
+            Excel.ExportarDatosBajasPlanillasExcel(dgvFaltasJustificadas, progressBar1, nombre_unidad, fi, ff);
         }
     }
 }
