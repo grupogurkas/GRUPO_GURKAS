@@ -23,10 +23,6 @@ namespace pl_Gurkas.Vista.CentroControl
 
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.frmLlenadoDeDatosCentroControl Llenadocbo = new Datos.frmLlenadoDeDatosCentroControl();
-        Datos.ExportarExcel Excel = new Datos.ExportarExcel();
-        Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
-        Datos.registrar Registrar = new Datos.registrar();
-        Datos.Actualizar Actualizar = new Datos.Actualizar();
         Datos.agregarDatosMysql Registrarmysql = new Datos.agregarDatosMysql();
         public frmTardanza()
         {

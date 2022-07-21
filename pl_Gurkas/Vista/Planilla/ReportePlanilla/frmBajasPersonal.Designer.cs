@@ -48,6 +48,7 @@ namespace pl_Gurkas.Vista.Planilla.ReportePlanilla
             this.dtpFehcaFin = new System.Windows.Forms.DateTimePicker();
             this.dtpFechaInicio = new System.Windows.Forms.DateTimePicker();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFaltasJustificadas)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -55,6 +56,7 @@ namespace pl_Gurkas.Vista.Planilla.ReportePlanilla
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.cbounidadplanilla);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label1);
@@ -62,9 +64,9 @@ namespace pl_Gurkas.Vista.Planilla.ReportePlanilla
             this.groupBox2.Controls.Add(this.fechafin);
             this.groupBox2.Controls.Add(this.fechainicio);
             this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Location = new System.Drawing.Point(578, 12);
+            this.groupBox2.Location = new System.Drawing.Point(644, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(522, 82);
+            this.groupBox2.Size = new System.Drawing.Size(571, 82);
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Detalla de Faltas Injustificadas";
@@ -161,11 +163,10 @@ namespace pl_Gurkas.Vista.Planilla.ReportePlanilla
             this.btnExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcel.Image = global::pl_Gurkas.Properties.Resources.Excel_32;
             this.btnExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExcel.Location = new System.Drawing.Point(1106, 22);
+            this.btnExcel.Location = new System.Drawing.Point(561, 18);
             this.btnExcel.Name = "btnExcel";
-            this.btnExcel.Size = new System.Drawing.Size(109, 53);
+            this.btnExcel.Size = new System.Drawing.Size(43, 53);
             this.btnExcel.TabIndex = 16;
-            this.btnExcel.Text = "Excel";
             this.btnExcel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExcel.UseVisualStyleBackColor = true;
             this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
@@ -175,13 +176,14 @@ namespace pl_Gurkas.Vista.Planilla.ReportePlanilla
             this.groupBox1.Controls.Add(this.cboEmpresa);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.btnExcel);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.dtpFehcaFin);
             this.groupBox1.Controls.Add(this.dtpFechaInicio);
             this.groupBox1.Controls.Add(this.btnBuscar);
             this.groupBox1.Location = new System.Drawing.Point(24, 8);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(561, 82);
+            this.groupBox1.Size = new System.Drawing.Size(614, 82);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalla de Faltas Injustificadas";
@@ -257,6 +259,19 @@ namespace pl_Gurkas.Vista.Planilla.ReportePlanilla
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = global::pl_Gurkas.Properties.Resources.Excel_32;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(522, 14);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(43, 53);
+            this.button2.TabIndex = 48;
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // frmBajasPersonal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -265,7 +280,6 @@ namespace pl_Gurkas.Vista.Planilla.ReportePlanilla
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.dgvFaltasJustificadas);
-            this.Controls.Add(this.btnExcel);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmBajasPersonal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -301,5 +315,6 @@ namespace pl_Gurkas.Vista.Planilla.ReportePlanilla
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.ComboBox cboEmpresa;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button2;
     }
 }

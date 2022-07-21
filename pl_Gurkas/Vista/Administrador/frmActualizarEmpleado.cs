@@ -15,9 +15,7 @@ namespace pl_Gurkas.Vista.Administrador
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.LlenadoDeDatos Llenadocbo = new Datos.LlenadoDeDatos();
-        Datos.ExportarExcel Excel = new Datos.ExportarExcel();
         Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
-        Datos.registrar Registrar = new Datos.registrar();
         Datos.Actualizar Actualizar = new Datos.Actualizar();
         public frmActualizarEmpleado()
         {

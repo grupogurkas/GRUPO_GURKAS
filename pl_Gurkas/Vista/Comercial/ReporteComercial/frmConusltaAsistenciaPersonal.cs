@@ -16,7 +16,7 @@ namespace pl_Gurkas.Vista.Comercial.ReporteComercial
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.LlenadoDeDatosComercial Llenadocbo = new Datos.LlenadoDeDatosComercial();
         Datos.AuditoriaModulos modulo = new Datos.AuditoriaModulos();
-
+        ExportacionExcel.Comercial.ExportarDatosExcelComercial Excel = new ExportacionExcel.Comercial.ExportarDatosExcelComercial();
         public frmConusltaAsistenciaPersonal()
         {
             InitializeComponent();
@@ -121,6 +121,10 @@ namespace pl_Gurkas.Vista.Comercial.ReporteComercial
         private void btnExcel_Click(object sender, EventArgs e)
         {
             string cod_empleado = cboempleadoActivo.SelectedValue.ToString();
+            string nombre_empleado = cboempleadoActivo.GetItemText(cboempleadoActivo.SelectedItem);
+            string fi = dtpFechaInicio.Value.Date.ToString("dd-MM-yyyy");
+            string ff = dtpFechaFin.Value.Date.ToString("dd-MM-yyyy");
+            Excel.ExportarDatosExcelAsistencia(dgvConsultarAsistenciaPersonal, progressBar1, nombre_empleado, fi, ff);
 
             modulo.auditoriaFunciones("Comercial", "Excel", "Excel de Asistencia del personal  : " + cod_empleado);
         }

@@ -18,7 +18,7 @@ namespace pl_Gurkas.Vista.Planilla.ReportePlanilla
         Datos.LlenadoDatosPlanilla Llenadocbo = new Datos.LlenadoDatosPlanilla();
         Datos.registrar registrar = new Datos.registrar();
         Datos.Actualizar actualizar = new Datos.Actualizar();
-        Vista.Planilla.ExportacionExcelPlanilla.ExcelPlanilla ExcelPlanilla = new ExportacionExcelPlanilla.ExcelPlanilla();
+        ExportacionExcel.Planillas.ExportacionDeDatosPlanillas Excel = new ExportacionExcel.Planillas.ExportacionDeDatosPlanillas();
         public frmDatosGeneralesPlanilla()
         {
             InitializeComponent();
@@ -235,7 +235,20 @@ namespace pl_Gurkas.Vista.Planilla.ReportePlanilla
 
         private void btnExcel_Click(object sender, EventArgs e)
         {
-            ExcelPlanilla.ExportarDatosBarra(dgvDatosLaboralesGneral, progressBar1);
+            string nombre_unidad = cboempleadoActivo.GetItemText(cboempleadoActivo.SelectedItem);
+            Excel.ExportarDatosPersonalPlanillasExcel(dgvDatosLaboralesGneral, progressBar1, nombre_unidad);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string nombre_unidad = cboEmpresa.GetItemText(cboEmpresa.SelectedItem);
+            Excel.ExportarDatosPersonalPlanillasExcel(dgvDatosLaboralesGneral, progressBar1, nombre_unidad);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string nombre_unidad = cboUnidad.GetItemText(cboUnidad.SelectedItem);
+            Excel.ExportarDatosPersonalPlanillasExcel(dgvDatosLaboralesGneral, progressBar1, nombre_unidad);
         }
     }
 }

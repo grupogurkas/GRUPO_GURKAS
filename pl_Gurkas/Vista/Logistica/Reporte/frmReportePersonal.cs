@@ -15,7 +15,7 @@ namespace pl_Gurkas.Vista.Logistica.Reporte
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
-        Datos.ExportarExcel Excel = new Datos.ExportarExcel();
+        ExportacionExcel.Logistica.ExportarDataExcelLogistica Excel = new ExportacionExcel.Logistica.ExportarDataExcelLogistica();
         public frmReportePersonal()
         {
             InitializeComponent();
