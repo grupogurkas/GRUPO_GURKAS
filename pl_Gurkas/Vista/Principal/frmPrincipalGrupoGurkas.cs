@@ -943,5 +943,11 @@ namespace pl_Gurkas.Vista.Principal
             controlvistaformulario.ControlVista(this, new Vista.Logistica.Inventario.frmKardex());
             modulo.auditoria("Logistica", "Almacen", "Reporte", "kardex");
         }
+
+        private void asistenciaGeneralDePersonalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Operaciones.ReporteOperaciones.frmReportePersonalGeneral());
+            modulo.auditoria("Centro Control", "Reporte", "Modulo de asistencia personal completo", "");
+        }
     }
 }
