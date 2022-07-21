@@ -14,10 +14,7 @@ namespace pl_Gurkas.Vista.Comercial.ReporteComercial
     public partial class frmAsistenciaPersonal : Form
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
         Datos.LlenadoDeDatosComercial Llenadocbo = new Datos.LlenadoDeDatosComercial();
-        Datos.registrar registrar = new Datos.registrar();
-        Datos.Actualizar actualizar = new Datos.Actualizar();
         Datos.AuditoriaModulos modulo = new Datos.AuditoriaModulos();
         ExportacionExcel.Comercial.ExportarDatosExcelComercial Excel = new ExportacionExcel.Comercial.ExportarDatosExcelComercial();
 
