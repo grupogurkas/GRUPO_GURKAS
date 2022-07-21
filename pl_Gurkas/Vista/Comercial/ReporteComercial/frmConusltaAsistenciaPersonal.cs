@@ -125,6 +125,7 @@ namespace pl_Gurkas.Vista.Comercial.ReporteComercial
             string fi = dtpFechaInicio.Value.Date.ToString("dd-MM-yyyy");
             string ff = dtpFechaFin.Value.Date.ToString("dd-MM-yyyy");
             Excel.ExportarDatosExcelAsistencia(dgvConsultarAsistenciaPersonal, progressBar1, nombre_empleado, fi, ff);
+
             modulo.auditoriaFunciones("Comercial", "Excel", "Excel de Asistencia del personal  : " + cod_empleado);
         }
     }
