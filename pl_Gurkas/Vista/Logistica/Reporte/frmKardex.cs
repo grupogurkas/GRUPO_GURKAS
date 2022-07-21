@@ -30,7 +30,18 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             txtUsuarioEntrega.Enabled = false;
             string nombre_user = Datos.DatosUsuario._usuario;
             txtUsuarioEntrega.Text = nombre_user;
-
+            DateTime fecha_actual = DateTime.Now;
+            //string dia = Convert.ToString(fecha_actual.Day);
+            string mes = Convert.ToString(fecha_actual.Month);
+            string año = Convert.ToString(fecha_actual.Year);
+            txtanio.Text = año;
+            txtmes.Text = mes;
+            txtCantidad.Enabled = false;
+            txtanio.Enabled = false;
+            txtmes.Enabled = false;
+            txtCostoTotal.Enabled = false;
+            Llenadocbo.ObtenerUnidadRRHH(cboUnidad);
+            Llenadocbo.ObtenerEmpresa(cboEmpresa);
 
         }
 
@@ -54,16 +65,16 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
         {
             if(cboProductos.SelectedValue.ToString() != null)
             {
-               /* try
+                try
                 {
                     string cod_producto = cboProductos.SelectedValue.ToString();
 
-                    SqlCommand comando = new SqlCommand("select *from t_proveedor where cod_proveedor = '" + cod_provedor + "'", conexion.conexionBD());
+                    SqlCommand comando = new SqlCommand("select * from T_MAE_PRODUCTO where COD_PRODUCTO_MATERIAL = '" + cod_producto + "'", conexion.conexionBD());
 
                     SqlDataReader recorre = comando.ExecuteReader();
                     while (recorre.Read())
                     {
-                       // txtProveedor.Text = recorre["nomb_proveedor"].ToString();
+                       txtCantidad.Text = recorre["STOCK_ACTUAL"].ToString();
                      ///   txtruc.Text = recorre["ruc"].ToString();
                      //   txtNombreProveedor.Text = recorre["nomb_contacto"].ToString();
                     //    txtDireccion.Text = recorre["direccion"].ToString();
@@ -75,7 +86,29 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
                 catch (Exception err)
                 {
                     MessageBox.Show("No se encontro ningun registro \n\n" + err, "ERROR");
-                }*/
+                }
+            }
+        }
+
+        private void cboUnidad_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboUnidad.SelectedValue.ToString() != null)
+            {
+                string cod_unidad = cboUnidad.SelectedValue.ToString();
+                Llenadocbo.ObtenerSedeLogistica(cboSede, cod_unidad);
+            }
+
+        }
+
+        private void textBox12_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCantidad.Text != "" && txtCostoUnit.Text != "")
+            {
+                double n1, n2, r;
+                n1 = Convert.ToDouble(txtCantidad.Text);
+                n2 = Convert.ToDouble(txtCostoUnit.Text);
+                r = n1 * n2;
+                txtCostoTotal.Text = r.ToString();
             }
         }
     }
