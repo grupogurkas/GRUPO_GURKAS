@@ -111,5 +111,10 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
                 txtCostoTotal.Text = r.ToString();
             }
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
