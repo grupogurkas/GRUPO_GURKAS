@@ -253,7 +253,6 @@
     <Compile Include="Datos\DatosUsuario.cs" />
     <Compile Include="Datos\eliminar.cs" />
     <Compile Include="Datos\EmpresaID.cs" />
-    <Compile Include="Datos\frmLlenadoDeDatosCentroControl.cs" />
     <Compile Include="Datos\LimpiarDatos.cs" />
     <Compile Include="Datos\LlenadoDatos\llenadoDatosLogistica.cs" />
     <Compile Include="Datos\LlenadoDatos\LlenadoDatosPlanilla.cs" />
