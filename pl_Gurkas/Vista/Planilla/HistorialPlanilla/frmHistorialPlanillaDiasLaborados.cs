@@ -14,7 +14,7 @@ namespace pl_Gurkas.Vista.Planilla.HistorialPlanilla
     public partial class frmHistorialPlanillaDiasLaborados : Form
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.LlenadoDatosPlanilla Llenadocbo = new Datos.LlenadoDatosPlanilla();
+        Datos.LlenadoDatos.LlenadoDatosPlanilla Llenadocbo = new Datos.LlenadoDatos.LlenadoDatosPlanilla();
         ExportacionExcel.Planillas.ExportacionDeDatosPlanillas Excel = new ExportacionExcel.Planillas.ExportacionDeDatosPlanillas();
         public frmHistorialPlanillaDiasLaborados()
         {

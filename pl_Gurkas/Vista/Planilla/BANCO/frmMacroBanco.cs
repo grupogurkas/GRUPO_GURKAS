@@ -14,7 +14,7 @@ namespace pl_Gurkas.Vista.Planilla.BANCO
     public partial class frmMacroBanco : Form
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.LlenadoDatosPlanilla Llenadocbo = new Datos.LlenadoDatosPlanilla();
+        Datos.LlenadoDatos.LlenadoDatosPlanilla Llenadocbo = new Datos.LlenadoDatos.LlenadoDatosPlanilla();
         ExportacionExcel.Planillas.ExportacionDeDatosPlanillas Excel = new ExportacionExcel.Planillas.ExportacionDeDatosPlanillas();
 
         public frmMacroBanco()

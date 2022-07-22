@@ -14,8 +14,7 @@ namespace pl_Gurkas.Vista.Planilla.ReportePlanilla
     public partial class frmHistorialDatosEmpleado : Form
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.LlenadoDatosPlanilla Llenadocbo = new Datos.LlenadoDatosPlanilla();
-       
+        Datos.LlenadoDatos.LlenadoDatosPlanilla Llenadocbo = new Datos.LlenadoDatos.LlenadoDatosPlanilla();
         public frmHistorialDatosEmpleado()
         {
             InitializeComponent();

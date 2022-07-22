@@ -15,7 +15,7 @@ namespace pl_Gurkas.Vista.RRHH
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
-        Datos.LLenadoDatosRRHH Llenadocbo = new Datos.LLenadoDatosRRHH();
+        Datos.LlenadoDatos.LLenadoDatosRRHH Llenadocbo = new Datos.LlenadoDatos.LLenadoDatosRRHH();
         Datos.registrar registrar = new Datos.registrar();
         Datos.Actualizar actualizar = new Datos.Actualizar();
         public frmRegistrarDatosLaboralesRRHH()

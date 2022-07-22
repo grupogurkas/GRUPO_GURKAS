@@ -12,10 +12,7 @@ namespace pl_Gurkas.Vista.RRHH
 {
     public partial class frmMoverEmpresa : Form
     {
-        Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
-        Datos.LLenadoDatosRRHH Llenadocbo = new Datos.LLenadoDatosRRHH();
-        Datos.registrar registrar = new Datos.registrar();
+        Datos.LlenadoDatos.LLenadoDatosRRHH Llenadocbo = new Datos.LlenadoDatos.LLenadoDatosRRHH();
         Datos.Actualizar actualizar = new Datos.Actualizar();
 
         public frmMoverEmpresa()

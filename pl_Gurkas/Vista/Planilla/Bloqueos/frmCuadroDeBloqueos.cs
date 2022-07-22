@@ -14,8 +14,6 @@ namespace pl_Gurkas.Vista.Planilla.Bloqueos
     public partial class frmCuadroDeBloqueos : Form
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.LlenadoDatosPlanilla Llenadocbo = new Datos.LlenadoDatosPlanilla();
-        Datos.registrar registrar = new Datos.registrar();
         public frmCuadroDeBloqueos()
         {
             InitializeComponent();

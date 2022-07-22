@@ -16,7 +16,7 @@ namespace pl_Gurkas.Vista.RRHH.RRHHC4
 
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
-        Datos.LLenadoDatosRRHH Llenadocbo = new Datos.LLenadoDatosRRHH();
+        Datos.LlenadoDatos.LLenadoDatosRRHH Llenadocbo = new Datos.LlenadoDatos.LLenadoDatosRRHH();
         Datos.registrar registrar = new Datos.registrar();
         Datos.agregarDatosMysql registrarmysql = new Datos.agregarDatosMysql();
         Datos.Actualizar actualizar = new Datos.Actualizar();

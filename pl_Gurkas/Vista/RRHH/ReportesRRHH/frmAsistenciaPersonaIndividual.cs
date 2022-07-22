@@ -14,7 +14,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
     public partial class frmAsistenciaPersonaIndividual : Form
     {
         ExportacionExcel.RRHH.ExportarDataExcelRRHH Excel = new ExportacionExcel.RRHH.ExportarDataExcelRRHH();
-        Datos.LLenadoDatosRRHH Llenadocbo = new Datos.LLenadoDatosRRHH();
+        Datos.LlenadoDatos.LLenadoDatosRRHH Llenadocbo = new Datos.LlenadoDatos.LLenadoDatosRRHH();
         Datos.DataReportes.RRHH.DataRRHH reporterrhh = new Datos.DataReportes.RRHH.DataRRHH();
         public frmAsistenciaPersonaIndividual()
         {

@@ -15,9 +15,6 @@ namespace pl_Gurkas.Vista.Planilla.Plame
     public partial class frmPlataformaPlame : Form
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.LlenadoDatosPlanilla Llenadocbo = new Datos.LlenadoDatosPlanilla();
-        Datos.registrar registrar = new Datos.registrar();
-
         public frmPlataformaPlame()
         {
             InitializeComponent();

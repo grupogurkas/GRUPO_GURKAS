@@ -14,7 +14,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
     public partial class frmReporteGenrenalPersonal : Form
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.LLenadoDatosRRHH Llenadocbo = new Datos.LLenadoDatosRRHH();
+        Datos.LlenadoDatos.LLenadoDatosRRHH Llenadocbo = new Datos.LlenadoDatos.LLenadoDatosRRHH();
         ExportacionExcel.RRHH.ExportarDataExcelRRHH Excel = new ExportacionExcel.RRHH.ExportarDataExcelRRHH();
 
         public frmReporteGenrenalPersonal()

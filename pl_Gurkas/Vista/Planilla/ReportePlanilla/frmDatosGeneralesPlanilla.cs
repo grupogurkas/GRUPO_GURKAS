@@ -14,10 +14,7 @@ namespace pl_Gurkas.Vista.Planilla.ReportePlanilla
     public partial class frmDatosGeneralesPlanilla : Form
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
-        Datos.LlenadoDatosPlanilla Llenadocbo = new Datos.LlenadoDatosPlanilla();
-        Datos.registrar registrar = new Datos.registrar();
-        Datos.Actualizar actualizar = new Datos.Actualizar();
+        Datos.LlenadoDatos.LlenadoDatosPlanilla Llenadocbo = new Datos.LlenadoDatos.LlenadoDatosPlanilla();
         ExportacionExcel.Planillas.ExportacionDeDatosPlanillas Excel = new ExportacionExcel.Planillas.ExportacionDeDatosPlanillas();
         public frmDatosGeneralesPlanilla()
         {

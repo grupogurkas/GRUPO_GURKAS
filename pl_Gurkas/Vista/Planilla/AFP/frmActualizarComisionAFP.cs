@@ -12,7 +12,7 @@ namespace pl_Gurkas.Vista.Planilla.AFP
 {
     public partial class frmActualizarComisionAFP : Form
     {
-        Datos.LlenadoDatosPlanilla LLenadocbo = new Datos.LlenadoDatosPlanilla();
+        Datos.LlenadoDatos.LlenadoDatosPlanilla LLenadocbo = new Datos.LlenadoDatos.LlenadoDatosPlanilla();
         public frmActualizarComisionAFP()
         {
             InitializeComponent();

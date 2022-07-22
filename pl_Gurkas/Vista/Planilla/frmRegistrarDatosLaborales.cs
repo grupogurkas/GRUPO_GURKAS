@@ -15,7 +15,7 @@ namespace pl_Gurkas.Vista.Planilla
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
-        Datos.LlenadoDatosPlanilla Llenadocbo = new Datos.LlenadoDatosPlanilla();
+        Datos.LlenadoDatos.LlenadoDatosPlanilla Llenadocbo = new Datos.LlenadoDatos.LlenadoDatosPlanilla();
         Datos.registrar registrar = new Datos.registrar();
         Datos.Actualizar actualizar = new Datos.Actualizar();
         public frmRegistrarDatosLaborales()

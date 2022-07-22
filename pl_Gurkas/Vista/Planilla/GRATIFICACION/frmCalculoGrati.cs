@@ -15,7 +15,7 @@ namespace pl_Gurkas.Vista.Planilla.GRATIFICACION
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         ExportacionExcel.Planillas.ExportacionDeDatosPlanillas Excel = new ExportacionExcel.Planillas.ExportacionDeDatosPlanillas();
-        Datos.LlenadoDatosPlanilla Llenadocbo = new Datos.LlenadoDatosPlanilla();
+        Datos.LlenadoDatos.LlenadoDatosPlanilla Llenadocbo = new Datos.LlenadoDatos.LlenadoDatosPlanilla();
         Datos.registrar registrar = new Datos.registrar();
         public frmCalculoGrati()
         {

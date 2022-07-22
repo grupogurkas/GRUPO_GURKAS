@@ -14,22 +14,19 @@ namespace pl_Gurkas.Vista.Planilla.SueldoEmpleado
     public partial class frmSueldoEmpleado : Form
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.LlenadoDatosPlanilla Llenadocbo = new Datos.LlenadoDatosPlanilla();
+        Datos.LlenadoDatos.LlenadoDatosPlanilla Llenadocbo = new Datos.LlenadoDatos.LlenadoDatosPlanilla();
         Datos.registrar registrar = new Datos.registrar();
         Datos.Actualizar actualizar = new Datos.Actualizar();
-
         public frmSueldoEmpleado()
         {
             InitializeComponent();
         }
-
         private void frmSueldoEmpleado_Load(object sender, EventArgs e)
         {
             Llenadocbo.ObtenerUnidadPlanillas(cboUnidad);
             Llenadocbo.ObtenerPuestolPlanilla(cboPuesto);
             txtid.Visible = false;
         }
-
         private void buscar_puesto(string cod_unidad , int cod_puesto)
         {
             SqlCommand comando = new SqlCommand("select * from t_unidad_puesto_sueldo WHERE cod_unidad = '" + cod_unidad + "' and id_puesto_empleado ="+cod_puesto, conexion.conexionBD());
@@ -42,14 +39,12 @@ namespace pl_Gurkas.Vista.Planilla.SueldoEmpleado
                 txtid.Text = recorre["id_unidad_puesto_sueldo"].ToString();
             }
         }
-
         private void btnConsultar_Click(object sender, EventArgs e)
         {
             string cod_Unidad = cboUnidad.SelectedValue.ToString();
             int cod_puesto = cboPuesto.SelectedIndex;
             buscar_puesto(cod_Unidad, cod_puesto);
         }
-
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             try
@@ -67,7 +62,6 @@ namespace pl_Gurkas.Vista.Planilla.SueldoEmpleado
                 MessageBox.Show("" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             try

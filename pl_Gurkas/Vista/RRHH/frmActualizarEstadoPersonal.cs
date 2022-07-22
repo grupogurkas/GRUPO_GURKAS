@@ -14,7 +14,7 @@ namespace pl_Gurkas.Vista.RRHH
     public partial class frmActualizarEstadoPersonal : Form
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.LLenadoDatosRRHH Llenadocbo = new Datos.LLenadoDatosRRHH();
+        Datos.LlenadoDatos.LLenadoDatosRRHH Llenadocbo = new Datos.LlenadoDatos.LLenadoDatosRRHH();
         Datos.Actualizar actualizar = new Datos.Actualizar();
         public frmActualizarEstadoPersonal()
         {
