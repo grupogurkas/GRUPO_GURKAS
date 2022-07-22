@@ -14,7 +14,7 @@ namespace pl_Gurkas.Vista.Administrador
     public partial class frmAsignarUnidadUsuario : Form
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.LlenadoDeDatos Llenadocbo = new Datos.LlenadoDeDatos();
+        Datos.LlenadoDatos.LlenadoDeDatos Llenadocbo = new Datos.LlenadoDatos.LlenadoDeDatos();
         Datos.registrar Registrar = new Datos.registrar();
         Datos.Actualizar Actualizar = new Datos.Actualizar();
         public frmAsignarUnidadUsuario()

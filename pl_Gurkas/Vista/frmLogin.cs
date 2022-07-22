@@ -18,7 +18,7 @@ namespace pl_Gurkas.Vista
             InitializeComponent();
         }
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.LlenadoDeDatos llenadocbo = new Datos.LlenadoDeDatos();
+        Datos.LlenadoDatos.LlenadoDeDatos Llenadocbo = new Datos.LlenadoDatos.LlenadoDeDatos();
         Datos.Login login = new Datos.Login();
         string ip = "", nombrepc = "";
         public void obtenerip_nombre()
@@ -93,7 +93,7 @@ namespace pl_Gurkas.Vista
         private void frmLogin_Load(object sender, EventArgs e)
         {
             obtenerip_nombre();
-            llenadocbo.ObtenerEmpresa(cboEmpresa);
+            Llenadocbo.ObtenerEmpresa(cboEmpresa);
             lblip.Text = ip;
             lblnombre.Text = nombrepc;
             lblip.Visible = false;

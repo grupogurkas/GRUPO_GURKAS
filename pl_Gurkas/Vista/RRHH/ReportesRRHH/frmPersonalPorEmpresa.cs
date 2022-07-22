@@ -13,7 +13,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
 {
     public partial class frmPersonalPorEmpresa : Form
     {
-        Datos.LlenadoDeDatos Llenadocbo = new Datos.LlenadoDeDatos();
+        Datos.LlenadoDatos.LlenadoDeDatos Llenadocbo = new Datos.LlenadoDatos.LlenadoDeDatos();
         ExportacionExcel.RRHH.ExportarDataExcelRRHH Excel = new ExportacionExcel.RRHH.ExportarDataExcelRRHH();
         Datos.DataReportes.RRHH.DataRRHH reporterrhh = new Datos.DataReportes.RRHH.DataRRHH();
         public frmPersonalPorEmpresa()

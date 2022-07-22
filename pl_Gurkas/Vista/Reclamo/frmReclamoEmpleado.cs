@@ -16,7 +16,7 @@ namespace pl_Gurkas.Vista.Reclamo
         Datos.ConexionMysql conexion = new Datos.ConexionMysql();
         Datos.frmLlenadoDeDatosCentroControl Llenadocbo = new Datos.frmLlenadoDeDatosCentroControl();
         Datos.agregarDatosMysql Registrarmysql = new Datos.agregarDatosMysql();
-        Datos.LlenadoDeDatos Llenadocbos = new Datos.LlenadoDeDatos();
+        Datos.LlenadoDatos.LlenadoDeDatos Llenadocbos = new Datos.LlenadoDatos.LlenadoDeDatos();
         Datos.actualizarmysql actualizarmysql = new Datos.actualizarmysql();
         Datos.registrar registrar = new Datos.registrar();
         public frmReclamoEmpleado()

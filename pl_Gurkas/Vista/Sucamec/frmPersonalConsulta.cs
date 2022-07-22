@@ -15,7 +15,7 @@ namespace pl_Gurkas.Vista.Sucamec
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
-        Datos.LlenadoDatosSucamec Llenadocbo = new Datos.LlenadoDatosSucamec();
+        Datos.LlenadoDatos.LlenadoDatosSucamec Llenadocbo = new Datos.LlenadoDatos.LlenadoDatosSucamec();
         Datos.registrar registrar = new Datos.registrar();
         Datos.agregarDatosMysql registrarmysql = new Datos.agregarDatosMysql();
         Datos.Actualizar actualizar = new Datos.Actualizar();
