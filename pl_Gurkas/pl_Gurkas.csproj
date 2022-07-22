@@ -255,13 +255,13 @@
     <Compile Include="Datos\EmpresaID.cs" />
     <Compile Include="Datos\frmLlenadoDeDatosCentroControl.cs" />
     <Compile Include="Datos\LimpiarDatos.cs" />
-    <Compile Include="Datos\LlenadoDatosSucamec.cs" />
     <Compile Include="Datos\LlenadoDatos\llenadoDatosLogistica.cs" />
     <Compile Include="Datos\LlenadoDatos\LlenadoDatosPlanilla.cs" />
     <Compile Include="Datos\LlenadoDatos\LLenadoDatosRRHH.cs" />
     <Compile Include="Datos\LlenadoDatos\LlenadoDatosSucamec.cs" />
     <Compile Include="Datos\LlenadoDatos\LlenadoDeDatos.cs" />
-    <Compile Include="Datos\LlenadoDeDatos.cs" />
+    <Compile Include="Datos\LlenadoDatos\LlenadoDeDatosComercial.cs" />
+    <Compile Include="Datos\LlenadoDatos\LlenadoDeDatosOperaciones.cs" />
     <Compile Include="Datos\LlenadoDeDatosComercial.cs" />
     <Compile Include="Datos\LlenadoDeDatosOperaciones.cs" />
     <Compile Include="Datos\Login.cs" />

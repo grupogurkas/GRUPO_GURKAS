@@ -14,7 +14,7 @@ namespace pl_Gurkas.Vista.Operaciones.ReporteOperaciones
     public partial class frmEstadoPersonal : Form
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.LlenadoDeDatosOperaciones Llenadocbo = new Datos.LlenadoDeDatosOperaciones();
+        Datos.LlenadoDatos.LlenadoDeDatosOperaciones Llenadocbo = new Datos.LlenadoDatos.LlenadoDeDatosOperaciones();
         Datos.Actualizar Actualizar = new Datos.Actualizar();
         Datos.AuditoriaModulos modulo = new Datos.AuditoriaModulos();
         public frmEstadoPersonal()

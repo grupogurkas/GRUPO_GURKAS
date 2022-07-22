@@ -16,7 +16,7 @@ namespace pl_Gurkas.Vista.Comercial
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.ConexionMysql conexions = new Datos.ConexionMysql();
         Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
-        Datos.LlenadoDeDatosComercial Llenadocbo = new Datos.LlenadoDeDatosComercial();
+        Datos.LlenadoDatos.LlenadoDeDatosComercial Llenadocbo = new Datos.LlenadoDatos.LlenadoDeDatosComercial();
         Datos.registrar registrar = new Datos.registrar();
         Datos.Actualizar actualizar = new Datos.Actualizar();
         Datos.agregarDatosMysql registrarMYSQL = new Datos.agregarDatosMysql();

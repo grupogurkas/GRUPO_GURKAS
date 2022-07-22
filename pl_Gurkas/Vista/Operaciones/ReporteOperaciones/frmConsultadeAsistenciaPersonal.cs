@@ -14,7 +14,7 @@ namespace pl_Gurkas.Vista.Operaciones.ReporteOperaciones
     public partial class frmConsultadeAsistenciaPersonal : Form
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.LlenadoDeDatosOperaciones Llenadocbo = new Datos.LlenadoDeDatosOperaciones();
+        Datos.LlenadoDatos.LlenadoDeDatosOperaciones Llenadocbo = new Datos.LlenadoDatos.LlenadoDeDatosOperaciones();
         ExportacionExcel.Operaciones.ExportarDataExcelOperaciones Excel = new ExportacionExcel.Operaciones.ExportarDataExcelOperaciones();
         Datos.AuditoriaModulos modulo = new Datos.AuditoriaModulos();
 

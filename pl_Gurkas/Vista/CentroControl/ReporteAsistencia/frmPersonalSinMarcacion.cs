@@ -14,8 +14,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
     public partial class frmPersonalSinMarcacion : Form
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.frmLlenadoDeDatosCentroControl Llenadocbo = new Datos.frmLlenadoDeDatosCentroControl();
-        Datos.LlenadoDeDatosOperaciones Llenadocboope = new Datos.LlenadoDeDatosOperaciones();
+        Datos.LlenadoDatos.LlenadoDeDatosOperaciones Llenadocboope = new Datos.LlenadoDatos.LlenadoDeDatosOperaciones();
         ExportacionExcel.CentroControl.ExportarDatosExcelCentroControl Excel = new ExportacionExcel.CentroControl.ExportarDatosExcelCentroControl();
 
         public frmPersonalSinMarcacion()

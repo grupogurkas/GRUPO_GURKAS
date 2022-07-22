@@ -14,7 +14,7 @@ namespace pl_Gurkas.Vista.Comercial.ReporteComercial
     public partial class frmDetalleEmpleado : Form
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.LlenadoDeDatosComercial Llenadocbo = new Datos.LlenadoDeDatosComercial();
+        Datos.LlenadoDatos.LlenadoDeDatosComercial Llenadocbo = new Datos.LlenadoDatos.LlenadoDeDatosComercial();
         Datos.AuditoriaModulos modulo = new Datos.AuditoriaModulos();
         public frmDetalleEmpleado()
         {
