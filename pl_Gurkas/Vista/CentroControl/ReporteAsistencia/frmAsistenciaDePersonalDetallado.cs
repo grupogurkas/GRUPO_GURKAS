@@ -14,7 +14,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
     public partial class frmAsistenciaDePersonalDetallado : Form
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.frmLlenadoDeDatosCentroControl Llenadocbo = new Datos.frmLlenadoDeDatosCentroControl();
+        Datos.LlenadoDatos.LlenadoDeDatosCentroControl Llenadocbo = new Datos.LlenadoDatos.LlenadoDeDatosCentroControl();
         ExportacionExcel.CentroControl.ExportarDatosExcelCentroControl Excel = new ExportacionExcel.CentroControl.ExportarDatosExcelCentroControl();
         public frmAsistenciaDePersonalDetallado()
         {

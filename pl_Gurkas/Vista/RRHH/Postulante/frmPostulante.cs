@@ -15,7 +15,7 @@ namespace pl_Gurkas.Vista.RRHH.Postulante
     public partial class frmPostulante : Form
     {
         Datos.ConexionMysql conexion = new Datos.ConexionMysql();
-        Datos.frmLlenadoDeDatosCentroControl Llenadocbo = new Datos.frmLlenadoDeDatosCentroControl();
+        Datos.LlenadoDatos.LlenadoDeDatosCentroControl Llenadocbo = new Datos.LlenadoDatos.LlenadoDeDatosCentroControl();
         Datos.agregarDatosMysql Registrarmysql = new Datos.agregarDatosMysql();
 
         public frmPostulante()

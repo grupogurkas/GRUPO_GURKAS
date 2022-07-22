@@ -260,10 +260,9 @@
     <Compile Include="Datos\LlenadoDatos\LLenadoDatosRRHH.cs" />
     <Compile Include="Datos\LlenadoDatos\LlenadoDatosSucamec.cs" />
     <Compile Include="Datos\LlenadoDatos\LlenadoDeDatos.cs" />
+    <Compile Include="Datos\LlenadoDatos\LlenadoDeDatosCentroControl.cs" />
     <Compile Include="Datos\LlenadoDatos\LlenadoDeDatosComercial.cs" />
     <Compile Include="Datos\LlenadoDatos\LlenadoDeDatosOperaciones.cs" />
-    <Compile Include="Datos\LlenadoDeDatosComercial.cs" />
-    <Compile Include="Datos\LlenadoDeDatosOperaciones.cs" />
     <Compile Include="Datos\Login.cs" />
     <Compile Include="Datos\Proveedor.cs" />
     <Compile Include="Datos\registrar.cs" />

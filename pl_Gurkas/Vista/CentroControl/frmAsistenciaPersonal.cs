@@ -15,7 +15,7 @@ namespace pl_Gurkas.Vista.CentroControl
     public partial class frmAsistenciaPersonal : Form
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.frmLlenadoDeDatosCentroControl Llenadocbo = new Datos.frmLlenadoDeDatosCentroControl();
+        Datos.LlenadoDatos.LlenadoDeDatosCentroControl Llenadocbo = new Datos.LlenadoDatos.LlenadoDeDatosCentroControl();
         Datos.agregarDatosMysql Registrarmysql = new Datos.agregarDatosMysql();
 
         public frmAsistenciaPersonal()
