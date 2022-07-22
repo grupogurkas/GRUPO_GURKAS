@@ -15,9 +15,8 @@ namespace pl_Gurkas.Vista.Logistica.producto
     {
         Datos.DataReportes.Logistica.DataLogistica datosLogistica = new Datos.DataReportes.Logistica.DataLogistica();
         ExportacionExcel.Logistica.ExportarDataExcelLogistica Excel = new ExportacionExcel.Logistica.ExportarDataExcelLogistica();
-        Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
-        Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
-        Datos.Conexiondbo conexion = new Datos.Conexiondbo();
+        Datos.LlenadoDatos.llenadoDatosLogistica Llenadocbo = new Datos.LlenadoDatos.llenadoDatosLogistica();
+
 
 
         private Timer ti;

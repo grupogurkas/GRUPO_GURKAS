@@ -259,6 +259,7 @@
     <Compile Include="Datos\LlenadoDatosPlanilla.cs" />
     <Compile Include="Datos\LLenadoDatosRRHH.cs" />
     <Compile Include="Datos\LlenadoDatosSucamec.cs" />
+    <Compile Include="Datos\LlenadoDatos\llenadoDatosLogistica.cs" />
     <Compile Include="Datos\LlenadoDeDatos.cs" />
     <Compile Include="Datos\LlenadoDeDatosComercial.cs" />
     <Compile Include="Datos\LlenadoDeDatosOperaciones.cs" />

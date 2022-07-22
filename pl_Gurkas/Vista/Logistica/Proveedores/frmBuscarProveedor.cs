@@ -12,7 +12,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
 {
     public partial class frmBuscarProveedor : Form
     {
-        Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
+        Datos.LlenadoDatos.llenadoDatosLogistica Llenadocbo = new Datos.LlenadoDatos.llenadoDatosLogistica();
         Datos.DataReportes.Logistica.DataLogistica datosLogistica = new Datos.DataReportes.Logistica.DataLogistica();
         ExportacionExcel.Logistica.ExportarDataExcelLogistica Excel = new ExportacionExcel.Logistica.ExportarDataExcelLogistica();
         public frmBuscarProveedor()

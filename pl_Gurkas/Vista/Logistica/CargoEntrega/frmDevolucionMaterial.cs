@@ -16,8 +16,9 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         public string _numvale;
         public string _entregad;
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
+        Datos.LlenadoDatos.llenadoDatosLogistica Llenadocbo = new Datos.LlenadoDatos.llenadoDatosLogistica();
         Datos.DataReportes.Logistica.DataLogistica reportelogistica = new Datos.DataReportes.Logistica.DataLogistica();
+
         private Timer ti;
         private DataTable dt;
         int i = 0;

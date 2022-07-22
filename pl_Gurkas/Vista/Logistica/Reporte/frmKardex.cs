@@ -14,10 +14,9 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
     public partial class frmKardex : Form
     {
 
-        Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
+        Datos.LlenadoDatos.llenadoDatosLogistica Llenadocbo = new Datos.LlenadoDatos.llenadoDatosLogistica();
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.ConexionMysql conexionmysql = new Datos.ConexionMysql();
-        Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
+
 
         public frmKardex()
         {

@@ -18,9 +18,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
     {
 
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.AuditoriaModulos modulo = new Datos.AuditoriaModulos();
-        Vista.ControlVistaFormulario controlvistaformulario = new Vista.ControlVistaFormulario();
-        Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
+        Datos.LlenadoDatos.llenadoDatosLogistica Llenadocbo = new Datos.LlenadoDatos.llenadoDatosLogistica();
         private Timer ti;
         private DataTable dt;
         int i = 0;

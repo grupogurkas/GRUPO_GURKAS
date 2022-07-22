@@ -14,8 +14,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
     public partial class frmRegistrarOrden : Form
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
-        Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
+        Datos.LlenadoDatos.llenadoDatosLogistica Llenadocbo = new Datos.LlenadoDatos.llenadoDatosLogistica();
         private Timer ti;
         private DataTable dt;
         int i = 0;

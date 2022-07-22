@@ -12,7 +12,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
 {
     public partial class frmBuscarEmpleado : Form
     {
-        Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
+        Datos.LlenadoDatos.llenadoDatosLogistica Llenadocbo = new Datos.LlenadoDatos.llenadoDatosLogistica();
         public frmBuscarEmpleado()
         {
             InitializeComponent();

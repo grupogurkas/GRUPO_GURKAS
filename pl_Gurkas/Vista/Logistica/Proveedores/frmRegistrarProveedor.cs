@@ -17,7 +17,7 @@ namespace pl_Gurkas.Vista.Logistica.Proveedores
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
-        Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
+        Datos.LlenadoDatos.llenadoDatosLogistica Llenadocbo = new Datos.LlenadoDatos.llenadoDatosLogistica();
         Datos.registrar registrar = new Datos.registrar();
         Datos.Actualizar actualizar = new Datos.Actualizar();
         public frmRegistrarProveedor()

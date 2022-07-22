@@ -14,7 +14,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
     public partial class frmRecuperarMaterial : Form
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
+        Datos.LlenadoDatos.llenadoDatosLogistica Llenadocbo = new Datos.LlenadoDatos.llenadoDatosLogistica();
         Datos.CRUD.Logistica.Actualizar.LogisticaActualizar logisticaActualizar = new Datos.CRUD.Logistica.Actualizar.LogisticaActualizar();
         public frmRecuperarMaterial()
         {

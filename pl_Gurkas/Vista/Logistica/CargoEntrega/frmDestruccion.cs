@@ -14,10 +14,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
     public partial class frmDestruccion : Form
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.ConexionMysql conexionmysql = new Datos.ConexionMysql();
-        Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
-        Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
-        private Timer ti;
+        Datos.LlenadoDatos.llenadoDatosLogistica Llenadocbo = new Datos.LlenadoDatos.llenadoDatosLogistica();
+
         private DataTable dt;
         public string cantidadrest;
         private int numberOfItemsPerPage = 0;

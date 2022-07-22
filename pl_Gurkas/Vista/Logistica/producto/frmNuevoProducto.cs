@@ -16,7 +16,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
 {
     public partial class frmNuevoProducto : Form
     {
-        Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
+        Datos.LlenadoDatos.llenadoDatosLogistica Llenadocbo = new Datos.LlenadoDatos.llenadoDatosLogistica();
         Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.CRUD.Logistica.Insertar.LogisticaInsertar logisticaInsertar = new Datos.CRUD.Logistica.Insertar.LogisticaInsertar();

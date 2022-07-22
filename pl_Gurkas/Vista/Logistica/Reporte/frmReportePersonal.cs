@@ -14,7 +14,7 @@ namespace pl_Gurkas.Vista.Logistica.Reporte
     public partial class frmReportePersonal : Form
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
+        Datos.LlenadoDatos.llenadoDatosLogistica Llenadocbo = new Datos.LlenadoDatos.llenadoDatosLogistica();
         ExportacionExcel.Logistica.ExportarDataExcelLogistica Excel = new ExportacionExcel.Logistica.ExportarDataExcelLogistica();
         public frmReportePersonal()
         {

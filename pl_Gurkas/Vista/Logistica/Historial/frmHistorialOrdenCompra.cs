@@ -12,10 +12,7 @@ namespace pl_Gurkas.Vista.Logistica.Historial
 {
     public partial class frmHistorialOrdenCompra : Form
     {
-        Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        Datos.ConexionMysql conexionmysql = new Datos.ConexionMysql();
-        Datos.LimpiarDatos LimpiarDatos = new Datos.LimpiarDatos();
-        Datos.llenadoDatosLogistica Llenadocbo = new Datos.llenadoDatosLogistica();
+        Datos.LlenadoDatos.llenadoDatosLogistica Llenadocbo = new Datos.LlenadoDatos.llenadoDatosLogistica();
         public frmHistorialOrdenCompra()
         {
             InitializeComponent();
@@ -34,8 +31,6 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             frmBuscarVale.nomb_personal = cboPersonalActivo.GetItemText(cboPersonalActivo.SelectedItem);
 
             frmBuscarVale.ShowDialog();
-
-            
         }
         
         private void btnCerrar_Click(object sender, EventArgs e)
