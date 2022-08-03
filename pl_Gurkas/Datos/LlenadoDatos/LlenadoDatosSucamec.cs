@@ -24,6 +24,8 @@ namespace pl_Gurkas.Datos.LlenadoDatos
                 {
                     cd.Items.Add(dr[0].ToString());
                 }
+
+
                 cd.Items.Insert(0, "--- Seleccione Una Empresa ---");
                 cd.SelectedIndex = 0;
             }
