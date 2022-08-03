@@ -115,10 +115,10 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtIngreso = new System.Windows.Forms.DateTimePicker();
             this.txtmes = new System.Windows.Forms.TextBox();
             this.cboUnidad = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtRuc = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.cboSede = new System.Windows.Forms.ComboBox();
@@ -133,7 +133,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtFactura = new System.Windows.Forms.TextBox();
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
@@ -145,36 +145,38 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.btnBuscar = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvListaProducto = new System.Windows.Forms.DataGridView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListaProducto)).BeginInit();
+            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // cboProductos
@@ -543,7 +545,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = global::pl_Gurkas.Properties.Resources.add_trabajador_32;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(472, 79);
+            this.button2.Location = new System.Drawing.Point(471, 78);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 45);
             this.button2.TabIndex = 276;
@@ -731,7 +733,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.comboBox12.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboBox12.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Location = new System.Drawing.Point(84, 32);
+            this.comboBox12.Location = new System.Drawing.Point(84, 36);
             this.comboBox12.Name = "comboBox12";
             this.comboBox12.Size = new System.Drawing.Size(490, 21);
             this.comboBox12.TabIndex = 236;
@@ -740,7 +742,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             // 
             this.label68.AutoSize = true;
             this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(9, 34);
+            this.label68.Location = new System.Drawing.Point(9, 38);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(59, 15);
             this.label68.TabIndex = 110;
@@ -748,6 +750,8 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label14);
+            this.groupBox2.Controls.Add(this.dateTimePicker1);
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.textBox16);
             this.groupBox2.Controls.Add(this.comboBox6);
@@ -919,7 +923,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             // 
             this.label45.AutoSize = true;
             this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(86, 149);
+            this.label45.Location = new System.Drawing.Point(85, 169);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(21, 15);
             this.label45.TabIndex = 264;
@@ -929,7 +933,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             // 
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(86, 123);
+            this.label46.Location = new System.Drawing.Point(85, 143);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(21, 15);
             this.label46.TabIndex = 263;
@@ -939,7 +943,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             // 
             this.label47.AutoSize = true;
             this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(6, 153);
+            this.label47.Location = new System.Drawing.Point(5, 173);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(71, 15);
             this.label47.TabIndex = 261;
@@ -954,7 +958,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             // 
             // textBox20
             // 
-            this.textBox20.Location = new System.Drawing.Point(108, 96);
+            this.textBox20.Location = new System.Drawing.Point(107, 116);
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(114, 20);
             this.textBox20.TabIndex = 262;
@@ -963,7 +967,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             // 
             this.label48.AutoSize = true;
             this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.Location = new System.Drawing.Point(7, 62);
+            this.label48.Location = new System.Drawing.Point(6, 82);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(61, 30);
             this.label48.TabIndex = 236;
@@ -974,7 +978,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.comboBox9.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboBox9.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(108, 29);
+            this.comboBox9.Location = new System.Drawing.Point(108, 19);
             this.comboBox9.Name = "comboBox9";
             this.comboBox9.Size = new System.Drawing.Size(466, 21);
             this.comboBox9.TabIndex = 236;
@@ -983,7 +987,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             // 
             this.label49.AutoSize = true;
             this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(9, 116);
+            this.label49.Location = new System.Drawing.Point(8, 136);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(53, 30);
             this.label49.TabIndex = 259;
@@ -993,7 +997,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             // 
             this.label50.AutoSize = true;
             this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(9, 34);
+            this.label50.Location = new System.Drawing.Point(9, 24);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(59, 15);
             this.label50.TabIndex = 110;
@@ -1001,7 +1005,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             // 
             // textBox21
             // 
-            this.textBox21.Location = new System.Drawing.Point(108, 122);
+            this.textBox21.Location = new System.Drawing.Point(107, 142);
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(114, 20);
             this.textBox21.TabIndex = 260;
@@ -1010,7 +1014,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             // 
             this.label51.AutoSize = true;
             this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(9, 97);
+            this.label51.Location = new System.Drawing.Point(8, 117);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(59, 15);
             this.label51.TabIndex = 257;
@@ -1018,7 +1022,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             // 
             // textBox22
             // 
-            this.textBox22.Location = new System.Drawing.Point(108, 148);
+            this.textBox22.Location = new System.Drawing.Point(107, 168);
             this.textBox22.Name = "textBox22";
             this.textBox22.Size = new System.Drawing.Size(114, 20);
             this.textBox22.TabIndex = 258;
@@ -1027,7 +1031,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             // 
             this.dateTimePicker2.CalendarMonthBackground = System.Drawing.SystemColors.Highlight;
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(106, 69);
+            this.dateTimePicker2.Location = new System.Drawing.Point(105, 88);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(114, 20);
             this.dateTimePicker2.TabIndex = 233;
@@ -1035,10 +1039,10 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.label13);
-            this.groupBox6.Controls.Add(this.dateTimePicker1);
+            this.groupBox6.Controls.Add(this.dtIngreso);
             this.groupBox6.Controls.Add(this.txtmes);
             this.groupBox6.Controls.Add(this.cboUnidad);
-            this.groupBox6.Controls.Add(this.textBox2);
+            this.groupBox6.Controls.Add(this.txtRuc);
             this.groupBox6.Controls.Add(this.btnAgregar);
             this.groupBox6.Controls.Add(this.label4);
             this.groupBox6.Controls.Add(this.cboSede);
@@ -1053,7 +1057,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.groupBox6.Controls.Add(this.label36);
             this.groupBox6.Controls.Add(this.label37);
             this.groupBox6.Controls.Add(this.label38);
-            this.groupBox6.Controls.Add(this.textBox1);
+            this.groupBox6.Controls.Add(this.txtFactura);
             this.groupBox6.Controls.Add(this.txtCantidad);
             this.groupBox6.Controls.Add(this.label42);
             this.groupBox6.Controls.Add(this.cboProductos);
@@ -1080,14 +1084,14 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.label13.TabIndex = 276;
             this.label13.Text = "Fecha de \r\nIngreso:";
             // 
-            // dateTimePicker1
+            // dtIngreso
             // 
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.Highlight;
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(108, 110);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(114, 20);
-            this.dateTimePicker1.TabIndex = 275;
+            this.dtIngreso.CalendarMonthBackground = System.Drawing.SystemColors.Highlight;
+            this.dtIngreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtIngreso.Location = new System.Drawing.Point(108, 110);
+            this.dtIngreso.Name = "dtIngreso";
+            this.dtIngreso.Size = new System.Drawing.Size(114, 20);
+            this.dtIngreso.TabIndex = 275;
             // 
             // txtmes
             // 
@@ -1107,12 +1111,12 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.cboUnidad.TabIndex = 270;
             this.cboUnidad.SelectedIndexChanged += new System.EventHandler(this.cboUnidad_SelectedIndexChanged);
             // 
-            // textBox2
+            // txtRuc
             // 
-            this.textBox2.Location = new System.Drawing.Point(478, 88);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(103, 20);
-            this.textBox2.TabIndex = 243;
+            this.txtRuc.Location = new System.Drawing.Point(478, 88);
+            this.txtRuc.Name = "txtRuc";
+            this.txtRuc.Size = new System.Drawing.Size(103, 20);
+            this.txtRuc.TabIndex = 243;
             // 
             // btnAgregar
             // 
@@ -1254,12 +1258,12 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.label38.TabIndex = 261;
             this.label38.Text = "Costo Total:";
             // 
-            // textBox1
+            // txtFactura
             // 
-            this.textBox1.Location = new System.Drawing.Point(335, 88);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(95, 20);
-            this.textBox1.TabIndex = 242;
+            this.txtFactura.Location = new System.Drawing.Point(335, 88);
+            this.txtFactura.Name = "txtFactura";
+            this.txtFactura.Size = new System.Drawing.Size(95, 20);
+            this.txtFactura.TabIndex = 242;
             // 
             // txtCantidad
             // 
@@ -1362,7 +1366,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             // 
             this.tabPage1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabPage1.Controls.Add(this.pictureBox1);
-            this.tabPage1.Controls.Add(this.dataGridView2);
+            this.tabPage1.Controls.Add(this.dgvListaProducto);
             this.tabPage1.Controls.Add(this.groupBox6);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -1370,6 +1374,24 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.tabPage1.Size = new System.Drawing.Size(1004, 533);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Kardex Ingreso";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::pl_Gurkas.Properties.Resources.png;
+            this.pictureBox1.Location = new System.Drawing.Point(608, 11);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(386, 248);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 273;
+            this.pictureBox1.TabStop = false;
+            // 
+            // dgvListaProducto
+            // 
+            this.dgvListaProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListaProducto.Location = new System.Drawing.Point(11, 265);
+            this.dgvListaProducto.Name = "dgvListaProducto";
+            this.dgvListaProducto.Size = new System.Drawing.Size(983, 256);
+            this.dgvListaProducto.TabIndex = 272;
             // 
             // tabPage2
             // 
@@ -1383,76 +1405,6 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.tabPage2.Size = new System.Drawing.Size(1004, 533);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Kardex Salida";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.tabControl1);
-            this.panel2.Location = new System.Drawing.Point(23, 62);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1018, 568);
-            this.panel2.TabIndex = 245;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPage3.Controls.Add(this.pictureBox3);
-            this.tabPage3.Controls.Add(this.dataGridView4);
-            this.tabPage3.Controls.Add(this.groupBox3);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1004, 533);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Kardex Saldo";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPage4.Controls.Add(this.pictureBox16);
-            this.tabPage4.Controls.Add(this.dataGridView1);
-            this.tabPage4.Controls.Add(this.groupBox4);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1004, 533);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Resumen";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 260);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(992, 256);
-            this.dataGridView1.TabIndex = 246;
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Image = global::pl_Gurkas.Properties.Resources.png;
-            this.pictureBox16.Location = new System.Drawing.Point(612, 17);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(386, 237);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox16.TabIndex = 271;
-            this.pictureBox16.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::pl_Gurkas.Properties.Resources.png;
-            this.pictureBox1.Location = new System.Drawing.Point(608, 11);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(386, 248);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 273;
-            this.pictureBox1.TabStop = false;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(11, 265);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(983, 256);
-            this.dataGridView2.TabIndex = 272;
             // 
             // pictureBox2
             // 
@@ -1472,6 +1424,19 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.dataGridView3.Size = new System.Drawing.Size(983, 256);
             this.dataGridView3.TabIndex = 274;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage3.Controls.Add(this.pictureBox3);
+            this.tabPage3.Controls.Add(this.dataGridView4);
+            this.tabPage3.Controls.Add(this.groupBox3);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1004, 533);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Kardex Saldo";
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::pl_Gurkas.Properties.Resources.png;
@@ -1489,6 +1454,65 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.Size = new System.Drawing.Size(983, 256);
             this.dataGridView4.TabIndex = 274;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage4.Controls.Add(this.pictureBox16);
+            this.tabPage4.Controls.Add(this.dataGridView1);
+            this.tabPage4.Controls.Add(this.groupBox4);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1004, 533);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Resumen";
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::pl_Gurkas.Properties.Resources.png;
+            this.pictureBox16.Location = new System.Drawing.Point(612, 17);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(386, 237);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox16.TabIndex = 271;
+            this.pictureBox16.TabStop = false;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 260);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(992, 256);
+            this.dataGridView1.TabIndex = 246;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.tabControl1);
+            this.panel2.Location = new System.Drawing.Point(23, 62);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1018, 568);
+            this.panel2.TabIndex = 245;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(7, 47);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(61, 30);
+            this.label14.TabIndex = 277;
+            this.label14.Text = "Fecha de \r\nRegistro:";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.Highlight;
+            this.dateTimePicker1.Enabled = false;
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(105, 57);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(114, 20);
+            this.dateTimePicker1.TabIndex = 276;
             // 
             // frmKardex
             // 
@@ -1518,18 +1542,18 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             this.groupBox6.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListaProducto)).EndInit();
+            this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1549,8 +1573,8 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtRuc;
+        private System.Windows.Forms.TextBox txtFactura;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Label label36;
@@ -1650,7 +1674,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtIngreso;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
@@ -1660,10 +1684,12 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgvListaProducto;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
