@@ -16,8 +16,6 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
 
         Datos.LlenadoDatos.llenadoDatosLogistica Llenadocbo = new Datos.LlenadoDatos.llenadoDatosLogistica();
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
-        private DataTable dt;
-
 
 
         public frmKardex()
@@ -43,25 +41,6 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
             txtCostoTotal.Enabled = false;
             Llenadocbo.ObtenerUnidadRRHH(cboUnidad);
             Llenadocbo.ObtenerEmpresa(cboEmpresa);
-
-            dt = new DataTable();
-            dt.Columns.Add("ID");
-            dt.Columns.Add("Nombre");
-            dt.Columns.Add("Fecha Ingreso");
-            dt.Columns.Add("Cantidad");
-            dt.Columns.Add("Costo Unitario");
-            dt.Columns.Add("Costo Total");
-            dt.Columns.Add("N° Factura");
-            dt.Columns.Add("RUC");
-            dt.Columns.Add("Empresa");
-            dt.Columns.Add("Unidad");
-            dt.Columns.Add("Sede");
-            dgvListaProducto.DataSource = dt;
-            /*DataGridViewButtonColumn btnclm = new DataGridViewButtonColumn();
-            btnclm.Name = "Eliminar";
-            dgvListaProducto.Columns.Add(btnclm);*/
-            dgvListaProducto.RowHeadersVisible = false;
-            dgvListaProducto.AllowUserToAddRows = false;
 
         }
 
@@ -134,38 +113,7 @@ namespace pl_Gurkas.Vista.Logistica.Inventario
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            //string cod_producto = cboProducto.SelectedValue.ToString();
-            string nombre_producto = cboProductos.GetItemText(cboProductos.SelectedItem);
-            DateTime fecha = dtIngreso.Value.Date;
-            string cantidad = txtCantidad.Text;
-            string costounit = txtCostoUnit.Text;
-            string costototal = txtCostoTotal.Text;
-            string factura = txtFactura.Text;
-            string ruc = txtRuc.Text;
-            //string empresa = cboEmpresa.SelectedValue.ToString();
-            string empresa = cboEmpresa.GetItemText(cboEmpresa.SelectedItem);
-            string unidad = cboUnidad.GetItemText(cboUnidad.SelectedItem);
-            string sede = cboSede.GetItemText(cboSede.SelectedItem);
-            int n = dgvListaProducto.Rows.Count;
-            string c = Convert.ToString(n + 1);
-            DataRow row = dt.NewRow();
-            row["ID"] = c;
-            //row["CodProducto"] = cod_producto;
-            row["Nombre"] = nombre_producto;
-            row["Fecha Ingreso"] = fecha;
-            row["Cantidad"] = cantidad;
-            row["Costo Unitario"] = costounit;
-            row["Costo Total"] = costototal;
-            row["N° Factura"] = factura;
-            row["RUC"] = ruc;
-            row["Empresa"] = empresa;
-            row["Unidad"] = unidad;
-            row["Sede"] = sede;
-            dt.Rows.Add(row);
-            if ((n + 1) == 26)
-            {
-                btnAgregar.Enabled = false;
-            }
+
         }
     }
 }
