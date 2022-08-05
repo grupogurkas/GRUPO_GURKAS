@@ -468,7 +468,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
         }
         private void btnImprimir_Click_1(object sender, EventArgs e)
         {
-            if (validar_campos() == true)
+         /*   if (validar_campos() == true)
             {
                 if (this.dgvListaProducto.Rows.Count > 0)
                 {
@@ -477,7 +477,9 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
                 }
                 imprimir();
 
-            }
+            }*/
+
+            imprimir();
         }
 
 

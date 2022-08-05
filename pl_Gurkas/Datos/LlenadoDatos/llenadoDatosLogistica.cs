@@ -987,5 +987,46 @@ namespace pl_Gurkas.Datos.LlenadoDatos
                 MessageBox.Show("No se puede obtener el listado del Utiles de Aseo \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+        public void ObtenerOrdenCompr(ComboBox cd)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("select codigo,num_compra from v_orden_compra", conexiondbo.conexionBD());
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                DataRow fila = dt.NewRow();
+                fila["codigo"] = "---Seleccione una Orden Compra---";
+                dt.Rows.InsertAt(fila, 0);
+                cd.ValueMember = "codigo";
+                cd.DisplayMember = "codigo";
+                cd.DataSource = dt;
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se puede obtener el listado del Utiles de Aseo \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+        public void ObtenerOrdenesComprar(DataGridViewComboBoxColumn cbo)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("select ID_ORDEN_COMPRA,DESP_ORDEN_APRO from T_APROVADO_ORDEN_COMPRA", conexiondbo.conexionBD());
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                DataRow fila = dt.NewRow();
+                fila["DESP_ORDEN_APRO"] = "---";
+                dt.Rows.InsertAt(fila, 0);
+                cbo.ValueMember = "ID_ORDEN_COMPRA";
+                cbo.DisplayMember = "DESP_ORDEN_APRO";
+                cbo.DataSource = dt;
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se puede obtener \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }

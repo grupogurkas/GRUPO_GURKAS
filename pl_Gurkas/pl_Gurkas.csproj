@@ -508,6 +508,12 @@
     <Compile Include="Vista\Logistica\Historial\frmHistorialOrdenCompra.Designer.cs">
       <DependentUpon>frmHistorialOrdenCompra.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Logistica\Ordenes\frmOrdenAprovada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Logistica\Ordenes\frmOrdenAprovada.Designer.cs">
+      <DependentUpon>frmOrdenAprovada.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Logistica\Reporte\frmKardex.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1154,6 +1160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\Historial\frmHistorialOrdenCompra.resx">
       <DependentUpon>frmHistorialOrdenCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Logistica\Ordenes\frmOrdenAprovada.resx">
+      <DependentUpon>frmOrdenAprovada.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\Reporte\frmKardex.resx">
       <DependentUpon>frmKardex.cs</DependentUpon>
