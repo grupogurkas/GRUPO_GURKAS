@@ -24,7 +24,6 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <UpdateUrl>\\192.168.1.13\compartida\SISTEMA_GURKAS\</UpdateUrl>
-    <ApplicationRevision>45</ApplicationRevision>
     <ApplicationRevision>92</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
