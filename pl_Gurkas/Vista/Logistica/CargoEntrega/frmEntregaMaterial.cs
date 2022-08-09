@@ -225,6 +225,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             txtstock.Text = "0";
             txtstockminimo.Text = "0";
             txtstockminimo.Visible = false;
+            txtObservacion.Text = "---";
             string nombre_user = Datos.DatosUsuario._usuario;
             txtUsuarioEntrega.Text = nombre_user;
             timer1.Enabled = true;
@@ -557,7 +558,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             PrintDialog1.ShowHelp = true;
             PrintDialog1.Document = printDocument1;
             DialogResult result = PrintDialog1.ShowDialog();
-            if (result == DialogResult.OK)
+            if (result == DialogResult.OK) 
             {
                 printDocument1.Print();
                 registarvale();

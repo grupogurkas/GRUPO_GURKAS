@@ -1148,6 +1148,9 @@
     <EmbeddedResource Include="Vista\Logistica\CargoEntrega\frmDestruccion.resx">
       <DependentUpon>frmDestruccion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Logistica\CargoEntrega\frmDevoluciondeMaterialFueradelSistema.resx">
+      <DependentUpon>frmDevoluciondeMaterialFueradelSistema.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\CargoEntrega\frmDevolucionMaterial.resx">
       <DependentUpon>frmDevolucionMaterial.cs</DependentUpon>
     </EmbeddedResource>
