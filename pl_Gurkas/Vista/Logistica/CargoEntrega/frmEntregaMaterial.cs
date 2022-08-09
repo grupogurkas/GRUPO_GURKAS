@@ -529,7 +529,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                     {
                         height += dgvListaProducto.Rows[0].Height;
                         e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[0].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(30, height, 10, 10));
-                        e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[1].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(30, height, 30, 20));
+                        e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[1].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(30, height, 30, 30));
                         e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[2].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(77, height, 100, 100));
                         e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[3].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(135, height, 300, 40));
                         e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[4].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(640, height, 100, 100));
@@ -552,7 +552,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private void imprimir()
         {
             
-            System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
+          System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
             PrintDialog1.AllowSomePages = true;
             PrintDialog1.ShowHelp = true;
             PrintDialog1.Document = printDocument1;
@@ -563,7 +563,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                 registarvale();
                 //limpiardatos();
             }
-           // printPreviewDialog1.ShowDialog();
+          //printPreviewDialog1.ShowDialog();
         }
         private void btnCertificadoBasc_Click(object sender, EventArgs e)
         {

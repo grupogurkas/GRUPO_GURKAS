@@ -150,7 +150,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.Controls.Add(this.btnCerrar);
             this.Name = "frmOrdenAprovada";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmOrdenAprovada";
+            this.Text = "frmOrdenAprobada";
             this.Load += new System.EventHandler(this.frmOrdenAprovada_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsistencia)).EndInit();
             this.ResumeLayout(false);
