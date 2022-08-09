@@ -528,9 +528,9 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                     if (numberOfItemsPrintedSoFar <= dgvListaProducto.Rows.Count)
                     {
                         height += dgvListaProducto.Rows[0].Height;
-                        e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[0].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(30, height, 10, 10));
+                        e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[0].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(30, height, 10, 15));
                         e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[1].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(30, height, 30, 30));
-                        e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[2].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(77, height, 100, 100));
+                        e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[2].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(77, height, 100, 110));
                         e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[3].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(135, height, 300, 40));
                         e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[4].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(640, height, 100, 100));
                         e.Graphics.DrawString(dgvListaProducto.Rows[l].Cells[5].FormattedValue.ToString(), dgvListaProducto.Font = new Font("Arial", 6), Brushes.Black, new RectangleF(750, height, 30, 20));
@@ -627,12 +627,19 @@ private void txtInformacionAdicional_TextChanged(object sender, EventArgs e)
                 string COD_EMPLEADO = cboempleadoActivo.SelectedValue.ToString();
                 try
                 {
-                    SqlCommand comando = new SqlCommand("SELECT * FROM T_MAE_PERSONAL WHERE COD_EMPLEADO = '" + COD_EMPLEADO + "'", conexion.conexionBD());
+                    SqlCommand comando = new SqlCommand("SELECT * FROM V_DetallePersonal WHERE COD_EMPLEADO = '" + COD_EMPLEADO + "'", conexion.conexionBD());
 
                     SqlDataReader recorre = comando.ExecuteReader();
                     while (recorre.Read())
                     {
                         lbldni.Text = recorre["DOCT_IDENT"].ToString();
+                        string unidad = recorre["Razon_social"].ToString();
+                        cboUnidad.SelectedIndex = cboUnidad.FindStringExact(unidad);
+                        string sede = recorre["Nombre_sede"].ToString();
+                        cboSede.SelectedIndex = cboSede.FindStringExact(sede);
+                        cboEmpresa.SelectedIndex = 1;
+                        cboTipoPuesto.SelectedIndex = Convert.ToInt32(recorre["ID_PUESTO"].ToString());
+                        cboAreaLaboral.SelectedIndex = 10;
                     }
                 }
                 catch (Exception err)
