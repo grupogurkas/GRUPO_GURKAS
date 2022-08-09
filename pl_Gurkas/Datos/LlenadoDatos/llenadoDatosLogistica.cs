@@ -719,7 +719,7 @@ namespace pl_Gurkas.Datos.LlenadoDatos
         {
             try
             {
-                SqlCommand cmd = new SqlCommand("select Cod_empleado,NOMBRE_COMPLETO from T_MAE_PERSONAL WHERE ID_EMPRESA = " + id_empresa + " order by APELLIDO_PATERNO asc", conexiondbo.conexionBD());
+                SqlCommand cmd = new SqlCommand("select Cod_empleado,NOMBRE_COMPLETO from T_MAE_PERSONAL order by APELLIDO_PATERNO asc", conexiondbo.conexionBD());
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
@@ -843,7 +843,7 @@ namespace pl_Gurkas.Datos.LlenadoDatos
         {
             try
             {
-                SqlCommand cmd = new SqlCommand("SELECT ID_EMPRESA,NOMBRE_EMPRESA FROM T_EMPRESA where ID_EMPRESA = " + id_empresa, conexiondbo.conexionBD());
+                SqlCommand cmd = new SqlCommand("SELECT ID_EMPRESA,NOMBRE_EMPRESA FROM T_EMPRESA", conexiondbo.conexionBD());
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
@@ -886,7 +886,7 @@ namespace pl_Gurkas.Datos.LlenadoDatos
 
             try
             {
-                SqlCommand cmd = new SqlCommand("SELECT COD_UNIDAD,RAZON_SOCIAL FROM T_UNIDAD where ID_ESTADO_UNIDAD = 2 and ID_EMPRESA =" + empresa + " order by RAZON_SOCIAL asc", conexiondbo.conexionBD());
+                SqlCommand cmd = new SqlCommand("SELECT COD_UNIDAD,RAZON_SOCIAL FROM T_UNIDAD  order by RAZON_SOCIAL asc", conexiondbo.conexionBD());
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
