@@ -955,5 +955,11 @@ namespace pl_Gurkas.Vista.Principal
             controlvistaformulario.ControlVista(this, new Vista.Logistica.Ordenes.frmOrdenAprovada());
             modulo.auditoria("Logistica", "Ordenes de Compra aprovada", "Orden Aprovada", "");
         }
+
+        private void ingresoDeMaterialFueraDelSistemaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+             controlvistaformulario.ControlVista(this, new Vista.Logistica.CargoEntrega.frmDevoluciondeMaterialFueradelSistema());
+            modulo.auditoria("Logistica", "Ingreso de Material Fuera del Sistema", "", "");
+        }
     }
 }
