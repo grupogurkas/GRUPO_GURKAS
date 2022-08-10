@@ -136,12 +136,13 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
              int n = dgvListaProducto.Rows.Count;
             string c = Convert.ToString(n + 1);
             DataRow row = dt.NewRow();
-            row["ID"] = c;
-            row["CodProducto"] = cod_producto;
-            row["Nombre"] = nombre_producto;
-            row["CondicionEntrega"] = Condicion_Entrega;
-            row["Cantidad"] = cantidad;
-            row["Observacion"] = observacion;
+           // row["ITEM"] = c;
+            row["COD_PRODUCTO"] = cod_producto;
+            row["DESCRIPCION_PRODUCTO"] = nombre_producto;
+            row["CANTIDAD_ENTREGADA"] = cantidad;
+            row["CANTIDAD_DEVUELTA_FECHA_1"] = cantidad;
+            row["CANTIDAD_DEVUELTA_FECHA_2"] = 0;
+            row["CANTIDAD_PENDIENTE"] = 0;
             dt.Rows.Add(row);
             if ((n + 1) == 26)
             {
@@ -178,13 +179,13 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             ocultar_datos();
             txtInformacionAdicional.Text = "---";
             Llenadocbo.ObtenerTipoPuesto(cboTipoPuesto);
-            //Llenadocbo.ObtenerEstadoProducto(cboEstadoMaterial);
+            Llenadocbo.ObtenerEstadoProductoEntrega(cboEstado);
             Llenadocbo.ObtenerPersonalRRHH(txtEntregado);
             Llenadocbo.ObtenerArea(cboAreaLaboral);
             Llenadocbo.ObtenerProducto(cboProducto);
             Llenadocbo.ObtenerUnidadRRHH(cboUnidad);
             Llenadocbo.ObtenerEmpresa(cboEmpresa);
-
+            cboEstado.SelectedIndex = 2;
             lbldireccion.Visible = false;
             lblemp.Visible = false;
             lblnombrear.Visible = false;
@@ -195,12 +196,13 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             lbldnientr.Visible = false;
 
             dt = new DataTable();
-            dt.Columns.Add("ID");
-            dt.Columns.Add("CodProducto");
-            dt.Columns.Add("Nombre");
-            dt.Columns.Add("CondicionEntrega");
-            dt.Columns.Add("Cantidad");
-            dt.Columns.Add("Observacion");
+           // dt.Columns.Add("ITEM");
+            dt.Columns.Add("COD_PRODUCTO");
+            dt.Columns.Add("DESCRIPCION_PRODUCTO");
+            dt.Columns.Add("CANTIDAD_ENTREGADA");
+            dt.Columns.Add("CANTIDAD_DEVUELTA_FECHA_1");
+            dt.Columns.Add("CANTIDAD_DEVUELTA_FECHA_2");
+            dt.Columns.Add("CANTIDAD_PENDIENTE");
             dgvListaProducto.DataSource = dt;
 
             DataGridViewButtonColumn btnclm = new DataGridViewButtonColumn();
@@ -600,6 +602,11 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         private void btnImprimir_Click(object sender, EventArgs e)
         {
             imprimir();
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
