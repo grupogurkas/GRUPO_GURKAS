@@ -549,19 +549,19 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         }
         private void imprimir()
         {
-           /* System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
-            PrintDialog1.AllowSomePages = true;
-            PrintDialog1.ShowHelp = true;
-            PrintDialog1.Document = printDocument1;
-            DialogResult result = PrintDialog1.ShowDialog();
-            if (result == DialogResult.OK)
-            {
-                //printPreviewDialog1.ShowDialog();
-                printDocument1.Print();
-                agregar_Datos();
-                limpiardatos();
-            }*/
-              printPreviewDialog1.ShowDialog();
+            System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
+             PrintDialog1.AllowSomePages = true;
+             PrintDialog1.ShowHelp = true;
+             PrintDialog1.Document = printDocument1;
+             DialogResult result = PrintDialog1.ShowDialog();
+             if (result == DialogResult.OK)
+             {
+                 //printPreviewDialog1.ShowDialog();
+                 printDocument1.Print();
+                 agregar_Datos();
+                 limpiardatos();
+             }
+           //  printPreviewDialog1.ShowDialog();
         }
 
         private void btnCertificadoBasc_Click(object sender, EventArgs e)
