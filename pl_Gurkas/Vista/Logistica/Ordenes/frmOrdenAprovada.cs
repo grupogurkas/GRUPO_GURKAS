@@ -88,6 +88,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
                             comando.Parameters.AddWithValue("@Precio_Unitario", Convert.ToDecimal(row.Cells["Precio Unitario"].Value));
                             comando.Parameters.AddWithValue("@Precio_Total", Convert.ToDecimal(row.Cells["Precio Total"].Value));
                             comando.Parameters.AddWithValue("@estado_orden", SqlDbType.Int).Value = 2;
+                            comando.Parameters.AddWithValue("@OrdenCompra", Convert.ToString(row.Cells["OrdenCompra"].Value));
                             comando.ExecuteNonQuery();
                         }
                     }
