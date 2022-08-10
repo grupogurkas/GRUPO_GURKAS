@@ -640,5 +640,15 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                 dgvListaProducto.Rows.Remove(dgvListaProducto.CurrentRow);
             }
         }
+
+        private void txtResivido_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEntregado_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
