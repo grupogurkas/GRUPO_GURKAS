@@ -40,6 +40,8 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.label5 = new System.Windows.Forms.Label();
             this.txtResivido = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cboEstado = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtdni_resive = new System.Windows.Forms.TextBox();
             this.txtdni_entrega = new System.Windows.Forms.TextBox();
@@ -85,8 +87,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.label1 = new System.Windows.Forms.Label();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.cboEstado = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -181,6 +181,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.txtResivido.Name = "txtResivido";
             this.txtResivido.Size = new System.Drawing.Size(335, 20);
             this.txtResivido.TabIndex = 233;
+            this.txtResivido.TextChanged += new System.EventHandler(this.txtResivido_TextChanged);
             // 
             // panel1
             // 
@@ -197,6 +198,25 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1332, 554);
             this.panel1.TabIndex = 237;
+            // 
+            // cboEstado
+            // 
+            this.cboEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEstado.FormattingEnabled = true;
+            this.cboEstado.Location = new System.Drawing.Point(739, 16);
+            this.cboEstado.Name = "cboEstado";
+            this.cboEstado.Size = new System.Drawing.Size(246, 21);
+            this.cboEstado.TabIndex = 231;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(679, 17);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(54, 15);
+            this.label15.TabIndex = 230;
+            this.label15.Text = "Estado : ";
             // 
             // groupBox2
             // 
@@ -608,6 +628,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.txtEntregado.Name = "txtEntregado";
             this.txtEntregado.Size = new System.Drawing.Size(335, 20);
             this.txtEntregado.TabIndex = 248;
+            this.txtEntregado.TextChanged += new System.EventHandler(this.txtEntregado_TextChanged);
             // 
             // txtNumValeSalida
             // 
@@ -640,25 +661,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
-            // 
-            // cboEstado
-            // 
-            this.cboEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboEstado.FormattingEnabled = true;
-            this.cboEstado.Location = new System.Drawing.Point(739, 16);
-            this.cboEstado.Name = "cboEstado";
-            this.cboEstado.Size = new System.Drawing.Size(246, 21);
-            this.cboEstado.TabIndex = 231;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(679, 17);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(54, 15);
-            this.label15.TabIndex = 230;
-            this.label15.Text = "Estado : ";
             // 
             // frmDevolucionMaterial
             // 

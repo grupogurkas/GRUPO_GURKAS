@@ -193,7 +193,6 @@ namespace pl_Gurkas.Datos.DataReportes.Logistica
             dt.Columns[6].ColumnName = "CANTIDAD_PENDIENTE";
             return dt;
         }
-
         public DataTable BuscarProveeedorPorEmpresa(int IdEmpresa)
         {
             SqlCommand comando = conexion.conexionBD().CreateCommand();
