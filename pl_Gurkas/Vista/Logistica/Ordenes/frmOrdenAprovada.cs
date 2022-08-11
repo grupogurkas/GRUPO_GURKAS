@@ -72,7 +72,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
 
                 try
                 {
-                    SqlCommand comando = new SqlCommand("SP_registrarAsistencia @Cod_empleado, @cod_unidad, @Cod_sede, @id_empresa, @id_TipoAsistencia,@Cod_turno,@FechaMarcacion,@ID_HORAS_LABORALES,@HoraRegistroMarcacion", conexion.conexionBD());
+                    SqlCommand comando = new SqlCommand("sp_registar_actualzar_stock @Cod_Producto, @cod_orden_compra, @Descripcion_del_Producto, @Cantidad_Solicitada, @Precio_Unitario,@Precio_Total,@estado_orden,@OrdenCompra", conexion.conexionBD());
 
                     foreach (DataGridViewRow row in dgvAsistencia.Rows)
                     {
