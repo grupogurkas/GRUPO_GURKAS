@@ -53,6 +53,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.btnBuscarProductoTecnologia.Text = "Buscar";
             this.btnBuscarProductoTecnologia.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscarProductoTecnologia.UseVisualStyleBackColor = true;
+            this.btnBuscarProductoTecnologia.Click += new System.EventHandler(this.btnBuscarProductoTecnologia_Click);
             // 
             // cboNombreProductoTecnologico
             // 
@@ -86,6 +87,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.btnActualizarProductoTecnologico.Text = "Guardar";
             this.btnActualizarProductoTecnologico.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnActualizarProductoTecnologico.UseVisualStyleBackColor = true;
+            this.btnActualizarProductoTecnologico.Click += new System.EventHandler(this.btnActualizarProductoTecnologico_Click);
             // 
             // btnCerrar
             // 

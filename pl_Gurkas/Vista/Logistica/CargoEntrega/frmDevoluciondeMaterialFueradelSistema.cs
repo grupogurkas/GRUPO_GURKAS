@@ -558,6 +558,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
              {
                  //printPreviewDialog1.ShowDialog();
                  printDocument1.Print();
+
                  agregar_Datos();
                  limpiardatos();
              }
