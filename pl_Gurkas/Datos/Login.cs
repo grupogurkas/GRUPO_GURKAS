@@ -85,7 +85,6 @@ namespace pl_Gurkas.Datos
                             consorcioTecsegur._perfil = _rol;
                             consorcioTecsegur._codrol = _cod_rol;
                             consorcioTecsegur.Show();
-
                             Datos.DatosUsuario._idempresa = cod_empresa;
                             Datos.DatosUsuario._nombreempresa = nombre_empresa;
                             Datos.DatosUsuario._usuario = _nombre;

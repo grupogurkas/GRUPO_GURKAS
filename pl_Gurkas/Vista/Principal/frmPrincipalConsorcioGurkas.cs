@@ -377,7 +377,7 @@ namespace pl_Gurkas.Vista.Principal
 
         private void bajaDePersonalToolStripMenuItem_Click(object sender, EventArgs e)
         {
-                        controlvistaformulario.ControlVista(this, new Vista.Planilla.ReportePlanilla.frmBajasPersonal());
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.ReportePlanilla.frmBajasPersonal());
             modulo.auditoria("Recursos Humanos","Modulo de Reporte","Reporte de Baja de Personal","");
 
         }
