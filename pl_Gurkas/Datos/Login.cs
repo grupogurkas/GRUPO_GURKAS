@@ -79,12 +79,12 @@ namespace pl_Gurkas.Datos
                         {
                             login.Hide();
                             Vista.Principal.frmPrincipalConsorcioTECSEGUR consorcioTecsegur = new Vista.Principal.frmPrincipalConsorcioTECSEGUR();
-                            consorciogurkas._idempresa = cod_empresa;
-                            consorciogurkas._nombreempresa = nombre_empresa;
-                            consorciogurkas._usuario = _nombre;
-                            consorciogurkas._perfil = _rol;
-                            consorciogurkas._codrol = _cod_rol;
-                            consorciogurkas.Show();
+                            consorcioTecsegur._idempresa = cod_empresa;
+                            consorcioTecsegur._nombreempresa = nombre_empresa;
+                            consorcioTecsegur._usuario = _nombre;
+                            consorcioTecsegur._perfil = _rol;
+                            consorcioTecsegur._codrol = _cod_rol;
+                            consorcioTecsegur.Show();
 
                             Datos.DatosUsuario._idempresa = cod_empresa;
                             Datos.DatosUsuario._nombreempresa = nombre_empresa;
