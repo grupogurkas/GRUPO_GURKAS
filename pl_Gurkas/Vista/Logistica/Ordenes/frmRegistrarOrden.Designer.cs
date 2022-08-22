@@ -118,7 +118,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.btnNuevo.Location = new System.Drawing.Point(569, 11);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(103, 46);
-            this.btnNuevo.TabIndex = 239;
+            this.btnNuevo.TabIndex = 10;
             this.btnNuevo.Text = "Nueva Entrega";
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevo.UseVisualStyleBackColor = true;
@@ -132,7 +132,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.btnCerrar.Location = new System.Drawing.Point(678, 11);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(99, 47);
-            this.btnCerrar.TabIndex = 237;
+            this.btnCerrar.TabIndex = 11;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrar.UseVisualStyleBackColor = true;
@@ -360,7 +360,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.txtCantidadProducto.Location = new System.Drawing.Point(115, 59);
             this.txtCantidadProducto.Name = "txtCantidadProducto";
             this.txtCantidadProducto.Size = new System.Drawing.Size(114, 20);
-            this.txtCantidadProducto.TabIndex = 247;
+            this.txtCantidadProducto.TabIndex = 3;
             this.txtCantidadProducto.TextChanged += new System.EventHandler(this.txtCantidadProducto_TextChanged);
             // 
             // label3
@@ -378,7 +378,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.txtCostoUnitario.Location = new System.Drawing.Point(115, 85);
             this.txtCostoUnitario.Name = "txtCostoUnitario";
             this.txtCostoUnitario.Size = new System.Drawing.Size(114, 20);
-            this.txtCostoUnitario.TabIndex = 245;
+            this.txtCostoUnitario.TabIndex = 4;
             this.txtCostoUnitario.TextChanged += new System.EventHandler(this.txtCostoUnitario_TextChanged);
             // 
             // label2
@@ -396,7 +396,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.txtCostoTotal.Location = new System.Drawing.Point(115, 111);
             this.txtCostoTotal.Name = "txtCostoTotal";
             this.txtCostoTotal.Size = new System.Drawing.Size(114, 20);
-            this.txtCostoTotal.TabIndex = 243;
+            this.txtCostoTotal.TabIndex = 5;
             // 
             // btnImprimir
             // 
@@ -406,7 +406,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.btnImprimir.Location = new System.Drawing.Point(560, 80);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(150, 42);
-            this.btnImprimir.TabIndex = 241;
+            this.btnImprimir.TabIndex = 8;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnImprimir.UseVisualStyleBackColor = true;
@@ -420,7 +420,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.btnAgregar.Location = new System.Drawing.Point(560, 21);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(150, 45);
-            this.btnAgregar.TabIndex = 240;
+            this.btnAgregar.TabIndex = 7;
             this.btnAgregar.Text = "Agregar Producto";
             this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -434,7 +434,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.cboProducto.Location = new System.Drawing.Point(115, 27);
             this.cboProducto.Name = "cboProducto";
             this.cboProducto.Size = new System.Drawing.Size(399, 21);
-            this.cboProducto.TabIndex = 239;
+            this.cboProducto.TabIndex = 2;
             // 
             // label6
             // 
@@ -473,7 +473,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.dtpFechaAdquisicion.Location = new System.Drawing.Point(323, 64);
             this.dtpFechaAdquisicion.Name = "dtpFechaAdquisicion";
             this.dtpFechaAdquisicion.Size = new System.Drawing.Size(104, 20);
-            this.dtpFechaAdquisicion.TabIndex = 233;
+            this.dtpFechaAdquisicion.TabIndex = 6;
             // 
             // label12
             // 
@@ -513,7 +513,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.txtCorreo.Location = new System.Drawing.Point(341, 36);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(260, 20);
-            this.txtCorreo.TabIndex = 240;
+            this.txtCorreo.TabIndex = 0;
             // 
             // label5
             // 
@@ -530,7 +530,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.txtNombreProveedor.Location = new System.Drawing.Point(90, 78);
             this.txtNombreProveedor.Name = "txtNombreProveedor";
             this.txtNombreProveedor.Size = new System.Drawing.Size(236, 20);
-            this.txtNombreProveedor.TabIndex = 120;
+            this.txtNombreProveedor.TabIndex = 0;
             // 
             // label7
             // 
@@ -547,14 +547,14 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.txtCelular.Location = new System.Drawing.Point(462, 78);
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Size = new System.Drawing.Size(139, 20);
-            this.txtCelular.TabIndex = 116;
+            this.txtCelular.TabIndex = 0;
             // 
             // txtTelefono
             // 
             this.txtTelefono.Location = new System.Drawing.Point(341, 79);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(115, 20);
-            this.txtTelefono.TabIndex = 115;
+            this.txtTelefono.TabIndex = 0;
             // 
             // label20
             // 
@@ -582,7 +582,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.txtDireccion.Multiline = true;
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(236, 47);
-            this.txtDireccion.TabIndex = 113;
+            this.txtDireccion.TabIndex = 0;
             // 
             // label18
             // 
@@ -599,7 +599,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.txtruc.Location = new System.Drawing.Point(90, 52);
             this.txtruc.Name = "txtruc";
             this.txtruc.Size = new System.Drawing.Size(234, 20);
-            this.txtruc.TabIndex = 112;
+            this.txtruc.TabIndex = 0;
             // 
             // label34
             // 
@@ -626,7 +626,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.txtProveedor.Location = new System.Drawing.Point(90, 26);
             this.txtProveedor.Name = "txtProveedor";
             this.txtProveedor.Size = new System.Drawing.Size(234, 20);
-            this.txtProveedor.TabIndex = 109;
+            this.txtProveedor.TabIndex = 0;
             // 
             // pictureBox16
             // 
@@ -646,7 +646,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.cboProveedorActivo.Location = new System.Drawing.Point(118, 18);
             this.cboProveedorActivo.Name = "cboProveedorActivo";
             this.cboProveedorActivo.Size = new System.Drawing.Size(335, 21);
-            this.cboProveedorActivo.TabIndex = 99;
+            this.cboProveedorActivo.TabIndex = 1;
             this.cboProveedorActivo.SelectedIndexChanged += new System.EventHandler(this.cboProveedorActivo_SelectedIndexChanged);
             // 
             // timer1

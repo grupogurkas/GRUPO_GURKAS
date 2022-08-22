@@ -138,6 +138,7 @@ namespace pl_Gurkas.Vista.Principal
             this.historialOrdenCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordenesAprobadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordenAprobadaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingresoDeMaterialFueraDelSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.planillaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personalToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.registroDeDatosLaboralesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -200,7 +201,8 @@ namespace pl_Gurkas.Vista.Principal
             this.reporteDeAsistenciaPorPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.activarModoAdministradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ingresoDeMaterialFueraDelSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ticketConsultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.generarTicketToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -269,7 +271,8 @@ namespace pl_Gurkas.Vista.Principal
             this.planillaToolStripMenuItem,
             this.contabilidadToolStripMenuItem,
             this.sucamecToolStripMenuItem,
-            this.administradorToolStripMenuItem});
+            this.administradorToolStripMenuItem,
+            this.ticketConsultaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1369, 24);
@@ -1107,6 +1110,13 @@ namespace pl_Gurkas.Vista.Principal
             this.ordenAprobadaToolStripMenuItem.Text = "Orden Aprobada";
             this.ordenAprobadaToolStripMenuItem.Click += new System.EventHandler(this.ordenAprobadaToolStripMenuItem_Click);
             // 
+            // ingresoDeMaterialFueraDelSistemaToolStripMenuItem
+            // 
+            this.ingresoDeMaterialFueraDelSistemaToolStripMenuItem.Name = "ingresoDeMaterialFueraDelSistemaToolStripMenuItem";
+            this.ingresoDeMaterialFueraDelSistemaToolStripMenuItem.Size = new System.Drawing.Size(271, 22);
+            this.ingresoDeMaterialFueraDelSistemaToolStripMenuItem.Text = "Ingreso De Material Fuera del Sistema";
+            this.ingresoDeMaterialFueraDelSistemaToolStripMenuItem.Click += new System.EventHandler(this.ingresoDeMaterialFueraDelSistemaToolStripMenuItem_Click);
+            // 
             // planillaToolStripMenuItem
             // 
             this.planillaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -1618,12 +1628,19 @@ namespace pl_Gurkas.Vista.Principal
             this.activarModoAdministradorToolStripMenuItem.Text = "Activar Modo Administrador";
             this.activarModoAdministradorToolStripMenuItem.Click += new System.EventHandler(this.activarModoAdministradorToolStripMenuItem_Click);
             // 
-            // ingresoDeMaterialFueraDelSistemaToolStripMenuItem
+            // ticketConsultaToolStripMenuItem
             // 
-            this.ingresoDeMaterialFueraDelSistemaToolStripMenuItem.Name = "ingresoDeMaterialFueraDelSistemaToolStripMenuItem";
-            this.ingresoDeMaterialFueraDelSistemaToolStripMenuItem.Size = new System.Drawing.Size(271, 22);
-            this.ingresoDeMaterialFueraDelSistemaToolStripMenuItem.Text = "Ingreso De Material Fuera del Sistema";
-            this.ingresoDeMaterialFueraDelSistemaToolStripMenuItem.Click += new System.EventHandler(this.ingresoDeMaterialFueraDelSistemaToolStripMenuItem_Click);
+            this.ticketConsultaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.generarTicketToolStripMenuItem});
+            this.ticketConsultaToolStripMenuItem.Name = "ticketConsultaToolStripMenuItem";
+            this.ticketConsultaToolStripMenuItem.Size = new System.Drawing.Size(100, 20);
+            this.ticketConsultaToolStripMenuItem.Text = "Ticket Consulta";
+            // 
+            // generarTicketToolStripMenuItem
+            // 
+            this.generarTicketToolStripMenuItem.Name = "generarTicketToolStripMenuItem";
+            this.generarTicketToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.generarTicketToolStripMenuItem.Text = "Generar Ticket";
             // 
             // frmPrincipalGrupoGurkas
             // 
@@ -1641,7 +1658,7 @@ namespace pl_Gurkas.Vista.Principal
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmPrincipalGrupoGurkas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "GRUPO GURKAS S.A.C.";
+            this.Text = "Grupo Gurkas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmPrincipalGrupoGurkas_Load);
             this.statusStrip1.ResumeLayout(false);
@@ -1826,5 +1843,7 @@ namespace pl_Gurkas.Vista.Principal
         private System.Windows.Forms.ToolStripMenuItem ordenesAprobadasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ordenAprobadaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ingresoDeMaterialFueraDelSistemaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ticketConsultaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem generarTicketToolStripMenuItem;
     }
 }
