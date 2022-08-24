@@ -961,5 +961,10 @@ namespace pl_Gurkas.Vista.Principal
              controlvistaformulario.ControlVista(this, new Vista.Logistica.CargoEntrega.frmDevoluciondeMaterialFueradelSistema());
             modulo.auditoria("Logistica", "Ingreso de Material Fuera del Sistema", "", "");
         }
+
+        private void generarTicketToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

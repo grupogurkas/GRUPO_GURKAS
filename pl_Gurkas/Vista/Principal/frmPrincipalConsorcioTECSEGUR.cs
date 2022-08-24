@@ -509,5 +509,402 @@ namespace pl_Gurkas.Vista.Principal
             controlvistaformulario.ControlVista(this, new Vista.Reclamo.frmReclamoEmpleado());
             modulo.auditoria("Operaciones", "Reclamo Agente", "", "");
         }
+
+        private void crearUnidadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Comercial.frmCreacionUnidad());
+            modulo.auditoria("Comercial", "Unidad", "Creacion de Unidad", "");
+        }
+
+        private void creacionDeSedeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Comercial.frmCreacionSedes());
+            modulo.auditoria("Comercial", "Sede", "Creacion de Sede", "");
+        }
+
+        private void asistenciaDePersonalToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Comercial.ReporteComercial.frmAsistenciaPersonal());
+            modulo.auditoria("Comercial", "Reporte", "Asistencia de Personal", "");
+        }
+
+        private void asistenciaDePersonalDetalladoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Comercial.ReporteComercial.frmAsistenciaPersonal());
+            modulo.auditoria("Comercial", "Reporte", "Asistencia de Personal", "");
+        }
+
+        private void consultaDeAsistenciaPorPersonalToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Comercial.ReporteComercial.frmConusltaAsistenciaPersonal());
+            modulo.auditoria("Comercial", "Reporte", "Consulta de Asistencia por Personal", "");
+        }
+
+        private void detalleDeEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Comercial.ReporteComercial.frmDetalleEmpleado());
+            modulo.auditoria("Comercial", "Reporte", "Detalle de Empleados", "");
+        }
+
+        private void codigoYEstadoPersonalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Logistica.Reporte.frmReportePersonal());
+            modulo.auditoria("Logistica", "Reportes", "Codigo y Estado Personal", "");
+        }
+
+        private void kardexToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.Inventario.frmKardex());
+            modulo.auditoria("Logistica", "Almacen", "Reporte", "kardex");
+        }
+
+        private void registrarProveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.Proveedores.frmRegistrarProveedor());
+            modulo.auditoria("Logistica", "Almacen", "Proveedores", "Registrar Proveedor");
+        }
+
+        private void listaDeProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.Proveedores.frmBuscarProveedor());
+            modulo.auditoria("Logistica", "Almacen", "Proveedores", "Lista de Proveedores");
+        }
+
+        private void nuevoProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.producto.frmNuevoProducto());
+            modulo.auditoria("Logistica", "Almacen", "Producto en Almacen", "Nuevo Producto");
+        }
+
+        private void listarProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.producto.frmListarProductos());
+            modulo.auditoria("Logistica", "Almacen", "Producto en Almacen", "Listar Producto");
+        }
+
+        private void generarCodigoBarraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.producto.frmGenerarCodigoBarra());
+            modulo.auditoria("Logistica", "Almacen", "Producto en Almacen", "Generar Codigo Barra");
+        }
+
+        private void internamientoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.CargoEntrega.frmBuscarEmpleado());
+            modulo.auditoria("Logistica", "Almacen", "Cargo Entrega", "Internamiento");
+        }
+
+        private void entregaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //  controlvistaformulario.ControlVista(this, new Vista.Logistica.CargoEntrega.frmEntregaMaterial());
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.CargoEntrega.frmEntregaMaterial());
+            modulo.auditoria("Logistica", "Almacen", "Cargo Entrega", "Entrega");
+        }
+
+        private void destruccionLogisticoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.CargoEntrega.frmDestruccion());
+            modulo.auditoria("Logistica", "Almacen", "Cargo Entrega", "Destruccion");
+        }
+
+        private void recuperarMaterialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.CargoEntrega.frmRecuperarMaterial());
+            modulo.auditoria("Logistica", "Almacen", "Cargo de entreha", "Recuperar Material");
+        }
+
+        private void ordenDeServicioCompraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.Ordenes.frmRegistrarOrden());
+            modulo.auditoria("Logistica", "Almacen", "Registro Ordenes", "Orden de Servicio/Compra");
+        }
+
+        private void ordenDeServicioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.Ordenes.frmOrdenServicio());
+            modulo.auditoria("Logistica", "Almacen", "Registro Ordenes", "Orden de Servicio");
+        }
+
+        private void historialOrdenCompraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.Historial.frmHistorialOrdenCompra());
+            modulo.auditoria("Logistica", "Almacen", "Historial Logistico", "Historial Orden Compra");
+        }
+
+        private void ordenAprobadaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.Ordenes.frmOrdenAprovada());
+            modulo.auditoria("Logistica", "Ordenes de Compra aprovada", "Orden Aprovada", "");
+        }
+
+        private void registroDeDatosLaboralesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.frmRegistrarDatosLaborales());
+            modulo.auditoria("Planilla", "Personal", "Datos Laborales Empleados", "");
+        }
+
+        private void actualizarDatosLaboralesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.frmActualizarDatosLaboralesPlanilla());
+            modulo.auditoria("Planilla", "Personal", "Actualizar Laborales Empleados", "");
+        }
+
+        private void actualizarComisionAFPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.AFP.frmActualizarComisionAFP());
+            modulo.auditoria("Planilla", "AFP", "Actualizar Comision AFP", "");
+        }
+
+        private void reporteDeAsistenciaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.ReportePlanilla.frmReporteAsistenciaPersonal());
+            modulo.auditoria("Planilla", "Reporte", "Reporte de Asistencia", "");
+        }
+
+        private void reporteDeDatosGeneralesDePlanillaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.ReportePlanilla.frmDatosGeneralesPlanilla());
+            modulo.auditoria("Planilla", "Reporte", "Reporte de Datos Generales de Planilla", "");
+        }
+
+        private void historialEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.ReportePlanilla.frmHistorialDatosEmpleado());
+            modulo.auditoria("Planilla", "Reporte", "Historial Empleado", "");
+        }
+
+        private void bajasDeEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.ReportePlanilla.frmBajasPersonal());
+            modulo.auditoria("Planilla", "Reporte", "Bajas de Empleados", "");
+        }
+
+        private void marcacionPorFechaYTurnoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.CentroControl.ReporteCentroControl.frmReportedeMarcacionpoFecahYturno());
+            modulo.auditoria("Planilla", "Reporte", "Marcacion por Fecha y Turno", "");
+        }
+
+        private void consultaDeAsistenciaPorPersonalToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.CentroControl.ReporteCentroControl.fmrConsultaDeAsistenciaPorPersonal());
+            modulo.auditoria("Planilla", "Reporte", "Consulta de Asistencia por Personal", "");
+        }
+
+        private void reporteDeTurnoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.ReportePlanilla.frmPagoTurnosEmpleados());
+            modulo.auditoria("Planilla", "Reporte", "Reporte de Turno", "");
+        }
+
+        private void cargaDeAsistenciaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.CargaDeDatos.frmCargaDeDatosAsistencia());
+            modulo.auditoria("Planilla", "Carga de Datos", "Carga de Asistencia", "");
+        }
+
+        private void cargaDeDatosCTSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.CTS.frmCargaDeDatosCTS());
+            modulo.auditoria("Planilla", "Carga de Datos", "Carga de Datos CTS", "");
+        }
+
+        private void cargaDeDatosGratificacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.GRATIFICACION.frmGuardarGrati());
+            modulo.auditoria("Planilla", "Carga de Datos", "Carga de Datos Gratificacion", "");
+        }
+
+        private void cargaDeBloqueosDePersonalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.CentroControl.CargaDeDatos.frmBloqueosPersonal());
+            modulo.auditoria("Planilla", "Carga de Datos", "Carga de Bloqueos de Personal", "");
+        }
+
+        private void archivoPLAMEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.Plame.frmPlataformaPlame());
+            modulo.auditoria("Planilla", "PLAME", "Archivo PLAME", "");
+        }
+
+        private void calculoPorDiasLaboradosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.frmPlataformaCalculoPlanilla());
+            modulo.auditoria("Planilla", "Plataforma Planilla", "Calculo por Dias Laborados", "");
+        }
+
+        private void calculoDeVacacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.frmCalculoDeVacaciones());
+            modulo.auditoria("Planilla", "Plataforma Planilla", "Calculo de Vacaciones", "");
+        }
+
+        private void calcularToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.frmCalculoDeOtrasLicencia());
+            modulo.auditoria("Planilla", "Plataforma Planilla", "Calculo de otras Licencias", "");
+        }
+
+        private void calculoDeDescansoMedicoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.frmCalculoDeDescansoMedico());
+            modulo.auditoria("Planilla", "Plataforma Planilla", "Calculo de Descanso Medico", "");
+        }
+
+        private void calculoDeCTSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.CTS.frmCalculoCTS());
+            modulo.auditoria("Planilla", "Plataforma Planilla", "Calculo de CTS", "");
+        }
+
+        private void calculoGratificacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.GRATIFICACION.frmCalculoGrati());
+            modulo.auditoria("Planilla", "Plataforma Planilla", "Calculo Gratificacion", "");
+        }
+
+        private void historialDePlanillaPorDiasLaboradosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.HistorialPlanilla.frmHistorialPlanillaDiasLaborados());
+            modulo.auditoria("Planilla", "Historial Planilla", "Historial de planilla por dias laborados", "");
+        }
+
+        private void historialDePlanillaDeVacacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.HistorialPlanilla.frmHistorialPlanillaVacaciones());
+            modulo.auditoria("Planilla", "Historial Planilla", "Historial de planilla de vacaciones", "");
+        }
+
+        private void historialDePlanillaDeOtrasLicenciasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.HistorialPlanilla.frmHistorialOtrasLicencias());
+            modulo.auditoria("Planilla", "Historial Planilla", "Historial de planilla de otras licencias", "");
+        }
+
+        private void historialDePlanillaDeDescansoMedicoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.HistorialPlanilla.frmHistorialDescansoMedico());
+            modulo.auditoria("Planilla", "Historial Planilla", "Historial de planilla de descanso medico", "");
+        }
+
+        private void historialDePlanillaDeCTSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.HistorialPlanilla.frmHistorialCTS());
+            modulo.auditoria("Planilla", "Historial Planilla", "Historial de planilla de CTS", "");
+        }
+
+        private void historialDePlanillaDeGratificacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.HistorialPlanilla.frmHistorialGrati());
+            modulo.auditoria("Planilla", "Historial Planilla", "Historial de planilla de Gratificacion", "");
+        }
+
+        private void listaDePersonalBloqueosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.Bloqueos.frmCuadroDeBloqueos());
+            modulo.auditoria("Planilla", "Bloqueos Personal", "Lista de Personal Bloqueos", "");
+        }
+
+        private void sueldoPersonalUnidadSueldoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.SueldoEmpleado.frmSueldoEmpleado());
+            modulo.auditoria("Planilla", "Sueldo Unidad Puesto", "Sueldo Personal Unidad - Sueldo", "");
+        }
+
+        private void planillaPorUnidadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Contabilidad.frmPlanillaCompletaContabilidadResumen());
+            modulo.auditoria("Contabilidad", "Reporte", "Planilla por Unidad", "");
+        }
+
+        private void activarModoAdministradorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Administrador.frmContrasena());
+            modulo.auditoria("Administrador", "Activar Modo Administrador", "", "");
+        }
+
+        private void datosPersonalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Sucamec.frmPersonalConsulta());
+            modulo.auditoria("Sucamec", "Datos Personal", "", "");
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.RRHH.ReportesRRHH.frmReporteGenrenalPersonal());
+            modulo.auditoria("Sucamec", "Reportes", "Reporte General", "");
+        }
+
+        private void toolStripMenuItem12_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.RRHH.ReportesRRHH.frmAsistenciaPersonaIndividual());
+            modulo.auditoria("Sucamec", "Reportes", "Reporte de Asistencia de Personal", "Asistencia de Personal");
+        }
+
+        private void toolStripMenuItem13_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.RRHH.ReportesRRHH.frmAsistenciaGneralPersonal());
+            modulo.auditoria("Sucamec", "Reportes", "Reporte de Asistencia de Personal", "Asistencia General de Personal");
+        }
+
+        private void toolStripMenuItem14_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.RRHH.ReportesRRHH.frmAsistenciaPersonalPorUnidad());
+            modulo.auditoria("Sucamec", "Reportes", "Reporte de Asistencia de Personal", "Asistencia por Unidad");
+        }
+
+        private void toolStripMenuItem15_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.RRHH.ReportesRRHH.frmAsistenciaGeneralPersonalPorSede());
+            modulo.auditoria("Sucamec", "Reportes", "Reporte de Asistencia de Personal", "Asistencia por Sede");
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.RRHH.ReportesRRHH.frmPersonalPorUnidad());
+            modulo.auditoria("Sucamec", "Reportes", "Reporte de Personal", "Personal por Unidad");
+        }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.RRHH.ReportesRRHH.frmPersonalPorSede());
+            modulo.auditoria("Sucamec", "Reportes", "Reporte de Personal", "Personal por Sede");
+        }
+
+        private void toolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.RRHH.ReportesRRHH.frmPersonalPorEdad());
+            modulo.auditoria("Sucamec", "Reportes", "Reporte de Personal", "Personal por Edad");
+        }
+
+        private void toolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.RRHH.ReportesRRHH.frmPersonalPorEmpresa());
+            modulo.auditoria("Sucamec", "Reportes", "Reporte de Personal", "Personal por Empresa");
+        }
+
+        private void toolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.RRHH.ReportesRRHH.frmEstaturaPersonal());
+            modulo.auditoria("Sucamec", "Reportes", "Reporte de Personal", "Personal por Estatura");
+        }
+
+        private void toolStripMenuItem9_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.RRHH.ReportesRRHH.frmTurnoEmpleado());
+            modulo.auditoria("Sucamec", "Reportes", "Reporte de Personal", "Personal por Turno");
+        }
+
+        private void toolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.RRHH.ReportesRRHH.frmPersonalPorFechaIngreso());
+            modulo.auditoria("Sucamec", "Reportes", "Reporte de Personal", "Personal por Fecha Ingreso");
+        }
+
+        private void toolStripMenuItem16_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.ReportePlanilla.frmBajasPersonal());
+            modulo.auditoria("Sucamec", "Reportes", "Reporte de Asistencia de Personal", "Reporte de Baja de Personal");
+        }
     }
 }
