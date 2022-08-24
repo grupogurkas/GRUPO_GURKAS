@@ -906,5 +906,26 @@ namespace pl_Gurkas.Vista.Principal
             controlvistaformulario.ControlVista(this, new Vista.Planilla.ReportePlanilla.frmBajasPersonal());
             modulo.auditoria("Sucamec", "Reportes", "Reporte de Asistencia de Personal", "Reporte de Baja de Personal");
         }
+
+        private void inventariadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ingresoDeMaterialFueraDelSistemaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.CargoEntrega.frmDevoluciondeMaterialFueradelSistema());
+            modulo.auditoria("Logistica", "Ingreso de Material Fuera del Sistema", "", "");
+        }
+
+        private void toolStripMenuItem11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void generarTicketToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
