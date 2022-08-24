@@ -69,16 +69,14 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             var resutlado = MessageBox.Show(mensaje, titulo, MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (resutlado == DialogResult.Yes)
             {
-
                 try
                 {
                     SqlCommand comando = new SqlCommand("sp_registar_actualzar_stock @Cod_Producto, @cod_orden_compra, @Descripcion_del_Producto, @Cantidad_Solicitada, @Precio_Unitario,@Precio_Total,@estado_orden,@OrdenCompra", conexion.conexionBD());
-
                     foreach (DataGridViewRow row in dgvAsistencia.Rows)
                     {
                         if (row.Cells["Cod Producto"].Value != null && row.Cells["Descripcion del Producto"].Value != null
                             && row.Cells["Cantidad Solicitada"].Value != null && row.Cells["Precio Unitario"].Value != null
-                             && row.Cells["Precio Total"].Value != null)
+                            && row.Cells["Precio Total"].Value != null)
                         {
                             comando.Parameters.Clear();
                             comando.Parameters.AddWithValue("@Cod_Producto", Convert.ToString(row.Cells["Cod Producto"].Value));

@@ -891,6 +891,12 @@
     <Compile Include="Vista\Principal\frmPrincipalConsorcioGurkas.Designer.cs">
       <DependentUpon>frmPrincipalConsorcioGurkas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Principal\frmPrincipalConsorcioTECSEGUR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Principal\frmPrincipalConsorcioTECSEGUR.Designer.cs">
+      <DependentUpon>frmPrincipalConsorcioTECSEGUR.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Principal\frmPrincipalGrupoGurkas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1363,6 +1369,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Principal\frmPrincipalConsorcioGurkas.resx">
       <DependentUpon>frmPrincipalConsorcioGurkas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Principal\frmPrincipalConsorcioTECSEGUR.resx">
+      <DependentUpon>frmPrincipalConsorcioTECSEGUR.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Principal\frmPrincipalGrupoGurkas.resx">
       <DependentUpon>frmPrincipalGrupoGurkas.cs</DependentUpon>

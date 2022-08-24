@@ -12,8 +12,12 @@ using System.Windows.Forms;
 
 namespace pl_Gurkas.Vista.Principal
 {
-    public partial class frmPrincipalConsorcioGurkas : Form
+    public partial class frmPrincipalConsorcioTECSEGUR : Form
     {
+        public frmPrincipalConsorcioTECSEGUR()
+        {
+            InitializeComponent();
+        }
         public int _idempresa;
         public string _nombreempresa;
         public string _usuario;
@@ -23,14 +27,9 @@ namespace pl_Gurkas.Vista.Principal
         string nombrepc = "";
         string result = "";
         int estado = 0;
-
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.AuditoriaModulos modulo = new Datos.AuditoriaModulos();
         Vista.ControlVistaFormulario controlvistaformulario = new Vista.ControlVistaFormulario();
-        public frmPrincipalConsorcioGurkas()
-        {
-            InitializeComponent();
-        }
         public void obtenerip_nombre()
         {
             string strHostName = string.Empty;
@@ -46,7 +45,6 @@ namespace pl_Gurkas.Vista.Principal
             }
             nombrepc = "Nombre de la computadora: " + strHostName;
         }
-
         public void perfiles()
         {
             int nivel = _codrol;
@@ -158,7 +156,7 @@ namespace pl_Gurkas.Vista.Principal
                 administradorToolStripMenuItem.Enabled = false;
             }
         }
-        private void frmPrincipalConsorcioGurkas_Load(object sender, EventArgs e)
+        private void frmPrincipalConsorcioTECSEGUR_Load(object sender, EventArgs e)
         {
             lblempresanombre.Text = _nombreempresa;
             lblperfil.Text = _perfil;
@@ -276,11 +274,6 @@ namespace pl_Gurkas.Vista.Principal
         {
             controlvistaformulario.ControlVista(this, new Vista.RRHH.ReportesRRHH.frmReporteGenrenalPersonal());
             modulo.auditoria("Recursos Humanos", "Modulo de Reporte", "Reporte General", "");
-        }
-
-        private void personalToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void personalPorUnidadToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -644,12 +637,6 @@ namespace pl_Gurkas.Vista.Principal
             modulo.auditoria("Logistica", "Ordenes de Compra aprovada", "Orden Aprovada", "");
         }
 
-        private void ingresoDeMaterialFueraDelSistemaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            controlvistaformulario.ControlVista(this, new Vista.Logistica.CargoEntrega.frmDevoluciondeMaterialFueradelSistema());
-            modulo.auditoria("Logistica", "Ingreso de Material Fuera del Sistema", "", "");
-        }
-
         private void registroDeDatosLaboralesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             controlvistaformulario.ControlVista(this, new Vista.Planilla.frmRegistrarDatosLaborales());
@@ -919,6 +906,26 @@ namespace pl_Gurkas.Vista.Principal
             controlvistaformulario.ControlVista(this, new Vista.Planilla.ReportePlanilla.frmBajasPersonal());
             modulo.auditoria("Sucamec", "Reportes", "Reporte de Asistencia de Personal", "Reporte de Baja de Personal");
         }
+
+        private void inventariadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ingresoDeMaterialFueraDelSistemaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.CargoEntrega.frmDevoluciondeMaterialFueradelSistema());
+            modulo.auditoria("Logistica", "Ingreso de Material Fuera del Sistema", "", "");
+        }
+
+        private void toolStripMenuItem11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void generarTicketToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
-

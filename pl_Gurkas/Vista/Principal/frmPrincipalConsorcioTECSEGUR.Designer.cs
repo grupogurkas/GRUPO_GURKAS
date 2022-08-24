@@ -1,7 +1,7 @@
 ﻿
 namespace pl_Gurkas.Vista.Principal
 {
-    partial class frmPrincipalGrupoGurkas
+    partial class frmPrincipalConsorcioTECSEGUR
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace pl_Gurkas.Vista.Principal
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipalGrupoGurkas));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipalConsorcioTECSEGUR));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblempresanombre = new System.Windows.Forms.ToolStripStatusLabel();
@@ -219,7 +219,7 @@ namespace pl_Gurkas.Vista.Principal
             this.statusStrip1.Location = new System.Drawing.Point(0, 675);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1369, 22);
-            this.statusStrip1.TabIndex = 1;
+            this.statusStrip1.TabIndex = 10;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
@@ -276,7 +276,7 @@ namespace pl_Gurkas.Vista.Principal
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1369, 24);
-            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.TabIndex = 12;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // archivosToolStripMenuItem
@@ -290,7 +290,6 @@ namespace pl_Gurkas.Vista.Principal
             this.archivosToolStripMenuItem.Name = "archivosToolStripMenuItem";
             this.archivosToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
             this.archivosToolStripMenuItem.Text = "Archivos";
-            this.archivosToolStripMenuItem.Click += new System.EventHandler(this.archivosToolStripMenuItem_Click);
             // 
             // comprobarConexionToolStripMenuItem
             // 
@@ -399,7 +398,6 @@ namespace pl_Gurkas.Vista.Principal
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.reportesToolStripMenuItem.Text = "Reportes";
-            this.reportesToolStripMenuItem.Click += new System.EventHandler(this.reportesToolStripMenuItem_Click);
             // 
             // reporteGeneralToolStripMenuItem
             // 
@@ -740,13 +738,13 @@ namespace pl_Gurkas.Vista.Principal
             this.activarUnidadToolStripMenuItem});
             this.unidadToolStripMenuItem1.Image = global::pl_Gurkas.Properties.Resources.Unidad_32;
             this.unidadToolStripMenuItem1.Name = "unidadToolStripMenuItem1";
-            this.unidadToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
+            this.unidadToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.unidadToolStripMenuItem1.Text = "Unidad";
             // 
             // activarUnidadToolStripMenuItem
             // 
             this.activarUnidadToolStripMenuItem.Name = "activarUnidadToolStripMenuItem";
-            this.activarUnidadToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.activarUnidadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.activarUnidadToolStripMenuItem.Text = "Activar Unidad";
             this.activarUnidadToolStripMenuItem.Click += new System.EventHandler(this.activarUnidadToolStripMenuItem_Click);
             // 
@@ -756,13 +754,13 @@ namespace pl_Gurkas.Vista.Principal
             this.activarSedeToolStripMenuItem});
             this.sedeToolStripMenuItem1.Image = global::pl_Gurkas.Properties.Resources.sede_32;
             this.sedeToolStripMenuItem1.Name = "sedeToolStripMenuItem1";
-            this.sedeToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
+            this.sedeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.sedeToolStripMenuItem1.Text = "Sede";
             // 
             // activarSedeToolStripMenuItem
             // 
             this.activarSedeToolStripMenuItem.Name = "activarSedeToolStripMenuItem";
-            this.activarSedeToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.activarSedeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.activarSedeToolStripMenuItem.Text = "Activar Sede";
             this.activarSedeToolStripMenuItem.Click += new System.EventHandler(this.activarSedeToolStripMenuItem_Click);
             // 
@@ -775,7 +773,7 @@ namespace pl_Gurkas.Vista.Principal
             this.constultaDeAsistenciaPersonalCompletoToolStripMenuItem});
             this.reporteToolStripMenuItem1.Image = global::pl_Gurkas.Properties.Resources.reportes_32;
             this.reporteToolStripMenuItem1.Name = "reporteToolStripMenuItem1";
-            this.reporteToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
+            this.reporteToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.reporteToolStripMenuItem1.Text = "Reporte";
             // 
             // consultaDeAsistenciaPorPersonalToolStripMenuItem1
@@ -810,7 +808,7 @@ namespace pl_Gurkas.Vista.Principal
             // 
             this.reclamoAgenteToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.reclamo_32;
             this.reclamoAgenteToolStripMenuItem.Name = "reclamoAgenteToolStripMenuItem";
-            this.reclamoAgenteToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.reclamoAgenteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.reclamoAgenteToolStripMenuItem.Text = "Reclamo Agente";
             this.reclamoAgenteToolStripMenuItem.Click += new System.EventHandler(this.reclamoAgenteToolStripMenuItem_Click);
             // 
@@ -831,7 +829,7 @@ namespace pl_Gurkas.Vista.Principal
             this.crearUnidadToolStripMenuItem});
             this.unidadToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.Unidad_32;
             this.unidadToolStripMenuItem.Name = "unidadToolStripMenuItem";
-            this.unidadToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.unidadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.unidadToolStripMenuItem.Text = "Unidad";
             // 
             // crearUnidadToolStripMenuItem
@@ -847,13 +845,13 @@ namespace pl_Gurkas.Vista.Principal
             this.creacionDeSedeToolStripMenuItem});
             this.sedeToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.sede_32;
             this.sedeToolStripMenuItem.Name = "sedeToolStripMenuItem";
-            this.sedeToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.sedeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sedeToolStripMenuItem.Text = "Sede";
             // 
             // creacionDeSedeToolStripMenuItem
             // 
             this.creacionDeSedeToolStripMenuItem.Name = "creacionDeSedeToolStripMenuItem";
-            this.creacionDeSedeToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.creacionDeSedeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.creacionDeSedeToolStripMenuItem.Text = "Creacion de Sede";
             this.creacionDeSedeToolStripMenuItem.Click += new System.EventHandler(this.creacionDeSedeToolStripMenuItem_Click);
             // 
@@ -866,7 +864,7 @@ namespace pl_Gurkas.Vista.Principal
             this.detalleDeEmpleadosToolStripMenuItem});
             this.reporteToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.reportes_32;
             this.reporteToolStripMenuItem.Name = "reporteToolStripMenuItem";
-            this.reporteToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.reporteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.reporteToolStripMenuItem.Text = "Reporte";
             // 
             // asistenciaDePersonalToolStripMenuItem3
@@ -914,7 +912,6 @@ namespace pl_Gurkas.Vista.Principal
             this.logisticaToolStripMenuItem.Name = "logisticaToolStripMenuItem";
             this.logisticaToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
             this.logisticaToolStripMenuItem.Text = "Logistica";
-            this.logisticaToolStripMenuItem.Click += new System.EventHandler(this.logisticaToolStripMenuItem_Click);
             // 
             // personalToolStripMenuItem3
             // 
@@ -963,7 +960,6 @@ namespace pl_Gurkas.Vista.Principal
             this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
             this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.proveedoresToolStripMenuItem.Text = "Proveedores";
-            this.proveedoresToolStripMenuItem.Click += new System.EventHandler(this.proveedoresToolStripMenuItem_Click);
             // 
             // registrarProveedorToolStripMenuItem
             // 
@@ -988,7 +984,6 @@ namespace pl_Gurkas.Vista.Principal
             this.productosEnAlmacenToolStripMenuItem.Name = "productosEnAlmacenToolStripMenuItem";
             this.productosEnAlmacenToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.productosEnAlmacenToolStripMenuItem.Text = "Productos en Almacen";
-            this.productosEnAlmacenToolStripMenuItem.Click += new System.EventHandler(this.productosEnAlmacenToolStripMenuItem_Click);
             // 
             // nuevoProductoToolStripMenuItem
             // 
@@ -1071,7 +1066,7 @@ namespace pl_Gurkas.Vista.Principal
             this.ordenDeServicioCompraToolStripMenuItem.Name = "ordenDeServicioCompraToolStripMenuItem";
             this.ordenDeServicioCompraToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.ordenDeServicioCompraToolStripMenuItem.Text = "Orden de Compra";
-            this.ordenDeServicioCompraToolStripMenuItem.Click += new System.EventHandler(this.ordenDeServicioCompraToolStripMenuItem_Click_1);
+            this.ordenDeServicioCompraToolStripMenuItem.Click += new System.EventHandler(this.ordenDeServicioCompraToolStripMenuItem_Click);
             // 
             // ordenDeServicioToolStripMenuItem
             // 
@@ -1451,7 +1446,7 @@ namespace pl_Gurkas.Vista.Principal
             // 
             this.planillaPorUnidadToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.Planilla_conta_32;
             this.planillaPorUnidadToolStripMenuItem.Name = "planillaPorUnidadToolStripMenuItem";
-            this.planillaPorUnidadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.planillaPorUnidadToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.planillaPorUnidadToolStripMenuItem.Text = "Planilla por Unidad";
             this.planillaPorUnidadToolStripMenuItem.Click += new System.EventHandler(this.planillaPorUnidadToolStripMenuItem_Click);
             // 
@@ -1520,6 +1515,7 @@ namespace pl_Gurkas.Vista.Principal
             this.toolStripMenuItem11.Name = "toolStripMenuItem11";
             this.toolStripMenuItem11.Size = new System.Drawing.Size(251, 22);
             this.toolStripMenuItem11.Text = "Reporte de Asistencia de Personal";
+            this.toolStripMenuItem11.Click += new System.EventHandler(this.toolStripMenuItem11_Click);
             // 
             // toolStripMenuItem12
             // 
@@ -1562,7 +1558,6 @@ namespace pl_Gurkas.Vista.Principal
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.Size = new System.Drawing.Size(251, 22);
             this.toolStripMenuItem3.Text = "Reporte de Personal";
-            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
             // toolStripMenuItem4
             // 
@@ -1626,7 +1621,6 @@ namespace pl_Gurkas.Vista.Principal
             this.reporteDeAsistenciaPorPersonalToolStripMenuItem.Name = "reporteDeAsistenciaPorPersonalToolStripMenuItem";
             this.reporteDeAsistenciaPorPersonalToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
             this.reporteDeAsistenciaPorPersonalToolStripMenuItem.Text = "Reporte de Asistencia Por Personal";
-            this.reporteDeAsistenciaPorPersonalToolStripMenuItem.Click += new System.EventHandler(this.reporteDeAsistenciaPorPersonalToolStripMenuItem_Click);
             // 
             // ticketConsultaToolStripMenuItem
             // 
@@ -1643,25 +1637,18 @@ namespace pl_Gurkas.Vista.Principal
             this.generarTicketToolStripMenuItem.Text = "Generar Ticket";
             this.generarTicketToolStripMenuItem.Click += new System.EventHandler(this.generarTicketToolStripMenuItem_Click);
             // 
-            // frmPrincipalGrupoGurkas
+            // frmPrincipalConsorcioTECSEGUR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.BackgroundImage = global::pl_Gurkas.Properties.Resources.GGPrincipal;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1369, 697);
-            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
-            this.DoubleBuffered = true;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Controls.Add(this.statusStrip1);
             this.IsMdiContainer = true;
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "frmPrincipalGrupoGurkas";
+            this.Name = "frmPrincipalConsorcioTECSEGUR";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Grupo Gurkas";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.frmPrincipalGrupoGurkas_Load);
+            this.Text = "frmPrincipalConsorcioTECSEGUR";
+            this.Load += new System.EventHandler(this.frmPrincipalConsorcioTECSEGUR_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
@@ -1672,49 +1659,28 @@ namespace pl_Gurkas.Vista.Principal
         }
 
         #endregion
-
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem archivosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem recursosHumanosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem personalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem registroDePersonalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem registroDeDatosFamiliaresToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reporteGeneralToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem centroDeControlToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem asistenciaDePersonalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem operacionesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem comercialToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem logisticaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem planillaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem contabilidadToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem unidadToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sedeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem crearUnidadToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem creacionDeSedeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem registroDeDatosLaboralesToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem reporteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem personalToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem registroDeDatosLaboralesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem unidadToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem activarUnidadToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sedeToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem activarSedeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reporteToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem vercionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cerrarSesionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sucamecToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem administradorToolStripMenuItem;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel lblempresanombre;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.ToolStripStatusLabel lblusuario;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
         private System.Windows.Forms.ToolStripStatusLabel lblperfil;
-        private System.Windows.Forms.ToolStripMenuItem bajaDePersonalToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem archivosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem comprobarConexionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem conexionAhInternetToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem conexionAlServidorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem vercionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cerrarSesionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem recursosHumanosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem personalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registroDePersonalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registroDeDatosFamiliaresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registroDeDatosLaboralesToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reporteGeneralToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem personalToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem personalPorUnidadToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem personalPorSedeToolStripMenuItem1;
@@ -1723,21 +1689,23 @@ namespace pl_Gurkas.Vista.Principal
         private System.Windows.Forms.ToolStripMenuItem personalPorEstaturaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem personalPorTurnoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem personalPorFechaInicioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem personalPorDNIToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reporteDeAsistenciaDePersonalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem asistenciaDePersonalToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem asistenciaGeneralDePersoanalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem asistenciaPorSedeToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem asistenciaPorUnidadToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem aFPToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem actualizarComisionAFPToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reporteToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem pLAMEToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem asistenciaPorSedeToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem bajaDePersonalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem moverPersonalEntreEmpresaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reporteDeAsistenciaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem plataformaPlanillaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem calculoPorDiasLaboradosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem asistenciaPersonalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cargaDeAsistenciaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem estadoDelPersonalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cargaMasivaDeDatosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cargaMasivaDeDatosLaboralesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem postulanteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registroPersonalC4ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem personalActivoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem centroDeControlToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem asistenciaDePersonalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem cantidadDeAsistencaiDeCadaSedeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem marcacionPorFechaYTurnoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultaDeAsistenciaPorPersonalToolStripMenuItem;
@@ -1747,33 +1715,111 @@ namespace pl_Gurkas.Vista.Principal
         private System.Windows.Forms.ToolStripMenuItem personalSinMarcacionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem asistenciaDePersonalToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem asistenciaDePersonalDetalladoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem asistenciaGeneralDePersonalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cargaDeDatosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reporteDeBloqueosDePersonalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bloqueosDePersonalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem migrarAsistenciaAAndroidToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem operacionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem unidadToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem activarUnidadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sedeToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem activarSedeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reporteToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem consultaDeAsistenciaPorPersonalToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem personalSinMarcacionToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem estadoDePersonalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem constultaDeAsistenciaPersonalCompletoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reclamoAgenteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem comercialToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem unidadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem crearUnidadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sedeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem creacionDeSedeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reporteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem asistenciaDePersonalToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem asistenciaDePersonalDetalladoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem consultaDeAsistenciaPorPersonalToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem detalleDeEmpleadosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem comprobarConexionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem conexionAhInternetToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem conexionAlServidorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem licitacionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logisticaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem personalToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem codigoYEstadoPersonalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem kardexToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem almacenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem proveedoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registrarProveedorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listaDeProveedoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem productosEnAlmacenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nuevoProductoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listarProductoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem generarCodigoBarraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cargoEntregaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem internamientoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem entregaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem destruccionLogisticoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem recuperarMaterialToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inventariadoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registroOrdenesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ordenDeServicioCompraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ordenDeServicioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem historialLogisticoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem historialOrdenCompraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ordenesAprobadasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ordenAprobadaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ingresoDeMaterialFueraDelSistemaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem planillaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem personalToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem registroDeDatosLaboralesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem actualizarDatosLaboralesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aFPToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem actualizarComisionAFPToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reporteToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem reporteDeAsistenciaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reporteDeDatosGeneralesDePlanillaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem historialEmpleadoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bajasDeEmpleadosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem historialPlanillaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem historialDePlanillaPorDiasLaboradosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem marcacionPorFechaYTurnoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem consultaDeAsistenciaPorPersonalToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem reporteDeTurnoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem asistenciaPersonalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cargaDeAsistenciaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cargaDeDatosCTSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cargaDeDatosGratificacionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cargaDeBloqueosDePersonalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pLAMEToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem archivoPLAMEToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem plataformaPlanillaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem calculoPorDiasLaboradosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calculoDeVacacionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calcularToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calculoDeDescansoMedicoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem calculoDeCTSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem calculoGratificacionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem historialPlanillaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem historialDePlanillaPorDiasLaboradosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem historialDePlanillaDeVacacionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem historialDePlanillaDeOtrasLicenciasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem historialDePlanillaDeDescansoMedicoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem archivoPLAMEToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem estadoDelPersonalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem personalToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem codigoYEstadoPersonalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem historialDePlanillaDeCTSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem historialDePlanillaDeGratificacionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bloqueoPersonalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listaDePersonalBloqueosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sueldoUnidadPuestoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sueldoPersonalUnidadSueldoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem contabilidadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem planillaPorUnidadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem administradorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem activarModoAdministradorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sucamecToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem datosPersonalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem11;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem12;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem13;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem14;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem15;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
@@ -1782,68 +1828,8 @@ namespace pl_Gurkas.Vista.Principal
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem9;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem10;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem11;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem12;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem13;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem14;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem15;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem16;
         private System.Windows.Forms.ToolStripMenuItem reporteDeAsistenciaPorPersonalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cargaDeDatosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bloqueosDePersonalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem marcacionPorFechaYTurnoToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem consultaDeAsistenciaPorPersonalToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem personalSinMarcacionToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem estadoDePersonalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bloqueoPersonalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listaDePersonalBloqueosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reporteDeTurnoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reporteDeBloqueosDePersonalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sueldoUnidadPuestoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sueldoPersonalUnidadSueldoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cargaMasivaDeDatosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cargaMasivaDeDatosLaboralesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cargaDeDatosCTSToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem almacenToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem productosEnAlmacenToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem nuevoProductoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem proveedoresToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem inventariadoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem registrarProveedorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listaDeProveedoresToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem calculoDeCTSToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cargaDeDatosGratificacionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem calculoGratificacionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem historialDePlanillaDeCTSToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem historialDePlanillaDeGratificacionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cargaDeBloqueosDePersonalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem activarModoAdministradorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem postulanteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem constultaDeAsistenciaPersonalCompletoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem planillaPorUnidadToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem migrarAsistenciaAAndroidToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem registroPersonalC4ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem licitacionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem personalActivoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listarProductoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reclamoAgenteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem generarCodigoBarraToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cargoEntregaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem internamientoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem entregaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem registroOrdenesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ordenDeServicioCompraToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem personalPorDNIToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem destruccionLogisticoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ordenDeServicioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem historialLogisticoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem historialOrdenCompraToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem recuperarMaterialToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem kardexToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem asistenciaGeneralDePersonalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ordenesAprobadasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ordenAprobadaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ingresoDeMaterialFueraDelSistemaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ticketConsultaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem generarTicketToolStripMenuItem;
     }

@@ -75,6 +75,24 @@ namespace pl_Gurkas.Datos
 
                             modulo.auditoria("Inicio De Sistema Consorcio Gurkas", "Inicio De Sistema Consorcio Gurkas", "", "");
                         }
+                        if (cod_empresa == 3)
+                        {
+                            login.Hide();
+                            Vista.Principal.frmPrincipalConsorcioTECSEGUR consorcioTecsegur = new Vista.Principal.frmPrincipalConsorcioTECSEGUR();
+                            consorcioTecsegur._idempresa = cod_empresa;
+                            consorcioTecsegur._nombreempresa = nombre_empresa;
+                            consorcioTecsegur._usuario = _nombre;
+                            consorcioTecsegur._perfil = _rol;
+                            consorcioTecsegur._codrol = _cod_rol;
+                            consorcioTecsegur.Show();
+                            Datos.DatosUsuario._idempresa = cod_empresa;
+                            Datos.DatosUsuario._nombreempresa = nombre_empresa;
+                            Datos.DatosUsuario._usuario = _nombre;
+                            Datos.DatosUsuario._perfil = _rol;
+                            Datos.DatosUsuario._codrol = _cod_rol;
+
+                            modulo.auditoria("Inicio De Sistema TECSEGUR", "Inicio De Sistema Consorcio TECSEGUR", "", "");
+                        }
                     }
                 }
                 else
