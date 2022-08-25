@@ -29,15 +29,16 @@ namespace pl_Gurkas.Vista.Ticket
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cboempleadoActivo = new System.Windows.Forms.ComboBox();
+            this.txthora = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboEstadoTicket = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dtpFechaAdquisicion = new System.Windows.Forms.DateTimePicker();
-            this.txtticek = new System.Windows.Forms.TextBox();
+            this.txtTicket = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtNombreEmp = new System.Windows.Forms.TextBox();
             this.txtCodEmpleado = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,25 +53,26 @@ namespace pl_Gurkas.Vista.Ticket
             this.btnBuscar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.cboempleadoActivo);
+            this.groupBox1.Controls.Add(this.txthora);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cboEstadoTicket);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.dtpFechaAdquisicion);
-            this.groupBox1.Controls.Add(this.txtticek);
+            this.groupBox1.Controls.Add(this.txtTicket);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.txtNombreEmp);
             this.groupBox1.Controls.Add(this.txtCodEmpleado);
+            this.groupBox1.Controls.Add(this.cboEstado);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.cboEstado);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -80,12 +82,23 @@ namespace pl_Gurkas.Vista.Ticket
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Generar Ticket";
             // 
-            // textBox1
+            // cboempleadoActivo
             // 
-            this.textBox1.Location = new System.Drawing.Point(351, 85);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(122, 20);
-            this.textBox1.TabIndex = 196;
+            this.cboempleadoActivo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboempleadoActivo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboempleadoActivo.FormattingEnabled = true;
+            this.cboempleadoActivo.Location = new System.Drawing.Point(87, 53);
+            this.cboempleadoActivo.Name = "cboempleadoActivo";
+            this.cboempleadoActivo.Size = new System.Drawing.Size(433, 21);
+            this.cboempleadoActivo.TabIndex = 199;
+            this.cboempleadoActivo.SelectedIndexChanged += new System.EventHandler(this.cboempleadoActivo_SelectedIndexChanged);
+            // 
+            // txthora
+            // 
+            this.txthora.Location = new System.Drawing.Point(351, 85);
+            this.txthora.Name = "txthora";
+            this.txthora.Size = new System.Drawing.Size(122, 20);
+            this.txthora.TabIndex = 196;
             // 
             // label7
             // 
@@ -97,14 +110,14 @@ namespace pl_Gurkas.Vista.Ticket
             this.label7.TabIndex = 197;
             this.label7.Text = "Tipo \r\nConsulta:";
             // 
-            // comboBox1
+            // cboEstadoTicket
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(351, 114);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(169, 21);
-            this.comboBox1.TabIndex = 198;
+            this.cboEstadoTicket.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEstadoTicket.FormattingEnabled = true;
+            this.cboEstadoTicket.Location = new System.Drawing.Point(87, 114);
+            this.cboEstadoTicket.Name = "cboEstadoTicket";
+            this.cboEstadoTicket.Size = new System.Drawing.Size(169, 21);
+            this.cboEstadoTicket.TabIndex = 198;
             // 
             // label4
             // 
@@ -126,12 +139,12 @@ namespace pl_Gurkas.Vista.Ticket
             this.dtpFechaAdquisicion.Size = new System.Drawing.Size(104, 20);
             this.dtpFechaAdquisicion.TabIndex = 194;
             // 
-            // txtticek
+            // txtTicket
             // 
-            this.txtticek.Location = new System.Drawing.Point(87, 27);
-            this.txtticek.Name = "txtticek";
-            this.txtticek.Size = new System.Drawing.Size(133, 20);
-            this.txtticek.TabIndex = 71;
+            this.txtTicket.Location = new System.Drawing.Point(87, 27);
+            this.txtTicket.Name = "txtTicket";
+            this.txtTicket.Size = new System.Drawing.Size(133, 20);
+            this.txtTicket.TabIndex = 71;
             // 
             // label5
             // 
@@ -142,13 +155,6 @@ namespace pl_Gurkas.Vista.Ticket
             this.label5.Size = new System.Drawing.Size(69, 15);
             this.label5.TabIndex = 70;
             this.label5.Text = "Num Ticket";
-            // 
-            // txtNombreEmp
-            // 
-            this.txtNombreEmp.Location = new System.Drawing.Point(87, 53);
-            this.txtNombreEmp.Name = "txtNombreEmp";
-            this.txtNombreEmp.Size = new System.Drawing.Size(433, 20);
-            this.txtNombreEmp.TabIndex = 59;
             // 
             // txtCodEmpleado
             // 
@@ -191,7 +197,7 @@ namespace pl_Gurkas.Vista.Ticket
             // 
             this.cboEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboEstado.FormattingEnabled = true;
-            this.cboEstado.Location = new System.Drawing.Point(87, 115);
+            this.cboEstado.Location = new System.Drawing.Point(351, 118);
             this.cboEstado.Name = "cboEstado";
             this.cboEstado.Size = new System.Drawing.Size(169, 21);
             this.cboEstado.TabIndex = 68;
@@ -293,6 +299,10 @@ namespace pl_Gurkas.Vista.Ticket
             this.pictureBox1.TabIndex = 220;
             this.pictureBox1.TabStop = false;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -321,9 +331,8 @@ namespace pl_Gurkas.Vista.Ticket
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtticek;
+        private System.Windows.Forms.TextBox txtTicket;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtNombreEmp;
         private System.Windows.Forms.TextBox txtCodEmpleado;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label3;
@@ -331,7 +340,7 @@ namespace pl_Gurkas.Vista.Ticket
         private System.Windows.Forms.ComboBox cboEstado;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dtpFechaAdquisicion;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txthora;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtMensaje;
         private System.Windows.Forms.Label label18;
@@ -340,8 +349,10 @@ namespace pl_Gurkas.Vista.Ticket
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboEstadoTicket;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox cboempleadoActivo;
+        private System.Windows.Forms.Timer timer1;
     }
 }
