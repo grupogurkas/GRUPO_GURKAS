@@ -59,11 +59,11 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.dgvBuscarProducto.AllowUserToDeleteRows = false;
             this.dgvBuscarProducto.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvBuscarProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBuscarProducto.Location = new System.Drawing.Point(12, 142);
+            this.dgvBuscarProducto.Location = new System.Drawing.Point(12, 128);
             this.dgvBuscarProducto.Name = "dgvBuscarProducto";
             this.dgvBuscarProducto.ReadOnly = true;
             this.dgvBuscarProducto.RowHeadersWidth = 51;
-            this.dgvBuscarProducto.Size = new System.Drawing.Size(1297, 488);
+            this.dgvBuscarProducto.Size = new System.Drawing.Size(1297, 502);
             this.dgvBuscarProducto.TabIndex = 11;
             // 
             // groupBox1
@@ -75,7 +75,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox1.Controls.Add(this.btnCerrar);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1299, 124);
+            this.groupBox1.Size = new System.Drawing.Size(1299, 110);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Buscar Producto";
@@ -85,7 +85,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcel.Image = global::pl_Gurkas.Properties.Resources.Excel_32;
             this.btnExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExcel.Location = new System.Drawing.Point(1158, 71);
+            this.btnExcel.Location = new System.Drawing.Point(1178, 62);
             this.btnExcel.Name = "btnExcel";
             this.btnExcel.Size = new System.Drawing.Size(115, 46);
             this.btnExcel.TabIndex = 64;
@@ -101,18 +101,18 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.groupBox4.Controls.Add(this.btnBuscarProductoSistema);
             this.groupBox4.Location = new System.Drawing.Point(800, 19);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(352, 75);
+            this.groupBox4.Size = new System.Drawing.Size(372, 75);
             this.groupBox4.TabIndex = 105;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Busqueda por Codigo Sistema";
+            this.groupBox4.Text = "Busqueda por Categoria";
             // 
             // cboCodigoSistema
             // 
             this.cboCodigoSistema.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCodigoSistema.FormattingEnabled = true;
-            this.cboCodigoSistema.Location = new System.Drawing.Point(54, 28);
+            this.cboCodigoSistema.Location = new System.Drawing.Point(70, 31);
             this.cboCodigoSistema.Name = "cboCodigoSistema";
-            this.cboCodigoSistema.Size = new System.Drawing.Size(184, 21);
+            this.cboCodigoSistema.Size = new System.Drawing.Size(199, 21);
             this.cboCodigoSistema.TabIndex = 68;
             // 
             // label27
@@ -121,16 +121,16 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.Location = new System.Drawing.Point(4, 32);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(55, 15);
+            this.label27.Size = new System.Drawing.Size(69, 15);
             this.label27.TabIndex = 67;
-            this.label27.Text = "Codigo : ";
+            this.label27.Text = "Categoria : ";
             // 
             // btnBuscarProductoSistema
             // 
             this.btnBuscarProductoSistema.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarProductoSistema.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
             this.btnBuscarProductoSistema.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarProductoSistema.Location = new System.Drawing.Point(244, 14);
+            this.btnBuscarProductoSistema.Location = new System.Drawing.Point(270, 14);
             this.btnBuscarProductoSistema.Name = "btnBuscarProductoSistema";
             this.btnBuscarProductoSistema.Size = new System.Drawing.Size(96, 46);
             this.btnBuscarProductoSistema.TabIndex = 66;
@@ -233,7 +233,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.Image = global::pl_Gurkas.Properties.Resources.cerrar_sesion_32;
             this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrar.Location = new System.Drawing.Point(1158, 19);
+            this.btnCerrar.Location = new System.Drawing.Point(1178, 10);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(115, 46);
             this.btnCerrar.TabIndex = 98;

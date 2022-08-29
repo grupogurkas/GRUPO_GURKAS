@@ -1451,7 +1451,7 @@ namespace pl_Gurkas.Vista.Principal
             // 
             this.planillaPorUnidadToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.Planilla_conta_32;
             this.planillaPorUnidadToolStripMenuItem.Name = "planillaPorUnidadToolStripMenuItem";
-            this.planillaPorUnidadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.planillaPorUnidadToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.planillaPorUnidadToolStripMenuItem.Text = "Planilla por Unidad";
             this.planillaPorUnidadToolStripMenuItem.Click += new System.EventHandler(this.planillaPorUnidadToolStripMenuItem_Click);
             // 
@@ -1639,7 +1639,7 @@ namespace pl_Gurkas.Vista.Principal
             // generarTicketToolStripMenuItem
             // 
             this.generarTicketToolStripMenuItem.Name = "generarTicketToolStripMenuItem";
-            this.generarTicketToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.generarTicketToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.generarTicketToolStripMenuItem.Text = "Generar Ticket";
             this.generarTicketToolStripMenuItem.Click += new System.EventHandler(this.generarTicketToolStripMenuItem_Click);
             // 

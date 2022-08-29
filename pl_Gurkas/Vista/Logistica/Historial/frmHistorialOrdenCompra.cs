@@ -43,5 +43,10 @@ namespace pl_Gurkas.Vista.Logistica.Historial
                 this.Close();
             }
         }
+
+        private void btnPdf_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

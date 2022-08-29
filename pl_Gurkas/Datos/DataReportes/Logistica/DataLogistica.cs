@@ -138,9 +138,7 @@ namespace pl_Gurkas.Datos.DataReportes.Logistica
             dt.Columns[5].ColumnName = "FECHA DE REGISTRO";
             return dt;
         }
-        
-
-        public DataTable BuscarProductoPorCodigoSistema(string cod_producto)
+        public DataTable BuscarProductoPorCodigoSistema(int cod_producto)
         {
             SqlCommand comando = conexion.conexionBD().CreateCommand();
             comando.CommandType = CommandType.Text;
@@ -173,7 +171,6 @@ namespace pl_Gurkas.Datos.DataReportes.Logistica
             dt.Columns[2].ColumnName = "ESTADO";
             return dt;
         }
-
         public DataTable BuscarMaterialSalida(string COD_VALE)
         {
             SqlCommand comando = conexion.conexionBD().CreateCommand();

@@ -68,6 +68,7 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             this.btnPdf.Text = "PDF";
             this.btnPdf.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPdf.UseVisualStyleBackColor = true;
+            this.btnPdf.Click += new System.EventHandler(this.btnPdf_Click);
             // 
             // btnCerrar
             // 

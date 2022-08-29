@@ -54,7 +54,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
         private void llenadoDatosProducto()
         {
             Llenadocbo.ObtenerProductosGeneral(cboProducto);
-            Llenadocbo.ObtenerCodigoProducto(cboCodigoSistema);
+            Llenadocbo.ObtenerCategoria(cboCodigoSistema);
 
         }
 
@@ -91,7 +91,7 @@ namespace pl_Gurkas.Vista.Logistica.producto
 
         private void btnBuscarProductoSistema_Click(object sender, EventArgs e)
         {
-            string cod_producto = cboCodigoSistema.SelectedValue.ToString();
+            int cod_producto = cboCodigoSistema.SelectedIndex;
             dgvBuscarProducto.DataSource = datosLogistica.BuscarProductoPorCodigoSistema(cod_producto);
 
         }
