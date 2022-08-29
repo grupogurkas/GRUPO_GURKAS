@@ -13,7 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>D:\ppppp\</PublishUrl>
+    <PublishUrl>D:\GA\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -24,7 +24,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <UpdateUrl>\\192.168.1.13\compartida\SISTEMA_GURKAS\</UpdateUrl>
-    <ApplicationRevision>95</ApplicationRevision>
+    <ApplicationRevision>98</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -258,6 +258,7 @@
     <Compile Include="Datos\LlenadoDatos\LlenadoDatosPlanilla.cs" />
     <Compile Include="Datos\LlenadoDatos\LLenadoDatosRRHH.cs" />
     <Compile Include="Datos\LlenadoDatos\LlenadoDatosSucamec.cs" />
+    <Compile Include="Datos\LlenadoDatos\LlenadoDatosTicket.cs" />
     <Compile Include="Datos\LlenadoDatos\LlenadoDeDatos.cs" />
     <Compile Include="Datos\LlenadoDatos\LlenadoDeDatosCentroControl.cs" />
     <Compile Include="Datos\LlenadoDatos\LlenadoDeDatosComercial.cs" />

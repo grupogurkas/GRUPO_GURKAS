@@ -964,7 +964,8 @@ namespace pl_Gurkas.Vista.Principal
 
         private void generarTicketToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            controlvistaformulario.ControlVista(this, new Vista.Ticket.Form1());
+            modulo.auditoria("Ticket Consulta", "Generar Ticket", "", "");
         }
     }
 }
