@@ -13,6 +13,7 @@ namespace pl_Gurkas.Datos.LlenadoDatos
     {
         Datos.Conexiondbo conexiondbo = new Datos.Conexiondbo();
         string cod_empleado = Datos.CodEmplado._codempleado;
+        int id_empresa = Datos.EmpresaID._empresaid;
         public void ObtenerUnidadCentroControl(ComboBox cd)
         {
 
@@ -155,24 +156,69 @@ namespace pl_Gurkas.Datos.LlenadoDatos
         }
         public void ObtenerPersonalCentroControl(ComboBox cd)
         {
-            try
+            if (id_empresa == 1 )
             {
-                SqlCommand cmd = new SqlCommand("select Cod_empleado,NOMBRE_COMPLETO from v_tareaje_personal_Activo_busqueda order by APELLIDO_PATERNO asc", conexiondbo.conexionBD());
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                DataRow fila = dt.NewRow();
-                fila["NOMBRE_COMPLETO"] = "---Seleccione un Empleado---";
-                dt.Rows.InsertAt(fila, 0);
-                cd.ValueMember = "Cod_empleado";
-                cd.DisplayMember = "NOMBRE_COMPLETO";
-                cd.DataSource = dt;
-                cd.SelectedIndex = 0;
+                try
+                {
+                    SqlCommand cmd = new SqlCommand("select Cod_empleado,NOMBRE_COMPLETO from v_tareaje_personal_Activo_busqueda order by APELLIDO_PATERNO asc", conexiondbo.conexionBD());
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    DataRow fila = dt.NewRow();
+                    fila["NOMBRE_COMPLETO"] = "---Seleccione un Empleado---";
+                    dt.Rows.InsertAt(fila, 0);
+                    cd.ValueMember = "Cod_empleado";
+                    cd.DisplayMember = "NOMBRE_COMPLETO";
+                    cd.DataSource = dt;
+                    cd.SelectedIndex = 0;
+                }
+                catch (Exception err)
+                {
+                    MessageBox.Show("No se puede obtener el listado del Empleados \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
-            catch (Exception err)
+            else if (id_empresa == 2)
             {
-                MessageBox.Show("No se puede obtener el listado del Empleados \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                try
+                {
+                    SqlCommand cmd = new SqlCommand("select Cod_empleado,NOMBRE_COMPLETO from v_tareaje_personal_Activo_busqueda order by APELLIDO_PATERNO asc", conexiondbo.conexionBD());
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    DataRow fila = dt.NewRow();
+                    fila["NOMBRE_COMPLETO"] = "---Seleccione un Empleado---";
+                    dt.Rows.InsertAt(fila, 0);
+                    cd.ValueMember = "Cod_empleado";
+                    cd.DisplayMember = "NOMBRE_COMPLETO";
+                    cd.DataSource = dt;
+                    cd.SelectedIndex = 0;
+                }
+                catch (Exception err)
+                {
+                    MessageBox.Show("No se puede obtener el listado del Empleados \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
+            else {
+                try
+                {
+                    SqlCommand cmd = new SqlCommand("select Cod_empleado,NOMBRE_COMPLETO from v_tareaje_personal_Activo_busqueda_2 order by APELLIDO_PATERNO asc", conexiondbo.conexionBD());
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    DataRow fila = dt.NewRow();
+                    fila["NOMBRE_COMPLETO"] = "---Seleccione un Empleado---";
+                    dt.Rows.InsertAt(fila, 0);
+                    cd.ValueMember = "Cod_empleado";
+                    cd.DisplayMember = "NOMBRE_COMPLETO";
+                    cd.DataSource = dt;
+                    cd.SelectedIndex = 0;
+                }
+                catch (Exception err)
+                {
+                    MessageBox.Show("No se puede obtener el listado del Empleados \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            
         }
         public void ObtenerEmpresaCentroControl(ComboBox cd)
         {
