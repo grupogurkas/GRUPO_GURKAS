@@ -20,7 +20,6 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
         {
             InitializeComponent();
         }
-
         private void frmAsistenciadePersonal_Load(object sender, EventArgs e)
         {
             Llenadocbo.ObtenerUnidadCentroControl(cboUnidad);
@@ -29,7 +28,6 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
         }
         private void ConsultarAsistenciaPersonal(DateTime fechaInicio, DateTime FechaFin, string cod_unidad)
         {
-
             try
             {
                 SqlCommand comando = conexion.conexionBD().CreateCommand();
@@ -46,7 +44,6 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
                 dt.Columns[1].ColumnName = "Empleado";
                 dt.Columns[2].ColumnName = "Nombre Sede";
                 dt.Columns[3].ColumnName = "Empresa";
-
                 dt.Columns[4].ColumnName = "Asistencia";
                 dt.Columns[5].ColumnName = "Descanso";
                 dt.Columns[6].ColumnName = "Descanso Trabajado";
@@ -64,14 +61,12 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
             {
                 MessageBox.Show("No se encontro nungun resultado \n\n " + ex, "ERROR");
             }
-
         }
         private void btnConsultar_Click(object sender, EventArgs e)
         {
             string cod_unidad = cboUnidad.SelectedValue.ToString();
             ConsultarAsistenciaPersonal(dtpFechaInicio.Value, dtpFechaFin.Value, cod_unidad);
         }
-
         private void cboTurno_Click(object sender, EventArgs e)
         {
             string nombre_unidad = cboUnidad.GetItemText(cboUnidad.SelectedItem);
