@@ -46,6 +46,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
                 dt.Columns[1].ColumnName = "Empleado";
                 dt.Columns[2].ColumnName = "Nombre Sede";
                 dt.Columns[3].ColumnName = "Empresa";
+
                 dt.Columns[4].ColumnName = "Asistencia";
                 dt.Columns[5].ColumnName = "Descanso";
                 dt.Columns[6].ColumnName = "Descanso Trabajado";
