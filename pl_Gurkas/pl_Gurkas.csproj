@@ -502,6 +502,12 @@
     <Compile Include="Vista\Logistica\CargoEntrega\frmRecuperarMaterial.Designer.cs">
       <DependentUpon>frmRecuperarMaterial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Logistica\Historial\fmrHistorialOrdenCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Logistica\Historial\fmrHistorialOrdenCompra.Designer.cs">
+      <DependentUpon>fmrHistorialOrdenCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Logistica\Historial\frmBuscarVale.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1175,6 +1181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\CargoEntrega\frmRecuperarMaterial.resx">
       <DependentUpon>frmRecuperarMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Logistica\Historial\fmrHistorialOrdenCompra.resx">
+      <DependentUpon>fmrHistorialOrdenCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\Historial\frmBuscarVale.resx">
       <DependentUpon>frmBuscarVale.cs</DependentUpon>

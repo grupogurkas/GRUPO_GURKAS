@@ -923,7 +923,7 @@ namespace pl_Gurkas.Vista.Principal
 
         private void historialOrdenCompraToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            controlvistaformulario.ControlVista(this, new Vista.Logistica.Historial.frmHistorialOrdenCompra());
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.Historial.fmrHistorialOrdenCompra());
             modulo.auditoria("Logistica", "Almacen", "Historial Logistico" , "Historial Orden Compra");
         }
 
