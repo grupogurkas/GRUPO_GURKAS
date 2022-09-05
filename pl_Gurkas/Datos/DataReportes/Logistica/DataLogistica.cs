@@ -86,7 +86,7 @@ namespace pl_Gurkas.Datos.DataReportes.Logistica
         {
             SqlCommand comando = conexion.conexionBD().CreateCommand();
             comando.CommandType = CommandType.Text;
-            comando.CommandText = "sp_buscar_producto  @COD_PRODUCTO_MATERIAL";
+            comando.CommandText = "sp_buscar_producto_por_nombre  @COD_PRODUCTO_MATERIAL";
             comando.Parameters.AddWithValue("COD_PRODUCTO_MATERIAL", cod_producto);
             comando.ExecuteNonQuery();
             DataTable dt = new DataTable();
@@ -124,7 +124,7 @@ namespace pl_Gurkas.Datos.DataReportes.Logistica
         {
             SqlCommand comando = conexion.conexionBD().CreateCommand();
             comando.CommandType = CommandType.Text;
-            comando.CommandText = "sp_buscar_producto  @COD_PRODUCTO_MATERIAL";
+            comando.CommandText = "sp_buscar_producto_por_codigo  @COD_PRODUCTO_MATERIAL";
             comando.Parameters.AddWithValue("COD_PRODUCTO_MATERIAL", cod_producto);
             comando.ExecuteNonQuery();
             DataTable dt = new DataTable();
