@@ -14,6 +14,7 @@ namespace pl_Gurkas.Vista.Logistica.Historial
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.LlenadoDatos.llenadoDatosLogistica Llenadocbo = new Datos.LlenadoDatos.llenadoDatosLogistica();
+        Datos.DataReportes.Logistica.DataLogistica datosLogistica = new Datos.DataReportes.Logistica.DataLogistica();
         public fmrHistorialOrdenCompra()
         {
             InitializeComponent();
@@ -34,7 +35,39 @@ namespace pl_Gurkas.Vista.Logistica.Historial
         {
             Llenadocbo.ObtenerProveedoresLogistico(cboProveedor);
             Llenadocbo.ObtenerProveedoresLogistico(cboProveedorMesANIO);
-            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string cod_pro = cboProveedor.SelectedValue.ToString();
+            dgvHistorialOrdenCompra.DataSource = datosLogistica.BuscarOrdenComprarCodProveedor(cod_pro);
+        }
+
+        private void btnBuscarProveedorPorRuc_Click(object sender, EventArgs e)
+        {
+            string ruc = txtRucProveedor.Text;
+            dgvHistorialOrdenCompra.DataSource = datosLogistica.BuscarOrdenComprarruc(ruc);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string num_orden_compra = txtordencomprar.Text;
+            dgvHistorialOrdenCompra.DataSource = datosLogistica.BuscarOrdenCompranum_orden_compra(num_orden_compra);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int mes = Convert.ToInt32(txtm.Text);
+            int anio = Convert.ToInt32(txta.Text);
+            dgvHistorialOrdenCompra.DataSource = datosLogistica.BuscarOrdenCompra_mes_anio(mes,anio);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int mes = Convert.ToInt32(textBox1.Text);
+            int anio = Convert.ToInt32(textBox2.Text);
+            string cod_pro = cboProveedor.SelectedValue.ToString();
+            dgvHistorialOrdenCompra.DataSource = datosLogistica.BuscarOrdenCompra_mes_anio_cod(mes, anio, cod_pro);
         }
     }
 }

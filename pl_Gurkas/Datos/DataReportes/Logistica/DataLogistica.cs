@@ -225,5 +225,140 @@ namespace pl_Gurkas.Datos.DataReportes.Logistica
             dt.Columns[22].ColumnName = "PROVEEDOR";
             return dt;
         }
+
+        public DataTable BuscarOrdenComprarCodProveedor(string cod_proveedor)
+        {
+            SqlCommand comando = conexion.conexionBD().CreateCommand();
+            comando.CommandType = CommandType.Text;
+            comando.CommandText = "SP_BUSCAR_PROVEEDOR_COD  @cod_proveedor";
+            comando.Parameters.AddWithValue("cod_proveedor", cod_proveedor);
+            comando.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter dta = new SqlDataAdapter(comando);
+            dta.Fill(dt);
+            dt.Columns[0].ColumnName = "NUM ORDEN COMPRA";
+            dt.Columns[1].ColumnName = "NOMBRE DE PROVEEDOR";
+            dt.Columns[2].ColumnName = "CONTACTO";
+            dt.Columns[3].ColumnName = "RUC";
+            dt.Columns[4].ColumnName = "DIRECCIÓN";
+            dt.Columns[5].ColumnName = "CORREO";
+            dt.Columns[6].ColumnName = "TELEFONO";
+            dt.Columns[7].ColumnName = "CELULAR";
+            dt.Columns[8].ColumnName = "FECHA";
+            dt.Columns[9].ColumnName = "PRODUCTO";
+            dt.Columns[10].ColumnName = "CANTIDAD SOLICITADA";
+            dt.Columns[11].ColumnName = "COSTO UNITARIO";
+            dt.Columns[12].ColumnName = "COSTO TOTAL";
+            dt.Columns[13].ColumnName = "OBSERVACION";
+            return dt;
+        }
+        public DataTable BuscarOrdenComprarruc(string ruc)
+        {
+            SqlCommand comando = conexion.conexionBD().CreateCommand();
+            comando.CommandType = CommandType.Text;
+            comando.CommandText = "SP_BUSCAR_PROVEEDOR_RUC_  @ruc";
+            comando.Parameters.AddWithValue("ruc", ruc);
+            comando.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter dta = new SqlDataAdapter(comando);
+            dta.Fill(dt);
+            dt.Columns[0].ColumnName = "NUM ORDEN COMPRA";
+            dt.Columns[1].ColumnName = "NOMBRE DE PROVEEDOR";
+            dt.Columns[2].ColumnName = "CONTACTO";
+            dt.Columns[3].ColumnName = "RUC";
+            dt.Columns[4].ColumnName = "DIRECCIÓN";
+            dt.Columns[5].ColumnName = "CORREO";
+            dt.Columns[6].ColumnName = "TELEFONO";
+            dt.Columns[7].ColumnName = "CELULAR";
+            dt.Columns[8].ColumnName = "FECHA";
+            dt.Columns[9].ColumnName = "PRODUCTO";
+            dt.Columns[10].ColumnName = "CANTIDAD SOLICITADA";
+            dt.Columns[11].ColumnName = "COSTO UNITARIO";
+            dt.Columns[12].ColumnName = "COSTO TOTAL";
+            dt.Columns[13].ColumnName = "OBSERVACION";
+            return dt;
+        }
+
+        public DataTable BuscarOrdenCompranum_orden_compra(string num_orden_compra)
+        {
+            SqlCommand comando = conexion.conexionBD().CreateCommand();
+            comando.CommandType = CommandType.Text;
+            comando.CommandText = "SP_BUSCAR_PROVEEDOR_num_orden_compra  @num_orden_compra";
+            comando.Parameters.AddWithValue("num_orden_compra", num_orden_compra);
+            comando.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter dta = new SqlDataAdapter(comando);
+            dta.Fill(dt);
+            dt.Columns[0].ColumnName = "NUM ORDEN COMPRA";
+            dt.Columns[1].ColumnName = "NOMBRE DE PROVEEDOR";
+            dt.Columns[2].ColumnName = "CONTACTO";
+            dt.Columns[3].ColumnName = "RUC";
+            dt.Columns[4].ColumnName = "DIRECCIÓN";
+            dt.Columns[5].ColumnName = "CORREO";
+            dt.Columns[6].ColumnName = "TELEFONO";
+            dt.Columns[7].ColumnName = "CELULAR";
+            dt.Columns[8].ColumnName = "FECHA";
+            dt.Columns[9].ColumnName = "PRODUCTO";
+            dt.Columns[10].ColumnName = "CANTIDAD SOLICITADA";
+            dt.Columns[11].ColumnName = "COSTO UNITARIO";
+            dt.Columns[12].ColumnName = "COSTO TOTAL";
+            dt.Columns[13].ColumnName = "OBSERVACION";
+            return dt;
+        }
+        public DataTable BuscarOrdenCompra_mes_anio(int m, int a)
+        {
+            SqlCommand comando = conexion.conexionBD().CreateCommand();
+            comando.CommandType = CommandType.Text;
+            comando.CommandText = "SP_BUSCAR_PROVEEDOR_mes_anio  @mes,@anio";
+            comando.Parameters.AddWithValue("mes", m);
+            comando.Parameters.AddWithValue("anio", a);
+            comando.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter dta = new SqlDataAdapter(comando);
+            dta.Fill(dt);
+            dt.Columns[0].ColumnName = "NUM ORDEN COMPRA";
+            dt.Columns[1].ColumnName = "NOMBRE DE PROVEEDOR";
+            dt.Columns[2].ColumnName = "CONTACTO";
+            dt.Columns[3].ColumnName = "RUC";
+            dt.Columns[4].ColumnName = "DIRECCIÓN";
+            dt.Columns[5].ColumnName = "CORREO";
+            dt.Columns[6].ColumnName = "TELEFONO";
+            dt.Columns[7].ColumnName = "CELULAR";
+            dt.Columns[8].ColumnName = "FECHA";
+            dt.Columns[9].ColumnName = "PRODUCTO";
+            dt.Columns[10].ColumnName = "CANTIDAD SOLICITADA";
+            dt.Columns[11].ColumnName = "COSTO UNITARIO";
+            dt.Columns[12].ColumnName = "COSTO TOTAL";
+            dt.Columns[13].ColumnName = "OBSERVACION";
+            return dt;
+        }
+        public DataTable BuscarOrdenCompra_mes_anio_cod(int m, int a, string cod_proveedor)
+        {
+            SqlCommand comando = conexion.conexionBD().CreateCommand();
+            comando.CommandType = CommandType.Text;
+            comando.CommandText = "SP_BUSCAR_PROVEEDOR_mes_anio_cod_emplado  @mes,@anio,@cod_proveedor";
+            comando.Parameters.AddWithValue("mes", m);
+            comando.Parameters.AddWithValue("anio", a);
+            comando.Parameters.AddWithValue("cod_proveedor", cod_proveedor);
+            comando.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter dta = new SqlDataAdapter(comando);
+            dta.Fill(dt);
+            dt.Columns[0].ColumnName = "NUM ORDEN COMPRA";
+            dt.Columns[1].ColumnName = "NOMBRE DE PROVEEDOR";
+            dt.Columns[2].ColumnName = "CONTACTO";
+            dt.Columns[3].ColumnName = "RUC";
+            dt.Columns[4].ColumnName = "DIRECCIÓN";
+            dt.Columns[5].ColumnName = "CORREO";
+            dt.Columns[6].ColumnName = "TELEFONO";
+            dt.Columns[7].ColumnName = "CELULAR";
+            dt.Columns[8].ColumnName = "FECHA";
+            dt.Columns[9].ColumnName = "PRODUCTO";
+            dt.Columns[10].ColumnName = "CANTIDAD SOLICITADA";
+            dt.Columns[11].ColumnName = "COSTO UNITARIO";
+            dt.Columns[12].ColumnName = "COSTO TOTAL";
+            dt.Columns[13].ColumnName = "OBSERVACION";
+            return dt;
+        }
     }
 }

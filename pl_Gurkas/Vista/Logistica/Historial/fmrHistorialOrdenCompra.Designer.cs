@@ -44,25 +44,25 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             this.txta = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.dgvPlataformaPlanilla = new System.Windows.Forms.DataGridView();
+            this.dgvHistorialOrdenCompra = new System.Windows.Forms.DataGridView();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.btnExcel = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cboProveedorMesANIO = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.cboProveedorMesANIO = new System.Windows.Forms.ComboBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtordencomprar = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPlataformaPlanilla)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHistorialOrdenCompra)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.SuspendLayout();
@@ -104,6 +104,7 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             this.button1.TabIndex = 9;
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -148,6 +149,7 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             this.btnBuscarProveedorPorRuc.Text = "Buscar";
             this.btnBuscarProveedorPorRuc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscarProveedorPorRuc.UseVisualStyleBackColor = true;
+            this.btnBuscarProveedorPorRuc.Click += new System.EventHandler(this.btnBuscarProveedorPorRuc_Click);
             // 
             // txtRucProveedor
             // 
@@ -198,6 +200,7 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             this.button3.TabIndex = 9;
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // txta
             // 
@@ -224,16 +227,16 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             this.label6.TabIndex = 70;
             this.label6.Text = "AÑO";
             // 
-            // dgvPlataformaPlanilla
+            // dgvHistorialOrdenCompra
             // 
-            this.dgvPlataformaPlanilla.AllowUserToDeleteRows = false;
-            this.dgvPlataformaPlanilla.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgvPlataformaPlanilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPlataformaPlanilla.Location = new System.Drawing.Point(12, 199);
-            this.dgvPlataformaPlanilla.Name = "dgvPlataformaPlanilla";
-            this.dgvPlataformaPlanilla.ReadOnly = true;
-            this.dgvPlataformaPlanilla.Size = new System.Drawing.Size(1337, 422);
-            this.dgvPlataformaPlanilla.TabIndex = 107;
+            this.dgvHistorialOrdenCompra.AllowUserToDeleteRows = false;
+            this.dgvHistorialOrdenCompra.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvHistorialOrdenCompra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHistorialOrdenCompra.Location = new System.Drawing.Point(12, 199);
+            this.dgvHistorialOrdenCompra.Name = "dgvHistorialOrdenCompra";
+            this.dgvHistorialOrdenCompra.ReadOnly = true;
+            this.dgvHistorialOrdenCompra.Size = new System.Drawing.Size(1337, 422);
+            this.dgvHistorialOrdenCompra.TabIndex = 107;
             // 
             // progressBar1
             // 
@@ -270,6 +273,13 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Buscar Por Proveedor";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(75, 47);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 77;
+            // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -281,32 +291,7 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             this.button2.TabIndex = 9;
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 13);
-            this.label1.TabIndex = 52;
-            this.label1.Text = "Proveedor :";
-            // 
-            // cboProveedorMesANIO
-            // 
-            this.cboProveedorMesANIO.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cboProveedorMesANIO.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cboProveedorMesANIO.FormattingEnabled = true;
-            this.cboProveedorMesANIO.Location = new System.Drawing.Point(75, 24);
-            this.cboProveedorMesANIO.Name = "cboProveedorMesANIO";
-            this.cboProveedorMesANIO.Size = new System.Drawing.Size(289, 21);
-            this.cboProveedorMesANIO.TabIndex = 53;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(75, 47);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 77;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox2
             // 
@@ -324,6 +309,15 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             this.label2.TabIndex = 76;
             this.label2.Text = "MES";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(62, 13);
+            this.label1.TabIndex = 52;
+            this.label1.Text = "Proveedor :";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -333,10 +327,20 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             this.label4.TabIndex = 74;
             this.label4.Text = "AÑO";
             // 
+            // cboProveedorMesANIO
+            // 
+            this.cboProveedorMesANIO.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboProveedorMesANIO.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboProveedorMesANIO.FormattingEnabled = true;
+            this.cboProveedorMesANIO.Location = new System.Drawing.Point(75, 24);
+            this.cboProveedorMesANIO.Name = "cboProveedorMesANIO";
+            this.cboProveedorMesANIO.Size = new System.Drawing.Size(289, 21);
+            this.cboProveedorMesANIO.TabIndex = 53;
+            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.button4);
-            this.groupBox5.Controls.Add(this.textBox3);
+            this.groupBox5.Controls.Add(this.txtordencomprar);
             this.groupBox5.Controls.Add(this.label7);
             this.groupBox5.Location = new System.Drawing.Point(438, 93);
             this.groupBox5.Name = "groupBox5";
@@ -357,13 +361,14 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             this.button4.Text = "Buscar";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // textBox3
+            // txtordencomprar
             // 
-            this.textBox3.Location = new System.Drawing.Point(142, 30);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 20);
-            this.textBox3.TabIndex = 102;
+            this.txtordencomprar.Location = new System.Drawing.Point(142, 30);
+            this.txtordencomprar.Name = "txtordencomprar";
+            this.txtordencomprar.Size = new System.Drawing.Size(200, 20);
+            this.txtordencomprar.TabIndex = 102;
             // 
             // label7
             // 
@@ -384,7 +389,7 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.btnExcel);
             this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.dgvPlataformaPlanilla);
+            this.Controls.Add(this.dgvHistorialOrdenCompra);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
@@ -400,7 +405,7 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPlataformaPlanilla)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHistorialOrdenCompra)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
@@ -426,7 +431,7 @@ namespace pl_Gurkas.Vista.Logistica.Historial
         private System.Windows.Forms.TextBox txta;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridView dgvPlataformaPlanilla;
+        private System.Windows.Forms.DataGridView dgvHistorialOrdenCompra;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button btnExcel;
         private System.Windows.Forms.GroupBox groupBox4;
@@ -439,7 +444,7 @@ namespace pl_Gurkas.Vista.Logistica.Historial
         private System.Windows.Forms.ComboBox cboProveedorMesANIO;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtordencomprar;
         private System.Windows.Forms.Label label7;
     }
 }
