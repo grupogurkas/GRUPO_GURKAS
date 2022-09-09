@@ -66,7 +66,7 @@ namespace pl_Gurkas.Vista.Logistica.Historial
         {
             int mes = Convert.ToInt32(textBox1.Text);
             int anio = Convert.ToInt32(textBox2.Text);
-            string cod_pro = cboProveedor.SelectedValue.ToString();
+            string cod_pro = cboProveedorMesANIO.SelectedValue.ToString();
             dgvHistorialOrdenCompra.DataSource = datosLogistica.BuscarOrdenCompra_mes_anio_cod(mes, anio, cod_pro);
         }
     }
