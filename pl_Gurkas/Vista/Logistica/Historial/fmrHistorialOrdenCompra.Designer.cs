@@ -256,6 +256,7 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             this.btnExcel.TabIndex = 109;
             this.btnExcel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExcel.UseVisualStyleBackColor = true;
+            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
             // 
             // groupBox4
             // 

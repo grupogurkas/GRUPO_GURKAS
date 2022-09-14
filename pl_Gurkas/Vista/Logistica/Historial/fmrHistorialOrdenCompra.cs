@@ -15,6 +15,8 @@ namespace pl_Gurkas.Vista.Logistica.Historial
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.LlenadoDatos.llenadoDatosLogistica Llenadocbo = new Datos.LlenadoDatos.llenadoDatosLogistica();
         Datos.DataReportes.Logistica.DataLogistica datosLogistica = new Datos.DataReportes.Logistica.DataLogistica();
+        ExportacionExcel.Logistica.ExportarDataExcelLogistica Excel = new ExportacionExcel.Logistica.ExportarDataExcelLogistica();
+
         public fmrHistorialOrdenCompra()
         {
             InitializeComponent();
@@ -68,6 +70,11 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             int anio = Convert.ToInt32(textBox2.Text);
             string cod_pro = cboProveedorMesANIO.SelectedValue.ToString();
             dgvHistorialOrdenCompra.DataSource = datosLogistica.BuscarOrdenCompra_mes_anio_cod(mes, anio, cod_pro);
+        }
+
+        private void btnExcel_Click(object sender, EventArgs e)
+        {
+            Excel.ExportarOrdenesCompra(dgvHistorialOrdenCompra, progressBar1);
         }
     }
 }
