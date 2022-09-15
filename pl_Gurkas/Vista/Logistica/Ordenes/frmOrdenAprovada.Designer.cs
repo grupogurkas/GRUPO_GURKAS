@@ -37,7 +37,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.btnCerrar = new System.Windows.Forms.Button();
             this.dgvAsistencia = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtcodavp = new System.Windows.Forms.TextBox();
+            this.txtFactura = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsistencia)).BeginInit();
             this.SuspendLayout();
             // 
@@ -129,22 +129,22 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.label1.TabIndex = 100;
             this.label1.Text = "Factura Asociada :";
             // 
-            // txtcodavp
+            // txtFactura
             // 
-            this.txtcodavp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcodavp.Location = new System.Drawing.Point(194, 52);
-            this.txtcodavp.Name = "txtcodavp";
-            this.txtcodavp.Size = new System.Drawing.Size(398, 22);
-            this.txtcodavp.TabIndex = 101;
+            this.txtFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFactura.Location = new System.Drawing.Point(194, 52);
+            this.txtFactura.Name = "txtFactura";
+            this.txtFactura.Size = new System.Drawing.Size(398, 22);
+            this.txtFactura.TabIndex = 101;
             // 
             // frmOrdenAprovada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1289, 501);
-            this.Controls.Add(this.txtcodavp);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvAsistencia);
+            this.Controls.Add(this.txtFactura);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnBuscarProductoTecnologia);
             this.Controls.Add(this.cboNombreProductoTecnologico);
             this.Controls.Add(this.label81);
@@ -168,6 +168,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.DataGridView dgvAsistencia;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtcodavp;
+        private System.Windows.Forms.TextBox txtFactura;
     }
 }

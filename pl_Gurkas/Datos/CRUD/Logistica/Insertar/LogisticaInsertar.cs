@@ -61,6 +61,14 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Insertar
             cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
             cmd.ExecuteNonQuery();
         }
+        public void RegistrarOrdenCompraFactura(string ordenCompra, string NumFact)
+        {
+            SqlCommand cmd = new SqlCommand("sp_registar_ordenes_compra_factura ", conexion.conexionBD());
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@OrdenCompra", SqlDbType.VarChar).Value = ordenCompra;
+            cmd.Parameters.AddWithValue("@NUM_FACT", SqlDbType.VarChar).Value = NumFact;
+            cmd.ExecuteNonQuery();
+        }
         public void RegistrarPrendaCalzado(string cod_sistema, string cod_calzado, string nombre_calzado, int talla_cal, string color_cal,
                   int tipo_calzado, int stock_inicial_cal, int estado_cal, decimal precio_unitario_cal, int stock_actual_cal,
                   int stock_minimo_cal, string desp_cal,
@@ -189,7 +197,6 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Insertar
             cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
             cmd.ExecuteNonQuery();
         }
-
         public void RegistrarEpp(string cod_sistema, string cod_epp, string nombre_epp, string marca_epp,
                            string modelo_epp, int tipo_unidad_epp, int stock_inicial_epp, int estado_epp, decimal precio_unitario_epp,
                             int stock_actual_epp,
@@ -242,9 +249,6 @@ namespace pl_Gurkas.Datos.CRUD.Logistica.Insertar
             cmd.Parameters.AddWithValue("@USUARIO", SqlDbType.VarChar).Value = nombre_usuario;
             cmd.ExecuteNonQuery();
         }
-        
-
-
         public void RegistrarAseo(string cod_sistema, string cod_aseo, string nombre_aseo, string marca_aseo,
                              int tipo_unidad_aseo, DateTime f_fabricacion_aseo, DateTime f_vencimiento_aseo, int estado_aseo,
                             decimal precio_unitario_aseo, int stock_inicial_aseo,

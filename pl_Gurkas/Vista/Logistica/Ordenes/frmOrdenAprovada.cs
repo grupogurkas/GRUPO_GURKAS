@@ -15,7 +15,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
     {
         Datos.Conexiondbo conexion = new Datos.Conexiondbo();
         Datos.LlenadoDatos.llenadoDatosLogistica Llenadocbo = new Datos.LlenadoDatos.llenadoDatosLogistica();
-
+        Datos.CRUD.Logistica.Insertar.LogisticaInsertar logisticaInsertar = new Datos.CRUD.Logistica.Insertar.LogisticaInsertar();
         public frmOrdenAprovada()
         {
             InitializeComponent();
@@ -63,6 +63,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
         {
 
             string cod_orden_compra = cboNombreProductoTecnologico.SelectedValue.ToString();
+            string num_fact = txtFactura.Text;
 
             const string titulo = "Guardar Datos en el Sistema";
             const string mensaje = "Porfavor verificar  la asistencia antes de guardar en el sistema \n SI  =  GUARDAR IMFORMACION \n NO  =  VERIFICACION DE DATOS";
@@ -90,6 +91,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
                             comando.ExecuteNonQuery();
                         }
                     }
+                    logisticaInsertar.RegistrarOrdenCompraFactura(cod_orden_compra, num_fact);
                     MessageBox.Show("Datos registrado correptamente");
                     //limpiar datos del datagriview 
                     DataTable dt = (DataTable)dgvAsistencia.DataSource;

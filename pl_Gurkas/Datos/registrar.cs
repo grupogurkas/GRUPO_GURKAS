@@ -8,10 +8,6 @@ namespace pl_Gurkas.Datos
     {
         Datos.Conexiondbo  conexion = new Datos.Conexiondbo();
 
-
-
-
-
         public void RegistroProducto(int idproduct , byte[] Imagen)
         {
             SqlCommand cmd = new SqlCommand("sp_insertarProducto ", conexion.conexionBD());
