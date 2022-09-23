@@ -305,6 +305,32 @@ namespace pl_Gurkas.Datos.DataReportes.Logistica
             dt.Columns[13].ColumnName = "OBSERVACION";
             return dt;
         }
+        public DataTable BuscarPorFactura(string num_fact)
+        {
+            SqlCommand comando = conexion.conexionBD().CreateCommand();
+            comando.CommandType = CommandType.Text;
+            comando.CommandText = "SP_BUSCAR_PROVEEDOR_factura  @num_fact";
+            comando.Parameters.AddWithValue("num_fact", num_fact);
+            comando.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter dta = new SqlDataAdapter(comando);
+            dta.Fill(dt);
+            dt.Columns[0].ColumnName = "NUM ORDEN COMPRA";
+            dt.Columns[1].ColumnName = "NOMBRE DE PROVEEDOR";
+            dt.Columns[2].ColumnName = "CONTACTO";
+            dt.Columns[3].ColumnName = "RUC";
+            dt.Columns[4].ColumnName = "DIRECCIÓN";
+            dt.Columns[5].ColumnName = "CORREO";
+            dt.Columns[6].ColumnName = "TELEFONO";
+            dt.Columns[7].ColumnName = "CELULAR";
+            dt.Columns[8].ColumnName = "FECHA";
+            dt.Columns[9].ColumnName = "PRODUCTO";
+            dt.Columns[10].ColumnName = "CANTIDAD SOLICITADA";
+            dt.Columns[11].ColumnName = "COSTO UNITARIO";
+            dt.Columns[12].ColumnName = "COSTO TOTAL";
+            dt.Columns[13].ColumnName = "OBSERVACION";
+            return dt;
+        }
         public DataTable BuscarOrdenCompra_mes_anio(int m, int a)
         {
             SqlCommand comando = conexion.conexionBD().CreateCommand();

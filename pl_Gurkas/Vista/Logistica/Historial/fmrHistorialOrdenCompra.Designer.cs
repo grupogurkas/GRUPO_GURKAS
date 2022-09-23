@@ -59,12 +59,17 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             this.button4 = new System.Windows.Forms.Button();
             this.txtordencomprar = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.txtFactura = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistorialOrdenCompra)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCerrar
@@ -72,7 +77,7 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.Image = global::pl_Gurkas.Properties.Resources.salir_empleado_32;
             this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrar.Location = new System.Drawing.Point(984, 19);
+            this.btnCerrar.Location = new System.Drawing.Point(1113, 110);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(129, 46);
             this.btnCerrar.TabIndex = 53;
@@ -250,7 +255,7 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             this.btnExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcel.Image = global::pl_Gurkas.Properties.Resources.Excel_32;
             this.btnExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExcel.Location = new System.Drawing.Point(984, 71);
+            this.btnExcel.Location = new System.Drawing.Point(1302, 112);
             this.btnExcel.Name = "btnExcel";
             this.btnExcel.Size = new System.Drawing.Size(41, 48);
             this.btnExcel.TabIndex = 109;
@@ -381,11 +386,55 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             this.label7.TabIndex = 101;
             this.label7.Text = "ORDEN DE COMPRA :";
             // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.button5);
+            this.groupBox6.Controls.Add(this.txtFactura);
+            this.groupBox6.Controls.Add(this.label8);
+            this.groupBox6.Location = new System.Drawing.Point(984, 12);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(365, 79);
+            this.groupBox6.TabIndex = 107;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Busqueda por Factura";
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Image = global::pl_Gurkas.Properties.Resources.buscar_empleado_32;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(264, 15);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(95, 46);
+            this.button5.TabIndex = 66;
+            this.button5.Text = "Buscar";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // txtFactura
+            // 
+            this.txtFactura.Location = new System.Drawing.Point(58, 30);
+            this.txtFactura.Name = "txtFactura";
+            this.txtFactura.Size = new System.Drawing.Size(200, 20);
+            this.txtFactura.TabIndex = 102;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(4, 30);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(48, 15);
+            this.label8.TabIndex = 101;
+            this.label8.Text = "Factura";
+            // 
             // fmrHistorialOrdenCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1361, 651);
+            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.btnExcel);
@@ -411,6 +460,8 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -447,5 +498,9 @@ namespace pl_Gurkas.Vista.Logistica.Historial
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox txtordencomprar;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox txtFactura;
+        private System.Windows.Forms.Label label8;
     }
 }

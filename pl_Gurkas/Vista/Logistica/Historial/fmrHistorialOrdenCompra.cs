@@ -76,5 +76,11 @@ namespace pl_Gurkas.Vista.Logistica.Historial
         {
             Excel.ExportarOrdenesCompra(dgvHistorialOrdenCompra, progressBar1);
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string num_fact = txtFactura.Text;
+            dgvHistorialOrdenCompra.DataSource = datosLogistica.BuscarPorFactura(num_fact);
+        }
     }
 }
