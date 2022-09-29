@@ -114,7 +114,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.btnExcel.Location = new System.Drawing.Point(909, 238);
             this.btnExcel.Name = "btnExcel";
             this.btnExcel.Size = new System.Drawing.Size(109, 46);
-            this.btnExcel.TabIndex = 63;
+            this.btnExcel.TabIndex = 31;
             this.btnExcel.Text = "Excel";
             this.btnExcel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExcel.UseVisualStyleBackColor = true;
@@ -146,7 +146,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.btnConsultar.Location = new System.Drawing.Point(409, 16);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(109, 46);
-            this.btnConsultar.TabIndex = 52;
+            this.btnConsultar.TabIndex = 12;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnConsultar.UseVisualStyleBackColor = true;
@@ -159,7 +159,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.cbounidadsede.Location = new System.Drawing.Point(68, 16);
             this.cbounidadsede.Name = "cbounidadsede";
             this.cbounidadsede.Size = new System.Drawing.Size(334, 21);
-            this.cbounidadsede.TabIndex = 12;
+            this.cbounidadsede.TabIndex = 8;
             this.cbounidadsede.SelectedIndexChanged += new System.EventHandler(this.cbounidadsede_SelectedIndexChanged);
             // 
             // label15
@@ -179,7 +179,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.cbosedeunidad.Location = new System.Drawing.Point(69, 44);
             this.cbosedeunidad.Name = "cbosedeunidad";
             this.cbosedeunidad.Size = new System.Drawing.Size(334, 21);
-            this.cbosedeunidad.TabIndex = 4;
+            this.cbosedeunidad.TabIndex = 9;
             // 
             // label16
             // 
@@ -197,7 +197,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.dtpSedeFin.Location = new System.Drawing.Point(218, 75);
             this.dtpSedeFin.Name = "dtpSedeFin";
             this.dtpSedeFin.Size = new System.Drawing.Size(98, 20);
-            this.dtpSedeFin.TabIndex = 3;
+            this.dtpSedeFin.TabIndex = 11;
             // 
             // label17
             // 
@@ -215,7 +215,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.dtpSedePersonal.Location = new System.Drawing.Point(68, 75);
             this.dtpSedePersonal.Name = "dtpSedePersonal";
             this.dtpSedePersonal.Size = new System.Drawing.Size(96, 20);
-            this.dtpSedePersonal.TabIndex = 2;
+            this.dtpSedePersonal.TabIndex = 10;
             // 
             // label18
             // 
@@ -246,7 +246,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.txtEstaturaFin.Location = new System.Drawing.Point(142, 27);
             this.txtEstaturaFin.Name = "txtEstaturaFin";
             this.txtEstaturaFin.Size = new System.Drawing.Size(58, 20);
-            this.txtEstaturaFin.TabIndex = 2;
+            this.txtEstaturaFin.TabIndex = 25;
             this.txtEstaturaFin.TextChanged += new System.EventHandler(this.txtEstaturaFin_TextChanged);
             // 
             // txtEstaturaInicial
@@ -254,7 +254,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.txtEstaturaInicial.Location = new System.Drawing.Point(69, 28);
             this.txtEstaturaInicial.Name = "txtEstaturaInicial";
             this.txtEstaturaInicial.Size = new System.Drawing.Size(49, 20);
-            this.txtEstaturaInicial.TabIndex = 1;
+            this.txtEstaturaInicial.TabIndex = 24;
             this.txtEstaturaInicial.TextChanged += new System.EventHandler(this.txtEstaturaInicial_TextChanged);
             // 
             // btnConsultarEstatura
@@ -265,7 +265,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.btnConsultarEstatura.Location = new System.Drawing.Point(206, 9);
             this.btnConsultarEstatura.Name = "btnConsultarEstatura";
             this.btnConsultarEstatura.Size = new System.Drawing.Size(99, 46);
-            this.btnConsultarEstatura.TabIndex = 3;
+            this.btnConsultarEstatura.TabIndex = 26;
             this.btnConsultarEstatura.Text = "Consultar";
             this.btnConsultarEstatura.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnConsultarEstatura.UseVisualStyleBackColor = true;
@@ -310,7 +310,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.cboTurno.Location = new System.Drawing.Point(57, 26);
             this.cboTurno.Name = "cboTurno";
             this.cboTurno.Size = new System.Drawing.Size(149, 21);
-            this.cboTurno.TabIndex = 1;
+            this.cboTurno.TabIndex = 27;
             // 
             // btnConsultarTurno
             // 
@@ -320,7 +320,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.btnConsultarTurno.Location = new System.Drawing.Point(212, 12);
             this.btnConsultarTurno.Name = "btnConsultarTurno";
             this.btnConsultarTurno.Size = new System.Drawing.Size(100, 46);
-            this.btnConsultarTurno.TabIndex = 6;
+            this.btnConsultarTurno.TabIndex = 28;
             this.btnConsultarTurno.Text = "Consultar";
             this.btnConsultarTurno.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnConsultarTurno.UseVisualStyleBackColor = true;
@@ -358,7 +358,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.btnConsultarAsistecniaGeneralPesonal.Location = new System.Drawing.Point(450, 11);
             this.btnConsultarAsistecniaGeneralPesonal.Name = "btnConsultarAsistecniaGeneralPesonal";
             this.btnConsultarAsistecniaGeneralPesonal.Size = new System.Drawing.Size(109, 46);
-            this.btnConsultarAsistecniaGeneralPesonal.TabIndex = 1;
+            this.btnConsultarAsistecniaGeneralPesonal.TabIndex = 7;
             this.btnConsultarAsistecniaGeneralPesonal.Text = "Consultar";
             this.btnConsultarAsistecniaGeneralPesonal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnConsultarAsistecniaGeneralPesonal.UseVisualStyleBackColor = true;
@@ -370,7 +370,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.dtpFechaFinGeneralPersonal.Location = new System.Drawing.Point(233, 24);
             this.dtpFechaFinGeneralPersonal.Name = "dtpFechaFinGeneralPersonal";
             this.dtpFechaFinGeneralPersonal.Size = new System.Drawing.Size(117, 20);
-            this.dtpFechaFinGeneralPersonal.TabIndex = 3;
+            this.dtpFechaFinGeneralPersonal.TabIndex = 6;
             // 
             // label10
             // 
@@ -388,7 +388,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.dtpFechaInicioGeneralPersonal.Location = new System.Drawing.Point(60, 24);
             this.dtpFechaInicioGeneralPersonal.Name = "dtpFechaInicioGeneralPersonal";
             this.dtpFechaInicioGeneralPersonal.Size = new System.Drawing.Size(121, 20);
-            this.dtpFechaInicioGeneralPersonal.TabIndex = 2;
+            this.dtpFechaInicioGeneralPersonal.TabIndex = 5;
             // 
             // label11
             // 
@@ -424,7 +424,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.cboempleadoActivo.Location = new System.Drawing.Point(78, 22);
             this.cboempleadoActivo.Name = "cboempleadoActivo";
             this.cboempleadoActivo.Size = new System.Drawing.Size(366, 21);
-            this.cboempleadoActivo.TabIndex = 48;
+            this.cboempleadoActivo.TabIndex = 1;
             // 
             // btnConsultarAsistecniaPersonal
             // 
@@ -434,7 +434,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.btnConsultarAsistecniaPersonal.Location = new System.Drawing.Point(450, 12);
             this.btnConsultarAsistecniaPersonal.Name = "btnConsultarAsistecniaPersonal";
             this.btnConsultarAsistecniaPersonal.Size = new System.Drawing.Size(109, 46);
-            this.btnConsultarAsistecniaPersonal.TabIndex = 6;
+            this.btnConsultarAsistecniaPersonal.TabIndex = 4;
             this.btnConsultarAsistecniaPersonal.Text = "Consultar";
             this.btnConsultarAsistecniaPersonal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnConsultarAsistecniaPersonal.UseVisualStyleBackColor = true;
@@ -494,7 +494,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.btnCerrar.Location = new System.Drawing.Point(909, 181);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(109, 46);
-            this.btnCerrar.TabIndex = 58;
+            this.btnCerrar.TabIndex = 32;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrar.UseVisualStyleBackColor = true;
@@ -529,7 +529,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.dtpFechaFin.Location = new System.Drawing.Point(125, 54);
             this.dtpFechaFin.Name = "dtpFechaFin";
             this.dtpFechaFin.Size = new System.Drawing.Size(98, 20);
-            this.dtpFechaFin.TabIndex = 3;
+            this.dtpFechaFin.TabIndex = 19;
             // 
             // btnConsultarFechaIngreso
             // 
@@ -539,7 +539,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.btnConsultarFechaIngreso.Location = new System.Drawing.Point(229, 26);
             this.btnConsultarFechaIngreso.Name = "btnConsultarFechaIngreso";
             this.btnConsultarFechaIngreso.Size = new System.Drawing.Size(109, 46);
-            this.btnConsultarFechaIngreso.TabIndex = 6;
+            this.btnConsultarFechaIngreso.TabIndex = 20;
             this.btnConsultarFechaIngreso.Text = "Consultar";
             this.btnConsultarFechaIngreso.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnConsultarFechaIngreso.UseVisualStyleBackColor = true;
@@ -561,7 +561,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.dtpFechaInicio.Location = new System.Drawing.Point(125, 28);
             this.dtpFechaInicio.Name = "dtpFechaInicio";
             this.dtpFechaInicio.Size = new System.Drawing.Size(96, 20);
-            this.dtpFechaInicio.TabIndex = 2;
+            this.dtpFechaInicio.TabIndex = 18;
             // 
             // label6
             // 
@@ -593,7 +593,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.btnConsultarPersonalEmpresa.Location = new System.Drawing.Point(326, 9);
             this.btnConsultarPersonalEmpresa.Name = "btnConsultarPersonalEmpresa";
             this.btnConsultarPersonalEmpresa.Size = new System.Drawing.Size(109, 46);
-            this.btnConsultarPersonalEmpresa.TabIndex = 7;
+            this.btnConsultarPersonalEmpresa.TabIndex = 17;
             this.btnConsultarPersonalEmpresa.Text = "Consultar";
             this.btnConsultarPersonalEmpresa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnConsultarPersonalEmpresa.UseVisualStyleBackColor = true;
@@ -606,7 +606,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.cboEmpresa.Location = new System.Drawing.Point(75, 26);
             this.cboEmpresa.Name = "cboEmpresa";
             this.cboEmpresa.Size = new System.Drawing.Size(243, 21);
-            this.cboEmpresa.TabIndex = 1;
+            this.cboEmpresa.TabIndex = 16;
             // 
             // label4
             // 
@@ -640,7 +640,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.btnConsultarEdadPersonal.Location = new System.Drawing.Point(200, 11);
             this.btnConsultarEdadPersonal.Name = "btnConsultarEdadPersonal";
             this.btnConsultarEdadPersonal.Size = new System.Drawing.Size(105, 46);
-            this.btnConsultarEdadPersonal.TabIndex = 7;
+            this.btnConsultarEdadPersonal.TabIndex = 23;
             this.btnConsultarEdadPersonal.Text = "Consultar";
             this.btnConsultarEdadPersonal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnConsultarEdadPersonal.UseVisualStyleBackColor = true;
@@ -661,7 +661,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.txtEdadFin.Location = new System.Drawing.Point(121, 30);
             this.txtEdadFin.Name = "txtEdadFin";
             this.txtEdadFin.Size = new System.Drawing.Size(41, 20);
-            this.txtEdadFin.TabIndex = 4;
+            this.txtEdadFin.TabIndex = 22;
             this.txtEdadFin.TextChanged += new System.EventHandler(this.txtEdadFin_TextChanged);
             // 
             // txtEdadInicio
@@ -669,7 +669,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.txtEdadInicio.Location = new System.Drawing.Point(51, 31);
             this.txtEdadInicio.Name = "txtEdadInicio";
             this.txtEdadInicio.Size = new System.Drawing.Size(41, 20);
-            this.txtEdadInicio.TabIndex = 3;
+            this.txtEdadInicio.TabIndex = 21;
             this.txtEdadInicio.TextChanged += new System.EventHandler(this.txtEdadInicio_TextChanged);
             // 
             // label3
@@ -703,7 +703,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.cboUnidad.Location = new System.Drawing.Point(61, 24);
             this.cboUnidad.Name = "cboUnidad";
             this.cboUnidad.Size = new System.Drawing.Size(261, 21);
-            this.cboUnidad.TabIndex = 10;
+            this.cboUnidad.TabIndex = 13;
             this.cboUnidad.SelectedIndexChanged += new System.EventHandler(this.cboUnidad_SelectedIndexChanged);
             // 
             // Unida
@@ -733,7 +733,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.cboSede.Location = new System.Drawing.Point(61, 51);
             this.cboSede.Name = "cboSede";
             this.cboSede.Size = new System.Drawing.Size(261, 21);
-            this.cboSede.TabIndex = 1;
+            this.cboSede.TabIndex = 14;
             // 
             // btnConsultarPersonalSede
             // 
@@ -743,7 +743,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.btnConsultarPersonalSede.Location = new System.Drawing.Point(326, 22);
             this.btnConsultarPersonalSede.Name = "btnConsultarPersonalSede";
             this.btnConsultarPersonalSede.Size = new System.Drawing.Size(109, 46);
-            this.btnConsultarPersonalSede.TabIndex = 6;
+            this.btnConsultarPersonalSede.TabIndex = 15;
             this.btnConsultarPersonalSede.Text = "Consultar";
             this.btnConsultarPersonalSede.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnConsultarPersonalSede.UseVisualStyleBackColor = true;
@@ -775,7 +775,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.cbomes.Location = new System.Drawing.Point(57, 26);
             this.cbomes.Name = "cbomes";
             this.cbomes.Size = new System.Drawing.Size(149, 21);
-            this.cbomes.TabIndex = 1;
+            this.cbomes.TabIndex = 29;
             // 
             // button1
             // 
@@ -785,7 +785,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
             this.button1.Location = new System.Drawing.Point(212, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 46);
-            this.button1.TabIndex = 6;
+            this.button1.TabIndex = 30;
             this.button1.Text = "Consultar";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = true;

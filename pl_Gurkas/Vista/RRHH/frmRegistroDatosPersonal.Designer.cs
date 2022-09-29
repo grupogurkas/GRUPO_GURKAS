@@ -194,7 +194,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.dtpUltimoDestaque.Location = new System.Drawing.Point(149, 104);
             this.dtpUltimoDestaque.Name = "dtpUltimoDestaque";
             this.dtpUltimoDestaque.Size = new System.Drawing.Size(114, 20);
-            this.dtpUltimoDestaque.TabIndex = 37;
+            this.dtpUltimoDestaque.TabIndex = 43;
             // 
             // label40
             // 
@@ -222,7 +222,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.dtpFechaActivacion.Location = new System.Drawing.Point(149, 75);
             this.dtpFechaActivacion.Name = "dtpFechaActivacion";
             this.dtpFechaActivacion.Size = new System.Drawing.Size(114, 20);
-            this.dtpFechaActivacion.TabIndex = 34;
+            this.dtpFechaActivacion.TabIndex = 42;
             // 
             // dtpFechaFinLaboral
             // 
@@ -230,7 +230,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.dtpFechaFinLaboral.Location = new System.Drawing.Point(149, 49);
             this.dtpFechaFinLaboral.Name = "dtpFechaFinLaboral";
             this.dtpFechaFinLaboral.Size = new System.Drawing.Size(114, 20);
-            this.dtpFechaFinLaboral.TabIndex = 33;
+            this.dtpFechaFinLaboral.TabIndex = 41;
             // 
             // dtpFinicioLaboral
             // 
@@ -238,7 +238,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.dtpFinicioLaboral.Location = new System.Drawing.Point(149, 18);
             this.dtpFinicioLaboral.Name = "dtpFinicioLaboral";
             this.dtpFinicioLaboral.Size = new System.Drawing.Size(114, 20);
-            this.dtpFinicioLaboral.TabIndex = 32;
+            this.dtpFinicioLaboral.TabIndex = 40;
             // 
             // label11
             // 
@@ -274,7 +274,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.cboTallaPrenda.Location = new System.Drawing.Point(97, 18);
             this.cboTallaPrenda.Name = "cboTallaPrenda";
             this.cboTallaPrenda.Size = new System.Drawing.Size(82, 21);
-            this.cboTallaPrenda.TabIndex = 35;
+            this.cboTallaPrenda.TabIndex = 36;
             // 
             // label31
             // 
@@ -291,7 +291,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.txtTallaPantalonEmp.Location = new System.Drawing.Point(97, 46);
             this.txtTallaPantalonEmp.Name = "txtTallaPantalonEmp";
             this.txtTallaPantalonEmp.Size = new System.Drawing.Size(82, 20);
-            this.txtTallaPantalonEmp.TabIndex = 39;
+            this.txtTallaPantalonEmp.TabIndex = 38;
             // 
             // label32
             // 
@@ -308,14 +308,14 @@ namespace pl_Gurkas.Vista.RRHH
             this.txtEstaturaEmp.Location = new System.Drawing.Point(243, 19);
             this.txtEstaturaEmp.Name = "txtEstaturaEmp";
             this.txtEstaturaEmp.Size = new System.Drawing.Size(94, 20);
-            this.txtEstaturaEmp.TabIndex = 38;
+            this.txtEstaturaEmp.TabIndex = 37;
             // 
             // txtTallaCalzadoEmp
             // 
             this.txtTallaCalzadoEmp.Location = new System.Drawing.Point(280, 47);
             this.txtTallaCalzadoEmp.Name = "txtTallaCalzadoEmp";
             this.txtTallaCalzadoEmp.Size = new System.Drawing.Size(57, 20);
-            this.txtTallaCalzadoEmp.TabIndex = 40;
+            this.txtTallaCalzadoEmp.TabIndex = 39;
             // 
             // label34
             // 
@@ -373,7 +373,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.cboArmado.Location = new System.Drawing.Point(121, 269);
             this.cboArmado.Name = "cboArmado";
             this.cboArmado.Size = new System.Drawing.Size(224, 21);
-            this.cboArmado.TabIndex = 58;
+            this.cboArmado.TabIndex = 35;
             this.cboArmado.SelectedIndexChanged += new System.EventHandler(this.cboArmado_SelectedIndexChanged);
             // 
             // label43
@@ -1080,7 +1080,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.btnActualizar.Location = new System.Drawing.Point(756, 5);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(109, 46);
-            this.btnActualizar.TabIndex = 59;
+            this.btnActualizar.TabIndex = 47;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnActualizar.UseVisualStyleBackColor = true;
@@ -1094,7 +1094,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.btnBuscar.Location = new System.Drawing.Point(526, 5);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(109, 46);
-            this.btnBuscar.TabIndex = 56;
+            this.btnBuscar.TabIndex = 45;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -1108,7 +1108,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.btnCerrar.Location = new System.Drawing.Point(986, 5);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(109, 46);
-            this.btnCerrar.TabIndex = 58;
+            this.btnCerrar.TabIndex = 49;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrar.UseVisualStyleBackColor = true;
@@ -1122,7 +1122,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.btnNuevo.Location = new System.Drawing.Point(871, 5);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(109, 46);
-            this.btnNuevo.TabIndex = 60;
+            this.btnNuevo.TabIndex = 48;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevo.UseVisualStyleBackColor = true;
@@ -1136,7 +1136,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.btnAgregar.Location = new System.Drawing.Point(641, 5);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(109, 46);
-            this.btnAgregar.TabIndex = 57;
+            this.btnAgregar.TabIndex = 46;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -1150,7 +1150,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.cboempleadoActivo.Location = new System.Drawing.Point(150, 19);
             this.cboempleadoActivo.Name = "cboempleadoActivo";
             this.cboempleadoActivo.Size = new System.Drawing.Size(350, 21);
-            this.cboempleadoActivo.TabIndex = 59;
+            this.cboempleadoActivo.TabIndex = 44;
             // 
             // label42
             // 

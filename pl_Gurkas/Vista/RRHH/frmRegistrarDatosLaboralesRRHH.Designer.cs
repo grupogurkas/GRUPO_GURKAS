@@ -175,7 +175,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.btnNuevo.Location = new System.Drawing.Point(6, 19);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(109, 46);
-            this.btnNuevo.TabIndex = 49;
+            this.btnNuevo.TabIndex = 50;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevo.UseVisualStyleBackColor = true;
@@ -189,7 +189,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.btnActualizarDatos.Location = new System.Drawing.Point(266, 19);
             this.btnActualizarDatos.Name = "btnActualizarDatos";
             this.btnActualizarDatos.Size = new System.Drawing.Size(145, 46);
-            this.btnActualizarDatos.TabIndex = 51;
+            this.btnActualizarDatos.TabIndex = 52;
             this.btnActualizarDatos.Text = "Actualizar Datos\r\nPlanilla";
             this.btnActualizarDatos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnActualizarDatos.UseVisualStyleBackColor = true;
@@ -217,7 +217,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.btnAgregarPlanillaDatos.Location = new System.Drawing.Point(121, 19);
             this.btnAgregarPlanillaDatos.Name = "btnAgregarPlanillaDatos";
             this.btnAgregarPlanillaDatos.Size = new System.Drawing.Size(139, 46);
-            this.btnAgregarPlanillaDatos.TabIndex = 50;
+            this.btnAgregarPlanillaDatos.TabIndex = 51;
             this.btnAgregarPlanillaDatos.Text = "Agregar Datos\r\nPlanilla";
             this.btnAgregarPlanillaDatos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregarPlanillaDatos.UseVisualStyleBackColor = true;
@@ -253,7 +253,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.cboempleadoActivo.Location = new System.Drawing.Point(66, 26);
             this.cboempleadoActivo.Name = "cboempleadoActivo";
             this.cboempleadoActivo.Size = new System.Drawing.Size(338, 21);
-            this.cboempleadoActivo.TabIndex = 54;
+            this.cboempleadoActivo.TabIndex = 48;
             // 
             // btnBuscar
             // 
@@ -263,7 +263,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.btnBuscar.Location = new System.Drawing.Point(410, 19);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(109, 46);
-            this.btnBuscar.TabIndex = 52;
+            this.btnBuscar.TabIndex = 49;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -411,7 +411,7 @@ namespace pl_Gurkas.Vista.RRHH
             this.cboTipoPago.Location = new System.Drawing.Point(134, 145);
             this.cboTipoPago.Name = "cboTipoPago";
             this.cboTipoPago.Size = new System.Drawing.Size(227, 21);
-            this.cboTipoPago.TabIndex = 57;
+            this.cboTipoPago.TabIndex = 47;
             // 
             // cboAsignacionFamiliar
             // 
