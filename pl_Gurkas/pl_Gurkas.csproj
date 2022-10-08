@@ -922,6 +922,12 @@
     <Compile Include="Vista\RRHH\CargaDatos\frmCargaDatosIngresantesPlanillas.Designer.cs">
       <DependentUpon>frmCargaDatosIngresantesPlanillas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\RRHH\CargaDatos\frmCargaDeDatosActualizacionDeBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\RRHH\CargaDatos\frmCargaDeDatosActualizacionDeBanco.Designer.cs">
+      <DependentUpon>frmCargaDeDatosActualizacionDeBanco.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\RRHH\frmActualizarEstadoPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1391,6 +1397,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\RRHH\CargaDatos\frmCargaDatosIngresantesPlanillas.resx">
       <DependentUpon>frmCargaDatosIngresantesPlanillas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\RRHH\CargaDatos\frmCargaDeDatosActualizacionDeBanco.resx">
+      <DependentUpon>frmCargaDeDatosActualizacionDeBanco.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\RRHH\frmActualizarEstadoPersonal.resx">
       <DependentUpon>frmActualizarEstadoPersonal.cs</DependentUpon>

@@ -967,5 +967,11 @@ namespace pl_Gurkas.Vista.Principal
             controlvistaformulario.ControlVista(this, new Vista.Ticket.Form1());
             modulo.auditoria("Ticket Consulta", "Generar Ticket", "", "");
         }
+
+        private void actualizacionDeBancoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.RRHH.CargaDatos.frmCargaDeDatosActualizacionDeBanco());
+            modulo.auditoria("Recursos Humanos", "Actualizar Datos Banco masivo", "", "");
+        }
     }
 }

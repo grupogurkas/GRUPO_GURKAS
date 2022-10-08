@@ -203,6 +203,7 @@ namespace pl_Gurkas.Vista.Principal
             this.reporteDeAsistenciaPorPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ticketConsultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generarTicketToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actualizacionDeBancoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -544,7 +545,8 @@ namespace pl_Gurkas.Vista.Principal
             // cargaMasivaDeDatosToolStripMenuItem
             // 
             this.cargaMasivaDeDatosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cargaMasivaDeDatosLaboralesToolStripMenuItem});
+            this.cargaMasivaDeDatosLaboralesToolStripMenuItem,
+            this.actualizacionDeBancoToolStripMenuItem});
             this.cargaMasivaDeDatosToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.descarga_32;
             this.cargaMasivaDeDatosToolStripMenuItem.Name = "cargaMasivaDeDatosToolStripMenuItem";
             this.cargaMasivaDeDatosToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
@@ -1643,6 +1645,13 @@ namespace pl_Gurkas.Vista.Principal
             this.generarTicketToolStripMenuItem.Text = "Generar Ticket";
             this.generarTicketToolStripMenuItem.Click += new System.EventHandler(this.generarTicketToolStripMenuItem_Click);
             // 
+            // actualizacionDeBancoToolStripMenuItem
+            // 
+            this.actualizacionDeBancoToolStripMenuItem.Name = "actualizacionDeBancoToolStripMenuItem";
+            this.actualizacionDeBancoToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.actualizacionDeBancoToolStripMenuItem.Text = "Actualizacion de Banco";
+            this.actualizacionDeBancoToolStripMenuItem.Click += new System.EventHandler(this.actualizacionDeBancoToolStripMenuItem_Click);
+            // 
             // frmPrincipalGrupoGurkas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1846,5 +1855,6 @@ namespace pl_Gurkas.Vista.Principal
         private System.Windows.Forms.ToolStripMenuItem ingresoDeMaterialFueraDelSistemaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ticketConsultaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem generarTicketToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem actualizacionDeBancoToolStripMenuItem;
     }
 }
