@@ -22,7 +22,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
         }
         private void frmAsistenciadePersonal_Load(object sender, EventArgs e)
         {
-            Llenadocbo.ObtenerUnidadCentroControl(cboUnidad);
+            Llenadocbo.ObtenerUnidadCentroControlCompleto(cboUnidad);
             dgvAsistenciaPersonal.RowHeadersVisible = false;
             dgvAsistenciaPersonal.AllowUserToAddRows = false;
         }

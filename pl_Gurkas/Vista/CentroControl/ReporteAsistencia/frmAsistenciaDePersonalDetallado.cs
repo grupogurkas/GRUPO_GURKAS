@@ -22,7 +22,6 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
         }
         private void ConsultarPersonalDetallado(DateTime fechaInicio, DateTime FechaFin, string cod_unidad)
         {
-
             try
             {
                 SqlCommand comando = conexion.conexionBD().CreateCommand();
@@ -55,7 +54,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
         }
         private void frmAsistenciaDePersonalDetallado_Load(object sender, EventArgs e)
         {
-            Llenadocbo.ObtenerUnidadCentroControl(cboUnidad);
+            Llenadocbo.ObtenerUnidadCentroControlCompleto(cboUnidad);
             dgvAsistenciaPersonalDetallado.RowHeadersVisible = false;
             dgvAsistenciaPersonalDetallado.AllowUserToAddRows = false;
         }

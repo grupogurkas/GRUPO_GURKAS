@@ -89,7 +89,7 @@ namespace pl_Gurkas.Vista.RRHH.ReportesRRHH
         private void frmBajaPersonal_Load(object sender, EventArgs e)
         {
             Llenadocbo.ObtenerUnidadRRHH(cbounidadRRHH);
-            Llenadocbo.ObtenerEmpresaRRHH(cboEmpresa);
+            Llenadocbo.ObtenerEmpresaBaja(cboEmpresa);
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)

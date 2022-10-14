@@ -144,7 +144,7 @@ namespace pl_Gurkas.Vista.CentroControl
         }
         private void frmAsistenciaPersonal_Load(object sender, EventArgs e)
         {
-            Llenadocbo.ObtenerUnidadCentroControl(cboUnidad);
+            Llenadocbo.ObtenerUnidadCentroControlCompleto(cboUnidad);
             Llenadocbo.ObtenerTurnoCentroControl(cboturnos);
             Llenadocbo.ObtenerHorasLaboralesCentroControl(cboHoras);
             Llenadocbo.ObtenerPersonalCentroControl(cboempleadoActivo);
