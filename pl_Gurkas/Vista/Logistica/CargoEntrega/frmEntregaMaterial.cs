@@ -133,9 +133,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                 txtNumVale.Text = "LOG-000" + (numero + 1);
             }
         }
-
-
-
         private void registarvale()
         {
             int cod_puesto = cboTipoPuesto.SelectedIndex;
@@ -576,11 +573,6 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             }
 
         }
-
-
-     
-
-
 private void txtInformacionAdicional_TextChanged(object sender, EventArgs e)
         {
             txtInformacionAdicional.MaxLength = 264;

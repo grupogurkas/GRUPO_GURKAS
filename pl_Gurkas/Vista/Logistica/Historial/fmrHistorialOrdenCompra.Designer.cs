@@ -77,7 +77,7 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.Image = global::pl_Gurkas.Properties.Resources.salir_empleado_32;
             this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrar.Location = new System.Drawing.Point(1113, 110);
+            this.btnCerrar.Location = new System.Drawing.Point(1006, 120);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(129, 46);
             this.btnCerrar.TabIndex = 53;
@@ -242,6 +242,7 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             this.dgvHistorialOrdenCompra.ReadOnly = true;
             this.dgvHistorialOrdenCompra.Size = new System.Drawing.Size(1337, 422);
             this.dgvHistorialOrdenCompra.TabIndex = 107;
+            this.dgvHistorialOrdenCompra.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHistorialOrdenCompra_CellContentDoubleClick);
             // 
             // progressBar1
             // 

@@ -71,6 +71,7 @@ namespace pl_Gurkas.Vista.Principal
             this.estadoDelPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cargaMasivaDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cargaMasivaDeDatosLaboralesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actualizacionDeBancoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.postulanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroPersonalC4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personalActivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -145,6 +146,7 @@ namespace pl_Gurkas.Vista.Principal
             this.actualizarDatosLaboralesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aFPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actualizarComisionAFPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actualizarDatosAFPMasivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteDeAsistenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteDeDatosGeneralesDePlanillaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -203,7 +205,7 @@ namespace pl_Gurkas.Vista.Principal
             this.reporteDeAsistenciaPorPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ticketConsultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generarTicketToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.actualizacionDeBancoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.historialOrdenServicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -558,6 +560,13 @@ namespace pl_Gurkas.Vista.Principal
             this.cargaMasivaDeDatosLaboralesToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
             this.cargaMasivaDeDatosLaboralesToolStripMenuItem.Text = "Carga masiva de datos laborales";
             this.cargaMasivaDeDatosLaboralesToolStripMenuItem.Click += new System.EventHandler(this.cargaMasivaDeDatosLaboralesToolStripMenuItem_Click);
+            // 
+            // actualizacionDeBancoToolStripMenuItem
+            // 
+            this.actualizacionDeBancoToolStripMenuItem.Name = "actualizacionDeBancoToolStripMenuItem";
+            this.actualizacionDeBancoToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.actualizacionDeBancoToolStripMenuItem.Text = "Actualizacion de Banco";
+            this.actualizacionDeBancoToolStripMenuItem.Click += new System.EventHandler(this.actualizacionDeBancoToolStripMenuItem_Click);
             // 
             // postulanteToolStripMenuItem
             // 
@@ -1085,7 +1094,8 @@ namespace pl_Gurkas.Vista.Principal
             // historialLogisticoToolStripMenuItem
             // 
             this.historialLogisticoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.historialOrdenCompraToolStripMenuItem});
+            this.historialOrdenCompraToolStripMenuItem,
+            this.historialOrdenServicioToolStripMenuItem});
             this.historialLogisticoToolStripMenuItem.Name = "historialLogisticoToolStripMenuItem";
             this.historialLogisticoToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.historialLogisticoToolStripMenuItem.Text = "Historial Logistico";
@@ -1163,7 +1173,8 @@ namespace pl_Gurkas.Vista.Principal
             // aFPToolStripMenuItem
             // 
             this.aFPToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.actualizarComisionAFPToolStripMenuItem});
+            this.actualizarComisionAFPToolStripMenuItem,
+            this.actualizarDatosAFPMasivoToolStripMenuItem});
             this.aFPToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("aFPToolStripMenuItem.Image")));
             this.aFPToolStripMenuItem.Name = "aFPToolStripMenuItem";
             this.aFPToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
@@ -1172,9 +1183,16 @@ namespace pl_Gurkas.Vista.Principal
             // actualizarComisionAFPToolStripMenuItem
             // 
             this.actualizarComisionAFPToolStripMenuItem.Name = "actualizarComisionAFPToolStripMenuItem";
-            this.actualizarComisionAFPToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.actualizarComisionAFPToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
             this.actualizarComisionAFPToolStripMenuItem.Text = "Actualizar Comision AFP";
             this.actualizarComisionAFPToolStripMenuItem.Click += new System.EventHandler(this.actualizarComisionAFPToolStripMenuItem_Click);
+            // 
+            // actualizarDatosAFPMasivoToolStripMenuItem
+            // 
+            this.actualizarDatosAFPMasivoToolStripMenuItem.Name = "actualizarDatosAFPMasivoToolStripMenuItem";
+            this.actualizarDatosAFPMasivoToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.actualizarDatosAFPMasivoToolStripMenuItem.Text = "Actualizar datos AFP masivo";
+            this.actualizarDatosAFPMasivoToolStripMenuItem.Click += new System.EventHandler(this.actualizarDatosAFPMasivoToolStripMenuItem_Click);
             // 
             // reporteToolStripMenuItem2
             // 
@@ -1645,12 +1663,12 @@ namespace pl_Gurkas.Vista.Principal
             this.generarTicketToolStripMenuItem.Text = "Generar Ticket";
             this.generarTicketToolStripMenuItem.Click += new System.EventHandler(this.generarTicketToolStripMenuItem_Click);
             // 
-            // actualizacionDeBancoToolStripMenuItem
+            // historialOrdenServicioToolStripMenuItem
             // 
-            this.actualizacionDeBancoToolStripMenuItem.Name = "actualizacionDeBancoToolStripMenuItem";
-            this.actualizacionDeBancoToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
-            this.actualizacionDeBancoToolStripMenuItem.Text = "Actualizacion de Banco";
-            this.actualizacionDeBancoToolStripMenuItem.Click += new System.EventHandler(this.actualizacionDeBancoToolStripMenuItem_Click);
+            this.historialOrdenServicioToolStripMenuItem.Name = "historialOrdenServicioToolStripMenuItem";
+            this.historialOrdenServicioToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.historialOrdenServicioToolStripMenuItem.Text = "Historial Orden Servicio";
+            this.historialOrdenServicioToolStripMenuItem.Click += new System.EventHandler(this.historialOrdenServicioToolStripMenuItem_Click);
             // 
             // frmPrincipalGrupoGurkas
             // 
@@ -1856,5 +1874,7 @@ namespace pl_Gurkas.Vista.Principal
         private System.Windows.Forms.ToolStripMenuItem ticketConsultaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem generarTicketToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem actualizacionDeBancoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem actualizarDatosAFPMasivoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem historialOrdenServicioToolStripMenuItem;
     }
 }

@@ -407,7 +407,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(150, 42);
             this.btnImprimir.TabIndex = 8;
-            this.btnImprimir.Text = "Imprimir";
+            this.btnImprimir.Text = "REGISTRAR";
             this.btnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnImprimir.UseVisualStyleBackColor = true;
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click_1);

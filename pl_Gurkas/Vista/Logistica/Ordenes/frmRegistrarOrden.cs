@@ -485,6 +485,9 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
 
         private void imprimir()
         {
+            registarvaleordencompar();
+            limpiardatos();
+            /*
             System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
             PrintDialog1.AllowSomePages = true;
             PrintDialog1.ShowHelp = true;
@@ -493,10 +496,11 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             if (result == DialogResult.OK)
             {
                 printDocument1.Print();
-                registarvaleordencompar();
-                limpiardatos();
-            }
-            //printPreviewDialog1.ShowDialog();
+              //printPreviewDialog1.ShowDialog();
+               // registarvaleordencompar();
+               // limpiardatos();
+            }*/
+
         }
         private Boolean validar_campos()
         {

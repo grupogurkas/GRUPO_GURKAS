@@ -268,6 +268,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.groupBox2.TabIndex = 244;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Detalle de la Orden de Compra:";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // txtServicio
             // 
@@ -359,7 +360,7 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(150, 42);
             this.btnImprimir.TabIndex = 241;
-            this.btnImprimir.Text = "Imprimir";
+            this.btnImprimir.Text = "REGISTRAR";
             this.btnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnImprimir.UseVisualStyleBackColor = true;
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);

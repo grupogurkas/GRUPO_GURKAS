@@ -52,6 +52,37 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
             }
 
         }
+        private void ConsultarPersonalDetalladoCompleto(DateTime fechaInicio, DateTime FechaFin)
+        {
+            try
+            {
+                SqlCommand comando = conexion.conexionBD().CreateCommand();
+                comando.CommandType = CommandType.Text;
+                comando.CommandText = "sp_asistenciadetalladoPersonal_completo  @fechainicio,@fechafin";
+                comando.Parameters.AddWithValue("fechainicio", fechaInicio);
+                comando.Parameters.AddWithValue("fechafin", FechaFin);
+                comando.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                SqlDataAdapter dta = new SqlDataAdapter(comando);
+                dta.Fill(dt);
+                dt.Columns[0].ColumnName = "Cod Empleado";
+                dt.Columns[1].ColumnName = "Empleado";
+                dt.Columns[2].ColumnName = "Sede";
+                dt.Columns[3].ColumnName = "Empresa";
+                dt.Columns[4].ColumnName = "Num Documento";
+                dt.Columns[5].ColumnName = "Fecha";
+                dt.Columns[6].ColumnName = "Tipo Asistencia";
+                dt.AcceptChanges();
+                dgvAsistenciaPersonalDetallado.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("No se encontro nungun resultado \n\n " + ex, "ERROR");
+
+            }
+
+        }
         private void frmAsistenciaDePersonalDetallado_Load(object sender, EventArgs e)
         {
             Llenadocbo.ObtenerUnidadCentroControlCompleto(cboUnidad);
@@ -71,6 +102,11 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
             string fi = dtpFechaInicio.Value.Date.ToString("dd-MM-yyyy");
             string ff = dtpFechaInicio.Value.Date.ToString("dd-MM-yyyy");
             Excel.ExportarDatosExcelAsistenciaPersonalDetallado(dgvAsistenciaPersonalDetallado, progressBar1, nombre_unidad, fi, ff);
+        }
+
+        private void btnconsultarcompleto_Click(object sender, EventArgs e)
+        {
+            ConsultarPersonalDetalladoCompleto(dtiniciocompleto.Value, dtfincompleto.Value);
         }
     }
 }

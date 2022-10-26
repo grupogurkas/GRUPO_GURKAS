@@ -973,5 +973,17 @@ namespace pl_Gurkas.Vista.Principal
             controlvistaformulario.ControlVista(this, new Vista.RRHH.CargaDatos.frmCargaDeDatosActualizacionDeBanco());
             modulo.auditoria("Recursos Humanos", "Actualizar Datos Banco masivo", "", "");
         }
+
+        private void actualizarDatosAFPMasivoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Planilla.CargaDeDatos.frmActualizacionAFP());
+            modulo.auditoria("PLANILLAS", "AFP", "Actualizar AFP masivo", "");
+        }
+
+        private void historialOrdenServicioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.Historial.frmHistorialOrdenServicio());
+            modulo.auditoria("Logistica", "Almacen", "Historial Logistico", "Historial Orden Servicio");
+        }
     }
 }

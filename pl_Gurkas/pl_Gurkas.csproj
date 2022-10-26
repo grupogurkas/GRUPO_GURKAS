@@ -13,7 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\Jeremy AV\Desktop\GURKAS_BASE\</PublishUrl>
+    <PublishUrl>C:\Users\Jeremy AV\Desktop\EJECUTALBE_BASE\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -24,7 +24,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <UpdateUrl>\\192.168.1.13\compartida\SISTEMA_GURKAS\</UpdateUrl>
-    <ApplicationRevision>104</ApplicationRevision>
+    <ApplicationRevision>106</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -514,17 +514,29 @@
     <Compile Include="Vista\Logistica\Historial\frmBuscarVale.Designer.cs">
       <DependentUpon>frmBuscarVale.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Logistica\Historial\frmHistorialOrdenCompra.cs">
+    <Compile Include="Vista\Logistica\Historial\frmHistorialOrdenServicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Logistica\Historial\frmHistorialOrdenCompra.Designer.cs">
-      <DependentUpon>frmHistorialOrdenCompra.cs</DependentUpon>
+    <Compile Include="Vista\Logistica\Historial\frmHistorialOrdenServicio.Designer.cs">
+      <DependentUpon>frmHistorialOrdenServicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Logistica\Ordenes\frmImprimirPDF_OC_OS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Logistica\Ordenes\frmImprimirPDF_OC_OS.Designer.cs">
+      <DependentUpon>frmImprimirPDF_OC_OS.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Logistica\Ordenes\frmOrdenAprovada.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vista\Logistica\Ordenes\frmOrdenAprovada.Designer.cs">
       <DependentUpon>frmOrdenAprovada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Logistica\Ordenes\frmOrdenCompraImprimir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Logistica\Ordenes\frmOrdenCompraImprimir.Designer.cs">
+      <DependentUpon>frmOrdenCompraImprimir.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Logistica\Reporte\frmKardex.cs">
       <SubType>Form</SubType>
@@ -675,6 +687,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BoletasMes.rpt</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Vista\Planilla\CargaDeDatos\frmActualizacionAFP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Planilla\CargaDeDatos\frmActualizacionAFP.Designer.cs">
+      <DependentUpon>frmActualizacionAFP.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Planilla\CargaDeDatos\frmCargaDeDatosAsistencia.cs">
       <SubType>Form</SubType>
@@ -1194,11 +1212,17 @@
     <EmbeddedResource Include="Vista\Logistica\Historial\frmBuscarVale.resx">
       <DependentUpon>frmBuscarVale.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Logistica\Historial\frmHistorialOrdenCompra.resx">
-      <DependentUpon>frmHistorialOrdenCompra.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\Logistica\Historial\frmHistorialOrdenServicio.resx">
+      <DependentUpon>frmHistorialOrdenServicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Logistica\Ordenes\frmImprimirPDF_OC_OS.resx">
+      <DependentUpon>frmImprimirPDF_OC_OS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\Ordenes\frmOrdenAprovada.resx">
       <DependentUpon>frmOrdenAprovada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Logistica\Ordenes\frmOrdenCompraImprimir.resx">
+      <DependentUpon>frmOrdenCompraImprimir.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\Reporte\frmKardex.resx">
       <DependentUpon>frmKardex.cs</DependentUpon>
@@ -1274,6 +1298,9 @@
     <EmbeddedResource Include="Vista\Planilla\BoletaReporte\BoletasMes.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>BoletasMes1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Planilla\CargaDeDatos\frmActualizacionAFP.resx">
+      <DependentUpon>frmActualizacionAFP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Planilla\CargaDeDatos\frmCargaDeDatosAsistencia.resx">
       <DependentUpon>frmCargaDeDatosAsistencia.cs</DependentUpon>
