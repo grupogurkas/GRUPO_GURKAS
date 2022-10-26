@@ -985,5 +985,11 @@ namespace pl_Gurkas.Vista.Principal
             controlvistaformulario.ControlVista(this, new Vista.Logistica.Historial.frmHistorialOrdenServicio());
             modulo.auditoria("Logistica", "Almacen", "Historial Logistico", "Historial Orden Servicio");
         }
+
+        private void historialDeSalidaMaterialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.Historial.frmHistorialSalidaMaterial());
+            modulo.auditoria("Logistica", "Almacen", "Historial Logistico", "Historial Salidad Material");
+        }
     }
 }

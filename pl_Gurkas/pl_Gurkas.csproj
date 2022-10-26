@@ -520,6 +520,12 @@
     <Compile Include="Vista\Logistica\Historial\frmHistorialOrdenServicio.Designer.cs">
       <DependentUpon>frmHistorialOrdenServicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Logistica\Historial\frmHistorialSalidaMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Logistica\Historial\frmHistorialSalidaMaterial.Designer.cs">
+      <DependentUpon>frmHistorialSalidaMaterial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Logistica\Ordenes\frmImprimirPDF_OC_OS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1214,6 +1220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\Historial\frmHistorialOrdenServicio.resx">
       <DependentUpon>frmHistorialOrdenServicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Logistica\Historial\frmHistorialSalidaMaterial.resx">
+      <DependentUpon>frmHistorialSalidaMaterial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\Ordenes\frmImprimirPDF_OC_OS.resx">
       <DependentUpon>frmImprimirPDF_OC_OS.cs</DependentUpon>

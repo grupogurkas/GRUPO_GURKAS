@@ -87,7 +87,7 @@ namespace pl_Gurkas.Vista.Logistica.Historial
         {
             Vista.Logistica.Ordenes.frmOrdenCompraImprimir objOrdenes = new Vista.Logistica.Ordenes.frmOrdenCompraImprimir();
             objOrdenes._num_orden = dgvHistorialOrdenCompra.CurrentRow.Cells[0].Value.ToString();
-            objOrdenes.Show();
+            objOrdenes.ShowDialog();
         }
     }
 }

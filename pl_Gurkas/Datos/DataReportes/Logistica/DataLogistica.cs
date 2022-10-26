@@ -279,6 +279,80 @@ namespace pl_Gurkas.Datos.DataReportes.Logistica
             dt.Columns[13].ColumnName = "OBSERVACION";
             return dt;
         }
+        public DataTable BuscarSalidaProducto(string cod_proveedor)
+        {
+            SqlCommand comando = conexion.conexionBD().CreateCommand();
+            comando.CommandType = CommandType.Text;
+            comando.CommandText = "SP_BUSCAR_SALIDA_cod  @NUM_ENTREGA";
+            comando.Parameters.AddWithValue("NUM_ENTREGA", cod_proveedor);
+            comando.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter dta = new SqlDataAdapter(comando);
+            dta.Fill(dt);
+            dt.Columns[0].ColumnName = "NUM ENTREGA";
+            dt.Columns[1].ColumnName = "COD SOLICITANTE";
+            dt.Columns[2].ColumnName = "NOMBRE DEL SOLICITANTE";
+            dt.Columns[3].ColumnName = "COD ENTREGA";
+            dt.Columns[4].ColumnName = "NOMBRE DEL ENTREGANTE";
+            dt.Columns[5].ColumnName = "ITEM";
+            dt.Columns[6].ColumnName = "COD PRODUCTO";
+            dt.Columns[7].ColumnName = "CANTIDAD";
+            dt.Columns[8].ColumnName = "DESCRIPCIO DEL PRODUCTO";
+            dt.Columns[9].ColumnName = "OBSERVACION DEL PRODUCTO";
+            dt.Columns[10].ColumnName = "CONDICION DEL PRODUCTO";
+            dt.Columns[11].ColumnName = "FECHA";
+            return dt;
+        }
+        public DataTable BuscarSalidaProductoNum(string numSalidad)
+        {
+            SqlCommand comando = conexion.conexionBD().CreateCommand();
+            comando.CommandType = CommandType.Text;
+            comando.CommandText = "SP_BUSCAR_SALIDA  @NUM_ENTREGA";
+            comando.Parameters.AddWithValue("NUM_ENTREGA", numSalidad);
+            comando.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter dta = new SqlDataAdapter(comando);
+            dta.Fill(dt);
+            dt.Columns[0].ColumnName = "NUM ENTREGA";
+            dt.Columns[1].ColumnName = "COD SOLICITANTE";
+            dt.Columns[2].ColumnName = "NOMBRE DEL SOLICITANTE";
+            dt.Columns[3].ColumnName = "COD ENTREGA";
+            dt.Columns[4].ColumnName = "NOMBRE DEL ENTREGANTE";
+            dt.Columns[5].ColumnName = "ITEM";
+            dt.Columns[6].ColumnName = "COD PRODUCTO";
+            dt.Columns[7].ColumnName = "CANTIDAD";
+            dt.Columns[8].ColumnName = "DESCRIPCIO DEL PRODUCTO";
+            dt.Columns[9].ColumnName = "OBSERVACION DEL PRODUCTO";
+            dt.Columns[10].ColumnName = "CONDICION DEL PRODUCTO";
+            dt.Columns[11].ColumnName = "FECHA";
+            return dt;
+        }
+        public DataTable BuscarSalidadMaterial(int m, int a)
+        {
+            SqlCommand comando = conexion.conexionBD().CreateCommand();
+            comando.CommandType = CommandType.Text;
+            comando.CommandText = "SP_BUSCAR_SALIDA_anio_mes  @mes,@anio";
+            comando.Parameters.AddWithValue("mes", m);
+            comando.Parameters.AddWithValue("anio", a);
+            comando.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter dta = new SqlDataAdapter(comando);
+            dta.Fill(dt);
+            dt.Columns[0].ColumnName = "NUM ENTREGA";
+            dt.Columns[1].ColumnName = "COD SOLICITANTE";
+            dt.Columns[2].ColumnName = "NOMBRE DEL SOLICITANTE";
+            dt.Columns[3].ColumnName = "COD ENTREGA";
+            dt.Columns[4].ColumnName = "NOMBRE DEL ENTREGANTE";
+            dt.Columns[5].ColumnName = "ITEM";
+            dt.Columns[6].ColumnName = "COD PRODUCTO";
+            dt.Columns[7].ColumnName = "CANTIDAD";
+            dt.Columns[8].ColumnName = "DESCRIPCIO DEL PRODUCTO";
+            dt.Columns[9].ColumnName = "OBSERVACION DEL PRODUCTO";
+            dt.Columns[10].ColumnName = "CONDICION DEL PRODUCTO";
+            dt.Columns[11].ColumnName = "FECHA";
+            return dt;
+        }
+
         public DataTable BuscarOrdenComprarruc(string ruc)
         {
             SqlCommand comando = conexion.conexionBD().CreateCommand();

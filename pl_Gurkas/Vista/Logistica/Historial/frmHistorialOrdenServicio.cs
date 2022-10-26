@@ -80,7 +80,7 @@ namespace pl_Gurkas.Vista.Logistica.Historial
         {
             Vista.Logistica.Ordenes.frmImprimirPDF_OC_OS objOrdenes = new Vista.Logistica.Ordenes.frmImprimirPDF_OC_OS();
             objOrdenes._num_orden = dgvHistorialOrdenServicio.CurrentRow.Cells[0].Value.ToString();
-            objOrdenes.Show();
+            objOrdenes.ShowDialog();
         }
     }
 }
