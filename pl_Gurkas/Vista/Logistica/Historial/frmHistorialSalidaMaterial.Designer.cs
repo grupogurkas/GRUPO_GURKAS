@@ -162,6 +162,7 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             this.dgvHistorialOrdenServicio.ReadOnly = true;
             this.dgvHistorialOrdenServicio.Size = new System.Drawing.Size(1337, 542);
             this.dgvHistorialOrdenServicio.TabIndex = 118;
+            this.dgvHistorialOrdenServicio.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHistorialOrdenServicio_CellContentDoubleClick);
             // 
             // groupBox2
             // 

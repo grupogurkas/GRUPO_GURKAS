@@ -473,7 +473,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             this.btnCertificadoBasc.Name = "btnCertificadoBasc";
             this.btnCertificadoBasc.Size = new System.Drawing.Size(110, 46);
             this.btnCertificadoBasc.TabIndex = 14;
-            this.btnCertificadoBasc.Text = "Imprimir";
+            this.btnCertificadoBasc.Text = "Registrar Salida";
             this.btnCertificadoBasc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCertificadoBasc.UseVisualStyleBackColor = true;
             this.btnCertificadoBasc.Click += new System.EventHandler(this.btnCertificadoBasc_Click);

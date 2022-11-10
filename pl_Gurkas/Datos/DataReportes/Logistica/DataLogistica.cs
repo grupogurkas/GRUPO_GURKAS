@@ -613,6 +613,24 @@ namespace pl_Gurkas.Datos.DataReportes.Logistica
             dt.Columns[4].ColumnName = "CostoTotal";
             return dt;
         }
+        public DataTable BuscarDatosSalida(string COD_VALE)
+        {
+            SqlCommand comando = conexion.conexionBD().CreateCommand();
+            comando.CommandType = CommandType.Text;
+            comando.CommandText = "sp_buscar_vale_entrega  @NUM_ENTREGA";
+            comando.Parameters.AddWithValue("NUM_ENTREGA", COD_VALE);
+            comando.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter dta = new SqlDataAdapter(comando);
+            dta.Fill(dt);
+            dt.Columns[0].ColumnName = "ID";
+            dt.Columns[1].ColumnName = "CodProducto";
+            dt.Columns[2].ColumnName = "Nombre";
+            dt.Columns[3].ColumnName = "CondicionEntrega";
+            dt.Columns[4].ColumnName = "Cantidad";
+            dt.Columns[5].ColumnName = "Observacion";
+            return dt;
+        }
         public DataTable BuscarCompra(string COD_VALE)
         {
             SqlCommand comando = conexion.conexionBD().CreateCommand();

@@ -101,7 +101,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
             string num_vale_salida = _num_orden;
             dgvHistorialOrdenes.DataSource = reportelogistica.BuscarOrden(num_vale_salida);
         }
-
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             Image cabezera = Properties.Resources._1logogurkas;
@@ -285,7 +284,6 @@ namespace pl_Gurkas.Vista.Logistica.Ordenes
                 //printPreviewDialog1.ShowDialog();
             }
         }
-
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             const string titulo = "Cerrar";

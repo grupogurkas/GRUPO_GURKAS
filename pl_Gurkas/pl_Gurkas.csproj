@@ -13,7 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\Jeremy AV\Desktop\EJECUTALBE_BASE\</PublishUrl>
+    <PublishUrl>C:\Users\Jeremy AV\Desktop\GURKAS_BASE\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -24,7 +24,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <UpdateUrl>\\192.168.1.13\compartida\SISTEMA_GURKAS\</UpdateUrl>
-    <ApplicationRevision>106</ApplicationRevision>
+    <ApplicationRevision>110</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -526,6 +526,12 @@
     <Compile Include="Vista\Logistica\Historial\frmHistorialSalidaMaterial.Designer.cs">
       <DependentUpon>frmHistorialSalidaMaterial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Logistica\Historial\frmImpresionSalidaMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Logistica\Historial\frmImpresionSalidaMaterial.Designer.cs">
+      <DependentUpon>frmImpresionSalidaMaterial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Logistica\Ordenes\frmImprimirPDF_OC_OS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -543,6 +549,12 @@
     </Compile>
     <Compile Include="Vista\Logistica\Ordenes\frmOrdenCompraImprimir.Designer.cs">
       <DependentUpon>frmOrdenCompraImprimir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Logistica\Proveedores\frmRegistrarPrOVEDORE2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Logistica\Proveedores\frmRegistrarPrOVEDORE2.Designer.cs">
+      <DependentUpon>frmRegistrarPrOVEDORE2.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Logistica\Reporte\frmKardex.cs">
       <SubType>Form</SubType>
@@ -1224,6 +1236,9 @@
     <EmbeddedResource Include="Vista\Logistica\Historial\frmHistorialSalidaMaterial.resx">
       <DependentUpon>frmHistorialSalidaMaterial.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Logistica\Historial\frmImpresionSalidaMaterial.resx">
+      <DependentUpon>frmImpresionSalidaMaterial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\Ordenes\frmImprimirPDF_OC_OS.resx">
       <DependentUpon>frmImprimirPDF_OC_OS.cs</DependentUpon>
     </EmbeddedResource>
@@ -1232,6 +1247,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\Ordenes\frmOrdenCompraImprimir.resx">
       <DependentUpon>frmOrdenCompraImprimir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Logistica\Proveedores\frmRegistrarPrOVEDORE2.resx">
+      <DependentUpon>frmRegistrarPrOVEDORE2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\Reporte\frmKardex.resx">
       <DependentUpon>frmKardex.cs</DependentUpon>

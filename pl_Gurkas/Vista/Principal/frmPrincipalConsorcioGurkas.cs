@@ -567,7 +567,7 @@ namespace pl_Gurkas.Vista.Principal
 
         private void registrarProveedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            controlvistaformulario.ControlVista(this, new Vista.Logistica.Proveedores.frmRegistrarProveedor());
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.Proveedores.frmRegistrarPrOVEDORE2());
             modulo.auditoria("Logistica", "Almacen", "Proveedores", "Registrar Proveedor");
         }
 

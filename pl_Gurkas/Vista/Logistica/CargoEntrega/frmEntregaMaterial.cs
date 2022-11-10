@@ -549,8 +549,9 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
         }
         private void imprimir()
         {
-            
-          System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
+            registarvale();
+            /*
+            System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
             PrintDialog1.AllowSomePages = true;
             PrintDialog1.ShowHelp = true;
             PrintDialog1.Document = printDocument1;
@@ -560,7 +561,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
                 printDocument1.Print();
                 registarvale();
                 //limpiardatos();
-            }
+            }*/
           //printPreviewDialog1.ShowDialog();
         }
         private void btnCertificadoBasc_Click(object sender, EventArgs e)

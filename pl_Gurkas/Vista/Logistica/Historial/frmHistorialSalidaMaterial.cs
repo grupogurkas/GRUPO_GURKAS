@@ -56,5 +56,15 @@ namespace pl_Gurkas.Vista.Logistica.Historial
             int anio = Convert.ToInt32(txta.Text);
             dgvHistorialOrdenServicio.DataSource = datosLogistica.BuscarSalidadMaterial(mes, anio);
         }
+
+        private void dgvHistorialOrdenServicio_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Vista.Logistica.Historial.frmImpresionSalidaMaterial objOrdenes = new Vista.Logistica.Historial.frmImpresionSalidaMaterial();
+            objOrdenes._num_orden = dgvHistorialOrdenServicio.CurrentRow.Cells[0].Value.ToString();
+            objOrdenes._cod_resive = dgvHistorialOrdenServicio.CurrentRow.Cells[1].Value.ToString();
+            objOrdenes._nombre_solicitante = dgvHistorialOrdenServicio.CurrentRow.Cells[2].Value.ToString();
+            objOrdenes._fecha = dgvHistorialOrdenServicio.CurrentRow.Cells[11].Value.ToString();
+            objOrdenes.ShowDialog();
+        }
     }
 }
