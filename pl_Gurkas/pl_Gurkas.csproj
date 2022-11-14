@@ -616,6 +616,12 @@
     <Compile Include="Vista\MensajeEmergente\DialogForm.Designer.cs">
       <DependentUpon>DialogForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Operaciones\Analista\frmResumenTurno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Operaciones\Analista\frmResumenTurno.Designer.cs">
+      <DependentUpon>frmResumenTurno.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Operaciones\ReporteOperaciones\frmConsultadeAsistenciaPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1280,6 +1286,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\MensajeEmergente\DialogForm.resx">
       <DependentUpon>DialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Operaciones\Analista\frmResumenTurno.resx">
+      <DependentUpon>frmResumenTurno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Operaciones\ReporteOperaciones\frmConsultadeAsistenciaPersonal.resx">
       <DependentUpon>frmConsultadeAsistenciaPersonal.cs</DependentUpon>
