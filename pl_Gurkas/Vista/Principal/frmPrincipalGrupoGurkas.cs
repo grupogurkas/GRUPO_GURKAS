@@ -997,5 +997,11 @@ namespace pl_Gurkas.Vista.Principal
             controlvistaformulario.ControlVista(this, new Vista.Operaciones.Analista.frmResumenTurno());
             modulo.auditoria("Operaciones", "Analista", "Reporte Turno", "");
         }
+
+        private void historialDeMaterialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.Historial.frmHistorialDeProductos());
+            modulo.auditoria("Logistica", "Almacen", "Historial Logistico", "Historial Productos");
+        }
     }
 }

@@ -76,7 +76,7 @@ namespace pl_Gurkas.Vista.Operaciones.Analista
                 SqlDataAdapter dta = new SqlDataAdapter(comando);
                 dta.Fill(dt);
                 dt.Columns[0].ColumnName = "Orden";
-                dt.Columns[0].ColumnName = "Tipo Asistencia";
+                dt.Columns[1].ColumnName = "Tipo Asistencia";
                 dt.AcceptChanges();
                 dgvMarcacionFechaTurno.DataSource = dt;
             }

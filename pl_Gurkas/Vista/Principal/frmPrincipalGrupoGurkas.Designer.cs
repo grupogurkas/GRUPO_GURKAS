@@ -103,6 +103,8 @@ namespace pl_Gurkas.Vista.Principal
             this.estadoDePersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.constultaDeAsistenciaPersonalCompletoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reclamoAgenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.analistaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.turnosTrabajadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.comercialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unidadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.crearUnidadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -207,8 +209,7 @@ namespace pl_Gurkas.Vista.Principal
             this.reporteDeAsistenciaPorPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ticketConsultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generarTicketToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.analistaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.turnosTrabajadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.historialDeMaterialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -755,7 +756,7 @@ namespace pl_Gurkas.Vista.Principal
             this.activarUnidadToolStripMenuItem});
             this.unidadToolStripMenuItem1.Image = global::pl_Gurkas.Properties.Resources.Unidad_32;
             this.unidadToolStripMenuItem1.Name = "unidadToolStripMenuItem1";
-            this.unidadToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.unidadToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
             this.unidadToolStripMenuItem1.Text = "Unidad";
             // 
             // activarUnidadToolStripMenuItem
@@ -771,7 +772,7 @@ namespace pl_Gurkas.Vista.Principal
             this.activarSedeToolStripMenuItem});
             this.sedeToolStripMenuItem1.Image = global::pl_Gurkas.Properties.Resources.sede_32;
             this.sedeToolStripMenuItem1.Name = "sedeToolStripMenuItem1";
-            this.sedeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.sedeToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
             this.sedeToolStripMenuItem1.Text = "Sede";
             // 
             // activarSedeToolStripMenuItem
@@ -790,7 +791,7 @@ namespace pl_Gurkas.Vista.Principal
             this.constultaDeAsistenciaPersonalCompletoToolStripMenuItem});
             this.reporteToolStripMenuItem1.Image = global::pl_Gurkas.Properties.Resources.reportes_32;
             this.reporteToolStripMenuItem1.Name = "reporteToolStripMenuItem1";
-            this.reporteToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.reporteToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
             this.reporteToolStripMenuItem1.Text = "Reporte";
             // 
             // consultaDeAsistenciaPorPersonalToolStripMenuItem1
@@ -825,9 +826,24 @@ namespace pl_Gurkas.Vista.Principal
             // 
             this.reclamoAgenteToolStripMenuItem.Image = global::pl_Gurkas.Properties.Resources.reclamo_32;
             this.reclamoAgenteToolStripMenuItem.Name = "reclamoAgenteToolStripMenuItem";
-            this.reclamoAgenteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.reclamoAgenteToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.reclamoAgenteToolStripMenuItem.Text = "Reclamo Agente";
             this.reclamoAgenteToolStripMenuItem.Click += new System.EventHandler(this.reclamoAgenteToolStripMenuItem_Click);
+            // 
+            // analistaToolStripMenuItem
+            // 
+            this.analistaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.turnosTrabajadosToolStripMenuItem});
+            this.analistaToolStripMenuItem.Name = "analistaToolStripMenuItem";
+            this.analistaToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.analistaToolStripMenuItem.Text = "Analista";
+            // 
+            // turnosTrabajadosToolStripMenuItem
+            // 
+            this.turnosTrabajadosToolStripMenuItem.Name = "turnosTrabajadosToolStripMenuItem";
+            this.turnosTrabajadosToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.turnosTrabajadosToolStripMenuItem.Text = "Turnos Trabajados";
+            this.turnosTrabajadosToolStripMenuItem.Click += new System.EventHandler(this.turnosTrabajadosToolStripMenuItem_Click);
             // 
             // comercialToolStripMenuItem
             // 
@@ -1100,7 +1116,8 @@ namespace pl_Gurkas.Vista.Principal
             this.historialLogisticoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.historialOrdenCompraToolStripMenuItem,
             this.historialOrdenServicioToolStripMenuItem,
-            this.historialDeSalidaMaterialToolStripMenuItem});
+            this.historialDeSalidaMaterialToolStripMenuItem,
+            this.historialDeMaterialToolStripMenuItem});
             this.historialLogisticoToolStripMenuItem.Name = "historialLogisticoToolStripMenuItem";
             this.historialLogisticoToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.historialLogisticoToolStripMenuItem.Text = "Historial Logistico";
@@ -1682,20 +1699,12 @@ namespace pl_Gurkas.Vista.Principal
             this.generarTicketToolStripMenuItem.Text = "Generar Ticket";
             this.generarTicketToolStripMenuItem.Click += new System.EventHandler(this.generarTicketToolStripMenuItem_Click);
             // 
-            // analistaToolStripMenuItem
+            // historialDeMaterialToolStripMenuItem
             // 
-            this.analistaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.turnosTrabajadosToolStripMenuItem});
-            this.analistaToolStripMenuItem.Name = "analistaToolStripMenuItem";
-            this.analistaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.analistaToolStripMenuItem.Text = "Analista";
-            // 
-            // turnosTrabajadosToolStripMenuItem
-            // 
-            this.turnosTrabajadosToolStripMenuItem.Name = "turnosTrabajadosToolStripMenuItem";
-            this.turnosTrabajadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.turnosTrabajadosToolStripMenuItem.Text = "Turnos Trabajados";
-            this.turnosTrabajadosToolStripMenuItem.Click += new System.EventHandler(this.turnosTrabajadosToolStripMenuItem_Click);
+            this.historialDeMaterialToolStripMenuItem.Name = "historialDeMaterialToolStripMenuItem";
+            this.historialDeMaterialToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
+            this.historialDeMaterialToolStripMenuItem.Text = "Historial De Material";
+            this.historialDeMaterialToolStripMenuItem.Click += new System.EventHandler(this.historialDeMaterialToolStripMenuItem_Click);
             // 
             // frmPrincipalGrupoGurkas
             // 
@@ -1906,5 +1915,6 @@ namespace pl_Gurkas.Vista.Principal
         private System.Windows.Forms.ToolStripMenuItem historialDeSalidaMaterialToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem analistaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem turnosTrabajadosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem historialDeMaterialToolStripMenuItem;
     }
 }

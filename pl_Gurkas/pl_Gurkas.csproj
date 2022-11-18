@@ -24,7 +24,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <UpdateUrl>\\192.168.1.13\compartida\SISTEMA_GURKAS\</UpdateUrl>
-    <ApplicationRevision>110</ApplicationRevision>
+    <ApplicationRevision>111</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -513,6 +513,12 @@
     </Compile>
     <Compile Include="Vista\Logistica\Historial\frmBuscarVale.Designer.cs">
       <DependentUpon>frmBuscarVale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Logistica\Historial\frmHistorialDeProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Logistica\Historial\frmHistorialDeProductos.Designer.cs">
+      <DependentUpon>frmHistorialDeProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Logistica\Historial\frmHistorialOrdenServicio.cs">
       <SubType>Form</SubType>
@@ -1235,6 +1241,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\Historial\frmBuscarVale.resx">
       <DependentUpon>frmBuscarVale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Logistica\Historial\frmHistorialDeProductos.resx">
+      <DependentUpon>frmHistorialDeProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\Historial\frmHistorialOrdenServicio.resx">
       <DependentUpon>frmHistorialOrdenServicio.cs</DependentUpon>

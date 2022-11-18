@@ -262,6 +262,7 @@ namespace pl_Gurkas.Datos
             SqlCommand cmd = new SqlCommand("sp_actualizarAsistencia ", conexion.conexionBD());
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@Cod_sede ", SqlDbType.VarChar).Value = sede_correcta;
+            cmd.Parameters.AddWithValue("@cod_unidad ", SqlDbType.VarChar).Value = unidad_correcta;
             cmd.Parameters.AddWithValue("@Cod_Turno", SqlDbType.VarChar).Value = turno_correcto;
             cmd.Parameters.AddWithValue("@cod_empleado", SqlDbType.VarChar).Value = personal_correcta;
             cmd.Parameters.AddWithValue("@id_tipoAsistencia", SqlDbType.VarChar).Value = tipoasistencia_correcta;

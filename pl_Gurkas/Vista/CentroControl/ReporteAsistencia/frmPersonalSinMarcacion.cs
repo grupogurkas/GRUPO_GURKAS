@@ -25,6 +25,7 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
         private void frmPersonalSinMarcacion_Load(object sender, EventArgs e)
         {
             Llenadocboope.ObtenerUnidad(cboUnidad);
+            Llenadocboope.ObtenerTurno(turno);
             dgvPersonalSinMarcacion.RowHeadersVisible = false;
             dgvPersonalSinMarcacion.AllowUserToAddRows = false;
         }
@@ -64,6 +65,36 @@ namespace pl_Gurkas.Vista.CentroControl.ReporteAsistencia
             string nombre_unidad = cboUnidad.GetItemText(cboUnidad.SelectedItem);
             string fi = dtpFecha.Value.Date.ToString("dd-MM-yyyy");
             Excel.ExportarDatosExcelPersonalSinMarcacion(dgvPersonalSinMarcacion, progressBar1, nombre_unidad, fi);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DateTime dia = dateTimePicker1.Value;
+            int cod_turno = turno.SelectedIndex;
+            try
+            {
+                SqlCommand comando = conexion.conexionBD().CreateCommand();
+                comando.CommandType = CommandType.Text;
+                comando.CommandText = "sp_personalsinmarcacion_unidades_t  @fecha,@cod_turno";
+                comando.Parameters.AddWithValue("fecha", dia);
+                comando.Parameters.AddWithValue("cod_turno", cod_turno);
+                comando.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                SqlDataAdapter dta = new SqlDataAdapter(comando);
+                dta.Fill(dt);
+                dt.Columns[0].ColumnName = "Cod Empleado";
+                dt.Columns[1].ColumnName = "Empleado";
+                dt.Columns[2].ColumnName = "Sede";
+                dt.Columns[3].ColumnName = "Turno";
+                dt.AcceptChanges();
+                dgvPersonalSinMarcacion.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("No se encontro ningun resultado \n\n " + ex, "ERROR");
+
+            }
         }
     }
 }
