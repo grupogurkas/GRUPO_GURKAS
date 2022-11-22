@@ -562,6 +562,18 @@
     <Compile Include="Vista\Logistica\Proveedores\frmRegistrarPrOVEDORE2.Designer.cs">
       <DependentUpon>frmRegistrarPrOVEDORE2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Logistica\Reporte\frmActaComformidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Logistica\Reporte\frmActaComformidad.Designer.cs">
+      <DependentUpon>frmActaComformidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Logistica\Reporte\frmBajaPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Logistica\Reporte\frmBajaPersonal.Designer.cs">
+      <DependentUpon>frmBajaPersonal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Logistica\Reporte\frmKardex.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -609,6 +621,12 @@
     </Compile>
     <Compile Include="Vista\Logistica\Proveedores\frmRegistrarProveedor.Designer.cs">
       <DependentUpon>frmRegistrarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Logistica\Reporte\frmReporteDescunetosZapatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Logistica\Reporte\frmReporteDescunetosZapatos.Designer.cs">
+      <DependentUpon>frmReporteDescunetosZapatos.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Logistica\Reporte\frmReportePersonal.cs">
       <SubType>Form</SubType>
@@ -1266,6 +1284,9 @@
     <EmbeddedResource Include="Vista\Logistica\Proveedores\frmRegistrarPrOVEDORE2.resx">
       <DependentUpon>frmRegistrarPrOVEDORE2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Logistica\Reporte\frmBajaPersonal.resx">
+      <DependentUpon>frmBajaPersonal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\Reporte\frmKardex.resx">
       <DependentUpon>frmKardex.cs</DependentUpon>
     </EmbeddedResource>
@@ -1289,6 +1310,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\Proveedores\frmRegistrarProveedor.resx">
       <DependentUpon>frmRegistrarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Logistica\Reporte\frmReporteDescunetosZapatos.resx">
+      <DependentUpon>frmReporteDescunetosZapatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\Reporte\frmReportePersonal.resx">
       <DependentUpon>frmReportePersonal.cs</DependentUpon>

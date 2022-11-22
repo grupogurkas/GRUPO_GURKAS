@@ -951,5 +951,17 @@ namespace pl_Gurkas.Vista.Principal
             controlvistaformulario.ControlVista(this, new Vista.Logistica.Historial.frmHistorialDeProductos());
             modulo.auditoria("Logistica", "Almacen", "Historial Logistico", "Historial Productos");
         }
+
+        private void reporteDeDescuentosAgentesRetiradosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.Reporte.frmBajaPersonal());
+            modulo.auditoria("Logistica", "Reporte", "Reporte", "Reporte de descuentos agentes retirados");
+        }
+
+        private void reporteDeDescunetosDeZapatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            controlvistaformulario.ControlVista(this, new Vista.Logistica.Reporte.frmReporteDescunetosZapatos());
+            modulo.auditoria("Logistica", "Reporte", "Reporte", "Reporte de descunetos de zapatos");
+        }
     }
 }
