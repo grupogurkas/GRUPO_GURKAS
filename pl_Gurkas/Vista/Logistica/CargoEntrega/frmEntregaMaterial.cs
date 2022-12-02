@@ -574,7 +574,7 @@ namespace pl_Gurkas.Vista.Logistica.CargoEntrega
             }
 
         }
-private void txtInformacionAdicional_TextChanged(object sender, EventArgs e)
+        private void txtInformacionAdicional_TextChanged(object sender, EventArgs e)
         {
             txtInformacionAdicional.MaxLength = 264;
         }

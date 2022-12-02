@@ -815,6 +815,28 @@ namespace pl_Gurkas.Datos.LlenadoDatos
                 MessageBox.Show("No se puede obtener el listado de las Unidades \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+        public void ObtenerUnidadActaComformidad(ComboBox cd)
+        {
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SELECT cod_unidad,razon_social FROM t_unidad  order by Razon_social asc", conexiondbo.conexionBD());
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                DataRow fila = dt.NewRow();
+                fila["razon_social"] = "--- Seleccione una Unidad ---";
+                dt.Rows.InsertAt(fila, 0);
+                cd.ValueMember = "cod_unidad";
+                cd.DisplayMember = "razon_social";
+                cd.DataSource = dt;
+                cd.SelectedIndex = 0;
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("No se puede obtener el listado de las Unidades \n\n" + err, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
         public void ObtenerSedeLogistica(ComboBox cd, string cod_unidad)
         {
             try

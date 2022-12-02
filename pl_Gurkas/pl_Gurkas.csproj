@@ -24,7 +24,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <UpdateUrl>\\192.168.1.13\compartida\SISTEMA_GURKAS\</UpdateUrl>
-    <ApplicationRevision>111</ApplicationRevision>
+    <ApplicationRevision>112</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -1283,6 +1283,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\Proveedores\frmRegistrarPrOVEDORE2.resx">
       <DependentUpon>frmRegistrarPrOVEDORE2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Logistica\Reporte\frmActaComformidad.resx">
+      <DependentUpon>frmActaComformidad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Logistica\Reporte\frmBajaPersonal.resx">
       <DependentUpon>frmBajaPersonal.cs</DependentUpon>
